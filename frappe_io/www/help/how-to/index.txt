@@ -1,0 +1,5 @@
+enable-developer-mode
+report-print-formats
+social-logins
+query-report
+script-report

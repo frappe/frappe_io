@@ -1,0 +1,19 @@
+/*article {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+	line-height: 1.4em;
+}
+*/
+.docs-attr-name {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+code {
+	font-size: 12px;
+}
+
+article table {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+}
