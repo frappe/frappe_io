@@ -1,3 +1,6 @@
+from __future__ import unicode_literals
+# -*- coding: utf-8 -*-
+
 app_name = "frappe_io"
 app_title = "Frappe Framework"
 app_publisher = "Frappe"
@@ -8,6 +11,16 @@ app_email = "info@frappe.io"
 app_version = "0.0.1"
 
 required_apps = ["frappe_theme"]
+
+website_context = {
+	"nav_brand": "Frappé Framework",
+	"nav_links": [
+		("Tutorial", "/tutorial"),
+		("Help", "/help"),
+		("Reference", "https://docs.frappe.io"),
+		("About", "/about")
+	]
+}
 
 # Includes in <head>
 # ------------------
