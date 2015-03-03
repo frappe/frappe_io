@@ -8,7 +8,7 @@ To make a new application, go to your bench folder and run, `bench new-app {app_
 	App Name: library_management
 	App Title: Library Management
 	App Description: App for managing Articles, Members, Memberships and Transactions for Libraries
-	App Publisher: Web Notes
+	App Publisher: Frappe
 	App Icon: icon-book
 	App Color: #589494
 	App Email: info@frappe.io

@@ -8,7 +8,7 @@ official hooks from Frappe.
 ### Application Name and Details
 
 1. `app_name` - slugified name with underscores e.g. "shopping\_cart"
-2. `app_title` - full title name e.g. "Web Notes"
+2. `app_title` - full title name e.g. "Frappe"
 3. `app_publisher`
 4. `app_description`
 5. `app_version`

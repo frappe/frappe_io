@@ -15,7 +15,7 @@ To add a new task handler, go to `hooks.py` and add a new handler. Default handl
 
 Here we can point to a Python function and that function will be executed every day. Let us look what this function looks like:
 
-	# Copyright (c) 2013, Web Notes
+	# Copyright (c) 2013, Frappe
 	# For license information, please see license.txt
 
 	from __future__ import unicode_literals

@@ -5,7 +5,7 @@ Version 1.01
 
 ### Introduction
 
-Web Notes Technologies Pvt Ltd is the publisher of "ERPNext" and offers hosting and support services for the same. The software is available under the GNU/GPL licenses and others as specified in the source code. This agreement is not about the software (which is available under the General Public License) but for the hosting and support services that are provided commercially.
+Frappe Technologies Pvt Ltd is the publisher of "ERPNext" and offers hosting and support services for the same. The software is available under the GNU/GPL licenses and others as specified in the source code. This agreement is not about the software (which is available under the General Public License) but for the hosting and support services that are provided commercially.
 
 ### 1. Scope
 
@@ -15,7 +15,7 @@ This agreement covers the terms under which you can use the free, trial or paid 
 
 Services: Hosting and support services offered by us
 You, Your: The subscriber or user of our services
-We, Us, Our: Web Notes Technologies Pvt. Ltd. or services offered by Web Notes Technologies Pvt Ltd
+We, Us, Our: Frappe Technologies Pvt. Ltd. or services offered by Frappe Technologies Pvt Ltd
 Confidential Information: Information that is given from one party to another that is reasonably understood to be confidential.
 
 ### 3. Services
@@ -76,7 +76,7 @@ You can ask for your data for a period of 30 days after the termination. You wil
 
 This agreement is subject to change and we will update you via email incase we make any changes.
 
-Company: Web Notes Technologies Pvt Ltd
+Company: Frappe Technologies Pvt Ltd
 
 Registered Address: D/324 Neelkanth Business Park, Vidyavihar West, Mumbai 400086
 
