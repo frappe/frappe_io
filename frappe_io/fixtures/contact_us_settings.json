@@ -1,0 +1,26 @@
+[
+ {
+  "address_line1": null, 
+  "address_line2": null, 
+  "address_title": null, 
+  "city": null, 
+  "country": null, 
+  "creation": "2015-03-04 12:31:58.948285", 
+  "docstatus": 0, 
+  "doctype": "Contact Us Settings", 
+  "forward_to_email": "sales@erpnext.com", 
+  "heading": null, 
+  "idx": null, 
+  "introduction": null, 
+  "modified": "2015-03-04 12:31:58.948285", 
+  "modified_by": "Administrator", 
+  "name": "Contact Us Settings", 
+  "owner": "Administrator", 
+  "parent": null, 
+  "parentfield": null, 
+  "parenttype": null, 
+  "pincode": null, 
+  "query_options": null, 
+  "state": null
+ }
+]

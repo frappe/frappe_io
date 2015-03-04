@@ -119,3 +119,4 @@ website_context = {
 # 	"frappe.desk.doctype.event.event.get_events": "frappe_io.event.get_events"
 # }
 
+fixtures = ["Contact Us Settings"]
