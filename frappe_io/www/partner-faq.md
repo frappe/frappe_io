@@ -1,1 +1,1 @@
-<!-- redirect: https://frappe.io/community/faq -->
+<!-- redirect: https://frappe.io/faq -->
