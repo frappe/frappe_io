@@ -13,13 +13,14 @@ app_version = "0.0.1"
 required_apps = ["frappe_theme"]
 
 website_context = {
-	"nav_brand": "Frappé Framework",
-	"nav_links": [
-		("Tutorial", "/tutorial"),
-		("Help", "/help"),
-		("Reference", "https://docs.frappe.io"),
-		("About", "/about")
-	]
+	"brand_html": "Frappé Framework",
+	"top_bar_items": [
+		{"label": "Tutorial", "url": "/tutorial", "right": 1},
+		{"label": "Help", "url": "/help", "right": 1},
+		{"label": "Reference", "url": "https://docs.frappe.io", "right": 1},
+		{"label": "About", "url": "/about", "right": 1}
+	],
+	"hide_login": 1,
 }
 
 # Includes in <head>
