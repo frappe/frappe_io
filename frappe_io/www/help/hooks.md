@@ -129,7 +129,7 @@ be a dotted path to a variable.
 
 ### Session Creation Hook
 
-You can attach custom logic to the event of a successful logic using
+You can attach custom logic to the event of a successful login using
 `on_session_creation` hook. The hook should be a dotted path to a Python
 function that takes login\_manager as an argument.
 
