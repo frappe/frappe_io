@@ -109,7 +109,7 @@ downloaded, you are required to do the following things.
    TODO: add link
 
 2. Add line with your app name to apps.txt (in your sites directory) as
-   explained in [sites](/docs/api/sites)
+   explained in [sites](/help/sites)
 
 
 TODO: Add screenshot
