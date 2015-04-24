@@ -4,9 +4,9 @@ After creating the Roles, let us create the **DocTypes**
 
 To create a new **DocType**, go to:
 
-> File > New... > DocType
+> Core > Documents > Doctype > New
 
-![New DocType](/assets/frappe_io/images/guide/05-new-doctype.png)
+<img class="screenshot" alt="New Doctype" src="/assets/frappe_io/public/images/doctype_new.png">
 
 In the DocType, first the Module, which in our case is **Library Managment**
 
@@ -25,7 +25,7 @@ Fields are much more than database columns, they can be:
 
 Let us add the fields of the Article.
 
-![Add Fields](/assets/frappe_io/images/guide/06-add-fields.png)
+<img class="screenshot" alt="Adding Fields" src="/assets/frappe_io/public/images/doctype_adding_fields.png">
 
 When you add fields, you need to enter the **Type**. **Label** is optional for Section Break and Column Break. **Name** (`fieldname`) is the name of the database table column and also the property of the controller. This has to be *code friendly*, i.e. it has to have small cases are _ instead of " ". If you leave the Fieldname blank, it will be automatically set when you save it.
 
@@ -45,7 +45,7 @@ We can add the following fields:
 
 After adding the fields, add Permissions. For now, let us give Read, Write, Create, Delete and Report access to **Librarian**. Frappe has a finely grained Role based permission model. You can also change permissions later using the **Role Permissions Manager** from **Setup**.
 
-![Add Permissions](/assets/frappe_io/images/guide/07-add-permissions.png)
+<img class="screenshot" alt="Adding Permissions" src="/assets/frappe_io/public/images/doctype_adding_permission.png">
 
 #### Saving
 
@@ -53,7 +53,7 @@ Click on the **Save** button. When the button is clicked, a popup will ask you f
 
 Now login into mysql and check the database table created:
 
-	$ bench frappe library --mysql
+	$ bench mysql
 	Welcome to the MariaDB monitor.  Commands end with ; or \g.
 	Your MariaDB connection id is 3931
 	Server version: 5.5.36-MariaDB-log Homebrew

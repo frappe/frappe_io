@@ -8,35 +8,13 @@ This will create a new database and site folder and install `frappe` (which is a
 
 	$ bench new-site library
 	MySQL root password:
-	Created user library
-	Created database library
-	Granted privileges to user library and database library
-	Starting database import...
-	Imported from database /private/var/www/rmehta/bench/frappe/frappe/data/Framework.sql
-	core | doctype | bulk_email
-	core | doctype | comment
-	core | doctype | communication
-	core | doctype | custom_field
-	core | doctype | custom_script
-	core | doctype | customize_form
-	core | doctype | customize_form_field
-	core | doctype | defaultvalue
-	core | doctype | docfield
-	core | doctype | docperm
-	core | doctype | doctype
-	core | doctype | event
-	..
-	..
-	website | doctype | web_page
-	website | doctype | website_group
-	website | doctype | website_route
-	website | doctype | website_route_permission
-	website | doctype | website_script
-	website | doctype | website_settings
-	website | doctype | website_slideshow
-	website | doctype | website_slideshow_item
-	website | doctype | website_template
-	website | page | sitemap_browser
+	Installing frappe...
+	Updating frappe                     : [========================================]
+	Updating country info               : [========================================]
+	Set Administrator password:
+	Re-enter Administrator password:
+	Installing fixtures...
+	*** Scheduler is disabled ***
 
 ### Site Structure
 
@@ -58,10 +36,10 @@ A new folder called `library` will be created in the `sites` folder. Here is the
 
 Now let us install our app `library_management` in our site `library`
 
-1. Install library_management in library with: `bench frappe [site] --install_app [app]`
+1. Install library_management in library with: `bench --site [site_name] install_app [app_name]`
 
 Example:
 
-	$ bench frappe library --install_app library_management
+	$ bench --site library install_app library_management
 
 {next}

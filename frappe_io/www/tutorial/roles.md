@@ -7,12 +7,8 @@ Before creating Models, we must create Roles so that we can set permissions on t
 
 To create a new Role, go to:
 
-> File > New... > Role
+> Core > Documents > Role > New
 
-![New Role](/assets/frappe_io/images/guide/03-new-role.png)
-
-Enter the new Role and Save it:
-
-![Role Saved](/assets/frappe_io/images/guide/04-new-role-saved.png)
+<img class="screenshot" alt="Adding Roles" src="/assets/frappe_io/public/images/roles_creating.png">
 
 {next}

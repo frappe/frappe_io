@@ -5,15 +5,13 @@ After the bench is installed, there are two main folders, `apps` and `sites`. Al
 To make a new application, go to your bench folder and run, `bench new-app {app_name}` and fill in details about the application. This will create a boilerplate application for your.
 
 	$ bench new-app library_management
-	App Name: library_management
-	App Title: Library Management
-	App Description: App for managing Articles, Members, Memberships and Transactions for Libraries
+	App Title (defaut: Lib Mgt): Liblary Management
+	App Description:  App for managing Articles, Members, Memberships and Transactions for Libraries
 	App Publisher: Frappe
-	App Icon: icon-book
-	App Color: #589494
 	App Email: info@frappe.io
-	App URL: https://frappe.io/apps/library_management
-	App License: GNU General Public License
+	App Icon (default 'octicon octicon-file-directory'): octicon octicon-book
+	App Color (default 'grey'): #589494
+	App License (default 'MIT'): GNU General Public License
 
 ### App Structure
 
