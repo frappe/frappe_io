@@ -6,13 +6,13 @@ Now that we have created the models, we can directly start making records using 
 
 To make records, we will first create a User. To create a user, go to:
 
-> Setup > Users and Permission > User
+> Setup > Users > User > New
 
 Create a new User and set the name and first name and new password.
 
 Also give the Librarian and Library Member Roles to this user
 
-![Add User Roles](/assets/frappe_io/images/guide/13-add-user-roles.png)
+<img class="screenshot" alt="Add User Roles" src="/assets/frappe_io/images/add_user_roles.png">
 
 Now logout and login using the new user id and password.
 
