@@ -54,6 +54,6 @@ As you can see that the date is formatted as year-month-day which is a system fo
 
 > Setup > System Settings
 
-![After Fetch](/assets/frappe_io/images/guide/21-system-settings.png)
+<img class="screenshot" alt="System Settings" src="/assets/frappe_io/images/system_settings.png">
 
 {next}
