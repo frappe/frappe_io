@@ -26,29 +26,25 @@ Here you can see the DocTypes that we have created for the application. List us 
 
 First let us create a new Article:
 
-![New Article](/assets/frappe_io/images/guide/15-new-article.png)
+<img class="screenshot" alt="New Article" src="/assets/frappe_io/images/new_article_blank.png">
 
-Here you will see that the the DocType you had created has been rendered as a form. The validations and other rules will also apply as designed. Let us fill out one Artilce.
+Here you will see that the the DocType you had created has been rendered as a form. The validations and other rules will also apply as designed. Let us fill out one Article.
 
-![Add Attachment](/assets/frappe_io/images/guide/16-add-attachment.png)
+<img class="screenshot" alt="New Article" src="/assets/frappe_io/images/new_article.png">
 
-You can also add an attachment
+You can also add an image.
 
-![Image Field](/assets/frappe_io/images/guide/17-image-field.png)
-
-View it as an image.
+<img class="screenshot" alt="Attach Image" src="/assets/frappe_io/images/attach_image.gif">
 
 Now let us create a new member:
 
-![New Member](/assets/frappe_io/images/guide/18-new-member.png)
+<img class="screenshot" alt="New Library Member" src="/assets/frappe_io/images/new_member.png">
 
 After this, let us create a new membership record for the member.
 
-![New Membership](/assets/frappe_io/images/guide/19-new-membership.png)
-
 Here if you remember we had set the values of Member First Name and Member Last Name to be directly fetched from the Member records and as soon as you will select the member id, the names will be updated.
 
-![After Fetch](/assets/frappe_io/images/guide/20-after-fetch.png)
+<img class="screenshot" alt="New Library Membership" src="/assets/frappe_io/images/new_lib_membership.png">
 
 As you can see that the date is formatted as year-month-day which is a system format. To set / change date, time and number formats, go to
 
