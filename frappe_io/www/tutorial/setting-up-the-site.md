@@ -32,6 +32,14 @@ A new folder called `library` will be created in the `sites` folder. Here is the
 1. `private/backups` is where backups are dumped
 1. `site_config.json` is where site level configurations are maintained.
 
+### Setting Default Site
+
+In case you have multiple sites on you bench use `bench use [site_name]` to set the default site.
+
+Example:
+
+	$ bench use library
+
 ### Install App
 
 Now let us install our app `library_management` in our site `library`
@@ -40,6 +48,6 @@ Now let us install our app `library_management` in our site `library`
 
 Example:
 
-	$ bench install_app library_management
+	$ bench install-app library_management
 
 {next}

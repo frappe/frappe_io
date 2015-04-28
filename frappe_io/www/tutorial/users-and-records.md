@@ -20,7 +20,7 @@ Now logout and login using the new user id and password.
 
 You will now see an icon for the Library Management module. Click on that icon and you will see the Module page:
 
-![Module](/assets/frappe_io/images/guide/14-module.png)
+<img class="screenshot" alt="Library Management Module" src="/assets/frappe_io/images/lib_management_module.png">
 
 Here you can see the DocTypes that we have created for the application. List us start creating a few records.
 

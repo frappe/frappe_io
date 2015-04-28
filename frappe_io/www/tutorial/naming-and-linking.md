@@ -52,19 +52,19 @@ In the same way, you can complete all the models so that the final fields look l
 
 #### Article
 
-![Article](/assets/frappe_io/images/guide/11-article.png)
+<img class="screenshot" alt="Article" src="/assets/frappe_io/images/doctype_article.png">
 
 #### Library Member
 
-![Library Member](/assets/frappe_io/images/guide/11-library-member.png)
+<img class="screenshot" alt="Library Member" src="/assets/frappe_io/images/doctype_lib_member.png">
 
 #### Library Membership
 
-![Library Membership](/assets/frappe_io/images/guide/11-library-membership.png)
+<img class="screenshot" alt="Library Membership" src="/assets/frappe_io/images/doctype_lib_membership.png">
 
 #### Library Transaction
 
-![Library Transaction](/assets/frappe_io/images/guide/11-library-transaction.png)
+<img class="screenshot" alt="Library Transaction" src="/assets/frappe_io/images/doctype_lib_trans.png">
 
 > Make sure to give permissions to **Librarian** on each DocType
 
