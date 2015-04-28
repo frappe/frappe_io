@@ -40,9 +40,9 @@ Here we can point to a Python function and that function will be executed every 
 			content += "</ol>"
 
 			recipient = frappe.db.get_value("Library Member", member, "email_id")
-			frappe.send(recipients=[recipient],
+			frappe.sendmail(recipients=[recipient],
 				sender="test@example.com",
-				subject="Library Articles Overdue", msg=content, bulk=True)
+				subject="Library Articles Overdue", content=content, bulk=True)
 
 	def get_overdue(loan_period):
 		# check for overdue articles
@@ -72,6 +72,6 @@ Note:
 
 1. We get the loan period from **Library Management Settings** by using `frappe.db.get_value`.
 1. We run a query in the database with `frappe.db.sql`
-1. Email is sent via `frappe.send_mail`
+1. Email is sent via `frappe.sendmail`
 
 {next}
