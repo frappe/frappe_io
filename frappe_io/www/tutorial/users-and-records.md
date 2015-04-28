@@ -6,13 +6,13 @@ Now that we have created the models, we can directly start making records using 
 
 To make records, we will first create a User. To create a user, go to:
 
-> Setup > Users and Permission > User
+> Setup > Users > User > New
 
 Create a new User and set the name and first name and new password.
 
 Also give the Librarian and Library Member Roles to this user
 
-![Add User Roles](/assets/frappe_io/images/guide/13-add-user-roles.png)
+<img class="screenshot" alt="Add User Roles" src="/assets/frappe_io/images/add_user_roles.png">
 
 Now logout and login using the new user id and password.
 
@@ -20,40 +20,36 @@ Now logout and login using the new user id and password.
 
 You will now see an icon for the Library Management module. Click on that icon and you will see the Module page:
 
-![Module](/assets/frappe_io/images/guide/14-module.png)
+<img class="screenshot" alt="Library Management Module" src="/assets/frappe_io/images/lib_management_module.png">
 
 Here you can see the DocTypes that we have created for the application. List us start creating a few records.
 
 First let us create a new Article:
 
-![New Article](/assets/frappe_io/images/guide/15-new-article.png)
+<img class="screenshot" alt="New Article" src="/assets/frappe_io/images/new_article_blank.png">
 
-Here you will see that the the DocType you had created has been rendered as a form. The validations and other rules will also apply as designed. Let us fill out one Artilce.
+Here you will see that the the DocType you had created has been rendered as a form. The validations and other rules will also apply as designed. Let us fill out one Article.
 
-![Add Attachment](/assets/frappe_io/images/guide/16-add-attachment.png)
+<img class="screenshot" alt="New Article" src="/assets/frappe_io/images/new_article.png">
 
-You can also add an attachment
+You can also add an image.
 
-![Image Field](/assets/frappe_io/images/guide/17-image-field.png)
-
-View it as an image.
+<img class="screenshot" alt="Attach Image" src="/assets/frappe_io/images/attach_image.gif">
 
 Now let us create a new member:
 
-![New Member](/assets/frappe_io/images/guide/18-new-member.png)
+<img class="screenshot" alt="New Library Member" src="/assets/frappe_io/images/new_member.png">
 
 After this, let us create a new membership record for the member.
 
-![New Membership](/assets/frappe_io/images/guide/19-new-membership.png)
-
 Here if you remember we had set the values of Member First Name and Member Last Name to be directly fetched from the Member records and as soon as you will select the member id, the names will be updated.
 
-![After Fetch](/assets/frappe_io/images/guide/20-after-fetch.png)
+<img class="screenshot" alt="New Library Membership" src="/assets/frappe_io/images/new_lib_membership.png">
 
 As you can see that the date is formatted as year-month-day which is a system format. To set / change date, time and number formats, go to
 
 > Setup > System Settings
 
-![After Fetch](/assets/frappe_io/images/guide/21-system-settings.png)
+<img class="screenshot" alt="System Settings" src="/assets/frappe_io/images/system_settings.png">
 
 {next}

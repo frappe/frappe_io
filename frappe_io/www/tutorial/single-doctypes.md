@@ -4,6 +4,6 @@ A application will usually have a Settings page. In our application, we can defi
 
 To create an new Single DocType, mark the **Is Single** property as checked.
 
-![Single DocType](/assets/frappe_io/images/guide/25-single.png)
+<img class="screenshot" alt="Single Doctypes" src="/assets/frappe_io/images/tab_single.png">
 
 {next}

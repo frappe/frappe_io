@@ -4,7 +4,7 @@ Then let us create the other DocType and save it too:
 
 1. Library Member (First Name, Last Name, Email ID)
 
-![DocType Saved](/assets/frappe_io/images/guide/08-doctype-saved.png)
+<img class="screenshot" alt="Doctype Saved" src="/assets/frappe_io/images/naming_doctype.png">
 
 
 #### Naming of DocTypes
@@ -20,7 +20,7 @@ This can be set by entering the **Autoname** field. For controller, leave blank.
 
 > **Search Fields**: A DocType may be named on a series but it still needs to be searched by name. In our case, the Article will be searched by the title or the author name. So this can be entered in search field.
 
-![Add Fields](/assets/frappe_io/images/guide/09-autoname-search-fields.png)
+<img class="screenshot" alt="Autonaming and Search Field" src="/assets/frappe_io/images/autoname_and_search_field.png">
 
 #### Link and Select Fields
 
@@ -30,11 +30,11 @@ In our example, in the Library Transaction DocType, we have to link both the Lib
 
 **Note:** Remeber that Link fields are not automatically set as Foreign Keys in the MariaDB database, because that will implicitly index the column. This may not be optimum hence the Foreign Key validation is done by the Framework.
 
-![Link Field](/assets/frappe_io/images/guide/10-link-field.png)
+<img class="screenshot" alt="Link Field" src="/assets/frappe_io/images/link_field.png">
 
 For select fields, as we mentioned earlier, add the various options in the **Options** input box, each option on a new row.
 
-![Select Field](/assets/frappe_io/images/guide/11-select-field.png)
+<img class="screenshot" alt="Select Field" src="/assets/frappe_io/images/select_field.png">
 
 Similary complete making the other models.
 
@@ -44,7 +44,7 @@ A standard pattern is when you select an ID, say **Library Member** in **Library
 
 To do this, we can use Read Only fields and in options, we can set the the name of the link and the fieldname of the property we want to fetch. For this example in **Member First Name** we can set `library_member.first_name`
 
-![Fetch Values](/assets/frappe_io/images/guide/11-fetch.png)
+<img class="screenshot" alt="Fetch values" src="/assets/frappe_io/images/fetch.png">
 
 ### Complete the Models
 
@@ -52,19 +52,19 @@ In the same way, you can complete all the models so that the final fields look l
 
 #### Article
 
-![Article](/assets/frappe_io/images/guide/11-article.png)
+<img class="screenshot" alt="Article" src="/assets/frappe_io/images/doctype_article.png">
 
 #### Library Member
 
-![Library Member](/assets/frappe_io/images/guide/11-library-member.png)
+<img class="screenshot" alt="Library Member" src="/assets/frappe_io/images/doctype_lib_member.png">
 
 #### Library Membership
 
-![Library Membership](/assets/frappe_io/images/guide/11-library-membership.png)
+<img class="screenshot" alt="Library Membership" src="/assets/frappe_io/images/doctype_lib_membership.png">
 
 #### Library Transaction
 
-![Library Transaction](/assets/frappe_io/images/guide/11-library-transaction.png)
+<img class="screenshot" alt="Library Transaction" src="/assets/frappe_io/images/doctype_lib_trans.png">
 
 > Make sure to give permissions to **Librarian** on each DocType
 

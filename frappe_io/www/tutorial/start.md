@@ -1,10 +1,9 @@
 # Starting the Bench
 
-Now we can login and check if everything works. Before we start the server, we can set our default site as `library` so that we do not have to enter it after every command. To set default site, use `bench set-default-site [site]`
+Now we can login and check if everything works.
 
-Then to start the development server, run `bench start`
+To start the development server, run `bench start`
 
-	$ bench set-default-site library
 	$ bench start
 	13:58:51 web.1        | started with pid 22135
 	13:58:51 worker.1     | started with pid 22136
@@ -15,7 +14,7 @@ Then to start the development server, run `bench start`
 
 You can now open your browser and go to `http://localhost:8000`. You should see this login page if all goes well:
 
-![Login Page](/assets/frappe_io/images/guide/01-login.png)
+<img class="screenshot" alt="Login Screen" src="/assets/frappe_io/images/login.png">
 
 Now login as the default user "Administrator"
 
@@ -24,7 +23,7 @@ Password: **admin**
 
 When you login, you should see the "Desk" home page
 
-![Desk](/assets/frappe_io/images/guide/02-desktop.png)
+<img class="screenshot" alt="Desk" src="/assets/frappe_io/images/desk.png">
 
 As you can see, the Frappe basic system comes with a bunch of pre-loaded applications and screens like To Do, Calendar etc. These apps can integrated in your app workflow as we progress.
 

@@ -48,7 +48,7 @@ In this script:
 
 Check if your validations work by creating new records
 
-![New Transactions](/assets/frappe_io/images/guide/22-new-transactions.png)
+<img class="screenshot" alt="Transaction" src="/assets/frappe_io/images/lib_trans.png">
 
 #### Debugging
 
