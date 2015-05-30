@@ -16,7 +16,7 @@ To write quality server side code, you must include automatic tests. You can lea
 
 #### 2. Databases MariaDB / MySQL
 
-You need to understand the basics of databases, like how to install, login, create new databases, and basic SQL queries. Here is a [very quick introduction to MySQL](https://www.digitalocean.com/tutorials/a-basic-mysql-tutorial) or head to [the MariaDB site for a more detailed understanding](https://mariadb.com/kb/en/mariadb/documentation/getting-started/)
+You need to understand the basics of databases, like how to install, login, create new databases, and basic SQL queries. Here is a [very quick introduction to MySQL](https://www.digitalocean.com/community/tutorials/a-basic-mysql-tutorial) or head to [the MariaDB site for a more detailed understanding](https://mariadb.com/kb/en/mariadb/documentation/getting-started/)
 
 ---
 
