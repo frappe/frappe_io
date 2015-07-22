@@ -13,7 +13,7 @@ app_version = "0.0.1"
 required_apps = ["frappe_theme"]
 
 website_context = {
-	"brand_html": "Frappé Framework",
+	"brand_html": "<img class='navbar-icon' src='/assets/frappe_theme/img/frappe-icon.svg' />Frappé Framework",
 	"top_bar_items": [
  		{"label": "Tutorial", "url": "/tutorial", "right":1},
 		{"label": "Help", "url": "/help", "right":1},
