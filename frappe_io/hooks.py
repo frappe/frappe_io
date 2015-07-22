@@ -20,6 +20,7 @@ website_context = {
 		{"label": "Reference", "url": "https://docs.frappe.io", "right":1},
 		{"label": "About", "url": "/about", "right":1}
 	],
+	"favicon": "/assets/frappe_theme/img/frappe-favicon.png",
 	"hide_login": 1
 }
 

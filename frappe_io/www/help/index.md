@@ -1,25 +1,23 @@
 # Frappe Framework Help
 
-### Useful Links
-
 #### Tutorial
 
-1. [How to create an app in Frappe](https://frappe.io/tutorials)
+- [How to create an app in Frappe](https://frappe.io/tutorials)
 
 #### Forum
 
-1. [Developer Forum](https://discuss.erpnext.com)
+- [Developer Forum](https://discuss.erpnext.com)
 
 #### Developer Reference
 
-1. [Frappe API Reference](https://docs.frappe.io)
-1. [ERPNext API Reference](https://docs.frappe.io)
+- [Frappe API Reference](https://docs.frappe.io)
+- [ERPNext API Reference](https://docs.frappe.io)
 
 
 #### Knowledge Base
 
-1. [Frappe Framework Knowledge Base](https://kb.frappe.io)
-1. [ERPNext Knowledge Base](https://kb.erpnext.com)
+- [Frappe Framework Knowledge Base](https://kb.frappe.io)
+- [ERPNext Knowledge Base](https://kb.erpnext.com)
 
 ---
 
