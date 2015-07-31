@@ -2,7 +2,7 @@
 
 #### Tutorial
 
-- [How to create an app in Frappe](https://frappe.io/tutorials)
+- [How to create an app in Frappe](https://frappe.io/tutorial)
 
 #### Forum
 
