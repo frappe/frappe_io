@@ -1,19 +1,19 @@
 # Frappe Apps
 
 Frappe Apps are Python packages which use the Frappe platform. They can live
-anywhere on the [Python 
+anywhere on the [Python
 path](https://docs.python.org/2/tutorial/modules.html#the-module-search-path)
 and must have an entry in the `apps.txt` file.
 
 
 ### Creating an app
 
-Frappe ships with a boiler plate for a new app. The command `frappe --make_app
-apps_dir` helps you start a new app by starting an interactive shell. 
+Frappe ships with a boiler plate for a new app. The command `bench make-app
+app-name` helps you start a new app by starting an interactive shell.
 
 
-	% frappe --make_app apps
-	App Name: sample_app 
+	% bench make-app sample_app
+	App Name: sample_app
 	App Title: Sample App
 	App Description: This is a sample app.
 	App Publisher: Acme Inc.
@@ -51,7 +51,7 @@ The above command would create an app with the following directory structure.
 Here, "App Icon" is a font awesome class that you can select from
 [http://fortawesome.github.io/Font-Awesome/icons/](http://fortawesome.github.io/Font-Awesome/icons/).
 
-The boiler plate contains just enough files to show your app icon on the [Desk]. 
+The boiler plate contains just enough files to show your app icon on the [Desk].
 
 ### Files in the app
 

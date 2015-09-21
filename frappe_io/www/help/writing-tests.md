@@ -8,7 +8,7 @@ Frappe provides some basic tooling to quickly write automated tests. There are s
 1. Tests must run on a site that starts with `test_`. This is to prevent accidental loss of data.
 1. Test stubs are automatically generated for new DocTypes.
 1. Frappe test runner will automatically build test records for dependant DocTypes identified by the `Link` type field (Foreign Key)
-1. Tests can be executed using `frappe --run_tests`
+1. Tests can be executed using `bench run-tests`
 1. For non-DocType tests, you can write simple unittests and prefix your file names with `test_`.
 
 ### Tests for a DocType
@@ -90,7 +90,7 @@ Frappe provides some basic tooling to quickly write automated tests. There are s
 
 To run a test for a doctype
 
-	frappe --run_tests -d [doctype]
+	bench run-tests --doctype [doctype]
 
 This function will build all the test dependencies and run your tests.
 
@@ -98,7 +98,7 @@ This function will build all the test dependencies and run your tests.
 
 To run all tests:
 
-	frappe --run_tests
+	bench run-tests
 
 ---
 

@@ -27,7 +27,7 @@ can be put in this file.
 
 Assets contain files that are required to be served for the browser client.
 These generally include *.js, *.css, *.png files. This directory is auto
-generated using the `frappe --build` command.
+generated using the `bench build` command.
 
 #### languages.txt
 
@@ -74,9 +74,9 @@ While responding to an HTTP request, a site is automatically selected based on,
 
 It is also possible to force the development server to serve a specific site by
 starting it with the following command.
-	`frappe --serve SITENAME`
+	`bench --site SITENAME serve`
 
 
 ### Adding a new site
 
-`frappe --install DBNAME SITENAME`
+`frappe new-site SITENAME`

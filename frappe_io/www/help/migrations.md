@@ -5,7 +5,7 @@ its life. It may also be required patch existing data. Frappe bundles tools to
 handle these schenarios.
 
 When you pull updates from any Frappe app (including Frappe), you should run
-`frappe --latest all` to apply schema changes and data migrations if any.
+`bench migrate` to apply schema changes and data migrations if any.
 
 ## Schema changes
 
@@ -15,7 +15,7 @@ When you add an app to a site, the DocTypes are installed using this JSON file.
 For making schema changes, it's required to set `developer_mode` in the
 configuration.
 
-On running a sync (`frappe --sync_all`), doctypes in the system are synced to
+On running a sync (`bench migrate`), doctypes in the system are synced to
 their latest version from the JSON files in the app.
 
 Note: Fields are soft deleted ie. the columns are not removed from the database
@@ -55,7 +55,7 @@ any previous states of the system.
 
 #### One off Python statements
 
-You can also add one off python statements in `patches.txt` using the syntax, 
+You can also add one off python statements in `patches.txt` using the syntax,
 	execute:{python statement}
 
 For example,
