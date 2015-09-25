@@ -42,7 +42,7 @@ Keep your fork synced with upstream repository.
   
     git pull --rebase upstream master  
 
-Keep add to the same pull request or create separate branches on your repository and create pull requests.  
+Keep adding changes to the same pull request or create separate branches on your repository and create pull requests.  
 Read more [Git Help - Open Pull request][5]  
 
   [1]:https://github.com/frappe/manual_erpnext_com/blob/master/README.md
