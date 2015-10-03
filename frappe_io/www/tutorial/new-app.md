@@ -30,13 +30,14 @@ The application will be created in a folder called `library_management` and will
 	│   │   └── __init__.py
 	│   ├── modules.txt
 	│   ├── patches.txt
-	│   └── templates
-	│       ├── __init__.py
-	│       ├── generators
-	│       │   └── __init__.py
-	│       ├── pages
-	│       │   └── __init__.py
-	│       └── statics
+	│   ├── templates
+	│   │   ├── __init__.py
+	│   │   ├── generators
+	│   │   │   └── __init__.py
+	│   │   ├── includes
+	│   │   └── pages
+	│   │       └── __init__.py
+	│   └── www
 	├── license.txt
 	├── requirements.txt
 	└── setup.py
