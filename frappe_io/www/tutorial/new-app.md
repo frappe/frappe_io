@@ -30,13 +30,14 @@ The application will be created in a folder called `library_management` and will
 	│   │   └── __init__.py
 	│   ├── modules.txt
 	│   ├── patches.txt
-	│   └── templates
-	│       ├── __init__.py
-	│       ├── generators
-	│       │   └── __init__.py
-	│       ├── pages
-	│       │   └── __init__.py
-	│       └── statics
+	│   ├── templates
+	│   │   ├── __init__.py
+	│   │   ├── generators
+	│   │   │   └── __init__.py
+	│   │   ├── includes
+	│   │   └── pages
+	│   │       └── __init__.py
+	│   └── www
 	├── license.txt
 	├── requirements.txt
 	└── setup.py
@@ -48,7 +49,7 @@ The application will be created in a folder called `library_management` and will
 1. `modules.txt` contains list of **modules** in the app. When you create a new module, it is required that you update it in this file.
 1. `patches.txt` is where migration patches are written. They are python module references using the dot notation.
 1. `templates` is the folder where web view templates are maintained. Templates for **Login** and other standard pages are bootstrapped in frappe.
-1. `generators` are where templates for models are maintained, where each model instance has a separte web route, for example a **Blog Post** where each post has its unique web url. In Frappe, the templating engine used is Jinja2
+1. `generators` are where templates for models are maintained, where each model instance has a separate web route, for example a **Blog Post** where each post has its unique web url. In Frappe, the templating engine used is Jinja2
 1. `pages` is where single route templates are maintained. For example for a "/blog" type of page.
 
 {next}

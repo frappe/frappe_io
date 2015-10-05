@@ -28,4 +28,7 @@ After saving the DocTypes, check that the model `.json` and `.py` files are crea
 	│   │           ├── library_transaction.json
 	│   │           └── library_transaction.py
 
+
+Note: If there is no files generated, verify that the **custom** field of your doctype is left unchecked.
+
 {next}

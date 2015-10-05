@@ -41,6 +41,10 @@ We can add the following fields:
 1. Image (Attach)
 1. Image View (Image)
 
+
+Make sure the **custom** field is unchecked before saving. Or your doctype won't be exported. **custom** DocType are DocType specific to your installation of ERPNext: they will be available in your database but are not generic enough to be use elsewhere.
+
+
 #### Add Permissions
 
 After adding the fields, add Permissions. For now, let us give Read, Write, Create, Delete and Report access to **Librarian**. Frappe has a finely grained Role based permission model. You can also change permissions later using the **Role Permissions Manager** from **Setup**.
