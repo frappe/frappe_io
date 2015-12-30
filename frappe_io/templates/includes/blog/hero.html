@@ -1,0 +1,13 @@
+{% if not (frappe.local.form_dict.txt or frappe.local.form_dict.by) %}
+<div class="container">
+	<div class="row hero" style="border-bottom: none; margin-top: 0px;">
+	    <div class="col-sm-12">
+	        <img class="erp-hero" src="/assets/frappe_theme/img/bulb.svg" style="width: 200px;">
+	    </div>
+	    <div class="col-sm-12 hero-content" style="margin-top: -50px;">
+	        <h1>Frappé Blog</h1>
+	        <p>A blog about ideas, inspiration and intent</p>
+	    </div>
+	</div>
+</div>
+{% endif %}

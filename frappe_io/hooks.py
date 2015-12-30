@@ -15,10 +15,9 @@ required_apps = ["frappe_theme"]
 website_context = {
 	"brand_html": "<img class='navbar-icon' src='/assets/frappe_theme/img/frappe-icon.svg' />Frappé Framework",
 	"top_bar_items": [
- 		{"label": "Tutorial", "url": "https://frappe.github.io/frappe/user/tutorial", "right":1},
-		{"label": "Help", "url": "https://frappe.github.io/frappe/user/guides/basics", "right":1},
-		{"label": "Reference", "url": "https://frappe.github.io/frappe/current", "right":1},
-		{"label": "About", "url": "/about", "right":1}
+		{"label": "Documentation", "url": "https://frappe.github.io/frappe/", "right":1},
+		{"label": "About", "url": "/about", "right":1},
+		{"label": "Blog", "url":"/blog", "right": 1}
 	],
 	"favicon": "/assets/frappe_theme/img/frappe-favicon.png",
 	"hide_login": 1

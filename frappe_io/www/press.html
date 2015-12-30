@@ -1,0 +1,61 @@
+<h1>Press</h1>
+
+<!-- no-sidebar -->
+
+{% macro coverage(link, title, image, date, description) %}
+<div class="media frappe-coverage">
+	<a class="pull-left" href="{{ link }}" target="_blank">
+		<img class="media-object" src="{{ image }}">
+	</a>
+	<div class="media-body">
+		<a href="{{ link }}" target="_blank" class="no-decoration">
+			<h4 class="media-heading">{{ title }}</h4></a>
+		<p class="text-muted">{{ date }}</p>
+		<p>{{ description }}</p>
+		<p><a href="{{ link }}" target="_blank">Read more</a></p>
+	</div>
+</div>
+{% endmacro %}
+
+<p class="lead">ERPNext related converage in blogs, magazines, websites</p>
+
+{{ coverage("http://blog.capterra.com/free-open-source-erp-software/",
+	"The Top 5 Free, Open Source ERP Software",
+	"/assets/team_frappe_io/images/press/capterra-blog.png",
+	"April 2015",
+	"ERPNext’s simplicity means that it’s easy to set up, using simple forms to enter information about your business and walking you through the whole process in typical setup wizard style. It’s a feeling that quickly becomes familiar as the ERP is clean and user friendly.")
+}}
+
+{{ coverage("https://opensource.com/resources/top-4-open-source-erp-systems",
+	"Top 4 Open Source ERP Systems",
+	"/assets/team_frappe_io/images/press/open-source-com.png",
+	"March 2015",
+	"ERPNext was built for small and medium-sized businesses. It includes modules for accounting, managing inventory, sales, purchase, and project management. The applications that make up ERPNext are form-driven—you fill information in a set of fields and let the application do the rest. The whole suite is easy to use.")
+}}
+
+{{ coverage("http://www.infoworld.com/article/2688073/applications/applications-164721-bossie-awards-2014-the-best-open-source-applications.html", "BOSSIE Award Winner: Best Open Source of 2014", "/assets/team_frappe_io/images/press/bossie-2014.jpg", "October 2014", "The past year saw ERPNext move to a new Web framework, called Frappe, which supports plug-ins and extensions through a new API. In addition to the framework upgrade, the platform received a lot of usability improvements and bug fixes. The list of features is impressive and continues to grow.")
+}}
+
+{{ coverage("http://www.themukt.com/2014/09/19/india-yet-catch-foss-says-rushabh-mehta-erpnext/", "India yet to catch up with FOSS, says Rushabh Mehta of ERPNext", "/assets/team_frappe_io/images/press/the-mukt-340.png", "September 2014", "We got a chance to interact with Rushabh Mehta, the founder of Frappe Technologies, a company based in Mumbai, India. ERPNext is the major product of the company. It is a free and Open Source web based ERP (Enterprise Resource Planning) solution for small and medium sized businesses with its presence in more than 60 countries.") }}
+
+{{ coverage("http://pn.ispirt.in/bootstrapping-is-tough-most-of-the-time-things-take-three-times-longer-than-what-we-think-the-only-way-to-enjoy-this-journey-is-to-absolutely-love-what-you-do-that-is-what-sustains-you/", "Interview on the Bootstrapping Experience", "/assets/team_frappe_io/images/press/product-nation.png", "September 2014", "Bootstrapping is tough. Most of the time things take three times longer than what we think. The only way to enjoy this journey is to absolutely love what you do. That is what sustains you.") }}
+
+{{ coverage("http://www.crn.in/news/software/2014/04/02/web-notes-technologies-counts-on-low-cost-erp", "CRN", "/assets/team_frappe_io/images/press/crn-logo.gif", "April 2014", "The Mumbai-based solutions provider is offering its ERPNext built on open source platform at as low as $6 per user per year for a company having 100 user.") }}
+
+{{ coverage("http://yourstory.com/2013/11/erpnext-open-source-erp/", "YourStory.com", "/assets/team_frappe_io/images/press/your-story.png", "November 2013", "The ERPNext story covered by YourStory.com, gives a quick overview of how ERPNext started and where it is headed.") }}
+
+{{ coverage("http://www.infoworld.com/slideshow/119652/bossie-awards-2013-the-best-open-source-applications-226975#slide15", "BOSSIE Award Winner: Best Open Source of 2013", "/assets/team_frappe_io/images/press/bossie.jpeg", "September 2013", "ERPNext is included in the winner's list of the best open source softwares of 2013. ERPNext now rubs shoulders for with other popular ERP / CRM applications like SugarCRM, OpenERP and others.") }}
+
+{{ coverage("http://www.expresscomputeronline.com/case-study/1085-a-walk-through-the-integrated-cloud", "Express Computer", "/assets/team_frappe_io/images/press/express-computer.png", "December 2012", "Express Computer does a full length Case Study on Cloud ERPs with ERPNext and Neural Integrated Systems.") }}
+
+{{ coverage("http://doeswhat.com/2012/09/03/interview-with-rushabh-mehta-erpnext/", "Does What", "/assets/team_frappe_io/images/press/doeswhat.gif", "September 2012", "Does what is a site that covers Interviews with tech founders and CEOs. ERPNext founder, Rushabh Mehta was recently featured.") }}
+
+{{ coverage("http://startupcentral.in/2012/08/quick-five-erpnext-on-its-product-upgrade-and-sales-push/", "Startup Central", "/assets/team_frappe_io/images/press/startup-central.png", "August 2012", "Starup Central covers the tech and funding scene in India and Singapore. This article features an interview with Rushabh.") }}
+
+{{ coverage("http://www.expresscomputeronline.com/index.php/features/829-saas-for-small-manufacturers", "Express Computer", "/assets/team_frappe_io/images/press/express-computer.png", "August 2012", "This article in Express Computer covers a free wheeling interview with ERPNext customer Aditya Duggal (of Rohit Industries Group), making a strong case for SAAS (Software-as-a-Service) ERPs.") }}
+
+{{ coverage("http://www.informationweek.in/informationweek/news-analysis/177110/india-rise-emergence-cloud-startups/page/2", "Information Week", "/assets/team_frappe_io/images/press/information-week.jpg", "June 2012", "Information week convers some of the emerging cloud based startups in India and ERPNext is the second on the list.") }}
+
+{{ coverage("http://web.appstorm.net/reviews/office/erpnext-complete-web-based-company-management/", "App Storm", "/assets/team_frappe_io/images/press/appstorm.jpg", "May 2012", "App storm is a resource site to learn about web applications and their reviews. App Storm gives ERPNext 8/10 in their independant review.") }}
+
+{{ coverage("http://www.pluggd.in/open-source-erp-software-erpnext-297/", "NextBigWhat", "/assets/team_frappe_io/images/press/pluggdin.png", "September 2012", "PluggdIn covers the tech and startup scene in India and featured a guest article by Rushabh about the benefits of Open Sourcing.") }}
