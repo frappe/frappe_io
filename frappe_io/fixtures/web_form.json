@@ -1,0 +1,90 @@
+[
+ {
+  "allow_comments": 0, 
+  "allow_delete": 0, 
+  "allow_edit": 1, 
+  "allow_multiple": 0, 
+  "breadcrumbs": null, 
+  "doc_type": "Frappe Job Applicant", 
+  "docstatus": 0, 
+  "doctype": "Web Form", 
+  "introduction_text": "Thanks for your interest. Please fill the following fields to the best of your ability.", 
+  "login_required": 0, 
+  "modified": "2015-03-11 17:12:23.954542", 
+  "name": "join-us", 
+  "page_name": "join-us", 
+  "published": 1, 
+  "success_message": "Thank you for applying. You should hear back from us soon!", 
+  "success_url": "/", 
+  "title": "Join Us", 
+  "web_form_fields": [
+   {
+    "default": null, 
+    "description": null, 
+    "fieldname": "full_name", 
+    "fieldtype": "Data", 
+    "hidden": 0, 
+    "label": "Full Name", 
+    "options": null, 
+    "read_only": 0, 
+    "reqd": 1
+   }, 
+   {
+    "default": null, 
+    "description": null, 
+    "fieldname": "email", 
+    "fieldtype": "Data", 
+    "hidden": 0, 
+    "label": "Email", 
+    "options": "Email", 
+    "read_only": 0, 
+    "reqd": 1
+   }, 
+   {
+    "default": null, 
+    "description": "PDF, personal website, blog works best.", 
+    "fieldname": "resume_link", 
+    "fieldtype": "Data", 
+    "hidden": 0, 
+    "label": "Resume Link", 
+    "options": null, 
+    "read_only": 0, 
+    "reqd": 1
+   }, 
+   {
+    "default": null, 
+    "description": null, 
+    "fieldname": "passion", 
+    "fieldtype": "Text", 
+    "hidden": 0, 
+    "label": "What are you passionate about?", 
+    "options": null, 
+    "read_only": 0, 
+    "reqd": 1
+   }, 
+   {
+    "default": null, 
+    "description": null, 
+    "fieldname": "achievement", 
+    "fieldtype": "Text", 
+    "hidden": 0, 
+    "label": "What is the coolest thing you have done?", 
+    "options": null, 
+    "read_only": 0, 
+    "reqd": 1
+   }, 
+   {
+    "default": null, 
+    "description": null, 
+    "fieldname": "reason", 
+    "fieldtype": "Text", 
+    "hidden": 0, 
+    "label": "Why do you want to join us?", 
+    "options": null, 
+    "read_only": 0, 
+    "reqd": 1
+   }
+  ], 
+  "web_page_link_text": null
+ }
+]

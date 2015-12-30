@@ -12,10 +12,14 @@ app_version = "0.0.1"
 
 required_apps = ["frappe_theme"]
 
+fixtures = ["Contact Us Settings", "Web Form", "Email Alert"]
+
 website_context = {
-	"brand_html": "<img class='navbar-icon' src='/assets/frappe_theme/img/frappe-icon.svg' />Frappé",
+	"brand_html": "<img class='navbar-icon' src='/assets/frappe_theme/img/frappe-bird-grey.svg' />Frappé",
 	"top_bar_items": [
 		{"label": "Documentation", "url": "https://frappe.github.io/frappe/", "right":1},
+		{"label": "Forum", "url":"https://discuss.erpnext.com", "right": 1},
+		{"label": "GitHub", "url":"https://github.com/frappe/erpnext", "right": 1},
 		{"label": "About", "url": "/about", "right":1},
 		{"label": "Blog", "url":"/blog", "right": 1}
 	],
@@ -119,5 +123,3 @@ website_context = {
 # override_whitelisted_methods = {
 # 	"frappe.desk.doctype.event.event.get_events": "frappe_io.event.get_events"
 # }
-
-fixtures = ["Contact Us Settings"]

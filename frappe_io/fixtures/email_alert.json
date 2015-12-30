@@ -1,0 +1,25 @@
+[
+ {
+  "attach_print": 1, 
+  "condition": null, 
+  "date_changed": null, 
+  "days_in_advance": 0, 
+  "docstatus": 0, 
+  "doctype": "Email Alert", 
+  "document_type": "Frappe Job Applicant", 
+  "enabled": 1, 
+  "event": "New", 
+  "message": "New Job Applicant. Please see attachment.", 
+  "modified": "2015-03-11 17:13:44.137321", 
+  "name": "5c24af3", 
+  "recipients": [
+   {
+    "cc": "team@frappe.io", 
+    "condition": null, 
+    "email_by_document_field": null
+   }
+  ], 
+  "subject": "New Job Applicant", 
+  "value_changed": null
+ }
+]
