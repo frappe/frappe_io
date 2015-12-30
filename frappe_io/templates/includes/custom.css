@@ -30,7 +30,7 @@ article table {
 	border-top: 1px solid #d1d8dd;
 }
 
-.page-container[data-doctype="Blog Post"] {
+.page-container[data-doctype="Blog Post"], .page-container[data-path="blog"] {
 	max-width: 660px;
 	margin: auto;
 	padding-top: 60px;
