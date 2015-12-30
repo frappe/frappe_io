@@ -17,9 +17,9 @@ fixtures = ["Contact Us Settings", "Web Form", "Email Alert"]
 website_context = {
 	"brand_html": "<img class='navbar-icon' src='/assets/frappe_theme/img/frappe-bird-grey.svg' />Frappé",
 	"top_bar_items": [
-		{"label": "Documentation", "url": "https://frappe.github.io/frappe/", "right":1},
-		{"label": "Forum", "url":"https://discuss.erpnext.com", "right": 1},
-		{"label": "GitHub", "url":"https://github.com/frappe/erpnext", "right": 1},
+		{"label": "Documentation", "url": "https://frappe.github.io/frappe/", "right":1, "target": "_blank"},
+		{"label": "Forum", "url":"https://discuss.erpnext.com", "right": 1, "target": "_blank"},
+		{"label": "GitHub", "url":"https://github.com/frappe/erpnext", "right": 1, "target": "_blank"},
 		{"label": "About", "url": "/about", "right":1},
 		{"label": "Blog", "url":"/blog", "right": 1}
 	],
