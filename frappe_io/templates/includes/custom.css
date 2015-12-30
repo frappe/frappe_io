@@ -17,3 +17,46 @@ article table {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 14px;
 }
+
+/* blog */
+
+.page-container[data-path="blog"]
+.web-list-item {
+	padding: 15px 0px !important;
+}
+
+.page-container[data-path="blog"]
+.web-list-item:first-child {
+	border-top: 1px solid #d1d8dd;
+}
+
+.page-container[data-doctype="Blog Post"] {
+	max-width: 660px;
+	margin: auto;
+	padding-top: 60px;
+}
+
+@media (max-width: 767px) {
+	.page-container[data-doctype="Blog Post"] {
+		padding-top: 0px;
+	}
+}
+
+.page-container[data-doctype="Blog Post"] .page-header-block,
+.blog-info {
+	text-align: center;
+}
+
+.blog-text {
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+figcaption {
+	text-align: center;
+}
+
+.page-container[data-path="blog"]
+.page-content-wrapper > .row:first-of-type > .col-sm-8 {
+	width: 100%;
+}
