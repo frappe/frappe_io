@@ -60,3 +60,30 @@ figcaption {
 .page-content-wrapper > .row:first-of-type > .col-sm-8 {
 	width: 100%;
 }
+
+#page-story .page-content-wrapper,
+#page-jobs .page-content-wrapper {
+	max-width: 660px;
+	margin: auto;
+
+	font-size: 18px;
+	line-height: 1.5;
+
+}
+
+.team-description img {
+	border-radius: 3px;
+	width: 100%;
+	max-width: 300px;
+}
+
+@media (max-width: 767px) {
+	.contact .address {
+		padding-top: 70px;
+	}
+
+	.team-description .tiny-content {
+		margin-bottom: 80px;
+	}
+}
+

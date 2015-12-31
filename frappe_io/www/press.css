@@ -1,0 +1,14 @@
+.frappe-coverage .media-object {
+	width: 150px;
+}
+
+.frappe-coverage {
+	border-bottom: 1px solid #d1d8dd;
+	padding: 15px;
+	margin: 15px -15px;
+}
+
+.frappe-coverage:last-child {
+	border-bottom: none;
+}
+
