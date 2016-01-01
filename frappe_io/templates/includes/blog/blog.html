@@ -1,3 +1,6 @@
+{% extends "frappe/templates/includes/blog/blog.html" %}
+
+{% block hero %}
 {% if not (frappe.local.form_dict.txt or frappe.local.form_dict.by) %}
 <div class="container">
 	<div class="row hero" style="border-bottom: none; margin-top: 0px;">
@@ -11,3 +14,4 @@
 	</div>
 </div>
 {% endif %}
+{% endblock %}
