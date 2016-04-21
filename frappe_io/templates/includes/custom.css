@@ -20,16 +20,6 @@ article table {
 
 /* blog */
 
-.page-container[data-path="blog"]
-.web-list-item {
-	padding: 15px 0px !important;
-}
-
-.page-container[data-path="blog"]
-.web-list-item:first-child {
-	border-top: 1px solid #d1d8dd;
-}
-
 .page-container[data-doctype="Blog Post"], .page-container[data-path="blog"] {
 	max-width: 660px;
 	margin: auto;
@@ -50,6 +40,23 @@ article table {
 .blog-text {
 	font-size: 18px;
 	line-height: 1.5;
+}
+
+body[data-path^="blog"] .page-head {
+	display: none;
+}
+
+body[data-path="blog"] .content-block {
+	border-top: 1px solid #d1d8dd;
+}
+
+body[data-path="blog"] .web-list-item .blog-header {
+	font-size: 1.6em;
+}
+
+.content-block {
+	padding: 15px;
+	padding-top: 0px;
 }
 
 figcaption {
