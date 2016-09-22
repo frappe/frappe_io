@@ -6,4 +6,8 @@ import frappe
 from frappe.model.document import Document
 
 class FrappeJobApplicant(Document):
-	pass
+	def before_insert(self):
+		'''don't accept if applying in 30 days'''
+		if frappe.db.sql('''select name from `tabFrappe Job Applicant`
+			where email=%s and creation > adddate(curdate(), interval -30 day)''', self.email):
+			frappe.throw('We have already recived your application. You can apply again after 30 days!')
