@@ -28,10 +28,46 @@
     </div>
 </div>
 
-
 <div class="group">
+    <div class="row hero">
+	    <div class="col-sm-12 hero-content">
+	        <h1>Team Frappé</h1>
+	        <p>We love to build new things and break them apart, and build them again</p>
+	    </div>
+		<div class='col-sm-12' style='margin-top: 30px;'>
+			<img src="/assets/frappe_io/images/team/team-1.jpg">
+		</div>
+		<div class='col-sm-6' style='margin-top: 30px;'>
+			<img src="/assets/frappe_io/images/team/team-2.jpg">
+		</div>
+		<div class='col-sm-6' style='margin-top: 30px;'>
+			<img src="/assets/frappe_io/images/team/team-3.jpg">
+		</div>
+	</div>
     <div class="row section">
-	    <div class="team-description clearfix">
+		<div class="team-description clearfix">
+			{% for m in team %}
+			<div class="col-sm-3 tiny-content">
+				<img src="/assets/frappe_io/images/team/{{ m.name.split()[0].lower() }}.jpg">
+				<a href="https://frappe.io/blog?blogger={{ m.blogger }}">
+					<h1>{{ m.name }}</h1>
+				</a>
+				<p>{{ m.role }}</p>
+				{% if m.twitter %}
+				<p><a href="https://twitter.com/{{ m.twitter }}">@{{ m.twitter }}</a></p>
+				{% elif m.linkedin %}
+				<p><a href="{{ m.linkedin }}">LinkedIn Profile</a></p>
+				{% endif %}
+			</div>
+			{% endfor %}
+	        <div class="col-sm-12 col-xs-12 text-center">
+				<div class="tiny-content">
+		            <h1><em>We're hiring!</em></h1>
+		            <p><a href=/jobs>Want to join us?</a></p>
+				</div>
+	        </div>
+		</div>
+	    <!-- <div class="team-description clearfix">
 	        <div class="col-sm-3">
 				<img src="/assets/frappe_io/images/team/rushabh.jpg">
 				<div class="tiny-content">
@@ -120,13 +156,7 @@
 					<p>Administration</p>
 				</div>
 	        </div>
-	        <div class="col-sm-12 col-xs-12 text-center">
-				<div class="tiny-content">
-		            <h1><em>We're hiring!</em></h1>
-		            <p><a href=/jobs>Want to join us?</a></p>
-				</div>
-	        </div>
-		</div>
+		</div> -->
 		<div class="row">
 			<div class="col-sm-12 text-center">
 				<a class="large blue button" href="https://twitter.com/erpnext" target="_blank">
