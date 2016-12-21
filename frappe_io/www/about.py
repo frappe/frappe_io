@@ -27,12 +27,6 @@ def get_context(context):
 			'blogger': 'umair'
 		},
 		{
-			'name': 'Shreyas Patil',
-			'role': 'Developer',
-			'twitter': 'shreyaspatil87',
-			'blogger': 'shreyas'
-		},
-		{
 			'name': 'Kanchan Chauhan',
 			'role': 'Developer',
 			'linkedin': 'https://in.linkedin.com/in/kanchanchauhan1984',
