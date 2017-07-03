@@ -26,12 +26,12 @@ def get_context(context):
 			'twitter': 'umairsTWT',
 			'blogger': 'umair'
 		},
-		{
-			'name': 'Kanchan Chauhan',
-			'role': 'Developer',
-			'linkedin': 'https://in.linkedin.com/in/kanchanchauhan1984',
-			'blogger': 'kanchan'
-		},
+		# {
+		# 	'name': 'Kanchan Chauhan',
+		# 	'role': 'Developer',
+		# 	'linkedin': 'https://in.linkedin.com/in/kanchanchauhan1984',
+		# 	'blogger': 'kanchan'
+		# },
 		{
 			'name': 'Saurabh Palande',
 			'role': 'Developer',
@@ -44,12 +44,12 @@ def get_context(context):
 			'twitter': 'rohitw1991',
 			'blogger': 'rohit'
 		},
-		{
-			'name': 'Neil Lasrado',
-			'role': 'Developer',
-			'twitter': 'neillasrado',
-			'blogger': 'neil'
-		},
+		# {
+		# 	'name': 'Neil Lasrado',
+		# 	'role': 'Developer',
+		# 	'twitter': 'neillasrado',
+		# 	'blogger': 'neil'
+		# },
 		{
 			'name': 'Faris Ansari',
 			'role': 'Developer',
