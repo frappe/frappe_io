@@ -60,13 +60,31 @@ def get_context(context):
 			'name': 'Arundhati Sharma',
 			'role': 'Support',
 			'blogger': 'arundhati',
-			'linkedin': 'https://in.linkedin.com/in/arundhati-sharma-6311a721'
+			'medium': 'mrs.arusharma'
 		},
 		{
 			'name': 'Prakash Hodage',
 			'role': 'Admin + Accounts',
 			'blogger': 'prakash',
 			'linkedin': 'https://in.linkedin.com/in/prakash-hodage-6702b231'
+		},
+		{
+			'name': 'Makarand Bauskar',
+			'role': 'Developer',
+			'blogger': 'makarand',
+			'medium': 'mbauskar'
+		},
+		{
+			'name': 'Prateeksha Singh',
+			'role': 'Developer',
+			'blogger': 'prateeksha',
+			'medium': 'pratu16x7'
+		},
+		{
+			'name': 'Manas Solanki',
+			'role': 'Developer',
+			'blogger': 'manas',
+			'medium': 'manassolanki'
 		},
 
 

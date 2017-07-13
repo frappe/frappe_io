@@ -54,9 +54,14 @@
 				</a>
 				<p>{{ m.role }}</p>
 				{% if m.twitter %}
-				<p><a href="https://twitter.com/{{ m.twitter }}">@{{ m.twitter }}</a></p>
+				<p><a href="https://twitter.com/{{ m.twitter }}" target="_blank">
+					@{{ m.twitter }}</a></p>
 				{% elif m.linkedin %}
-				<p><a href="{{ m.linkedin }}">LinkedIn Profile</a></p>
+				<p><a href="{{ m.linkedin }}" target="_blank">
+					LinkedIn Profile</a></p>
+				{% elif m.medium %}
+				<p><a href="https://medium.com/@{{ m.medium }}" target="_blank">
+					M@{{ m.medium }}</a></p>
 				{% endif %}
 			</div>
 			{% endfor %}
@@ -67,96 +72,6 @@
 				</div>
 	        </div>
 		</div>
-	    <!-- <div class="team-description clearfix">
-	        <div class="col-sm-3">
-				<img src="/assets/frappe_io/images/team/rushabh.jpg">
-				<div class="tiny-content">
-		            <h1>Rushabh Mehta</h1>
-		            <p><a href="https://twitter.com/rushabh_mehta">@rushabh_mehta</a></p>
-					<p>Developer</p>
-				</div>
-	        </div>
-	        <div class="col-sm-3">
-				<img src="/assets/frappe_io/images/team/nabin.jpg">
-				<div class="tiny-content">
-		            <h1>Nabin Hait</h1>
-		            <p><a href="https://twitter.com/nabinhait">@nabinhait</a></p>
-					<p>Developer</p>
-				</div>
-	        </div>
-	        <div class="col-sm-3">
-				<img src="/assets/frappe_io/images/team/anand.jpg">
-				<div class="tiny-content">
-		            <h1>Anand Doshi</h1>
-		            <p><a href="https://twitter.com/anandpdoshi">@anandpdoshi</a></p>
-					<p>Developer</p>
-				</div>
-	        </div>
-	        <div class="col-sm-3">
-				<img src="/assets/frappe_io/images/team/umair.jpg">
-				<div class="tiny-content">
-		            <h1>Umair Sayyed</h1>
-		            <p><a href="https://twitter.com/umairsTWT">@umairsTWT</a></p>
-					<p>Customer Support</p>
-				</div>
-	        </div>
-	        <div class="col-sm-3">
-				<img src="/assets/frappe_io/images/team/shreyas.jpg">
-				<div class="tiny-content">
-		            <h1>Shreyas Patil</h1>
-		            <p><a href="https://twitter.com/shreyaspatil87">@shreyaspatil87</a></p>
-					<p>Developer</p>
-				</div>
-	        </div>
-	        <div class="col-sm-3">
-				<img src="/assets/frappe_io/images/team/kanchan.jpg">
-				<div class="tiny-content">
-		            <h1>Kanchan Chauhan</h1>
-		            <p><a href="https://medium.com/@angel143.dr">@angel143.dr</a></p>
-					<p>Developer</p>
-				</div>
-	        </div>
-	        <div class="col-sm-3">
-				<img src="/assets/frappe_io/images/team/neil.jpg">
-				<div class="tiny-content">
-		            <h1>Neil Lasrado</h1>
-		            <p><a href="https://twitter.com/neillasrado">@neillasrado</a></p>
-					<p>Developer</p>
-				</div>
-	        </div>
-	        <div class="col-sm-3">
-				<img src="/assets/frappe_io/images/team/valmik.jpg">
-				<div class="tiny-content">
-		            <h1>Valmik Jangla</h1>
-		            <p><a href="https://twitter.com/vjfalk">@vjfalk</a></p>
-					<p>Developer</p>
-				</div>
-	        </div>
-	        <div class="col-sm-3">
-				<img src="/assets/frappe_io/images/team/saurabh.jpg">
-				<div class="tiny-content">
-		            <h1>Saurabh Palande</h1>
-		            <p><a href="https://twitter.com/saurabh6790">@saurabh6790</a></p>
-					<p>Developer</p>
-				</div>
-	        </div>
-	        <div class="col-sm-3">
-				<img src="/assets/frappe_io/images/team/rohit.jpg">
-				<div class="tiny-content">
-		            <h1>Rohit Waghchaure</h1>
-		            <p><a href="https://twitter.com/rohitw1991">@rohitw1991</a></p>
-					<p>Developer</p>
-				</div>
-	        </div>
-	        <div class="col-sm-3">
-				<img src="/assets/frappe_io/images/team/prakash.jpg">
-				<div class="tiny-content">
-		            <h1>Prakash Hodage</h1>
-					<p><a href="https://twitter.com/prakashodage">@prakashodage</a></p>
-					<p>Administration</p>
-				</div>
-	        </div>
-		</div> -->
 		<div class="row">
 			<div class="col-sm-12 text-center">
 				<a class="large blue button" href="https://twitter.com/erpnext" target="_blank">
@@ -166,7 +81,7 @@
 			<div class="tiny-content text-center" style="margin-top: 60px;">
 	            <p><a href=/inspiration>What Inspires Us</a></p>
 	            <p><a href=/press>In the Press</a></p>
-	            <p><a href=/press>Blog</a></p>
+	            <p><a href=/blog>Blog</a></p>
 			</div>
 		</div>
     </div>
