@@ -1,0 +1,296 @@
+<!-- title: frappe.modules.utils -->
+<!-- add-breadcrumbs --><h1>frappe.modules.utils</h1>
+<div class="dev-header">
+
+<a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
+	Version 8.6.0</a>
+
+
+	<a class="btn btn-default btn-sm" href="https://github.com/frappe/frappe/blob/develop/frappe/modules/utils.py"
+		target="_blank" style="margin-left: 10px; margin-bottom: 10px;"><i class="octicon octicon-mark-github"></i> Source</a>
+
+</div>
+
+
+
+
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/frappe.modules.utils.export_customizations</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="frappe.modules.utils.export_customizations" href="#frappe.modules.utils.export_customizations" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.modules.utils.<b>export_customizations</b>
+        <i class="text-muted">(module, doctype, sync_on_migrate=0, with_permissions=0)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Export Custom Field and Property Setter for the current document to the app folder.
+        This will be synced with bench migrate</p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.modules.utils.export_doc" href="#frappe.modules.utils.export_doc" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.modules.utils.<b>export_doc</b>
+        <i class="text-muted">(doctype, name, module=None)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Write a doc to standard path.</p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.modules.utils.export_module_json" href="#frappe.modules.utils.export_module_json" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.modules.utils.<b>export_module_json</b>
+        <i class="text-muted">(doc, is_standard, module)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Make a folder for the given doc and add its json file (make it a standard
+        object that will be synced)</p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.modules.utils.get_app_publisher" href="#frappe.modules.utils.get_app_publisher" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.modules.utils.<b>get_app_publisher</b>
+        <i class="text-muted">(module)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.modules.utils.get_doc_module" href="#frappe.modules.utils.get_doc_module" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.modules.utils.<b>get_doc_module</b>
+        <i class="text-muted">(module, doctype, name)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Get custom module for given document</p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.modules.utils.get_doc_path" href="#frappe.modules.utils.get_doc_path" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.modules.utils.<b>get_doc_path</b>
+        <i class="text-muted">(module, doctype, name)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.modules.utils.get_doctype_module" href="#frappe.modules.utils.get_doctype_module" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.modules.utils.<b>get_doctype_module</b>
+        <i class="text-muted">(doctype)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Returns <strong>Module Def</strong> name of given doctype.</p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.modules.utils.get_module_app" href="#frappe.modules.utils.get_module_app" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.modules.utils.<b>get_module_app</b>
+        <i class="text-muted">(module)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.modules.utils.get_module_name" href="#frappe.modules.utils.get_module_name" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.modules.utils.<b>get_module_name</b>
+        <i class="text-muted">(doctype, module, prefix=, suffix=, app=None)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.modules.utils.get_module_path" href="#frappe.modules.utils.get_module_path" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.modules.utils.<b>get_module_path</b>
+        <i class="text-muted">(module)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Returns path of the given module</p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.modules.utils.load_doctype_module" href="#frappe.modules.utils.load_doctype_module" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.modules.utils.<b>load_doctype_module</b>
+        <i class="text-muted">(doctype, module=None, prefix=, suffix=)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Returns the module object for given doctype.</p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.modules.utils.make_boilerplate" href="#frappe.modules.utils.make_boilerplate" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.modules.utils.<b>make_boilerplate</b>
+        <i class="text-muted">(template, doc, opts=None)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.modules.utils.reload_doc" href="#frappe.modules.utils.reload_doc" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.modules.utils.<b>reload_doc</b>
+        <i class="text-muted">(module, dt=None, dn=None, force=False, reset_permissions=False)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.modules.utils.scrub" href="#frappe.modules.utils.scrub" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.modules.utils.<b>scrub</b>
+        <i class="text-muted">(txt)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.modules.utils.scrub_dt_dn" href="#frappe.modules.utils.scrub_dt_dn" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.modules.utils.<b>scrub_dt_dn</b>
+        <i class="text-muted">(dt, dn)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Returns in lowercase and code friendly names of doctype and name for certain types</p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.modules.utils.sync_customizations" href="#frappe.modules.utils.sync_customizations" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.modules.utils.<b>sync_customizations</b>
+        <i class="text-muted">(app=None)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Sync custom fields and property setters from custom folder in each app module</p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.modules.utils.sync_customizations_for_doctype" href="#frappe.modules.utils.sync_customizations_for_doctype" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.modules.utils.<b>sync_customizations_for_doctype</b>
+        <i class="text-muted">(data)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Sync doctype customzations for a particular data set</p>
+</div>
+	<br>
+
+	
+
+
+
+<!-- autodoc -->

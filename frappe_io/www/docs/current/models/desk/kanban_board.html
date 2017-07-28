@@ -1,0 +1,383 @@
+<!-- title: Kanban Board -->
+<!-- add-breadcrumbs -->
+
+
+
+
+
+<h1>Kanban Board</h1>
+<div class="dev-header">
+
+<a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
+	Version 8.6.0</a>
+
+
+	<a class="btn btn-default btn-sm" href="https://github.com/frappe/frappe/tree/develop/frappe/desk/doctype/kanban_board"
+		target="_blank" style="margin-left: 10px; margin-bottom: 10px;"><i class="octicon octicon-mark-github"></i> Source</a>
+
+</div>
+
+
+
+
+
+    <p><b>Table Name:</b> <code>tabKanban Board</code></p>
+
+
+
+
+<h3>Fields</h3>
+
+<table class="table table-bordered docfields">
+    <thead>
+        <tr>
+            <th style="width: 5%">Sr</th>
+            <th style="width: 25%">Fieldname</th>
+            <th style="width: 20%">Type</th>
+            <th style="width: 25%">Label</th>
+            <th style="width: 25%">Options</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        <tr >
+            <td>1</td>
+            <td class="danger" title="Mandatory"><code>kanban_board_name</code></td>
+            <td >
+                Data</td>
+            <td >
+                Kanban Board Name
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>2</td>
+            <td class="danger" title="Mandatory"><code>reference_doctype</code></td>
+            <td >
+                Link</td>
+            <td >
+                Reference DocType
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="{{ docs_base_url }}/current/models/core/doctype">DocType</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>3</td>
+            <td class="danger" title="Mandatory"><code>field_name</code></td>
+            <td >
+                Select</td>
+            <td >
+                Field Name
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr class="info">
+            <td>4</td>
+            <td ><code>section_break_3</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>5</td>
+            <td ><code>columns</code></td>
+            <td >
+                Table</td>
+            <td >
+                Columns
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="{{ docs_base_url }}/current/models/desk/kanban_board_column">Kanban Board Column</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>6</td>
+            <td ><code>filters</code></td>
+            <td >
+                Text</td>
+            <td class="text-muted" title="Hidden">
+                Filters
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>7</td>
+            <td ><code>private</code></td>
+            <td >
+                Check</td>
+            <td >
+                Private
+                
+            </td>
+            <td></td>
+        </tr>
+        
+    </tbody>
+</table>
+
+
+    <hr>
+    <h3>Controller</h3>
+    <h4>frappe.desk.doctype.kanban_board.kanban_board</h4>
+
+    
+
+
+
+	
+        
+	<h3 style="font-weight: normal;">Class <b>KanbanBoard</b></h3>
+    
+    <p style="padding-left: 30px;"><i>Inherits from frappe.model.document.Document</i></h4>
+    
+    <div class="docs-attr-desc"><p></p>
+</div>
+    <div style="padding-left: 30px;">
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="validate" href="#validate" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>validate</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="validate_column_name" href="#validate_column_name" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>validate_column_name</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+    </div>
+    <hr>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/frappe.desk.doctype.kanban_board.kanban_board.add_column</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="frappe.desk.doctype.kanban_board.kanban_board.add_column" href="#frappe.desk.doctype.kanban_board.kanban_board.add_column" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.desk.doctype.kanban_board.kanban_board.<b>add_column</b>
+        <i class="text-muted">(board_name, column_title)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Adds new column to Kanban Board</p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/frappe.desk.doctype.kanban_board.kanban_board.archive_restore_column</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="frappe.desk.doctype.kanban_board.kanban_board.archive_restore_column" href="#frappe.desk.doctype.kanban_board.kanban_board.archive_restore_column" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.desk.doctype.kanban_board.kanban_board.<b>archive_restore_column</b>
+        <i class="text-muted">(board_name, column_title, status)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Set column's status to status</p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.desk.doctype.kanban_board.kanban_board.get_permission_query_conditions" href="#frappe.desk.doctype.kanban_board.kanban_board.get_permission_query_conditions" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.desk.doctype.kanban_board.kanban_board.<b>get_permission_query_conditions</b>
+        <i class="text-muted">(user)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.desk.doctype.kanban_board.kanban_board.has_permission" href="#frappe.desk.doctype.kanban_board.kanban_board.has_permission" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.desk.doctype.kanban_board.kanban_board.<b>has_permission</b>
+        <i class="text-muted">(doc, ptype, user)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/frappe.desk.doctype.kanban_board.kanban_board.quick_kanban_board</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="frappe.desk.doctype.kanban_board.kanban_board.quick_kanban_board" href="#frappe.desk.doctype.kanban_board.kanban_board.quick_kanban_board" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.desk.doctype.kanban_board.kanban_board.<b>quick_kanban_board</b>
+        <i class="text-muted">(doctype, board_name, field_name)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Create new KanbanBoard quickly with default options</p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/frappe.desk.doctype.kanban_board.kanban_board.save_filters</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="frappe.desk.doctype.kanban_board.kanban_board.save_filters" href="#frappe.desk.doctype.kanban_board.kanban_board.save_filters" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.desk.doctype.kanban_board.kanban_board.<b>save_filters</b>
+        <i class="text-muted">(board_name, filters)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Save filters silently</p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/frappe.desk.doctype.kanban_board.kanban_board.set_indicator</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="frappe.desk.doctype.kanban_board.kanban_board.set_indicator" href="#frappe.desk.doctype.kanban_board.kanban_board.set_indicator" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.desk.doctype.kanban_board.kanban_board.<b>set_indicator</b>
+        <i class="text-muted">(board_name, column_name, indicator)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Set the indicator color of column</p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/frappe.desk.doctype.kanban_board.kanban_board.update_column_order</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="frappe.desk.doctype.kanban_board.kanban_board.update_column_order" href="#frappe.desk.doctype.kanban_board.kanban_board.update_column_order" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.desk.doctype.kanban_board.kanban_board.<b>update_column_order</b>
+        <i class="text-muted">(board_name, order)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Set the order of columns in Kanban Board</p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/frappe.desk.doctype.kanban_board.kanban_board.update_doc</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="frappe.desk.doctype.kanban_board.kanban_board.update_doc" href="#frappe.desk.doctype.kanban_board.kanban_board.update_doc" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.desk.doctype.kanban_board.kanban_board.<b>update_doc</b>
+        <i class="text-muted">(doc)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Updates the doc when card is edited</p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/frappe.desk.doctype.kanban_board.kanban_board.update_order</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="frappe.desk.doctype.kanban_board.kanban_board.update_order" href="#frappe.desk.doctype.kanban_board.kanban_board.update_order" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.desk.doctype.kanban_board.kanban_board.<b>update_order</b>
+        <i class="text-muted">(board_name, order)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Save the order of cards in columns</p>
+</div>
+	<br>
+
+	
+
+
+    
+    
+
+
+<!-- autodoc -->
+<!-- jinja -->
+<!-- static -->

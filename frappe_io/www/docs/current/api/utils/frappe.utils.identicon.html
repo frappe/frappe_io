@@ -1,0 +1,117 @@
+<!-- title: frappe.utils.identicon -->
+<!-- add-breadcrumbs --><h1>frappe.utils.identicon</h1>
+<div class="dev-header">
+
+<a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
+	Version 8.6.0</a>
+
+
+	<a class="btn btn-default btn-sm" href="https://github.com/frappe/frappe/blob/develop/frappe/utils/identicon.py"
+		target="_blank" style="margin-left: 10px; margin-bottom: 10px;"><i class="octicon octicon-mark-github"></i> Source</a>
+
+</div>
+
+
+
+
+
+	
+        
+	<h3 style="font-weight: normal;">Class <b>Identicon</b></h3>
+    
+    <p style="padding-left: 30px;"><i>Inherits from __builtin__.object</i></h4>
+    
+    <div class="docs-attr-desc"><p></p>
+</div>
+    <div style="padding-left: 30px;">
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="__init__" href="#__init__" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>__init__</b>
+        <i class="text-muted">(self, str_, background=#fafbfc)</i>
+    </p>
+	<div class="docs-attr-desc"><pre><code>    `str_` is the string used to generate the identicon.
+    `background` is the background of the identicon.
+</code></pre>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="base64" href="#base64" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>base64</b>
+        <i class="text-muted">(self, format=PNG)</i>
+    </p>
+	<div class="docs-attr-desc"><pre><code>    usage:  i = Identicon('xx')
+            print(i.base64())
+    return: this image's base64 code
+    created by: liuzheng712
+    bug report: <a href="https://github.com/liuzheng712/identicons/issues">https://github.com/liuzheng712/identicons/issues</a>
+</code></pre>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="calculate" href="#calculate" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>calculate</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><pre><code>    Creates the identicon.
+    First three bytes are used to generate the color,
+    remaining bytes are used to create the drawing
+</code></pre>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="digest" href="#digest" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>digest</b>
+        <i class="text-muted">(self, str_)</i>
+    </p>
+	<div class="docs-attr-desc"><pre><code>    Returns a md5 numeric hash
+</code></pre>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="generate" href="#generate" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>generate</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><pre><code>    Save and show calculated identicon
+</code></pre>
+</div>
+	<br>
+
+        
+    </div>
+    <hr>
+
+	
+
+
+
+<!-- autodoc -->

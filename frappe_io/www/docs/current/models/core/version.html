@@ -1,0 +1,216 @@
+<!-- title: Version -->
+<!-- add-breadcrumbs -->
+
+
+
+
+
+<h1>Version</h1>
+<div class="dev-header">
+
+<a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
+	Version 8.6.0</a>
+
+
+	<a class="btn btn-default btn-sm" href="https://github.com/frappe/frappe/tree/develop/frappe/core/doctype/version"
+		target="_blank" style="margin-left: 10px; margin-bottom: 10px;"><i class="octicon octicon-mark-github"></i> Source</a>
+
+</div>
+
+
+
+
+
+    <p><b>Table Name:</b> <code>tabVersion</code></p>
+
+
+
+
+<h3>Fields</h3>
+
+<table class="table table-bordered docfields">
+    <thead>
+        <tr>
+            <th style="width: 5%">Sr</th>
+            <th style="width: 25%">Fieldname</th>
+            <th style="width: 20%">Type</th>
+            <th style="width: 25%">Label</th>
+            <th style="width: 25%">Options</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        <tr >
+            <td>1</td>
+            <td class="danger" title="Mandatory"><code>ref_doctype</code></td>
+            <td >
+                Link</td>
+            <td >
+                DocType
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="{{ docs_base_url }}/current/models/core/doctype">DocType</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>2</td>
+            <td ><code>column_break_3</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>3</td>
+            <td class="danger" title="Mandatory"><code>docname</code></td>
+            <td >
+                Data</td>
+            <td >
+                Document Name
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>4</td>
+            <td ><code>data</code></td>
+            <td >
+                Code</td>
+            <td class="text-muted" title="Hidden">
+                Data
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr class="info">
+            <td>5</td>
+            <td ><code>section_break_4</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>6</td>
+            <td ><code>table_html</code></td>
+            <td >
+                HTML</td>
+            <td >
+                Table HTML
+                
+            </td>
+            <td></td>
+        </tr>
+        
+    </tbody>
+</table>
+
+
+    <hr>
+    <h3>Controller</h3>
+    <h4>frappe.core.doctype.version.version</h4>
+
+    
+
+
+
+	
+        
+	<h3 style="font-weight: normal;">Class <b>Version</b></h3>
+    
+    <p style="padding-left: 30px;"><i>Inherits from frappe.model.document.Document</i></h4>
+    
+    <div class="docs-attr-desc"><p></p>
+</div>
+    <div style="padding-left: 30px;">
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="get_data" href="#get_data" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>get_data</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="set_diff" href="#set_diff" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>set_diff</b>
+        <i class="text-muted">(self, old, new)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Set the data property with the diff of the docs if present</p>
+</div>
+	<br>
+
+        
+    </div>
+    <hr>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.core.doctype.version.version.get_diff" href="#frappe.core.doctype.version.version.get_diff" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.core.doctype.version.version.<b>get_diff</b>
+        <i class="text-muted">(old, new, for_child=False)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Get diff between 2 document objects</p>
+
+<pre><code>If there is a change, then returns a dict like:
+
+    {
+        "changed"    : [[fieldname1, old, new], [fieldname2, old, new]],
+        "added"      : [[table_fieldname1, {dict}], ],
+        "removed"    : [[table_fieldname1, {dict}], ],
+        "row_changed": [[table_fieldname1, row_name1, row_index,
+            [[child_fieldname1, old, new],
+            [child_fieldname2, old, new]], ]
+        ],
+
+    }
+</code></pre>
+</div>
+	<br>
+
+	
+
+
+    
+    
+
+
+<!-- autodoc -->
+<!-- jinja -->
+<!-- static -->

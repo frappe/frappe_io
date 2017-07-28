@@ -1,0 +1,443 @@
+<!-- title: frappe.client -->
+<!-- add-breadcrumbs --><h1>frappe.client</h1>
+<div class="dev-header">
+
+<a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
+	Version 8.6.0</a>
+
+
+	<a class="btn btn-default btn-sm" href="https://github.com/frappe/frappe/blob/develop/frappe/client.py"
+		target="_blank" style="margin-left: 10px; margin-bottom: 10px;"><i class="octicon octicon-mark-github"></i> Source</a>
+
+</div>
+
+
+
+
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/frappe.client.bulk_update</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="frappe.client.bulk_update" href="#frappe.client.bulk_update" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.client.<b>bulk_update</b>
+        <i class="text-muted">(docs)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Bulk update documents</p>
+
+<p><strong>Parameters:</strong></p>
+
+<ul>
+<li><strong><code>docs</code></strong> -  JSON list of documents to be updated remotely. Each document must have <code>docname</code> property</li>
+</ul>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/frappe.client.cancel</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="frappe.client.cancel" href="#frappe.client.cancel" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.client.<b>cancel</b>
+        <i class="text-muted">(doctype, name)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Cancel a document</p>
+
+<p><strong>Parameters:</strong></p>
+
+<ul>
+<li><strong><code>doctype</code></strong> -  DocType of the document to be cancelled</li>
+<li><strong><code>name</code></strong> -  name of the document to be cancelled</li>
+</ul>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/frappe.client.delete</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="frappe.client.delete" href="#frappe.client.delete" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.client.<b>delete</b>
+        <i class="text-muted">(doctype, name)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Delete a remote document</p>
+
+<p><strong>Parameters:</strong></p>
+
+<ul>
+<li><strong><code>doctype</code></strong> -  DocType of the document to be deleted</li>
+<li><strong><code>name</code></strong> -  name of the document to be deleted</li>
+</ul>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/frappe.client.get</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="frappe.client.get" href="#frappe.client.get" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.client.<b>get</b>
+        <i class="text-muted">(doctype, name=None, filters=None)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Returns a document by name or filters</p>
+
+<p><strong>Parameters:</strong></p>
+
+<ul>
+<li><strong><code>doctype</code></strong> -  DocType of the document to be returned</li>
+<li><strong><code>name</code></strong> -  return document of this <code>name</code></li>
+<li><strong><code>filters</code></strong> -  If name is not set, filter by these values and return the first match</li>
+</ul>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/frappe.client.get_js</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="frappe.client.get_js" href="#frappe.client.get_js" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.client.<b>get_js</b>
+        <i class="text-muted">(items)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Load JS code files.  Will also append translations
+    and extend <code>frappe._messages</code></p>
+
+<p><strong>Parameters:</strong></p>
+
+<ul>
+<li><strong><code>items</code></strong> -  JSON list of paths of the js files to be loaded.</li>
+</ul>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/frappe.client.get_list</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="frappe.client.get_list" href="#frappe.client.get_list" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.client.<b>get_list</b>
+        <i class="text-muted">(doctype, fields=None, filters=None, order_by=None, limit_start=None, limit_page_length=20)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Returns a list of records by filters, fields, ordering and limit</p>
+
+<p><strong>Parameters:</strong></p>
+
+<ul>
+<li><strong><code>doctype</code></strong> -  DocType of the data to be queried</li>
+<li><strong><code>fields</code></strong> -  fields to be returned. Default is <code>name</code></li>
+<li><strong><code>filters</code></strong> -  filter list by this dict</li>
+<li><strong><code>order_by</code></strong> -  Order by this fieldname</li>
+<li><strong><code>limit_start</code></strong> -  Start at this index</li>
+<li><strong><code>limit_page_length</code></strong> -  Number of records to be returned (default 20)</li>
+</ul>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/frappe.client.get_password</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="frappe.client.get_password" href="#frappe.client.get_password" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.client.<b>get_password</b>
+        <i class="text-muted">(doctype, name, fieldname)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Return a password type property. Only applicable for System Managers</p>
+
+<p><strong>Parameters:</strong></p>
+
+<ul>
+<li><strong><code>doctype</code></strong> -  DocType of the document that holds the password</li>
+<li><strong><code>name</code></strong> -  <code>name</code> of the document that holds the password</li>
+<li><strong><code>fieldname</code></strong> -  <code>fieldname</code> of the password property</li>
+</ul>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/frappe.client.get_value</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="frappe.client.get_value" href="#frappe.client.get_value" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.client.<b>get_value</b>
+        <i class="text-muted">(doctype, fieldname, filters=None, as_dict=True, debug=False)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Returns a value form a document</p>
+
+<p><strong>Parameters:</strong></p>
+
+<ul>
+<li><strong><code>doctype</code></strong> -  DocType to be queried</li>
+<li><strong><code>fieldname</code></strong> -  Field to be returned (default <code>name</code>)</li>
+<li><strong><code>filters</code></strong> -  dict or string for identifying the record</li>
+</ul>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/frappe.client.has_permission</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="frappe.client.has_permission" href="#frappe.client.has_permission" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.client.<b>has_permission</b>
+        <i class="text-muted">(doctype, docname, perm_type=read)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Returns a JSON with data whether the document has the requested permission</p>
+
+<p><strong>Parameters:</strong></p>
+
+<ul>
+<li><strong><code>doctype</code></strong> -  DocType of the document to be checked</li>
+<li><strong><code>docname</code></strong> -  <code>name</code> of the document to be checked</li>
+<li><strong><code>perm_type</code></strong> -  one of <code>read</code>, <code>write</code>, <code>create</code>, <code>submit</code>, <code>cancel</code>, <code>report</code>. Default is <code>read</code></li>
+</ul>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/frappe.client.insert</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="frappe.client.insert" href="#frappe.client.insert" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.client.<b>insert</b>
+        <i class="text-muted">(doc=None)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Insert a document</p>
+
+<p><strong>Parameters:</strong></p>
+
+<ul>
+<li><strong><code>doc</code></strong> -  JSON or dict object to be inserted</li>
+</ul>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/frappe.client.insert_many</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="frappe.client.insert_many" href="#frappe.client.insert_many" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.client.<b>insert_many</b>
+        <i class="text-muted">(docs=None)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Insert multiple documents</p>
+
+<p><strong>Parameters:</strong></p>
+
+<ul>
+<li><strong><code>docs</code></strong> -  JSON or list of dict objects to be inserted in one request</li>
+</ul>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/frappe.client.make_width_property_setter</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="frappe.client.make_width_property_setter" href="#frappe.client.make_width_property_setter" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.client.<b>make_width_property_setter</b>
+        <i class="text-muted">(doc)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Set width Property Setter</p>
+
+<p><strong>Parameters:</strong></p>
+
+<ul>
+<li><strong><code>doc</code></strong> -  Property Setter document with <code>width</code> property</li>
+</ul>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/frappe.client.rename_doc</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="frappe.client.rename_doc" href="#frappe.client.rename_doc" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.client.<b>rename_doc</b>
+        <i class="text-muted">(doctype, old_name, new_name, merge=False)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Rename document</p>
+
+<p><strong>Parameters:</strong></p>
+
+<ul>
+<li><strong><code>doctype</code></strong> -  DocType of the document to be renamed</li>
+<li><strong><code>old_name</code></strong> -  Current <code>name</code> of the document to be renamed</li>
+<li><strong><code>new_name</code></strong> -  New <code>name</code> to be set</li>
+</ul>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/frappe.client.save</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="frappe.client.save" href="#frappe.client.save" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.client.<b>save</b>
+        <i class="text-muted">(doc)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Update (save) an existing document</p>
+
+<p><strong>Parameters:</strong></p>
+
+<ul>
+<li><strong><code>doc</code></strong> -  JSON or dict object with the properties of the document to be updated</li>
+</ul>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/frappe.client.set_default</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="frappe.client.set_default" href="#frappe.client.set_default" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.client.<b>set_default</b>
+        <i class="text-muted">(key, value, parent=None)</i>
+    </p>
+	<div class="docs-attr-desc"><p>set a user default value</p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/frappe.client.set_value</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="frappe.client.set_value" href="#frappe.client.set_value" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.client.<b>set_value</b>
+        <i class="text-muted">(doctype, name, fieldname, value=None)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Set a value using get_doc, group of values</p>
+
+<p><strong>Parameters:</strong></p>
+
+<ul>
+<li><strong><code>doctype</code></strong> -  DocType of the document</li>
+<li><strong><code>name</code></strong> -  name of the document</li>
+<li><strong><code>fieldname</code></strong> -  fieldname string or JSON / dict with key value pair</li>
+<li><strong><code>value</code></strong> -  value if fieldname is JSON / dict</li>
+</ul>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/frappe.client.submit</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="frappe.client.submit" href="#frappe.client.submit" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.client.<b>submit</b>
+        <i class="text-muted">(doc)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Submit a document</p>
+
+<p><strong>Parameters:</strong></p>
+
+<ul>
+<li><strong><code>doc</code></strong> -  JSON or dict object to be submitted remotely</li>
+</ul>
+</div>
+	<br>
+
+	
+
+
+
+<!-- autodoc -->

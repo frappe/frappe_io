@@ -1,0 +1,315 @@
+<!-- title: OAuth Client -->
+<!-- add-breadcrumbs -->
+
+
+
+
+
+<h1>OAuth Client</h1>
+<div class="dev-header">
+
+<a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
+	Version 8.6.0</a>
+
+
+	<a class="btn btn-default btn-sm" href="https://github.com/frappe/frappe/tree/develop/frappe/integrations/doctype/oauth_client"
+		target="_blank" style="margin-left: 10px; margin-bottom: 10px;"><i class="octicon octicon-mark-github"></i> Source</a>
+
+</div>
+
+
+
+
+
+    <p><b>Table Name:</b> <code>tabOAuth Client</code></p>
+
+
+
+
+<h3>Fields</h3>
+
+<table class="table table-bordered docfields">
+    <thead>
+        <tr>
+            <th style="width: 5%">Sr</th>
+            <th style="width: 25%">Fieldname</th>
+            <th style="width: 20%">Type</th>
+            <th style="width: 25%">Label</th>
+            <th style="width: 25%">Options</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        <tr >
+            <td>1</td>
+            <td ><code>client_id</code></td>
+            <td >
+                Data</td>
+            <td >
+                App Client ID
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>2</td>
+            <td class="danger" title="Mandatory"><code>app_name</code></td>
+            <td >
+                Data</td>
+            <td >
+                App Name
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>3</td>
+            <td ><code>user</code></td>
+            <td >
+                Link</td>
+            <td class="text-muted" title="Hidden">
+                User
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="{{ docs_base_url }}/current/models/core/user">User</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>4</td>
+            <td ><code>cb_1</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>5</td>
+            <td ><code>client_secret</code></td>
+            <td >
+                Data</td>
+            <td >
+                App Client Secret
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>6</td>
+            <td ><code>skip_authorization</code></td>
+            <td >
+                Check</td>
+            <td >
+                Skip Authorization
+                <p class="text-muted small">
+                    If checked, users will not see the Confirm Access dialog.</p>
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr class="info">
+            <td>7</td>
+            <td ><code>sb_1</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>8</td>
+            <td class="danger" title="Mandatory"><code>scopes</code></td>
+            <td >
+                Text</td>
+            <td >
+                Scopes
+                <p class="text-muted small">
+                    A list of resources which the Client App will have access to after the user allows it.<br> e.g. project</p>
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>9</td>
+            <td ><code>cb_3</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>10</td>
+            <td ><code>redirect_uris</code></td>
+            <td >
+                Text</td>
+            <td >
+                Redirect URIs
+                <p class="text-muted small">
+                    URIs for receiving authorization code once the user allows access, as well as failure responses. Typically a REST endpoint exposed by the Client App.
+<br>e.g. http://hostname//api/method/frappe.www.login.login_via_facebook</p>
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>11</td>
+            <td class="danger" title="Mandatory"><code>default_redirect_uri</code></td>
+            <td >
+                Data</td>
+            <td >
+                Default Redirect URI
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr class="info">
+            <td>12</td>
+            <td ><code>sb_advanced</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                 Advanced Settings
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>13</td>
+            <td ><code>grant_type</code></td>
+            <td >
+                Select</td>
+            <td >
+                Grant Type
+                
+            </td>
+            <td>
+                <pre>Authorization Code
+Implicit
+Resource Owner Password Credentials
+Client Credentials</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>14</td>
+            <td ><code>cb_2</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>15</td>
+            <td ><code>response_type</code></td>
+            <td >
+                Select</td>
+            <td >
+                Response Type
+                
+            </td>
+            <td>
+                <pre>Code
+Token</pre>
+            </td>
+        </tr>
+        
+    </tbody>
+</table>
+
+
+    <hr>
+    <h3>Controller</h3>
+    <h4>frappe.integrations.doctype.oauth_client.oauth_client</h4>
+
+    
+
+
+
+	
+        
+	<h3 style="font-weight: normal;">Class <b>OAuthClient</b></h3>
+    
+    <p style="padding-left: 30px;"><i>Inherits from frappe.model.document.Document</i></h4>
+    
+    <div class="docs-attr-desc"><p></p>
+</div>
+    <div style="padding-left: 30px;">
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="validate" href="#validate" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>validate</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+    </div>
+    <hr>
+
+	
+
+
+    
+    
+        <h4>Linked In:</h4>
+        <ul>
+        
+			
+            <li>
+
+
+<a href="{{ docs_base_url }}/current/models/integrations/oauth_authorization_code">OAuth Authorization Code</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="{{ docs_base_url }}/current/models/integrations/oauth_bearer_token">OAuth Bearer Token</a>
+
+</li>
+			
+        
+        </ul>
+    
+
+
+<!-- autodoc -->
+<!-- jinja -->
+<!-- static -->

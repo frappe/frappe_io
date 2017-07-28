@@ -1,0 +1,72 @@
+<!-- title: frappe.api -->
+<!-- add-breadcrumbs --><h1>frappe.api</h1>
+<div class="dev-header">
+
+<a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
+	Version 8.6.0</a>
+
+
+	<a class="btn btn-default btn-sm" href="https://github.com/frappe/frappe/blob/develop/frappe/api.py"
+		target="_blank" style="margin-left: 10px; margin-bottom: 10px;"><i class="octicon octicon-mark-github"></i> Source</a>
+
+</div>
+
+
+
+
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.api.handle" href="#frappe.api.handle" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.api.<b>handle</b>
+        <i class="text-muted">()</i>
+    </p>
+	<div class="docs-attr-desc"><pre><code>Handler for `/api` methods
+
+### Examples:
+
+`/api/method/{methodname}` will call a whitelisted method
+
+`/api/resource/{doctype}` will query a table
+    examples:
+    - `?fields=["name", "owner"]`
+    - `?filters=[["Task", "name", "like", "%005"]]`
+    - `?limit_start=0`
+    - `?limit_page_length=20`
+
+`/api/resource/{doctype}/{name}` will point to a resource
+    `GET` will return doclist
+    `POST` will insert
+    `PUT` will update
+    `DELETE` will delete
+
+`/api/resource/{doctype}/{name}?run_method={method}` will run a whitelisted controller method
+</code></pre>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.api.validate_oauth" href="#frappe.api.validate_oauth" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.api.<b>validate_oauth</b>
+        <i class="text-muted">()</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+
+
+<!-- autodoc -->

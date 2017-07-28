@@ -1,0 +1,275 @@
+<!-- title: GSuite Settings -->
+<!-- add-breadcrumbs -->
+
+
+
+
+
+<h1>GSuite Settings</h1>
+<div class="dev-header">
+
+<a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
+	Version 8.6.0</a>
+
+
+	<a class="btn btn-default btn-sm" href="https://github.com/frappe/frappe/tree/develop/frappe/integrations/doctype/gsuite_settings"
+		target="_blank" style="margin-left: 10px; margin-bottom: 10px;"><i class="octicon octicon-mark-github"></i> Source</a>
+
+</div>
+
+<span class="label label-info">Single</span>
+
+
+
+
+
+
+<h3>Fields</h3>
+
+<table class="table table-bordered docfields">
+    <thead>
+        <tr>
+            <th style="width: 5%">Sr</th>
+            <th style="width: 25%">Fieldname</th>
+            <th style="width: 20%">Type</th>
+            <th style="width: 25%">Label</th>
+            <th style="width: 25%">Options</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        <tr >
+            <td>1</td>
+            <td ><code>enable</code></td>
+            <td >
+                Check</td>
+            <td >
+                Enable
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr class="info">
+            <td>2</td>
+            <td ><code>google_credentials</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Google Credentials
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>3</td>
+            <td ><code>client_id</code></td>
+            <td >
+                Data</td>
+            <td >
+                Client ID
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>4</td>
+            <td ><code>client_secret</code></td>
+            <td >
+                Password</td>
+            <td >
+                Client Secret
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>5</td>
+            <td ><code>allow_gsuite_access</code></td>
+            <td >
+                Button</td>
+            <td >
+                Allow GSuite access
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr class="info">
+            <td>6</td>
+            <td ><code>google_apps_script</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Google Apps Script
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>7</td>
+            <td ><code>script_url</code></td>
+            <td >
+                Data</td>
+            <td >
+                Script URL
+                <p class="text-muted small">
+                    If you aren't using own publish Google Apps Script webapp you can use the default https://script.google.com/macros/s/AKfycbxIFOx3301xwtF2IFPJ4pUQGqkNF3hBiBebppWkeKn6fKZRQvk/exec </p>
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>8</td>
+            <td ><code>script_code</code></td>
+            <td >
+                HTML</td>
+            <td >
+                Script Code
+                <p class="text-muted small">
+                    Copy and paste this code into and empty Code.gs in your project at script.google.com</p>
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>9</td>
+            <td ><code>run_script_test</code></td>
+            <td >
+                Button</td>
+            <td >
+                Run Script Test
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>10</td>
+            <td ><code>refresh_token</code></td>
+            <td >
+                Password</td>
+            <td class="text-muted" title="Hidden">
+                refresh_token
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>11</td>
+            <td ><code>authorization_code</code></td>
+            <td >
+                Password</td>
+            <td class="text-muted" title="Hidden">
+                Authorization Code
+                
+            </td>
+            <td></td>
+        </tr>
+        
+    </tbody>
+</table>
+
+
+    <hr>
+    <h3>Controller</h3>
+    <h4>frappe.integrations.doctype.gsuite_settings.gsuite_settings</h4>
+
+    
+
+
+
+	
+        
+	<h3 style="font-weight: normal;">Class <b>GSuiteSettings</b></h3>
+    
+    <p style="padding-left: 30px;"><i>Inherits from frappe.model.document.Document</i></h4>
+    
+    <div class="docs-attr-desc"><p></p>
+</div>
+    <div style="padding-left: 30px;">
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="get_access_token" href="#get_access_token" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>get_access_token</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+    </div>
+    <hr>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/frappe.integrations.doctype.gsuite_settings.gsuite_settings.gsuite_callback</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="frappe.integrations.doctype.gsuite_settings.gsuite_settings.gsuite_callback" href="#frappe.integrations.doctype.gsuite_settings.gsuite_settings.gsuite_callback" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.integrations.doctype.gsuite_settings.gsuite_settings.<b>gsuite_callback</b>
+        <i class="text-muted">(code=None)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.integrations.doctype.gsuite_settings.gsuite_settings.run_gsuite_script" href="#frappe.integrations.doctype.gsuite_settings.gsuite_settings.run_gsuite_script" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.integrations.doctype.gsuite_settings.gsuite_settings.<b>run_gsuite_script</b>
+        <i class="text-muted">(option, filename=None, template_id=None, destination_id=None, json_data=None)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/frappe.integrations.doctype.gsuite_settings.gsuite_settings.run_script_test</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="frappe.integrations.doctype.gsuite_settings.gsuite_settings.run_script_test" href="#frappe.integrations.doctype.gsuite_settings.gsuite_settings.run_script_test" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.integrations.doctype.gsuite_settings.gsuite_settings.<b>run_script_test</b>
+        <i class="text-muted">()</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+
+    
+    
+
+
+<!-- autodoc -->
+<!-- jinja -->
+<!-- static -->

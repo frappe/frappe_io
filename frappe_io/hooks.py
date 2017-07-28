@@ -17,7 +17,7 @@ fixtures = ["Contact Us Settings", "Web Form", "Email Alert"]
 website_context = {
 	"brand_html": "<img class='navbar-icon' src='/assets/frappe_theme/img/frappe-bird-grey.svg' />Frappé",
 	"top_bar_items": [
-		{"label": "Framework", "url": "https://frappe.github.io/frappe/", "right":1, "target": "_blank"},
+		{"label": "Documentation", "url": "/docs", "right":1, "target": "_blank"},
 		{"label": "About", "url":"/about", "right": 1},
 		{"label": "Blog", "url":"/blog", "right": 1}
 	],

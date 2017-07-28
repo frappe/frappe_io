@@ -1,0 +1,210 @@
+<!-- title: frappe.utils.background_jobs -->
+<!-- add-breadcrumbs --><h1>frappe.utils.background_jobs</h1>
+<div class="dev-header">
+
+<a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
+	Version 8.6.0</a>
+
+
+	<a class="btn btn-default btn-sm" href="https://github.com/frappe/frappe/blob/develop/frappe/utils/background_jobs.py"
+		target="_blank" style="margin-left: 10px; margin-bottom: 10px;"><i class="octicon octicon-mark-github"></i> Source</a>
+
+</div>
+
+
+
+
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.utils.background_jobs.enqueue" href="#frappe.utils.background_jobs.enqueue" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.utils.background_jobs.<b>enqueue</b>
+        <i class="text-muted">(method, queue=default, timeout=300, event=None, async=True, job_name=None, now=False)</i>
+    </p>
+	<div class="docs-attr-desc"><pre><code>    Enqueue method to be executed using a background worker
+</code></pre>
+
+<p><strong>Parameters:</strong></p>
+
+<ul>
+<li><strong><code>method</code></strong> -  method string or method object</li>
+<li><strong><code>queue</code></strong> -  should be either long, default or short</li>
+<li><strong><code>timeout</code></strong> -  should be set according to the functions</li>
+<li><strong><code>event</code></strong> -  this is passed to enable clearing of jobs from queues</li>
+<li><strong><code>async</code></strong> -  if async=False, the method is executed immediately, else via a worker</li>
+<li><strong><code>job_name</code></strong> -  can be used to name an enqueue call, which can be used to prevent duplicate calls</li>
+<li><strong><code>now</code></strong> -  if now=True, the method is executed via frappe.call</li>
+<li><strong><code>kwargs</code></strong> -  keyword arguments to be passed to the method</li>
+</ul>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.utils.background_jobs.enqueue_test_job" href="#frappe.utils.background_jobs.enqueue_test_job" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.utils.background_jobs.<b>enqueue_test_job</b>
+        <i class="text-muted">()</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.utils.background_jobs.execute_job" href="#frappe.utils.background_jobs.execute_job" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.utils.background_jobs.<b>execute_job</b>
+        <i class="text-muted">(site, method, event, job_name, kwargs, user=None, async=True, retry=0)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Executes job in a worker, performs commit/rollback and logs if there is any error</p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.utils.background_jobs.get_jobs" href="#frappe.utils.background_jobs.get_jobs" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.utils.background_jobs.<b>get_jobs</b>
+        <i class="text-muted">(site=None, queue=None, key=method)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Gets jobs per queue or per site or both</p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.utils.background_jobs.get_queue" href="#frappe.utils.background_jobs.get_queue" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.utils.background_jobs.<b>get_queue</b>
+        <i class="text-muted">(queue, async=True)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Returns a Queue object tied to a redis connection</p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.utils.background_jobs.get_queue_list" href="#frappe.utils.background_jobs.get_queue_list" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.utils.background_jobs.<b>get_queue_list</b>
+        <i class="text-muted">(queue_list=None)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Defines possible queues. Also wraps a given queue in a list after validating.</p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.utils.background_jobs.get_redis_conn" href="#frappe.utils.background_jobs.get_redis_conn" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.utils.background_jobs.<b>get_redis_conn</b>
+        <i class="text-muted">()</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.utils.background_jobs.get_worker_name" href="#frappe.utils.background_jobs.get_worker_name" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.utils.background_jobs.<b>get_worker_name</b>
+        <i class="text-muted">(queue)</i>
+    </p>
+	<div class="docs-attr-desc"><p>When limiting worker to a specific queue, also append queue name to default worker name</p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.utils.background_jobs.start_worker" href="#frappe.utils.background_jobs.start_worker" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.utils.background_jobs.<b>start_worker</b>
+        <i class="text-muted">(queue=None)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Wrapper to start rq worker. Connects to redis and monitors these queues.</p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.utils.background_jobs.test_job" href="#frappe.utils.background_jobs.test_job" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.utils.background_jobs.<b>test_job</b>
+        <i class="text-muted">(s)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.utils.background_jobs.validate_queue" href="#frappe.utils.background_jobs.validate_queue" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.utils.background_jobs.<b>validate_queue</b>
+        <i class="text-muted">(queue, default_queue_list=None)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+
+
+<!-- autodoc -->
