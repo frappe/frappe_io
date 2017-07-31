@@ -1,7 +1,7 @@
 <!-- add-breadcrumbs -->
 # Generating Documentation Website for your App
 
-Frappe version 6.7 onwards includes a full-blown documentation generator so that you can easily create a website for your app that has both user docs and developers docs (auto-generated).
+Frappé version 6.7 onwards includes a full-blown documentation generator so that you can easily create a website for your app that has both user docs and developers docs (auto-generated).
 
 Version 8.7 onwards, these will be generated in a target app.
 
@@ -41,7 +41,7 @@ Some quick tips:
 
 ### 3. Linking
 
-While linking make sure you add `{{ docs_base_url }}` to all your links.
+While linking make sure you add `/docs` to all your links.
 
 
     {% raw %}<a href="/docs/user/link/to/page.html">Link Description</a>{% endraw %}

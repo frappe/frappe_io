@@ -3,7 +3,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 8.6.0</a>
+	Version 8.6.4</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/frappe/blob/develop/frappe/email/email_body.py"
@@ -298,6 +298,24 @@ Also sets all messages as multipart/alternative for cleaner reading in text-only
 	
         
     
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/frappe.email.email_body.get_email_html</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="frappe.email.email_body.get_email_html" href="#frappe.email.email_body.get_email_html" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.email.email_body.<b>get_email_html</b>
+        <i class="text-muted">(template, args, subject, header=None)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
     
 	<p class="docs-attr-name">
         <a name="frappe.email.email_body.get_filecontent_from_path" href="#frappe.email.email_body.get_filecontent_from_path" class="text-muted small">
@@ -335,7 +353,7 @@ Also sets all messages as multipart/alternative for cleaner reading in text-only
         <a name="frappe.email.email_body.get_formatted_html" href="#frappe.email.email_body.get_formatted_html" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		frappe.email.email_body.<b>get_formatted_html</b>
-        <i class="text-muted">(subject, message, footer=None, print_html=None, email_account=None, header=None)</i>
+        <i class="text-muted">(subject, message, footer=None, print_html=None, email_account=None, header=None, unsubscribe_link=None)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>

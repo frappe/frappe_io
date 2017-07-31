@@ -1,12 +1,12 @@
-<!-- title: Frappe Framework Installation -->
+<!-- title: Frappé Framework Installation -->
 
 # Installation
 
-Frappe Framework is based on the <a href="https://frappe.io">Frappe Framework</a>, a full stack web framework based on Python, MariaDB, Redis, Node.
+Frappé Framework is based on the <a href="https://frappe.io">Frappé Framework</a>, a full stack web framework based on Python, MariaDB, Redis, Node.
 
-To intall Frappe Framework, you will have to install the <a href="https://github.com/frappe/bench">Frappe Bench</a>, the command-line, package manager and site manager for Frappe Framework. For more details, read the Bench README.
+To intall Frappé Framework, you will have to install the <a href="https://github.com/frappe/bench">Frappé Bench</a>, the command-line, package manager and site manager for Frappé Framework. For more details, read the Bench README.
 
-After you have installed Frappe Bench, go to you bench folder, which is     `frappe.bench` by default and setup **frappe**.
+After you have installed Frappé Bench, go to you bench folder, which is     `frappe.bench` by default and setup **frappe**.
 
     bench get-app frappe {{ source_link }}
 

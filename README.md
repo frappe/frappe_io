@@ -1,4 +1,4 @@
-## Frappe Framework
+## Frappé Framework
 
 frappe.io
 

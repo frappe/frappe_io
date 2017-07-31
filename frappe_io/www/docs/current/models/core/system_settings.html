@@ -9,7 +9,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 8.6.0</a>
+	Version 8.6.4</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/frappe/tree/develop/frappe/core/doctype/system_settings"
@@ -64,7 +64,7 @@
                 
 
 
-<a href="{{ docs_base_url }}/current/models/geo/country">Country</a>
+<a href="/docs/current/models/geo/country">Country</a>
 
 
                 
@@ -85,7 +85,7 @@
                 
 
 
-<a href="{{ docs_base_url }}/current/models/core/language">Language</a>
+<a href="/docs/current/models/core/language">Language</a>
 
 
                 
@@ -304,6 +304,44 @@ mm-dd-yyyy</pre>
         
         <tr class="info">
             <td>18</td>
+            <td ><code>permissions</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Permissions
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>19</td>
+            <td ><code>ignore_user_permissions_if_missing</code></td>
+            <td >
+                Check</td>
+            <td >
+                Ignore User Permissions If Missing
+                <p class="text-muted small">
+                    If Apply User Permissions is checked for Report DocType but no User Permissions are defined for Report for a User, then all Reports are shown to that User</p>
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>20</td>
+            <td ><code>apply_strict_user_permissions</code></td>
+            <td >
+                Check</td>
+            <td >
+                Apply Strict User Permissions
+                <p class="text-muted small">
+                    If Apply Strict User Permission is checked and User Permission is defined for a DocType for a User, then all the documents where value of the link is blank, will not be shown to that User</p>
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr class="info">
+            <td>21</td>
             <td ><code>security</code></td>
             <td >
                 Section Break</td>
@@ -315,7 +353,7 @@ mm-dd-yyyy</pre>
         </tr>
         
         <tr >
-            <td>19</td>
+            <td>22</td>
             <td ><code>session_expiry</code></td>
             <td >
                 Data</td>
@@ -328,7 +366,7 @@ mm-dd-yyyy</pre>
         </tr>
         
         <tr >
-            <td>20</td>
+            <td>23</td>
             <td ><code>session_expiry_mobile</code></td>
             <td >
                 Data</td>
@@ -341,7 +379,7 @@ mm-dd-yyyy</pre>
         </tr>
         
         <tr >
-            <td>21</td>
+            <td>24</td>
             <td ><code>enable_password_policy</code></td>
             <td >
                 Check</td>
@@ -354,7 +392,7 @@ mm-dd-yyyy</pre>
         </tr>
         
         <tr >
-            <td>22</td>
+            <td>25</td>
             <td ><code>minimum_password_score</code></td>
             <td >
                 Select</td>
@@ -369,7 +407,7 @@ mm-dd-yyyy</pre>
         </tr>
         
         <tr >
-            <td>23</td>
+            <td>26</td>
             <td ><code>column_break_13</code></td>
             <td class="info">
                 Column Break</td>
@@ -381,7 +419,7 @@ mm-dd-yyyy</pre>
         </tr>
         
         <tr >
-            <td>24</td>
+            <td>27</td>
             <td ><code>deny_multiple_sessions</code></td>
             <td >
                 Check</td>
@@ -394,33 +432,7 @@ mm-dd-yyyy</pre>
         </tr>
         
         <tr >
-            <td>25</td>
-            <td ><code>ignore_user_permissions_if_missing</code></td>
-            <td >
-                Check</td>
-            <td >
-                Ignore User Permissions If Missing
-                <p class="text-muted small">
-                    If Apply User Permissions is checked for Report DocType but no User Permissions are defined for Report for a User, then all Reports are shown to that User</p>
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>26</td>
-            <td ><code>apply_strict_user_permissions</code></td>
-            <td >
-                Check</td>
-            <td >
-                Apply Strict User Permissions
-                <p class="text-muted small">
-                    If Apply Strict User Permission is checked and User Permission is defined for a DocType for a User, then all the documents where value of the link is blank, will not be shown to that User</p>
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>27</td>
+            <td>28</td>
             <td ><code>allow_login_using_mobile_number</code></td>
             <td >
                 Check</td>
@@ -433,7 +445,7 @@ mm-dd-yyyy</pre>
         </tr>
         
         <tr >
-            <td>28</td>
+            <td>29</td>
             <td ><code>allow_error_traceback</code></td>
             <td >
                 Check</td>
@@ -445,7 +457,7 @@ mm-dd-yyyy</pre>
         </tr>
         
         <tr class="info">
-            <td>29</td>
+            <td>30</td>
             <td ><code>email</code></td>
             <td >
                 Section Break</td>
@@ -457,7 +469,7 @@ mm-dd-yyyy</pre>
         </tr>
         
         <tr >
-            <td>30</td>
+            <td>31</td>
             <td ><code>email_footer_address</code></td>
             <td >
                 Small Text</td>
@@ -470,7 +482,7 @@ mm-dd-yyyy</pre>
         </tr>
         
         <tr >
-            <td>31</td>
+            <td>32</td>
             <td ><code>column_break_18</code></td>
             <td class="info">
                 Column Break</td>
@@ -482,7 +494,7 @@ mm-dd-yyyy</pre>
         </tr>
         
         <tr >
-            <td>32</td>
+            <td>33</td>
             <td ><code>disable_standard_email_footer</code></td>
             <td >
                 Check</td>

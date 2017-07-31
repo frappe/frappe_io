@@ -1,4 +1,6 @@
 <!-- add-breadcrumbs -->
+# Background Services
+
 External services
 -----------------
 
@@ -7,7 +9,7 @@ External services
 	* nginx (for production deployment)
 	* supervisor (for production deployment)
 
-Frappe Processes
+Frappé Processes
 ----------------
 
 
@@ -20,12 +22,12 @@ Frappe Processes
 
 * Redis Worker Processes
 
-	* The Celery worker processes execute background jobs in the Frappe system.
+	* The Celery worker processes execute background jobs in the Frappé system.
 	These processes are automatically started when `bench start` is run and
 	for production are configured in supervisor configuration.
 
 * Scheduler Process
 
 	* The Scheduler process schedules enqeueing of scheduled jobs in the
-	Frappe system. This process is automatically started when `bench start` is
+	Frappé system. This process is automatically started when `bench start` is
 	run and for production are configured in supervisor configuration.

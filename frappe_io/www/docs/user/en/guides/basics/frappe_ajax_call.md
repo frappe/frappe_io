@@ -1,5 +1,7 @@
 <!-- add-breadcrumbs -->
-In Frappe Framework, you can manage ajax calls via frappe.call. The frappe.call works in asynchronous manner ie. send requests and handle response via callback mechanism.
+# Frappé Ajax Call
+
+In Frappé Framework, you can manage ajax calls via frappe.call. The frappe.call works in asynchronous manner ie. send requests and handle response via callback mechanism.
 
 ## frappe.call Structure
 

@@ -16,6 +16,7 @@ frappe.www.robots
 frappe.www.rss
 frappe.www.search
 frappe.www.sitemap
+frappe.www.third_party_apps
 frappe.www.update_password
 frappe.www.website_script
 frappe.www.website_theme

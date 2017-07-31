@@ -1,4 +1,6 @@
 <!-- add-breadcrumbs -->
+# How To Make Query Report
+
 You can create tabulated reports using complex SQL queries by creating a new Report. These reports can be created by a System Manager and are stored in the Database
 
 &gt; Note: You will need System Manager Permissions for this.
@@ -7,7 +9,7 @@ To create a new Query Report:
 
 ### 1. Create a new Report
 
-<img class="screenshot" alt="Query Report" src="{{docs_base_url}}/assets/img/query-report.png">
+<img class="screenshot" alt="Query Report" src="/docs/assets/img/query-report.png">
 
 1. Set type as "Query Report"
 1. Set the reference DocType - Users that have access to the reference DocType will have access to the report
@@ -36,7 +38,7 @@ You can define complex queries such as:
 
 ### 3. Check the Report
 
-<img class="screenshot" alt="Query Report" src="{{docs_base_url}}/assets/img/query-report-out.png">
+<img class="screenshot" alt="Query Report" src="/docs/assets/img/query-report-out.png">
 
 ### 4. Advanced (adding filters)
 

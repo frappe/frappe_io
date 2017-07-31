@@ -34,14 +34,14 @@ What helps us is that we have decided to monetize only from our hosting services
 
 We believe we have today a very usable and robust ERP system for small businesses. Even large businesses can use it, but we are not particlarly interested in that avenue because it would require services, and we are happy to let independent vendors do that. Our project has reached a reasonable community size and we can feel there is a good momentum with the number of users who are evaluating the product every day.
 
-We need to focus on making things even easier for the end user and providing adequate documetation for the developer. Our framework Frappe, allows rapid application development and provides a platform to create apps or extensions to the product. With most of the basics in place, we think the ERP market is poised for a major disruption in the next five years.
+We need to focus on making things even easier for the end user and providing adequate documetation for the developer. Our framework Frappé, allows rapid application development and provides a platform to create apps or extensions to the product. With most of the basics in place, we think the ERP market is poised for a major disruption in the next five years.
 
 Our biggest satisfaction will be when a whole bunch of small, local, innovative organizations across the world gets access to tools that will help them compete with large, global, and inefficient corporations—creating a level playing field that will leave our world a little bit more fair.
 
 <br>
 Rushabh Mehta<br>
 Founder<br>
-ERPNext and Frappe
+ERPNext and Frappé
 
 ---
 

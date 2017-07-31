@@ -3,7 +3,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 8.6.0</a>
+	Version 8.6.4</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/frappe/blob/develop/frappe/permissions.py"
@@ -40,9 +40,9 @@
         <a name="frappe.permissions.add_user_permission" href="#frappe.permissions.add_user_permission" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		frappe.permissions.<b>add_user_permission</b>
-        <i class="text-muted">(doctype, name, user, with_message=False)</i>
+        <i class="text-muted">(doctype, name, user, apply=False)</i>
     </p>
-	<div class="docs-attr-desc"><p>Add user default</p>
+	<div class="docs-attr-desc"><p>Add user permission</p>
 </div>
 	<br>
 
@@ -316,10 +316,26 @@
     
     
 	<p class="docs-attr-name">
+        <a name="frappe.permissions.get_user_permissions" href="#frappe.permissions.get_user_permissions" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.permissions.<b>get_user_permissions</b>
+        <i class="text-muted">(user)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
         <a name="frappe.permissions.get_valid_perms" href="#frappe.permissions.get_valid_perms" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		frappe.permissions.<b>get_valid_perms</b>
-        <i class="text-muted">(doctype=None)</i>
+        <i class="text-muted">(doctype=None, user=None)</i>
     </p>
 	<div class="docs-attr-desc"><p>Get valid permissions for the current user from DocPerm and Custom DocPerm</p>
 </div>
@@ -371,7 +387,7 @@
         <a name="frappe.permissions.remove_user_permission" href="#frappe.permissions.remove_user_permission" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		frappe.permissions.<b>remove_user_permission</b>
-        <i class="text-muted">(doctype, name, user, default_value_name=None)</i>
+        <i class="text-muted">(doctype, name, user)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>
@@ -422,6 +438,22 @@
         <i class="text-muted">(parent)</i>
     </p>
 	<div class="docs-attr-desc"><p>if custom permssions are not setup for the current doctype, set them up</p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.permissions.update_permission_property" href="#frappe.permissions.update_permission_property" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.permissions.<b>update_permission_property</b>
+        <i class="text-muted">(doctype, role, permlevel, ptype, value=None, validate=True)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Update a property in Custom Perm</p>
 </div>
 	<br>
 
