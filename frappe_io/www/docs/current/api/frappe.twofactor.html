@@ -1,0 +1,499 @@
+<!-- title: frappe.twofactor -->
+<!-- add-breadcrumbs --><h1>frappe.twofactor</h1>
+<div class="dev-header">
+
+<a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
+	Version 8.7.4</a>
+
+
+	<a class="btn btn-default btn-sm" href="https://github.com/frappe/frappe/blob/develop/frappe/twofactor.py"
+		target="_blank" style="margin-left: 10px; margin-bottom: 10px;"><i class="octicon octicon-mark-github"></i> Source</a>
+
+</div>
+
+
+
+
+
+	
+        
+	<h3 style="font-weight: normal;">Class <b>ExpiredLoginException</b></h3>
+    
+    <p style="padding-left: 30px;"><i>Inherits from exceptions.Exception</i></h4>
+    
+    <div class="docs-attr-desc"><p></p>
+</div>
+    <div style="padding-left: 30px;">
+        
+    </div>
+    <hr>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.twofactor.authenticate_for_2factor" href="#frappe.twofactor.authenticate_for_2factor" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.twofactor.<b>authenticate_for_2factor</b>
+        <i class="text-muted">(user)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Authenticate two factor for enabled user before login.</p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.twofactor.cache_2fa_data" href="#frappe.twofactor.cache_2fa_data" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.twofactor.<b>cache_2fa_data</b>
+        <i class="text-muted">(user, token, otp_secret, tmp_id)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Cache and set expiry for data.</p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.twofactor.confirm_otp_token" href="#frappe.twofactor.confirm_otp_token" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.twofactor.<b>confirm_otp_token</b>
+        <i class="text-muted">(login_manager, otp=None, tmp_id=None)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Confirm otp matches.</p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.twofactor.create_barcode_folder" href="#frappe.twofactor.create_barcode_folder" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.twofactor.<b>create_barcode_folder</b>
+        <i class="text-muted">()</i>
+    </p>
+	<div class="docs-attr-desc"><p>Get Barcodes folder.</p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.twofactor.delete_all_barcodes_for_users" href="#frappe.twofactor.delete_all_barcodes_for_users" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.twofactor.<b>delete_all_barcodes_for_users</b>
+        <i class="text-muted">()</i>
+    </p>
+	<div class="docs-attr-desc"><p>Task to delete all barcodes for user.</p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.twofactor.delete_qrimage" href="#frappe.twofactor.delete_qrimage" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.twofactor.<b>delete_qrimage</b>
+        <i class="text-muted">(user, check_expiry=False)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Delete Qrimage when user logs in.</p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.twofactor.disable" href="#frappe.twofactor.disable" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.twofactor.<b>disable</b>
+        <i class="text-muted">()</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.twofactor.get_cached_user_pass" href="#frappe.twofactor.get_cached_user_pass" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.twofactor.<b>get_cached_user_pass</b>
+        <i class="text-muted">()</i>
+    </p>
+	<div class="docs-attr-desc"><p>Get user and password if set.</p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.twofactor.get_email_body_for_2fa" href="#frappe.twofactor.get_email_body_for_2fa" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.twofactor.<b>get_email_body_for_2fa</b>
+        <i class="text-muted">(kwargs_dict)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Get email body for 2fa.</p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.twofactor.get_email_body_for_qr_code" href="#frappe.twofactor.get_email_body_for_qr_code" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.twofactor.<b>get_email_body_for_qr_code</b>
+        <i class="text-muted">(kwargs_dict)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Get QRCode email body.</p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.twofactor.get_email_subject_for_2fa" href="#frappe.twofactor.get_email_subject_for_2fa" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.twofactor.<b>get_email_subject_for_2fa</b>
+        <i class="text-muted">(kwargs_dict)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Get email subject for 2fa.</p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.twofactor.get_email_subject_for_qr_code" href="#frappe.twofactor.get_email_subject_for_qr_code" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.twofactor.<b>get_email_subject_for_qr_code</b>
+        <i class="text-muted">(kwargs_dict)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Get QRCode email subject.</p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.twofactor.get_link_for_qrcode" href="#frappe.twofactor.get_link_for_qrcode" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.twofactor.<b>get_link_for_qrcode</b>
+        <i class="text-muted">(user, totp_uri)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Get link to temporary page showing QRCode.</p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.twofactor.get_otpsecret_for_" href="#frappe.twofactor.get_otpsecret_for_" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.twofactor.<b>get_otpsecret_for_</b>
+        <i class="text-muted">(user)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Set OTP Secret for user even if not set.</p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.twofactor.get_qr_svg_code" href="#frappe.twofactor.get_qr_svg_code" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.twofactor.<b>get_qr_svg_code</b>
+        <i class="text-muted">(totp_uri)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Get SVG code to display Qrcode for OTP.</p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.twofactor.get_verification_method" href="#frappe.twofactor.get_verification_method" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.twofactor.<b>get_verification_method</b>
+        <i class="text-muted">()</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.twofactor.get_verification_obj" href="#frappe.twofactor.get_verification_obj" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.twofactor.<b>get_verification_obj</b>
+        <i class="text-muted">(user, token, otp_secret)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.twofactor.process_2fa_for_email" href="#frappe.twofactor.process_2fa_for_email" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.twofactor.<b>process_2fa_for_email</b>
+        <i class="text-muted">(user, token, otp_secret, otp_issuer, method=Email)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Process Email method for 2fa.</p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.twofactor.process_2fa_for_otp_app" href="#frappe.twofactor.process_2fa_for_otp_app" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.twofactor.<b>process_2fa_for_otp_app</b>
+        <i class="text-muted">(user, otp_secret, otp_issuer)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Process OTP App method for 2fa.</p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.twofactor.process_2fa_for_sms" href="#frappe.twofactor.process_2fa_for_sms" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.twofactor.<b>process_2fa_for_sms</b>
+        <i class="text-muted">(user, token, otp_secret)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Process sms method for 2fa.</p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.twofactor.qrcode_as_png" href="#frappe.twofactor.qrcode_as_png" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.twofactor.<b>qrcode_as_png</b>
+        <i class="text-muted">(user, totp_uri)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Save temporary Qrcode to server.</p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.twofactor.render_string_template" href="#frappe.twofactor.render_string_template" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.twofactor.<b>render_string_template</b>
+        <i class="text-muted">(_str, kwargs_dict)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Render string with jinja.</p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.twofactor.send_token_via_email" href="#frappe.twofactor.send_token_via_email" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.twofactor.<b>send_token_via_email</b>
+        <i class="text-muted">(user, token, otp_secret, otp_issuer, subject=None, message=None)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Send token to user as email.</p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.twofactor.send_token_via_sms" href="#frappe.twofactor.send_token_via_sms" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.twofactor.<b>send_token_via_sms</b>
+        <i class="text-muted">(otpsecret, token=None, phone_no=None)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Send token as sms to user.</p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.twofactor.should_remove_barcode_image" href="#frappe.twofactor.should_remove_barcode_image" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.twofactor.<b>should_remove_barcode_image</b>
+        <i class="text-muted">(barcode)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Check if it's time to delete barcode image from server. </p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.twofactor.should_run_2fa" href="#frappe.twofactor.should_run_2fa" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.twofactor.<b>should_run_2fa</b>
+        <i class="text-muted">(user)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Check if 2fa should run.</p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.twofactor.toggle_two_factor_auth" href="#frappe.twofactor.toggle_two_factor_auth" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.twofactor.<b>toggle_two_factor_auth</b>
+        <i class="text-muted">(state, roles=[])</i>
+    </p>
+	<div class="docs-attr-desc"><p>Enable or disable 2FA in site_config and roles</p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.twofactor.two_factor_is_enabled" href="#frappe.twofactor.two_factor_is_enabled" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.twofactor.<b>two_factor_is_enabled</b>
+        <i class="text-muted">(user=None)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Returns True if 2FA is enabled.</p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.twofactor.two_factor_is_enabled_for_" href="#frappe.twofactor.two_factor_is_enabled_for_" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.twofactor.<b>two_factor_is_enabled_for_</b>
+        <i class="text-muted">(user)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Check if 2factor is enabled for user.</p>
+</div>
+	<br>
+
+	
+
+
+
+<!-- autodoc -->
