@@ -1,4 +1,4 @@
-frappe.model.utils
 frappe.model.utils.link_count
-frappe.model.utils.rename_field
 frappe.model.utils.user_settings
+frappe.model.utils.rename_field
+frappe.model.utils

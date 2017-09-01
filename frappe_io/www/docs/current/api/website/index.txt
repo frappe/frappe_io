@@ -1,7 +1,7 @@
-frappe.website.context
-frappe.website
-frappe.website.purifycss
 frappe.website.render
-frappe.website.router
 frappe.website.utils
+frappe.website.context
+frappe.website.router
+frappe.website.purifycss
+frappe.website
 frappe.website.website_generator
