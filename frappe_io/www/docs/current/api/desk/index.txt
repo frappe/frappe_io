@@ -1,6 +1,7 @@
 frappe.desk.like
 frappe.desk.notifications
 frappe.desk.calendar
+frappe.desk.user_progress
 frappe.desk.moduleview
 frappe.desk.tags
 frappe.desk.reportview
