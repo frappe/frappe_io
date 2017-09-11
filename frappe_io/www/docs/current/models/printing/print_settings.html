@@ -9,7 +9,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 8.7.4</a>
+	Version 8.10.4</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/frappe/tree/develop/frappe/printing/doctype/print_settings"
@@ -108,7 +108,7 @@ Letter</pre>
             <td >
                 Section Break</td>
             <td >
-                
+                Page Settings
                 
             </td>
             <td></td>
@@ -116,6 +116,30 @@ Letter</pre>
         
         <tr >
             <td>7</td>
+            <td ><code>with_letterhead</code></td>
+            <td >
+                Check</td>
+            <td >
+                Print with letterhead
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>8</td>
+            <td ><code>allow_print_for_draft</code></td>
+            <td >
+                Check</td>
+            <td >
+                Allow Print for Draft
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>9</td>
             <td ><code>attach_view_link</code></td>
             <td >
                 Check</td>
@@ -126,8 +150,56 @@ Letter</pre>
             <td></td>
         </tr>
         
+        <tr >
+            <td>10</td>
+            <td ><code>column_break_10</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>11</td>
+            <td ><code>add_draft_heading</code></td>
+            <td >
+                Check</td>
+            <td >
+                Always add "Draft" Heading for printing draft documents
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>12</td>
+            <td ><code>allow_page_break_inside_tables</code></td>
+            <td >
+                Check</td>
+            <td >
+                Allow page break inside tables
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>13</td>
+            <td ><code>allow_print_for_cancelled</code></td>
+            <td >
+                Check</td>
+            <td >
+                Allow Print for Cancelled
+                
+            </td>
+            <td></td>
+        </tr>
+        
         <tr class="info">
-            <td>8</td>
+            <td>14</td>
             <td ><code>print_style_section</code></td>
             <td >
                 Section Break</td>
@@ -139,24 +211,52 @@ Letter</pre>
         </tr>
         
         <tr >
-            <td>9</td>
+            <td>15</td>
             <td ><code>print_style</code></td>
             <td >
-                Select</td>
+                Link</td>
             <td >
                 Print Style
                 
             </td>
             <td>
-                <pre>Modern
-Classic
-Standard
-Monochrome</pre>
+                
+                
+
+
+<a href="/docs/current/models/printing/print_style">Print Style</a>
+
+
+                
             </td>
         </tr>
         
         <tr >
-            <td>10</td>
+            <td>16</td>
+            <td ><code>print_style_preview</code></td>
+            <td >
+                HTML</td>
+            <td >
+                Print Style Preview
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr class="info">
+            <td>17</td>
+            <td ><code>section_break_8</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Fonts
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>18</td>
             <td ><code>font</code></td>
             <td >
                 Select</td>
@@ -174,7 +274,7 @@ Monospace</pre>
         </tr>
         
         <tr >
-            <td>11</td>
+            <td>19</td>
             <td ><code>font_size</code></td>
             <td >
                 Float</td>
@@ -182,102 +282,6 @@ Monospace</pre>
                 Font Size
                 <p class="text-muted small">
                     In points. Default is 9.</p>
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>12</td>
-            <td ><code>column_break_6</code></td>
-            <td class="info">
-                Column Break</td>
-            <td >
-                
-                
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>13</td>
-            <td ><code>with_letterhead</code></td>
-            <td >
-                Check</td>
-            <td >
-                Print with letterhead
-                
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>14</td>
-            <td ><code>allow_print_for_draft</code></td>
-            <td >
-                Check</td>
-            <td >
-                Allow Print for Draft
-                
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>15</td>
-            <td ><code>add_draft_heading</code></td>
-            <td >
-                Check</td>
-            <td >
-                Always add "Draft" Heading for printing draft documents
-                
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>16</td>
-            <td ><code>allow_print_for_cancelled</code></td>
-            <td >
-                Check</td>
-            <td >
-                Allow Print for Cancelled
-                
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>17</td>
-            <td ><code>allow_page_break_inside_tables</code></td>
-            <td >
-                Check</td>
-            <td >
-                Allow page break inside tables
-                
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr class="info">
-            <td>18</td>
-            <td ><code>section_break_8</code></td>
-            <td >
-                Section Break</td>
-            <td >
-                
-                
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>19</td>
-            <td ><code>print_style_preview</code></td>
-            <td >
-                HTML</td>
-            <td >
-                Print Style Preview
-                
             </td>
             <td></td>
         </tr>

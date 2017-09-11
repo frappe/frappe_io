@@ -3,7 +3,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 8.7.4</a>
+	Version 8.10.4</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/frappe/blob/develop/frappe/__init__.py"
@@ -310,22 +310,6 @@ listify the values against the key.
     
     
 	<p class="docs-attr-name">
-        <a name="frappe.clear_domainification_cache" href="#frappe.clear_domainification_cache" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		frappe.<b>clear_domainification_cache</b>
-        <i class="text-muted">()</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-	
-
-	
-        
-    
-    
-	<p class="docs-attr-name">
         <a name="frappe.clear_messages" href="#frappe.clear_messages" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		frappe.<b>clear_messages</b>
@@ -437,7 +421,7 @@ listify the values against the key.
         <a name="frappe.delete_doc" href="#frappe.delete_doc" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		frappe.<b>delete_doc</b>
-        <i class="text-muted">(doctype=None, name=None, force=0, ignore_doctypes=None, for_reload=False, ignore_permissions=False, flags=None)</i>
+        <i class="text-muted">(doctype=None, name=None, force=0, ignore_doctypes=None, for_reload=False, ignore_permissions=False, flags=None, ignore_on_trash=False, ignore_missing=True)</i>
     </p>
 	<div class="docs-attr-desc"><p>Delete a document. Calls <code>frappe.model.delete_doc.delete_doc</code>.</p>
 
@@ -627,23 +611,7 @@ listify the values against the key.
 		frappe.<b>get_active_domains</b>
         <i class="text-muted">()</i>
     </p>
-	<div class="docs-attr-desc"><p>get the domains set in the Domain Settings as active domain </p>
-</div>
-	<br>
-
-	
-
-	
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="frappe.get_active_modules" href="#frappe.get_active_modules" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		frappe.<b>get_active_modules</b>
-        <i class="text-muted">()</i>
-    </p>
-	<div class="docs-attr-desc"><p>get the active modules from Module Def</p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>
 	<br>
 
@@ -670,7 +638,7 @@ listify the values against the key.
 <li><strong><code>filters</code></strong> -  List of filters (see example).</li>
 <li><strong><code>order_by</code></strong> -  Order By e.g. <code>modified desc</code>.</li>
 <li><strong><code>limit_page_start</code></strong> -  Start results at record #. Default 0.</li>
-<li><p><strong><code>limit_poge_length</code></strong> -  No of records in the page. Default 20.</p>
+<li><p><strong><code>limit_page_length</code></strong> -  No of records in the page. Default 20.</p>
 
 <p>Example usage:</p>
 
@@ -972,7 +940,7 @@ todo = frappe.get_doc("ToDo", "TD0001")
 <li><strong><code>filters</code></strong> -  List of filters (see example).</li>
 <li><strong><code>order_by</code></strong> -  Order By e.g. <code>modified desc</code>.</li>
 <li><strong><code>limit_page_start</code></strong> -  Start results at record #. Default 0.</li>
-<li><p><strong><code>limit_poge_length</code></strong> -  No of records in the page. Default 20.</p>
+<li><p><strong><code>limit_page_length</code></strong> -  No of records in the page. Default 20.</p>
 
 <p>Example usage:</p>
 
@@ -1833,7 +1801,7 @@ given fieldname
         <a name="frappe.respond_as_web_page" href="#frappe.respond_as_web_page" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		frappe.<b>respond_as_web_page</b>
-        <i class="text-muted">(title, html, success=None, http_status_code=None, context=None, indicator_color=None, primary_action=/, primary_label=None, fullpage=False)</i>
+        <i class="text-muted">(title, html, success=None, http_status_code=None, context=None, indicator_color=None, primary_action=/, primary_label=None, fullpage=False, width=None)</i>
     </p>
 	<div class="docs-attr-desc"><p>Send response as a web page with a message rather than JSON. Used to show permission errors etc.</p>
 
@@ -1849,6 +1817,7 @@ given fieldname
 <li><strong><code>primary_action</code></strong> -  route on primary button (default is <code>/</code>)</li>
 <li><strong><code>primary_label</code></strong> -  label on primary button (defaut is "Home")</li>
 <li><strong><code>fullpage</code></strong> -  hide header / footer</li>
+<li><strong><code>width</code></strong> -  Width of message in pixels</li>
 </ul>
 </div>
 	<br>
