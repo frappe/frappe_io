@@ -9,7 +9,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 8.10.4</a>
+	Version 8.10.7</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/frappe/tree/develop/frappe/core/doctype/system_settings"
@@ -458,6 +458,19 @@ mm-dd-yyyy</pre>
         
         <tr >
             <td>30</td>
+            <td ><code>allow_login_using_user_name</code></td>
+            <td >
+                Check</td>
+            <td >
+                Allow Login using User Name
+                <p class="text-muted small">
+                    User can login using Email id or User Name</p>
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>31</td>
             <td ><code>allow_error_traceback</code></td>
             <td >
                 Check</td>
@@ -469,7 +482,7 @@ mm-dd-yyyy</pre>
         </tr>
         
         <tr class="info">
-            <td>31</td>
+            <td>32</td>
             <td ><code>two_factor_authentication</code></td>
             <td >
                 Section Break</td>
@@ -481,7 +494,7 @@ mm-dd-yyyy</pre>
         </tr>
         
         <tr >
-            <td>32</td>
+            <td>33</td>
             <td ><code>enable_two_factor_auth</code></td>
             <td >
                 Check</td>
@@ -493,7 +506,19 @@ mm-dd-yyyy</pre>
         </tr>
         
         <tr >
-            <td>33</td>
+            <td>34</td>
+            <td ><code>bypass_2fa_for_retricted_ip_users</code></td>
+            <td >
+                Check</td>
+            <td >
+                Bypass Two Factor Auth for users who login from restricted IP Address
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>35</td>
             <td ><code>two_factor_method</code></td>
             <td >
                 Select</td>
@@ -510,7 +535,7 @@ Email</pre>
         </tr>
         
         <tr >
-            <td>34</td>
+            <td>36</td>
             <td ><code>lifespan_qrcode_image</code></td>
             <td >
                 Int</td>
@@ -523,7 +548,7 @@ Email</pre>
         </tr>
         
         <tr >
-            <td>35</td>
+            <td>37</td>
             <td ><code>otp_issuer_name</code></td>
             <td >
                 Data</td>
@@ -535,7 +560,7 @@ Email</pre>
         </tr>
         
         <tr class="info">
-            <td>36</td>
+            <td>38</td>
             <td ><code>email</code></td>
             <td >
                 Section Break</td>
@@ -547,7 +572,7 @@ Email</pre>
         </tr>
         
         <tr >
-            <td>37</td>
+            <td>39</td>
             <td ><code>email_footer_address</code></td>
             <td >
                 Small Text</td>
@@ -560,7 +585,7 @@ Email</pre>
         </tr>
         
         <tr >
-            <td>38</td>
+            <td>40</td>
             <td ><code>column_break_18</code></td>
             <td class="info">
                 Column Break</td>
@@ -572,7 +597,7 @@ Email</pre>
         </tr>
         
         <tr >
-            <td>39</td>
+            <td>41</td>
             <td ><code>disable_standard_email_footer</code></td>
             <td >
                 Check</td>
