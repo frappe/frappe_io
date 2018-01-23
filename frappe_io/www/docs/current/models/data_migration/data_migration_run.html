@@ -1,0 +1,805 @@
+<!-- title: Data Migration Run -->
+<!-- add-breadcrumbs -->
+
+
+
+
+
+<h1>Data Migration Run</h1>
+<div class="dev-header">
+
+<a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
+	Version 10.0.13</a>
+
+
+	<a class="btn btn-default btn-sm" href="https://github.com/frappe/frappe/tree/develop/frappe/data_migration/doctype/data_migration_run"
+		target="_blank" style="margin-left: 10px; margin-bottom: 10px;"><i class="octicon octicon-mark-github"></i> Source</a>
+
+</div>
+
+
+
+
+
+    <p><b>Table Name:</b> <code>tabData Migration Run</code></p>
+
+
+
+
+<h3>Fields</h3>
+
+<table class="table table-bordered docfields">
+    <thead>
+        <tr>
+            <th style="width: 5%">Sr</th>
+            <th style="width: 25%">Fieldname</th>
+            <th style="width: 20%">Type</th>
+            <th style="width: 25%">Label</th>
+            <th style="width: 25%">Options</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        <tr >
+            <td>1</td>
+            <td class="danger" title="Mandatory"><code>data_migration_plan</code></td>
+            <td >
+                Link</td>
+            <td >
+                Data Migration Plan
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/data_migration/data_migration_plan">Data Migration Plan</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>2</td>
+            <td class="danger" title="Mandatory"><code>data_migration_connector</code></td>
+            <td >
+                Link</td>
+            <td >
+                Data Migration Connector
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/data_migration/data_migration_connector">Data Migration Connector</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>3</td>
+            <td ><code>status</code></td>
+            <td >
+                Select</td>
+            <td >
+                Status
+                
+            </td>
+            <td>
+                <pre>Pending
+Started
+Partial Success
+Success
+Fail
+Error</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>4</td>
+            <td ><code>current_mapping</code></td>
+            <td >
+                Data</td>
+            <td class="text-muted" title="Hidden">
+                Current Mapping
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>5</td>
+            <td ><code>current_mapping_start</code></td>
+            <td >
+                Int</td>
+            <td class="text-muted" title="Hidden">
+                Current Mapping Start
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>6</td>
+            <td ><code>current_mapping_delete_start</code></td>
+            <td >
+                Int</td>
+            <td class="text-muted" title="Hidden">
+                Current Mapping Delete Start
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>7</td>
+            <td ><code>current_mapping_type</code></td>
+            <td >
+                Select</td>
+            <td >
+                Current Mapping Type
+                
+            </td>
+            <td>
+                <pre>Push
+Pull</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>8</td>
+            <td ><code>current_mapping_action</code></td>
+            <td >
+                Select</td>
+            <td >
+                Current Mapping Action
+                
+            </td>
+            <td>
+                <pre>Insert
+Delete</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>9</td>
+            <td ><code>total_pages</code></td>
+            <td >
+                Int</td>
+            <td class="text-muted" title="Hidden">
+                Total Pages
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>10</td>
+            <td ><code>percent_complete</code></td>
+            <td >
+                Percent</td>
+            <td >
+                Percent Complete
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr class="info">
+            <td>11</td>
+            <td ><code>logs_sb</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Logs
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>12</td>
+            <td ><code>push_insert</code></td>
+            <td >
+                Int</td>
+            <td >
+                Push Insert
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>13</td>
+            <td ><code>push_update</code></td>
+            <td >
+                Int</td>
+            <td >
+                Push Update
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>14</td>
+            <td ><code>push_delete</code></td>
+            <td >
+                Int</td>
+            <td >
+                Push Delete
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>15</td>
+            <td ><code>push_failed</code></td>
+            <td >
+                Code</td>
+            <td >
+                Push Failed
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>16</td>
+            <td ><code>column_break_16</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>17</td>
+            <td ><code>pull_insert</code></td>
+            <td >
+                Int</td>
+            <td >
+                Pull Insert
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>18</td>
+            <td ><code>pull_update</code></td>
+            <td >
+                Int</td>
+            <td >
+                Pull Update
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>19</td>
+            <td ><code>pull_failed</code></td>
+            <td >
+                Code</td>
+            <td >
+                Pull Failed
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>20</td>
+            <td ><code>log</code></td>
+            <td >
+                Code</td>
+            <td >
+                Log
+                
+            </td>
+            <td></td>
+        </tr>
+        
+    </tbody>
+</table>
+
+
+    <hr>
+    <h3>Controller</h3>
+    <h4>frappe.data_migration.doctype.data_migration_run.data_migration_run</h4>
+
+    
+
+
+
+	
+        
+	<h3 style="font-weight: normal;">Class <b>DataMigrationRun</b></h3>
+    
+    <p style="padding-left: 30px;"><i>Inherits from frappe.model.document.Document</i></h4>
+    
+    <div class="docs-attr-desc"><p></p>
+</div>
+    <div style="padding-left: 30px;">
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="_push_delete" href="#_push_delete" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>_push_delete</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Deletes docs deleted from local on remote</p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="_push_insert" href="#_push_insert" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>_push_insert</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Inserts new local docs on remote</p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="_push_update" href="#_push_update" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>_push_update</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Updates local modified docs on remote</p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="begin" href="#begin" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>begin</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="complete" href="#complete" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>complete</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="enqueue_next_mapping" href="#enqueue_next_mapping" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>enqueue_next_mapping</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="enqueue_next_page" href="#enqueue_next_page" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>enqueue_next_page</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="get_connection" href="#get_connection" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>get_connection</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="get_count" href="#get_count" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>get_count</b>
+        <i class="text-muted">(self, mapping)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="get_data" href="#get_data" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>get_data</b>
+        <i class="text-muted">(self, filters)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="get_deleted_local_data" href="#get_deleted_local_data" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>get_deleted_local_data</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Fetch local deleted data using <code>frappe.get_all</code>. Used during Push</p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="get_last_modified_condition" href="#get_last_modified_condition" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>get_last_modified_condition</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="get_log" href="#get_log" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>get_log</b>
+        <i class="text-muted">(self, key, default=None)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="get_mapping" href="#get_mapping" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>get_mapping</b>
+        <i class="text-muted">(self, mapping_name)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="get_new_local_data" href="#get_new_local_data" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>get_new_local_data</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Fetch newly inserted local data using <code>frappe.get_all</code>. Used during Push</p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="get_next_mapping_name" href="#get_next_mapping_name" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>get_next_mapping_name</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="get_or_filters" href="#get_or_filters" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>get_or_filters</b>
+        <i class="text-muted">(self, mapping)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="get_plan" href="#get_plan" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>get_plan</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="get_remote_data" href="#get_remote_data" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>get_remote_data</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Fetch data from remote using <code>connection.get</code>. Used during Pull</p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="get_updated_local_data" href="#get_updated_local_data" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>get_updated_local_data</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Fetch local updated data using <code>frappe.get_all</code>. Used during Push</p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="post_process_doc" href="#post_process_doc" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>post_process_doc</b>
+        <i class="text-muted">(self, local_doc=None, remote_doc=None)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="pre_process_doc" href="#pre_process_doc" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>pre_process_doc</b>
+        <i class="text-muted">(self, doc)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="pull" href="#pull" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>pull</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="push" href="#push" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>push</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="run" href="#run" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>run</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="run_current_mapping" href="#run_current_mapping" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>run_current_mapping</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="set_log" href="#set_log" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>set_log</b>
+        <i class="text-muted">(self, key, value)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="update_log" href="#update_log" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>update_log</b>
+        <i class="text-muted">(self, key, value=None)</i>
+    </p>
+	<div class="docs-attr-desc"><pre><code>    Helper for updating logs,
+    push_failed and pull_failed are stored as json,
+    other keys are stored as int
+</code></pre>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="validate" href="#validate" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>validate</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+    </div>
+    <hr>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.data_migration.doctype.data_migration_run.data_migration_run.insert_local_doc" href="#frappe.data_migration.doctype.data_migration_run.data_migration_run.insert_local_doc" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.data_migration.doctype.data_migration_run.data_migration_run.<b>insert_local_doc</b>
+        <i class="text-muted">(mapping, doc)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.data_migration.doctype.data_migration_run.data_migration_run.local_doc_exists" href="#frappe.data_migration.doctype.data_migration_run.data_migration_run.local_doc_exists" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.data_migration.doctype.data_migration_run.data_migration_run.<b>local_doc_exists</b>
+        <i class="text-muted">(mapping, migration_id_value)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.data_migration.doctype.data_migration_run.data_migration_run.update_local_doc" href="#frappe.data_migration.doctype.data_migration_run.data_migration_run.update_local_doc" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.data_migration.doctype.data_migration_run.data_migration_run.<b>update_local_doc</b>
+        <i class="text-muted">(mapping, remote_doc, migration_id_value)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+
+    
+    
+
+
+<!-- autodoc -->
+<!-- jinja -->
+<!-- static -->

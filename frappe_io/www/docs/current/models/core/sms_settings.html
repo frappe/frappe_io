@@ -9,7 +9,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 8.10.8</a>
+	Version 10.0.13</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/frappe/tree/develop/frappe/core/doctype/sms_settings"
@@ -40,18 +40,6 @@
         
         <tr >
             <td>1</td>
-            <td ><code>column_break0</code></td>
-            <td class="info">
-                Column Break</td>
-            <td >
-                
-                
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>2</td>
             <td class="danger" title="Mandatory"><code>sms_gateway_url</code></td>
             <td >
                 Data</td>
@@ -64,7 +52,7 @@
         </tr>
         
         <tr >
-            <td>3</td>
+            <td>2</td>
             <td class="danger" title="Mandatory"><code>message_parameter</code></td>
             <td >
                 Data</td>
@@ -77,7 +65,7 @@
         </tr>
         
         <tr >
-            <td>4</td>
+            <td>3</td>
             <td class="danger" title="Mandatory"><code>receiver_parameter</code></td>
             <td >
                 Data</td>
@@ -90,19 +78,7 @@
         </tr>
         
         <tr >
-            <td>5</td>
-            <td ><code>sms_sender_name</code></td>
-            <td >
-                Data</td>
-            <td >
-                SMS Sender Name
-                
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>6</td>
+            <td>4</td>
             <td ><code>static_parameters_section</code></td>
             <td class="info">
                 Column Break</td>
@@ -114,7 +90,7 @@
         </tr>
         
         <tr >
-            <td>7</td>
+            <td>5</td>
             <td ><code>parameters</code></td>
             <td >
                 Table</td>
@@ -133,6 +109,18 @@
 
                 
             </td>
+        </tr>
+        
+        <tr >
+            <td>6</td>
+            <td ><code>use_post</code></td>
+            <td >
+                Check</td>
+            <td >
+                Use POST
+                
+            </td>
+            <td></td>
         </tr>
         
     </tbody>
@@ -201,12 +189,12 @@
     
     
 	<p class="docs-attr-name">
-        <a name="frappe.core.doctype.sms_settings.sms_settings.get_sender_name" href="#frappe.core.doctype.sms_settings.sms_settings.get_sender_name" class="text-muted small">
+        <a name="frappe.core.doctype.sms_settings.sms_settings.get_headers" href="#frappe.core.doctype.sms_settings.sms_settings.get_headers" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		frappe.core.doctype.sms_settings.sms_settings.<b>get_sender_name</b>
-        <i class="text-muted">()</i>
+		frappe.core.doctype.sms_settings.sms_settings.<b>get_headers</b>
+        <i class="text-muted">(sms_settings=None)</i>
     </p>
-	<div class="docs-attr-desc"><p>returns name as SMS sender</p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>
 	<br>
 
@@ -220,7 +208,7 @@
         <a name="frappe.core.doctype.sms_settings.sms_settings.send_request" href="#frappe.core.doctype.sms_settings.sms_settings.send_request" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		frappe.core.doctype.sms_settings.sms_settings.<b>send_request</b>
-        <i class="text-muted">(gateway_url, params)</i>
+        <i class="text-muted">(gateway_url, params, headers=None, use_post=False)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>

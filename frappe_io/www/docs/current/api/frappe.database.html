@@ -3,7 +3,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 8.10.8</a>
+	Version 10.0.13</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/frappe/blob/develop/frappe/database.py"
@@ -33,7 +33,7 @@
         <a name="__init__" href="#__init__" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		<b>__init__</b>
-        <i class="text-muted">(self, host=None, user=None, password=None, ac_name=None, use_default=0)</i>
+        <i class="text-muted">(self, host=None, user=None, password=None, ac_name=None, use_default=0, local_infile=0)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>
@@ -268,20 +268,6 @@
         <i class="text-muted">(self, dt, filters=None, debug=False)</i>
     </p>
 	<div class="docs-attr-desc"><p>Returns <code>COUNT(*)</code> for given DocType and filters.</p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="enqueue_global_search" href="#enqueue_global_search" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>enqueue_global_search</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>
 	<br>
 
@@ -1016,6 +1002,22 @@
         
     </div>
     <hr>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.database.enqueue_jobs_after_commit" href="#frappe.database.enqueue_jobs_after_commit" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.database.<b>enqueue_jobs_after_commit</b>
+        <i class="text-muted">()</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
 
 	
 

@@ -3,7 +3,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 8.10.8</a>
+	Version 10.0.13</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/frappe/blob/develop/frappe/test_runner.py"
@@ -39,7 +39,7 @@
         <a name="frappe.test_runner._run_unittest" href="#frappe.test_runner._run_unittest" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		frappe.test_runner.<b>_run_unittest</b>
-        <i class="text-muted">(module, verbose=False, tests=(), profile=False)</i>
+        <i class="text-muted">(modules, verbose=False, tests=(), profile=False)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>
@@ -87,7 +87,7 @@
         <a name="frappe.test_runner.main" href="#frappe.test_runner.main" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		frappe.test_runner.<b>main</b>
-        <i class="text-muted">(app=None, module=None, doctype=None, verbose=False, tests=(), force=False, profile=False, junit_xml_output=None, ui_tests=False)</i>
+        <i class="text-muted">(app=None, module=None, doctype=None, verbose=False, tests=(), force=False, profile=False, junit_xml_output=None, ui_tests=False, doctype_list_path=None)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>
@@ -199,7 +199,7 @@
         <a name="frappe.test_runner.run_tests_for_doctype" href="#frappe.test_runner.run_tests_for_doctype" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		frappe.test_runner.<b>run_tests_for_doctype</b>
-        <i class="text-muted">(doctype, verbose=False, tests=(), force=False, profile=False)</i>
+        <i class="text-muted">(doctypes, verbose=False, tests=(), force=False, profile=False)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>
@@ -231,7 +231,7 @@
         <a name="frappe.test_runner.run_ui_tests" href="#frappe.test_runner.run_ui_tests" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		frappe.test_runner.<b>run_ui_tests</b>
-        <i class="text-muted">(app=None, test=None, verbose=False, profile=False)</i>
+        <i class="text-muted">(app=None, test=None, test_list=None, verbose=False, profile=False)</i>
     </p>
 	<div class="docs-attr-desc"><p>Run a single unit test for UI using test<em>test</em>runner</p>
 </div>

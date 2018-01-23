@@ -9,7 +9,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 8.10.8</a>
+	Version 10.0.13</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/frappe/tree/develop/frappe/core/doctype/file"
@@ -264,11 +264,11 @@
         
         <tr >
             <td>18</td>
-            <td ><code>content_hash</code></td>
+            <td ><code>attached_to_field</code></td>
             <td >
                 Data</td>
-            <td class="text-muted" title="Hidden">
-                Content Hash
+            <td >
+                Attached To Field
                 
             </td>
             <td></td>
@@ -305,6 +305,18 @@
                 Data</td>
             <td class="text-muted" title="Hidden">
                 old_parent
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>22</td>
+            <td ><code>content_hash</code></td>
+            <td >
+                Data</td>
+            <td >
+                Content Hash
                 
             </td>
             <td></td>
@@ -704,6 +716,25 @@
         <i class="text-muted">(file_name, folder)</i>
     </p>
 	<div class="docs-attr-desc"><p>create new folder under current parent folder </p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/frappe.core.doctype.file.file.get_attached_images</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="frappe.core.doctype.file.file.get_attached_images" href="#frappe.core.doctype.file.file.get_attached_images" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.core.doctype.file.file.<b>get_attached_images</b>
+        <i class="text-muted">(doctype, names)</i>
+    </p>
+	<div class="docs-attr-desc"><p>get list of image urls attached in form
+    returns {name: ['image.jpg', 'image.png']}</p>
 </div>
 	<br>
 

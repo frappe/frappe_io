@@ -3,7 +3,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 8.10.8</a>
+	Version 10.0.13</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/frappe/blob/develop/frappe/model/base_document.py"
@@ -203,7 +203,7 @@
         <a name="as_dict" href="#as_dict" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		<b>as_dict</b>
-        <i class="text-muted">(self, no_nulls=False, no_default_fields=False)</i>
+        <i class="text-muted">(self, no_nulls=False, no_default_fields=False, convert_dates_to_str=False)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>
@@ -242,52 +242,12 @@
     
     
 	<p class="docs-attr-name">
-        <a name="db_get" href="#db_get" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>db_get</b>
-        <i class="text-muted">(self, fieldname)</i>
-    </p>
-	<div class="docs-attr-desc"><p>get database vale for this fieldname</p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
         <a name="db_insert" href="#db_insert" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		<b>db_insert</b>
         <i class="text-muted">(self)</i>
     </p>
 	<div class="docs-attr-desc"><p>INSERT the document (with valid columns) in the database.</p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="db_set" href="#db_set" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>db_set</b>
-        <i class="text-muted">(self, fieldname, value=None, update_modified=True)</i>
-    </p>
-	<div class="docs-attr-desc"><p>Set a value in the document object, update the timestamp and update the database.</p>
-
-<pre><code>    WARNING: This method does not trigger controller validations and should
-    be used very carefully.
-</code></pre>
-
-<p><strong>Parameters:</strong></p>
-
-<ul>
-<li><strong><code>fieldname</code></strong> -  fieldname of the property to be updated, or a {"field":"value"} dictionary</li>
-<li><strong><code>value</code></strong> -  value of the property to be updated</li>
-<li><strong><code>update_modified</code></strong> -  default True. updates the <code>modified</code> and <code>modified_by</code> properties</li>
-</ul>
 </div>
 	<br>
 
@@ -453,7 +413,7 @@
         <a name="get_valid_dict" href="#get_valid_dict" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		<b>get_valid_dict</b>
-        <i class="text-muted">(self, sanitize=True)</i>
+        <i class="text-muted">(self, sanitize=True, convert_dates_to_str=False)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>

@@ -9,7 +9,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 8.10.8</a>
+	Version 10.0.13</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/frappe/tree/develop/frappe/core/doctype/domain_settings"
@@ -40,11 +40,11 @@
         
         <tr class="info">
             <td>1</td>
-            <td ><code>domains</code></td>
+            <td ><code>active_domains_sb</code></td>
             <td >
                 Section Break</td>
             <td >
-                Domains
+                Active Domains
                 
             </td>
             <td></td>
@@ -56,7 +56,7 @@
             <td >
                 HTML</td>
             <td >
-                Domains
+                Domains HTML
                 
             </td>
             <td></td>
@@ -119,24 +119,36 @@
 	<br>
 
         
-    </div>
-    <hr>
-
-	
-
-	
         
     
     
 	<p class="docs-attr-name">
-        <a name="frappe.core.doctype.domain_settings.domain_settings.clear_domain_cache" href="#frappe.core.doctype.domain_settings.domain_settings.clear_domain_cache" class="text-muted small">
+        <a name="restrict_roles_and_modules" href="#restrict_roles_and_modules" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		frappe.core.doctype.domain_settings.domain_settings.<b>clear_domain_cache</b>
-        <i class="text-muted">()</i>
+		<b>restrict_roles_and_modules</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Disable all restricted roles and set <code>restrict_to_domain</code> property in Module Def</p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="set_active_domains" href="#set_active_domains" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>set_active_domains</b>
+        <i class="text-muted">(self, domains)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>
 	<br>
+
+        
+    </div>
+    <hr>
 
 	
 

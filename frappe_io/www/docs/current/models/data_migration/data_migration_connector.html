@@ -1,0 +1,253 @@
+<!-- title: Data Migration Connector -->
+<!-- add-breadcrumbs -->
+
+
+
+
+
+<h1>Data Migration Connector</h1>
+<div class="dev-header">
+
+<a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
+	Version 10.0.13</a>
+
+
+	<a class="btn btn-default btn-sm" href="https://github.com/frappe/frappe/tree/develop/frappe/data_migration/doctype/data_migration_connector"
+		target="_blank" style="margin-left: 10px; margin-bottom: 10px;"><i class="octicon octicon-mark-github"></i> Source</a>
+
+</div>
+
+
+
+
+
+    <p><b>Table Name:</b> <code>tabData Migration Connector</code></p>
+
+
+
+
+<h3>Fields</h3>
+
+<table class="table table-bordered docfields">
+    <thead>
+        <tr>
+            <th style="width: 5%">Sr</th>
+            <th style="width: 25%">Fieldname</th>
+            <th style="width: 20%">Type</th>
+            <th style="width: 25%">Label</th>
+            <th style="width: 25%">Options</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        <tr >
+            <td>1</td>
+            <td class="danger" title="Mandatory"><code>connector_name</code></td>
+            <td >
+                Data</td>
+            <td >
+                Connector Name
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>2</td>
+            <td ><code>connector_type</code></td>
+            <td >
+                Select</td>
+            <td >
+                Connector Type
+                
+            </td>
+            <td>
+                <pre>
+Frappe
+Custom</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>3</td>
+            <td ><code>python_module</code></td>
+            <td >
+                Data</td>
+            <td >
+                Python Module
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr class="info">
+            <td>4</td>
+            <td ><code>authentication_credentials</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Authentication Credentials
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>5</td>
+            <td ><code>hostname</code></td>
+            <td >
+                Data</td>
+            <td >
+                Hostname
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>6</td>
+            <td ><code>database_name</code></td>
+            <td >
+                Data</td>
+            <td >
+                Database Name
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>7</td>
+            <td ><code>username</code></td>
+            <td >
+                Data</td>
+            <td >
+                Username
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>8</td>
+            <td ><code>password</code></td>
+            <td >
+                Password</td>
+            <td >
+                Password
+                
+            </td>
+            <td></td>
+        </tr>
+        
+    </tbody>
+</table>
+
+
+    <hr>
+    <h3>Controller</h3>
+    <h4>frappe.data_migration.doctype.data_migration_connector.data_migration_connector</h4>
+
+    
+
+
+
+	
+        
+	<h3 style="font-weight: normal;">Class <b>DataMigrationConnector</b></h3>
+    
+    <p style="padding-left: 30px;"><i>Inherits from frappe.model.document.Document</i></h4>
+    
+    <div class="docs-attr-desc"><p></p>
+</div>
+    <div style="padding-left: 30px;">
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="get_connection" href="#get_connection" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>get_connection</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="validate" href="#validate" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>validate</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+    </div>
+    <hr>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/frappe.data_migration.doctype.data_migration_connector.data_migration_connector.create_new_connection</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="frappe.data_migration.doctype.data_migration_connector.data_migration_connector.create_new_connection" href="#frappe.data_migration.doctype.data_migration_connector.data_migration_connector.create_new_connection" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.data_migration.doctype.data_migration_connector.data_migration_connector.<b>create_new_connection</b>
+        <i class="text-muted">(module, connection_name)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.data_migration.doctype.data_migration_connector.data_migration_connector.get_connection_class" href="#frappe.data_migration.doctype.data_migration_connector.data_migration_connector.get_connection_class" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.data_migration.doctype.data_migration_connector.data_migration_connector.<b>get_connection_class</b>
+        <i class="text-muted">(python_module)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+
+    
+    
+        <h4>Linked In:</h4>
+        <ul>
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/data_migration/data_migration_run">Data Migration Run</a>
+
+</li>
+			
+        
+        </ul>
+    
+
+
+<!-- autodoc -->
+<!-- jinja -->
+<!-- static -->

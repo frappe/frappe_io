@@ -1,0 +1,475 @@
+<!-- title: Activity Log -->
+<!-- add-breadcrumbs -->
+
+
+
+
+
+<h1>Activity Log</h1>
+<div class="dev-header">
+
+<a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
+	Version 10.0.13</a>
+
+
+	<a class="btn btn-default btn-sm" href="https://github.com/frappe/frappe/tree/develop/frappe/core/doctype/activity_log"
+		target="_blank" style="margin-left: 10px; margin-bottom: 10px;"><i class="octicon octicon-mark-github"></i> Source</a>
+
+</div>
+
+
+
+
+
+    <p><b>Table Name:</b> <code>tabActivity Log</code></p>
+
+
+Keep track of all update feeds
+
+<h3>Fields</h3>
+
+<table class="table table-bordered docfields">
+    <thead>
+        <tr>
+            <th style="width: 5%">Sr</th>
+            <th style="width: 25%">Fieldname</th>
+            <th style="width: 20%">Type</th>
+            <th style="width: 25%">Label</th>
+            <th style="width: 25%">Options</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        <tr >
+            <td>1</td>
+            <td class="danger" title="Mandatory"><code>subject</code></td>
+            <td >
+                Small Text</td>
+            <td >
+                Subject
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr class="info">
+            <td>2</td>
+            <td ><code>section_break_8</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>3</td>
+            <td ><code>content</code></td>
+            <td >
+                Text Editor</td>
+            <td >
+                Message
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>4</td>
+            <td ><code>column_break_5</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr class="info">
+            <td>5</td>
+            <td ><code>additional_info</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                More Information
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>6</td>
+            <td ><code>communication_date</code></td>
+            <td >
+                Datetime</td>
+            <td >
+                Date
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>7</td>
+            <td ><code>column_break_7</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>8</td>
+            <td ><code>operation</code></td>
+            <td >
+                Select</td>
+            <td >
+                Operation
+                
+            </td>
+            <td>
+                <pre>
+Login
+Logout</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>9</td>
+            <td ><code>status</code></td>
+            <td >
+                Select</td>
+            <td >
+                Status
+                
+            </td>
+            <td>
+                <pre>
+Success
+Failed
+Linked
+Closed</pre>
+            </td>
+        </tr>
+        
+        <tr class="info">
+            <td>10</td>
+            <td ><code>reference_section</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Reference
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>11</td>
+            <td ><code>reference_doctype</code></td>
+            <td >
+                Link</td>
+            <td >
+                Reference DocType
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/core/doctype">DocType</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>12</td>
+            <td ><code>reference_name</code></td>
+            <td >
+                Dynamic Link</td>
+            <td >
+                Reference Name
+                
+            </td>
+            <td>
+                <pre>reference_doctype</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>13</td>
+            <td ><code>reference_owner</code></td>
+            <td >
+                Read Only</td>
+            <td >
+                Reference Owner
+                
+            </td>
+            <td>
+                <pre>reference_name.owner</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>14</td>
+            <td ><code>column_break_14</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>15</td>
+            <td ><code>timeline_doctype</code></td>
+            <td >
+                Link</td>
+            <td >
+                Timeline DocType
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/core/doctype">DocType</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>16</td>
+            <td ><code>timeline_name</code></td>
+            <td >
+                Dynamic Link</td>
+            <td >
+                Timeline Name
+                
+            </td>
+            <td>
+                <pre>timeline_doctype</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>17</td>
+            <td ><code>link_doctype</code></td>
+            <td >
+                Link</td>
+            <td >
+                Link DocType
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/core/doctype">DocType</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>18</td>
+            <td ><code>link_name</code></td>
+            <td >
+                Dynamic Link</td>
+            <td >
+                Link Name
+                
+            </td>
+            <td>
+                <pre>link_doctype</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>19</td>
+            <td ><code>user</code></td>
+            <td >
+                Link</td>
+            <td >
+                User
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/core/user">User</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>20</td>
+            <td ><code>full_name</code></td>
+            <td >
+                Data</td>
+            <td >
+                Full Name
+                
+            </td>
+            <td></td>
+        </tr>
+        
+    </tbody>
+</table>
+
+
+    <hr>
+    <h3>Controller</h3>
+    <h4>frappe.core.doctype.activity_log.activity_log</h4>
+
+    
+
+
+
+	
+        
+	<h3 style="font-weight: normal;">Class <b>ActivityLog</b></h3>
+    
+    <p style="padding-left: 30px;"><i>Inherits from frappe.model.document.Document</i></h4>
+    
+    <div class="docs-attr-desc"><p></p>
+</div>
+    <div style="padding-left: 30px;">
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="before_insert" href="#before_insert" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>before_insert</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="on_trash" href="#on_trash" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>on_trash</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="set_status" href="#set_status" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>set_status</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="validate" href="#validate" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>validate</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+    </div>
+    <hr>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.core.doctype.activity_log.activity_log.add_authentication_log" href="#frappe.core.doctype.activity_log.activity_log.add_authentication_log" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.core.doctype.activity_log.activity_log.<b>add_authentication_log</b>
+        <i class="text-muted">(subject, user, operation=Login, status=Success)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.core.doctype.activity_log.activity_log.clear_authentication_logs" href="#frappe.core.doctype.activity_log.activity_log.clear_authentication_logs" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.core.doctype.activity_log.activity_log.<b>clear_authentication_logs</b>
+        <i class="text-muted">()</i>
+    </p>
+	<div class="docs-attr-desc"><p>clear 100 day old authentication logs</p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.core.doctype.activity_log.activity_log.on_doctype_update" href="#frappe.core.doctype.activity_log.activity_log.on_doctype_update" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.core.doctype.activity_log.activity_log.<b>on_doctype_update</b>
+        <i class="text-muted">()</i>
+    </p>
+	<div class="docs-attr-desc"><p>Add indexes in <code>tabActivity Log</code></p>
+</div>
+	<br>
+
+	
+
+
+    
+    
+
+
+<!-- autodoc -->
+<!-- jinja -->
+<!-- static -->
