@@ -23,9 +23,11 @@ article table {
 .page-container[data-doctype="Blog Post"], .page-container[data-path="blog"] {
 	max-width: 660px;
 	margin: auto;
-	padding-top: 60px;
-}
 
+}
+.page_content {
+    padding:0;
+}
 @media (max-width: 767px) {
 	.page-container[data-doctype="Blog Post"] {
 		padding-top: 0px;
@@ -40,6 +42,28 @@ article table {
 .blog-text {
 	font-size: 18px;
 	line-height: 1.5;
+}
+
+.blog-list-item {
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+.blog-list-item h2 {
+    margin: 30px 0 15px;
+    font-size:25px;
+}
+
+.post-description {
+    margin: 15px 0;
+    letter-spacing: 0.005em;
+
+}
+.blog-list-item .avatar{
+    margin-right: 15px;
+}
+
+.page-content img {
+    border-radius: 4px;
 }
 
 body[data-path^="blog"] .page-head {
