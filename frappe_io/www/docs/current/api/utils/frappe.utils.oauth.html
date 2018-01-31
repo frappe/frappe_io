@@ -3,7 +3,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 8.10.8</a>
+	Version 10.0.13</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/frappe/blob/develop/frappe/utils/oauth.py"
@@ -54,7 +54,7 @@
         <a name="frappe.utils.oauth.get_info_via_oauth" href="#frappe.utils.oauth.get_info_via_oauth" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		frappe.utils.oauth.<b>get_info_via_oauth</b>
-        <i class="text-muted">(provider, code, decoder=None)</i>
+        <i class="text-muted">(provider, code, decoder=None, id_token=False)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>
@@ -182,6 +182,22 @@
         <a name="frappe.utils.oauth.login_via_oauth2" href="#frappe.utils.oauth.login_via_oauth2" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		frappe.utils.oauth.<b>login_via_oauth2</b>
+        <i class="text-muted">(provider, code, state, decoder=None)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.utils.oauth.login_via_oauth2_id_token" href="#frappe.utils.oauth.login_via_oauth2_id_token" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.utils.oauth.<b>login_via_oauth2_id_token</b>
         <i class="text-muted">(provider, code, state, decoder=None)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>

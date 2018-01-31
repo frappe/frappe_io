@@ -3,7 +3,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 8.10.8</a>
+	Version 10.0.13</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/frappe/blob/develop/frappe/email/email_body.py"
@@ -33,7 +33,7 @@ Also sets all messages as multipart/alternative for cleaner reading in text-only
         <a name="__init__" href="#__init__" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		<b>__init__</b>
-        <i class="text-muted">(self, sender=, recipients=(), subject=, alternative=0, reply_to=None, cc=(), email_account=None, expose_recipients=None)</i>
+        <i class="text-muted">(self, sender=, recipients=(), subject=, alternative=0, reply_to=None, cc=(), bcc=(), email_account=None, expose_recipients=None)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>
@@ -280,7 +280,7 @@ Also sets all messages as multipart/alternative for cleaner reading in text-only
         <a name="frappe.email.email_body.get_email" href="#frappe.email.email_body.get_email" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		frappe.email.email_body.<b>get_email</b>
-        <i class="text-muted">(recipients, sender=, msg=, subject=[No Subject], text_content=None, footer=None, print_html=None, formatted=None, attachments=None, content=None, reply_to=None, cc=[], email_account=None, expose_recipients=None, inline_images=[], header=None)</i>
+        <i class="text-muted">(recipients, sender=, msg=, subject=[No Subject], text_content=None, footer=None, print_html=None, formatted=None, attachments=None, content=None, reply_to=None, cc=[], bcc=[], email_account=None, expose_recipients=None, inline_images=[], header=None)</i>
     </p>
 	<div class="docs-attr-desc"><p>Prepare an email with the following format:
         - multipart/mixed
@@ -353,7 +353,7 @@ Also sets all messages as multipart/alternative for cleaner reading in text-only
         <a name="frappe.email.email_body.get_formatted_html" href="#frappe.email.email_body.get_formatted_html" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		frappe.email.email_body.<b>get_formatted_html</b>
-        <i class="text-muted">(subject, message, footer=None, print_html=None, email_account=None, header=None, unsubscribe_link=None)</i>
+        <i class="text-muted">(subject, message, footer=None, print_html=None, email_account=None, header=None, unsubscribe_link=None, sender=None)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>

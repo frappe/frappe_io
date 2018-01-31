@@ -3,7 +3,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 8.10.8</a>
+	Version 10.0.13</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/frappe/blob/develop/frappe/email/smtp.py"
@@ -44,7 +44,7 @@
         <a name="setup_email_account" href="#setup_email_account" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		<b>setup_email_account</b>
-        <i class="text-muted">(self, append_to=None)</i>
+        <i class="text-muted">(self, append_to=None, sender=None)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>
@@ -106,7 +106,7 @@
         <a name="frappe.email.smtp.get_outgoing_email_account" href="#frappe.email.smtp.get_outgoing_email_account" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		frappe.email.smtp.<b>get_outgoing_email_account</b>
-        <i class="text-muted">(raise_exception_not_set=True, append_to=None)</i>
+        <i class="text-muted">(raise_exception_not_set=True, append_to=None, sender=None)</i>
     </p>
 	<div class="docs-attr-desc"><p>Returns outgoing email account based on <code>append_to</code> or the default
         outgoing account. If default outgoing account is not found, it will

@@ -1,3 +1,4 @@
 frappe.integrations
 frappe.integrations.utils
 frappe.integrations.oauth2
+frappe.integrations.oauth2_logins

@@ -1,2 +1,3 @@
 frappe.core.notifications
+frappe.core.utils
 frappe.core

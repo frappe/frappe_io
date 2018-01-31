@@ -3,7 +3,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 8.10.8</a>
+	Version 10.0.13</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/frappe/blob/develop/frappe/__init__.py"
@@ -210,7 +210,7 @@ listify the values against the key.
         <a name="frappe.attach_print" href="#frappe.attach_print" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		frappe.<b>attach_print</b>
-        <i class="text-muted">(doctype, name, file_name=None, print_format=None, style=None, html=None, doc=None)</i>
+        <i class="text-muted">(doctype, name, file_name=None, print_format=None, style=None, html=None, doc=None, lang=None)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>
@@ -300,6 +300,22 @@ listify the values against the key.
 <li><strong><code>user</code></strong> -  If user is given, only user cache is cleared.</li>
 <li><strong><code>doctype</code></strong> -  If doctype is given, only DocType cache is cleared.</li>
 </ul>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.clear_last_message" href="#frappe.clear_last_message" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.<b>clear_last_message</b>
+        <i class="text-muted">()</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>
 	<br>
 
@@ -510,6 +526,34 @@ listify the values against the key.
 <li><strong><code>event</code></strong> -  this is passed to enable clearing of jobs from queues</li>
 <li><strong><code>async</code></strong> -  (optional) if async=False, the method is executed immediately, else via a worker</li>
 <li><strong><code>job_name</code></strong> -  (optional) can be used to name an enqueue call, which can be used to prevent duplicate calls</li>
+<li><strong><code>kwargs</code></strong> -  keyword arguments to be passed to the method</li>
+</ul>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.enqueue_doc" href="#frappe.enqueue_doc" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.<b>enqueue_doc</b>
+        <i class="text-muted">()</i>
+    </p>
+	<div class="docs-attr-desc"><pre><code>    Enqueue method to be executed using a background worker
+</code></pre>
+
+<p><strong>Parameters:</strong></p>
+
+<ul>
+<li><strong><code>doctype</code></strong> -  DocType of the document on which you want to run the event</li>
+<li><strong><code>name</code></strong> -  Name of the document on which you want to run the event</li>
+<li><strong><code>method</code></strong> -  method string or method object</li>
+<li><strong><code>queue</code></strong> -  (optional) should be either long, default or short</li>
+<li><strong><code>timeout</code></strong> -  (optional) should be set according to the functions</li>
 <li><strong><code>kwargs</code></strong> -  keyword arguments to be passed to the method</li>
 </ul>
 </div>
@@ -752,7 +796,7 @@ frappe.get_all("ToDo", fields=["*"], filters = {"description": ("like", "test%")
         <a name="frappe.get_doc" href="#frappe.get_doc" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		frappe.<b>get_doc</b>
-        <i class="text-muted">(arg1, arg2=None)</i>
+        <i class="text-muted">()</i>
     </p>
 	<div class="docs-attr-desc"><p>Return a <code>frappe.model.document.Document</code> object of the given type and name.</p>
 
@@ -802,6 +846,22 @@ todo = frappe.get_doc("ToDo", "TD0001")
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		frappe.<b>get_doctype_app</b>
         <i class="text-muted">(doctype)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.get_domain_data" href="#frappe.get_domain_data" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.<b>get_domain_data</b>
+        <i class="text-muted">(module)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>
@@ -1070,7 +1130,7 @@ frappe.get_list("ToDo", fields="*", filters = {"description": ("like", "test%")}
         <a name="frappe.get_print" href="#frappe.get_print" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		frappe.<b>get_print</b>
-        <i class="text-muted">(doctype=None, name=None, print_format=None, style=None, html=None, as_pdf=False, doc=None, output=None)</i>
+        <i class="text-muted">(doctype=None, name=None, print_format=None, style=None, html=None, as_pdf=False, doc=None, output=None, no_letterhead=0)</i>
     </p>
 	<div class="docs-attr-desc"><p>Get Print Format for given document.</p>
 
@@ -1359,7 +1419,7 @@ frappe.get_list("ToDo", fields="*", filters = {"description": ("like", "test%")}
 		frappe.<b>import_doc</b>
         <i class="text-muted">(path, ignore_links=False, ignore_insert=False, insert=False)</i>
     </p>
-	<div class="docs-attr-desc"><p>Import a file using Data Import Tool.</p>
+	<div class="docs-attr-desc"><p>Import a file using Data Import.</p>
 </div>
 	<br>
 
@@ -1864,7 +1924,7 @@ given fieldname
         <a name="frappe.sendmail" href="#frappe.sendmail" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		frappe.<b>sendmail</b>
-        <i class="text-muted">(recipients=[], sender=, subject=No Subject, message=No Message, as_markdown=False, delayed=True, reference_doctype=None, reference_name=None, unsubscribe_method=None, unsubscribe_params=None, unsubscribe_message=None, attachments=None, content=None, doctype=None, name=None, reply_to=None, cc=[], message_id=None, in_reply_to=None, send_after=None, expose_recipients=None, send_priority=1, communication=None, retry=1, now=None, read_receipt=None, is_notification=False, inline_images=None, template=None, args=None, header=None)</i>
+        <i class="text-muted">(recipients=[], sender=, subject=No Subject, message=No Message, as_markdown=False, delayed=True, reference_doctype=None, reference_name=None, unsubscribe_method=None, unsubscribe_params=None, unsubscribe_message=None, attachments=None, content=None, doctype=None, name=None, reply_to=None, cc=[], bcc=[], message_id=None, in_reply_to=None, send_after=None, expose_recipients=None, send_priority=1, communication=None, retry=1, now=None, read_receipt=None, is_notification=False, inline_images=None, template=None, args=None, header=None)</i>
     </p>
 	<div class="docs-attr-desc"><p>Send email using user's default <strong>Email Account</strong> or global default <strong>Email Account</strong>.</p>
 

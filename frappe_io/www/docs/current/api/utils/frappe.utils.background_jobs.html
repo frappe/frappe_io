@@ -3,7 +3,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 8.10.8</a>
+	Version 10.0.13</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/frappe/blob/develop/frappe/utils/background_jobs.py"
@@ -23,7 +23,7 @@
         <a name="frappe.utils.background_jobs.enqueue" href="#frappe.utils.background_jobs.enqueue" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		frappe.utils.background_jobs.<b>enqueue</b>
-        <i class="text-muted">(method, queue=default, timeout=300, event=None, async=True, job_name=None, now=False)</i>
+        <i class="text-muted">(method, queue=default, timeout=300, event=None, async=True, job_name=None, now=False, enqueue_after_commit=False)</i>
     </p>
 	<div class="docs-attr-desc"><pre><code>    Enqueue method to be executed using a background worker
 </code></pre>
@@ -40,6 +40,22 @@
 <li><strong><code>now</code></strong> -  if now=True, the method is executed via frappe.call</li>
 <li><strong><code>kwargs</code></strong> -  keyword arguments to be passed to the method</li>
 </ul>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.utils.background_jobs.enqueue_doc" href="#frappe.utils.background_jobs.enqueue_doc" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.utils.background_jobs.<b>enqueue_doc</b>
+        <i class="text-muted">(doctype, name=None, method=None, queue=default, timeout=300, now=False)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Enqueue a method to be run on a document</p>
 </div>
 	<br>
 
@@ -152,6 +168,22 @@
         <i class="text-muted">(queue)</i>
     </p>
 	<div class="docs-attr-desc"><p>When limiting worker to a specific queue, also append queue name to default worker name</p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.utils.background_jobs.run_doc_method" href="#frappe.utils.background_jobs.run_doc_method" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.utils.background_jobs.<b>run_doc_method</b>
+        <i class="text-muted">(doctype, name, doc_method)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>
 	<br>
 

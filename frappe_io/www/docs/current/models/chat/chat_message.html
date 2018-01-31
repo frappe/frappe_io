@@ -1,0 +1,339 @@
+<!-- title: Chat Message -->
+<!-- add-breadcrumbs -->
+
+
+
+
+
+<h1>Chat Message</h1>
+<div class="dev-header">
+
+<a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
+	Version 10.0.13</a>
+
+
+	<a class="btn btn-default btn-sm" href="https://github.com/frappe/frappe/tree/develop/frappe/chat/doctype/chat_message"
+		target="_blank" style="margin-left: 10px; margin-bottom: 10px;"><i class="octicon octicon-mark-github"></i> Source</a>
+
+</div>
+
+
+
+
+
+    <p><b>Table Name:</b> <code>tabChat Message</code></p>
+
+
+
+
+<h3>Fields</h3>
+
+<table class="table table-bordered docfields">
+    <thead>
+        <tr>
+            <th style="width: 5%">Sr</th>
+            <th style="width: 25%">Fieldname</th>
+            <th style="width: 20%">Type</th>
+            <th style="width: 25%">Label</th>
+            <th style="width: 25%">Options</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        <tr >
+            <td>1</td>
+            <td class="danger" title="Mandatory"><code>type</code></td>
+            <td >
+                Select</td>
+            <td >
+                Type
+                
+            </td>
+            <td>
+                <pre>Direct
+Group
+Visitor</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>2</td>
+            <td ><code>user</code></td>
+            <td >
+                Link</td>
+            <td class="text-muted" title="Hidden">
+                User
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/core/user">User</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>3</td>
+            <td class="danger" title="Mandatory"><code>room</code></td>
+            <td >
+                Link</td>
+            <td >
+                Room
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/chat/chat_room">Chat Room</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>4</td>
+            <td class="danger" title="Mandatory"><code>content</code></td>
+            <td >
+                Text</td>
+            <td >
+                Content
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>5</td>
+            <td ><code>mentions</code></td>
+            <td >
+                Code</td>
+            <td class="text-muted" title="Hidden">
+                Mentions
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>6</td>
+            <td ><code>urls</code></td>
+            <td >
+                Data</td>
+            <td class="text-muted" title="Hidden">
+                URLs
+                
+            </td>
+            <td></td>
+        </tr>
+        
+    </tbody>
+</table>
+
+
+    <hr>
+    <h3>Controller</h3>
+    <h4>frappe.chat.doctype.chat_message.chat_message</h4>
+
+    
+
+
+
+	
+        
+	<h3 style="font-weight: normal;">Class <b>ChatMessage</b></h3>
+    
+    <p style="padding-left: 30px;"><i>Inherits from frappe.model.document.Document</i></h4>
+    
+    <div class="docs-attr-desc"><p></p>
+</div>
+    <div style="padding-left: 30px;">
+        
+    </div>
+    <hr>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/frappe.chat.doctype.chat_message.chat_message.get</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="frappe.chat.doctype.chat_message.chat_message.get" href="#frappe.chat.doctype.chat_message.chat_message.get" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.chat.doctype.chat_message.chat_message.<b>get</b>
+        <i class="text-muted">(name, rooms=None, fields=None)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.chat.doctype.chat_message.chat_message.get_message_mentions" href="#frappe.chat.doctype.chat_message.chat_message.get_message_mentions" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.chat.doctype.chat_message.chat_message.<b>get_message_mentions</b>
+        <i class="text-muted">(content)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.chat.doctype.chat_message.chat_message.get_message_meta" href="#frappe.chat.doctype.chat_message.chat_message.get_message_meta" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.chat.doctype.chat_message.chat_message.<b>get_message_meta</b>
+        <i class="text-muted">(content)</i>
+    </p>
+	<div class="docs-attr-desc"><pre><code>    Assumes content to be HTML. Sanitizes the content
+    into a dict of metadata values.
+</code></pre>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.chat.doctype.chat_message.chat_message.get_message_urls" href="#frappe.chat.doctype.chat_message.chat_message.get_message_urls" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.chat.doctype.chat_message.chat_message.<b>get_message_urls</b>
+        <i class="text-muted">(content)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.chat.doctype.chat_message.chat_message.get_new_chat_message" href="#frappe.chat.doctype.chat_message.chat_message.get_new_chat_message" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.chat.doctype.chat_message.chat_message.<b>get_new_chat_message</b>
+        <i class="text-muted">(user, room, content)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.chat.doctype.chat_message.chat_message.get_new_chat_message_doc" href="#frappe.chat.doctype.chat_message.chat_message.get_new_chat_message_doc" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.chat.doctype.chat_message.chat_message.<b>get_new_chat_message_doc</b>
+        <i class="text-muted">(user, room, content, link=True)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.chat.doctype.chat_message.chat_message.history" href="#frappe.chat.doctype.chat_message.chat_message.history" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.chat.doctype.chat_message.chat_message.<b>history</b>
+        <i class="text-muted">(room, fields=None, limit=10, start=None, end=None)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.chat.doctype.chat_message.chat_message.sanitize_message_content" href="#frappe.chat.doctype.chat_message.chat_message.sanitize_message_content" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.chat.doctype.chat_message.chat_message.<b>sanitize_message_content</b>
+        <i class="text-muted">(content)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/frappe.chat.doctype.chat_message.chat_message.seen</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="frappe.chat.doctype.chat_message.chat_message.seen" href="#frappe.chat.doctype.chat_message.chat_message.seen" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.chat.doctype.chat_message.chat_message.<b>seen</b>
+        <i class="text-muted">(message, user=None)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/frappe.chat.doctype.chat_message.chat_message.send</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="frappe.chat.doctype.chat_message.chat_message.send" href="#frappe.chat.doctype.chat_message.chat_message.send" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.chat.doctype.chat_message.chat_message.<b>send</b>
+        <i class="text-muted">(user, room, content)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+
+    
+    
+
+
+<!-- autodoc -->
+<!-- jinja -->
+<!-- static -->

@@ -3,7 +3,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 8.10.8</a>
+	Version 10.0.13</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/frappe/blob/develop/frappe/utils/selenium_testdriver.py"
@@ -32,7 +32,7 @@
         <a name="__init__" href="#__init__" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		<b>__init__</b>
-        <i class="text-muted">(self, port=8000)</i>
+        <i class="text-muted">(self, port=None)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>
@@ -46,7 +46,7 @@
         <a name="click" href="#click" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		<b>click</b>
-        <i class="text-muted">(self, css_selector, xpath=None)</i>
+        <i class="text-muted">(self, css_selector, xpath=None, timeout=20, animate=0, offset=0)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>
@@ -214,7 +214,7 @@
         <a name="login" href="#login" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		<b>login</b>
-        <i class="text-muted">(self, wait_for_id=#page-desktop)</i>
+        <i class="text-muted">(self, wait_for_id=#page-desktop, animate=0, scroll_offset=0)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>
@@ -256,7 +256,7 @@
         <a name="scroll_to" href="#scroll_to" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		<b>scroll_to</b>
-        <i class="text-muted">(self, selector)</i>
+        <i class="text-muted">(self, selector, animate=0, offset=0)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>
@@ -285,6 +285,20 @@
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		<b>set_input</b>
         <i class="text-muted">(self, selector, text, key=None, xpath=None)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="set_multicheck" href="#set_multicheck" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>set_multicheck</b>
+        <i class="text-muted">(self, fieldname, values)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>
@@ -396,7 +410,7 @@
         <a name="wait_till_clickable" href="#wait_till_clickable" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		<b>wait_till_clickable</b>
-        <i class="text-muted">(self, selector=None, xpath=None)</i>
+        <i class="text-muted">(self, selector=None, xpath=None, timeout=20)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>

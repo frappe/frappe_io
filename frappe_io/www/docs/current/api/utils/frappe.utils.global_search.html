@@ -3,7 +3,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 8.10.8</a>
+	Version 10.0.13</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/frappe/blob/develop/frappe/utils/global_search.py"
@@ -25,8 +25,9 @@
 		frappe.utils.global_search.<b>delete_for_document</b>
         <i class="text-muted">(doc)</i>
     </p>
-	<div class="docs-attr-desc"><p>Delete the <em>_global</em>search entry of a document that has
-        been deleted</p>
+	<div class="docs-attr-desc"><pre><code>Delete the __global_search entry of a document that has
+been deleted
+</code></pre>
 
 <p><strong>Parameters:</strong></p>
 
@@ -47,6 +48,22 @@
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		frappe.utils.global_search.<b>delete_global_search_records_for_doctype</b>
         <i class="text-muted">(doctype)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.utils.global_search.enqueue_global_search" href="#frappe.utils.global_search.enqueue_global_search" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.utils.global_search.<b>enqueue_global_search</b>
+        <i class="text-muted">()</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>
@@ -92,7 +109,16 @@
 		frappe.utils.global_search.<b>get_doctypes_with_global_search</b>
         <i class="text-muted">(with_child_tables=True)</i>
     </p>
-	<div class="docs-attr-desc"><p>Return doctypes with global search fields</p>
+	<div class="docs-attr-desc"><pre><code>Return doctypes with global search fields
+</code></pre>
+
+<p><strong>Parameters:</strong></p>
+
+<ul>
+<li><p><strong><code>with_child_tables</code></strong> - </p>
+
+<p>:return:</p></li>
+</ul>
 </div>
 	<br>
 
@@ -108,7 +134,17 @@
 		frappe.utils.global_search.<b>get_formatted_value</b>
         <i class="text-muted">(value, field)</i>
     </p>
-	<div class="docs-attr-desc"><p>Prepare field from raw data</p>
+	<div class="docs-attr-desc"><pre><code>Prepare field from raw data
+</code></pre>
+
+<p><strong>Parameters:</strong></p>
+
+<ul>
+<li><strong><code>value</code></strong> - </li>
+<li><p><strong><code>field</code></strong> - </p>
+
+<p>:return:</p></li>
+</ul>
 </div>
 	<br>
 
@@ -156,13 +192,14 @@
 		frappe.utils.global_search.<b>rebuild_for_doctype</b>
         <i class="text-muted">(doctype)</i>
     </p>
-	<div class="docs-attr-desc"><p>Rebuild entries of doctype's documents in <em>_global</em>search on change of
-        searchable fields</p>
+	<div class="docs-attr-desc"><pre><code>Rebuild entries of doctype's documents in __global_search on change of
+searchable fields
+</code></pre>
 
 <p><strong>Parameters:</strong></p>
 
 <ul>
-<li><strong><code>doctype</code></strong> -  Doctype </li>
+<li><strong><code>doctype</code></strong> -  Doctype</li>
 </ul>
 </div>
 	<br>
@@ -179,7 +216,9 @@
 		frappe.utils.global_search.<b>reset</b>
         <i class="text-muted">()</i>
     </p>
-	<div class="docs-attr-desc"><p>Deletes all data in <em>_global</em>search</p>
+	<div class="docs-attr-desc"><pre><code>Deletes all data in __global_search
+:return:
+</code></pre>
 </div>
 	<br>
 
@@ -197,7 +236,8 @@
 		frappe.utils.global_search.<b>search</b>
         <i class="text-muted">(text, start=0, limit=20, doctype=)</i>
     </p>
-	<div class="docs-attr-desc"><p>Search for given text in <em>_global</em>search</p>
+	<div class="docs-attr-desc"><pre><code>Search for given text in __global_search
+</code></pre>
 
 <p><strong>Parameters:</strong></p>
 
@@ -223,7 +263,9 @@
 		frappe.utils.global_search.<b>setup_global_search_table</b>
         <i class="text-muted">()</i>
     </p>
-	<div class="docs-attr-desc"><p>Creates <em>_global</em>seach table</p>
+	<div class="docs-attr-desc"><pre><code>Creates __global_seach table
+:return:
+</code></pre>
 </div>
 	<br>
 
@@ -239,8 +281,17 @@
 		frappe.utils.global_search.<b>sync_global_search</b>
         <i class="text-muted">(flags=None)</i>
     </p>
-	<div class="docs-attr-desc"><p>Add values from <code>flags</code> (frappe.flags.update<em>global</em>search) to <em>_global</em>search.
-        This is called internally at the end of the request.</p>
+	<div class="docs-attr-desc"><pre><code>Add values from `flags` (frappe.flags.update_global_search) to __global_search.
+This is called internally at the end of the request.
+</code></pre>
+
+<p><strong>Parameters:</strong></p>
+
+<ul>
+<li><p><strong><code>flags</code></strong> - </p>
+
+<p>:return:</p></li>
+</ul>
 </div>
 	<br>
 
@@ -256,8 +307,9 @@
 		frappe.utils.global_search.<b>update_global_search</b>
         <i class="text-muted">(doc)</i>
     </p>
-	<div class="docs-attr-desc"><p>Add values marked with <code>in_global_search</code> to
-        <code>frappe.flags.update_global_search</code> from given doc</p>
+	<div class="docs-attr-desc"><pre><code>Add values marked with `in_global_search` to
+`frappe.flags.update_global_search` from given doc
+</code></pre>
 
 <p><strong>Parameters:</strong></p>
 
@@ -281,7 +333,8 @@
 		frappe.utils.global_search.<b>web_search</b>
         <i class="text-muted">(text, start=0, limit=20)</i>
     </p>
-	<div class="docs-attr-desc"><p>Search for given text in <em>_global</em>search where published = 1</p>
+	<div class="docs-attr-desc"><pre><code>Search for given text in __global_search where published = 1
+</code></pre>
 
 <p><strong>Parameters:</strong></p>
 

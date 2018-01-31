@@ -1,0 +1,476 @@
+<!-- title: Data Import -->
+<!-- add-breadcrumbs -->
+
+
+
+
+
+<h1>Data Import</h1>
+<div class="dev-header">
+
+<a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
+	Version 10.0.13</a>
+
+
+	<a class="btn btn-default btn-sm" href="https://github.com/frappe/frappe/tree/develop/frappe/core/doctype/data_import"
+		target="_blank" style="margin-left: 10px; margin-bottom: 10px;"><i class="octicon octicon-mark-github"></i> Source</a>
+
+</div>
+
+
+
+
+
+    <p><b>Table Name:</b> <code>tabData Import</code></p>
+
+
+
+
+<h3>Fields</h3>
+
+<table class="table table-bordered docfields">
+    <thead>
+        <tr>
+            <th style="width: 5%">Sr</th>
+            <th style="width: 25%">Fieldname</th>
+            <th style="width: 20%">Type</th>
+            <th style="width: 25%">Label</th>
+            <th style="width: 25%">Options</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        <tr >
+            <td>1</td>
+            <td class="danger" title="Mandatory"><code>reference_doctype</code></td>
+            <td >
+                Link</td>
+            <td >
+                Document Type
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/core/doctype">DocType</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr class="info">
+            <td>2</td>
+            <td ><code>section_break_4</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>3</td>
+            <td ><code>import_file</code></td>
+            <td >
+                Attach</td>
+            <td >
+                Attach file for Import
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>4</td>
+            <td ><code>column_break_4</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>5</td>
+            <td ><code>error_file</code></td>
+            <td >
+                Attach</td>
+            <td >
+                Generated File
+                <p class="text-muted small">
+                    This is the template file generated with only the rows having some error. You should use this file for correction and import.</p>
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr class="info">
+            <td>6</td>
+            <td ><code>section_break_6</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>7</td>
+            <td ><code>overwrite</code></td>
+            <td >
+                Check</td>
+            <td >
+                Update records
+                <p class="text-muted small">
+                    If you are updating/overwriting already created records.</p>
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>8</td>
+            <td ><code>only_update</code></td>
+            <td >
+                Check</td>
+            <td >
+                Don't create new records
+                <p class="text-muted small">
+                    If you don't want to create any new records while updating the older records.</p>
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>9</td>
+            <td ><code>skip_errors</code></td>
+            <td >
+                Check</td>
+            <td >
+                Skip rows with errors
+                <p class="text-muted small">
+                    If this is checked, rows with valid data will be imported and invalid rows will be dumped into a new file for you to import later.
+</p>
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>10</td>
+            <td ><code>submit_after_import</code></td>
+            <td >
+                Check</td>
+            <td >
+                Submit after importing
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>11</td>
+            <td ><code>ignore_encoding_errors</code></td>
+            <td >
+                Check</td>
+            <td >
+                Ignore encoding errors
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>12</td>
+            <td ><code>no_email</code></td>
+            <td >
+                Check</td>
+            <td >
+                Do not send Emails
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr class="info">
+            <td>13</td>
+            <td ><code>import_detail</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Import Log
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>14</td>
+            <td ><code>import_status</code></td>
+            <td >
+                Select</td>
+            <td >
+                Import Status
+                
+            </td>
+            <td>
+                <pre>
+Successful
+Failed
+In Progress
+Partially Successful</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>15</td>
+            <td ><code>show_only_errors</code></td>
+            <td >
+                Check</td>
+            <td >
+                Show only errors
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>16</td>
+            <td ><code>import_log</code></td>
+            <td >
+                HTML</td>
+            <td >
+                Import Log
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>17</td>
+            <td ><code>log_details</code></td>
+            <td >
+                Code</td>
+            <td class="text-muted" title="Hidden">
+                Log Details
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>18</td>
+            <td ><code>amended_from</code></td>
+            <td >
+                Link</td>
+            <td >
+                Amended From
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/core/data_import">Data Import</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>19</td>
+            <td ><code>total_rows</code></td>
+            <td >
+                Int</td>
+            <td class="text-muted" title="Hidden">
+                Total Rows
+                
+            </td>
+            <td></td>
+        </tr>
+        
+    </tbody>
+</table>
+
+
+    <hr>
+    <h3>Controller</h3>
+    <h4>frappe.core.doctype.data_import.data_import</h4>
+
+    
+
+
+
+	
+        
+	<h3 style="font-weight: normal;">Class <b>DataImport</b></h3>
+    
+    <p style="padding-left: 30px;"><i>Inherits from frappe.model.document.Document</i></h4>
+    
+    <div class="docs-attr-desc"><p></p>
+</div>
+    <div style="padding-left: 30px;">
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="autoname" href="#autoname" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>autoname</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="validate" href="#validate" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>validate</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+    </div>
+    <hr>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.core.doctype.data_import.data_import.export_csv" href="#frappe.core.doctype.data_import.data_import.export_csv" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.core.doctype.data_import.data_import.<b>export_csv</b>
+        <i class="text-muted">(doctype, path)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/frappe.core.doctype.data_import.data_import.export_fixture</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="frappe.core.doctype.data_import.data_import.export_fixture" href="#frappe.core.doctype.data_import.data_import.export_fixture" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.core.doctype.data_import.data_import.<b>export_fixture</b>
+        <i class="text-muted">(doctype, app)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.core.doctype.data_import.data_import.export_json" href="#frappe.core.doctype.data_import.data_import.export_json" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.core.doctype.data_import.data_import.<b>export_json</b>
+        <i class="text-muted">(doctype, path, filters=None, or_filters=None, name=None)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/frappe.core.doctype.data_import.data_import.import_data</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="frappe.core.doctype.data_import.data_import.import_data" href="#frappe.core.doctype.data_import.data_import.import_data" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.core.doctype.data_import.data_import.<b>import_data</b>
+        <i class="text-muted">(data_import)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.core.doctype.data_import.data_import.import_doc" href="#frappe.core.doctype.data_import.data_import.import_doc" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.core.doctype.data_import.data_import.<b>import_doc</b>
+        <i class="text-muted">(path, overwrite=False, ignore_links=False, ignore_insert=False, insert=False, submit=False, pre_process=None)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.core.doctype.data_import.data_import.import_file_by_path" href="#frappe.core.doctype.data_import.data_import.import_file_by_path" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.core.doctype.data_import.data_import.<b>import_file_by_path</b>
+        <i class="text-muted">(path, ignore_links=False, overwrite=False, submit=False, pre_process=None, no_email=True)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+
+    
+    
+        <h4>Linked In:</h4>
+        <ul>
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/core/data_import">Data Import</a>
+
+</li>
+			
+        
+        </ul>
+    
+
+
+<!-- autodoc -->
+<!-- jinja -->
+<!-- static -->

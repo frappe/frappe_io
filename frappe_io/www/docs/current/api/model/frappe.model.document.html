@@ -3,7 +3,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 8.10.8</a>
+	Version 10.0.13</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/frappe/blob/develop/frappe/model/document.py"
@@ -32,7 +32,7 @@
         <a name="__init__" href="#__init__" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		<b>__init__</b>
-        <i class="text-muted">(self, arg1, arg2=None)</i>
+        <i class="text-muted">(self)</i>
     </p>
 	<div class="docs-attr-desc"><p>Constructor.</p>
 
@@ -324,6 +324,48 @@ all values (including child documents) from the database.
     
     
 	<p class="docs-attr-name">
+        <a name="db_get" href="#db_get" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>db_get</b>
+        <i class="text-muted">(self, fieldname)</i>
+    </p>
+	<div class="docs-attr-desc"><p>get database vale for this fieldname</p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="db_set" href="#db_set" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>db_set</b>
+        <i class="text-muted">(self, fieldname, value=None, update_modified=True, notify=False, commit=False)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Set a value in the document object, update the timestamp and update the database.</p>
+
+<pre><code>    WARNING: This method does not trigger controller validations and should
+    be used very carefully.
+</code></pre>
+
+<p><strong>Parameters:</strong></p>
+
+<ul>
+<li><strong><code>fieldname</code></strong> -  fieldname of the property to be updated, or a {"field":"value"} dictionary</li>
+<li><strong><code>value</code></strong> -  value of the property to be updated</li>
+<li><strong><code>update_modified</code></strong> -  default True. updates the <code>modified</code> and <code>modified_by</code> properties</li>
+<li><strong><code>notify</code></strong> -  default False. run doc.notify_updated() to send updates via socketio</li>
+<li><strong><code>commit</code></strong> -  default False. run frappe.db.commit()</li>
+</ul>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
         <a name="delete" href="#delete" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		<b>delete</b>
@@ -521,12 +563,40 @@ all values (including child documents) from the database.
     
     
 	<p class="docs-attr-name">
+        <a name="is_child_table_same" href="#is_child_table_same" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>is_child_table_same</b>
+        <i class="text-muted">(self, fieldname)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Validate child table is same as original table before saving</p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
         <a name="is_whitelisted" href="#is_whitelisted" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		<b>is_whitelisted</b>
         <i class="text-muted">(self, method)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="load_doc_before_save" href="#load_doc_before_save" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>load_doc_before_save</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Save load document from db before saving</p>
 </div>
 	<br>
 
@@ -957,6 +1027,20 @@ all values (including child documents) from the database.
     
     
 	<p class="docs-attr-name">
+        <a name="validate_set_only_once" href="#validate_set_only_once" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>validate_set_only_once</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Validate that fields are not changed if not in insert</p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
         <a name="validate_table_has_rows" href="#validate_table_has_rows" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		<b>validate_table_has_rows</b>
@@ -1025,7 +1109,7 @@ all values (including child documents) from the database.
         <a name="frappe.model.document.get_doc" href="#frappe.model.document.get_doc" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		frappe.model.document.<b>get_doc</b>
-        <i class="text-muted">(arg1, arg2=None)</i>
+        <i class="text-muted">()</i>
     </p>
 	<div class="docs-attr-desc"><p>returns a frappe.model.Document object.</p>
 
@@ -1035,7 +1119,7 @@ all values (including child documents) from the database.
 <li><strong><code>arg1</code></strong> -  Document dict or DocType name.</li>
 <li><p><strong><code>arg2</code></strong> -  [optional] document name.</p>
 
-<p>There are two ways to call <code>get_doc</code></p>
+<p>There are multiple ways to call <code>get_doc</code></p>
 
 <pre><code># will fetch the latest user object (with child table) from the database
 user = get_doc("User", "test@example.com")
@@ -1048,6 +1132,9 @@ user = get_doc({
         {"role": "System Manager"}
     ]
 })
+
+# create new object with keyword arguments
+user = get_doc(doctype='User', email_id='test@example.com')
 </code></pre></li>
 </ul>
 </div>
