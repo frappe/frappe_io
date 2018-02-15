@@ -3,3 +3,5 @@
 *.egg-info
 *.swp
 tags
+.kdev4/
+*.kdev4
