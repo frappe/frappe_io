@@ -3,7 +3,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 10.0.13</a>
+	Version 10.1.1</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/frappe/blob/develop/frappe/migrate.py"
@@ -25,14 +25,15 @@
 		frappe.migrate.<b>migrate</b>
         <i class="text-muted">(verbose=True, rebuild_website=False)</i>
     </p>
-	<div class="docs-attr-desc"><p>Migrate all apps to the latest version, will:</p>
-
-<pre><code>- run patches
-- sync doctypes (schema)
-- sync fixtures
-- sync desktop icons
-- sync web pages (from /www)
-</code></pre>
+	<div class="docs-attr-desc"><p>Migrate all apps to the latest version, will:
+    - run before migrate hooks
+    - run patches
+    - sync doctypes (schema)
+    - sync fixtures
+    - sync desktop icons
+    - sync web pages (from /www)
+    - sync web pages (from /www)
+    - run after migrate hooks</p>
 </div>
 	<br>
 
