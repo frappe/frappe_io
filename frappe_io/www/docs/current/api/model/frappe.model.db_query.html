@@ -3,7 +3,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 10.0.13</a>
+	Version 10.1.6</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/frappe/blob/develop/frappe/model/db_query.py"
@@ -262,6 +262,28 @@
         <i class="text-muted">(self, query)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="sanitize_fields" href="#sanitize_fields" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>sanitize_fields</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><pre><code>        regex : ^.*[,();].*
+        purpose : The regex will look for malicious patterns like `,`, '(', ')', ';' in each
+                field which may leads to sql injection.
+        example :
+            field = "`DocType`.`issingle`, version()"
+
+        As field contains `,` and mysql function `version()`, with the help of regex
+        the system will filter out this field.
+</code></pre>
 </div>
 	<br>
 
