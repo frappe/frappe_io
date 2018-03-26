@@ -23,7 +23,6 @@ article table {
 .page-container[data-doctype="Blog Post"], .page-container[data-path="blog"] {
 	max-width: 660px;
 	margin: auto;
-	padding-top: 60px;
 }
 
 @media (max-width: 767px) {

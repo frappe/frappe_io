@@ -12,7 +12,7 @@ No one wanted to buy an ERP from a startup. ERPs are mission critical assets for
 
 ### Open source code
 
-We licensed the code under the General Public License, and the code had been online on Google Code since 2009, but we never really positioned ourselves as an open source product initially. There were no clear deployment instructions, very sparse documentation and no commnuity forum. Being in India, we had very little exposure to what an open source community was like and how to build an open source product. Though I had read all about the Free Software movement and read Linus Torvald's book, I understood the concept, but did not know how to start executing it.
+We licensed the code under the General Public License, and the code had been online on Google Code since 2009, but we never really positioned ourselves as an open source product initially. There were no clear deployment instructions, very sparse documentation and no community forum. Being in India, we had very little exposure to what an open source community was like and how to build an open source product. Though I had read all about the Free Software movement and read Linus Torvald's book, I understood the concept, but did not know how to start executing it.
 
 In 2011, we moved from Google Code to GitHub, and that proved to be a turning point. Now, suddenly, we were in the company of many open source projects and it felt nice to start using GitHub's workflows, issues lists, and more to make ourselves more friendly to the community. Slowly, in 2012, we started positioning ourselves more as an open source ERP, and very slowly we saw more activity on our mailing list and an occasional issue raised by the community.
 
