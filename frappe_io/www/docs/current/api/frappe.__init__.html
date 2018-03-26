@@ -3,7 +3,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 10.0.13</a>
+	Version 10.1.9</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/frappe/blob/develop/frappe/__init__.py"
@@ -210,7 +210,7 @@ listify the values against the key.
         <a name="frappe.attach_print" href="#frappe.attach_print" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		frappe.<b>attach_print</b>
-        <i class="text-muted">(doctype, name, file_name=None, print_format=None, style=None, html=None, doc=None, lang=None)</i>
+        <i class="text-muted">(doctype, name, file_name=None, print_format=None, style=None, html=None, doc=None, lang=None, print_letterhead=False)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>
@@ -1364,6 +1364,34 @@ frappe.get_list("ToDo", fields="*", filters = {"description": ("like", "test%")}
     
     
 	<p class="docs-attr-name">
+        <a name="frappe.get_version" href="#frappe.get_version" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.<b>get_version</b>
+        <i class="text-muted">(doctype, name, limit=None, head=False, raise_err=True)</i>
+    </p>
+	<div class="docs-attr-desc"><pre><code>Returns a list of version information of a given DocType (Applicable only if DocType has changes tracked).
+
+Example
+&gt;&gt;&gt; frappe.get_version('User', 'foobar@gmail.com')
+&gt;&gt;&gt;
+[
+    {
+         "version": [version.data],      # Refer Version DocType get_diff method and data attribute
+            "user": "admin@gmail.com"    # User that created this version
+        "creation": &lt;datetime.datetime&gt;  # Creation timestamp of that object.
+    }
+]
+</code></pre>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
         <a name="frappe.has_permission" href="#frappe.has_permission" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		frappe.<b>has_permission</b>
@@ -1688,6 +1716,38 @@ given fieldname
     
     
 	<p class="docs-attr-name">
+        <a name="frappe.parse_json" href="#frappe.parse_json" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.<b>parse_json</b>
+        <i class="text-muted">(val)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.ping" href="#frappe.ping" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.<b>ping</b>
+        <i class="text-muted">()</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
         <a name="frappe.publish_progress" href="#frappe.publish_progress" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		frappe.<b>publish_progress</b>
@@ -1889,6 +1949,38 @@ given fieldname
     
     
 	<p class="docs-attr-name">
+        <a name="frappe.safe_decode" href="#frappe.safe_decode" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.<b>safe_decode</b>
+        <i class="text-muted">(param, encoding=utf-8)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.safe_encode" href="#frappe.safe_encode" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.<b>safe_encode</b>
+        <i class="text-muted">(param, encoding=utf-8)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
         <a name="frappe.safe_eval" href="#frappe.safe_eval" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		frappe.<b>safe_eval</b>
@@ -1924,7 +2016,7 @@ given fieldname
         <a name="frappe.sendmail" href="#frappe.sendmail" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		frappe.<b>sendmail</b>
-        <i class="text-muted">(recipients=[], sender=, subject=No Subject, message=No Message, as_markdown=False, delayed=True, reference_doctype=None, reference_name=None, unsubscribe_method=None, unsubscribe_params=None, unsubscribe_message=None, attachments=None, content=None, doctype=None, name=None, reply_to=None, cc=[], bcc=[], message_id=None, in_reply_to=None, send_after=None, expose_recipients=None, send_priority=1, communication=None, retry=1, now=None, read_receipt=None, is_notification=False, inline_images=None, template=None, args=None, header=None)</i>
+        <i class="text-muted">(recipients=[], sender=, subject=No Subject, message=No Message, as_markdown=False, delayed=True, reference_doctype=None, reference_name=None, unsubscribe_method=None, unsubscribe_params=None, unsubscribe_message=None, attachments=None, content=None, doctype=None, name=None, reply_to=None, cc=[], bcc=[], message_id=None, in_reply_to=None, send_after=None, expose_recipients=None, send_priority=1, communication=None, retry=1, now=None, read_receipt=None, is_notification=False, inline_images=None, template=None, args=None, header=None, print_letterhead=False)</i>
     </p>
 	<div class="docs-attr-desc"><p>Send email using user's default <strong>Email Account</strong> or global default <strong>Email Account</strong>.</p>
 

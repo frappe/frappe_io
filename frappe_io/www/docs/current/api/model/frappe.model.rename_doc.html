@@ -3,7 +3,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 10.0.13</a>
+	Version 10.1.9</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/frappe/blob/develop/frappe/model/rename_doc.py"
@@ -33,6 +33,33 @@
 <li><strong><code>doctype</code></strong> -  DocType to be renamed</li>
 <li><strong><code>rows</code></strong> -  list of documents as <code>((oldname, newname), ..)</code></li>
 </ul>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.model.rename_doc.get_fetch_fields" href="#frappe.model.rename_doc.get_fetch_fields" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.model.rename_doc.<b>get_fetch_fields</b>
+        <i class="text-muted">(doctype, linked_to, ignore_doctypes=None)</i>
+    </p>
+	<div class="docs-attr-desc"><pre><code>    doctype = Master DocType in which the changes are being made
+    linked_to = DocType name of the field thats being updated in Master
+
+    This function fetches list of all DocType where both doctype and linked_to is found
+    as link fields.
+    Forms a list of dict in the form -
+        [{doctype: , master_fieldname: , linked_to_fieldname: ]
+    where
+        doctype = DocType where changes need to be made
+        master_fieldname = Fieldname where options = doctype
+        linked_to_fieldname = Fieldname where options = linked_to
+</code></pre>
 </div>
 	<br>
 
@@ -215,6 +242,25 @@
         <i class="text-muted">(link_fields, old, new, doctype)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.model.rename_doc.update_linked_doctypes" href="#frappe.model.rename_doc.update_linked_doctypes" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.model.rename_doc.<b>update_linked_doctypes</b>
+        <i class="text-muted">(doctype, docname, linked_to, value, ignore_doctypes=None)</i>
+    </p>
+	<div class="docs-attr-desc"><pre><code>    linked_doctype_info_list = list formed by get_fetch_fields() function
+    docname = Master DocType's name in which modification are made
+    value = Value for the field thats set in other DocType's by fetching from Master DocType
+</code></pre>
 </div>
 	<br>
 
