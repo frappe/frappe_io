@@ -17,6 +17,7 @@
   * `--restart-supervisor`  restart supervisor processes after update
   * `--upgrade` Does major upgrade (Eg. ERPNext 6 -> 7)
   * `--no-backup`			  Don't take a backup before update
+  * `--exclude-apps`		Exclude apps from updating
 * `bench restart` Restart all bench services 
 * `bench backup` Backup 
 * `bench backup-all-sites` Backup all sites
@@ -25,6 +26,8 @@
   * `--with-private-files` Restore site with private files (Path to tar file)
   * `--with-public-files` Restore site with public files (Path to tar file)
 * `bench migrate` Will read JSON files and make changes to the database accordingly
+* `bench exclude-app [app-name]` Will exclude app from updating
+* `bench include-app [app-name]` Will include excluded app to update
 
 ###Config
 * `bench config` - Change bench configuration
@@ -91,3 +94,4 @@
 * `bench doctor` - Get diagnostic info about background workers 
 * `bench show-pending-jobs`- Get pending jobs
 * `bench purge-jobs` - Destroy all pending jobs
+
