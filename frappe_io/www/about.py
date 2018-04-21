@@ -14,24 +14,12 @@ def get_context(context):
 			'twitter': 'nabinhait',
 			'blogger': 'nabin'
 		},
-		# {
-		# 	'name': 'Pawan Mehta',
-		# 	'role': 'Chief Operations Officer',
-		# 	'linkedin': 'https://in.linkedin.com/in/pawan-mehta-455a179',
-		# 	'blogger': 'pawan'
-		# },
 		{
 			'name': 'Umair Sayed',
 			'role': 'Chief Customer Officer',
 			'twitter': 'umairsTWT',
 			'blogger': 'umair'
 		},
-		# {
-		# 	'name': 'Kanchan Chauhan',
-		# 	'role': 'Developer',
-		# 	'linkedin': 'https://in.linkedin.com/in/kanchanchauhan1984',
-		# 	'blogger': 'kanchan'
-		# },
 		{
 			'name': 'Saurabh Palande',
 			'role': 'Developer',
@@ -44,12 +32,6 @@ def get_context(context):
 			'twitter': 'rohitw1991',
 			'blogger': 'rohit'
 		},
-		# {
-		# 	'name': 'Neil Lasrado',
-		# 	'role': 'Developer',
-		# 	'twitter': 'neillasrado',
-		# 	'blogger': 'neil'
-		# },
 		{
 			'name': 'Faris Ansari',
 			'role': 'Developer',
@@ -57,22 +39,10 @@ def get_context(context):
 			'blogger': 'faris'
 		},
 		{
-			'name': 'Arundhati Sharma',
-			'role': 'Support',
-			'blogger': 'arundhati',
-			'medium': 'mrs.arusharma'
-		},
-		{
 			'name': 'Prakash Hodage',
 			'role': 'Admin + Accounts',
 			'blogger': 'prakash',
 			'linkedin': 'https://in.linkedin.com/in/prakash-hodage-6702b231'
-		},
-		{
-			'name': 'Makarand Bauskar',
-			'role': 'Developer',
-			'blogger': 'makarand',
-			'medium': 'mbauskar'
 		},
 		{
 			'name': 'Prateeksha Singh',
@@ -86,6 +56,4 @@ def get_context(context):
 			'blogger': 'manas',
 			'medium': 'manassolanki'
 		},
-
-
 	]

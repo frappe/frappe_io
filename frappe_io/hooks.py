@@ -15,7 +15,7 @@ required_apps = ["frappe_theme"]
 fixtures = ["Contact Us Settings", "Web Form", "Email Alert"]
 
 website_context = {
-	"brand_html": "<img class='navbar-icon' src='/assets/frappe_theme/img/frappe-bird-grey.svg' />Frappe",
+	"brand_html": "<img class='mr-1 d-inline-block align-top' src='/assets/frappe_theme/img/frappe-bird-grey.svg' width='30px' height='30px' />Frappe",
 	"top_bar_items": [
 		{"label": "Documentation", "url": "/docs", "right":1, "target": "_blank"},
 		{"label": "About", "url":"/about", "right": 1},
