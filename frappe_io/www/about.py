@@ -21,6 +21,12 @@ def get_context(context):
 			'blogger': 'umair'
 		},
 		{
+			'name': 'Prakash Hodage',
+			'role': 'Admin + Accounts',
+			'blogger': 'prakash',
+			'linkedin': 'https://in.linkedin.com/in/prakash-hodage-6702b231'
+		},
+		{
 			'name': 'Saurabh Palande',
 			'role': 'Developer',
 			'twitter': 'saurabh6790',
@@ -39,12 +45,6 @@ def get_context(context):
 			'blogger': 'faris'
 		},
 		{
-			'name': 'Prakash Hodage',
-			'role': 'Admin + Accounts',
-			'blogger': 'prakash',
-			'linkedin': 'https://in.linkedin.com/in/prakash-hodage-6702b231'
-		},
-		{
 			'name': 'Prateeksha Singh',
 			'role': 'Developer',
 			'blogger': 'prateeksha',
@@ -55,5 +55,32 @@ def get_context(context):
 			'role': 'Developer',
 			'blogger': 'manas',
 			'medium': 'manassolanki'
+		},
+		{
+			'name': 'Shreya Shah',
+			'role': 'Developer',
+			'medium': 'shreyashah115'
+		},
+		{
+			'name': 'Zarrar Shaikh',
+			'role': 'Developer',
+			'medium': 'zlash65',
+			'twitter': 'zlash65'
+		},
+		{
+			'name': 'Ameya Shenoy',
+			'role': 'Developer',
+			'medium': 'codingCoffee',
+			'twitter': 'coding_caffeine'
+		},
+		{
+			'name': 'Kenneth Sequeira',
+			'role': 'Marketing Engineer',
+		},
+		{
+			'name': 'Suraj Shetty',
+			'role': 'Developer',
+			'medium': 'surajshetty3416',
+			'twitter': 'surajshetty3416'
 		},
 	]
