@@ -4,52 +4,52 @@
 
 <!-- Navigation -->
 <!-- Hero Section -->
-<section class="my-5 px-3 text-center">
-	<img class="w-50 m-auto" src="/assets/frappe_theme/img/frappe-hero.svg">
+<section class="section-padding px-3 text-center">
+	<img class="frappe-hero m-auto" src="/assets/frappe_theme/img/frappe-hero.svg">
 	<div class="col-sm-12 mt-4">
 		<h1 class="font-weight-normal">Frappe &mdash; The Company</h1>
-		<p class='lead'>Established in 2008, Frappe is an internet company based out of Mumbai, India. Its flagship product ERPNext is an award-winning and easy to use ERP loved by businesses worldwide.</p>
-		<a href="/story">Read the full story.</a>
+		<p class='lead text-muted'>Established in 2008, Frappe is an internet company based out of Mumbai, India. Its flagship product ERPNext is an award-winning and easy to use ERP loved by businesses worldwide.</p>
+		<a class="mt-4 btn btn-outline-secondary" href="/story">Read the full story.</a>
 	</div>
 </section>
 
 <hr class="featurette-divider">
 
-<section class="my-5 px-3 row">
+<section class="section-padding px-3 row">
 	<div class="col-sm-4">
-		<img class="img-fluid"src="/assets/frappe_theme/img/open-source.svg">
+		<img class="img-fluid" src="/assets/frappe_theme/img/open-source.svg">
 	</div>
 	<div class="col-sm-8">
-		<h1 class="font-weight-normal">Serious About Open Source</h1>
-		<p>Frappe products and the web framework have a thriving open source community. Developers and service providers participate from over 44 countries and are relentless about building ERP ecosystems.</p>
-		<a href="https://discuss.erpnext.com">Join the Community</a>
+		<h2 class="font-weight-normal">Serious About Open Source</h2>
+		<p class="text-muted">Frappe products and the web framework have a thriving open source community. Developers and service providers participate from over 44 countries and are relentless about building ERP ecosystems.</p>
+		<a  class="mt-4 btn btn-outline-secondary" href="https://discuss.erpnext.com">Join the Community</a>
 	</div>
 </section>
 
 <hr class="featurette-divider">
 
-<section class="row text-center my-5 px-3">
+<section class="row text-center section-padding px-3">
 	<div class="col-sm-12">
-		<h1 class="font-weight-normal">Team Frappe</h1>
-		<p class="lead">We love to build new things and break them apart, and build them again</p>
+		<h2 class="font-weight-normal">Team Frappe</h2>
+		<p class="lead text-muted">We love to build new things and break them apart, and build them again</p>
 	</div>
 	<div class='col-sm-12 mt-4'>
-		<img class="img-fluid" src="/assets/frappe_io/images/team/team-1.jpg">
+		<img class="greyscale img-fluid" src="/assets/frappe_io/images/team/team-1.jpg">
 	</div>
 	<div class='col-sm-6 mt-4'>
-		<img class="img-fluid" src="/assets/frappe_io/images/team/team-2.jpg">
+		<img class="greyscale img-fluid" src="/assets/frappe_io/images/team/team-2.jpg">
 	</div>
 	<div class='col-sm-6 mt-4'>
-		<img class="img-fluid" src="/assets/frappe_io/images/team/team-3.jpg">
+		<img class="greyscale img-fluid" src="/assets/frappe_io/images/team/team-3.jpg">
 	</div>
 </section>
 
 <hr class="featurette-divider">
 
-<section class="mt-5 px-3 row text-center">
+<section class="section-padding px-3 row text-center">
 	{% for m in team %}
 	<div class="col-sm-3 mb-4">
-		<img class="img-fluid" src="/assets/frappe_io/images/team/{{ m.name.split()[0].lower() }}.jpg">
+		<img class="greyscale img-fluid" src="/assets/frappe_io/images/team/{{ m.name.split()[0].lower() }}.jpg">
 		<a href="https://frappe.io/blog?blogger={{ m.blogger }}">
 			<h5 class="mt-2 font-weight-normal">{{ m.name }}</h5>
 		</a>
@@ -67,7 +67,7 @@
 		</p>
 	</div>
 	{% endfor %}
-	<div class="col-sm-12 col-xs-12 text-center">
+	<div class="col-sm-12 col-xs-12 mt-4 text-center">
 		<h5 class-"font-weight-normal"><em>We're hiring!</em></h5>
 		<p><a href=/jobs>Want to join us?</a></p>
 	</div>
@@ -85,7 +85,7 @@
 
 <hr class="featurette-divider">
 
-<section class="my-5 px-3 row">
+<section class="section-padding px-3 row">
 	<div class="col-sm-6" id="contact">
 		<h3 class="font-weight-normal">Write to us</h3>
 		<p>Have a question or comment? Write in, we would love to hear from you. We’ll write back as soon as we can.</p>
@@ -103,7 +103,7 @@
 		<p>Skype: <b>erpnext</b></p>
 		<p>Twitter: <a href="https://twitter.com/erpnext" target="_blank"><b>@erpnext</b></a></p>
 		<p>Phone: <a href="tel:080-339-23819">080-339-23819</a></p>
-		<img class="img-fluid" src="/assets/frappe_theme/img/office-map.svg" class="office-map">
+		<img class="frappe-hero mx-5 mt-5" src="/assets/frappe_theme/img/office-map.svg" class="office-map">
 	</div>
 </section>
 
