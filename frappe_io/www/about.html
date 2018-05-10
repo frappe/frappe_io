@@ -4,82 +4,61 @@
 
 <!-- Navigation -->
 <!-- Hero Section -->
+
+<style>
+	.person a {
+		text-decoration: none;
+	}
+</style>
+
 <section class="section-padding px-3 text-center">
-	<img class="frappe-hero m-auto" src="/assets/frappe_theme/img/frappe-hero.svg">
 	<div class="col-sm-12 mt-4">
-		<h1 class="font-weight-normal">Frappe &mdash; The Company</h1>
-		<p class='lead text-muted'>Established in 2008, Frappe is an internet company based out of Mumbai, India. Its flagship product ERPNext is an award-winning and easy to use ERP loved by businesses worldwide.</p>
-		<a class="mt-4 btn btn-outline-secondary" href="/story">Read the full story.</a>
+		<h4>We love to build things and break them apart, and build them again.</h4>
+		<p class='lead text-muted'>Established in 2008, Frappe is an internet company based out of Mumbai, India. Its flagship product ERPNext is an award-winning ERP loved by businesses worldwide.</p>
+	<div class="col-sm-12 mt-4 text-center">
+		<p>
+			<a class="mt-4 btn btn-dark btn-sm" href="/story">Read the full story.</a>
+		</p>
+		<p>
+			<a href=/inspiration class='text-muted'>What Inspires Us</a><br>
+			<a href=/blog class='text-muted'>Blog</a>
+		</p>
+	</div>
 	</div>
 </section>
 
 <hr class="featurette-divider">
 
-<section class="section-padding px-3 row">
-	<div class="col-sm-4">
-		<img class="img-fluid" src="/assets/frappe_theme/img/open-source.svg">
-	</div>
-	<div class="col-sm-8">
-		<h2 class="font-weight-normal">Serious About Open Source</h2>
-		<p class="text-muted">Frappe products and the web framework have a thriving open source community. Developers and service providers participate from over 44 countries and are relentless about building ERP ecosystems.</p>
-		<a  class="mt-4 btn btn-outline-secondary" href="https://discuss.erpnext.com">Join the Community</a>
-	</div>
-</section>
-
-<hr class="featurette-divider">
-
-<section class="row text-center section-padding px-3">
-	<div class="col-sm-12">
-		<h2 class="font-weight-normal">Team Frappe</h2>
-		<p class="lead text-muted">We love to build new things and break them apart, and build them again</p>
-	</div>
-	<div class='col-sm-12 mt-4'>
-		<img class="greyscale img-fluid" src="/assets/frappe_io/images/team/team-1.jpg">
-	</div>
-	<div class='col-sm-6 mt-4'>
-		<img class="greyscale img-fluid" src="/assets/frappe_io/images/team/team-2.jpg">
-	</div>
-	<div class='col-sm-6 mt-4'>
-		<img class="greyscale img-fluid" src="/assets/frappe_io/images/team/team-3.jpg">
-	</div>
-</section>
-
-<hr class="featurette-divider">
-
-<section class="section-padding px-3 row text-center">
+<section class="section-padding row text-center">
 	{% for m in team %}
-	<div class="col-sm-3 mb-4">
+	<div class="col-sm-3 mb-4 person">
 		<img class="greyscale img-fluid" src="/assets/frappe_io/images/team/{{ m.name.split()[0].lower() }}.jpg">
 		<a href="https://frappe.io/blog?blogger={{ m.blogger }}">
-			<h5 class="mt-2 font-weight-normal">{{ m.name }}</h5>
+			<h5 class="mt-3 font-weight-normal">{{ m.name }}</h5>
 		</a>
-		<p>{{ m.role }}
+		<p class='text-muted'>{{ m.role }}
 		{% if m.twitter %}
-		<br><a href="https://twitter.com/{{ m.twitter }}" target="_blank">
+		<br><a  class='text-muted' href="https://twitter.com/{{ m.twitter }}" target="_blank">
 				@{{ m.twitter }}</a>
 		{% elif m.linkedin %}
-		<br><a href="{{ m.linkedin }}" target="_blank">
+		<br><a  class='text-muted'href="{{ m.linkedin }}" target="_blank">
 				LinkedIn Profile</a>
 		{% elif m.medium %}
-		<br><a href="https://medium.com/@{{ m.medium }}" target="_blank">
+		<br><a  class='text-muted' href="https://medium.com/@{{ m.medium }}" target="_blank">
 				M@{{ m.medium }}</a>
 		{% endif %}
 		</p>
 	</div>
 	{% endfor %}
+</section>
+
+<hr class="featurette-divider">
+<section class="section-padding px-3 row">
 	<div class="col-sm-12 col-xs-12 mt-4 text-center">
-		<h5 class-"font-weight-normal"><em>We're hiring!</em></h5>
-		<p><a href=/jobs>Want to join us?</a></p>
-	</div>
-	<div class="col-sm-12 mt-5">
-		<a class="btn btn-primary btn-lg" href="https://twitter.com/erpnext" target="_blank">
-			Follow us on Twitter
-		</a>
-	</div>
-	<div class="col-sm-12 mt-4 text-center">
-		<p><a href=/inspiration>What Inspires Us</a><br>
-		<a href=/press>In the Press</a><br>
-		<a href=/blog>Blog</a></p>
+		<h4>Join us in making awesome open source software for the world</h4>
+		<p class='lead text-muted'>
+			At Frappe, we work like an open source community, except the fact that you get paid for it.We have very high standards from our team and we strive to achieve them every year. By Working at Frappe, we guarantee you will have an opportunity to make a meaningful impact in the society.</p>
+		<p class='mt-4'><a class = 'btn btn-dark btn-sm' href=/jobs>See Open Positions</a></p>
 	</div>
 </section>
 
@@ -87,7 +66,7 @@
 
 <section class="section-padding px-3 row">
 	<div class="col-sm-6" id="contact">
-		<h3 class="font-weight-normal">Write to us</h3>
+		<h4>Write to us</h3>
 		<p>Have a question or comment? Write in, we would love to hear from you. We’ll write back as soon as we can.</p>
 		<p class="input-label">Subject</p>
 		<input class="form-control" type="text" name="subject">
@@ -95,15 +74,19 @@
 		<input class="form-control" type="text" name="email">
 		<p class="input-label">Message</p>
 		<textarea class="form-control" name="message" style="height: 200px;"></textarea>
-		<a href=# id="send" class="btn btn-primary btn-send form-control mt-4">Send</a>
+		<a href=# id="send" class="btn btn-dark btn-send form-control mt-4">Send</a>
 	</div>
 	<div class="mt-5 mt-sm-0 col-sm-6">
-		<h3 class="font-weight-normal">Visit our office</h3>
-		<p>D/324 Neelkanth Business Park, Vidyavihar West, Mumbai, Maharashtra - 400086, India</p>
+		<h4>Visit our office</h4>
+		<p>D/324 Neelkanth Business Park,<br> Vidyavihar West,<br> Mumbai,<br> Maharashtra - 400086,<br> India</p>
 		<p>Skype: <b>erpnext</b></p>
-		<p>Twitter: <a href="https://twitter.com/erpnext" target="_blank"><b>@erpnext</b></a></p>
 		<p>Phone: <a href="tel:080-339-23819">080-339-23819</a></p>
-		<img class="frappe-hero mx-5 mt-5" src="/assets/frappe_theme/img/office-map.svg" class="office-map">
+		<!-- <img class="frappe-hero mx-5 mt-5" src="/assets/frappe_theme/img/office-map.svg" class="office-map"> -->
+		<h4 class="mt-5">Social</h4>
+		<p>Twitter: <a href="https://twitter.com/erpnext" target="_blank"><b>@erpnext</b></a></p>
+		<p>Medium: <a href="https://medium.com/frapp%C3%A9-thoughts" target="_blank"><b>Frappe Thoughts</b></a></p>
+		<p>LinkedIn: <a href="https://www.linkedin.com/company/frappe-erpnext/" target="_blank"><b>Frappe Technologies Private Limited</b></a></p>
+		<p>Facebook: <a href="https://www.facebook.com/ERPNext/" target="_blank"><b>facebook.com/ERPNext</b></a></p>
 	</div>
 </section>
 

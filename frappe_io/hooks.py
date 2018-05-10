@@ -15,11 +15,11 @@ required_apps = ["frappe_theme"]
 fixtures = ["Contact Us Settings", "Web Form", "Email Alert"]
 
 website_context = {
-	"brand_html": "<img class='mr-1 d-inline-block align-top' src='/assets/frappe_theme/img/frappe-bird-grey.svg' width='30px' height='30px' />Frappe",
+	"brand_html": "<img class='mr-2 d-inline-block align-top' src='/assets/frappe_theme/img/frappe-logo-white.svg' width='30px' height='30px' />Frappe",
 	"top_bar_items": [
-		{"label": "Documentation", "url": "/docs", "right":1, "target": "_blank"},
-		{"label": "About", "url":"/about", "right": 1},
-		{"label": "Blog", "url":"/blog", "right": 1}
+		{"label": "Team", "url":"/about", "right": 1},
+		{"label": "Blog", "url":"/blog", "right": 1},
+		{"label": "GitHub", "url": "https://github.com/frappe", "right":1, "target": "_blank"},
 	],
 	"favicon": "/assets/frappe_theme/img/frappe-favicon.png",
 	"hide_login": 1

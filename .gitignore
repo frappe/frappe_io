@@ -5,3 +5,4 @@
 tags
 .kdev4/
 *.kdev4
+__pycache__
