@@ -1,9 +1,5 @@
-<!-- title: Frappe — The Company -->
-<!-- no-sidebar -->
-<!-- jinja -->
-
-<!-- Navigation -->
-<!-- Hero Section -->
+{% extends "templates/base.html" %}
+{% block content %}
 
 <style>
 	.person a {
@@ -57,7 +53,7 @@
 	<div class="col-sm-12 col-xs-12 mt-4 text-center">
 		<h4>Join us in making awesome open source software for the world</h4>
 		<p class='lead text-muted'>
-			At Frappe, we work like an open source community, except the fact that you get paid for it.We have very high standards from our team and we strive to achieve them every year. By Working at Frappe, we guarantee you will have an opportunity to make a meaningful impact in the society.</p>
+			At Frappe, we work like an open source community, except the fact that you get paid for it. We have very high standards from our team and we strive to achieve them every year. By Working at Frappe, we guarantee you will have an opportunity to make a meaningful impact in the society.</p>
 		<p class='mt-4'><a class = 'btn btn-dark btn-sm' href=/jobs>See Open Positions</a></p>
 	</div>
 </section>
@@ -93,3 +89,4 @@
 <script>
 	{% include "templates/includes/contact.js" %}
 </script>
+{% endblock %}
