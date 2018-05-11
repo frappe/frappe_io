@@ -3,7 +3,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 10.0.13</a>
+	Version 10.1.0</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/frappe/blob/develop/frappe/client.py"
@@ -14,6 +14,37 @@
 
 
 
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/frappe.client.attach_file</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="frappe.client.attach_file" href="#frappe.client.attach_file" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.client.<b>attach_file</b>
+        <i class="text-muted">(filename=None, filedata=None, doctype=None, docname=None, folder=None, decode_base64=False, is_private=None, docfield=None)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Attach a file to Document (POST)</p>
+
+<p><strong>Parameters:</strong></p>
+
+<ul>
+<li><strong><code>filename</code></strong> -  filename e.g. test-file.txt</li>
+<li><strong><code>filedata</code></strong> -  base64 encode filedata which must be urlencoded</li>
+<li><strong><code>doctype</code></strong> -  Reference DocType to attach file to</li>
+<li><strong><code>docname</code></strong> -  Reference DocName to attach file to</li>
+<li><strong><code>folder</code></strong> -  Folder to add File into</li>
+<li><strong><code>decode_base64</code></strong> -  decode filedata from base64 encode, default is False</li>
+<li><strong><code>is_private</code></strong> -  Attach file as private file (1 or 0)</li>
+<li><strong><code>docfield</code></strong> -  file to attach to (optional)</li>
+</ul>
+</div>
+	<br>
+
+	
 
 	
         
