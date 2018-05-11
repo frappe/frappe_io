@@ -17,7 +17,6 @@
   * `--restart-supervisor`  restart supervisor processes after update
   * `--upgrade` Does major upgrade (Eg. ERPNext 6 -> 7)
   * `--no-backup`			  Don't take a backup before update
-  * `--exclude-apps`		Exclude apps from updating
 * `bench restart` Restart all bench services
 * `bench backup` Backup
 * `bench backup-all-sites` Backup all sites
