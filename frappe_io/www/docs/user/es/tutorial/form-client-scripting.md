@@ -34,7 +34,7 @@ Este archivo va a ser ejecutado automáticamente cuando la primer  Library Trans
 		});
 
 1. **frappe.ui.form.on(*doctype*, *fieldname*, *handler*)** es usada para establecer un manejador de eventos cuando la propiedad library_member es seleccionada.
-1. En el manejador, vamos a disparar una llamada AJAX a `frappe.client.get`. En respuesta obtenemos el objeto consultado en formato JSON. [Aprende más acerca del API](/frappe/user/en/guides/integration/rest_api).
+1. En el manejador, vamos a disparar una llamada AJAX a `frappe.client.get`. En respuesta obtenemos el objeto consultado en formato JSON. [Aprende más acerca del API](/docs/user/en/guides/integration/rest_api).
 1. Usando **frappe.model.set_value(*doctype*, *name*, *fieldname*, *value*)** cambiamos el valor en el formulario.
 
 **Nota:**  Para verificar si su script funciona, recuerda Recargar/Reload la página antes de probar el script. Los cambios realizados a los script del lado del Cliente no son automáticamente cargados nuevamente cuando estas en modo desarrollador.
