@@ -64,7 +64,7 @@ Presently, it is limited only to backups.
 
 ### Site Config
 
-[See configuration options for `site_config.json`](/frappe/user/en/guides/basics/site_config)
+[See configuration options for `site_config.json`](/docs/user/en/guides/basics/site_config)
 
 ### Site Resolution
 

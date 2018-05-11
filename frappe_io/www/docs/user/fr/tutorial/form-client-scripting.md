@@ -40,7 +40,7 @@ Donc, dans ce fichier nous pouvons lier des actions à des événemenents mais a
 
 1. **frappe.ui.form.on(*doctype*, *fieldname*, *handler*)** est utilisé pour lier un évenement au gestionnaire d'évenements
  quand la propriété `library_member` est complétée.
-1. Dans le gestionnaire, nous déclenchons un appel AJAX vers `frappe.client.get`. En réponse, nous avons l'ojet demandé sous forme d'une JSON. [En savoir plus sur l'API](/frappe/user/fr/guides/integration/rest_api).
+1. Dans le gestionnaire, nous déclenchons un appel AJAX vers `frappe.client.get`. En réponse, nous avons l'ojet demandé sous forme d'une JSON. [En savoir plus sur l'API](/docs/user/fr/guides/integration/rest_api).
 1. En utilisant **frappe.model.set_value(*doctype*, *name*, *fieldname*, *value*)** nous définissons la valeur dans le formulaire.
 
 **Note:** Pour vérifier que votre script fonctionne, n'oubliez pas de recharger votre page avant de tester. 
