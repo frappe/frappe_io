@@ -3,7 +3,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 10.0.13</a>
+	Version 10.1.30</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/frappe/blob/develop/frappe/model/workflow.py"
@@ -17,15 +17,80 @@
 
 	
         
+	<h3 style="font-weight: normal;">Class <b>WorkflowPermissionError</b></h3>
     
+    <p style="padding-left: 30px;"><i>Inherits from frappe.exceptions.ValidationError</i></h4>
     
-	<p class="docs-attr-name">
-        <a name="frappe.model.workflow.get_default_state" href="#frappe.model.workflow.get_default_state" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		frappe.model.workflow.<b>get_default_state</b>
-        <i class="text-muted">(doctype)</i>
+    <div class="docs-attr-desc"><p></p>
+</div>
+    <div style="padding-left: 30px;">
+        
+    </div>
+    <hr>
+
+	
+
+	
+        
+	<h3 style="font-weight: normal;">Class <b>WorkflowStateError</b></h3>
+    
+    <p style="padding-left: 30px;"><i>Inherits from frappe.exceptions.ValidationError</i></h4>
+    
+    <div class="docs-attr-desc"><p></p>
+</div>
+    <div style="padding-left: 30px;">
+        
+    </div>
+    <hr>
+
+	
+
+	
+        
+	<h3 style="font-weight: normal;">Class <b>WorkflowTransitionError</b></h3>
+    
+    <p style="padding-left: 30px;"><i>Inherits from frappe.exceptions.ValidationError</i></h4>
+    
+    <div class="docs-attr-desc"><p></p>
+</div>
+    <div style="padding-left: 30px;">
+        
+    </div>
+    <hr>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/frappe.model.workflow.apply_workflow</code>
     </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+	<p class="docs-attr-name">
+        <a name="frappe.model.workflow.apply_workflow" href="#frappe.model.workflow.apply_workflow" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.model.workflow.<b>apply_workflow</b>
+        <i class="text-muted">(doc, action)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Allow workflow action on the current doc</p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/frappe.model.workflow.get_transitions</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="frappe.model.workflow.get_transitions" href="#frappe.model.workflow.get_transitions" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.model.workflow.<b>get_transitions</b>
+        <i class="text-muted">(doc, workflow=None)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Return list of possible transitions for the given doc</p>
 </div>
 	<br>
 
@@ -36,9 +101,9 @@
     
     
 	<p class="docs-attr-name">
-        <a name="frappe.model.workflow.get_state_fieldname" href="#frappe.model.workflow.get_state_fieldname" class="text-muted small">
+        <a name="frappe.model.workflow.get_workflow" href="#frappe.model.workflow.get_workflow" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		frappe.model.workflow.<b>get_state_fieldname</b>
+		frappe.model.workflow.<b>get_workflow</b>
         <i class="text-muted">(doctype)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
@@ -58,6 +123,26 @@
         <i class="text-muted">(doctype)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.model.workflow.validate_workflow" href="#frappe.model.workflow.validate_workflow" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.model.workflow.<b>validate_workflow</b>
+        <i class="text-muted">(doc)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Validate Workflow State and Transition for the current user.</p>
+
+<pre><code>- Check if user is allowed to edit in current state
+- Check if user is allowed to transition to the next state (if changed)
+</code></pre>
 </div>
 	<br>
 

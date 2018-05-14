@@ -3,7 +3,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 10.0.13</a>
+	Version 10.1.30</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/frappe/blob/develop/frappe/utils/backups.py"
@@ -20,6 +20,8 @@
         
 	<h3 style="font-weight: normal;">Class <b>BackupGenerator</b></h3>
     
+    <p style="padding-left: 30px;"><i>Inherits from builtins.object</i></h4>
+    
     <div class="docs-attr-desc"><pre><code>    This class contains methods to perform On Demand Backup
 
     To initialize, specify (db_name, user, password, db_file_name=None, db_host="localhost")
@@ -27,107 +29,6 @@
 </code></pre>
 </div>
     <div style="padding-left: 30px;">
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="__init__" href="#__init__" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>__init__</b>
-        <i class="text-muted">(self, db_name, user, password, backup_path_db=None, backup_path_files=None, backup_path_private_files=None, db_host=localhost)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="get_backup" href="#get_backup" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>get_backup</b>
-        <i class="text-muted">(self, older_than=24, ignore_files=False, force=False)</i>
-    </p>
-	<div class="docs-attr-desc"><pre><code>        Takes a new dump if existing file is old
-        and sends the link to the file as email
-</code></pre>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="get_recent_backup" href="#get_recent_backup" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>get_recent_backup</b>
-        <i class="text-muted">(self, older_than)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="send_email" href="#send_email" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>send_email</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><pre><code>        Sends the link to backup file located at erpnext/backups
-</code></pre>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="set_backup_file_name" href="#set_backup_file_name" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>set_backup_file_name</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="take_dump" href="#take_dump" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>take_dump</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="zip_files" href="#zip_files" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>zip_files</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
         
     </div>
     <hr>

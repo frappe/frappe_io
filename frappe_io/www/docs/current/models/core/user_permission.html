@@ -9,7 +9,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 10.0.13</a>
+	Version 10.1.30</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/frappe/tree/develop/frappe/core/doctype/user_permission"
@@ -96,15 +96,38 @@
             </td>
         </tr>
         
-        <tr >
+        <tr class="info">
             <td>4</td>
-            <td ><code>apply_for_all_roles</code></td>
+            <td ><code>advanced_control</code></td>
             <td >
-                Check</td>
+                Section Break</td>
             <td >
-                Apply for all Roles for this User
-                <p class="text-muted small">
-                    If you un-check this, you will have to apply manually for each Role + Document Type combination</p>
+                Advanced Control
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>5</td>
+            <td ><code>linked_doctypes</code></td>
+            <td >
+                HTML</td>
+            <td >
+                Linked Doctypes
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>6</td>
+            <td ><code>skip_for_doctype</code></td>
+            <td >
+                Code</td>
+            <td class="text-muted" title="Hidden">
+                
+                
             </td>
             <td></td>
         </tr>
@@ -131,48 +154,6 @@
 </div>
     <div style="padding-left: 30px;">
         
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="apply_user_permissions_to_all_roles" href="#apply_user_permissions_to_all_roles" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>apply_user_permissions_to_all_roles</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="on_trash" href="#on_trash" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>on_trash</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="on_update" href="#on_update" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>on_update</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
     </div>
     <hr>
 
@@ -181,7 +162,9 @@
 	
         
     
-    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/frappe.core.doctype.user_permission.user_permission.get_user_permissions</code>
+    </p>
 	<p class="docs-attr-name">
         <a name="frappe.core.doctype.user_permission.user_permission.get_user_permissions" href="#frappe.core.doctype.user_permission.user_permission.get_user_permissions" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>

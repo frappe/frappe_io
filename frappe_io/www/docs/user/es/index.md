@@ -1,4 +1,4 @@
 <!-- add-breadcrumbs -->
-# Desarrollo de aplicaciones con Frappé
+# Desarrollo de aplicaciones con Frappe
 
 {index}
