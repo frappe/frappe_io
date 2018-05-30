@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Frappe DataTable | Datatable</title>
+    <meta name="description" content="A simple, modern and interactive datatable for the web">
+    
+    
+    <link rel="preload" href="/docs/datatable/assets/css/0.styles.a70e6733.css" as="style"><link rel="preload" href="/docs/datatable/assets/js/app.ddd4aecc.js" as="script"><link rel="preload" href="/docs/datatable/assets/js/6.9df01b29.js" as="script"><link rel="prefetch" href="/docs/datatable/assets/js/4.5c1d166b.js"><link rel="prefetch" href="/docs/datatable/assets/js/1.90dd2e0b.js"><link rel="prefetch" href="/docs/datatable/assets/js/2.1a4ac4f4.js"><link rel="prefetch" href="/docs/datatable/assets/js/3.4e68793a.js"><link rel="prefetch" href="/docs/datatable/assets/js/5.192f0f60.js"><link rel="prefetch" href="/docs/datatable/assets/js/7.24d11e62.js"><link rel="prefetch" href="/docs/datatable/assets/js/8.b391065a.js"><link rel="prefetch" href="/docs/datatable/assets/js/9.f359d172.js"><link rel="prefetch" href="/docs/datatable/assets/js/10.fb94301f.js">
+    <link rel="stylesheet" href="/docs/datatable/assets/css/0.styles.a70e6733.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/docs/datatable/" class="home-link router-link-active"><!----><span class="site-name">
+      Frappe DataTable
+    </span></a><div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div><nav class="nav-links can-hide"><div class="nav-item"><a href="https://github.com/frappe/datatable" target="_blank" rel="noopener noreferrer" class="nav-link">GitHub</a></div><!----></nav></div></header><div class="sidebar-mask"></div><div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="https://github.com/frappe/datatable" target="_blank" rel="noopener noreferrer" class="nav-link">GitHub</a></div><!----></nav><ul class="sidebar-links"><li><a href="/docs/datatable/getting-started.html" class="sidebar-link">Getting Started</a></li><li><a href="/docs/datatable/download.html" class="sidebar-link">Download</a></li><li><a href="/docs/datatable/configuration.html" class="sidebar-link">Configuration</a></li><li><a href="/docs/datatable/events.html" class="sidebar-link">Events</a></li></ul></div><div class="page"><div class="content"><h2 id="datatable"><a href="#datatable" aria-hidden="true" class="header-anchor">#</a> Datatable</h2><p>All the methods listed here are available on the <code>datatable</code> instance created using the <code>DataTable</code> constructor.</p><p>Example</p><pre class="language-javascript"><code><span class="token keyword">const</span> datatable <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">DataTable</span><span class="token punctuation">(</span>container<span class="token punctuation">,</span> options<span class="token punctuation">)</span><span class="token punctuation">;</span>
+datatable<span class="token punctuation">.</span><span class="token function">refresh</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre><h4 id="refresh"><a href="#refresh" aria-hidden="true" class="header-anchor">#</a> refresh</h4><p>Refreshes the datatable with new <code>data</code> and <code>column</code></p><pre class="language-javascript"><code><span class="token function">refresh</span><span class="token punctuation">(</span>data<span class="token punctuation">:</span> Array<span class="token punctuation">,</span> columns<span class="token punctuation">:</span> Array<span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword">void</span>
+
+<span class="token comment">// Usage</span>
+datatable<span class="token punctuation">.</span><span class="token function">refresh</span><span class="token punctuation">(</span>data<span class="token punctuation">,</span> columns<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre><hr><h4 id="setdimensions"><a href="#setdimensions" aria-hidden="true" class="header-anchor">#</a> setDimensions</h4><p>Refreshes the datatable layout.</p><pre class="language-javascript"><code><span class="token function">setDimensions</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword">void</span>
+
+<span class="token comment">// Usage</span>
+datatable<span class="token punctuation">.</span><span class="token function">setDimensions</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre><hr><h4 id="appendrows"><a href="#appendrows" aria-hidden="true" class="header-anchor">#</a> appendRows</h4><p>Append new rows to the datatable</p><pre class="language-javascript"><code><span class="token function">appendRows</span><span class="token punctuation">(</span>rows<span class="token punctuation">:</span> Array<span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword">void</span>
+
+<span class="token comment">// Usage</span>
+datatable<span class="token punctuation">.</span><span class="token function">appendRows</span><span class="token punctuation">(</span>rows<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre><hr><h4 id="showtoastmessage"><a href="#showtoastmessage" aria-hidden="true" class="header-anchor">#</a> showToastMessage</h4><p>Show a toast message at the bottom center of the datatable. You can hide the message by providing <code>hideAfter</code> value which is in seconds.</p><pre class="language-javascript"><code><span class="token function">showToastMessage</span><span class="token punctuation">(</span>message<span class="token punctuation">:</span> String<span class="token punctuation">,</span> hideAfter<span class="token punctuation">:</span> Number<span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword">void</span>
+
+<span class="token comment">// Usage</span>
+datatable<span class="token punctuation">.</span><span class="token function">showToastMessage</span><span class="token punctuation">(</span><span class="token string">'Hey'</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre><hr><h4 id="cleartoastmessage"><a href="#cleartoastmessage" aria-hidden="true" class="header-anchor">#</a> clearToastMessage</h4><p>Clear any toast message in the datatable.</p><pre class="language-javascript"><code><span class="token function">clearToastMessage</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword">void</span>
+
+<span class="token comment">// Usage</span>
+datatable<span class="token punctuation">.</span><span class="token function">clearToastMessage</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre><hr><h4 id="getcolumns"><a href="#getcolumns" aria-hidden="true" class="header-anchor">#</a> getColumns</h4><p>Get all the columns</p><pre class="language-javascript"><code><span class="token function">getColumns</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span> Array
+
+<span class="token comment">// Usage</span>
+datatable<span class="token punctuation">.</span><span class="token function">getColumns</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre><hr><h4 id="getrows"><a href="#getrows" aria-hidden="true" class="header-anchor">#</a> getRows</h4><p>Get all the rows</p><pre class="language-javascript"><code><span class="token function">getRows</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span> Array
+
+<span class="token comment">// Usage</span>
+datatable<span class="token punctuation">.</span><span class="token function">getRows</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre><hr><h4 id="freeze"><a href="#freeze" aria-hidden="true" class="header-anchor">#</a> freeze</h4><p>Show an overlay on the datatable which displays the <code>freezeMessage</code> value provided in <code>options</code>. You cannot interact with the datatable when it is frozen.</p><pre class="language-javascript"><code><span class="token function">freeze</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword">void</span>
+
+<span class="token comment">// Usage</span>
+datatable<span class="token punctuation">.</span><span class="token function">freeze</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre><hr><h4 id="unfreeze"><a href="#unfreeze" aria-hidden="true" class="header-anchor">#</a> unfreeze</h4><p>Remove the freeze overlay.</p><pre class="language-javascript"><code><span class="token function">unfreeze</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword">void</span>
+
+<span class="token comment">// Usage</span>
+datatable<span class="token punctuation">.</span><span class="token function">unfreeze</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><!----><!----></div></div></div>
+    <script src="/docs/datatable/assets/js/6.9df01b29.js" defer></script><script src="/docs/datatable/assets/js/app.ddd4aecc.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Frappe DataTable</title>
+    <meta name="description" content="A simple, modern and interactive datatable for the web">
+
+
+    <link rel="preload" href="/docs/datatable/assets/css/0.styles.a70e6733.css" as="style"><link rel="preload" href="/docs/datatable/assets/js/app.ddd4aecc.js" as="script"><link rel="preload" href="/docs/datatable/assets/js/1.90dd2e0b.js" as="script"><link rel="preload" href="/docs/datatable/assets/js/10.fb94301f.js" as="script"><link rel="prefetch" href="/docs/datatable/assets/js/4.5c1d166b.js"><link rel="prefetch" href="/docs/datatable/assets/js/2.1a4ac4f4.js"><link rel="prefetch" href="/docs/datatable/assets/js/3.4e68793a.js"><link rel="prefetch" href="/docs/datatable/assets/js/5.192f0f60.js"><link rel="prefetch" href="/docs/datatable/assets/js/6.9df01b29.js"><link rel="prefetch" href="/docs/datatable/assets/js/7.24d11e62.js"><link rel="prefetch" href="/docs/datatable/assets/js/8.b391065a.js"><link rel="prefetch" href="/docs/datatable/assets/js/9.f359d172.js">
+    <link rel="stylesheet" href="/docs/datatable/assets/css/0.styles.a70e6733.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/docs/datatable/" class="home-link router-link-exact-active router-link-active"><!----><span class="site-name">
+      Frappe DataTable
+    </span></a><div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div><nav class="nav-links can-hide"><div class="nav-item"><a href="https://github.com/frappe/datatable" target="_blank" rel="noopener noreferrer" class="nav-link">GitHub</a></div><!----></nav></div></header><div class="sidebar-mask"></div><div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="https://github.com/frappe/datatable" target="_blank" rel="noopener noreferrer" class="nav-link">GitHub</a></div><!----></nav><ul class="sidebar-links"><li><a href="/docs/datatable/getting-started.html" class="sidebar-link">Getting Started</a></li><li><a href="/docs/datatable/download.html" class="sidebar-link">Download</a></li><li><a href="/docs/datatable/configuration.html" class="sidebar-link">Configuration</a></li><li><a href="/docs/datatable/events.html" class="sidebar-link">Events</a></li></ul></div><div class="home"><div class="hero"><!----><h1>Frappe DataTable</h1><p class="description">
+      A simple, modern and interactive datatable for the web
+    </p><!----></div><!----><div class="content custom"><div align="center"><a href="/docs/datatable/getting-started.html" class="button">Get Started</a></div><div><div id="example-basic"></div></div><h2 id="installation"><a href="#installation" aria-hidden="true" class="header-anchor">#</a> Installation</h2><pre class="language-bash"><code><span class="token comment"># Install using yarn</span>
+$ yarn add frappe-datatable
+
+<span class="token comment"># or NPM</span>
+$ <span class="token function">npm</span> <span class="token function">install</span> frappe-datatable
+</code></pre><h2 id="usage"><a href="#usage" aria-hidden="true" class="header-anchor">#</a> Usage</h2><pre class="language-javascript"><code><span class="token keyword">import</span> DataTable <span class="token keyword">from</span> <span class="token string">'frappe-datatable'</span><span class="token punctuation">;</span>
+
+<span class="token comment">// or add</span>
+<span class="token comment">// &lt;script src=&quot;frappe-datatable.js&quot; &gt;&lt;/script&gt;</span>
+<span class="token comment">// in your html</span>
+
+<span class="token keyword">let</span> datatable <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">DataTable</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    columns<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'Name'</span><span class="token punctuation">,</span> <span class="token string">'Position'</span><span class="token punctuation">,</span> <span class="token operator">...</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    data<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">[</span><span class="token string">'Tiger Nixon'</span><span class="token punctuation">,</span> <span class="token string">'System Architect'</span><span class="token punctuation">,</span> <span class="token operator">...</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token punctuation">[</span><span class="token string">'Garrett Winters'</span><span class="token punctuation">,</span> <span class="token string">'Accountant'</span><span class="token punctuation">,</span> <span class="token operator">...</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token operator">...</span>
+    <span class="token punctuation">]</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre><h2 id="cell-features"><a href="#cell-features" aria-hidden="true" class="header-anchor">#</a> Cell Features</h2><ul><li>Custom Formatters</li><li>Inline Editing</li><li>Mouse Selection</li><li>Copy Cells</li><li>Keyboard Navigation</li><li>Custom Cell Editor</li></ul><img src="/docs/datatable/assets/img/datatable-cell-demo.a77b3496.gif"><h2 id="column-features"><a href="#column-features" aria-hidden="true" class="header-anchor">#</a> Column Features</h2><ul><li>Reorder Columns</li><li>Sort by Column</li><li>Remove / Hide Column</li><li>Custom Actions</li><li>Resize Column</li><li>Flexible Layout</li></ul><img src="/docs/datatable/assets/img/datatable-column-demo.0d1b3de4.gif"><h2 id="row-features"><a href="#row-features" aria-hidden="true" class="header-anchor">#</a> Row Features</h2><ul><li>Row Selection</li><li>Tree Structured Rows</li><li>Inline Filters</li><li>Large Number of Rows</li><li>Dynamic Row Height</li></ul><div class="footer">
+Made with ❤️ by Frappe
+</div></div><!----></div></div></div>
+    <script src="/docs/datatable/assets/js/1.90dd2e0b.js" defer></script><script src="/docs/datatable/assets/js/10.fb94301f.js" defer></script><script src="/docs/datatable/assets/js/app.ddd4aecc.js" defer></script>
+  </body>
+</html>
