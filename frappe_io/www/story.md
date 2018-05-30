@@ -2,7 +2,7 @@
 
 <!-- no-sidebar -->
 
-<p class="lead">Why someone would start a new open source ERP (Enterprise Resource Planning) project, is the question that people ask me again and again. If I had known what it takes, I might not have done it! But I did not know that in 2006 when I started to write my own ERP in Python and MySQL.</p>
+<p class="lead text-muted mb-5">Why someone would start a new open source ERP (Enterprise Resource Planning) project? If I had known what it takes, I might not have done it! But I did not know that in 2006...</p>
 
 I had just joined my family business (furniture manufacturing) and the company was reeling under a bad ERP implementation. It was a local vendor who was building it out on the .NET platform, and after sinking a reasonable sum of money into it, he was not able to get it right. At that point, my faith in the entire ERP industry was pretty low. Either they were too expensive or they were very buggy.
 

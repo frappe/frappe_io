@@ -2,7 +2,7 @@
 {% block title %}Frappe: Frameworks + Apps{% endblock %}
 {% block content %}
 <section class="text-center section-padding px-3">
-	<h1 class="font-weight-normal mt-4">Frameworks + Apps</h1>
+	<h1 class="font-weight-normal mt-4"><span style='text-decoration: underline'>Fra</span>meworks + <span style='text-decoration: underline'>App</span>s</h1>
 	<p class='lead lead-max m-auto text-muted'>Frappe is a software engineering company that builds open source frameworks, applications and libraries.</p>
 </section>
 
@@ -10,15 +10,13 @@
 <div class="col-sm">
 	<a href="{{ btnlink }}" class="card mb-4">
 	  <div class="card-body">
-		  <h6 class="indicator blue">{{ title }}</h6>
+		<h6>{{ title }}</h6>
 	    <p class="card-text">{{ body }}</p>
-		<div>
-			{% for badge in badges %}
-			<span class='badge badge-secondary'>{{ badge }}</span>
-			{% endfor %}
-		</div>
 	    <!-- <a href="{{ btnlink }}" class="btn btn-dark btn-sm">{{ btnlabel }}</a> -->
 	  </div>
+		<div class='card-footer text-muted small'>
+			{{ ', '.join(badges) }}
+		</div>
 	</a>
 </div>
 {% endmacro %}
@@ -26,7 +24,7 @@
 	<div class="row mt-5">
 		{{ card(
 			"ERPNext",
-			"With supporting text below as a natural lead-in to additional content.",
+			"Fully featured, modern, easy-to-use 100% Open Source ERP.",
 			"ERPNext.com",
 			"https://erpnext.com",
 			["App", "Python", "JS"]
@@ -34,7 +32,7 @@
 
 		{{ card(
 			"Frappe",
-			"With supporting text below as a natural lead-in to additional content.",
+			"Python + JS based metadata driven, full-stack web-application framework.",
 			"Documentation",
 			"/docs/user/en/tutorial",
 			["Framework", "Python", "JS"]
@@ -42,7 +40,7 @@
 
 		{{ card(
 			"Bench",
-			"With supporting text below as a natural lead-in to additional content.",
+			"CLI to setup, deploy, manage multiple Frappe / ERPNext instances.",
 			"ERPNext.com",
 			"https://github.com/frappe/bench",
 			["CLI", "Python"]
@@ -52,7 +50,7 @@
 	<div class="row">
 		{{ card(
 			"Gantt",
-			"With supporting text below as a natural lead-in to additional content.",
+			"Open source, fully featured, SVG based Javascript Gantt library.",
 			"ERPNext.com",
 			"/gantt",
 			["Lib", "JS"]
@@ -60,7 +58,7 @@
 
 		{{ card(
 			"Charts",
-			"With supporting text below as a natural lead-in to additional content.",
+			"Open source, extensible, GitHub inspired SVG based Charting library.",
 			"ERPNext.com",
 			"/charts",
 			["Lib", "JS"]
@@ -68,7 +66,7 @@
 
 		{{ card(
 			"Datatable",
-			"With supporting text below as a natural lead-in to additional content.",
+			"Missing open source Javascript based Datatable built for the web.",
 			"ERPNext.com",
 			"/datatable",
 			["Lib", "JS"]

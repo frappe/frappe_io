@@ -2,7 +2,7 @@
 
 <!-- no-sidebar -->
 
-<p class="lead">Frappe Technologies Pvt Ltd is a Mumbai based Open Source Software Development Company.</p>
+<p class="lead text-muted mb-5">Help us Build Amazing Open Source Software.</p>
 
 If you are passionate, obsessive and persistent Software Developer, Designer or Writer, someone who believes in the long term, values quality and believes that honesty is above everything else, we want to know you.
 
