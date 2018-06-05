@@ -1,115 +1,92 @@
-<!-- title: Frappe — The Company -->
-<!-- no-sidebar -->
-<!-- jinja -->
+{% extends "templates/base.html" %}
+{% block content %}
 
-<!-- Navigation -->
-<!-- Hero Section -->
-<div class="row hero">
-    <div class="col-sm-12">
-        <img class="frappe-hero" src="/assets/frappe_theme/img/frappe-hero.svg">
-    </div>
-    <div class="col-sm-12 hero-content">
-        <h1>Frappe &mdash; The Company</h1>
-        <p class='lead text-muted'>Established in 2008, Frappe is an internet company based out of Mumbai, India. Its flagship product ERPNext is an award-winning and easy to use ERP loved by businesses worldwide.</p>
-        <a href="/story">Read the full story.</a>
-    </div>
-</div>
-<!-- Content -->
-<div class="group">
-    <div class="row section">
-        <div class="col-sm-4 open-source" style="padding-top: 10px;">
-            <img src="/assets/frappe_theme/img/open-source.svg">
-        </div>
-        <div class="col-sm-8 content text-center-xs">
-            <h1 style="margin-top: 0px;">Serious About Open Source</h1>
-            <p>Frappe products and the web framework have a thriving open source community. Developers and service providers participate from over 44 countries and are relentless about building ERP ecosystems.</p>
-            <a href="https://discuss.erpnext.com">Join the Community</a>
-        </div>
-    </div>
-</div>
-
-<div class="group">
-    <div class="row hero">
-	    <div class="col-sm-12 hero-content">
-	        <h1>Team Frappe</h1>
-	        <p>We love to build new things and break them apart, and build them again</p>
-	    </div>
-		<div class='col-sm-12' style='margin-top: 30px;'>
-			<img src="/assets/frappe_io/images/team/team-1.jpg">
-		</div>
-		<div class='col-sm-6' style='margin-top: 30px;'>
-			<img src="/assets/frappe_io/images/team/team-2.jpg">
-		</div>
-		<div class='col-sm-6' style='margin-top: 30px;'>
-			<img src="/assets/frappe_io/images/team/team-3.jpg">
-		</div>
+<section class="section-padding px-3 mt-large text-center">
+	<div class="col-sm-12 mt-4">
+		<h4>We love to build things and break them apart, and build them again.</h4>
+		<p class='lead text-muted'>Established in 2008, Frappe is an internet company based out of Mumbai, India. Its flagship product ERPNext is an award-winning ERP loved by businesses worldwide.</p>
+	<div class="col-sm-12 mt-4 text-center">
+		<p>
+			<a class="mt-4 btn btn-dark btn-sm" href="/story">Read the full story.</a>
+		</p>
+		<p>
+			<a href=/inspiration class='text-muted'>What Inspires Us</a><br>
+			<a href=/blog class='text-muted'>Blog</a>
+		</p>
 	</div>
-    <div class="row section">
-		<div class="team-description clearfix">
-			{% for m in team %}
-			<div class="col-sm-3 tiny-content">
-				<img src="/assets/frappe_io/images/team/{{ m.name.split()[0].lower() }}.jpg">
-				<a href="https://frappe.io/blog?blogger={{ m.blogger }}">
-					<h1>{{ m.name }}</h1>
-				</a>
-				<p>{{ m.role }}</p>
-				{% if m.twitter %}
-				<p><a href="https://twitter.com/{{ m.twitter }}" target="_blank">
-					@{{ m.twitter }}</a></p>
-				{% elif m.linkedin %}
-				<p><a href="{{ m.linkedin }}" target="_blank">
-					LinkedIn Profile</a></p>
-				{% elif m.medium %}
-				<p><a href="https://medium.com/@{{ m.medium }}" target="_blank">
-					M@{{ m.medium }}</a></p>
-				{% endif %}
-			</div>
-			{% endfor %}
-	        <div class="col-sm-12 col-xs-12 text-center">
-				<div class="tiny-content">
-		            <h1><em>We're hiring!</em></h1>
-		            <p><a href=/jobs>Want to join us?</a></p>
-				</div>
-	        </div>
-		</div>
-		<div class="row">
-			<div class="col-sm-12 text-center">
-				<a class="large blue button" href="https://twitter.com/erpnext" target="_blank">
-					Follow us on Twitter
-				</a>
-			</div>
-			<div class="tiny-content text-center" style="margin-top: 60px;">
-	            <p><a href=/inspiration>What Inspires Us</a></p>
-	            <p><a href=/press>In the Press</a></p>
-	            <p><a href=/blog>Blog</a></p>
-			</div>
-		</div>
-    </div>
-</div>
+	</div>
+</section>
 
+<hr class="featurette-divider">
 
-<div class="row section contact" style="padding-bottom: 35px;">
-        <div class="col-sm-6 content" id="contact">
-            <h1>Write to us</h1>
-            <p>Have a question or comment? Write in, we would love to hear from you. We’ll write back as soon as we can.</p>
-            <p class="input-label">Subject</p>
-            <input class="form-control" type="text" name="subject">
-            <p class="input-label">Your email</p>
-            <input class="form-control" type="text" name="email">
-            <p class="input-label">Message</p>
-            <textarea class="form-control" name="message" style="height: 200px;"></textarea>
-            <a href=# id="send" class="btn btn-primary btn-send form-control">Send</a>
-        </div>
-        <div class="col-sm-6 content address">
-            <h1>Visit our office</h1>
-            <p>D/324 Neelkanth Business Park, Vidyavihar West, Mumbai, Maharashtra - 400086, India</p>
-            <p>Skype: <b>erpnext</b></p>
-            <p>Twitter: <a href="https://twitter.com/erpnext" target="_blank"><b>@erpnext</b></a></p>
-			<p>Phone: <a href="tel:080-339-23819">080-339-23819</a></p>
-            <img src="/assets/frappe_theme/img/office-map.svg" class="office-map">
-        </div>
-</div>
+<section class="section-padding row text-center">
+	{% for m in team %}
+	<div class="col-sm-3 mb-4 person">
+		<img class="greyscale img-fluid" src="/assets/frappe_io/images/team/{{ m.name.split()[0].lower() }}.jpg">
+		<a href="https://frappe.io/blog?blogger={{ m.blogger }}">
+			<h5 class="mt-3 font-weight-normal">{{ m.name }}</h5>
+		</a>
+		<p class='text-muted'>{{ m.role }}
+		{% if m.twitter %}
+		<br><a  class='text-muted' href="https://twitter.com/{{ m.twitter }}" target="_blank">
+				@{{ m.twitter }}</a>
+		{% elif m.linkedin %}
+		<br><a  class='text-muted'href="{{ m.linkedin }}" target="_blank">
+				LinkedIn Profile</a>
+		{% elif m.medium %}
+		<br><a  class='text-muted' href="https://medium.com/@{{ m.medium }}" target="_blank">
+				M@{{ m.medium }}</a>
+		{% endif %}
+		</p>
+	</div>
+	{% endfor %}
+</section>
+
+<hr class="featurette-divider">
+<section class="section-padding px-3 row">
+	<div class="col-sm-12 col-xs-12 mt-4 text-center">
+		<h4>Join us in making awesome open source software for the world</h4>
+		<p class='lead text-muted'>
+			Working at Frappe is like working for an open source community, except the fact that you get paid for it.</p>
+		<p class='mt-4'><a class = 'btn btn-dark btn-sm' href=/jobs>See Open Positions</a></p>
+	</div>
+</section>
+
+<hr class="featurette-divider">
+
+<section class="section-padding px-3 row">
+	<div class="col-sm-6" id="contact">
+		<h4>Write to us</h3>
+		<p>Have a question or comment? Write in, we would love to hear from you. We’ll write back as soon as we can.</p>
+		<p class="input-label">Subject</p>
+		<input class="form-control" type="text" name="subject">
+		<p class="input-label">Your email</p>
+		<input class="form-control" type="text" name="email">
+		<p class="input-label">Message</p>
+		<textarea class="form-control" name="message" style="height: 200px;"></textarea>
+		<a href=# id="send" class="btn btn-dark btn-send form-control mt-4">Send</a>
+	</div>
+	<div class="mt-5 mt-sm-0 col-sm-6">
+		<h4>Visit our office</h4>
+		<p>D/324 Neelkanth Business Park,<br> Vidyavihar West,<br> Mumbai,<br> Maharashtra - 400086,<br> India</p>
+		<p>Skype: <b>erpnext</b></p>
+		<p>Phone: <a href="tel:080-339-23819">080-339-23819</a></p>
+		<!-- <img class="frappe-hero mx-5 mt-5" src="/assets/frappe_theme/img/office-map.svg" class="office-map"> -->
+		<h4 class="mt-5">Social</h4>
+		<p>Twitter: <a href="https://twitter.com/erpnext" target="_blank"><b>@erpnext</b></a></p>
+		<p>Medium: <a href="https://medium.com/frapp%C3%A9-thoughts" target="_blank"><b>Frappe Thoughts</b></a></p>
+		<p>LinkedIn: <a href="https://www.linkedin.com/company/frappe-erpnext/" target="_blank"><b>Frappe Technologies Private Limited</b></a></p>
+		<p>Facebook: <a href="https://www.facebook.com/ERPNext/" target="_blank"><b>facebook.com/ERPNext</b></a></p>
+	</div>
+</section>
+
+<style>
+	.person a {
+		text-decoration: none;
+	}
+</style>
 
 <script>
 	{% include "templates/includes/contact.js" %}
 </script>
+{% endblock %}

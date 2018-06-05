@@ -14,24 +14,18 @@ def get_context(context):
 			'twitter': 'nabinhait',
 			'blogger': 'nabin'
 		},
-		# {
-		# 	'name': 'Pawan Mehta',
-		# 	'role': 'Chief Operations Officer',
-		# 	'linkedin': 'https://in.linkedin.com/in/pawan-mehta-455a179',
-		# 	'blogger': 'pawan'
-		# },
 		{
 			'name': 'Umair Sayed',
 			'role': 'Chief Customer Officer',
 			'twitter': 'umairsTWT',
 			'blogger': 'umair'
 		},
-		# {
-		# 	'name': 'Kanchan Chauhan',
-		# 	'role': 'Developer',
-		# 	'linkedin': 'https://in.linkedin.com/in/kanchanchauhan1984',
-		# 	'blogger': 'kanchan'
-		# },
+		{
+			'name': 'Prakash Hodage',
+			'role': 'Admin + Accounts',
+			'blogger': 'prakash',
+			'linkedin': 'https://in.linkedin.com/in/prakash-hodage-6702b231'
+		},
 		{
 			'name': 'Saurabh Palande',
 			'role': 'Developer',
@@ -44,35 +38,11 @@ def get_context(context):
 			'twitter': 'rohitw1991',
 			'blogger': 'rohit'
 		},
-		# {
-		# 	'name': 'Neil Lasrado',
-		# 	'role': 'Developer',
-		# 	'twitter': 'neillasrado',
-		# 	'blogger': 'neil'
-		# },
 		{
 			'name': 'Faris Ansari',
 			'role': 'Developer',
 			'twitter': 'netchampfaris',
 			'blogger': 'faris'
-		},
-		{
-			'name': 'Arundhati Sharma',
-			'role': 'Support',
-			'blogger': 'arundhati',
-			'medium': 'mrs.arusharma'
-		},
-		{
-			'name': 'Prakash Hodage',
-			'role': 'Admin + Accounts',
-			'blogger': 'prakash',
-			'linkedin': 'https://in.linkedin.com/in/prakash-hodage-6702b231'
-		},
-		{
-			'name': 'Makarand Bauskar',
-			'role': 'Developer',
-			'blogger': 'makarand',
-			'medium': 'mbauskar'
 		},
 		{
 			'name': 'Prateeksha Singh',
@@ -86,6 +56,31 @@ def get_context(context):
 			'blogger': 'manas',
 			'medium': 'manassolanki'
 		},
-
-
+		{
+			'name': 'Shreya Shah',
+			'role': 'Developer',
+			'medium': 'shreyashah115'
+		},
+		{
+			'name': 'Zarrar Shaikh',
+			'role': 'Developer',
+			'medium': 'zlash65',
+			'twitter': 'zlash65'
+		},
+		{
+			'name': 'Ameya Shenoy',
+			'role': 'Developer',
+			'medium': 'codingCoffee',
+			'twitter': 'coding_caffeine'
+		},
+		{
+			'name': 'Kenneth Sequeira',
+			'role': 'Marketing Engineer',
+		},
+		{
+			'name': 'Suraj Shetty',
+			'role': 'Developer',
+			'medium': 'surajshetty3416',
+			'twitter': 'surajshetty3416'
+		},
 	]

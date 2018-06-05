@@ -1,70 +1,80 @@
-<!-- title: Frappe for Developers -->
-    <!-- Hero Section -->
-    <div class="row hero">
-        <div class="col-sm-12">
-            <img class="developers-hero" src="/assets/frappe_theme/img/developers-hero.svg">
-        </div>
-        <div class="col-sm-12 hero-content">
-            <h1>Frappe for Developers</h1>
-            <p class='lead text-muted'>A full-stack web framework based on Python and Javascript to help you build powerful business apps and nifty extensions.</p>
-            <a class="x-large blue button" href="https://frappe.io/docs/user/">Learn Frappe</a>
-        </div>
-    </div>
+{% extends "templates/base.html" %}
+{% block title %}Frappe: Frameworks + Apps{% endblock %}
+{% block content %}
+<section class="text-center section-padding px-3">
+	<h1 class="font-weight-normal mt-4 mb-0" style='overflow: hidden'>Fr<span class='text-muted'>ameworks + </span>App<span  class='text-muted'>s</span></h1>
+	<p class='lead lead-max m-auto text-muted mt-4'>Frappe is a software engineering company that builds open source frameworks, applications and libraries.</p>
+</section>
 
-    <!-- Content -->
-    <div class="group">
-        <div class="row section">
-            <div class="col-sm-5 col-sm-push-7">
-                <img src="/assets/frappe_theme/img/developers-erp-framework.svg" class="img-responsive erp-framework">
-            </div>
-            <div class="col-sm-7 col-sm-pull-5 content">
-                <h1>ERPNext + Frappe Framework</h1>
-                <p>ERPNext is built entirely on the Frappe framework. This extensible framework allows you to customize and fine tune ERPNext to best suit your business workflow.</p>
-                <a href="https://frappe.io/docs/user/">Read the Documentation</a>
-            </div>
+{% macro card(title, body, btnlabel, btnlink, badges) %}
+<div class="col-sm">
+	<a href="{{ btnlink }}" class="card mb-4">
+	  <div class="card-body">
+		<h6>{{ title }}</h6>
+	    <p class="card-text">{{ body }}</p>
+	    <!-- <a href="{{ btnlink }}" class="btn btn-dark btn-sm">{{ btnlabel }}</a> -->
+	  </div>
+		<div class='card-footer text-muted small'>
+			{{ ', '.join(badges) }}
+		</div>
+	</a>
+</div>
+{% endmacro %}
+<section class="section-padding px-3">
+	<div class="row mt-5">
+		{{ card(
+			"ERPNext",
+			"Fully featured, modern, easy-to-use 100% Open Source ERP.",
+			"ERPNext.com",
+			"https://erpnext.com",
+			["App", "Python", "JS"]
+		) }}
 
-        </div>
-    </div>
+		{{ card(
+			"Frappe",
+			"Python + JS based metadata driven, full-stack web-application framework.",
+			"Documentation",
+			"/docs/user/en/tutorial",
+			["Framework", "Python", "JS"]
+		) }}
 
-    <div class="group">
-        <div class="row section">
-            <div class="col-sm-4 small-content">
-                <img src="/assets/frappe_theme/img/developers-community.svg">
-                <h1>Community</h1>
-                <p>Frappe connects business users with service providers and web developers who specialize in ERP systems.</p>
-                <a href="https://erpnext.org/service-providers" target="_blank">Learn More</a>
-            </div>
+		{{ card(
+			"Bench",
+			"CLI to setup, deploy, manage multiple Frappe / ERPNext instances.",
+			"ERPNext.com",
+			"https://github.com/frappe/bench",
+			["CLI", "Python"]
+		) }}
+	</div>
 
-            <div class="col-sm-4 small-content">
-                <img src="/assets/frappe_theme/img/developers-apps.svg">
-                <h1>Frappe Apps</h1>
-                <p>Contributions drive the open source ecosystem. A showcase of Frappe apps built by amazing fellow developers.</p>
-                <a href="https://erpnext.org/apps" target="_blank">View Apps</a>
-            </div>
+	<div class="row">
+		{{ card(
+			"Gantt",
+			"Open source, fully featured, SVG based Javascript Gantt library.",
+			"ERPNext.com",
+			"/gantt",
+			["Lib", "JS"]
+		) }}
 
-            <div class="col-sm-4 small-content">
-                <img src="/assets/frappe_theme/img/developers-training.svg">
-                <h1>Consulting</h1>
-                <p>Frappe offers special consulting programs for businesses who want in-house capabilities in building and managing their ERP systems.</p>
-                <a href="https://erpnext.com/pricing/vip" target="_blank">Learn More</a>
-            </div>
-        </div>
-    </div>
+		{{ card(
+			"Charts",
+			"Open source, extensible, GitHub inspired SVG based Charting library.",
+			"ERPNext.com",
+			"/charts",
+			["Lib", "JS"]
+		) }}
 
-    <div class="row section">
-        <div class="col-sm-12 get-involved">
-            <p>Get involved to make the framework and ERPNext even better.</p>
-            <a href="https://github.com/frappe" class="large white button" target="_blank">
-				<span class="mega-octicon octicon-mark-github" style="font-size: 24px;"></span>
-				Github
-			</a>
-            <a href="https://gitter.im/frappe/erpnext" class="large white button" target="_blank">
-				<span class="mega-octicon octicon-broadcast" style="font-size: 24px;"></span>
-				Chat
-			</a>
-            <a href="https://discuss.erpnext.com" class="large white button" target="_blank">
-				<span class="mega-octicon octicon-comment-discussion" style="font-size: 24px;"></span>
-				Forum
-			</a>
-        </div>
-    </div>
+		{{ card(
+			"Datatable",
+			"Missing open source Javascript based Datatable built for the web.",
+			"ERPNext.com",
+			"/datatable",
+			["Lib", "JS"]
+		) }}
+
+	</div>
+
+
+
+</section>
+{% endblock %}
