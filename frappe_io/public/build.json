@@ -1,0 +1,5 @@
+{
+    "frappe_io/js/docs.js": [
+        "public/docs/demo.js"
+    ]
+}
