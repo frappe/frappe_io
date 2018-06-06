@@ -1,0 +1,153 @@
+{% extends "templates/base.html" %}
+{% block title %}Frappe DataTable - A simple, modern datatable library for the web{% endblock %}
+{% block content %}
+<link href="//unpkg.com/frappe-datatable@0.0.8/dist/frappe-datatable.min.css" rel="stylesheet" />
+<link href="datatable/assets/index.css" rel="stylesheet">
+
+    <div class="container">
+        <section class="showcase align-center text-center">
+            <h1>Frappe DataTable</h1>
+            <p class="lead text-muted">A simple, modern and interactive datatable for the web</p>
+            <button class="btn btn-dark btn-sm"><a class="text-light no-decoration" href="datatable/docs/getting-started">Documentation</a></button>
+        </section>
+        <div class="example-1"></div>
+
+        <section class="showcase installation">
+                <h5>Installation</h5>
+                <div class="code">
+        <pre><code class="hljs shell"># Install using yarn
+$ yarn add frappe-datatable
+
+# or npm
+$ npm install frappe-datatable</code></pre>
+        </section>
+
+        <section class="showcase installation">
+                <h5>Usage</h5>
+                <div class="code">
+        <pre><code class="hljs javascript">import DataTable from 'frappe-datatable';
+
+// or add
+// &lt;script src="frappe-datatable.js" &gt;&lt;/script&gt;
+// in your html
+
+let datatable = new DataTable({
+    columns: ['Name', 'Position', ...],
+    data: [
+        ['Tiger Nixon', 'System Architect', ...],
+        ['Garrett Winters', 'Accountant', ...],
+        ...
+    ]
+});</code></pre>
+        </section>
+        <section class="showcase feature">
+            <h5>Cell Features</h5>
+            <div class="features">
+                <ul>
+                    <li>Custom Formatters</li>
+                    <li>Inline Editing</li>
+                    <li>Mouse Selection</li>
+                </ul>
+                <ul>
+                    <li>Copy Cells</li>
+                    <li>Keyboard Navigation</li>
+                    <li>Custom Cell Editor</li>
+                </ul>
+            </div>
+            <img src="datatable/assets/datatable-cell-demo.gif" alt="DataTable Cell Demo">
+        </section>
+
+        <section class="showcase feature">
+            <h5>Column Features</h5>
+            <div class="features">
+                <ul>
+                    <li>Reorder Columns</li>
+                    <li>Sort by Column</li>
+                    <li>Remove / Hide Column</li>
+                </ul>
+                <ul>
+                    <li>Custom Actions</li>
+                    <li>Resize Column</li>
+                    <li>Flexible Layout</li>
+                </ul>
+            </div>
+            <img src="datatable/assets/datatable-column-demo.gif" alt="DataTable Column Demo">
+        </section>
+
+        <section class="showcase feature">
+            <h5>Row Features</h5>
+
+            <div class="features">
+                <ul>
+                    <li>Row Selection</li>
+                    <li>Tree Structured Rows</li>
+                    <li>Inline Filters</li>
+                </ul>
+                <ul>
+                    <li>Large Number of Rows</li>
+                    <li>Dynamic Row Height</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="showcase installation">
+            <h5>List of configurable options</h5>
+            <div class="code">
+                <pre><code class="hljs javascript">{
+    columns: [],
+    data: [],
+    dropdownButton: '▼',
+    headerDropdown: [
+        {
+            label: 'Custom Action',
+            action: console.log
+        }
+    ],
+    events: {
+        onRemoveColumn(column) {
+
+        },
+        onSwitchColumn(column1, column2) {
+
+        },
+        onSortColumn(column) {
+
+        }
+    },
+    sortIndicator: {
+        asc: '↑',
+        desc: '↓',
+        none: ''
+    },
+    freezeMessage: '',
+    getEditor: () => {
+
+    },
+    addSerialNoColumn: true,
+    addCheckboxColumn: false,
+    enableClusterize: true,
+    enableLogs: false,
+    layout: 'fixed', // fixed, fluid
+    noDataMessage: 'No Data',
+    cellHeight: null,
+    enableInlineFilters: false
+}</code></pre>
+            </div>
+        </section>
+        <section class="showcase align-center">
+            <p>
+                <button class="btn btn-dark">Download</button>
+            </p>
+            <p>
+                <a href="https://github.com/frappe/datatable">View on GitHub</a>
+            </p>
+            <p>
+                <span>MIT License</span>
+            </p>
+        </section>
+    </div>
+    <script src="//unpkg.com/sortablejs@1.7.0/Sortable.min.js"></script>
+    <script src="//unpkg.com/clusterize.js@0.18.1/clusterize.min.js"></script>
+    <script src="//unpkg.com/frappe-datatable@0.0.8/dist/frappe-datatable.min.js"></script>
+    <script src="datatable/assets/index.js"></script>
+{% endblock %}
