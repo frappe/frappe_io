@@ -1,3 +1,5 @@
+<!-- add-next-prev-links -->
+
 # Download
 
 Frappe DataTable can be consumed in several different forms.

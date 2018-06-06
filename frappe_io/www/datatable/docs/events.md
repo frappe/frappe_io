@@ -1,3 +1,5 @@
+<!-- add-next-prev-links -->
+
 # Events
 
 Hook custom actions on certain events occurred during the lifecycle of DataTable. You can define a function to be called on these events using the `events` key in `options`.

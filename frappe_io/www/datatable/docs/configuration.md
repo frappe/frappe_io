@@ -1,6 +1,4 @@
----
-sidebarDepth: 2
----
+<!-- add-next-prev-links -->
 
 # Configuration
 
