@@ -10931,11 +10931,13 @@ docSection.prototype.getDemoActions = function getDemoActions (demoIndex, action
 	});
 };
 
+var COMPONENT_NAME = 'project-demo';
+
 var getDemoVue = function (lib, getDemoConfig) {
 	var dbd = new demoBuilder(lib);
 
 	return {
-		name: 'project-demo',
+		name: COMPONENT_NAME,
 		config: {
 			template: '<div class="project-demo"></div>',
 			props: ['data', 'config', 'options', 'actions'],
@@ -15434,7 +15436,7 @@ var dataPath = document.querySelector("body").getAttribute("data-path");
 var projectName = dataPath.slice(0, dataPath.indexOf('/'));
 
 if(projectName in frappe.projectDemos
-	&& document.querySelectorAll(frappe.demoVue.name).length) {
+	&& document.querySelectorAll(COMPONENT_NAME).length) {
 
 	var project = frappe.projectDemos[projectName];
 

@@ -1,73 +1,7 @@
-function $$(expr, con) {
-	return typeof expr === "string"? (con || document).querySelector(expr) : expr || null;
-}
+import { $ } from '../../../src/js/utils/dom';
+import { toTitleCase } from '../../../src/js/utils/helpers';
 
-$$.create = (tag, o) => {
-	var element = document.createElement(tag);
-	let container = null;
-
-	if (o.withLabel) {
-		container = document.createElement('div');
-		container.classList.add('input-wrapper');
-		element.label = document.createElement('label');
-		element.label.innerHTML = o.withLabel;
-		container.appendChild(element.label);
-		container.appendChild(element);
-	}
-
-	for (var i in o) {
-		var val = o[i];
-
-		if(i === "inside") {
-			let child = container ? container : element;
-
-			$$(val).appendChild(child);
-
-		} else if (i === "around") {
-			var ref = $$(val);
-			ref.parentNode.insertBefore(element, ref);
-			element.appendChild(ref);
-
-		} else if (i === "onClick" ) {
-			element.addEventListener('click', val);
-
-		} else if (i === "onInput" ) {
-			element.addEventListener('input', function(e) {
-				val(element.value);
-			});
-
-		} else if (i === "onChange" ) {
-			element.addEventListener('change', function(e) {
-				val(element.value);
-			});
-
-		} else if (i === "styles") {
-			if(typeof val === "object") {
-				Object.keys(val).map(prop => {
-					element.style[prop] = val[prop];
-				});
-			}
-		} else if (i in element ) {
-			element[i] = val;
-		}
-		else {
-			element.setAttribute(i, val);
-		}
-	}
-
-	return container ? container : element;
-};
-
-function toTitleCase(str) {
-    return str.replace(/\w*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
-}
-
-function scrub(text) {
-	return text.replace(/ /g, "_").toLowerCase();
-};
-
-// export class demoBuilder {
-export class demoBuilder {
+export class docsBuilder {
 	constructor(LIB_OBJ) {
 		this.LIB_OBJ = LIB_OBJ;
 	}
@@ -80,7 +14,7 @@ export class demoBuilder {
 class docSection {
 	constructor(LIB_OBJ, parent, sys) {
 		this.LIB_OBJ = LIB_OBJ;
-		this.parent = parent;
+		this.parent = parent;  // should be preferably a section
 		this.sys = sys;
 		this.blockMap = {};
 		this.demos = [];
@@ -92,7 +26,7 @@ class docSection {
 		// const section = document.querySelector(this.parent);
 		let s = this.sys;
 		if(s.title) {
-			$$.create('h6', { inside: this.parent, innerHTML: s.title });
+			$.create('h6', { inside: this.parent, innerHTML: s.title });
 		}
 
 		if(s.contentBlocks) {
@@ -115,7 +49,7 @@ class docSection {
 	}
 
 	getText(blockConf) {
-		return $$.create('p', {
+		return $.create('p', {
 			inside: this.parent,
 			className: 'new-context',
 			innerHTML: blockConf.content
@@ -123,9 +57,9 @@ class docSection {
 	}
 
 	getCode(blockConf) {
-		let pre = $$.create('pre', { inside: this.parent });
+		let pre = $.create('pre', { inside: this.parent });
 		let lang = blockConf.lang || 'javascript';
-		let code = $$.create('code', {
+		let code = $.create('code', {
 			inside: pre,
 			className: `hljs ${lang}`,
 			innerHTML: blockConf.content
@@ -139,18 +73,17 @@ class docSection {
 	getDemo(blockConf) {
 		let bc = blockConf;
 		let args = bc.config;
-
 		let figure, row;
 		if(!bc.sideContent) {
-			figure = $$.create('figure', { inside: this.parent });
+			figure = $.create('figure', { inside: this.parent });
 		} else {
-			row = $$.create('div', {
+			row = $.create('div', {
 				inside: this.parent,
 				className: "row",
 				innerHTML: `<div class="col-sm-8"></div>
 					<div class="col-sm-4"></div>`,
 			});
-			figure = $$.create('figure', { inside: row.querySelector('.col-sm-8') });
+			figure = $.create('figure', { inside: row.querySelector('.col-sm-8') });
 			row.querySelector('.col-sm-4').innerHTML += bc.sideContent;
 		}
 
@@ -168,50 +101,39 @@ class docSection {
 
 	getDemoOptions(demoIndex, options=[], args={}, figure) {
 		options.forEach(o => {
-			const btnGroup = $$.create('div', {
+			const btnGroup = $.create('div', {
 				inside: this.parent,
-				className: `btn-group ${scrub(o.name)}`
+				className: `btn-group ${o.name}`
 			});
 			const mapKeys = o.mapKeys;
 
 			if(o.type === "number") {
 				let numOpts = o.numberOptions;
-				let activeState = o.activeState ? o.activeState : 0
 
-				const inputGroup = $$.create('input', {
+				const inputGroup = $.create('input', {
 					inside: btnGroup,
-					withLabel: o.name + ': ' + '<b>' + activeState + '</b>',
 					className: `form-control`,
 					type: "range",
 					min: numOpts.min,
 					max: numOpts.max,
 					step: numOpts.step,
-					value: activeState,
+					value: o.activeState ? o.activeState : 0,
 					// (max - min)/2
 					onInput: (value) => {
-						if(o.path[1]) {
-							args[o.path[0]][o.path[1]] = value;
-						} else {
-							args[o.path[0]] = value;
-						}
-
-						let label = inputGroup.querySelector('label');
-						if(label) {
-							label.innerHTML = o.name + ': ' + '<b>' + value + '</b>';
-						}
+						args[o.path[0]][o.path[1]] = value;
 
 						this.demos[demoIndex] = new this.LIB_OBJ(figure, args);
 					}
 				});
 
-			} else if(["Map", "String", "Boolean", "Array", "Object"].includes(o.type)) {
+			} else if(["map", "string"].includes(o.type)) {
 				args[o.path[0]] = {};
 
 				Object.keys(o.states).forEach(key => {
 					let state = o.states[key];
 					let activeClass = key === o.activeState ? 'active' : '';
 
-					let button = $$.create('button', {
+					let button = $.create('button', {
 						inside: btnGroup,
 						className: `btn btn-sm btn-secondary ${activeClass}`,
 						innerHTML: key,
@@ -238,7 +160,7 @@ class docSection {
 	getDemoActions(demoIndex, actions=[], args={}) {
 		actions.forEach(o => {
 			let args = o.args || [];
-			$$.create('button', {
+			$.create('button', {
 				inside: this.parent,
 				className: `btn btn-action btn-sm btn-secondary`,
 				innerHTML: o.name,
@@ -248,19 +170,3 @@ class docSection {
 	}
 }
 
-export const COMPONENT_NAME = 'project-demo';
-
-export const getDemoVue = (lib, getDemoConfig) => {
-	let dbd = new demoBuilder(lib);
-
-	return {
-		name: COMPONENT_NAME,
-		config: {
-			template: '<div class="project-demo"></div>',
-			props: ['data', 'config', 'options', 'actions'],
-			mounted: function() {
-				dbd.makeSection(this.$el, getDemoConfig(this));
-			}
-		}
-	}
-}

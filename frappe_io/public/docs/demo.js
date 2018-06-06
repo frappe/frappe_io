@@ -1,5 +1,5 @@
 import Vue from "../lib/vue.esm.browser";
-import { getDemoVue } from "../lib/demoBuilder.js";
+import { getDemoVue, COMPONENT_NAME } from "../lib/demoBuilder.js";
 
 import { Chart } from "../../www/charts/frappe-charts.min.esm";
 import { data as chartsData } from "../../www/charts/data";
@@ -29,7 +29,7 @@ let dataPath = document.querySelector("body").getAttribute("data-path");
 let projectName = dataPath.slice(0, dataPath.indexOf('/'))
 
 if(projectName in frappe.projectDemos
-	&& document.querySelectorAll(frappe.demoVue.name).length) {
+	&& document.querySelectorAll(COMPONENT_NAME).length) {
 
 	let project = frappe.projectDemos[projectName];
 
