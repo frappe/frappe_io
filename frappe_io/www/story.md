@@ -1,6 +1,6 @@
 <section class='section-padding text-center'>
 	<h1>ERPNext Story</h1>
-	<p class="lead text-muted">
+	<p class="lead">
 		Why someone would start a new ERP project? If I had known what it takes, I might not have done it! But I did not know that in 2006...
 	</p>
 </section>
