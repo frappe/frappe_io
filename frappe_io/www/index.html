@@ -7,16 +7,13 @@
 </section>
 
 {% macro card(title, body, btnlabel, btnlink, badges) %}
-<div class="col-sm">
-	<a href="{{ btnlink }}" class="card mb-4">
+<div class="col-sm mb-4">
+	<a href="{{ btnlink }}" class="card">
 	  <div class="card-body">
 		<h5>{{ title }}</h5>
-	    <p class="card-text">{{ body }}</p>
+	    <div class="card-text">{{ body }}</div>
 	    <!-- <a href="{{ btnlink }}" class="btn btn-dark btn-sm">{{ btnlabel }}</a> -->
 	  </div>
-		<div class='card-footer text-muted small'>
-			{{ ', '.join(badges) }}
-		</div>
 	</a>
 </div>
 {% endmacro %}

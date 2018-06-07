@@ -45,11 +45,11 @@
 </section>
 
 {% macro card(title, body, footer, link) %}
-<div class="col-sm">
-	<div class="card mb-4 h-100">
+<div class="col-sm mb-4">
+	<div class="card h-100">
 	  <div class="card-body">
 		<h5>{{ title }}</h5>
-	    <p class="card-text">{{ body }}</p>
+	    <div class="card-text">{{ body }}</div>
 	  </div>
 		<!-- <div class='card-footer text-muted small'>
 			{{ footer }}

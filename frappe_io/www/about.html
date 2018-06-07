@@ -1,25 +1,21 @@
 {% extends "templates/base.html" %}
 {% block content %}
 
-<section class="section-padding px-3 mt-large text-center">
-	<div class="col-sm-12 mt-4">
-		<h1>We love building experiences</h1>
-		<p class='lead'>Established in 2008, we are an internet company based out of Mumbai, India. Our flagship product ERPNext is an award-winning ERP loved by businesses worldwide.</p>
-	<div class="col-sm-12 mt-4 text-center">
-		<p>
-			<a class="mt-4 btn btn-dark btn-sm" href="/story">Read the full story.</a>
-		</p>
-		<p>
-			<a href=/inspiration class='text-muted'>What Inspires Us</a><br>
-			<a href=/blog class='text-muted'>Blog</a>
-		</p>
-	</div>
-	</div>
+<section class="top-section">
+	<h1>We love building products</h1>
+	<p class='lead'>Established in 2008, we are an internet company based out of Mumbai, India. Our flagship product ERPNext is an award-winning ERP loved by businesses worldwide.</p>
+	<p>
+		<a class="mt-5 btn btn-dark" href="/story">Read the full story.</a>
+	</p>
+	<p>
+		<a href=/inspiration class='text-muted'>What Inspires Us</a><br>
+		<a href=/blog class='text-muted'>Blog</a>
+	</p>
 </section>
 
-<hr class="featurette-divider">
-
-<section class="section-padding row text-center">
+<section class="section-padding text-center">
+	<h3 class='mb-5'>Meet the Team</h3>
+	<div class='row'>
 	{% for m in team %}
 	<div class="col-sm-3 mb-4 person">
 		<img class="greyscale img-fluid" src="/assets/frappe_io/images/team/{{ m.name.split()[0].lower() }}.jpg">
@@ -40,9 +36,9 @@
 		</p>
 	</div>
 	{% endfor %}
+	</div>
 </section>
 
-<hr class="featurette-divider">
 <section class="section-padding px-3 row">
 	<div class="col-sm-12 col-xs-12 mt-4 text-center">
 		<h4>Join us in making awesome open source software for the world</h4>
@@ -51,10 +47,8 @@
 		<p class='mt-4'><a class = 'btn btn-dark btn-sm' href=/jobs>See Open Positions</a></p>
 	</div>
 </section>
-
-<hr class="featurette-divider">
-
-<section class="section-padding px-3 row">
+<hr>
+<section class="section-padding row contact">
 	<div class="col-sm-6" id="contact">
 		<h4>Write to us</h3>
 		<p>Have a question or comment? Write in, we would love to hear from you. We’ll write back as soon as we can.</p>
@@ -81,6 +75,9 @@
 </section>
 
 <style>
+	.contact p {
+		font-size: 16px;
+	}
 	.person a {
 		text-decoration: none;
 	}
