@@ -23,7 +23,7 @@ website_context = {
 			{"label": "Bench", "url":"/bench"},
 			{"label": "Gantt", "url":"/gantt"},
 			{"label": "Charts", "url":"/charts"},
-			{"label": "Datatable", "url":"/datatable"},
+			{"label": "DataTable", "url":"/datatable"},
 		]},
 		{"label": "About", "right": 1, "child_items": [
 			{"label": "Team", "url":"/about"},
