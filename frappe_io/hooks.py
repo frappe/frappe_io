@@ -26,7 +26,7 @@ website_context = {
 			{"label": "Datatable", "url":"/datatable"},
 		]},
 		{"label": "About", "right": 1, "child_items": [
-			{"label": "About", "url":"/about"},
+			{"label": "Team", "url":"/about"},
 			{"label": "Jobs", "url":"/jobs"},
 			{"label": "Inspiration", "url":"/inspiration"},
 			{"label": "Story", "url":"/story"},
