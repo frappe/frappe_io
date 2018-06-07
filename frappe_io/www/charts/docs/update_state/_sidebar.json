@@ -1,0 +1,58 @@
+[
+    {
+        "route": "/charts/docs",
+        "title": "Quick Start"
+    },
+    {
+        "route": "/charts/docs/basic/basic_chart",
+        "title": "Axis Charts"
+    },
+    {
+        "route": "/charts/docs/basic/trends_regions",
+        "title": "Area and Trends Charts"
+    },
+    {
+        "route": "/charts/docs/basic/annotations",
+        "title": "Tooltips and Annotations"
+    },
+    {
+        "route": "/charts/docs/basic/stacked_and_mixed",
+        "title": "Stacked and Mixed Charts"
+    },
+    {
+        "route": "/charts/docs/basic/aggr_sliced_diags",
+        "title": "Pies and Percentages"
+    },
+    {
+        "route": "/charts/docs/update_state/modify_data",
+        "title": "Modify data"
+    },
+    {
+        "route": "/charts/docs/update_state/navigation",
+        "title": "Navigation"
+    },
+    {
+        "route": "/charts/docs/basic/heatmap",
+        "title": "Heatmap"
+    },
+    {
+        "route": "/charts/docs/exporting/images",
+        "title": "Exporting"
+    },
+    {
+        "route": "/charts/docs/reference/configuration",
+        "title": "Configuration"
+    },
+    {
+        "route": "/charts/docs/reference/api",
+        "title": "API"
+    },
+    {
+        "route": "/charts/docs/wrappers",
+        "title": "Wrappers"
+    },
+    {
+        "route": "/charts/docs/contributing",
+        "title": "Docs Home"
+    }
+]
