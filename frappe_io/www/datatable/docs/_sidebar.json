@@ -1,0 +1,22 @@
+[
+    {
+        "title": "Homepage",
+        "route": "/datatable"
+    },
+    {
+        "title": "Getting Started",
+        "route": "/datatable/docs/getting-started"
+    },
+    {
+        "title": "Download",
+        "route": "/datatable/docs/download"
+    },
+    {
+        "title": "Configuration",
+        "route": "/datatable/docs/configuration"
+    },
+    {
+        "title": "Events",
+        "route": "/datatable/docs/events"
+    }
+]
