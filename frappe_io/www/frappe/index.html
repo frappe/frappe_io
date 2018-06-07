@@ -46,7 +46,7 @@
 
 {% macro card(title, body, footer, link) %}
 <div class="col-sm">
-	<a href="{{ link }}" class="card mb-4 h-100">
+	<div class="card mb-4 h-100">
 	  <div class="card-body">
 		<h5>{{ title }}</h5>
 	    <p class="card-text">{{ body }}</p>
@@ -54,7 +54,7 @@
 		<!-- <div class='card-footer text-muted small'>
 			{{ footer }}
 		</div> -->
-	</a>
+	</div>
 </div>
 {% endmacro %}
 
