@@ -18,15 +18,15 @@ website_context = {
 	"brand_html": "<img class='mr-2 d-inline-block align-top' src='/assets/frappe_theme/img/frappe-logo-white.svg' width='30px' height='30px' />Frappe",
 	"top_bar_items": [
 		{"label": "Products", "right": 1, "child_items": [
-			{"label": "Frappe Framework", "url":"/docs/user/en"},
-			{"label": "ERPNext", "url":"https://erpnext.com", "target": "target=_blank"},
-			{"label": "Bench", "url":"https://github.com/frappe/bench", "target": "target=_blank"},
+			{"label": "Frappe Framework", "url":"/frappe"},
+			{"label": "ERPNext", "url":"/erpnext"},
+			{"label": "Bench", "url":"/bench"},
 			{"label": "Gantt", "url":"/gantt"},
 			{"label": "Charts", "url":"/charts"},
 			{"label": "Datatable", "url":"/datatable"},
 		]},
 		{"label": "About", "right": 1, "child_items": [
-			{"label": "About", "url":"/team"},
+			{"label": "About", "url":"/about"},
 			{"label": "Jobs", "url":"/jobs"},
 			{"label": "Inspiration", "url":"/inspiration"},
 			{"label": "Story", "url":"/story"},

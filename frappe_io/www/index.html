@@ -1,9 +1,9 @@
 {% extends "templates/base.html" %}
 {% block title %}Frappe: Frameworks + Apps{% endblock %}
 {% block content %}
-<section class="text-center section-padding px-3">
-	<h1 class="font-weight-normal mt-4 mb-0" style='overflow: hidden'>Fr<span class='text-muted'>ameworks + </span>App<span  class='text-muted'>s</span></h1>
-	<p class='lead lead-max m-auto text-muted mt-4'>Frappe is a software engineering company that builds open source frameworks, applications and libraries.</p>
+<section class="top-section" style='padding-top: 4rem;'>
+	<h1 style='font-size: 3.5rem;'>Frameworks + Apps</h1>
+	<p class='lead'>We are a software engineering company that builds open source frameworks, applications and libraries.</p>
 </section>
 
 {% macro card(title, body, btnlabel, btnlink, badges) %}
@@ -26,7 +26,7 @@
 			"ERPNext",
 			"Fully featured, modern, easy-to-use 100% Open Source ERP.",
 			"ERPNext.com",
-			"https://erpnext.com",
+			"/erpnext",
 			["App", "Python", "JS"]
 		) }}
 
@@ -34,7 +34,7 @@
 			"Frappe",
 			"Python + JS based metadata driven, full-stack web-application framework.",
 			"Documentation",
-			"/docs/user/en/tutorial",
+			"/frappe",
 			["Framework", "Python", "JS"]
 		) }}
 
@@ -42,7 +42,7 @@
 			"Bench",
 			"CLI to setup, deploy, manage multiple Frappe / ERPNext instances.",
 			"ERPNext.com",
-			"https://github.com/frappe/bench",
+			"/bench",
 			["CLI", "Python"]
 		) }}
 	</div>
@@ -73,8 +73,6 @@
 		) }}
 
 	</div>
-
-
 
 </section>
 {% endblock %}

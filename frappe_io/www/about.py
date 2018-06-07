@@ -48,7 +48,7 @@ def get_context(context):
 			'name': 'Prateeksha Singh',
 			'role': 'Developer',
 			'blogger': 'prateeksha',
-			'medium': 'pratu16x7'
+			'twitter': 'pratu16x7'
 		},
 		{
 			'name': 'Manas Solanki',
@@ -59,7 +59,7 @@ def get_context(context):
 		{
 			'name': 'Shreya Shah',
 			'role': 'Developer',
-			'medium': 'shreyashah115'
+			'twitter': 'shreyashah115'
 		},
 		{
 			'name': 'Zarrar Shaikh',
