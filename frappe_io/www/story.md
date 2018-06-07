@@ -19,7 +19,7 @@ We licensed the code under the General Public License, and the code had been onl
 
 In 2011, we moved from Google Code to GitHub, and that proved to be a turning point. Now, suddenly, we were in the company of many open source projects and it felt nice to start using GitHub's workflows, issues lists, and more to make ourselves more friendly to the community. Slowly, in 2012, we started positioning ourselves more as an open source ERP, and very slowly we saw more activity on our mailing list and an occasional issue raised by the community.
 
-In 2013, we revamped our deployment architecture to become more Pythonic (WSGI) and also started giving out free virtual machines for users to evalute and use. This kickstarted a community. Today we have more than 1000 people on our discussion forum, and we believe there could be around 500 companies using our ERP at different stages. In the process, we have close to 300 users using our paid services (hosting or deployment support), and we even managed to get a couple of sponsors.
+In 2013, we revamped our deployment architecture to become more Pythonic (WSGI) and also started giving out free virtual machines for users to evaluate and use. This kickstarted a community. Today we have more than 1000 people on our discussion forum, and we believe there could be around 500 companies using our ERP at different stages. In the process, we have close to 300 users using our paid services (hosting or deployment support), and we even managed to get a couple of sponsors.
 
 ### Wordpress for ERPs
 
@@ -29,15 +29,15 @@ Another key aspect of the industry is that users would need an IT consulting com
 
 ### The business of open source
 
-Anyone who knows this space knows that there are is a big divide in the community. The free software proponents and then the commercial open source ones. Our focus has always been to stay clear of this debate, and we believe both are right in their own way. The commerical players feel we are too open source: we do not have paid modules and we have made deployment ridiculously easy. The free software proponents feel suspicious of anything commercial.
+Anyone who knows this space knows that there are is a big divide in the community. The free software proponents and then the commercial open source ones. Our focus has always been to stay clear of this debate, and we believe both are right in their own way. The commericial players feel we are too open source: we do not have paid modules and we have made deployment ridiculously easy. The free software proponents feel suspicious of anything commercial.
 
 What helps us is that we have decided to monetize only from our hosting services. We also offer support to developer teams, but we do not make any money from implementation, deployment, or customization. This helps to keep our objectives clear and makes it very easy for the community to use the product and also participate. Another thing that helps is that we are a very small team and do not plan for very quick growth. This helps us not put pressure to monetize from the community.
 
 ### The way forward
 
-We believe we have today a very usable and robust ERP system for small businesses. Even large businesses can use it, but we are not particlarly interested in that avenue because it would require services, and we are happy to let independent vendors do that. Our project has reached a reasonable community size and we can feel there is a good momentum with the number of users who are evaluating the product every day.
+We believe we have today a very usable and robust ERP system for small businesses. Even large businesses can use it, but we are not particularly interested in that avenue because it would require services, and we are happy to let independent vendors do that. Our project has reached a reasonable community size and we can feel there is a good momentum with the number of users who are evaluating the product every day.
 
-We need to focus on making things even easier for the end user and providing adequate documetation for the developer. Our framework Frappe, allows rapid application development and provides a platform to create apps or extensions to the product. With most of the basics in place, we think the ERP market is poised for a major disruption in the next five years.
+We need to focus on making things even easier for the end user and providing adequate documentation for the developer. Our framework Frappe, allows rapid application development and provides a platform to create apps or extensions to the product. With most of the basics in place, we think the ERP market is poised for a major disruption in the next five years.
 
 Our biggest satisfaction will be when a whole bunch of small, local, innovative organizations across the world gets access to tools that will help them compete with large, global, and inefficient corporations—creating a level playing field that will leave our world a little bit more fair.
 
@@ -50,7 +50,7 @@ ERPNext and Frappe
 
 Here is a slightly dated (April 2013) video of our team:
 
-<div style="max-width: 500px;">
+<div>
 <div class="embed-responsive embed-responsive-4by3">
   <iframe class="embed-responsive-item" src="//www.youtube.com/embed/zRoFnqN6kPU?feature=player_embedded"></iframe>
 </div>
