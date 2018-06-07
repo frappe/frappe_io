@@ -50,8 +50,8 @@ ERPNext and Frappe
 
 Here is a slightly dated (April 2013) video of our team:
 
-<div style="max-width: 500px;>
-<div class="embed-responsive>
+<div style="max-width: 500px;">
+<div class="embed-responsive embed-responsive-4by3">
   <iframe class="embed-responsive-item" src="//www.youtube.com/embed/zRoFnqN6kPU?feature=player_embedded"></iframe>
 </div>
 </div>
