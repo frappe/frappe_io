@@ -8,6 +8,7 @@
   "doctype": "Notification",
   "document_type": "Frappe Job Applicant",
   "enabled": 1,
+  "channel": "Email",
   "event": "New",
   "message": "New Job Applicant. Please see attachment.",
   "modified": "2015-03-11 17:13:44.137321",
