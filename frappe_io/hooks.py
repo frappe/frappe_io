@@ -34,7 +34,7 @@ website_context = {
 		]},
 		{"label": "Blog", "url":"/blog", "right": 1},
 	],
-	"favicon": "/assets/frappe_theme/img/frappe-favicon.png",
+	"favicon": "/assets/frappe_theme/img/frappe-logo.png",
 	"hide_login": 1
 }
 
