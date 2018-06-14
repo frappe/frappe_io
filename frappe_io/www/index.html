@@ -2,8 +2,10 @@
 {% block title %}Frappe: Frameworks + Apps{% endblock %}
 {% block content %}
 <section class="top-section">
+	<div class='container'>
 	<h1>Frameworks + Apps</h1>
 	<p class='lead'>We are a software engineering company that builds open source frameworks, applications and libraries.</p>
+	</div>
 </section>
 
 {% macro card(title, body, btnlabel, btnlink, badges) %}
@@ -17,7 +19,10 @@
 	</a>
 </div>
 {% endmacro %}
-<section class="section-padding px-3">
+<section class="section-padding section-bg">
+	<div class='container'>
+		<h2 class='text-center'>Built for the Web</h2>
+		<p class='lead text-center'>Here are some of our best loved frameworks and applications</p>
 	<div class="row mt-5">
 		{{ card(
 			"ERPNext",
@@ -68,8 +73,17 @@
 			"/datatable",
 			["Lib", "JS"]
 		) }}
-
+	</div>
 	</div>
 
+</section>
+<section class='section-padding text-center'>
+	<div class='container'>
+		<h3>A Community, Not Just a Company</h3>
+		<p class='lead'>At Frappe we are true believers of Open Source and actively work with communities to share our knowledge.</p>
+		<img src='/assets/frappe_io/images/hackathon.jpg' class='greyscale mt-5'>
+		<p class='mt-5 text-muted'>We are always looking for great people to join our team</p>
+		<a class='btn btn-dark' href='/jobs'>Apply for a Job</a>
+	</div>
 </section>
 {% endblock %}

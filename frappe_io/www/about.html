@@ -2,18 +2,17 @@
 {% block content %}
 
 <section class="top-section">
-	<h1>We love building products</h1>
+	<div class='container'>
+	<h1>We Love Crafting Experiences</h1>
 	<p class='lead'>Established in 2008, we are an internet company based out of Mumbai, India. Our flagship product ERPNext is an award-winning ERP loved by businesses worldwide.</p>
 	<p>
 		<a class="mt-5 btn btn-dark" href="/story">Read the full story.</a>
 	</p>
-	<p>
-		<a href=/inspiration class='text-muted'>What Inspires Us</a><br>
-		<a href=/blog class='text-muted'>Blog</a>
-	</p>
+	</div>
 </section>
 
-<section class="section-padding text-center">
+<section class="section-padding text-center section-bg">
+	<div class='container'>
 	<h3 class='mb-5'>Meet the Team</h3>
 	<div class='row'>
 	{% for m in team %}
@@ -37,26 +36,30 @@
 	</div>
 	{% endfor %}
 	</div>
+	</div>
 </section>
 
-<section class="section-padding px-3 row">
-	<div class="col-sm-12 col-xs-12 mt-4 text-center">
+<section class="section-padding">
+	<div class='container'>
+	<div class="text-center">
 		<h4>Join us in making awesome open source software for the world</h4>
 		<p class='lead'>
 			Working at Frappe is like working for an open source community, except the fact that you get paid for it.</p>
-		<p class='mt-4'><a class = 'btn btn-dark btn-sm' href=/jobs>See Open Positions</a></p>
+		<div class='mt-4'><a class = 'btn btn-dark btn-sm' href=/jobs>See Open Positions</a></div>
+	</div>
 	</div>
 </section>
-<hr>
-<section class="section-padding row contact">
+<section class="section-padding section-bg contact">
+	<div class='container'>
+	<div class='row'>
 	<div class="col-sm-6" id="contact">
 		<h4>Write to us</h3>
 		<p>Have a question or comment? Write in, we would love to hear from you. We’ll write back as soon as we can.</p>
-		<p class="input-label">Subject</p>
+		<div class='text-muted mt-3'>Subject</div>
 		<input class="form-control" type="text" name="subject">
-		<p class="input-label">Your email</p>
+		<div class='text-muted mt-3'>Your email</div>
 		<input class="form-control" type="text" name="email">
-		<p class="input-label">Message</p>
+		<div class='text-muted mt-3'>Message</div>
 		<textarea class="form-control" name="message" style="height: 200px;"></textarea>
 		<a href=# id="send" class="btn btn-dark btn-send form-control mt-4">Send</a>
 	</div>
@@ -71,6 +74,8 @@
 		<p>Medium: <a href="https://medium.com/frapp%C3%A9-thoughts" target="_blank"><b>Frappe Thoughts</b></a></p>
 		<p>LinkedIn: <a href="https://www.linkedin.com/company/frappe-erpnext/" target="_blank"><b>Frappe Technologies Private Limited</b></a></p>
 		<p>Facebook: <a href="https://www.facebook.com/ERPNext/" target="_blank"><b>facebook.com/ERPNext</b></a></p>
+	</div>
+	</div>
 	</div>
 </section>
 

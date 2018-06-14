@@ -12,7 +12,7 @@ app_version = "0.0.1"
 
 required_apps = ["frappe_theme"]
 
-fixtures = ["Contact Us Settings", "Web Form", "Email Alert"]
+fixtures = ["Contact Us Settings", "Web Form"]
 
 website_context = {
 	"brand_html": "<img class='mr-2 d-inline-block align-top' src='/assets/frappe_theme/img/frappe-logo-white.svg' width='30px' height='30px' />Frappe",

@@ -5,20 +5,19 @@
 <link type="text/css" rel="stylesheet" href="/gantt/css/default.css">
 
 <section class="top-section">
+	<div class='container'>
     <h1>Frappe Gantt</h1>
     <p class="lead">
 		A simple, interactive, modern gantt chart library for the web with drag, resize, dependencies and time scales</p>
-</section>
-<section  class="section-padding text-center">
-	<div class="gantt-container" style="overflow: scroll">
-		<svg id="gantt-1"></svg>
+	<div class="gantt-container mt-5" style="overflow: scroll">
+	<svg id="gantt-1"></svg>
 	</div>
     <p class="mt-1"><strong>Try it!</strong> Drag tasks across the timeline, resize to change duration, click to view more information</p>
+	</div>
 </section>
 
-<hr class="featurette-divider">
-
-<section class="section-padding">
+<section class="section-padding section-bg">
+	<div class='container'>
 	<h3>Installation</h3>
     <pre>
       <code class="hljs">npm install frappe-gantt</code>
@@ -53,14 +52,13 @@
 var gantt = new Gantt("#gantt", tasks);
 </code>
 	</pre>
+	</div>
 </section>
 
-<hr class="featurette-divider">
-
 <section class="section-padding">
-	<h1>Examples</h1>
+	<div class='container'>
+	<h3>Change view mode</h3>
     <!-- Change view mode -->
-    <h6 style="margin:2em 0 0 0">Change view mode</h6>
     <pre>
       <code class="hljs javascript">gantt.change_view_mode('Week') // Quarter Day, Half Day, Day, Week, Month </code>
     </pre>
@@ -74,11 +72,13 @@ var gantt = new Gantt("#gantt", tasks);
       <button type="button" class="btn btn-sm btn-light active">Week</button>
       <button type="button" class="btn btn-sm btn-light">Month</button>
     </div>
+	</div>
 </section>
 
-<section class="section-padding">
+<section class="section-padding section-bg">
+	<div class='container'>
     <!-- Add event listeners -->
-    <h6 style="margin:2em 0 0 0">Add event listeners</h6>
+    <h3>Add event listeners</h3>
     <pre>
       <code class="hljs javascript">var gantt = new Gantt('#gantt', tasks, {
     on_click: function (task) {
@@ -98,11 +98,13 @@ var gantt = new Gantt("#gantt", tasks);
     <div class="gantt-container" style="overflow: scroll; margin-top: -36px">
       <svg id="gantt-3"></svg>
     </div>
+	</div>
 </section>
 
 <section class="section-padding">
+	<div class='container'>
     <!-- Custom HTML in popup -->
-    <h6 style="margin:2em 0 0 0">Custom HTML in popup</h6>
+    <h3>Custom HTML in popup</h3>
     <pre>
       <code class="hljs javascript">var gantt = new Gantt('#gantt', tasks, {
     // can be a function that returns html
@@ -124,23 +126,24 @@ var gantt = new Gantt("#gantt", tasks);
     <div class="gantt-container" style="overflow: scroll; margin-top: -36px">
       <svg id="gantt-4"></svg>
     </div>
+	</div>
 </section>
 
-<hr class="featurette-divider">
-
-<section class="section-padding text-center">
+<section class="section-padding text-center section-bg">
+	<div class='container'>
 	<a class ="btn btn-dark" href="https://github.com/frappe/gantt/archive/master.zip">
 		Download</a>
-	<p class="mt-2">
+	<p class="mt-3">
 		<a href="https://github.com/frappe/gantt" target="_blank">View on GitHub</a></p>
 	<p class='text-muted'>License: MIT</p>
-	<script src="/gantt/js/moment.min.js"></script>
-	<script src="/gantt/js/snap.svg-min.js"></script>
-	<script src="/gantt/js/frappe-gantt.min.js"></script>
-	<script src="/gantt/js/highlight.pack.js"></script>
-  <!-- jquery not required by frappe-gantt -->
-	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-		crossorigin="anonymous"></script>
-	<script src="/gantt/js/index.js"></script>
+	</div>
 </section>
+<script src="/gantt/js/moment.min.js"></script>
+<script src="/gantt/js/snap.svg-min.js"></script>
+<script src="/gantt/js/frappe-gantt.min.js"></script>
+<script src="/gantt/js/highlight.pack.js"></script>
+<!-- jquery not required by frappe-gantt -->
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+	crossorigin="anonymous"></script>
+<script src="/gantt/js/index.js"></script>
 {% endblock %}

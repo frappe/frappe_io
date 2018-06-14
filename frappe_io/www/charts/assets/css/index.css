@@ -2,10 +2,6 @@
 	margin-top: 1rem;   /* SAME 2 */
 	font-size: 1rem;
 }
-section {
-	margin: 4em 0;   /* SAME 1 */
-}
-
 section figure {
 	border: 1px solid #ddd; /* SAME 3 */
 	border-radius: 3px;

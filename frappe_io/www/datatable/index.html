@@ -3,29 +3,31 @@
 {% block content %}
 <link href="//unpkg.com/frappe-datatable@0.0.8/dist/frappe-datatable.min.css" rel="stylesheet" />
 <link href="datatable/assets/index.css" rel="stylesheet">
-
+<section class='top-section'>
     <div class="container">
-        <section class="showcase align-center text-center">
-            <h1>Frappe DataTable</h1>
-            <p class="lead">A simple, modern and interactive datatable for the web</p>
-            <button class="btn btn-dark btn-sm"><a class="text-light no-decoration" href="datatable/docs/getting-started">Documentation</a></button>
-        </section>
-        <div class="example-1"></div>
-
-        <section class="showcase installation">
-                <h5>Installation</h5>
-                <div class="code">
+        <h1>Frappe DataTable</h1>
+        <p class="lead">A simple, modern and interactive datatable for the web</p>
+        <button class="btn btn-dark btn-sm"><a class="text-light no-decoration" href="datatable/docs/getting-started">Documentation</a></button>
+		<div class="example-1 mt-5"></div>
+	</div>
+</section>
+<section class='section-padding section-bg'>
+	<div class="container">
+        <h5>Installation</h5>
+        <div class="code">
         <pre><code class="hljs bash"># Install using yarn
 $ yarn add frappe-datatable
 
 # or npm
 $ npm install frappe-datatable</code></pre>
-        </section>
+	</div>
+</section>
 
-        <section class="showcase installation">
-                <h5>Usage</h5>
-                <div class="code">
-        <pre><code class="hljs javascript">import DataTable from 'frappe-datatable';
+<section class="section-padding">
+	<div class='container text-center'>
+		<h5>Usage</h5>
+		<div class="code">
+		<pre><code class="hljs javascript">import DataTable from 'frappe-datatable';
 
 // or add
 // &lt;script src="frappe-datatable.js" &gt;&lt;/script&gt;
@@ -39,61 +41,68 @@ let datatable = new DataTable({
         ...
     ]
 });</code></pre>
-        </section>
-        <section class="showcase feature">
-            <h5>Cell Features</h5>
-            <div class="features">
-                <ul>
-                    <li>Custom Formatters</li>
-                    <li>Inline Editing</li>
-                    <li>Mouse Selection</li>
-                </ul>
-                <ul>
-                    <li>Copy Cells</li>
-                    <li>Keyboard Navigation</li>
-                    <li>Custom Cell Editor</li>
-                </ul>
-            </div>
-            <img src="datatable/assets/datatable-cell-demo.gif" alt="DataTable Cell Demo">
-        </section>
+	</div>
+</section class='section-padding section-bg'>
+	<div class='container text-center'>
+	    <h5>Cell Features</h5>
+	    <div class="features w-500 text-left">
+	        <ul>
+	            <li>Custom Formatters</li>
+	            <li>Inline Editing</li>
+	            <li>Mouse Selection</li>
+	        </ul>
+	        <ul>
+	            <li>Copy Cells</li>
+	            <li>Keyboard Navigation</li>
+	            <li>Custom Cell Editor</li>
+	        </ul>
+	    </div>
+	    <img src="datatable/assets/datatable-cell-demo.gif" alt="DataTable Cell Demo">
+	</div>
+</section>
 
-        <section class="showcase feature">
-            <h5>Column Features</h5>
-            <div class="features">
-                <ul>
-                    <li>Reorder Columns</li>
-                    <li>Sort by Column</li>
-                    <li>Remove / Hide Column</li>
-                </ul>
-                <ul>
-                    <li>Custom Actions</li>
-                    <li>Resize Column</li>
-                    <li>Flexible Layout</li>
-                </ul>
-            </div>
-            <img src="datatable/assets/datatable-column-demo.gif" alt="DataTable Column Demo">
-        </section>
+<section class="section-padding section-bg">
+	<div class='container text-center'>
+    <h5>Column Features</h5>
+    <div class="features w-500 text-left">
+        <ul>
+            <li>Reorder Columns</li>
+            <li>Sort by Column</li>
+            <li>Remove / Hide Column</li>
+        </ul>
+        <ul>
+            <li>Custom Actions</li>
+            <li>Resize Column</li>
+            <li>Flexible Layout</li>
+        </ul>
+    </div>
+    <img src="datatable/assets/datatable-column-demo.gif" alt="DataTable Column Demo">
+	</div>
+</section>
 
-        <section class="showcase feature">
-            <h5>Row Features</h5>
+<section class="section-padding">
+	<div class='container text-center'>
+    <h5>Row Features</h5>
 
-            <div class="features">
-                <ul>
-                    <li>Row Selection</li>
-                    <li>Tree Structured Rows</li>
-                    <li>Inline Filters</li>
-                </ul>
-                <ul>
-                    <li>Large Number of Rows</li>
-                    <li>Dynamic Row Height</li>
-                </ul>
-            </div>
-        </section>
+    <div class="features w-500 text-left">
+        <ul>
+            <li>Row Selection</li>
+            <li>Tree Structured Rows</li>
+            <li>Inline Filters</li>
+        </ul>
+        <ul>
+            <li>Large Number of Rows</li>
+            <li>Dynamic Row Height</li>
+        </ul>
+    </div>
+	</div>
+</section>
 
-        <section class="showcase installation">
-            <h5>List of configurable options</h5>
-            <div class="code">
-                <pre><code class="hljs javascript">{
+<section class="section-padding section-bg">
+	<div class='container'>
+    <h5 class='text-center'>List of configurable options</h5>
+    <div class="code">
+        <pre><code class="hljs javascript">{
     columns: [],
     data: [],
     dropdownButton: '▼',
@@ -132,20 +141,24 @@ let datatable = new DataTable({
     cellHeight: null,
     enableInlineFilters: false
 }</code></pre>
-            </div>
-        </section>
-        <section class='text-center section-padding'>
-			<a class ="btn btn-dark mr-3" href="/datatable/docs/getting-started">
-				Get Started</a>
-			<a class ="btn btn-secondary" href="https://github.com/frappe/datatable/archive/master.zip">
-				Download</a>
-			<p class="mt-3">
-				<a href="https://github.com/frappe/datatable" target="_blank">View on GitHub</a></p>
-			<p class='text-muted'>License: MIT</p>
-        </section>
     </div>
-    <script src="//unpkg.com/sortablejs@1.7.0/Sortable.min.js"></script>
-    <script src="//unpkg.com/clusterize.js@0.18.1/clusterize.min.js"></script>
-    <script src="//unpkg.com/frappe-datatable@0.0.8/dist/frappe-datatable.min.js"></script>
-    <script src="datatable/assets/index.js"></script>
+	</div>
+</section>
+
+<section class='section-padding'>
+	<div class='container text-center'>
+	<a class ="btn btn-dark mr-3" href="/datatable/docs/getting-started">
+		Get Started</a>
+	<a class ="btn btn-secondary" href="https://github.com/frappe/datatable/archive/master.zip">
+		Download</a>
+	<p class="mt-3">
+		<a href="https://github.com/frappe/datatable" target="_blank">View on GitHub</a></p>
+	<p class='text-muted'>License: MIT</p>
+	</div>
+</section>
+
+<script src="//unpkg.com/sortablejs@1.7.0/Sortable.min.js"></script>
+<script src="//unpkg.com/clusterize.js@0.18.1/clusterize.min.js"></script>
+<script src="//unpkg.com/frappe-datatable@0.0.8/dist/frappe-datatable.min.js"></script>
+<script src="datatable/assets/index.js"></script>
 {% endblock %}
