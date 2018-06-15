@@ -1,10 +1,13 @@
 {% extends "templates/base.html" %}
 {% block title %}Frappe: Frameworks + Apps{% endblock %}
 {% block content %}
-<section class="top-section">
-	<div class='container my-5'>
+<section class='section-padding splash'
+	style='background-image: url(/assets/frappe_io/images/landing-pages/mumbai.png)'>
+</section>
+<section class="top-section after-splash">
+	<div class='container'>
 	<h1>Frameworks + Apps</h1>
-	<p class='lead'>We are a software engineering company that builds open source frameworks, applications and libraries.</p>
+	<p class='lead'>We are a Mumbai based software engineering company that builds open source frameworks, applications and libraries.</p>
 	</div>
 </section>
 
@@ -80,10 +83,10 @@
 <section class='section-padding text-center'>
 	<div class='container'>
 		<h3>A Community, Not Just a Company</h3>
-		<p class='lead'>At Frappe we are true believers of Open Source and actively work with communities to share our knowledge.</p>
+		<p class='lead'>At Frappe, we are true believers of Open Source and actively work with communities to share our knowledge.</p>
 		<img src='/assets/frappe_io/images/hackathon.jpg' class='greyscale mt-5'>
-		<p class='mt-5 text-muted'>We are always looking for great people to join our team</p>
-		<a class='btn btn-dark' href='/jobs'>Apply for a Job</a>
+		<p class='mt-5 lead text-muted'>We are always looking for great people to join our team</p>
+		<a class='btn btn-dark mt-4' href='/jobs'>Apply for a Job</a>
 	</div>
 </section>
 {% endblock %}

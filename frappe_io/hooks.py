@@ -15,7 +15,7 @@ required_apps = ["frappe_theme"]
 fixtures = ["Contact Us Settings", "Web Form"]
 
 website_context = {
-	"brand_html": "<img class='mr-2 d-inline-block align-top' src='/assets/frappe_theme/img/frappe-logo-white.svg' width='30px' height='30px' />Frappe",
+	"brand_html": "<img class='mr-2 d-inline-block align-top' src='/assets/frappe_theme/img/frappe-logo.png' width='30px' height='30px' />Frappe",
 	"top_bar_items": [
 		{"label": "Products", "right": 1, "child_items": [
 			{"label": "Frappe Framework", "url":"/frappe"},
