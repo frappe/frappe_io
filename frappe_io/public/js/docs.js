@@ -10895,7 +10895,7 @@ docSection.prototype.getDemoOptions = function getDemoOptions (demoIndex, option
 					innerHTML: key,
 					onClick: function (e) {
 						// map
-						if(o.type === "map") {
+						if(o.type === "Map") {
 							mapKeys.forEach(function (attr, i) {
 								args[o.path[0]][attr] = state[i];
 							});
@@ -15451,25 +15451,6 @@ var sampleData = {
 		  options: { labelPos: 'left' }}],
 		yRegions: [{ label: "Region", start: -10, end: 50,
 		  options: { labelPos: 'right' }}]
-	},
-
-	"bar-composite-data": {
-		labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
-			"Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-		datasets: [
-			{
-				name: "Over 25 reports",
-				values: fireballOver25[9],
-			},
-			{
-				name: "5 to 25 reports",
-				values: fireball_5_25[9],
-			},
-			{
-				name: "2 to 5 reports",
-				values: fireball_2_5[9]
-			}
-		]
 	},
 
 	"get-update-data": methods.getUpdateData,

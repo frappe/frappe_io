@@ -281,25 +281,6 @@ export const sampleData = {
 		  options: { labelPos: 'right' }}]
 	},
 
-	"bar-composite-data": {
-		labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
-			"Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-		datasets: [
-			{
-				name: "Over 25 reports",
-				values: fireballOver25[9],
-			},
-			{
-				name: "5 to 25 reports",
-				values: fireball_5_25[9],
-			},
-			{
-				name: "2 to 5 reports",
-				values: fireball_2_5[9]
-			}
-		]
-	},
-
 	"get-update-data": methods.getUpdateData,
 
 	"heatmap-data": getHeatmapData

@@ -217,7 +217,7 @@ class docSection {
 						innerHTML: key,
 						onClick: (e) => {
 							// map
-							if(o.type === "map") {
+							if(o.type === "Map") {
 								mapKeys.forEach((attr, i) => {
 									args[o.path[0]][attr] = state[i];
 								})
