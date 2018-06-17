@@ -10848,7 +10848,7 @@ docSection.prototype.getDemoOptions = function getDemoOptions (demoIndex, option
 	options.forEach(function (o) {
 		var btnGroup = $$.create('div', {
 			inside: this$1.parent,
-			className: ("btn-group " + (scrub(o.name)))
+			className: ("btn-group " + (scrub(o.name)) + " mr-3 mb-3 type")
 		});
 		var mapKeys = o.mapKeys;
 
@@ -10891,7 +10891,7 @@ docSection.prototype.getDemoOptions = function getDemoOptions (demoIndex, option
 
 				var button = $$.create('button', {
 					inside: btnGroup,
-					className: ("btn btn-sm btn-secondary " + activeClass),
+					className: ("btn btn-sm btn-outline-secondary " + activeClass),
 					innerHTML: key,
 					onClick: function (e) {
 						// map
@@ -10922,7 +10922,7 @@ docSection.prototype.getDemoActions = function getDemoActions (demoIndex, action
 		var args = o.args || [];
 		$$.create('button', {
 			inside: this$1.parent,
-			className: "btn btn-action btn-sm btn-secondary",
+			className: "btn btn-action btn-sm btn-outline-secondary mr-3 mb-3",
 			innerHTML: o.name,
 			onClick: function () {
 				var ref;
@@ -15162,44 +15162,8 @@ var Chart = function Chart(parent, options) {
 	return getChartByType(options.type, parent, options);
 };
 
-var fireball_5_25 = [
-	[4, 0, 3, 1, 1, 2, 1, 1, 1, 0, 1, 1],
-	[2, 3, 3, 2, 1, 3, 0, 1, 2, 7, 10, 4],
-	[5, 6, 2, 4, 0, 1, 4, 3, 0, 2, 0, 1],
-	[0, 2, 6, 2, 1, 1, 2, 3, 6, 3, 7, 8],
-	[6, 8, 7, 7, 4, 5, 6, 5, 22, 12, 10, 11],
-	[7, 10, 11, 7, 3, 2, 7, 7, 11, 15, 22, 20],
-	[13, 16, 21, 18, 19, 17, 12, 17, 31, 28, 25, 29],
-	[24, 14, 21, 14, 11, 15, 19, 21, 41, 22, 32, 18],
-	[31, 20, 30, 22, 14, 17, 21, 35, 27, 50, 117, 24],
-	[32, 24, 21, 27, 11, 27, 43, 37, 44, 40, 48, 32],
-	[31, 38, 36, 26, 23, 23, 25, 29, 26, 47, 61, 50] ];
-var fireball_2_5 = [
-	[22, 6, 6, 9, 7, 8, 6, 14, 19, 10, 8, 20],
-	[11, 13, 12, 8, 9, 11, 9, 13, 10, 22, 40, 24],
-	[20, 13, 13, 19, 13, 10, 14, 13, 20, 18, 5, 9],
-	[7, 13, 16, 19, 12, 11, 21, 27, 27, 24, 33, 33],
-	[38, 25, 28, 22, 31, 21, 35, 42, 37, 32, 46, 53],
-	[50, 33, 36, 34, 35, 28, 27, 52, 58, 59, 75, 69],
-	[54, 67, 67, 45, 66, 51, 38, 64, 90, 113, 116, 87],
-	[84, 52, 56, 51, 55, 46, 50, 87, 114, 83, 152, 93],
-	[73, 58, 59, 63, 56, 51, 83, 140, 103, 115, 265, 89],
-	[106, 95, 94, 71, 77, 75, 99, 136, 129, 154, 168, 156],
-	[81, 102, 95, 72, 58, 91, 89, 122, 124, 135, 183, 171] ];
-var fireballOver25 = [
-	// [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-	[0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0],
-	[0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0],
-	[1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0],
-	[0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 2],
-	[3, 2, 1, 3, 2, 0, 2, 2, 2, 3, 0, 1],
-	[2, 3, 5, 2, 1, 3, 0, 2, 3, 5, 1, 4],
-	[7, 4, 6, 1, 9, 2, 2, 2, 20, 9, 4, 9],
-	[5, 6, 1, 2, 5, 4, 5, 5, 16, 9, 14, 9],
-	[5, 4, 7, 5, 1, 5, 3, 3, 5, 7, 22, 2],
-	[5, 13, 11, 6, 1, 7, 9, 8, 14, 17, 16, 3],
-	[8, 9, 8, 6, 4, 8, 5, 6, 14, 11, 21, 12]
-];
+
+//# sourceMappingURL=frappe-charts.min.esm.js.map
 
 // https://stackoverflow.com/a/29325222
 function getRandomBias(min, max, bias, influence) {
@@ -15249,33 +15213,108 @@ var getUpdateArray = function (sourceArray, length) {
 	return indices.map(function (index) { return sourceArray[index]; });
 };
 
-function getUpdateData() {
-	shuffle(updateDataAllIndices);
-	var value = getRandom();
-	var start = getRandom();
-	var end = getRandom();
+var currentLastIndex = baseLength;
+
+var NO_OF_MILLIS$1 = 1000;
+var SEC_IN_DAY$1 = 86400;
+
+function clone$1(date) {
+	return new Date(date.getTime());
+}
+
+function timestampToMidnight(timestamp, roundAhead) {
+	if ( roundAhead === void 0 ) roundAhead = false;
+
+	var midnightTs = Math.floor(timestamp - (timestamp % SEC_IN_DAY$1));
+	if(roundAhead) {
+		return midnightTs + SEC_IN_DAY$1;
+	}
+	return midnightTs;
+}
+
+function timestampSec(date) {
+	return date.getTime()/NO_OF_MILLIS$1;
+}
+
+function addDays$1(date, numberOfDays) {
+	var newDate = clone$1(date);
+	newDate.setDate(newDate.getDate() + numberOfDays);
+	return newDate;
+}
+
+function getHeatmapData() {
+	var today = new Date();
+	var start = clone$1(today);
+	start = addDays$1(start, 4);
+	var end = clone$1(start);
+	start.setFullYear( start.getFullYear() - 2 );
+	end.setFullYear( end.getFullYear() - 1 );
+
+	var dataPoints = {};
+
+	var startTs = timestampSec(start);
+	var endTs = timestampSec(end);
+
+	startTs = timestampToMidnight(startTs);
+	endTs = timestampToMidnight(endTs, true);
+
+	while (startTs < endTs) {
+		dataPoints[parseInt(startTs)] = Math.floor(getRandomBias(0, 5, 0.2, 1));
+		startTs += SEC_IN_DAY$1;
+	}
+
 	return {
-		labels: updateDataAllLabels.slice(0, baseLength),
-		datasets: [{
-			values: getUpdateArray(updateDataAllValues)
-		}],
-		yMarkers: [
-			{
-				label: "Altitude",
-				value: value,
-				type: 'dashed'
-			}
-		],
-		yRegions: [
-			{
-				label: "Range",
-				start: start,
-				end: end
-			} ],
+		dataPoints: dataPoints,
+		start: start,
+		end: end
 	};
 }
 
-var data = {
+var methods = {
+	getUpdateData: function getUpdateData() {
+		shuffle(updateDataAllIndices);
+		var value = getRandom();
+		var start = getRandom();
+		var end = getRandom();
+		currentLastIndex = baseLength;
+
+		return {
+			labels: updateDataAllLabels.slice(0, baseLength),
+			datasets: [{
+				values: getUpdateArray(updateDataAllValues)
+			}],
+			yMarkers: [
+				{
+					label: "Altitude",
+					value: value,
+					type: 'dashed'
+				}
+			],
+			yRegions: [
+				{
+					label: "Range",
+					start: start,
+					end: end
+				} ],
+		};
+	},
+
+	getAddUpdateData: function getAddUpdateData() {
+		if(currentLastIndex >= fullLength) { return; }
+
+		// TODO: Fix update on removal
+		currentLastIndex++;
+		var c = currentLastIndex -1;
+
+		return [updateDataAllLabels[c], [updateDataAllValues[c]]];
+
+		// updateChart.addDataPoint(
+		// 	updateDataAllLabels[index], [updateDataAllValues[index]]
+		// );
+	}
+};
+
+var sampleData = {
 	"0": {
 		labels: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
 		datasets: [
@@ -15389,6 +15428,31 @@ var data = {
 		]
 	},
 
+	"all-inclusive": {
+		labels: ["12am-3am", "3am-6am", "6am-9am", "9am-12pm",
+		  "12pm-3pm", "3pm-6pm", "6pm-9pm", "9pm-12am"],
+
+		datasets: [
+		  {
+			name: "Some Data", chartType: 'bar',
+			values: [25, 40, 30, 35, 8, 52, 17, -4]
+		  },
+		  {
+			name: "Another Set", chartType: 'bar',
+			values: [25, 50, -10, 15, 18, 32, 27, 14]
+		  },
+		  {
+			name: "Yet Another", chartType: 'line',
+			values: [15, 20, -3, -15, 58, 12, -17, 37]
+		  }
+		],
+
+		yMarkers: [{ label: "Marker", value: 70,
+		  options: { labelPos: 'left' }}],
+		yRegions: [{ label: "Region", start: -10, end: 50,
+		  options: { labelPos: 'right' }}]
+	},
+
 	"bar-composite-data": {
 		labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
 			"Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
@@ -15408,19 +15472,22 @@ var data = {
 		]
 	},
 
-	"get-update-data": getUpdateData,
+	"get-update-data": methods.getUpdateData,
+
+	"heatmap-data": getHeatmapData
 };
 
 frappe.projectDemos = {
 	charts: {
 		lib: Chart,
+		methods: methods,
 		getDemoConfig: function (vueContext) {
 			var config = vueContext.config;
-			var data$$1 = data[vueContext.data];
+			var data = sampleData[vueContext.data];
 
-			config.data = data$$1;
-			if(typeof data$$1 === "function") {
-				config.data = data$$1();
+			config.data = data;
+			if(typeof data === "function") {
+				config.data = data();
 			}
 
 			return {
@@ -15428,12 +15495,14 @@ frappe.projectDemos = {
 				options: vueContext.options,
 				actions: vueContext.actions
 			};
-		}
+		},
 	}
 };
 
 var dataPath = document.querySelector("body").getAttribute("data-path");
-var projectName = dataPath.slice(0, dataPath.indexOf('/'));
+var projectName = dataPath.indexOf('/') >= 0
+	? dataPath.slice(0, dataPath.indexOf('/'))
+	: dataPath;
 
 if(projectName in frappe.projectDemos
 	&& document.querySelectorAll(COMPONENT_NAME).length) {
@@ -15443,6 +15512,10 @@ if(projectName in frappe.projectDemos
 	Vue$3.component.apply(Vue$3, Object.values(
 		getDemoVue(project.lib, project.getDemoConfig)
 	));
+
+	Vue$3.mixin({
+		methods: project.methods
+	});
 
 	$(document).ready(function( ) {
 		frappe.Vue = new Vue$3().$mount('.page_content');

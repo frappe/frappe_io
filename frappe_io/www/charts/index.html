@@ -21,7 +21,242 @@
 </section>
 </header>
 
-<section class="section-padding text-center">
+<!-- Wrapper for mounting Vue -->
+<div class="page_content">
+	<section class="section-padding container section-bg">
+		<h4>Make a Chart</h4>
+		<pre><code class="hljs javascript">
+  let chart = new frappe.Chart( "#frost-chart", { // or DOM element
+	data: {
+	labels: ["12am-3am", "3am-6am", "6am-9am", "9am-12pm",
+		"12pm-3pm", "3pm-6pm", "6pm-9pm", "9pm-12am"],
+
+	datasets: [
+		{
+			name: "Some Data", chartType: 'bar',
+			values: [25, 40, 30, 35, 8, 52, 17, -4]
+		},
+		{
+			name: "Another Set", chartType: 'bar',
+			values: [25, 50, -10, 15, 18, 32, 27, 14]
+		},
+		{
+			name: "Yet Another", chartType: 'line',
+			values: [15, 20, -3, -15, 58, 12, -17, 37]
+		}
+	],
+
+	yMarkers: [{ label: "Marker", value: 70,
+		options: { labelPos: 'left' }}],
+	yRegions: [{ label: "Region", start: -10, end: 50,
+		options: { labelPos: 'right' }}]
+	},
+
+	title: "My Awesome Chart",
+	type: 'axis-mixed', // or 'bar', 'line', 'pie', 'percentage'
+	height: 300,
+	colors: ['purple', '#ffa3ef', 'light-blue'],
+
+	tooltipOptions: {
+		formatTooltipX: d => (d + '').toUpperCase(),
+		formatTooltipY: d => d + ' pts',
+	}
+  });
+
+  chart.export();
+		</code></pre>
+		<project-demo data="all-inclusive" v-bind:config="{
+			title: 'My Awesome Chart',
+			type: 'bar',
+			height: 300,
+			colors: ['purple', '#ffa3ef', 'light-blue'],
+			tooltipOptions: {
+				formatTooltipX: d => (d + '').toUpperCase(),
+				formatTooltipY: d => d + ' pts',
+			}
+		}"
+		v-bind:options="[
+			{
+				name: 'type',
+				path: ['type'],
+				type: 'String',
+				states: { 'Line': 'line', 'Bar': 'bar', 'Mixed': 'axis-mixed',
+					'Pie': 'pie', 'Percentage': 'percentage'},
+				activeState: 'Mixed'
+			}
+		]"
+		v-bind:actions="[
+			{
+				name: 'Export',
+				fn: 'export',
+				args: []
+			}
+		]">
+		</project-demo>
+	</section>
+
+	<section class="section-padding container">
+		<h4>Update Values</h4>
+		<project-demo data="get-update-data" v-bind:config="{
+				type: 'line',
+				height: 300,
+				colors: ['orange'],
+				lineOptions: {
+					areaFill: 1
+				}
+			}"
+			v-bind:actions="[
+				{
+					name: 'Random Data',
+					fn: 'update',
+					args: [getUpdateData()]
+				},
+				{
+					name: 'Add Value',
+					fn: 'addDataPoint',
+					args: getAddUpdateData()
+				},
+				{
+					name: 'Remove Value',
+					fn: 'removeDataPoint',
+					args: []
+				}
+			]"
+			v-bind:actions="[
+				{
+					name: 'Export',
+					fn: 'export',
+					args: []
+				}
+			]">
+		</project-demo>
+	</section>
+
+	<section class="section-padding container section-bg">
+		<h4>Plot Trends</h4>
+		<project-demo data="trends-data"
+			v-bind:config="{
+				type: 'line',
+				height: 300,
+				colors: ['green'],
+				axisOptions: {
+					xAxisMode: 'tick',
+					xIsSeries: 1
+				}
+			}"
+			v-bind:options="[
+				{
+					name: 'lineOptions',
+					path: ['lineOptions'],
+					type: 'Map',
+					mapKeys: ['hideLine', 'hideDots', 'heatline', 'areaFill'],
+					states: {
+						'Line': [0, 1, 0, 0],
+						'Dots': [1, 0, 0, 0],
+						'HeatLine': [0, 1, 1, 0],
+						'Area': [0, 1, 0, 1]
+					},
+					activeState: 'Area'
+				}
+			]"
+			v-bind:actions="[
+				{
+					name: 'Export',
+					fn: 'export',
+					args: []
+				}
+			]">
+		</project-demo>
+	</section>
+
+	<section class="section-padding container">
+		<h4>A Month-wise Heatmap</h4>
+		<project-demo data="heatmap-data" v-bind:config="{
+			title: 'Monthly Distribution',
+			type: 'heatmap',
+			height: 200,
+			discreteDomains: 1,
+			countLabel: 'Level',
+			colors: ['#ebedf0', '#c0ddf9', '#73b3f3', '#3886e1', '#17459e'],
+		}"
+		v-bind:options="[
+			{
+				name: 'Discrete domains',
+				path: ['discreteDomains'],
+				type: 'Boolean',
+				// boolNames: ['Continuous', 'Discrete'],
+				states: { 'Discrete': 1, 'Continuous': 0 }
+			},
+			{
+				name: 'Colors',
+				path: ['colors'],
+				type: 'Array',
+				states: {
+					'Green (Default)': [],
+					'Blue': ['#ebedf0', '#c0ddf9', '#73b3f3', '#3886e1', '#17459e'],
+					'Halloween': ['#ebedf0', '#fdf436', '#ffc700', '#ff9100', '#06001c']
+				}
+			}
+		]"
+		v-bind:actions="[
+			{
+				name: 'Export',
+				fn: 'export',
+				args: []
+			}
+		]">
+		</project-demo>
+		<pre><code class="hljs javascript">
+  let heatmap = new frappe.Chart("#heatmap", {
+	type: 'heatmap',
+	title: "Monthly Distribution",
+	data: {
+	dataPoints: {
+		'1524064033': 8, /* ... */},
+						// object with timestamp-value pairs
+		start: startDate
+		end: endDate      // Date objects
+	},
+	countLabel: 'Level',
+	discreteDomains: 0  // default: 1
+	colors: ['#ebedf0', '#c0ddf9', '#73b3f3', '#3886e1', '#17459e'],
+				// Set of five incremental colors,
+				// preferably with a low-saturation color for zero data;
+				// def: ['#ebedf0', '#c6e48b', '#7bc96f', '#239a3b', '#196127']
+  });
+		</code></pre>
+	</section>
+</div>
+
+<section class="section-padding container section-bg">
+	<h4>Demo</h4>
+	<p data-height="299" data-theme-id="light" data-slug-hash="wjKBoq" data-default-tab="js,result"
+		data-user="pratu16x7" data-embed-version="2" data-pen-title="Frappe Charts Demo" class="codepen">
+		See the Pen <a href="https://codepen.io/pratu16x7/pen/wjKBoq/">Frappe Charts Demo</a>
+		by Prateeksha Singh (<a href="https://codepen.io/pratu16x7">@pratu16x7</a>) on
+		<a href="https://codepen.io">CodePen</a>.
+	</p>
+	<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+</section>
+
+<section class="section-padding">
+	<div class="container installation">
+		<h4>Install</h4>
+		<p class="new-context">Install via npm</p>
+		<pre><code class="hljs console shell">  npm install frappe-charts</code></pre>
+		<p class="new-context">And include it in your project</p>
+		<pre><code class="hljs javascript">  import { Chart } from "frappe-charts"</code></pre>
+		<p class="new-context">Use as:</p>
+		<pre><code class="hljs javascript">  new Chart();          // ES6 module
+			// or
+  new frappe.Chart();   // Browser</code></pre>
+		<p class="new-context">... or include it directly in your HTML</p>
+		<pre><code class="hljs html xml">  &lt;script src="https://unpkg.com/frappe-charts@1.1.0"&gt;&lt;/script&gt;</code></pre>
+	</div>
+</section>
+
+
+<section class="section-padding text-center ">
 	<div class='container'>
 	<a class ="btn btn-dark mr-3" href="/charts/docs">
 		Get Started</a>
@@ -32,7 +267,8 @@
 	<p class='text-muted'>License: MIT</p>
 
 	<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-	<script src="/charts/index.min.js"></script>
+	<script src="/charts/frappe-charts.min.iife.js"></script>
+	<script src="/charts/index.js"></script>
 	</div>
 </section>
 
