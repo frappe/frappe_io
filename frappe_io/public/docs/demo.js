@@ -2,11 +2,12 @@ import Vue from "../lib/vue.esm.browser";
 import { getDemoVue, COMPONENT_NAME } from "../lib/demoBuilder.js";
 
 import { Chart } from "../../www/charts/frappe-charts.min.esm";
-import { data as chartsData } from "../../www/charts/data";
+import { sampleData as chartsData, methods as chartsMethods } from "../../www/charts/data";
 
 frappe.projectDemos = {
 	charts: {
 		lib: Chart,
+		methods: chartsMethods,
 		getDemoConfig: (vueContext) => {
 			let config = vueContext.config;
 			let data = chartsData[vueContext.data];
@@ -21,12 +22,14 @@ frappe.projectDemos = {
 				options: vueContext.options,
 				actions: vueContext.actions
 			};
-		}
+		},
 	}
 }
 
 let dataPath = document.querySelector("body").getAttribute("data-path");
-let projectName = dataPath.slice(0, dataPath.indexOf('/'))
+let projectName = dataPath.indexOf('/') >= 0
+	? dataPath.slice(0, dataPath.indexOf('/'))
+	: dataPath;
 
 if(projectName in frappe.projectDemos
 	&& document.querySelectorAll(COMPONENT_NAME).length) {
@@ -36,6 +39,10 @@ if(projectName in frappe.projectDemos
 	Vue.component(...Object.values(
 		getDemoVue(project.lib, project.getDemoConfig)
 	));
+
+	Vue.mixin({
+		methods: project.methods
+	})
 
 	$(document).ready(function( ) {
 		frappe.Vue = new Vue().$mount('.page_content');

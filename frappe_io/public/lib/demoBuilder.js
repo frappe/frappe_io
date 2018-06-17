@@ -170,7 +170,7 @@ class docSection {
 		options.forEach(o => {
 			const btnGroup = $$.create('div', {
 				inside: this.parent,
-				className: `btn-group ${scrub(o.name)}`
+				className: `btn-group ${scrub(o.name)} mr-3 mb-3 type`
 			});
 			const mapKeys = o.mapKeys;
 
@@ -213,11 +213,11 @@ class docSection {
 
 					let button = $$.create('button', {
 						inside: btnGroup,
-						className: `btn btn-sm btn-secondary ${activeClass}`,
+						className: `btn btn-sm btn-outline-secondary ${activeClass}`,
 						innerHTML: key,
 						onClick: (e) => {
 							// map
-							if(o.type === "map") {
+							if(o.type === "Map") {
 								mapKeys.forEach((attr, i) => {
 									args[o.path[0]][attr] = state[i];
 								})
@@ -240,7 +240,7 @@ class docSection {
 			let args = o.args || [];
 			$$.create('button', {
 				inside: this.parent,
-				className: `btn btn-action btn-sm btn-secondary`,
+				className: `btn btn-action btn-sm btn-outline-secondary mr-3 mb-3`,
 				innerHTML: o.name,
 				onClick: () => {this.demos[demoIndex][o.fn](...args);}
 			});
