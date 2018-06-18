@@ -23,7 +23,9 @@
 
 <!-- Wrapper for mounting Vue -->
 <div class="page_content">
-	<section class="section-padding container section-bg">
+	<section class="section-padding section-bg">
+		<div class="container">
+
 		<h4>Make a Chart</h4>
 		<pre><code class="hljs javascript">
   let chart = new frappe.Chart( "#frost-chart", { // or DOM element
@@ -93,9 +95,13 @@
 			}
 		]">
 		</project-demo>
+
+		</div>
 	</section>
 
-	<section class="section-padding container">
+	<section class="section-padding">
+		<div class="container">
+
 		<h4>Update Values</h4>
 		<project-demo data="get-update-data" v-bind:config="{
 				type: 'line',
@@ -130,9 +136,13 @@
 				}
 			]">
 		</project-demo>
+
+		</div>
 	</section>
 
-	<section class="section-padding container section-bg">
+	<section class="section-padding section-bg">
+		<div class="container">
+
 		<h4>Plot Trends</h4>
 		<project-demo data="trends-data"
 			v-bind:config="{
@@ -167,9 +177,13 @@
 				}
 			]">
 		</project-demo>
+
+		</div>
 	</section>
 
-	<section class="section-padding container">
+	<section class="section-padding">
+		<div class="container">
+
 		<h4>A Month-wise Heatmap</h4>
 		<project-demo data="heatmap-data" v-bind:config="{
 			title: 'Monthly Distribution',
@@ -225,10 +239,14 @@
 				// def: ['#ebedf0', '#c6e48b', '#7bc96f', '#239a3b', '#196127']
   });
 		</code></pre>
+
+		</div>
 	</section>
 </div>
 
-<section class="section-padding container section-bg">
+<section class="section-padding section-bg">
+	<div class="container">
+
 	<h4>Demo</h4>
 	<p data-height="299" data-theme-id="light" data-slug-hash="wjKBoq" data-default-tab="js,result"
 		data-user="pratu16x7" data-embed-version="2" data-pen-title="Frappe Charts Demo" class="codepen">
@@ -237,6 +255,8 @@
 		<a href="https://codepen.io">CodePen</a>.
 	</p>
 	<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+	</div>
 </section>
 
 <section class="section-padding">
