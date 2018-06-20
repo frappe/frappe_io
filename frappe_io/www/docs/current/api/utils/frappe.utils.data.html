@@ -3,7 +3,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 10.0.13</a>
+	Version 10.1.30</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/frappe/blob/develop/frappe/utils/data.py"
@@ -90,6 +90,33 @@
         <i class="text-muted">(date, years)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.utils.data.ceil" href="#frappe.utils.data.ceil" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.utils.data.<b>ceil</b>
+        <i class="text-muted">(s)</i>
+    </p>
+	<div class="docs-attr-desc"><pre><code>The smallest integer greater than or equal to the given number
+
+Parameters
+----------
+s : int or str or Decimal object
+    The mathematical value to be ceiled
+
+Returns
+-------
+int
+    smallest integer greater than or equal to the given number
+</code></pre>
 </div>
 	<br>
 
@@ -308,6 +335,33 @@
     
     
 	<p class="docs-attr-name">
+        <a name="frappe.utils.data.floor" href="#frappe.utils.data.floor" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.utils.data.<b>floor</b>
+        <i class="text-muted">(s)</i>
+    </p>
+	<div class="docs-attr-desc"><pre><code>A number representing the largest integer less than or equal to the specified number
+
+Parameters
+----------
+s : int or str or Decimal object
+    The mathematical value to be floored
+
+Returns
+-------
+int
+    number representing the largest integer less than or equal to the specified number
+</code></pre>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
         <a name="frappe.utils.data.flt" href="#frappe.utils.data.flt" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		frappe.utils.data.<b>flt</b>
@@ -378,7 +432,7 @@
 		frappe.utils.data.<b>formatdate</b>
         <i class="text-muted">(string_date=None, format_string=None)</i>
     </p>
-	<div class="docs-attr-desc"><pre><code>    Convers the given string date to :data:`user_format`
+	<div class="docs-attr-desc"><pre><code>    Converts the given string date to :data:`user_format`
     User format specified in defaults
 
      Examples:
@@ -702,7 +756,7 @@
 		frappe.utils.data.<b>getdate</b>
         <i class="text-muted">(string_date=None)</i>
     </p>
-	<div class="docs-attr-desc"><pre><code>     Coverts string date (yyyy-mm-dd) to datetime.date object
+	<div class="docs-attr-desc"><pre><code>Converts string date (yyyy-mm-dd) to datetime.date object
 </code></pre>
 </div>
 	<br>
@@ -717,7 +771,7 @@
         <a name="frappe.utils.data.global_date_format" href="#frappe.utils.data.global_date_format" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		frappe.utils.data.<b>global_date_format</b>
-        <i class="text-muted">(date)</i>
+        <i class="text-muted">(date, format=long)</i>
     </p>
 	<div class="docs-attr-desc"><p>returns localized date in the form of January 1, 2012</p>
 </div>

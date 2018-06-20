@@ -1,5 +1,5 @@
 <!-- add-breadcrumbs -->
-# UI Testing with Frappé API
+# UI Testing with Frappe API
 
 You can either write integration tests, or directly write tests in Javascript using [QUnit](http://api.qunitjs.com/)
 
@@ -13,7 +13,7 @@ To run your files, you can use the **Test Runner**. The **Test Runner** gives a 
 
 In the CI, all QUnit tests are run by the **Test Runner** using `frappe/tests/test_test_runner.py`
 
-<img src="/docs/assets/img/app-development/test-runner.png" class="screenshot">
+<img src="{{docs_base_url}}/assets/img/app-development/test-runner.png" class="screenshot">
 
 ### Running Tests
 
@@ -29,7 +29,7 @@ To debug a test, you can open it in the **Test Runner** from your UI and run it 
 
 ### Test Sequence
 
-In Frappé UI tests are run in a fixed sequence to ensure dependencies.
+In Frappe UI tests are run in a fixed sequence to ensure dependencies.
 
 The sequence in which the tests will be run will be in `tests/ui/tests.txt`
 file.

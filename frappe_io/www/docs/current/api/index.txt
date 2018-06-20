@@ -8,6 +8,7 @@ frappe.middlewares
 frappe.boot
 frappe.permissions
 frappe.oauth
+frappe.cache_manager
 frappe.hooks
 frappe.test_runner
 frappe.pythonrc

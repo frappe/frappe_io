@@ -3,7 +3,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 10.0.13</a>
+	Version 10.1.30</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/frappe/blob/develop/frappe/permissions.py"
@@ -40,25 +40,9 @@
         <a name="frappe.permissions.add_user_permission" href="#frappe.permissions.add_user_permission" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		frappe.permissions.<b>add_user_permission</b>
-        <i class="text-muted">(doctype, name, user, apply=False)</i>
+        <i class="text-muted">(doctype, name, user, ignore_permissions=False)</i>
     </p>
 	<div class="docs-attr-desc"><p>Add user permission</p>
-</div>
-	<br>
-
-	
-
-	
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="frappe.permissions.apply_user_permissions" href="#frappe.permissions.apply_user_permissions" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		frappe.permissions.<b>apply_user_permissions</b>
-        <i class="text-muted">(doctype, ptype, user=None)</i>
-    </p>
-	<div class="docs-attr-desc"><p>Check if apply<em>user</em>permissions is checked for a doctype, perm type, user combination</p>
 </div>
 	<br>
 
@@ -136,7 +120,7 @@
         <a name="frappe.permissions.clear_user_permissions_for_doctype" href="#frappe.permissions.clear_user_permissions_for_doctype" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		frappe.permissions.<b>clear_user_permissions_for_doctype</b>
-        <i class="text-muted">(doctype)</i>
+        <i class="text-muted">(doctype, user=None)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>
@@ -181,10 +165,26 @@
     
     
 	<p class="docs-attr-name">
+        <a name="frappe.permissions.get_doc_name" href="#frappe.permissions.get_doc_name" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.permissions.<b>get_doc_name</b>
+        <i class="text-muted">(doc)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
         <a name="frappe.permissions.get_doc_permissions" href="#frappe.permissions.get_doc_permissions" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		frappe.permissions.<b>get_doc_permissions</b>
-        <i class="text-muted">(doc, verbose=False, user=None)</i>
+        <i class="text-muted">(doc, verbose=False, user=None, ptype=None)</i>
     </p>
 	<div class="docs-attr-desc"><p>Returns a dict of evaluated permissions for given <code>doc</code> like <code>{"read":1, "write":1}</code></p>
 </div>
@@ -248,30 +248,18 @@
         <a name="frappe.permissions.get_role_permissions" href="#frappe.permissions.get_role_permissions" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		frappe.permissions.<b>get_role_permissions</b>
-        <i class="text-muted">(meta, user=None, verbose=False)</i>
+        <i class="text-muted">(doctype_meta, user=None, verbose=False)</i>
     </p>
-	<div class="docs-attr-desc"><p>Returns dict of evaluated role permissions like <code>{"read": True, "write":False}</code></p>
-
-<pre><code>If user permissions are applicable, it adds a dict of user permissions like
-
+	<div class="docs-attr-desc"><pre><code>Returns dict of evaluated role permissions like
     {
-        // user permissions will apply on these rights
-        "apply_user_permissions": {"read": 1, "write": 1},
-
-        // doctypes that will be applicable for each right
-        "user_permission_doctypes": {
-            "read": [
-                // AND between "DocType 1" and "DocType 2"
-                ["DocType 1", "DocType 2"],
-
-                // OR
-
-                ["DocType 3"]
-
-            ]
-        }
-
-        "if_owner": {"read": 1, "write": 1}
+        "read": 1,
+        "write": 0,
+        // if "if_owner" is enabled
+        "if_owner":
+            {
+                "read": 1,
+                "write": 0
+            }
     }
 </code></pre>
 </div>
@@ -290,22 +278,6 @@
         <i class="text-muted">(user=None, with_standard=True)</i>
     </p>
 	<div class="docs-attr-desc"><p>get roles of current user</p>
-</div>
-	<br>
-
-	
-
-	
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="frappe.permissions.get_user_permission_doctypes" href="#frappe.permissions.get_user_permission_doctypes" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		frappe.permissions.<b>get_user_permission_doctypes</b>
-        <i class="text-muted">(user_permission_doctypes, user_permissions)</i>
-    </p>
-	<div class="docs-attr-desc"><p>returns a list of list like [["User", "Blog Post"], ["User"]]</p>
 </div>
 	<br>
 
@@ -374,6 +346,22 @@
 
 <pre><code>Note: if Table DocType is passed, it always returns True.
 </code></pre>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.permissions.has_user_permission" href="#frappe.permissions.has_user_permission" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.permissions.<b>has_user_permission</b>
+        <i class="text-muted">(doc, user=None, verbose=False)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Returns True if User is allowed to view considering User Permissions</p>
 </div>
 	<br>
 
@@ -454,38 +442,6 @@
         <i class="text-muted">(doctype, role, permlevel, ptype, value=None, validate=True)</i>
     </p>
 	<div class="docs-attr-desc"><p>Update a property in Custom Perm</p>
-</div>
-	<br>
-
-	
-
-	
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="frappe.permissions.update_share_permissions" href="#frappe.permissions.update_share_permissions" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		frappe.permissions.<b>update_share_permissions</b>
-        <i class="text-muted">(role_permissions, doc, user)</i>
-    </p>
-	<div class="docs-attr-desc"><p>Updates share permissions on <code>role_permissions</code> for given doc, if shared</p>
-</div>
-	<br>
-
-	
-
-	
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="frappe.permissions.user_has_permission" href="#frappe.permissions.user_has_permission" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		frappe.permissions.<b>user_has_permission</b>
-        <i class="text-muted">(doc, verbose=True, user=None, user_permission_doctypes=None)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>
 	<br>
 

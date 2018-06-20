@@ -1,7 +1,7 @@
 <!-- add-breadcrumbs -->
 # Generating Documentation Website for your App
 
-Frappé version 6.7 onwards includes a full-blown documentation generator so that you can easily create a website for your app that has both user docs and developers docs (auto-generated).
+Frappe version 6.7 onwards includes a full-blown documentation generator so that you can easily create a website for your app that has both user docs and developers docs (auto-generated).
 
 Version 8.7 onwards, these will be generated in a target app.
 
@@ -51,7 +51,7 @@ While linking make sure you add `/docs` to all your links.
 
 You can add images in the `/docs/assets` folder. You can add links to the images as follows:
 
-    {% raw %}<img src="/docs/assets/img/my-img/gif" class="screenshot">{% endraw %}
+    {% raw %}<img src="{{docs_base_url}}/assets/img/my-img/gif" class="screenshot">{% endraw %}
 
 ---
 
