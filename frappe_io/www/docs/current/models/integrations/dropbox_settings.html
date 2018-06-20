@@ -9,7 +9,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 10.0.13</a>
+	Version 10.1.36</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/frappe/tree/develop/frappe/integrations/doctype/dropbox_settings"
@@ -150,18 +150,6 @@ Weekly</pre>
             <td></td>
         </tr>
         
-        <tr >
-            <td>10</td>
-            <td ><code>dropbox_setup_via_site_config</code></td>
-            <td >
-                Check</td>
-            <td class="text-muted" title="Hidden">
-                Dropbox Setup via Site Config
-                
-            </td>
-            <td></td>
-        </tr>
-        
     </tbody>
 </table>
 
@@ -184,20 +172,6 @@ Weekly</pre>
 </div>
     <div style="padding-left: 30px;">
         
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="onload" href="#onload" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>onload</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
     </div>
     <hr>
 
@@ -211,7 +185,7 @@ Weekly</pre>
         <a name="frappe.integrations.doctype.dropbox_settings.dropbox_settings.backup_to_dropbox" href="#frappe.integrations.doctype.dropbox_settings.dropbox_settings.backup_to_dropbox" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		frappe.integrations.doctype.dropbox_settings.dropbox_settings.<b>backup_to_dropbox</b>
-        <i class="text-muted">()</i>
+        <i class="text-muted">(upload_db_backup=True)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>
@@ -326,6 +300,38 @@ Weekly</pre>
     
     
 	<p class="docs-attr-name">
+        <a name="frappe.integrations.doctype.dropbox_settings.dropbox_settings.get_uploaded_files_meta" href="#frappe.integrations.doctype.dropbox_settings.dropbox_settings.get_uploaded_files_meta" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.integrations.doctype.dropbox_settings.dropbox_settings.<b>get_uploaded_files_meta</b>
+        <i class="text-muted">(dropbox_folder, dropbox_client)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.integrations.doctype.dropbox_settings.dropbox_settings.is_fresh_upload" href="#frappe.integrations.doctype.dropbox_settings.dropbox_settings.is_fresh_upload" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.integrations.doctype.dropbox_settings.dropbox_settings.<b>is_fresh_upload</b>
+        <i class="text-muted">()</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
         <a name="frappe.integrations.doctype.dropbox_settings.dropbox_settings.send_email" href="#frappe.integrations.doctype.dropbox_settings.dropbox_settings.send_email" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		frappe.integrations.doctype.dropbox_settings.dropbox_settings.<b>send_email</b>
@@ -381,7 +387,7 @@ Weekly</pre>
         <a name="frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backup_to_dropbox" href="#frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backup_to_dropbox" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		frappe.integrations.doctype.dropbox_settings.dropbox_settings.<b>take_backup_to_dropbox</b>
-        <i class="text-muted">()</i>
+        <i class="text-muted">(retry_count=0, upload_db_backup=True)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>
@@ -442,6 +448,22 @@ Weekly</pre>
     
     
 	<p class="docs-attr-name">
+        <a name="frappe.integrations.doctype.dropbox_settings.dropbox_settings.update_file_dropbox_status" href="#frappe.integrations.doctype.dropbox_settings.dropbox_settings.update_file_dropbox_status" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.integrations.doctype.dropbox_settings.dropbox_settings.<b>update_file_dropbox_status</b>
+        <i class="text-muted">(file_name)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
         <a name="frappe.integrations.doctype.dropbox_settings.dropbox_settings.upload_file_to_dropbox" href="#frappe.integrations.doctype.dropbox_settings.dropbox_settings.upload_file_to_dropbox" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		frappe.integrations.doctype.dropbox_settings.dropbox_settings.<b>upload_file_to_dropbox</b>
@@ -461,7 +483,7 @@ Weekly</pre>
         <a name="frappe.integrations.doctype.dropbox_settings.dropbox_settings.upload_from_folder" href="#frappe.integrations.doctype.dropbox_settings.dropbox_settings.upload_from_folder" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		frappe.integrations.doctype.dropbox_settings.dropbox_settings.<b>upload_from_folder</b>
-        <i class="text-muted">(path, dropbox_folder, dropbox_client, did_not_upload, error_log)</i>
+        <i class="text-muted">(path, is_private, dropbox_folder, dropbox_client, did_not_upload, error_log)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>

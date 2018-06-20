@@ -1,0 +1,744 @@
+<!-- title: Auto Repeat -->
+<!-- add-breadcrumbs -->
+
+
+
+
+
+<h1>Auto Repeat</h1>
+<div class="dev-header">
+
+<a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
+	Version 10.1.36</a>
+
+
+	<a class="btn btn-default btn-sm" href="https://github.com/frappe/frappe/tree/develop/frappe/desk/doctype/auto_repeat"
+		target="_blank" style="margin-left: 10px; margin-bottom: 10px;"><i class="octicon octicon-mark-github"></i> Source</a>
+
+</div>
+
+
+
+
+
+    <p><b>Table Name:</b> <code>tabAuto Repeat</code></p>
+
+
+
+
+<h3>Fields</h3>
+
+<table class="table table-bordered docfields">
+    <thead>
+        <tr>
+            <th style="width: 5%">Sr</th>
+            <th style="width: 25%">Fieldname</th>
+            <th style="width: 20%">Type</th>
+            <th style="width: 25%">Label</th>
+            <th style="width: 25%">Options</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        <tr class="info">
+            <td>1</td>
+            <td ><code>section_break_1</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>2</td>
+            <td ><code>naming_series</code></td>
+            <td >
+                Select</td>
+            <td >
+                Series
+                
+            </td>
+            <td>
+                <pre>SUB-</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>3</td>
+            <td class="danger" title="Mandatory"><code>reference_doctype</code></td>
+            <td >
+                Link</td>
+            <td >
+                Reference Doctype
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/core/doctype">DocType</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>4</td>
+            <td class="danger" title="Mandatory"><code>reference_document</code></td>
+            <td >
+                Dynamic Link</td>
+            <td >
+                Reference Document
+                
+            </td>
+            <td>
+                <pre>reference_doctype</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>5</td>
+            <td ><code>column_break_5</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>6</td>
+            <td class="danger" title="Mandatory"><code>start_date</code></td>
+            <td >
+                Date</td>
+            <td >
+                Start Date
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>7</td>
+            <td ><code>end_date</code></td>
+            <td >
+                Date</td>
+            <td >
+                End Date
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>8</td>
+            <td ><code>submit_on_creation</code></td>
+            <td >
+                Check</td>
+            <td >
+                Submit on Creation
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>9</td>
+            <td ><code>disabled</code></td>
+            <td >
+                Check</td>
+            <td >
+                Disabled
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr class="info">
+            <td>10</td>
+            <td ><code>section_break_10</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>11</td>
+            <td class="danger" title="Mandatory"><code>frequency</code></td>
+            <td >
+                Select</td>
+            <td >
+                Frequency
+                
+            </td>
+            <td>
+                <pre>
+Daily
+Weekly
+Monthly
+Quarterly
+Half-yearly
+Yearly</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>12</td>
+            <td ><code>column_break_12</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>13</td>
+            <td ><code>repeat_on_day</code></td>
+            <td >
+                Int</td>
+            <td >
+                Repeat on Day
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>14</td>
+            <td ><code>next_schedule_date</code></td>
+            <td >
+                Date</td>
+            <td >
+                Next Schedule Date
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr class="info">
+            <td>15</td>
+            <td ><code>section_break_13</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Auto Repeat Schedule
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>16</td>
+            <td ><code>auto_repeat_schedule</code></td>
+            <td >
+                HTML</td>
+            <td >
+                Auto Repeat Schedule
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr class="info">
+            <td>17</td>
+            <td ><code>notification</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Notification
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>18</td>
+            <td ><code>notify_by_email</code></td>
+            <td >
+                Check</td>
+            <td >
+                Notify by Email
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>19</td>
+            <td ><code>subject</code></td>
+            <td >
+                Data</td>
+            <td >
+                Subject
+                <p class="text-muted small">
+                    To add dynamic subject, use jinja tags like
+
+<div><pre><code>New {{ doc.doctype }} #{{ doc.name }}</code></pre></div></p>
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>20</td>
+            <td ><code>column_break_17</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>21</td>
+            <td ><code>recipients</code></td>
+            <td >
+                Small Text</td>
+            <td >
+                Recipients
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>22</td>
+            <td ><code>print_format</code></td>
+            <td >
+                Link</td>
+            <td >
+                Print Format
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/printing/print_format">Print Format</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr class="info">
+            <td>23</td>
+            <td ><code>section_break_20</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Message
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>24</td>
+            <td ><code>message</code></td>
+            <td >
+                Text</td>
+            <td >
+                Message
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr class="info">
+            <td>25</td>
+            <td ><code>section_break_16</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>26</td>
+            <td ><code>status</code></td>
+            <td >
+                Select</td>
+            <td >
+                Status
+                
+            </td>
+            <td>
+                <pre>
+Draft
+Stopped
+Submitted
+Cancelled
+Completed</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>27</td>
+            <td ><code>amended_from</code></td>
+            <td >
+                Link</td>
+            <td >
+                Amended From 
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/desk/auto_repeat">Auto Repeat</a>
+
+
+                
+            </td>
+        </tr>
+        
+    </tbody>
+</table>
+
+
+    <hr>
+    <h3>Controller</h3>
+    <h4>frappe.desk.doctype.auto_repeat.auto_repeat</h4>
+
+    
+
+
+
+	
+        
+	<h3 style="font-weight: normal;">Class <b>AutoRepeat</b></h3>
+    
+    <p style="padding-left: 30px;"><i>Inherits from frappe.model.document.Document</i></h4>
+    
+    <div class="docs-attr-desc"><p></p>
+</div>
+    <div style="padding-left: 30px;">
+        
+    </div>
+    <hr>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.desk.doctype.auto_repeat.auto_repeat.assign_task_to_owner" href="#frappe.desk.doctype.auto_repeat.auto_repeat.assign_task_to_owner" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.desk.doctype.auto_repeat.auto_repeat.<b>assign_task_to_owner</b>
+        <i class="text-muted">(name, msg, users)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.desk.doctype.auto_repeat.auto_repeat.auto_repeat_doctype_query" href="#frappe.desk.doctype.auto_repeat.auto_repeat.auto_repeat_doctype_query" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.desk.doctype.auto_repeat.auto_repeat.<b>auto_repeat_doctype_query</b>
+        <i class="text-muted">(doctype, txt, searchfield, start, page_len, filters)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.desk.doctype.auto_repeat.auto_repeat.create_documents" href="#frappe.desk.doctype.auto_repeat.auto_repeat.create_documents" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.desk.doctype.auto_repeat.auto_repeat.<b>create_documents</b>
+        <i class="text-muted">(data, schedule_date)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.desk.doctype.auto_repeat.auto_repeat.disable_auto_repeat" href="#frappe.desk.doctype.auto_repeat.auto_repeat.disable_auto_repeat" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.desk.doctype.auto_repeat.auto_repeat.<b>disable_auto_repeat</b>
+        <i class="text-muted">(data)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.desk.doctype.auto_repeat.auto_repeat.get_auto_repeat_entries" href="#frappe.desk.doctype.auto_repeat.auto_repeat.get_auto_repeat_entries" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.desk.doctype.auto_repeat.auto_repeat.<b>get_auto_repeat_entries</b>
+        <i class="text-muted">(date)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.desk.doctype.auto_repeat.auto_repeat.get_next_date" href="#frappe.desk.doctype.auto_repeat.auto_repeat.get_next_date" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.desk.doctype.auto_repeat.auto_repeat.<b>get_next_date</b>
+        <i class="text-muted">(dt, mcount, day=None)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.desk.doctype.auto_repeat.auto_repeat.get_next_schedule_date" href="#frappe.desk.doctype.auto_repeat.auto_repeat.get_next_schedule_date" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.desk.doctype.auto_repeat.auto_repeat.<b>get_next_schedule_date</b>
+        <i class="text-muted">(start_date, frequency, repeat_on_day)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/frappe.desk.doctype.auto_repeat.auto_repeat.make_auto_repeat</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="frappe.desk.doctype.auto_repeat.auto_repeat.make_auto_repeat" href="#frappe.desk.doctype.auto_repeat.auto_repeat.make_auto_repeat" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.desk.doctype.auto_repeat.auto_repeat.<b>make_auto_repeat</b>
+        <i class="text-muted">(doctype, docname)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.desk.doctype.auto_repeat.auto_repeat.make_auto_repeat_entry" href="#frappe.desk.doctype.auto_repeat.auto_repeat.make_auto_repeat_entry" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.desk.doctype.auto_repeat.auto_repeat.<b>make_auto_repeat_entry</b>
+        <i class="text-muted">(date=None)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.desk.doctype.auto_repeat.auto_repeat.make_new_document" href="#frappe.desk.doctype.auto_repeat.auto_repeat.make_new_document" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.desk.doctype.auto_repeat.auto_repeat.<b>make_new_document</b>
+        <i class="text-muted">(args, schedule_date)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.desk.doctype.auto_repeat.auto_repeat.notify_error_to_user" href="#frappe.desk.doctype.auto_repeat.auto_repeat.notify_error_to_user" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.desk.doctype.auto_repeat.auto_repeat.<b>notify_error_to_user</b>
+        <i class="text-muted">(data)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.desk.doctype.auto_repeat.auto_repeat.notify_errors" href="#frappe.desk.doctype.auto_repeat.auto_repeat.notify_errors" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.desk.doctype.auto_repeat.auto_repeat.<b>notify_errors</b>
+        <i class="text-muted">(doc, doctype, party, owner, name)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.desk.doctype.auto_repeat.auto_repeat.send_notification" href="#frappe.desk.doctype.auto_repeat.auto_repeat.send_notification" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.desk.doctype.auto_repeat.auto_repeat.<b>send_notification</b>
+        <i class="text-muted">(new_rv, auto_repeat_doc, print_format=Standard)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Notify concerned persons about recurring document generation</p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.desk.doctype.auto_repeat.auto_repeat.set_auto_repeat_period" href="#frappe.desk.doctype.auto_repeat.auto_repeat.set_auto_repeat_period" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.desk.doctype.auto_repeat.auto_repeat.<b>set_auto_repeat_period</b>
+        <i class="text-muted">(args, mcount, new_document)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/frappe.desk.doctype.auto_repeat.auto_repeat.stop_resume_auto_repeat</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="frappe.desk.doctype.auto_repeat.auto_repeat.stop_resume_auto_repeat" href="#frappe.desk.doctype.auto_repeat.auto_repeat.stop_resume_auto_repeat" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.desk.doctype.auto_repeat.auto_repeat.<b>stop_resume_auto_repeat</b>
+        <i class="text-muted">(auto_repeat, status)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.desk.doctype.auto_repeat.auto_repeat.update_doc" href="#frappe.desk.doctype.auto_repeat.auto_repeat.update_doc" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.desk.doctype.auto_repeat.auto_repeat.<b>update_doc</b>
+        <i class="text-muted">(new_document, reference_doc, args, schedule_date)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+
+    
+    
+        <h4>Linked In:</h4>
+        <ul>
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/desk/auto_repeat">Auto Repeat</a>
+
+</li>
+			
+        
+			
+        
+			
+        
+			
+        
+			
+        
+			
+        
+			
+        
+			
+        
+			
+        
+			
+        
+			
+        
+        </ul>
+    
+
+
+<!-- autodoc -->
+<!-- jinja -->
+<!-- static -->

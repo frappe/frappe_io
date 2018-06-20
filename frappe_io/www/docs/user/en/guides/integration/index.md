@@ -1,4 +1,0 @@
-<!-- add-breadcrumbs -->
-# Integrations
-
-{index}

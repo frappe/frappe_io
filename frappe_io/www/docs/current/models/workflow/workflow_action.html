@@ -9,7 +9,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 10.0.13</a>
+	Version 10.1.36</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/frappe/tree/develop/frappe/workflow/doctype/workflow_action"
@@ -24,7 +24,7 @@
     <p><b>Table Name:</b> <code>tabWorkflow Action</code></p>
 
 
-Workflow Action Master
+
 
 <h3>Fields</h3>
 
@@ -42,14 +42,106 @@ Workflow Action Master
         
         <tr >
             <td>1</td>
-            <td class="danger" title="Mandatory"><code>workflow_action_name</code></td>
+            <td ><code>status</code></td>
+            <td >
+                Select</td>
+            <td >
+                Status
+                
+            </td>
+            <td>
+                <pre>Open
+Completed</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>2</td>
+            <td ><code>reference_name</code></td>
+            <td >
+                Dynamic Link</td>
+            <td >
+                Reference Name
+                
+            </td>
+            <td>
+                <pre>reference_doctype</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>3</td>
+            <td ><code>reference_doctype</code></td>
+            <td >
+                Link</td>
+            <td >
+                Reference Doctype
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/core/doctype">DocType</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>4</td>
+            <td ><code>user</code></td>
+            <td >
+                Link</td>
+            <td class="text-muted" title="Hidden">
+                User
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/core/user">User</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>5</td>
+            <td ><code>workflow_state</code></td>
             <td >
                 Data</td>
-            <td >
-                Workflow Action Name
+            <td class="text-muted" title="Hidden">
+                Workflow State
                 
             </td>
             <td></td>
+        </tr>
+        
+        <tr >
+            <td>6</td>
+            <td ><code>completed_by</code></td>
+            <td >
+                Link</td>
+            <td >
+                Completed By
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/core/user">User</a>
+
+
+                
+            </td>
         </tr>
         
     </tbody>
@@ -79,22 +171,284 @@ Workflow Action Master
 
 	
 
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/frappe.workflow.doctype.workflow_action.workflow_action.apply_action</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="frappe.workflow.doctype.workflow_action.workflow_action.apply_action" href="#frappe.workflow.doctype.workflow_action.workflow_action.apply_action" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.workflow.doctype.workflow_action.workflow_action.<b>apply_action</b>
+        <i class="text-muted">(action, doctype, docname, current_state, user)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
 
+	
+
+	
+        
     
     
-        <h4>Linked In:</h4>
-        <ul>
+	<p class="docs-attr-name">
+        <a name="frappe.workflow.doctype.workflow_action.workflow_action.clear_old_workflow_actions" href="#frappe.workflow.doctype.workflow_action.workflow_action.clear_old_workflow_actions" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.workflow.doctype.workflow_action.workflow_action.<b>clear_old_workflow_actions</b>
+        <i class="text-muted">(doc, user=None)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
         
-			
-            <li>
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.workflow.doctype.workflow_action.workflow_action.create_workflow_actions_for_users" href="#frappe.workflow.doctype.workflow_action.workflow_action.create_workflow_actions_for_users" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.workflow.doctype.workflow_action.workflow_action.<b>create_workflow_actions_for_users</b>
+        <i class="text-muted">(users, doc)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
 
+	
 
-<a href="/docs/current/models/workflow/workflow_transition">Workflow Transition</a>
-
-</li>
-			
+	
         
-        </ul>
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.workflow.doctype.workflow_action.workflow_action.filter_allowed_users" href="#frappe.workflow.doctype.workflow_action.workflow_action.filter_allowed_users" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.workflow.doctype.workflow_action.workflow_action.<b>filter_allowed_users</b>
+        <i class="text-muted">(users, doc)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Filters list of users by checking if user has access to doc and
+    if the user satisfies 'workflow self approval' condition</p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.workflow.doctype.workflow_action.workflow_action.get_common_email_args" href="#frappe.workflow.doctype.workflow_action.workflow_action.get_common_email_args" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.workflow.doctype.workflow_action.workflow_action.<b>get_common_email_args</b>
+        <i class="text-muted">(doc)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.workflow.doctype.workflow_action.workflow_action.get_doc_workflow_state" href="#frappe.workflow.doctype.workflow_action.workflow_action.get_doc_workflow_state" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.workflow.doctype.workflow_action.workflow_action.<b>get_doc_workflow_state</b>
+        <i class="text-muted">(doc)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.workflow.doctype.workflow_action.workflow_action.get_email_template" href="#frappe.workflow.doctype.workflow_action.workflow_action.get_email_template" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.workflow.doctype.workflow_action.workflow_action.<b>get_email_template</b>
+        <i class="text-muted">(doc)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Returns next<em>action</em>email_template
+    for workflow state (if available) based on doc current workflow state</p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.workflow.doctype.workflow_action.workflow_action.get_next_possible_transitions" href="#frappe.workflow.doctype.workflow_action.workflow_action.get_next_possible_transitions" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.workflow.doctype.workflow_action.workflow_action.<b>get_next_possible_transitions</b>
+        <i class="text-muted">(workflow_name, state)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.workflow.doctype.workflow_action.workflow_action.get_permission_query_conditions" href="#frappe.workflow.doctype.workflow_action.workflow_action.get_permission_query_conditions" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.workflow.doctype.workflow_action.workflow_action.<b>get_permission_query_conditions</b>
+        <i class="text-muted">(user)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.workflow.doctype.workflow_action.workflow_action.get_users_next_action_data" href="#frappe.workflow.doctype.workflow_action.workflow_action.get_users_next_action_data" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.workflow.doctype.workflow_action.workflow_action.<b>get_users_next_action_data</b>
+        <i class="text-muted">(transitions, doc)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.workflow.doctype.workflow_action.workflow_action.get_users_with_role" href="#frappe.workflow.doctype.workflow_action.workflow_action.get_users_with_role" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.workflow.doctype.workflow_action.workflow_action.<b>get_users_with_role</b>
+        <i class="text-muted">(role)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.workflow.doctype.workflow_action.workflow_action.get_workflow_action_url" href="#frappe.workflow.doctype.workflow_action.workflow_action.get_workflow_action_url" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.workflow.doctype.workflow_action.workflow_action.<b>get_workflow_action_url</b>
+        <i class="text-muted">(action, doc, user)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.workflow.doctype.workflow_action.workflow_action.has_permission" href="#frappe.workflow.doctype.workflow_action.workflow_action.has_permission" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.workflow.doctype.workflow_action.workflow_action.<b>has_permission</b>
+        <i class="text-muted">(doc, user)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.workflow.doctype.workflow_action.workflow_action.is_workflow_action_already_created" href="#frappe.workflow.doctype.workflow_action.workflow_action.is_workflow_action_already_created" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.workflow.doctype.workflow_action.workflow_action.<b>is_workflow_action_already_created</b>
+        <i class="text-muted">(doc)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.workflow.doctype.workflow_action.workflow_action.process_workflow_actions" href="#frappe.workflow.doctype.workflow_action.workflow_action.process_workflow_actions" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.workflow.doctype.workflow_action.workflow_action.<b>process_workflow_actions</b>
+        <i class="text-muted">(doc, state)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.workflow.doctype.workflow_action.workflow_action.send_workflow_action_email" href="#frappe.workflow.doctype.workflow_action.workflow_action.send_workflow_action_email" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.workflow.doctype.workflow_action.workflow_action.<b>send_workflow_action_email</b>
+        <i class="text-muted">(users_data, doc)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.workflow.doctype.workflow_action.workflow_action.update_completed_workflow_actions" href="#frappe.workflow.doctype.workflow_action.workflow_action.update_completed_workflow_actions" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.workflow.doctype.workflow_action.workflow_action.<b>update_completed_workflow_actions</b>
+        <i class="text-muted">(doc, user=None)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+
+    
     
 
 

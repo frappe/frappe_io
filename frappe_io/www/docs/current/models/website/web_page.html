@@ -9,7 +9,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 10.0.13</a>
+	Version 10.1.36</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/frappe/tree/develop/frappe/website/doctype/web_page"
@@ -134,8 +134,32 @@ Page to show on the website
             <td></td>
         </tr>
         
-        <tr class="info">
+        <tr >
             <td>8</td>
+            <td ><code>start_date</code></td>
+            <td >
+                Datetime</td>
+            <td >
+                Start Date
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>9</td>
+            <td ><code>end_date</code></td>
+            <td >
+                Datetime</td>
+            <td >
+                End Date
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr class="info">
+            <td>10</td>
             <td ><code>sb1</code></td>
             <td >
                 Section Break</td>
@@ -147,7 +171,7 @@ Page to show on the website
         </tr>
         
         <tr >
-            <td>9</td>
+            <td>11</td>
             <td ><code>main_section</code></td>
             <td >
                 Text Editor</td>
@@ -159,7 +183,7 @@ Page to show on the website
         </tr>
         
         <tr class="info">
-            <td>10</td>
+            <td>12</td>
             <td ><code>custom_javascript</code></td>
             <td >
                 Section Break</td>
@@ -171,7 +195,7 @@ Page to show on the website
         </tr>
         
         <tr >
-            <td>11</td>
+            <td>13</td>
             <td ><code>insert_code</code></td>
             <td >
                 Check</td>
@@ -184,7 +208,7 @@ Page to show on the website
         </tr>
         
         <tr >
-            <td>12</td>
+            <td>14</td>
             <td ><code>javascript</code></td>
             <td >
                 Code</td>
@@ -198,7 +222,7 @@ Page to show on the website
         </tr>
         
         <tr class="info">
-            <td>13</td>
+            <td>15</td>
             <td ><code>custom_css</code></td>
             <td >
                 Section Break</td>
@@ -210,7 +234,7 @@ Page to show on the website
         </tr>
         
         <tr >
-            <td>14</td>
+            <td>16</td>
             <td ><code>insert_style</code></td>
             <td >
                 Check</td>
@@ -222,7 +246,7 @@ Page to show on the website
         </tr>
         
         <tr >
-            <td>15</td>
+            <td>17</td>
             <td ><code>text_align</code></td>
             <td >
                 Select</td>
@@ -238,7 +262,7 @@ Right</pre>
         </tr>
         
         <tr >
-            <td>16</td>
+            <td>18</td>
             <td ><code>css</code></td>
             <td >
                 Code</td>
@@ -252,7 +276,7 @@ Right</pre>
         </tr>
         
         <tr class="info">
-            <td>17</td>
+            <td>19</td>
             <td ><code>settings</code></td>
             <td >
                 Section Break</td>
@@ -264,7 +288,7 @@ Right</pre>
         </tr>
         
         <tr class="info">
-            <td>18</td>
+            <td>20</td>
             <td ><code>section_break_17</code></td>
             <td >
                 Section Break</td>
@@ -276,7 +300,7 @@ Right</pre>
         </tr>
         
         <tr >
-            <td>19</td>
+            <td>21</td>
             <td ><code>show_sidebar</code></td>
             <td >
                 Check</td>
@@ -288,7 +312,7 @@ Right</pre>
         </tr>
         
         <tr >
-            <td>20</td>
+            <td>22</td>
             <td ><code>website_sidebar</code></td>
             <td >
                 Link</td>
@@ -309,7 +333,7 @@ Right</pre>
         </tr>
         
         <tr >
-            <td>21</td>
+            <td>23</td>
             <td ><code>column_break_20</code></td>
             <td class="info">
                 Column Break</td>
@@ -321,7 +345,7 @@ Right</pre>
         </tr>
         
         <tr >
-            <td>22</td>
+            <td>24</td>
             <td ><code>enable_comments</code></td>
             <td >
                 Check</td>
@@ -333,7 +357,7 @@ Right</pre>
         </tr>
         
         <tr >
-            <td>23</td>
+            <td>25</td>
             <td ><code>idx</code></td>
             <td >
                 Int</td>
@@ -346,7 +370,7 @@ Right</pre>
         </tr>
         
         <tr class="info">
-            <td>24</td>
+            <td>26</td>
             <td ><code>sb2</code></td>
             <td >
                 Section Break</td>
@@ -358,7 +382,7 @@ Right</pre>
         </tr>
         
         <tr >
-            <td>25</td>
+            <td>27</td>
             <td ><code>description</code></td>
             <td >
                 Small Text</td>
@@ -371,7 +395,7 @@ Right</pre>
         </tr>
         
         <tr >
-            <td>26</td>
+            <td>28</td>
             <td ><code>header</code></td>
             <td >
                 Text</td>
@@ -384,7 +408,7 @@ Right</pre>
         </tr>
         
         <tr >
-            <td>27</td>
+            <td>29</td>
             <td ><code>breadcrumbs</code></td>
             <td >
                 Code</td>
@@ -418,119 +442,6 @@ Right</pre>
 </div>
     <div style="padding-left: 30px;">
         
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="add_hero" href="#add_hero" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>add_hero</b>
-        <i class="text-muted">(self, context)</i>
-    </p>
-	<div class="docs-attr-desc"><p>Add a hero element if specified in content or hooks.
-        Hero elements get full page width.</p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="check_for_redirect" href="#check_for_redirect" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>check_for_redirect</b>
-        <i class="text-muted">(self, context)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="get_context" href="#get_context" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>get_context</b>
-        <i class="text-muted">(self, context)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="get_feed" href="#get_feed" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>get_feed</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="render_dynamic" href="#render_dynamic" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>render_dynamic</b>
-        <i class="text-muted">(self, context)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="set_breadcrumbs" href="#set_breadcrumbs" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>set_breadcrumbs</b>
-        <i class="text-muted">(self, context)</i>
-    </p>
-	<div class="docs-attr-desc"><p>Build breadcrumbs template </p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="set_metatags" href="#set_metatags" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>set_metatags</b>
-        <i class="text-muted">(self, context)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="set_title_and_header" href="#set_title_and_header" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>set_title_and_header</b>
-        <i class="text-muted">(self, context)</i>
-    </p>
-	<div class="docs-attr-desc"><p>Extract and set title and header from content or context.</p>
-</div>
-	<br>
-
-        
     </div>
     <hr>
 
@@ -544,6 +455,22 @@ Right</pre>
         <a name="frappe.website.doctype.web_page.web_page.check_broken_links" href="#frappe.website.doctype.web_page.web_page.check_broken_links" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		frappe.website.doctype.web_page.web_page.<b>check_broken_links</b>
+        <i class="text-muted">()</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.website.doctype.web_page.web_page.check_publish_status" href="#frappe.website.doctype.web_page.web_page.check_publish_status" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.website.doctype.web_page.web_page.<b>check_publish_status</b>
         <i class="text-muted">()</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>

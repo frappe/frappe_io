@@ -3,7 +3,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 10.0.13</a>
+	Version 10.1.36</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/frappe/blob/develop/frappe/model/naming.py"
@@ -14,6 +14,62 @@
 
 
 
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.model.naming._concatenate_autoname" href="#frappe.model.naming._concatenate_autoname" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.model.naming.<b>_concatenate_autoname</b>
+        <i class="text-muted">(autoname, doc)</i>
+    </p>
+	<div class="docs-attr-desc"><pre><code>Generate a name by concatenating as many fields as required. This is
+called when the doctype's `autoname` field starts with 'concatenate:'. The
+field names are separated by a comma. It is also aware of autoname '.####'
+format.
+</code></pre>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.model.naming._field_autoname" href="#frappe.model.naming._field_autoname" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.model.naming.<b>_field_autoname</b>
+        <i class="text-muted">(autoname, doc, skip_slicing=None)</i>
+    </p>
+	<div class="docs-attr-desc"><pre><code>Generate a name using `DocType` field. This is called when the doctype's
+`autoname` field starts with 'field:'
+</code></pre>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.model.naming._prompt_autoname" href="#frappe.model.naming._prompt_autoname" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.model.naming.<b>_prompt_autoname</b>
+        <i class="text-muted">(autoname, doc)</i>
+    </p>
+	<div class="docs-attr-desc"><pre><code>Generate a name using Prompt option. This simply means the user will have to set the name manually.
+This is called when the doctype's `autoname` field starts with 'prompt'.
+</code></pre>
+</div>
+	<br>
+
+	
 
 	
         
@@ -39,7 +95,7 @@
         <a name="frappe.model.naming.append_number_if_name_exists" href="#frappe.model.naming.append_number_if_name_exists" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		frappe.model.naming.<b>append_number_if_name_exists</b>
-        <i class="text-muted">(doctype, value, fieldname=name, separator=-)</i>
+        <i class="text-muted">(doctype, value, fieldname=name, separator=-, filters=None)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>
@@ -153,6 +209,23 @@
         <i class="text-muted">(doc)</i>
     </p>
 	<div class="docs-attr-desc"><p>Sets name by the <code>naming_series</code> property</p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.model.naming.set_name_from_naming_options" href="#frappe.model.naming.set_name_from_naming_options" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.model.naming.<b>set_name_from_naming_options</b>
+        <i class="text-muted">(autoname, doc)</i>
+    </p>
+	<div class="docs-attr-desc"><pre><code>Get a name based on the autoname field option
+</code></pre>
 </div>
 	<br>
 

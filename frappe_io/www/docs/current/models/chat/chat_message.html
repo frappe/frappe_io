@@ -9,7 +9,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 10.0.13</a>
+	Version 10.1.36</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/frappe/tree/develop/frappe/chat/doctype/chat_message"
@@ -42,11 +42,11 @@
         
         <tr >
             <td>1</td>
-            <td class="danger" title="Mandatory"><code>type</code></td>
+            <td class="danger" title="Mandatory"><code>room_type</code></td>
             <td >
                 Select</td>
             <td >
-                Type
+                Room Type
                 
             </td>
             <td>
@@ -58,6 +58,21 @@ Visitor</pre>
         
         <tr >
             <td>2</td>
+            <td ><code>type</code></td>
+            <td >
+                Data</td>
+            <td >
+                Type
+                
+            </td>
+            <td>
+                <pre>Content
+File</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>3</td>
             <td ><code>user</code></td>
             <td >
                 Link</td>
@@ -78,7 +93,7 @@ Visitor</pre>
         </tr>
         
         <tr >
-            <td>3</td>
+            <td>4</td>
             <td class="danger" title="Mandatory"><code>room</code></td>
             <td >
                 Link</td>
@@ -99,7 +114,7 @@ Visitor</pre>
         </tr>
         
         <tr >
-            <td>4</td>
+            <td>5</td>
             <td class="danger" title="Mandatory"><code>content</code></td>
             <td >
                 Text</td>
@@ -111,7 +126,7 @@ Visitor</pre>
         </tr>
         
         <tr >
-            <td>5</td>
+            <td>6</td>
             <td ><code>mentions</code></td>
             <td >
                 Code</td>
@@ -123,7 +138,7 @@ Visitor</pre>
         </tr>
         
         <tr >
-            <td>6</td>
+            <td>7</td>
             <td ><code>urls</code></td>
             <td >
                 Data</td>
@@ -237,7 +252,7 @@ Visitor</pre>
         <a name="frappe.chat.doctype.chat_message.chat_message.get_new_chat_message" href="#frappe.chat.doctype.chat_message.chat_message.get_new_chat_message" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		frappe.chat.doctype.chat_message.chat_message.<b>get_new_chat_message</b>
-        <i class="text-muted">(user, room, content)</i>
+        <i class="text-muted">(user, room, content, type=Content)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>
@@ -253,7 +268,7 @@ Visitor</pre>
         <a name="frappe.chat.doctype.chat_message.chat_message.get_new_chat_message_doc" href="#frappe.chat.doctype.chat_message.chat_message.get_new_chat_message_doc" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		frappe.chat.doctype.chat_message.chat_message.<b>get_new_chat_message_doc</b>
-        <i class="text-muted">(user, room, content, link=True)</i>
+        <i class="text-muted">(user, room, content, type=Content, link=True)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>
@@ -321,7 +336,7 @@ Visitor</pre>
         <a name="frappe.chat.doctype.chat_message.chat_message.send" href="#frappe.chat.doctype.chat_message.chat_message.send" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		frappe.chat.doctype.chat_message.chat_message.<b>send</b>
-        <i class="text-muted">(user, room, content)</i>
+        <i class="text-muted">(user, room, content, type=Content)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>

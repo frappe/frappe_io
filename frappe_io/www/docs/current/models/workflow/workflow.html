@@ -9,7 +9,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 10.0.13</a>
+	Version 10.1.36</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/frappe/tree/develop/frappe/workflow/doctype/workflow"
@@ -89,6 +89,19 @@ Defines workflow states and rules for a document.
         
         <tr >
             <td>4</td>
+            <td ><code>allow_self_approval</code></td>
+            <td >
+                Check</td>
+            <td >
+                Allow Self Approval
+                <p class="text-muted small">
+                    Allow approval for creator of the document</p>
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>5</td>
             <td ><code>override_status</code></td>
             <td >
                 Check</td>
@@ -100,8 +113,21 @@ Defines workflow states and rules for a document.
             <td></td>
         </tr>
         
+        <tr >
+            <td>6</td>
+            <td ><code>send_email_alert</code></td>
+            <td >
+                Check</td>
+            <td >
+                Send Email Alert
+                <p class="text-muted small">
+                    Emails will be sent with next possible workflow actions</p>
+            </td>
+            <td></td>
+        </tr>
+        
         <tr class="info">
-            <td>5</td>
+            <td>7</td>
             <td ><code>states_head</code></td>
             <td >
                 Section Break</td>
@@ -114,7 +140,7 @@ Defines workflow states and rules for a document.
         </tr>
         
         <tr >
-            <td>6</td>
+            <td>8</td>
             <td class="danger" title="Mandatory"><code>states</code></td>
             <td >
                 Table</td>
@@ -136,7 +162,7 @@ Defines workflow states and rules for a document.
         </tr>
         
         <tr class="info">
-            <td>7</td>
+            <td>9</td>
             <td ><code>transition_rules</code></td>
             <td >
                 Section Break</td>
@@ -149,7 +175,7 @@ Defines workflow states and rules for a document.
         </tr>
         
         <tr >
-            <td>8</td>
+            <td>10</td>
             <td class="danger" title="Mandatory"><code>transitions</code></td>
             <td >
                 Table</td>
@@ -171,7 +197,7 @@ Defines workflow states and rules for a document.
         </tr>
         
         <tr >
-            <td>9</td>
+            <td>11</td>
             <td ><code>workflow_state_field</code></td>
             <td >
                 Data</td>
@@ -204,90 +230,6 @@ Defines workflow states and rules for a document.
     <div class="docs-attr-desc"><p></p>
 </div>
     <div style="padding-left: 30px;">
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="create_custom_field_for_workflow_state" href="#create_custom_field_for_workflow_state" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>create_custom_field_for_workflow_state</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="on_update" href="#on_update" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>on_update</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="set_active" href="#set_active" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>set_active</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="update_default_workflow_status" href="#update_default_workflow_status" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>update_default_workflow_status</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="validate" href="#validate" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>validate</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="validate_docstatus" href="#validate_docstatus" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>validate_docstatus</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
         
     </div>
     <hr>

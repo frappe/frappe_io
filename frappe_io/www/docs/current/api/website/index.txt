@@ -5,3 +5,4 @@ frappe.website.router
 frappe.website.purifycss
 frappe.website
 frappe.website.website_generator
+frappe.website.redirect

@@ -11,6 +11,7 @@ frappe.utils.autodoc
 frappe.utils.bench_helper
 frappe.utils.bot
 frappe.utils.html_utils
+frappe.utils.gitutils
 frappe.utils.scheduler
 frappe.utils.file_lock
 frappe.utils

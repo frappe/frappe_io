@@ -1,0 +1,50 @@
+<!-- title: frappe.website.redirect -->
+<!-- add-breadcrumbs --><h1>frappe.website.redirect</h1>
+<div class="dev-header">
+
+<a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
+	Version 10.1.36</a>
+
+
+	<a class="btn btn-default btn-sm" href="https://github.com/frappe/frappe/blob/develop/frappe/website/redirect.py"
+		target="_blank" style="margin-left: 10px; margin-bottom: 10px;"><i class="octicon octicon-mark-github"></i> Source</a>
+
+</div>
+
+
+
+
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="frappe.website.redirect.resolve_redirect" href="#frappe.website.redirect.resolve_redirect" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		frappe.website.redirect.<b>resolve_redirect</b>
+        <i class="text-muted">(path)</i>
+    </p>
+	<div class="docs-attr-desc"><pre><code>Resolve redirects from hooks
+
+Example:
+
+    website_redirect = [
+        # absolute location
+        {"source": "/from", "target": "https://mysite/from"},
+
+        # relative location
+        {"source": "/from", "target": "/main"},
+
+        # use regex
+        {"source": "/from/(.*)", "target": "/main/?"}
+    ]
+</code></pre>
+</div>
+	<br>
+
+	
+
+
+
+<!-- autodoc -->

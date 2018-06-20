@@ -21,3 +21,4 @@ frappe.www.website_theme
 frappe.www.message
 frappe.www.search
 frappe.www.list
+frappe.www.search_docs

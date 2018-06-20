@@ -1,6 +1,0 @@
-<!-- add-breadcrumbs -->
-# Resources
-
-
-
-{index}
