@@ -32,7 +32,7 @@ Para iniciar o script, na pasta `library_management/doctype/library_transaction`
 		});
 
 1. **frappe.ui.form.on(*doctype*, *fieldname*, *handler*)** é utilizado para ligar um handler ao evento quando a propriedade library_member for definida.
-1. No handler, nós desencadear uma chamada AJAX para `frappe.client.get`. Em resposta obtemos o objeto solicitado como JSON. [Saiba mais sobre a API](/frappe/user/en/guides/integration/rest_api).
+1. No handler, nós desencadear uma chamada AJAX para `frappe.client.get`. Em resposta obtemos o objeto solicitado como JSON. [Saiba mais sobre a API](/docs/user/en/guides/integration/rest_api).
 1. Utilizando **frappe.model.set_value(*doctype*, *name*, *fieldname*, *value*)** Nós inserimos o valor no formulário.
 
 **Observação:** Para verificar se o script funciona, lembre-se de 'recarregar' a página antes de testar seu script. mudanças no script do cliente não são captadas automaticamente quando você está no modo de desenvolvedor..
