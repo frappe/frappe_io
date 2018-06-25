@@ -10,7 +10,8 @@ app_color = "grey"
 app_email = "info@frappe.io"
 app_version = "0.0.1"
 
-required_apps = ["frappe_theme"]
+# not required for in-app help
+# required_apps = ["frappe_theme"]
 
 fixtures = ["Contact Us Settings", "Web Form"]
 
