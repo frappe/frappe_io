@@ -28,10 +28,9 @@
     flex: 1;
 }
 
-[class^="example-"] {
+[class*="example-"] {
     font-size: 14px;
     display: flex;
-    justify-content: center;
     width: 100%;
 }
 
@@ -42,6 +41,7 @@
 .hljs {
     padding: 2rem;
     border-radius: 3px;
+    max-height: 500px;
 }
 
 footer {
