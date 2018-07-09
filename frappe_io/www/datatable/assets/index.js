@@ -18,7 +18,7 @@ function makeDemo(targetSelector, code) {
 			<button class="btn btn-sm btn-secondary btn-edit">Edit</button>
 		</div>
 		<div class="edit-demo mt-2">
-			<textarea rows="10" class="form-control w-100" style="font-family: monospace;"></textarea>
+			<textarea rows="10" class="form-control w-100" style="font-family: monospace; font-size: 14px;"></textarea>
 			<button class="btn btn-sm btn-secondary btn-run mt-1">Run Code</button>
 		</div>
 	`;

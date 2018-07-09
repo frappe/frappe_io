@@ -100,9 +100,9 @@ let datatable = new DataTable({
 	<div class="container">
 		<h3>Themes</h3>
 		<div class="demo-target-4"></div>
-		<div class="custom-control custom-checkbox mt-2">
-			<input type="checkbox" class="custom-control-input" id="dark-theme-check">
-			<label class="custom-control-label" for="dark-theme-check">Apply Dark Theme</label>
+		<div class="btn-group theme-buttons mt-2" role="group" aria-label="Theme Buttons">
+			<button type="button" class="btn btn-secondary" data-theme="light">Light</button>
+			<button type="button" class="btn btn-secondary" data-theme="dark">Dark</button>
 		</div>
 		<template id="dark-theme-style-template">
 			<style id="dark-theme-style">
@@ -126,23 +126,44 @@ let datatable = new DataTable({
 		</style>
 		<script>
 			frappe.ready(() => {
-				document.querySelector('#dark-theme-check').addEventListener('change', () => {
-					const enabled = document.querySelector('#dark-theme-check:checked');
 
-					if (enabled) {
-						const t = document.querySelector('#dark-theme-style-template');
-						const style = document.importNode(t.content, true);
-						document.head.appendChild(style);
-						style.onload = () => datatableThemed.setDimensions();
-					} else {
-						document.head.querySelector('#dark-theme-style').remove();
-						setTimeout(() => datatableThemed.setDimensions(), 100);
+				document.querySelector('.theme-buttons').addEventListener('click', e => {
+					const { theme } = e.target.dataset;
+
+					['light', 'dark'].forEach(t => {
+						const btn = document.querySelector(`[data-theme="${t}"]`);
+						if (theme === t) {
+							!btn.classList.contains('active') &&
+							btn.classList.add('active');
+						} else {
+							btn.classList.contains('active') &&
+							btn.classList.remove('active');
+						}
+					})
+
+					if (theme === 'dark') {
+						e.target.classList.add('active');
+						applyDarkTheme();
+					} else if (theme === 'light') {
+						removeDarkTheme();
 					}
 				});
 
 				setTimeout(() => {
-					document.querySelector('#dark-theme-check').click();
+					document.querySelector('[data-theme=dark]').click();
 				}, 500);
+
+				function applyDarkTheme() {
+					const t = document.querySelector('#dark-theme-style-template');
+					const style = document.importNode(t.content, true);
+					document.head.appendChild(style);
+					style.onload = () => datatableThemed.setDimensions();
+				}
+
+				function removeDarkTheme() {
+					document.head.querySelector('#dark-theme-style').remove();
+					setTimeout(() => datatableThemed.setDimensions(), 100);
+				}
 			})
 		</script>
 	</div>
