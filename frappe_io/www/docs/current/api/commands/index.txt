@@ -1,6 +1,0 @@
-frappe.commands.docs
-frappe.commands.utils
-frappe.commands.scheduler
-frappe.commands.translate
-frappe.commands.site
-frappe.commands
