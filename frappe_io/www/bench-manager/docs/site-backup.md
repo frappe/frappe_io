@@ -1,5 +1,4 @@
-
-### Site Backup
+# Site Backup
 
 - This doctype contains a list of all the backups present in your bench instance (includes both existent and archived sites).
 - Inside each individual docname one can find a Restore button.

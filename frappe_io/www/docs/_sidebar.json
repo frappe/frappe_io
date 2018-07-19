@@ -1,11 +1,28 @@
 [
  {
-  "route": "/docs",
+  "route": "/docs/user",
   "title": "Docs Home"
  },
  {
-  "route": "/docs/user",
-  "title": "User Guide"
+  "route": "/docs/user/en/tutorial",
+  "title": "Tutorial"
+ },
+ {
+  "route": "/docs/user/en/guides",
+  "title": "Guides"
+ },
+ {
+  "route": "/docs/user/en/videos",
+  "title": "Videos"
+ },
+ {
+  "route": "/docs/user/en/bench",
+  "title": "Bench"
+ },
+ {
+  "route": "/search_docs",
+  "title": "Search",
+  "type": "input"
  },
  {
   "route": "https://github.com/frappe/frappe/tree/develop/frappe/docs",

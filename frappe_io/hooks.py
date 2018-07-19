@@ -49,6 +49,7 @@ website_context = {
 # include js, css files in header of web template
 # web_include_css = "/assets/frappe_io/css/frappe_io.css"
 web_include_js = "/assets/frappe_io/js/docs.js"
+look_for_sidebar_json = True
 
 # Home Pages
 # ----------

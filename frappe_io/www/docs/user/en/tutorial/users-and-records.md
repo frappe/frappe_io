@@ -1,7 +1,7 @@
 <!-- add-breadcrumbs -->
 # Making Users and Records
 
-Now that we have created the models, we can directly start making records using Frappé Desk UI. You do not have to create views! Views in Frappé are automatically made based on the DocType properties.
+Now that we have created the models, we can directly start making records using Frappe Desk UI. You do not have to create views! Views in Frappe are automatically made based on the DocType properties.
 
 ### 4.1 Creating User
 

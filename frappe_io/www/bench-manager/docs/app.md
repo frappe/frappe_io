@@ -1,5 +1,4 @@
-
-### App
+# App
 
 - This doctype shows a list of all installed apps in the current bench Instance.
 

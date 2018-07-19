@@ -1,5 +1,5 @@
 <!-- add-breadcrumbs -->
-# Frappé Developer Tutorial
+# Frappe Developer Documentation
 
 Select your language
 
