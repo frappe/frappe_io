@@ -15162,9 +15162,6 @@ var Chart = function Chart(parent, options) {
 	return getChartByType(options.type, parent, options);
 };
 
-
-//# sourceMappingURL=frappe-charts.min.esm.js.map
-
 // https://stackoverflow.com/a/29325222
 function getRandomBias(min, max, bias, influence) {
 	var range = max - min;
