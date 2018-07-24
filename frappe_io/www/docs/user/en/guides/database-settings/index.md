@@ -1,4 +1,4 @@
 <!-- add-breadcrumbs -->
-# Advance Settings
+# Database Settings
 
 {index}
