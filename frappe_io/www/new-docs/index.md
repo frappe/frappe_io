@@ -14,7 +14,7 @@ Frappe is MIT Licensed and is hosted on [GitHub](https://github.com/frappe/frapp
 
 Before you can use Frappe, you need to install it. We have a complete installation guide which covers all possibilities, this guide will also help you understand the backend stack.
 
-[Frappe Installation Guide](/installation) →
+[Frappe Installation Guide](/new-docs/installation) →
 
 ### Let's make a Frappe App
 
