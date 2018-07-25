@@ -22,13 +22,13 @@ Let's make a simple ToDo app... Wait a second, it already exists in Frappe! When
 
 Let's build a Discussion Forum where people will be able to brainstorm ideas!
 
-[Tutorial Walkthrough](/tutorial) →
+[Tutorial Walkthrough](/new-docs/tutorial) →
 
 ### Documentation
 
 The official documentation covers everything you need to know about the Frappe Framework.
 
-[Read the docs](new-docs/documentation) →
+[Read the docs](/new-docs/documentation) →
 
 ## Join the community
 
