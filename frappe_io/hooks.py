@@ -16,6 +16,7 @@ app_version = "0.0.1"
 fixtures = ["Contact Us Settings", "Web Form"]
 
 website_context = {
+	"repo": "frappe/frappe_io",
 	"brand_html": "<img class='mr-2 d-inline-block align-top' src='/assets/frappe_theme/img/frappe-logo.png' width='30px' height='30px' />Frappe",
 	"top_bar_items": [
 		{"label": "Products", "right": 1, "child_items": [

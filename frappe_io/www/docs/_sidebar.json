@@ -25,7 +25,7 @@
   "type": "input"
  },
  {
-  "route": "https://github.com/frappe/frappe/tree/develop/frappe/docs",
+  "route": "https://github.com/frappe/frappe_io/tree/master/frappe_io/www/docs",
   "title": "Improve Docs"
  }
 ]
