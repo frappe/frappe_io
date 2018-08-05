@@ -2,11 +2,11 @@
 
 ## What is Frappe?
 
-Frappe, pronounced _fruh-pay_, is a full stack, **batteries-included**, web framework written in Python and Javascript with MariaDB as the backend. It is the framework which powers [ERPNext](). It is pretty generic and can be used to build database driven apps.
+Frappe, pronounced _fruh-pay_, is a full stack, batteries-included, web framework written in Python and Javascript with MariaDB as the backend. It is the framework which powers [ERPNext](https://erpnext.com). It is pretty generic and can be used to build database driven apps.
 
 The key difference in Frappe compared to other frameworks is that **meta-data** is also treated as data and is used to build front-ends very easily. We believe in a monolithic architecture, so Frappe comes with almost everything you need to build a modern web application. It has a full blown Admin UI called the Desk that handles forms, navigation, lists, menus, permissions, file attachment and much more out of the box.
 
-Frappe is MIT Licensed and is hosted on [GitHub](https://github.com/frappe/frapppe)
+Frappe is MIT Licensed and is hosted on [GitHub](https://github.com/frappe/frapppe).
 
 ## Getting Started
 
@@ -16,11 +16,9 @@ Before you can use Frappe, you need to install it. We have a complete installati
 
 [Frappe Installation Guide](/new-docs/installation) →
 
-### Let's make a Frappe App
+### Tutorial
 
-Let's make a simple ToDo app... Wait a second, it already exists in Frappe! When we mentioned earlier that it is a batteries-included framework, we actually meant it! So let's make a little advanced app.
-
-Let's build a Discussion Forum where people will be able to brainstorm ideas!
+Let's build a ToDo app in Frappe, but wait, it already exists in Frappe! (hint: batteries-included). So let's make something with some more complexity. We will be building a Discussion Forum where people will be able to login, create posts, comment on them and discuss topics.
 
 [Tutorial Walkthrough](/new-docs/tutorial) →
 
