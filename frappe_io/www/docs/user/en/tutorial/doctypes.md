@@ -9,7 +9,7 @@ To create a new **DocType**, go to:
 
 <img class="screenshot" alt="New Doctype" src="/docs/assets/img/doctype_new.png">
 
-In the DocType, first the Module, which in our case is **Library Management**
+In the DocType, first the Name of the DocType **Article**. Then pick the Module, which in our case is **Library Management**
 
 #### Adding Fields
 
@@ -28,7 +28,7 @@ Let us add the fields of the Article.
 
 <img class="screenshot" alt="Adding Fields" src="/docs/assets/img/doctype_adding_field.png">
 
-When you add fields, you need to enter the **Type**. **Label** is optional for Section Break and Column Break. **Name** (`fieldname`) is the name of the database table column and also the property of the controller. This has to be *code friendly*, i.e. it has to have small cases are _ instead of " ". If you leave the Fieldname blank, it will be automatically set when you save it.
+When you add fields, you need to enter the **Type**. **Label** is optional for Section Break and Column Break. **Name** (`fieldname`) is the name of the database table column and also the property of the controller. This has to be *code friendly*, i.e. use lowercase and underscores "_" instead of spaces " ". If you leave the Fieldname blank, it will be automatically set when you save it.
 
 You can also set other properties of the field like whether it is mandatory, read only etc.
 
@@ -36,23 +36,22 @@ We can add the following fields:
 
 1. Article Name (Data)
 2. Author (Data)
-3. Description
-4. ISBN
-5. Status (Select): For Select fields, you will enter the Options. Enter **Issued** and **Available** each on a new line in the Options box. See diagram below
+3. Description (Text)
+4. ISBN (Data)
+5. Status (Select): For Select fields, you will enter the Options. Enter **Issued** and **Available** each on a new line in the Options box.
 6. Publisher (Data)
 7. Language (Data)
 8. Image (Attach Image)
 
-
 #### Add Permissions
 
-After adding the fields, hit done and add a new row in the Permission Rules section. For now, let us give Read, Write, Create, Delete and Report access to **Librarian**. Frappe has a finely grained Role based permission model. You can also change permissions later using the **Role Permissions Manager** from **Setup**.
+After adding the fields, scroll down to Permission Rules section and add a new row. For now, let us give Read, Write, Create, Delete and Report access to **Librarian**. Frappe has a finely grained Role based permission model. You can also change permissions later using the **Role Permissions Manager** from **Setup**.
 
 <img class="screenshot" alt="Adding Permissions" src="/docs/assets/img/doctype_adding_permission.png">
 
 #### Saving
 
-Click on the **Save** button. When the button is clicked, a popup will ask you for the name. Give it the name **Article** and save the DocType.
+Click on the **Save** button. 
 
 Now login into mysql and check the database table created:
 
@@ -94,4 +93,3 @@ Now login into mysql and check the database table created:
 As you can see, along with the DocFields, several standard columns have also been added to the table. Important to note here are, the primary key, `name`, `owner`(the user who has created the record), `creation` and `modified` (timestamps for creation and last modification).
 
 {next}
-
