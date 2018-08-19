@@ -21,3 +21,7 @@ A site in bench is a container for database and files (public and private). Mult
 **Multi-tenancy**. Bench allows us to host multiple sites. Sites are differentiated by their name, so, you can have `test-site-1` and `test-site-2` running on the same port. Bench also supports port based multi-tenancy where you can host multiple sites that run on different ports. You then manage your apps and sites within your Bench. [Here](https://www.youtube.com/watch?v=eCAMPcl7NKc&feature=youtu.be&t=32s) is a video explanation of the architecture.
 
 ![](https://i.imgur.com/QwNrzPo.png)
+
+---
+
+Have more questions? Ask us on the [developer forum](https://discuss.erpnext.com)
