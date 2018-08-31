@@ -73,7 +73,7 @@ We should use module name like this (related to application folder)
 
 	erpnext.support.doctype.issue.test_issue
 
-#####EXAMPLE:
+##### Example:
 
 	frappe@erpnext:~/frappe-bench$ bench run-tests --module "erpnext.stock.doctype.stock_entry.test_stock_entry"
 	...........................
@@ -100,60 +100,23 @@ We should use module name like this (related to application folder)
 	      255    0.000    0.000    0.002    0.000 /home/frappe/frappe-bench/apps/frappe/frappe/model/base_document.py:91(get)
 	       12    0.000    0.000    0.002    0.000
 
-#### 2.6. Example for XUnit XML:
-
-##### How to run:
-
-	bench run-tests --junit-xml-output=/reports/junit_test.xml
-
-##### Example of test report:
-
-	<testsuite tests="3">
-	    <testcase classname="foo1" name="ASuccessfulTest"/>
-	    <testcase classname="foo2" name="AnotherSuccessfulTest"/>
-	    <testcase classname="foo3" name="AFailingTest">
-	        <failure type="NotEnoughFoo"> details about failure </failure>
-	    </testcase>
-	</testsuite>
-
-It’s designed for the CI Jenkins, but will work for anything else that understands an XUnit-formatted XML representation of test results.
-
-#### Jenkins configuration support:
-1. You should install xUnit plugin - https://wiki.jenkins-ci.org/display/JENKINS/xUnit+Plugin
-2. After installation open Jenkins job configuration, click the box named “Publish JUnit test result report” under the "Post-build Actions" and enter path to XML report:
-(Example: _reports/*.xml_)
 
 ## 3. Tests for a DocType
 
 ### 3.1. Writing DocType Tests:
 
-1. Records that are used for testing are stored in a file `test_records.json` in the doctype folder. [For example see the Event Tests](https://github.com/frappe/frappe/blob/develop/frappe/core/doctype/event/test_records.json).
 1. Test cases are in a file named `test_[doctype].py`
-1. To provide the test records (and dependencies) call `test_records = frappe.get_test_records('Event')` in your test case file.
+1. You must create all dependencies in the test file
+1. Create a Python module structure to create fixtures / dependencies
 
 #### Example (for `test_records.json`):
 
 	[
 		{
 			"doctype": "Event",
-			"subject":"_Test Event 1",
-			"starts_on": "2014-01-01",
-			"event_type": "Public"
-		},
-		{
-			"doctype": "Event",
-			"starts_on": "2014-01-01",
-			"subject":"_Test Event 2",
-			"event_type": "Private"
-		},
-		{
-			"doctype": "Event",
 			"starts_on": "2014-01-01",
 			"subject":"_Test Event 3",
 			"event_type": "Private",
-			"event_individuals": [{
-				"person": "test1@example.com"
-			}]
 		}
 	]
 
@@ -175,18 +138,42 @@ It’s designed for the CI Jenkins, but will work for anything else that underst
 			frappe.set_user("Administrator")
 
 		def test_allowed_public(self):
+			frappe.set_user("Administrator")
+			doc = frappe.get_doc({
+				"doctype": "Event",
+				"subject":"_Test Event 1",
+				"starts_on": "2014-01-01",
+				"event_type": "Public"
+			}).insert()
+
 			frappe.set_user("test1@example.com")
-			doc = frappe.get_doc("Event", frappe.db.get_value("Event", {"subject":"_Test Event 1"}))
 			self.assertTrue(frappe.has_permission("Event", doc=doc))
 
 		def test_not_allowed_private(self):
+			frappe.set_user("Administrator")
+			doc = frappe.get_doc({
+				"doctype": "Event",
+				"subject":"_Test Event 2",
+				"starts_on": "2014-01-01",
+				"event_type": "Private"
+			}).insert()
+
 			frappe.set_user("test1@example.com")
-			doc = frappe.get_doc("Event", frappe.db.get_value("Event", {"subject":"_Test Event 2"}))
 			self.assertFalse(frappe.has_permission("Event", doc=doc))
 
 		def test_allowed_private_if_in_event_user(self):
+			frappe.set_user("Administrator")
+			doc = frappe.get_doc({
+				"doctype": "Event",
+				"subject":"_Test Event 1",
+				"starts_on": "2014-01-01",
+				"event_type": "Public"
+				"event_individuals": [{
+					"person": "test1@example.com"
+				}]
+			}).insert()
+
 			frappe.set_user("test1@example.com")
-			doc = frappe.get_doc("Event", frappe.db.get_value("Event", {"subject":"_Test Event 3"}))
 			self.assertTrue(frappe.has_permission("Event", doc=doc))
 
 		def test_event_list(self):
@@ -197,4 +184,28 @@ It’s designed for the CI Jenkins, but will work for anything else that underst
 			self.assertTrue("_Test Event 1" in subjects)
 			self.assertTrue("_Test Event 3" in subjects)
 			self.assertFalse("_Test Event 2" in subjects)
+
+## Writing XUnit XML Tests
+
+##### How to run:
+
+	bench run-tests --junit-xml-output=/reports/junit_test.xml
+
+##### Example of test report:
+
+	<testsuite tests="3">
+	    <testcase classname="foo1" name="ASuccessfulTest"/>
+	    <testcase classname="foo2" name="AnotherSuccessfulTest"/>
+	    <testcase classname="foo3" name="AFailingTest">
+	        <failure type="NotEnoughFoo"> details about failure </failure>
+	    </testcase>
+	</testsuite>
+
+It’s designed for the CI Jenkins, but will work for anything else that understands an XUnit-formatted XML representation of test results.
+
+#### Jenkins configuration support:
+
+1. You should install xUnit plugin - https://wiki.jenkins-ci.org/display/JENKINS/xUnit+Plugin
+2. After installation open Jenkins job configuration, click the box named “Publish JUnit test result report” under the "Post-build Actions" and enter path to XML report:
+(Example: _reports/*.xml_)
 
