@@ -12,6 +12,92 @@ Frappe provides some basic tooling to quickly write automated tests. There are s
 1. Tests can be executed using `bench run-tests`
 1. For non-DocType tests, you can write simple unittests and prefix your file names with `test_`.
 
+
+## Writing Tests for DocTypes
+
+### 2.1. Writing DocType Tests:
+
+1. Test cases are in a file named `test_[doctype].py`
+1. You must create all dependencies in the test file
+1. Create a Python module structure to create fixtures / dependencies
+
+#### Example (for `test_event.py`):
+
+	# Copyright (c) 2015, Frappe Technologies Pvt. Ltd. and Contributors
+	# MIT License. See license.txt
+
+	import frappe
+	import frappe.defaults
+	import unittest
+
+
+	def create_events():
+		if frappe.flags.test_events_created:
+			return
+
+		frappe.set_user("Administrator")
+		doc = frappe.get_doc({
+			"doctype": "Event",
+			"subject":"_Test Event 1",
+			"starts_on": "2014-01-01",
+			"event_type": "Public"
+		}).insert()
+
+		doc = frappe.get_doc({
+			"doctype": "Event",
+			"subject":"_Test Event 2",
+			"starts_on": "2014-01-01",
+			"event_type": "Private"
+		}).insert()
+
+		doc = frappe.get_doc({
+			"doctype": "Event",
+			"subject":"_Test Event 3",
+			"starts_on": "2014-01-01",
+			"event_type": "Public"
+			"event_individuals": [{
+				"person": "test1@example.com"
+			}]
+		}).insert()
+
+		frappe.flags.test_events_created = True
+
+
+	class TestEvent(unittest.TestCase):
+		def setUp(self):
+			create_events()
+
+		def tearDown(self):
+			frappe.set_user("Administrator")
+
+		def test_allowed_public(self):
+			frappe.set_user("test1@example.com")
+			doc = frappe.get_doc("Event", frappe.db.get_value("Event",
+				{"subject":"_Test Event 1"}))
+			self.assertTrue(frappe.has_permission("Event", doc=doc))
+
+		def test_not_allowed_private(self):
+			frappe.set_user("test1@example.com")
+			doc = frappe.get_doc("Event", frappe.db.get_value("Event",
+				{"subject":"_Test Event 2"}))
+			self.assertFalse(frappe.has_permission("Event", doc=doc))
+
+		def test_allowed_private_if_in_event_user(self):
+			doc = frappe.get_doc("Event", frappe.db.get_value("Event",
+				{"subject":"_Test Event 3"}))
+
+			frappe.set_user("test1@example.com")
+			self.assertTrue(frappe.has_permission("Event", doc=doc))
+
+		def test_event_list(self):
+			frappe.set_user("test1@example.com")
+			res = frappe.get_list("Event", filters=[["Event", "subject", "like", "_Test Event%"]], fields=["name", "subject"])
+			self.assertEquals(len(res), 2)
+			subjects = [r.subject for r in res]
+			self.assertTrue("_Test Event 1" in subjects)
+			self.assertTrue("_Test Event 3" in subjects)
+			self.assertFalse("_Test Event 2" in subjects)
+
 ## 2. Running Tests
 
 This function will build all the test dependencies and run your tests.
@@ -100,90 +186,14 @@ We should use module name like this (related to application folder)
 	      255    0.000    0.000    0.002    0.000 /home/frappe/frappe-bench/apps/frappe/frappe/model/base_document.py:91(get)
 	       12    0.000    0.000    0.002    0.000
 
+#### 2.6 Running Tests without creating fixtures or before_tests hook
 
-## 3. Tests for a DocType
+- When you are building a feature it is useful to write tests without building test dependencies (i.e build fixtures for linked objects), with `--skip-test-records`
+- You can also skip the test initialisation script with `--skip-before-tests`
 
-### 3.1. Writing DocType Tests:
+Example
 
-1. Test cases are in a file named `test_[doctype].py`
-1. You must create all dependencies in the test file
-1. Create a Python module structure to create fixtures / dependencies
-
-#### Example (for `test_records.json`):
-
-	[
-		{
-			"doctype": "Event",
-			"starts_on": "2014-01-01",
-			"subject":"_Test Event 3",
-			"event_type": "Private",
-		}
-	]
-
-
-#### Example (for `test_event.py`):
-
-	# Copyright (c) 2015, Frappe Technologies Pvt. Ltd. and Contributors
-	# MIT License. See license.txt
-
-	import frappe
-	import frappe.defaults
-	import unittest
-
-	# load test records and dependencies
-	test_records = frappe.get_test_records('Event')
-
-	class TestEvent(unittest.TestCase):
-		def tearDown(self):
-			frappe.set_user("Administrator")
-
-		def test_allowed_public(self):
-			frappe.set_user("Administrator")
-			doc = frappe.get_doc({
-				"doctype": "Event",
-				"subject":"_Test Event 1",
-				"starts_on": "2014-01-01",
-				"event_type": "Public"
-			}).insert()
-
-			frappe.set_user("test1@example.com")
-			self.assertTrue(frappe.has_permission("Event", doc=doc))
-
-		def test_not_allowed_private(self):
-			frappe.set_user("Administrator")
-			doc = frappe.get_doc({
-				"doctype": "Event",
-				"subject":"_Test Event 2",
-				"starts_on": "2014-01-01",
-				"event_type": "Private"
-			}).insert()
-
-			frappe.set_user("test1@example.com")
-			self.assertFalse(frappe.has_permission("Event", doc=doc))
-
-		def test_allowed_private_if_in_event_user(self):
-			frappe.set_user("Administrator")
-			doc = frappe.get_doc({
-				"doctype": "Event",
-				"subject":"_Test Event 1",
-				"starts_on": "2014-01-01",
-				"event_type": "Public"
-				"event_individuals": [{
-					"person": "test1@example.com"
-				}]
-			}).insert()
-
-			frappe.set_user("test1@example.com")
-			self.assertTrue(frappe.has_permission("Event", doc=doc))
-
-		def test_event_list(self):
-			frappe.set_user("test1@example.com")
-			res = frappe.get_list("Event", filters=[["Event", "subject", "like", "_Test Event%"]], fields=["name", "subject"])
-			self.assertEquals(len(res), 2)
-			subjects = [r.subject for r in res]
-			self.assertTrue("_Test Event 1" in subjects)
-			self.assertTrue("_Test Event 3" in subjects)
-			self.assertFalse("_Test Event 2" in subjects)
+	bench --site school.erpnext.local run-tests --doctype "Student Group" --skip-test-records --skip-before-tests
 
 ## Writing XUnit XML Tests
 
