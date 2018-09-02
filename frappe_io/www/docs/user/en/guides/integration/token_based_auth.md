@@ -20,16 +20,16 @@ For every user you can generate an api-key and api-secret which together form a 
 
 Api-key and api-secret can be generated from the web interface, from the command line or by remote procedure call (RPC):
 
-- RPC
+- RPC: 
   `/api/method/frappe.core.doctype.user.user?user="user_name"`
-- Command
+- Command: 
   `bench execute frappe.core.doctype.user.user --args ['user_name']`
-- Web
-  `User -> Api Access -> Generate Keys
+- Web: 
+  `User -> Api Access -> Generate Keys`
   
 ###### Note: 
 1. Api key cannot be re-generated.
-2. Only user's with system manager role can generate keys.
+2. Only users with system manager role can generate keys.
 
 # Authentication
 The HTTP Authorization request header contains the credentials to authenticate a user with a server. It consits of the authorization type (`token` or `Basic`) and the corresponding token.
