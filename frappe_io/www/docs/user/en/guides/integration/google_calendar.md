@@ -41,3 +41,5 @@ an event will be only synchronized if it is public or if the user his the owner.
 ## Limitations
 
 Currently, if an instance of a recurring event is cancelled in Google Calendar, this change will not be reflected in ERPNext.
+
+{next}
