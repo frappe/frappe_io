@@ -51,7 +51,7 @@ translations loaded at the time.
 
 ### 4. Improving Translations:
 
-For updating translations, please go to the to [the translation portal](https://frappe.io/translator).
+For updating translations, please go to the to [the translation portal](https://translate.erpnext.com).
 
 If you want to do it directly via code:
 
