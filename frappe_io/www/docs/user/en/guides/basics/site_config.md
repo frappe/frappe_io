@@ -25,6 +25,7 @@ Example:
 - `mute_emails`: Stops email sending if true.
 - `deny_multiple_logins`: Stop users from having more than one active session.
 - `root_password`: MariaDB root password.
+- `always_track_email_status`: Track if emails are read by recipient if true
 
 ### Remote Database Host Settings
 - `db_host`: Database host if not `localhost`.
