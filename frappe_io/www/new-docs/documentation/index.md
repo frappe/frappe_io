@@ -4,12 +4,11 @@
 1. [DocField](#docfield)
 1. [Naming](#naming)
 1. [Document](#document)
+1. [Controllers](#controllers)
+    - [Controller Methods](#controller-methods)
+    - [Controller Hooks](#controller-hooks)
 1. Child DocType
 1. Single DocType
-1. DocField
-1. Controllers
-    - Client Side
-    - Server Side
 1. Routing
 1. Translations
 1. Request / Response
@@ -170,3 +169,119 @@ Now, if we want to query a document from the database, we can use the [ORM](#orm
 ```
 
 You get the values of `description`, `status` and `priority`, but you also get fields like `creation`, `owner` and `modified_by` which are fields added by default by the framework on all `docs`.
+
+## Controllers
+
+A Controller is a normal python class which extends from `frappe.model.Document` base class. This base class is the core logic of a DocType. It handles how values are loaded from the database, how they are parsed and saved back to the database.
+
+When you create a DocType named `Person`, a python file is created by the name `person.py` and the contents look like:
+
+```python
+# -*- coding: utf-8 -*-
+
+from __future__ import unicode_literals
+import frappe
+from frappe.model.document import Document
+
+class Person(Document):
+	pass
+
+```
+
+All the fields are available to the class as attributes.
+
+### Controller Methods
+
+You can add custom methods to your Controller and it will be callable using the `doc` object. For example,
+
+```python
+# controller definition
+class Person(Document):
+	def get_full_name(self):
+        "Returns the person's full name"
+        return self.first_name + ' ' + self.last_name
+
+# somewhere in your code
+>>> doc = frappe.get_doc('Person', '000001')
+>>> doc.get_full_name()
+John Doe
+```
+
+You can also override the pre-defined document methods to add your own behaviour. For e.g to override the `save()` method,
+
+```python
+class Person(Document):
+	def save(self, *args, **kwargs):
+        do_something()
+        super().save(*args, **kwargs) # call the base save method
+        do_something_else()
+```
+
+There are a lot of methods provided by default on the `doc` object. You can find the complete [list here](#complete-document-reference).
+
+### Controller Hooks
+
+To add custom behaviour during the lifecycle of a document, we have controller hooks.
+
+Method Name                  | Description
+-----------------------------|-------------
+`before_submit`              | Called before a document is submitted.
+`before_cancel`              | This is called before a submitted document is cancelled.
+`before_update_after_submit` | This is called *before* a submitted document values are updated.
+`before_insert`              | This is called before a document is inserted into the database.
+`before_naming`              | This is called before the `name` property of the document is set.
+`autoname`                   | This is an optional method which is called only when it is defined in the controller. Use this method to customize how the `name` property of the document is set.
+`validate`                   | Use this method to throw any validation errors and prevent the document from saving.
+`before_save`                | This method is called before the document is saved.
+`after_insert`               | This is called after the document is inserted into the database.
+`on_update`                  | This is called when values of an existing document is updated.
+`on_submit`                  | This is called when a document is submitted.
+`on_update_after_submit`     | This is called *when* a submitted document values are updated.
+`on_cancel`                  | This is called when a submitted is cancelled.
+`on_change`                  | This is called to indicate that a document's values has been changed.
+`on_trash`                   | This is called when a document is being deleted.
+`after_delete`               | This is called after a document has been deleted.
+
+To use a controller hook, just define a class method with that name. For e.g
+
+```python
+class Person(Document):
+	def validate(self):
+        if self.age > 60:
+            frappe.throw('Age must be less than 60')
+
+    def after_insert(self):
+        frappe.sendmail(recipients=[self.email], message="Thank you for registering!")
+```
+
+**1. Create a document**
+
+To create a new document and save it to the database,
+
+```python
+doc = frappe.get_doc({
+    'doctype': 'Person',
+    'first_name': 'John',
+    'last_name': 'Doe'
+})
+doc.insert()
+
+doc.name # 000001
+```
+
+**2. Load a document**
+
+To get an existing document from the database,
+
+```python
+doc = frappe.get_doc('Person', '000001')
+
+# doctype fields
+doc.first_name # John
+doc.last_name # Doe
+
+# standard fields
+doc.creation # datetime.datetime(2018, 9, 20, 12, 39, 34, 236801)
+doc.owner # faris@erpnext.com
+```
+
