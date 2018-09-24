@@ -263,17 +263,17 @@ Scheduler hooks are methods that are run periodically in background. Structure f
 * `all`
 * `cron`
 
-The scheduler events require celery, celerybeat and redis (or a supported and
+The scheduler events require RQ and redis (or a supported and
 configured broker) to be running. The events with suffix '\_long' are for long
-jobs. The `all` event is triggered everytime (as per the celerybeat interval).
+jobs. The `all` event is triggered everytime (as per the RQ interval).
 
 Example,
 
 	scheduler_events = {
-		"{daily}": [
+		"daily": [
 			"erpnext.accounts.doctype.sales_invoice.sales_invoice.manage_recurring_invoices"
 		],
-		"{daily_long}": [
+		"daily_long": [
 			"erpnext.setup.doctype.backup_manager.backup_manager.take_backups_daily"
 		],
 		"cron": {
