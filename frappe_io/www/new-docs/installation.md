@@ -34,10 +34,38 @@ Install [Homebrew](https://brew.sh/). It makes it easy to install packages on ma
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-Now, you can easily install the required packages by running the command
+Now, you can easily install the required packages by running the following command
 
 ```bash
-brew install python git redis mariadb node wkhtmltopdf
+brew install python
+brew install git
+brew install redis
+brew install mariadb
+
+brew tap caskroom/cask
+brew cask install wkhtmltopdf
+```
+
+**Install Node**
+
+We recommend installing node using [nvm](https://github.com/creationix/nvm)
+
+```bash
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+```
+
+After nvm is installed, you may have to close your terminal and open another one. Now run the following command to install node.
+
+```bash
+nvm install 8
+```
+
+Verify the installation, by running:
+
+```bash
+node -v
+# output
+v8.11.3
 ```
 
 Finally, install yarn using npm
