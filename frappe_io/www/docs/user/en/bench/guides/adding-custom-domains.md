@@ -26,4 +26,4 @@ Domain configuration is stored in the respective site's site_config.json
 	  }
 	 ],
 
-**You will need to regenerate the nginx configuration by runnning `bench setup nginx` and reload the nginx service put your custom domain in effect**
+**You will need to regenerate the nginx configuration by runnning `bench setup nginx` and reload the nginx service by running `sudo service nginx reload` to put your custom domain in effect**
