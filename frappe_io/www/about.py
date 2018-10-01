@@ -93,18 +93,18 @@ def get_context(context):
 		{
 			'name': 'Salman Mulani',
 			'role': 'Business Analyst',
-			'linkedin': 'salman-mulani-7a9bb659'
+			'linkedin': 'https://in.linkedin.com/in/salman-mulani-7a9bb659'
 		},
 		{
 			'name': 'Aditya Hase',
 			'role': 'Developer',
+			'github': 'adityahase',
 			'linkedin': 'https://in.linkedin.com/in/adityahase',
 		},
 		{
 			'name': 'Jai Chavan',
 			'role': 'Business Analyst',
-			'medium': '',
-			'twitter': '',
+			'linkedin': 'https://in.linkedin.com/in/jai-chavan-a894a3149'
 		},
 		{
 			'name': 'Chinmay Pai',
