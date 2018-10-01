@@ -102,6 +102,11 @@ def get_context(context):
 			'linkedin': 'https://in.linkedin.com/in/adityahase',
 		},
 		{
+			'name': 'Mitali Deshpande',
+			'role': 'Business Analyst',
+			'linkedin': 'https://in.linkedin.com/in/mitali-deshpande-571a8416'
+		},
+		{
 			'name': 'Jai Chavan',
 			'role': 'Business Analyst',
 			'linkedin': 'https://in.linkedin.com/in/jai-chavan-a894a3149'
