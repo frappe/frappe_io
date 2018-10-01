@@ -83,8 +83,7 @@ def get_context(context):
 		{
 			'name': 'Basawaraj',
 			'role': 'Head of Enterprise sales',
-			'medium': '',
-			'twitter': '',
+			'medium': 'basawarajsavalagi',
 		},
 		{
 			'name': 'Rushikesh Parekh',
