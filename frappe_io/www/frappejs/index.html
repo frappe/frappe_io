@@ -1,0 +1,86 @@
+<section class='top-section'>
+	<div class='container'>
+	<h1>FrappeJS</h1>
+	<p class='lead'>Node + Electron + Vue based next generation web framework <br>(inspired by Frappe)</p>
+	<img src='/assets/frappe_io/images/landing-pages/frappejs.png'
+		class='border greyscale mt-5'>
+	</div>
+</section>
+
+{% macro card(title, body, link) %}
+<div class="col-sm mb-4">
+	<div class="card h-100" target="_blank">
+	  <div class="card-body">
+		<h5>{{ title }}</h5>
+	    <div class="card-text">{{ body }}</div>
+	  </div>
+	</div>
+</div>
+{% endmacro %}
+
+<section class='section-padding section-bg'>
+	<div class='container'>
+
+		<div class="row">
+			{{
+				card(
+					"Models",
+					"Models are first class citizens in FrappeJS. Use them to build powerful REST APIs, UIs or CLI tools.",
+					"/frappejs/docs/models"
+				)
+			}}
+			{{
+				card(
+					"Admin Interface",
+					"FrappeJS comes with built-in lists and forms to interact with your data. It is built on VueJS.",
+					"/frappejs/docs/ui-components"
+				)
+			}}
+			{{
+				card(
+					"Backend Agnostic",
+					"Use any backend to store your models. FrappeJS uses SQLite as the default data store.",
+					"/frappejs/docs/backend"
+				)
+			}}
+		</div>
+
+		<div class="row">
+			{{
+				card(
+					"Isomorphic",
+					"FrappeJS can be used to build web applications using Node, Single Page Applications using Vue or desktop apps with Electron.",
+					"/frappejs/docs/isomorphic"
+				)
+			}}
+			{{
+				card(
+					"REST API",
+					"FrappeJS server comes baked in with standard REST API routes to GET and POST data in your models.",
+					"/frappejs/docs/rest-api"
+				)
+			}}
+			{{
+				card(
+					"File Handling",
+					"FrappeJS handles your file uploads and its operations via the REST API or the core API.",
+					"/frappejs/docs/file-handling"
+				)
+			}}
+		</div>
+	</div>
+</section>
+<section class='text-center section-padding'>
+	<div class='container'>
+	<a class ="btn btn-dark mr-3" href="https://github.com/frappe/frappejs">
+		Get Started
+	</a>
+	<a class ="btn btn-secondary" href="https://github.com/frappe/frappejs/blob/master/docs/index.md">
+		Documentation
+	</a>
+	<p class="mt-3">
+		<a href="https://github.com/frappe/frappejs" target="_blank">View on GitHub</a>
+	</p>
+	<p class='text-muted'>License: MIT</p>
+	</div>
+</section>
