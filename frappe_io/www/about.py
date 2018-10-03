@@ -81,19 +81,14 @@ def get_context(context):
 			'github': 'surajshetty3416'
 		},
 		{
-			'name': 'Basawaraj',
-			'role': 'Head of Enterprise sales',
-			'medium': 'basawarajsavalagi',
-		},
-		{
 			'name': 'Rushikesh Parekh',
 			'role': 'Business Analyst',
 			'twitter': 'rushikeshparekh',
 		},
 		{
-			'name': 'Salman Mulani',
-			'role': 'Business Analyst',
-			'linkedin': 'https://in.linkedin.com/in/salman-mulani-7a9bb659'
+			'name': 'Basawaraj',
+			'role': 'Head of Enterprise sales',
+			'medium': 'basawarajsavalagi',
 		},
 		{
 			'name': 'Aditya Hase',
@@ -107,9 +102,9 @@ def get_context(context):
 			'linkedin': 'https://in.linkedin.com/in/mitali-deshpande-571a8416'
 		},
 		{
-			'name': 'Jai Chavan',
+			'name': 'Salman Mulani',
 			'role': 'Business Analyst',
-			'linkedin': 'https://in.linkedin.com/in/jai-chavan-a894a3149'
+			'linkedin': 'https://in.linkedin.com/in/salman-mulani-7a9bb659'
 		},
 		{
 			'name': 'Chinmay Pai',
@@ -117,12 +112,12 @@ def get_context(context):
 			'github': 'thunderbottom'
 		},
 		{
-			'name': 'Deepesh Garg',
-			'role': 'Developer',
-			'twitter': 'DeepeshGarg16',
+			'name': 'Jai Chavan',
+			'role': 'Business Analyst',
+			'linkedin': 'https://in.linkedin.com/in/jai-chavan-a894a3149'
 		},
 		{
-			'name': 'Mangesh',
+			'name': 'Mangesh Khairnar',
 			'role': 'Developer',
 			'github': 'mangesh-khairnar'
 		},
@@ -130,5 +125,29 @@ def get_context(context):
 			'name': 'Sahil Khan',
 			'role': 'Developer',
 			'github': 'sahil28297'
+		},
+		{
+			'name': 'Deepesh Garg',
+			'role': 'Developer',
+			'twitter': 'DeepeshGarg16',
+		},
+		{
+			'name': 'Ketan Desai',
+			'role': 'VP - Channel and Alliance',
+			'linkedin': 'https://in.linkedin.com/in/ketandesai9'
+		},
+		{
+			'name': 'Shivam Mishra',
+			'role': 'Developer and Advocate',
+			'twitter': 'scmmishra'
+		},
+		{
+			'name': 'Anurag Mishra',
+			'role': 'Developer',
+		},
+		{
+			'name': 'Himanshu Warekar',
+			'role': 'Developer',
+			'github': 'himanshu-96'
 		}
 	]
