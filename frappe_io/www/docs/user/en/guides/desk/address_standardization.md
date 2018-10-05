@@ -29,4 +29,8 @@ country -> state -> county -> city -> pincode. So, in the example to insert a ci
 * Care must be taken that the entries in the parent list must already exist higher up in the list in <country_name>.json
 
 * The administrative areas in <country_name>.json  are parsed on system setup 
-* To add custom administrative area later simply go to Desk -> Administrative Area List and Create New Administrative Area  
+* To add custom administrative area later simply go to Desk -> Administrative Area List and Create 
+
+**Sample Address Data Entry**
+
+![address_data_entry](/assets/address_data_entry.gif)
