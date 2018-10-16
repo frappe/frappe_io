@@ -7,7 +7,7 @@ A sales register is a specialized accounting register and it is also a prime ent
 Sales Register can be filtered by Party and a Date Range.
 
 <img  src="/accounting/assets/img/salesregister.png"
-      style="box-shadow: 2px 2px 5px 2px rgba(179,179,179,1);"
+      class="screenshot"
 />
 
 ---

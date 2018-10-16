@@ -9,35 +9,35 @@ To create a new invoice, follow the below steps:
 - Click on the Invoice option from the sidebar in order to get the list view.
 
 <img  src="/accounting/assets/img/invoicelist.png"
-      style="box-shadow: 2px 2px 5px 2px rgba(179,179,179,1);"
+      class="screenshot"
 />
 
 ##### Invoice Form :
 - Click on the new Button, you will get a blank form
 
 <img  src="/accounting/assets/img/invoiceform.png"
-      style="box-shadow: 2px 2px 5px 2px rgba(179,179,179,1);"
+      class="screenshot"
 />
 
 ##### Auto Net Total And Gross Total Calculation :
 - Fill in the details, the Net total and Grand Total will be calculated automatically based on the item, quantity, rate and tax you enter in the table and then click on Save.
 
 <img  src="/accounting/assets/img/newinvoice.png"
-      style="box-shadow: 2px 2px 5px 2px rgba(179,179,179,1);"
+      class="screenshot"
 />
 
 ##### Print Format :
 - After submitting the invoice, you can view the Print Format by clicking on print. You can also export this to pdf format by clicking on the PDF button.
 
 <img  src="/accounting/assets/img/printinvoice.png"
-      style="box-shadow: 2px 2px 5px 2px rgba(179,179,179,1);"
+      class="screenshot"
 />
 
 ##### Ledger Entries :
 - You can also view all the Ledger Entries for a particular submitted invoice by clicking on `Ledger Entries` in Actions dropdown.
 
 <img  src="/accounting/assets/img/invoiceledger.png"
-      style="box-shadow: 2px 2px 5px 2px rgba(179,179,179,1);"
+      class="screenshot"
 />
 
 ---

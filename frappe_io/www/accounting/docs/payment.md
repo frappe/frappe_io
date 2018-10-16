@@ -9,14 +9,14 @@ To create a new payment, follow the below steps:
 - For a submitted Invoice, click on the Actions drop-down, you will see a payment option.
 
 <img  src="/accounting/assets/img/paymentoption.png"
-      style="box-shadow: 2px 2px 5px 2px rgba(179,179,179,1);"
+      class="screenshot"
 />
 
 ##### Payment Modal :
 - By clicking on the payment option, a payment modal will appear in which most of the details will already be fetched from the invoice.
 
 <img  src="/accounting/assets/img/paymentmodal.png"
-      style="box-shadow: 2px 2px 5px 2px rgba(179,179,179,1);"
+      class="screenshot"
 />
 
 ##### Payment Submission :

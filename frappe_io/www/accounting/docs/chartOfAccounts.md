@@ -10,7 +10,7 @@ The Chart Of Accounts is displayed in a Tree format according to the Parent-Chil
 The name of your company is seen at the top of the tree. You can view the children of the root by clicking on it. The children of a particular root can be seen at a greater indentation level than the root.
 
 <img  src="/accounting/assets/img/chartofaccounts.png"
-      style="box-shadow: 2px 2px 5px 2px rgba(179,179,179,1);"
+      class="screenshot"
 />
 
 ---
