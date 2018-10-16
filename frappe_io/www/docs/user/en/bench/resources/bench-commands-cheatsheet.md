@@ -54,6 +54,7 @@
 ###Development
 * `bench new-app [app-name]` Creates a new app 
 * `bench get-app [repo-link]` - Downloads an app from a git repository and installs it
+  * `--branch [branch-name]`    Fetches specific branch of app
 * `bench install-app [app-name]` Installs existing app
 * `bench remove-from-installed-apps [app-name]` Remove app from the list of apps
 * `bench uninstall-app [app-name]` Delete app and everything linked to the app (Bench needs to be running)
