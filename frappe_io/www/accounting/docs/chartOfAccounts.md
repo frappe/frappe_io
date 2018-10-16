@@ -7,8 +7,6 @@ The Chart of Accounts forms the blueprint of your organization. The overall stru
 
 The Chart Of Accounts is displayed in a Tree format according to the Parent-Child relationship among the accounts. You can add/remove any Accounts as you like.
 
-The name of your company is seen at the top of the tree. You can view the children of the root by clicking on it. The children of a particular root can be seen at a greater indentation level than the root.
-
 <img  src="/accounting/assets/img/chartofaccounts.png"
       class="screenshot"
 />

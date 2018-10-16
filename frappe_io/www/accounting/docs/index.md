@@ -6,7 +6,7 @@ Simple desktop accounting software for everyone.
 ---
 
 ## What is Frappe Accounting?
-Frappe Accounting is a simple JavaScript based software designed for business owners to manage their accounting and finances. Frappe Accounting is based on FrappeJS which is inspired by the Frappe Framework. Frappe Accounting works offline, and stores the data in a local file which is portable. It works on all the major operating systems like macOS, Linux and Windows.
+Frappe Accounting is a simple JavaScript based software designed for business owners to manage their accounting and finances. Frappe Accounting is based on [FrappeJS](https://github.com/frappe/frappejs) which is inspired by the Frappe Framework. Frappe Accounting works offline, and stores the data in a local file which is portable. It works on all the major operating systems like macOS, Linux and Windows.
 
 ---
 
@@ -18,8 +18,7 @@ Frappe Accounting is a simple JavaScript based software designed for business ow
 - Taxation
 - Invoicing
 - Payment Handler
-- General ledger Report
-- Sales Register Report
+- Financial Reporting
 
 ---
 
@@ -27,12 +26,12 @@ Frappe Accounting is a simple JavaScript based software designed for business ow
 Download the executable based on your operating systems below.
 
 ##### Frappe Accounting Beta 0.0.2
-- Linux - [frappe-accounting-0.0.2-x86_64.AppImage](https://github.com/frappe/accounting/releases/download/0.0.2/frappe-accounting-0.0.2-x86_64.AppImage)
+- Linux - [Frappe-accounting-0.0.2-x86_64.AppImage](https://github.com/frappe/accounting/releases/download/0.0.2/frappe-accounting-0.0.2-x86_64.AppImage)
 - MacOS - [Frappe.Accounting-0.0.2.dmg](https://github.com/frappe/accounting/releases/download/0.0.2/Frappe.Accounting-0.0.2.dmg)
 - Windows - [Frappe.Accounting.Setup.0.0.2.exe](https://github.com/frappe/accounting/releases/download/0.0.2/Frappe.Accounting.Setup.0.0.2.-.fixed.exe)
 
 ---
 
-## Licence
+## License
 
-GNU General Public Licence v3.0
+GNU General Public License v3.0
