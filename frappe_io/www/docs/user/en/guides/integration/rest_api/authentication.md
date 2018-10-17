@@ -1,11 +1,11 @@
 <!-- add-breadcrumbs -->
-Base URL: https://{your frappe instance}**/api**
+Base URL: https://{your frappe instance}
 
-Example: https://demo.erpnext.com/api
+Example: https://demo.erpnext.com
 
 # Authentication
 
-## POST /method/login
+## POST /api/method/login
 
 Content-Type: application/x-www-form-urlencoded
 
@@ -55,7 +55,7 @@ Error:
 * HTTP Code: 401
 * text/html: Wrong password or username.
 
-## GET /method/logout
+## GET /api/method/logout
 
 Example:
 
@@ -68,7 +68,7 @@ Returns:
 * HTTP Code: 200
 * application/json: `{}`
 
-## GET /method/frappe.auth.get_logged_user
+## GET /api/method/frappe.auth.get_logged_user
 
 Get the ID of the currently authenticated user.
 

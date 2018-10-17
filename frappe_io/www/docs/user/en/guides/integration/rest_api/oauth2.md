@@ -1,14 +1,14 @@
 <!-- add-breadcrumbs -->
 
-Base URL: https://{your frappe instance}**/api**
+Base URL: https://{your frappe instance}
 
-Example: https://demo.erpnext.com/api
+Example: https://demo.erpnext.com
 
 # OAuth2
 
 Use the header `Authorizaton: Bearer <access_token>` to perform authenticated requests. You can receive a [bearer token](https://tools.ietf.org/html/rfc6750) by combining the following two requests.
 
-## POST /method/frappe.integrations.oauth2.authorize
+## POST /api/method/frappe.integrations.oauth2.authorize
 
 Get an authorization code from the user to access ERPNext on his behalf. 
 
@@ -67,7 +67,7 @@ If user clicks 'Deny' you will receive an error:
 `https://{redirect uri}?error=access_denied`
 
 
-## POST /method/frappe.integrations.oauth2.get_token
+## POST /api/method/frappe.integrations.oauth2.get_token
 
 Trade the authorization code (obtained above) for an access token.
 
@@ -115,7 +115,7 @@ Returns:
 ```
 
 
-## POST /method/frappe.integrations.oauth2.revoke_token
+## POST /api/method/frappe.integrations.oauth2.revoke_token
 
 Revoke token endpoint.
 

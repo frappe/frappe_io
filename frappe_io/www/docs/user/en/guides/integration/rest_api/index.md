@@ -4,9 +4,9 @@
 
 Frappe ships with an HTTP API. There are that could be classified into *Remote Procedure Calls* (RPC, call whitelisted methods) and REST (manipulate resources).
 
-The base URL is `https://{your frappe instance}/api`. A request to an endpoint `/method/dotted.path.to.function` will call a whitelisted python function. 
+The base URL is `https://{your frappe instance}`. A request to an endpoint `/api/method/dotted.path.to.function` will call a whitelisted python function. 
 
-GET **/method/sample_app.ping**
+GET **/api/method/sample_app.ping**
 
 Response:
 
@@ -16,26 +16,26 @@ Response:
 }
 ```
 
-All documents in Frappe are available via a RESTful API with prefix `/resource/`. You can perform all CRUD operations on them:
+All documents in Frappe are available via a RESTful API with prefix `/api/resource/`. You can perform all CRUD operations on them:
 
 * Create
 
-	You can create a document by sending a `POST` request to the url, `/resource/{doctype}`.
+	You can create a document by sending a `POST` request to the endpoint, `/api/resource/{doctype}`.
 
 * Read
 
-	You can get a document by its name using the url, `/resource/{doctype}/{name}`
+	You can get a document by its name using the endpoint, `/api/resource/{doctype}/{name}`
 
 * Update
 
-	You can create a document by sending a `PUT` request to the url, `/resource/{doctype}/{name}`. This acts like a `PATCH` HTTP request in which you do not have to send the whole document but only the parts you want to change.
+	You can create a document by sending a `PUT` request to the endpoint, `/api/resource/{doctype}/{name}`. This acts like a `PATCH` HTTP request in which you do not have to send the whole document but only the parts you want to change.
 
 * Delete
 
-	You can delete a document by its name by sending a `DELETE` request to the url, `/resource/{doctype}/{name}`.
+	You can delete a document by its name by sending a `DELETE` request to the endpoint, `/api/resource/{doctype}/{name}`.
 
 # Table of Contents
 
-{{index}}
+{index}
 
 Authors: Rushabh Mehta (rushabh@erpnext.com), Raffael Meyer (raffael@alyf.de)

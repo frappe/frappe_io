@@ -1,6 +1,6 @@
-Base URL: https://{your frappe instance}**/api**
+Base URL: https://{your frappe instance}
 
-Example: https://demo.erpnext.com/api
+Example: https://demo.erpnext.com
 
 # Manipulating DocTypes
 
@@ -10,7 +10,7 @@ A DocumentName is the unique ID of a Document, for example: CUST-00001, EMP-0000
 
 Authentication is missing in the following examples. See [Basic Authentication] and [OAuth2] for more.
 
-## GET /resource/{DocType}
+## GET /api/resource/{DocType}
 
 Get a list of documents of this DocType.
 
@@ -59,7 +59,7 @@ Returns:
 	}
 ```
 
-## POST /resource/{DocType}
+## POST /api/resource/{DocType}
 
 Create a new document of this DocType.
 
@@ -84,7 +84,7 @@ curl -X POST https://{your frappe instance}/api/resource/Lead \
      -d '{"lead_name":"Mustermann"}'
 ```
 
-## GET /resource/{DocType}/{DocumentName}
+## GET /api/resource/{DocType}/{DocumentName}
 
 Retrieve a specific document by name (ID).
 
@@ -106,7 +106,7 @@ Example:
 curl -X GET https://{your frappe instance}/api/resource/Customer/CUST-00001
 ```
 
-## PUT /resource/{DocType}/{DocumentName}
+## PUT /api/resource/{DocType}/{DocumentName}
 
 Update a specific document. This acts like a `PATCH` HTTP request in which you do not have to send the whole document but only the parts you want to change.
 
@@ -148,7 +148,7 @@ Returns:
 }
 ```
 
-## DELETE /resource/{DocType}/{DocumentName}
+## DELETE /api/resource/{DocType}/{DocumentName}
 
 Params (in path):
 
