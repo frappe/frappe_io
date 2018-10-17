@@ -30,7 +30,7 @@ Here we can point to a Python function and that function will be executed every 
 
 	from __future__ import unicode_literals
 	import frappe
-	from frappe.utils import datediff, nowdate, format_date, add_days
+	from frappe.utils import date_diff, nowdate, format_date, add_days
 	
 	def every_ten_minutes():
 		# stuff to do every 10 minutes
@@ -78,7 +78,7 @@ Here we can point to a Python function and that function will be executed every 
 				continue
 
 			if d.transaction_type=="Issue" and \
-				datediff(today, d.transaction_date) > loan_period:
+				date_diff(today, d.transaction_date) > loan_period:
 				overdue_by_member.setdefault(d.library_member, [])
 				overdue_by_member[d.library_member].append(d)
 

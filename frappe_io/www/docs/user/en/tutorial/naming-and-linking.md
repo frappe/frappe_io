@@ -27,13 +27,13 @@ This can be set by entering the **Autoname** field. For controller, leave blank.
 
 Foreign keys are specified in Frappe as **Link** type fields. The target DocType must be mentioned in the Options text area.
 
-In our example, in the Library Transaction DocType, we have to link both the Library Member and the Article.
+In our example, in the Library Transaction DocType (shown in the Complete the Models section) below, we have to link both the Library Member and the Article.
 
 **Note:** Remeber that Link fields are not automatically set as Foreign Keys in the MariaDB database, because that will implicitly index the column. This may not be optimum hence the Foreign Key validation is done by the Framework.
 
 <img class="screenshot" alt="Link Field" src="/docs/assets/img/link_field.png">
 
-For select fields, as we mentioned earlier, add the various options in the **Options** input box, each option on a new row.
+For select fields, as we did when creating the Article DocType, add the various options in the **Options** input box, each option on a new row. This time we use the DocType as the option.
 
 <img class="screenshot" alt="Select Field" src="/docs/assets/img/select_field.png">
 
