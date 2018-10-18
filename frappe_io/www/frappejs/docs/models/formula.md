@@ -37,7 +37,7 @@ In child tables, both the parent and the child records are passed.
 {
     fieldname: "amount",
     fieldtype: "Float",
-    formula: (doc, row) => row.qty * row.rate
+    formula: (row, doc) => row.qty * row.rate
 }
 ```
 
@@ -62,4 +62,4 @@ You can use the `getFrom` function to fetch values from another document.
 
 ### Async:
 
-Forumlas are evaluated as promises, so you can either directly pass a value or a `Promise`.
+Formulas are evaluated as promises, so you can either directly return a value or a `Promise`.

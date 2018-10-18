@@ -4,74 +4,130 @@ Fields are properties a the document instance that are defined in its DocType.
 
 ## Field Types:
 
-- <h3>Data:</h3>
+##### Data:
 
-    Small, single line text (140 chars).
+Small, single line text (140 chars).
 
-- <h3>Text:</h3>
+```js
+{
+    fieldtype: "Data",
+    fieldname: "firstName",
+    label: "First Name"
+}
+```
 
-    Long multi-line text.
+##### Text:
 
-- <h3>Int:</h3>
+Long multi-line text.
 
-    Integer.
+```js
+{
+    fieldtype: "Text",
+    fieldname: "description",
+    label: "Description"
+}
+```
 
-- <h3>Float:</h3>
+##### Int:
 
-    Number.
+Integer.
 
-- <h3>Currency:</h3>
+```js
+{
+    fieldtype: "Int",
+    fieldname: "noOfDays",
+    label: "No of Days"
+}
+```
 
-    Number with currency.
+##### Float:
 
-- <h3>Code:</h3>
+Number.
 
-    Code string (like Text but monospaced).
+```js
+{
+    fieldtype: "Float",
+    fieldname: "length",
+    label: "Length"
+}
+```
 
-- <h3>Date:</h3>
+##### Currency:
 
-    Date (formatted by [SystemSettings.dateFormat](/frappejs/docs/utilities/system-settings.md)).
+Number with currency.
 
-- <h3>Select:</h3>
+```js
+{
+    fieldtype: "Currency",
+    fieldname: "amount",
+    label: "Amount"
+}
+```
 
-    Dropdown with fixed options. Options must be set in the `options` property.
+##### Code:
 
-    ```
-    {
-        fieldtype: "Select",
-        fieldname: "status",
-        label: "Status",
-        options: [
-            "Open",
-            "Closed",
-            "Pending"
-        ]
+Code string (like Text but monospaced).
 
-    }
-    ```
+```js
+{
+    fieldtype: "Code",
+    fieldname: "htmlTemplate",
+    label: "HTML Template"
+}
+```
 
-- <h3>Link:</h3>
+##### Date:
 
-    Reference to another document set by `target`.
+Date (formatted by [SystemSettings.dateFormat](/frappejs/docs/utilities/system-settings.md)).
 
-    ```
-    {
-        fieldtype: "Link",
-        fieldname: "customer",
-        label: "Customer",
-        target: "Customer"
-    }
-    ```
+```js
+{
+    fieldtype: "Date",
+    fieldname: "startDate",
+    label: "Start Date"
+}
+```
 
-- <h3>Table:</h3>
+##### Select:
 
-    Property with child documents, the type of children is defined by `childtype` property.
+Dropdown with fixed options. Options must be set in the `options` property.
 
-    ```
-    {
-        fieldtype: "Table",
-        fieldname: "items",
-        label: "Items",
-        target: "InvoiceItem"
-    }
-    ```
+```
+{
+    fieldtype: "Select",
+    fieldname: "status",
+    label: "Status",
+    options: [
+        "Open",
+        "Closed",
+        "Pending"
+    ]
+
+}
+```
+
+##### Link:
+
+Reference to another document set by `target`.
+
+```
+{
+    fieldtype: "Link",
+    fieldname: "customer",
+    label: "Customer",
+    target: "Customer"
+}
+```
+
+##### Table:
+
+Property with child documents, the type of children is defined by `childtype` property.
+
+```
+{
+    fieldtype: "Table",
+    fieldname: "items",
+    label: "Items",
+    childtype: "InvoiceItem"
+}
+```

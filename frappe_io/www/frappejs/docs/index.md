@@ -1,6 +1,7 @@
 # Frappe.js
 
 Frappe.js is a meta-data driven framework that enables rapid application development of Node.js and Electron based applications.
+
 ## Contents
 
 - [Making a new App](/frappejs/docs/app.md)
@@ -33,4 +34,3 @@ Frappe.js is a meta-data driven framework that enables rapid application develop
 - [Backends](/frappejs/docs/server/backends.md)
 - [Errors](/frappejs/docs/errors.md)
 - [Testing](/frappejs/docs/testing.md)
-- [Command Line Tools](/frappejs/docs/cli.md)

@@ -10,7 +10,7 @@ You can directly access documents at `/api/resource/:doctype`.
 
 	##### Example:
 
-	- URL: `/api/resource/todo.`
+	- URL: `/api/resource/ToDo.`
 	- Method: `POST`.
 
 	##### Data:
@@ -29,7 +29,7 @@ You can directly access documents at `/api/resource/:doctype`.
 
 	##### Example:
 
-	- URL: `/api/resource/todo/uig7d1v12`.
+	- URL: `/api/resource/ToDo/uig7d1v12`.
 
 	##### Response:
 
@@ -57,7 +57,7 @@ You can directly access documents at `/api/resource/:doctype`.
 
 	##### Example:
 
-	- URL: `/api/resource/todo`.
+	- URL: `/api/resource/ToDo`.
 
 	##### Response:
 

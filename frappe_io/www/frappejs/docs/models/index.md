@@ -2,7 +2,7 @@
 
 Models are declared by adding a `.js` model file in the `models/doctype` folder of the module/app.
 
-Note: A model is called `DocType` in Frappe.js.
+> Note: A model is called `DocType` in Frappe.js.
 
 ### Fields:
 

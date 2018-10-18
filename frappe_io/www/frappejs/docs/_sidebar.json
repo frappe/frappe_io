@@ -1,7 +1,7 @@
 [
     {
         "route": "/frappejs/docs",
-        "title": "Quick Start"
+        "title": "Home"
     },
     {
         "route": "/frappejs/docs/app.md",
@@ -38,9 +38,5 @@
     {
         "route": "/frappejs/docs/testing.md",
         "title": "Testing"
-    },
-    {
-        "route": "/frappejs/docs/cli.md",
-        "title": "Command Line Tool"
     }
 ]

@@ -5,8 +5,8 @@ Metadata are first class objects in Frappe.js. You can get a metadata object by 
 ##### Example:
 
 ```js
-let todo_meta = frappe.getMeta('ToDo');
+let todoMeta = frappe.getMeta('ToDo');
 
 // get all fields of type "Data"
-let data_fields = todo_meta.fields.map(d => d.fieldtype=='Data' ? d : null);
+let dataFields = todoMeta.getFieldsWith({ fieldtype: 'Data' })
 ```

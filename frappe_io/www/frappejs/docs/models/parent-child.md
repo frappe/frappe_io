@@ -18,7 +18,8 @@ A sample parent-child records looks like this:
             qty: 1,
             rate: 300,
             amount: 300
-        },{
+        },
+        {
             item: "Invisibility Cloak",
             qty: 1,
             rate: 3000,

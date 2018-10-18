@@ -9,11 +9,12 @@ A number series is used to maintain a series for numbering documents (like invoi
 
 #### API:
 
-You can get the next number in the series by using the utiltiy function.
+You can get the next number in the series by using the utility function.
 
 ```js
-const model = require("frappejs/model")
-let nextValue = model.getSeriesNext("INV-");
+const naming = require("frappejs/model/naming")
+let nextValue = naming.getSeriesNext("INV-");
+// INV-1002
 ```
 
 #### Setting naming series in a document:

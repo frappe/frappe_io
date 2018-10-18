@@ -1,6 +1,6 @@
 # Observable Base Class
 
-The `Observable` base class makes and subclass trigger events and accept event listeners.
+The `Observable` base class makes and subclass trigger events and accept event listeners. It is similar to an EventEmitter.
 
 ##### Example:
 

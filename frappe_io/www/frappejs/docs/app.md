@@ -21,6 +21,8 @@ module.exports = {
     entry: {
       app: './src/main.js'
     },
+    entryHtml: './src/index.html',
+    srcDir: './src',
     outputDir: './dist',
     assetsPublicPath: '/',
     devServerPort: 8000,
@@ -32,9 +34,6 @@ module.exports = {
     paths: {
       main: 'server/index.js' // your server entry file
     }
-  },
-  electron: {
-    // wip
   }
 }
 
@@ -107,3 +106,18 @@ To start the server and build webpack simultaneously you can use the cli command
 ```bash
 ./node_modules/.bin/frappe start
 ```
+
+To make it even simpler, add this to your `package.json`
+
+
+```json
+{
+  ...
+  "scripts": {
+    "start": "frappe start"
+  }
+  ...
+}
+```
+
+Then, you can just do `yarn start`

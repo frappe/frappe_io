@@ -1,6 +1,6 @@
 # Single Documents
 
-Single doctypes have only one instance. They are useful for using DocTypes as views or for settings.
+Single doctypes have only one instance. They are useful for storing DocType settings.
 
 To make a Single DocType, set the `isSingle` property as true.
 

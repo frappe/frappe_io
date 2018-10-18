@@ -1,6 +1,6 @@
 # Server
 
-The framework comes bundles with an `express.js` web server with pre-built backends, [REST API](/frappejs/docs/server/rest.md) and ORM.
+The framework comes bundles with an `express.js` web server with pre-built backends, [REST API](rest.md) and ORM.
 
 ##### Example:
 
@@ -8,10 +8,10 @@ The framework comes bundles with an `express.js` web server with pre-built backe
 const server = require('frappejs/frappe/server');
 
 server.start({
-	backend: 'sqllite',
-	connection_params: {db_path: 'test.db'},
-	static: './',
-	port: 8000
+	backend: 'sqlite',
+	connectionParams: {
+		db_path: 'test.db'
+	}
 });
 ```
 
