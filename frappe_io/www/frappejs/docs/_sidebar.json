@@ -1,0 +1,46 @@
+[
+    {
+        "route": "/frappejs/docs",
+        "title": "Quick Start"
+    },
+    {
+        "route": "/frappejs/docs/app.md",
+        "title": "Making New App"
+    },
+    {
+        "route": "/frappejs/docs/models.md",
+        "title": "Models"
+    },
+    {
+        "route": "/frappejs/docs/document.md",
+        "title": "Documents"
+    },
+    {
+        "route": "/frappejs/docs/server/index.md",
+        "title": "Server"
+    },
+    {
+        "route": "/frappejs/docs/client/index.md",
+        "title": "UI"
+    },
+    {
+        "route": "/frappejs/docs/util.md",
+        "title": "Utilities"
+    },
+    {
+        "route": "/frappejs/docs/server/backends.md",
+        "title": "Backends"
+    },
+    {
+        "route": "/frappejs/docs/errors.md",
+        "title": "Errors"
+    },
+    {
+        "route": "/frappejs/docs/testing.md",
+        "title": "Testing"
+    },
+    {
+        "route": "/frappejs/docs/cli.md",
+        "title": "Command Line Tool"
+    }
+]
