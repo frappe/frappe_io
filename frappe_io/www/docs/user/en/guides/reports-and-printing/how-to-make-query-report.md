@@ -31,7 +31,7 @@ You can define complex queries such as:
 	  `tabProduction Order`
 	WHERE
 	  `tabProduction Order`.docstatus=1
-	  AND ifnull(`tabProduction Order`.produced_qty,0) &lt; `tabProduction Order`.qty
+	  AND ifnull(`tabProduction Order`.produced_qty,0) = `tabProduction Order`.qty
 	  AND EXISTS (SELECT name from `tabStock Entry` where production_order =`tabProduction Order`.name)
 
 1. To format the columns, set labels for each column in the format: [Label]:[Field Type]/[Options]:[Width]
