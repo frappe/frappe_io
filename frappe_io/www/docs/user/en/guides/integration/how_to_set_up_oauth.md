@@ -56,3 +56,5 @@ To add a client fill in the following details
 ## Using oAuth
 
 Please refer to the API documentation to learn how to use oAuth in you application.
+
+{next}

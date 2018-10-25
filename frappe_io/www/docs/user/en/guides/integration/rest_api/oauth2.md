@@ -135,6 +135,8 @@ Returns:
 
 ## Further Reading
 
+Please check `Guides / Integration / How To Set Up Oauth` to see how to create a new oAuth2 client.
+
 * [Content-Type Header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Type),
 * [Authorization Header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Authorization),
 * [oAuth2 Specification](https://tools.ietf.org/html/rfc6749),

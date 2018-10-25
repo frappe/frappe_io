@@ -3,7 +3,7 @@ Base URL: https://{your frappe instance}
 
 Example: https://demo.erpnext.com
 
-# Authentication
+# Simple Authentication
 
 ## POST /api/method/login
 
