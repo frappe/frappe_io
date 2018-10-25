@@ -1,4 +1,5 @@
-authentication
+token_auth
+simple_authentication
 oauth2
 manipulating_documents
 listing_documents
