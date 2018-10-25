@@ -16,4 +16,5 @@ reports
 web-views
 single-doctypes
 task-runner
+erpnext-technical-training-tutorials
 conclusion
