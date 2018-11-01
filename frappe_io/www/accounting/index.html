@@ -8,12 +8,12 @@
 
     {% macro card(title, body, link) %}
     <div class="col-sm mb-4">
-        <div class="card h-100" target="_blank">
+        <a href="{{ link }}" class="card h-100">
           <div class="card-body">
             <h5>{{ title }}</h5>
             <div class="card-text">{{ body }}</div>
           </div>
-        </div>
+        </a>
     </div>
     {% endmacro %}
 
@@ -25,21 +25,21 @@
                     card(
                         "Chart of Accounts",
                         "Standard Chart of Accounts bootstrapped for each country and ability to customize it.",
-                        "/frappejs/docs/models"
+                        "/accounting/docs/chartOfAccounts"
                     )
                 }}
                 {{
                     card(
                         "Party Management",
                         "Manage your parties as customers or suppliers.",
-                        "/frappejs/docs/ui-components"
+                        "/accounting/docs/party"
                     )
                 }}
                 {{
                     card(
-                        "Item Master",
+                        "Item Management",
                         "Manage your company's product or services that your offer customers.",
-                        "/frappejs/docs/backend"
+                        "/accounting/docs/item"
                     )
                 }}
             </div>
@@ -49,21 +49,21 @@
                     card(
                         "Taxes",
                         "Setup tax templates for flexible taxation in your transactions.",
-                        "/frappejs/docs/isomorphic"
+                        "/accounting/docs/tax"
                     )
                 }}
                 {{
                     card(
                         "Invoicing & Payments",
                         "Simple invoicing to generate/print bills for your customers.",
-                        "/frappejs/docs/rest-api"
+                        "/accounting/docs/invoice"
                     )
                 }}
                 {{
                     card(
                         "Financial Reports",
                         "Get reports like General Ledger and Financial Statements out-of-the-box.",
-                        "/frappejs/docs/file-handling"
+                        "/accounting/docs/generalLedger"
                     )
                 }}
             </div>
