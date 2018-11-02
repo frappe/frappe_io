@@ -48,6 +48,7 @@ To connect to a remote database server using ssl, you must first configure the d
 - `developer_mode`: If developer mode is set, DocType changes are automatically updated in files.
 - `disable_website_cache`: Don't cache website pages.
 - `logging`: writes logs if **1**, writes queries also if set to **2**.
+- `disable_async`: Disables socket.io client, client stops polling the socket.io server
 
 ### Others
 
