@@ -15,6 +15,8 @@ After setting developer mode, clear the cache:
 
 	$ bench clear-cache
 
-To view the full developer options, you must be logged in as the "Administrator" user.
+To view the full developer options, you must be logged in as the "Administrator" user. You also will need to enable the Developer icon in your desktop settings:
+
+	Desk -> User dropdown list -> Set Desktop Icons -> check "Developer"
 
 <!-- markdown -->
