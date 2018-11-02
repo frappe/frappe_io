@@ -3,7 +3,7 @@
 
 A project often undergoes changes related to database schema during course of
 its life. It may also be required patch existing data. Frappe bundles tools to
-handle these schenarios.
+handle these scenarios.
 
 When you pull updates from any Frappe app (including Frappe), you should run
 `bench migrate` to apply schema changes and data migrations if any.
