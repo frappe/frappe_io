@@ -6,7 +6,7 @@ Simple desktop accounting software for everyone.
 ---
 
 ## What is Frappe Accounting?
-Frappe Accounting is a simple JavaScript based software designed for business owners to manage their accounting and finances. Frappe Accounting is based on [FrappeJS](https://github.com/frappe/frappejs) which is inspired by the Frappe Framework. Frappe Accounting works offline, and stores the data in a local file which is portable. It works on all the major operating systems like macOS, Linux and Windows.
+Frappe Accounting is a simple JavaScript based software designed for business owners to manage their accounting and finances. Frappe Accounting is based on [FrappeJS](/frappejs/) which is inspired by the Frappe Framework. Frappe Accounting works offline, and stores the data in a local file which is portable. It works on all the major operating systems like macOS, Linux and Windows.
 
 ---
 
