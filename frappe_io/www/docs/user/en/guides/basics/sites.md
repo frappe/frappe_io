@@ -4,7 +4,7 @@
 ## Sites Directory
 
 Frappe is a multitenant platform and each tenant is called a site. Sites exist
-in a directory called `sites_dir`, assumed as the current working directory when
+in a directory called `sites`, assumed as the current working directory when
 running a frappe command or other services like Celery worker or a WSGI server.
 
 You can set `sites_dir` with an environment variable `SITES_DIR` or pass
@@ -80,4 +80,14 @@ starting it with the following command.
 
 ### Adding a new site
 
+To add a new site, execute the following command in your bench instance:
+
 `bench new-site SITENAME`
+
+### Set a site as the current site
+
+To force a site to be used as the default site, execute the following:
+
+`bench use SITENAME`
+
+To make sure, check the contents of `currentsite.txt` (found in the `sites` folder of your bench instance) and it should have SITENAME.

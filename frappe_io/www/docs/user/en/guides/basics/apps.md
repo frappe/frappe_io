@@ -9,7 +9,7 @@ and must have an entry in the `apps.txt` file.
 
 ### Creating an app
 
-Frappe ships with a boiler plate for a new app. The command `bench make-app
+Frappe ships with a boiler plate for a new app. The command `bench new-app
 app-name` helps you start a new app by starting an interactive shell.
 
 

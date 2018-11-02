@@ -237,7 +237,7 @@ Eg,
 
 	doc_events = {
 		"Cab Request": {
-			"after_insert": topcab.schedule_cab",
+			"after_insert": "topcab.schedule_cab",
 		}
 	}
 
