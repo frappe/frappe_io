@@ -10,6 +10,8 @@ app_color = "grey"
 app_email = "info@frappe.io"
 app_version = "0.0.1"
 
+hide_in_installer = True
+
 # not required for in-app help
 # required_apps = ["frappe_theme"]
 
