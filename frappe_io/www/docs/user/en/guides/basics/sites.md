@@ -80,7 +80,7 @@ starting it with the following command.
 
 ### Adding a new site
 
-To add a new site, execute the following command in your bench instance :
+To add a new site, execute the following command in your bench instance:
 
 `bench new-site SITENAME`
 
