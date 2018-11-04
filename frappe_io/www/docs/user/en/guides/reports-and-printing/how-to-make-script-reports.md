@@ -43,10 +43,47 @@ You can add filters in the `.js`. See an example below:
 In the `.py` file you can add the script for generating the report.
 
 1. In the `execute` method, two lists `columns` and `data` are returned
-2. Columns must be a list of labels in the same format as query report. **[Label]:[Field Type]/[Options]:[Width]**. For example `Item:Link/Item:150`
+2. Columns must be a list of dictionaries containing fields like fieldname, label, fieldtype, options,width. For example:
+
+```
+columns = [{
+	"fieldname": "account",
+	"label": _("Account"),
+	"fieldtype": "Link",
+	"options": "Account",
+	"width": 300
+},
+{
+	"fieldname": "currency",
+	"label": _("Currency"),
+	"fieldtype": "Link",
+	"options": "Currency",
+}]
+```
+
 3. You can use all server side modules to build your report.
 4. For example see existing reports. ([Balance Sheet](https://github.com/frappe/erpnext/blob/develop/erpnext/accounts/report/balance_sheet/balance_sheet.py))
 
-### 4. Commit and Push the app
+### 4. Add link for your report on the module page 
+
+<img class="screenshot" alt="Module Page" src="/docs/assets/img/script-report-1.png">
+
+1. In the module folder (for example if it is Accounts in ERPnext the folder will be `erpnext/config/accounts.py`) you will see labels and items for various sections. The new report can be added in the item list as show in the example:
+
+```
+def get_data():
+	return [{
+			"label": _("Accounting Statements"),
+			"items": [
+				{
+					"type": "report",
+					"name": "Balance Sheet",
+					"doctype": "GL Entry",
+					"is_query_report": True
+				}]
+		}]
+```
+
+### 5. Commit and Push the app
 
 Don't forget to commit and push your app.
