@@ -26,7 +26,7 @@ Let's build a ToDo app in Frappe, but wait, it already exists in Frappe! (hint: 
 
 The official documentation covers everything you need to know about the Frappe Framework.
 
-[Read the docs](/new-docs/documentation) →
+[Read the docs](/new-docs/documentation/concepts) →
 
 ## Join the community
 

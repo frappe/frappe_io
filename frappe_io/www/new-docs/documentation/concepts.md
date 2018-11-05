@@ -7,6 +7,7 @@
 1. [Controllers](#controllers)
     - [Controller Methods](#controller-methods)
     - [Controller Hooks](#controller-hooks)
+1. [DocType Relationships](#doctype-relationships)
 1. Child DocType
 1. Single DocType
 1. Routing
@@ -15,10 +16,22 @@
 
 ## DocType
 
-A DocType is the single source of information about data in your system. It contains what fields are stored in the database.
-It is essentially the **model** in your system. It directly maps to a single database table.
+A DocType is the core building block of any application based on the Frappe Framework.
+It describes the **Model** and the **View** of your data.
+It contains what fields are stored for your data, and how they behave with respect to each other.
+It contains information about how your data is named.
+It also enables rich **Object Relational Mapper (ORM)** pattern which we will discuss later in this guide.
+When you create a DocType, a JSON object is created which in turn creates a database table.
 
-> As a convention tables are prefixed with `tab`. So the table name for **ToDo** doctype is `tabToDo`.
+> ORM is just an easy way to read, write and update data in a database without writing explicit SQL statements.
+
+**Conventions**
+
+To enable rapid application development, Frappe Framework follows some standard conventions.
+
+1. DocType is always singular. If you want to store a list of articles in the database, you should name the doctype **Article**.
+1. Table names are prefixed with `tab`. So the table name for **Article** doctype is `tabArticle`.
+
 
 The standard way to create a DocType is by typing *new doctype* in the search bar in the **Desk**.
 
@@ -37,6 +50,10 @@ Similarly, you get a Form View at the route `/desk#Form/ToDo/000001`. The Form i
 
 ![ToDo Form](/new-docs/assets/doctype/todo_form.png)
 *ToDo Form*
+
+## Module
+
+`DocType`s belong to a module, to enable easier grouping of related models for a domain. For example
 
 ## DocField
 
