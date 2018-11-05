@@ -74,13 +74,12 @@ columns = [{
 def get_data():
 	return [{
 			"label": _("Accounting Statements"),
-			"items": [
-				{
-					"type": "report",
-					"name": "Balance Sheet",
-					"doctype": "GL Entry",
-					"is_query_report": True
-				}]
+			"items": [{
+				"type": "report",
+				"name": "Balance Sheet",
+				"doctype": "GL Entry",
+				"is_query_report": True
+			}]
 		}]
 ```
 
