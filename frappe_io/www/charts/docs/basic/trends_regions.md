@@ -3,7 +3,7 @@ An area chart is derived from a line chart, by marking the area between the X ax
 
 ```js
 lineOptions: {
-	areaFill: 1 // default: 0
+	regionFill: 1 // default: 0
 },
 ```
 <project-demo data="1"
@@ -12,7 +12,7 @@ lineOptions: {
 		height: 240,
 		colors: ['violet'],
 		lineOptions: {
-			areaFill: 1
+			regionFill: 1
 		},
 	}">
 </project-demo>
