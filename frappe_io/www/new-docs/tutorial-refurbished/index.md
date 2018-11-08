@@ -394,4 +394,36 @@ As you can see, along with the DocFields, several standard columns have also bee
 - `owner`: User who created the record
 - `docstatus`: Document Status(docstatus) is a standard field in all doctypes (0 - draft, 1 - submitted, 2- cancelled).0 is set to be default.
 
+## Naming and linking
+### Naming Doctype:
+
+The Docs on frappe have there name which act as the primary key for the doctype. So, the next step is to naming the doctype.
+
+In frappe, the Doctype can be named in different ways:
+- Based on feild: The Doc can be named by it's own feildname. ex: `field:member_name`
+- Based on series: The Doc can be also named in auto-incrementing number series. ex: `MEM.#####`
+- Using format: This is the way to create your own naming scheme. ex:`MEM-{member_name}-{last_name}-{#####}` 
+- prompt: The is required to fill manually. 
+
+So, Now let us create the other DocType **Library Member** and save it too with following feilds:
+
+1. First Name
+    - Type: Data
+2. Last name
+    - Type: Data
+3. Email Address
+    - Type: Data
+4. Phone
+    - Type: Int
+5. Addresss
+    - Type: Data
+
+The name of the Doctype can be set by using the one of above method by entering in the Autoname field. In this case the name is based on series.
+
+fill the feild **Autoname** as `MEM.######`.
+
+### Linking Doctype.
+ In frappe, the Link type is specified as the Foreign key for to doctypes tom link each other. The target doctype should be mention in Options text area.  
+
+
 We will discuss other fields later in the tutorial.
