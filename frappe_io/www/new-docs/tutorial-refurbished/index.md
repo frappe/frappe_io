@@ -400,7 +400,7 @@ As you can see, along with the DocFields, several standard columns have also bee
 The Docs on frappe have there name which act as the primary key for the doctype. So, the next step is to naming the doctype.
 
 In frappe, the Doctype can be named in different ways:
-- Based on feild: The Doc can be named by it's own feildname. ex: `field:member_name`
+- Based on field: The Doc can be named by it's own feildname. ex: `field:member_name`
 - Based on series: The Doc can be also named in auto-incrementing number series. ex: `MEM.#####`
 - Using format: This is the way to create your own naming scheme. ex:`MEM-{member_name}-{last_name}-{#####}` 
 - prompt: The is required to fill manually. 
@@ -420,10 +420,18 @@ So, Now let us create the other DocType **Library Member** and save it too with 
 
 The name of the Doctype can be set by using the one of above method by entering in the Autoname field. In this case the name is based on series.
 
-fill the feild **Autoname** as `MEM.######`.
+fill the field **Autoname** as `MEM.######`.
 
-### Linking Doctype.
- In frappe, the Link type is specified as the Foreign key for to doctypes tom link each other. The target doctype should be mention in Options text area.  
+### Linking Doctype:
+ In frappe, the Link type is specified as the Foreign key for to doctypes tom link each other. The target doctype should be mention in Options text area.
+ 
+ Similarly complete making the other Doctypes.
+
+### Linked Values:
+A standard pattern is when you select Library Member in Library Membership, then the Member's first and last names should be copied into relevant fields in the Library Membership Transaction.
+ For this, first we have to set the fields as read only,now we have to set the the name of the link and the fieldname of the property we want to fetch. For this example in Member First Name we can set it by setting the Options text area to library_member.first_name
+
+
 
 
 We will discuss other fields later in the tutorial.
