@@ -2,7 +2,7 @@
 <section class='top-section'>
 	<h1>Bench Manager</h1>
 	<p class='lead'>
-		Bench Manager is a graphical user interface to emulate the functionalities of Frappé Bench. Like the command line utility it helps you install apps, manage multiple sites, update apps and much more.
+		Bench Manager is a graphical user interface to emulate the functionalities of Frappe Bench. Like the command line utility it helps you install apps, manage multiple sites, update apps and much more.
 	</p>
 	<img src="https://raw.githubusercontent.com/wiki/frappe/bench_manager/images/fa-gamepad.svg?sanitize=true" width="250">
 </section>
@@ -10,7 +10,7 @@
 
 ## Installation
 
-Create a new site called bench-manager.local and install Bench Manager on the site. 
+Create a new site called bench-manager.local and install Bench Manager on the site.
 
 ```
 $ bench new-site bench-manager.local
@@ -35,13 +35,13 @@ $ bench update
 
 #### App Catalogue
 
-There are 5 main doctypes associated with this app. 
+There are 5 main doctypes associated with this app.
 
-1. [Bench Settings](docs/bench-settings)
-2. [Site](docs/site)
-3. [Site Backup](docs/site-backup)
-4. [Bench Manager Command](docs/bench-manager-command)
-5. [App](docs/app)
+1. [Bench Settings](/bench-manager/docs/bench-settings)
+2. [Site](/bench-manager/docs/site)
+3. [Site Backup](/bench-manager/docs/site-backup)
+4. [Bench Manager Command](/bench-manager/docs/bench-manager-command)
+5. [App](/bench-manager/docs/app)
 
 #### License
 

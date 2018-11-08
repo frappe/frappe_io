@@ -1,18 +1,16 @@
 {% extends "templates/base.html" %}
 {% block title %}Frappe: Frameworks + Apps{% endblock %}
 {% block content %}
-<section class='section-padding splash'
-	style='background-image: url(/assets/frappe_io/images/landing-pages/mumbai.png)'>
-</section>
-<section class="top-section after-splash">
+<!-- <section class='section-padding splash'
+	style='background-image: url(/assets/frappe_io/images/landing-pages/get-doc.png)'>
+</section> -->
+<section class="top-section">
 	<div class='container'>
 	<h1>Frameworks + Apps</h1>
 	<p class='lead'>We are a Mumbai based software engineering company that builds open source frameworks, applications and libraries.</p>
-	</div>
-</section>
 
 {% macro card(title, body, btnlabel, btnlink, badges) %}
-<div class="col-sm mb-4">
+<div class="col-sm mb-4 text-left">
 	<a href="{{ btnlink }}" class="card h-100">
 	  <div class="card-body">
 		<h5>{{ title }}</h5>
@@ -22,10 +20,6 @@
 	</a>
 </div>
 {% endmacro %}
-<section class="section-padding section-bg">
-	<div class='container'>
-		<h2 class='text-center'>Built for the Web</h2>
-		<p class='lead text-center'>Here are some of our best loved frameworks and applications</p>
 	<div class="row mt-5">
 		{{ card(
 			"ERPNext",
@@ -77,10 +71,39 @@
 			["Lib", "JS"]
 		) }}
 	</div>
+	<div class="row">
+		{{
+			card(
+				"FrappeJS",
+				"Node + Electron + Vue based metadata web framework with admin interface. ",
+				"ERPNext.com",
+				"/frappejs",
+				["Framework", "JS"]
+			)
+		}}
+		{{
+			card(
+				"Accounting",
+				"Offline Accounting software for everyone, with Invoicing, Payments and Reports.",
+				"ERPNext.com",
+				"/accounting",
+				["App", "JS"]
+			)
+		}}
+		{{
+			card(
+				"Marketplace",
+				"Free platform to publish items and get discovered by users on the marketplace",
+				"ERPNext.com",
+				"/marketplace",
+				["App", "Python"]
+			)
+		}}
+	</div>
 	</div>
 
 </section>
-<section class='section-padding text-center'>
+<section class='section-padding text-center section-bg'>
 	<div class='container'>
 		<h3>A Community, Not Just a Company</h3>
 		<p class='lead'>At Frappe, we are true believers of Open Source and actively work with communities to share our knowledge.</p>

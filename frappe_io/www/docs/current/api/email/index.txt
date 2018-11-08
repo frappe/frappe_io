@@ -1,7 +1,0 @@
-frappe.email.inbox
-frappe.email.test_email_body
-frappe.email.email_body
-frappe.email.receive
-frappe.email.queue
-frappe.email.smtp
-frappe.email

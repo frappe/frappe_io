@@ -1,2 +1,0 @@
-frappe.core.web_form.edit_profile.edit_profile
-frappe.core.web_form.edit_profile

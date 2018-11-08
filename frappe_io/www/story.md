@@ -29,7 +29,7 @@ Another key aspect of the industry is that users would need an IT consulting com
 
 ### The business of open source
 
-Anyone who knows this space knows that there are is a big divide in the community. The free software proponents and then the commercial open source ones. Our focus has always been to stay clear of this debate, and we believe both are right in their own way. The commericial players feel we are too open source: we do not have paid modules and we have made deployment ridiculously easy. The free software proponents feel suspicious of anything commercial.
+Anyone who knows this space knows that there is a big divide in the community. The free software proponents and then the commercial open source ones. Our focus has always been to stay clear of this debate, and we believe both are right in their own way. The commericial players feel we are too open source: we do not have paid modules and we have made deployment ridiculously easy. The free software proponents feel suspicious of anything commercial.
 
 What helps us is that we have decided to monetize only from our hosting services. We also offer support to developer teams, but we do not make any money from implementation, deployment, or customization. This helps to keep our objectives clear and makes it very easy for the community to use the product and also participate. Another thing that helps is that we are a very small team and do not plan for very quick growth. This helps us not put pressure to monetize from the community.
 

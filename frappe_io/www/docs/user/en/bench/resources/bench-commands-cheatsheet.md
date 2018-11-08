@@ -25,6 +25,8 @@
   * `--with-private-files` Restore site with private files (Path to tar file)
   * `--with-public-files` Restore site with public files (Path to tar file)
 * `bench migrate` Will read JSON files and make changes to the database accordingly
+* `bench --site [sitename] set-admin-password [password]` Will reset the administrator password
+
 
 ###Config
 * `bench config` - Change bench configuration
@@ -54,6 +56,7 @@
 ###Development
 * `bench new-app [app-name]` Creates a new app 
 * `bench get-app [repo-link]` - Downloads an app from a git repository and installs it
+  * `--branch [branch-name]`    Fetches specific branch of app
 * `bench install-app [app-name]` Installs existing app
 * `bench remove-from-installed-apps [app-name]` Remove app from the list of apps
 * `bench uninstall-app [app-name]` Delete app and everything linked to the app (Bench needs to be running)
@@ -76,7 +79,7 @@
 * `bench console`   Opens a IPython console in the bench venv
 * `bench execute`   Execute a method inside any app.
   * Eg : `bench execute frappe.utils.scheduler.enqueue_scheduler_events`
-* `bench mysql`  Opens SQL Console 
+* `bench --site [sitename] mariadb`  Opens SQL Console 
 * `bench run-tests`  Run tests
   * `--app` App Name
   * `--doctype` DocType to run tests for

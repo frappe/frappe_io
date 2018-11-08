@@ -9,19 +9,19 @@
     },
     {
         "route": "/charts/docs/basic/trends_regions",
-        "title": "Area and Trends Charts"
+        "title": "Area and Trends"
     },
     {
         "route": "/charts/docs/basic/annotations",
-        "title": "Tooltips and Annotations"
+        "title": "Annotations"
     },
     {
         "route": "/charts/docs/basic/stacked_and_mixed",
-        "title": "Stacked and Mixed Charts"
+        "title": "Mixed Charts"
     },
     {
         "route": "/charts/docs/basic/aggr_sliced_diags",
-        "title": "Pies and Percentages"
+        "title": "Pie Charts"
     },
     {
         "route": "/charts/docs/update_state/modify_data",

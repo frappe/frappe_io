@@ -1,5 +1,5 @@
 <!-- add-breadcrumbs -->
-# How Enable Developer Mode In Frappé
+# How Enable Developer Mode In Frappe
 
 When you are in application design mode and you want the changes in your DocTypes, Reports etc to affect the app repository, you must be in **Developer Mode**.
 
@@ -15,6 +15,8 @@ After setting developer mode, clear the cache:
 
 	$ bench clear-cache
 
-To view the full developer options, you must be logged in as the "Administrator" user.
+To view the full developer options, you must be logged in as the "Administrator" user. You also will need to enable the Developer icon in your desktop settings:
+
+	Desk -> User dropdown list -> Set Desktop Icons -> check "Developer"
 
 <!-- markdown -->

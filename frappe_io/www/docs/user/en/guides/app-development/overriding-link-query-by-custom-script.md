@@ -3,7 +3,7 @@
 
 You can override the standard link query by using `set_query`
 
-### 1. Adding Fitlers
+### 1. Adding Filters
 
 You can add filters to the query:
 

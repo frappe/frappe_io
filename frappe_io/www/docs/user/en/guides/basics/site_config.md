@@ -29,7 +29,8 @@ Example:
 ### Remote Database Host Settings
 - `db_host`: Database host if not `localhost`.
 
-To connect to a remote database server using ssl, you must first configure the database host to accept SSL connections. An example of how to do this is available at https://www.digitalocean.com/community/tutorials/how-to-configure-ssl-tls-for-mysql-on-ubuntu-16-04. After you do the configuration, set the following three options. All options must be set for Frappé to attempt to connect using SSL.
+To connect to a remote database server using ssl, you must first configure the database host to accept SSL connections. An example of how to do this is available at [this tutorial by Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-configure-ssl-tls-for-mysql-on-ubuntu-16-04). After you do the configuration, set the following three options. All options must be set for Frappe to attempt to connect using SSL.
+
 - `db_ssl_ca`: Full path to the ca.pem file used for connecting to a database host using ssl. Example value is `"/etc/mysql/ssl/ca.pem"`.
 - `db_ssl_cert`: Full path to the cert.pem file used for connecting to a database host using ssl. Example value is `"/etc/mysql/ssl/client-cert.pem"`.
 - `db_ssl_key`: Full path to the key.pem file used for connecting to a database host using ssl. Example value is `"/etc/mysql/ssl/client-key.pem"`.
@@ -47,6 +48,7 @@ To connect to a remote database server using ssl, you must first configure the d
 - `developer_mode`: If developer mode is set, DocType changes are automatically updated in files.
 - `disable_website_cache`: Don't cache website pages.
 - `logging`: writes logs if **1**, writes queries also if set to **2**.
+- `disable_async`: Disables socket.io client, client stops polling the socket.io server
 
 ### Others
 

@@ -1,5 +1,4 @@
-
-### Bench Manager Command
+# Bench Manager Command
 
 - This doctype is basically a logger for all the commands run using this app.
 - This doctype displays the source of the command ie. the doctype and docname from where the command originated.

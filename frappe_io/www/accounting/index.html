@@ -1,0 +1,85 @@
+<section class='top-section'>
+        <div class='container'>
+            <h1>Frappe Accounting</h1>
+            <p class='lead'>Offline Accounting software for everyone, with Invoicing, Payments and Reports.</p>
+            <img src='/assets/frappe_io/images/landing-pages/accounting.png' class='border greyscale mt-5'>
+        </div>
+    </section>
+
+    {% macro card(title, body, link) %}
+    <div class="col-sm mb-4">
+        <a href="{{ link }}" class="card h-100">
+          <div class="card-body">
+            <h5>{{ title }}</h5>
+            <div class="card-text">{{ body }}</div>
+          </div>
+        </a>
+    </div>
+    {% endmacro %}
+
+    <section class='section-padding section-bg'>
+        <div class='container'>
+
+            <div class="row">
+                {{
+                    card(
+                        "Chart of Accounts",
+                        "Standard Chart of Accounts bootstrapped for each country and ability to customize it.",
+                        "/accounting/docs/chartOfAccounts"
+                    )
+                }}
+                {{
+                    card(
+                        "Party Management",
+                        "Manage your parties as customers or suppliers.",
+                        "/accounting/docs/party"
+                    )
+                }}
+                {{
+                    card(
+                        "Item Management",
+                        "Manage your company's product or services that your offer customers.",
+                        "/accounting/docs/item"
+                    )
+                }}
+            </div>
+
+            <div class="row">
+                {{
+                    card(
+                        "Taxes",
+                        "Setup tax templates for flexible taxation in your transactions.",
+                        "/accounting/docs/tax"
+                    )
+                }}
+                {{
+                    card(
+                        "Invoicing & Payments",
+                        "Simple invoicing to generate/print bills for your customers.",
+                        "/accounting/docs/invoice"
+                    )
+                }}
+                {{
+                    card(
+                        "Financial Reports",
+                        "Get reports like General Ledger and Financial Statements out-of-the-box.",
+                        "/accounting/docs/generalLedger"
+                    )
+                }}
+            </div>
+        </div>
+    </section>
+    <section class='text-center section-padding'>
+        <div class='container'>
+        <a class ="btn btn-dark mr-3" href="https://github.com/frappe/accounting/releases">
+            Download
+        </a>
+        <a class ="btn btn-secondary" href="/accounting/docs">
+            Documentation
+        </a>
+        <p class="mt-3">
+            <a href="https://github.com/frappe/accounting" target="_blank">View on GitHub</a>
+        </p>
+        <p class='text-muted'>License: MIT</p>
+        </div>
+    </section>

@@ -10,12 +10,15 @@ app_color = "grey"
 app_email = "info@frappe.io"
 app_version = "0.0.1"
 
+hide_in_installer = True
+
 # not required for in-app help
 # required_apps = ["frappe_theme"]
 
 fixtures = ["Contact Us Settings", "Web Form"]
 
 website_context = {
+	"repo": "frappe/frappe_io",
 	"brand_html": "<img class='mr-2 d-inline-block align-top' src='/assets/frappe_theme/img/frappe-logo.png' width='30px' height='30px' />Frappe",
 	"top_bar_items": [
 		{"label": "Products", "right": 1, "child_items": [
@@ -49,6 +52,7 @@ website_context = {
 # include js, css files in header of web template
 # web_include_css = "/assets/frappe_io/css/frappe_io.css"
 web_include_js = "/assets/frappe_io/js/docs.js"
+look_for_sidebar_json = True
 
 # Home Pages
 # ----------

@@ -1,0 +1,42 @@
+[
+    {
+        "route": "/accounting/docs",
+        "title": "Quick Start"
+    },
+    {
+        "route": "/accounting/docs/settingUp",
+        "title": "Setting Up"
+    },
+    {
+        "route": "/accounting/docs/chartOfAccounts",
+        "title": "Chart Of Accounts"
+    },
+    {
+        "route": "/accounting/docs/item",
+        "title": "Item"
+    },
+    {
+        "route": "/accounting/docs/party",
+        "title": "Party"
+    },
+    {
+        "route": "/accounting/docs/tax",
+        "title": "Tax"
+    },
+    {
+        "route": "/accounting/docs/invoice",
+        "title": "Invoice"
+    },
+    {
+        "route": "/accounting/docs/payment",
+        "title": "Payment"
+    },
+    {
+        "route": "/accounting/docs/generalLedger",
+        "title": "General Ledger"
+    },
+    {
+        "route": "/accounting/docs/salesRegister",
+        "title": "Sales Register"
+    }
+]
