@@ -387,10 +387,18 @@ MariaDB [00299a408dc3498a]> DESC tabArticle;
 
 As you can see, along with the DocFields, several standard columns have also been added to the table.
 
-- `name`: Primary Key
-- `creation`: Time of creation of record
-- `modified`: Time when record was last modified
-- `modified_by`: User who last modified this record
-- `owner`: User who created the record
+- `name`: Primary Key.
+- `creation`: Time of creation of record.
+- `modified`: Time when record was last modified.
+- `modified_by`: User who last modified this record.
+- `owner`: User who created the record.
+- `docstatus`: Document Status(docstatus) is a standard field in all doctypes (0 - draft, 1 - submitted, 2- cancelled).0 is set to be default.
+- `parent`: The name of the parent doctype(If the doctype is the child of the of other doctype otherwise it is set to . be NULL).
+- `parent feild`: The name of the table feild in the parent Doctype(If the doctype is itself child doctype).
+- `parent type`: The parent doctype.
+- `idx`: It shows index of the entries of the information in the corresponding Parent Doctype(If available) Table feild.
+- `status`: 
+
+
 
 We will discuss other fields later in the tutorial.
