@@ -392,5 +392,6 @@ As you can see, along with the DocFields, several standard columns have also bee
 - `modified`: Time when record was last modified
 - `modified_by`: User who last modified this record
 - `owner`: User who created the record
+- `docstatus`: Document Status(docstatus) is a standard field in all doctypes (0 - draft, 1 - submitted, 2- cancelled).0 is set to be default.
 
 We will discuss other fields later in the tutorial.
