@@ -68,7 +68,7 @@ columns = [{
 
 <img class="screenshot" alt="Module Page" src="/docs/assets/img/script-report-1.png">
 
-1. In the module folder (for example if it is Accounts in ERPnext the folder will be `erpnext/config/accounts.py`) you will see labels and items for various sections. The new report can be added in the item list as show in the example:
+1. In the module folder (for example if it is Accounts in ERPNext the folder will be `erpnext/config/accounts.py`) you will see labels and items for various sections. The new report can be added in the item list as show in the example:
 
 ```
 def get_data():
@@ -82,7 +82,3 @@ def get_data():
 			}]
 		}]
 ```
-
-### 5. Commit and Push the app
-
-Don't forget to commit and push your app.
