@@ -28,6 +28,9 @@ website_context = {
 			{"label": "Gantt", "url":"/gantt"},
 			{"label": "Charts", "url":"/charts"},
 			{"label": "DataTable", "url":"/datatable"},
+			{"label": "FrappeJS", "url":"/frappejs"},
+			{"label": "Accounting", "url":"/accounting"},
+			{"label": "Marketplace", "url":"/marketplace"}
 		]},
 		{"label": "About", "right": 1, "child_items": [
 			{"label": "Team", "url":"/about"},
