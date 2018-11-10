@@ -52,3 +52,9 @@ To add a client fill in the following details
 5. **Default Redirect URIs** : Default Redirect URI from list of Redirect URIs
 6. **Grant Type**: select `Authorization Code`
 7. **Response Type**: select `Code`
+
+## Using oAuth
+
+Please refer to the API documentation to learn how to use oAuth in you application.
+
+{next}

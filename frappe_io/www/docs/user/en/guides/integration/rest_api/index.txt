@@ -1,0 +1,5 @@
+token_based_authentication
+simple_authentication
+oauth2
+manipulating_documents
+listing_documents

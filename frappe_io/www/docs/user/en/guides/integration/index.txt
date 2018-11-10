@@ -1,7 +1,7 @@
+how_to_set_up_oauth
+how_to_set_up_token_based_auth
 rest_api
-how_to_setup_oauth
-using_oauth
 openid_connect_and_frappe_social_login
-google_gsuite
 social_login_key
+google_gsuite
 google_calendar
