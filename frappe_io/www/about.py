@@ -133,7 +133,7 @@ def get_context(context):
 		},
 		{
 			'name': 'Ketan Desai',
-			'role': 'VP Partner and Alliance',
+			'role': 'VP - Partner and Alliance',
 			'linkedin': 'https://in.linkedin.com/in/ketandesai9'
 		},
 		{
@@ -144,10 +144,16 @@ def get_context(context):
 		{
 			'name': 'Anurag Mishra',
 			'role': 'Engineer',
+			'github': 'Anurag810'
 		},
 		{
 			'name': 'Himanshu Warekar',
 			'role': 'Engineer',
 			'github': 'himanshu-96'
+		},
+		{
+			'name': 'Bharath Kumar',
+			'role': 'VP - SAAS and Global Alliances',
+			'linkedin': 'https://www.linkedin.com/in/bharathckumar/'
 		}
 	]
