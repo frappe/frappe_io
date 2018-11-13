@@ -10,144 +10,144 @@ def get_context(context):
 		},
 		{
 			'name': 'Nabin Hait',
-			'role': 'Chief Operations Officer',
+			'role': 'VP Product',
 			'twitter': 'nabinhait',
 			'blogger': 'nabin'
 		},
 		{
 			'name': 'Umair Sayed',
-			'role': 'Chief Customer Officer',
+			'role': 'VP Operations',
 			'twitter': 'umairsTWT',
 			'blogger': 'umair'
 		},
 		{
 			'name': 'Prakash Hodage',
-			'role': 'Admin + Accounts',
+			'role': 'VP Accounts',
 			'blogger': 'prakash',
 			'linkedin': 'https://in.linkedin.com/in/prakash-hodage-6702b231'
 		},
 		{
 			'name': 'Saurabh Palande',
-			'role': 'Developer',
+			'role': 'Head DevOps',
 			'twitter': 'saurabh6790',
 			'blogger': 'saurabh'
 		},
 		{
 			'name': 'Rohit Waghchaure',
-			'role': 'Developer',
+			'role': 'Head Support',
 			'twitter': 'rohitw1991',
 			'blogger': 'rohit'
 		},
 		{
 			'name': 'Faris Ansari',
-			'role': 'Developer',
+			'role': 'Engineering Lead',
 			'twitter': 'netchampfaris',
 			'blogger': 'faris'
 		},
 		{
 			'name': 'Prateeksha Singh',
-			'role': 'Developer',
+			'role': 'Engineering Lead',
 			'blogger': 'prateeksha',
 			'twitter': 'pratu16x7'
 		},
 		{
 			'name': 'Shreya Shah',
-			'role': 'Developer',
+			'role': 'Engineer',
 			'twitter': 'shreyashah115'
 		},
 		{
 			'name': 'Zarrar Shaikh',
-			'role': 'Developer',
+			'role': 'Engineer',
 			'medium': 'zlash65',
 			'twitter': 'zlash65',
 			'github': 'zlash65'
 		},
 		{
 			'name': 'Ameya Shenoy',
-			'role': 'Developer',
+			'role': 'Engineer',
 			'medium': 'codingCoffee',
 			'twitter': 'coding_caffeine'
 		},
 		{
 			'name': 'Kenneth Sequeira',
-			'role': 'Marketing Engineer',
+			'role': 'Consultant',
 			'twitter': 'batkenobi',
 		},
 		{
 			'name': 'Suraj Shetty',
-			'role': 'Developer',
+			'role': 'Engineering Lead',
 			'medium': 'surajshetty3416',
 			'twitter': 'surajshetty3416',
 			'github': 'surajshetty3416'
 		},
 		{
 			'name': 'Rushikesh Parekh',
-			'role': 'Business Analyst',
+			'role': 'Lead Consultant',
 			'twitter': 'rushikeshparekh',
 		},
 		{
 			'name': 'Basawaraj',
-			'role': 'Head of Enterprise sales',
+			'role': 'Lead Consultant',
 			'medium': 'basawarajsavalagi',
 		},
 		{
 			'name': 'Aditya Hase',
-			'role': 'Developer',
+			'role': 'Engineer',
 			'github': 'adityahase',
 			'linkedin': 'https://in.linkedin.com/in/adityahase',
 		},
 		{
 			'name': 'Mitali Deshpande',
-			'role': 'Business Analyst',
+			'role': 'Consultant',
 			'linkedin': 'https://in.linkedin.com/in/mitali-deshpande-571a8416'
 		},
 		{
 			'name': 'Salman Mulani',
-			'role': 'Business Analyst',
+			'role': 'Consultant',
 			'linkedin': 'https://in.linkedin.com/in/salman-mulani-7a9bb659'
 		},
 		{
 			'name': 'Chinmay Pai',
-			'role': 'Developer',
+			'role': 'Engineer',
 			'github': 'thunderbottom'
 		},
 		{
 			'name': 'Jai Chavan',
-			'role': 'Business Analyst',
+			'role': 'Consultant',
 			'linkedin': 'https://in.linkedin.com/in/jai-chavan-a894a3149'
 		},
 		{
 			'name': 'Mangesh Khairnar',
-			'role': 'Developer',
+			'role': 'Engineer',
 			'github': 'mangesh-khairnar'
 		},
 		{
 			'name': 'Sahil Khan',
-			'role': 'Developer',
+			'role': 'Engineer',
 			'github': 'sahil28297'
 		},
 		{
 			'name': 'Deepesh Garg',
-			'role': 'Developer',
+			'role': 'Engineer',
 			'twitter': 'DeepeshGarg16',
 		},
 		{
 			'name': 'Ketan Desai',
-			'role': 'VP - Channel and Alliance',
+			'role': 'VP Partner and Alliance',
 			'linkedin': 'https://in.linkedin.com/in/ketandesai9'
 		},
 		{
 			'name': 'Shivam Mishra',
-			'role': 'Developer and Advocate',
+			'role': 'Engineer',
 			'twitter': 'scmmishra'
 		},
 		{
 			'name': 'Anurag Mishra',
-			'role': 'Developer',
+			'role': 'Engineer',
 		},
 		{
 			'name': 'Himanshu Warekar',
-			'role': 'Developer',
+			'role': 'Engineer',
 			'github': 'himanshu-96'
 		}
 	]
