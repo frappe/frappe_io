@@ -152,6 +152,16 @@ def get_context(context):
 			'github': 'himanshu-96'
 		},
 		{
+			'name': 'Pooja Bedi',
+			'role': 'Advisor',
+			'medium': 'poojabedi'
+		},
+		{
+			'name': 'Reema Mehta',
+			'role': 'HR Manager',
+			'linkedin': 'https://www.linkedin.com/in/reema-mehta/'
+		},
+		{
 			'name': 'Bharath Kumar',
 			'role': 'VP - SAAS and Global Alliances',
 			'linkedin': 'https://www.linkedin.com/in/bharathckumar/'
