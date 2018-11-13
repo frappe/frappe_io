@@ -68,7 +68,7 @@ Returns:
 * HTTP Code: 200
 * application/json: `{}`
 
-## GET /api/method/frappe.auth.get_logged_user
+## GET /api/method/frappe.auth.get\_logged\_user
 
 Get the ID of the currently authenticated user.
 
