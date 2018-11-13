@@ -55,7 +55,7 @@ Click on the **Save** button.
 
 Now login into mysql and check the database table created:
 
-	$ bench mysql
+	$ bench mariadb
 	Welcome to the MariaDB monitor.  Commands end with ; or \g.
 	Your MariaDB connection id is 3931
 	Server version: 5.5.36-MariaDB-log Homebrew
