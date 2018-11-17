@@ -38,4 +38,4 @@ All documents in Frappe are available via a RESTful API with prefix `/api/resour
 
 {index}
 
-Authors: Rushabh Mehta (rushabh@erpnext.com), Raffael Meyer (raffael@alyf.de)
+
