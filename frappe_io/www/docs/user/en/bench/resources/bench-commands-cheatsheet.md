@@ -26,6 +26,7 @@
   * `--with-public-files` Restore site with public files (Path to tar file)
 * `bench migrate` Will read JSON files and make changes to the database accordingly
 * `bench --site [sitename] set-admin-password [password]` Will reset the administrator password
+* `bench destroy-all-sessions` Destroys all sessions
 
 
 ###Config
