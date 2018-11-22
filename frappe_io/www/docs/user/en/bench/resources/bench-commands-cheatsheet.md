@@ -3,6 +3,7 @@
 
 ### General Usage
 * `bench --version` - Show bench version
+* `bench version` - Show version of all apps
 * `bench src` - Show bench repo directory
 * `bench --help` - Show all commands and help
 * `bench [command] --help` - Show help for command
@@ -15,7 +16,6 @@
   * `--bench`               Update bench
   * `--requirements`        Update requirements
   * `--restart-supervisor`  restart supervisor processes after update
-  * `--upgrade` Does major upgrade (Eg. ERPNext 6 -> 7)
   * `--no-backup`			  Don't take a backup before update
 * `bench restart` Restart all bench services 
 * `bench backup` Backup 
@@ -26,6 +26,7 @@
   * `--with-public-files` Restore site with public files (Path to tar file)
 * `bench migrate` Will read JSON files and make changes to the database accordingly
 * `bench --site [sitename] set-admin-password [password]` Will reset the administrator password
+* `bench destroy-all-sessions` Destroys all sessions
 
 
 ###Config
