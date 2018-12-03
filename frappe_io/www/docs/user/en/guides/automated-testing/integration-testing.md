@@ -1,50 +1,43 @@
 <!-- add-breadcrumbs -->
 # UI Integration Testing
 
-You can write integration tests using the Selenium Driver. `frappe.utils.selenium_driver` gives you a friendly API to write selenium based tests
+You can write integration tests using [Cypress](https://cypress.io). It is a NodeJS based full-stack testing framework which doesn't rely on Selenium.
 
-To write integration tests, create a standard test case by creating a python file starting with `test_`
-
-All integration tests will be run at the end of the unittests.
+To write integration tests, create a `.js` file in the `cypress/integration` directory.
 
 ### Example
 
 Here is an example of an integration test to check insertion of a To Do
 
-	from __future__ import print_function
-	from frappe.utils.selenium_testdriver import TestDriver
-	import unittest
-	import time
+```js
+context('ToDo', () => {
+	before(() => {
+		cy.login('Administrator', 'admin');
+		cy.visit('/desk');
+	});
 
-	class TestToDo(unittest.TestCase):
-		def setUp(self):
-			self.driver = TestDriver()
+	it('creates a new todo', () => {
+		cy.visit('/desk#Form/ToDo/New ToDo 1');
+		cy.fill_field('description', 'this is a test todo', 'Text Editor').blur();
+		cy.get('.page-title').should('contain', 'Not Saved');
+		cy.get('.primary-action').click();
+		cy.visit('/desk#List/ToDo');
+		cy.location('hash').should('eq', '#List/ToDo/List');
+		cy.get('.list-row').should('contain', 'this is a test todo');
+	});
+});
+```
 
-		def test_todo(self):
-			self.driver.login()
+### Running Cypress Locally
 
-			# list view
-			self.driver.set_route('List', 'ToDo')
+Cypress uses any chromium based browser installed on your system to run tests. Every app has it's own cypress test suite.
+For example, to run test for the `frappe` app, run the following commands
 
-			time.sleep(2)
+```sh
+cd ~/frappe-bench/apps/frappe
+yarn cypress:open
+```
 
-			# new
-			self.driver.click_primary_action()
+This will open the Cypress Electron shell where you can run any test manually or run all of the tests.
 
-			time.sleep(2)
-
-			# set input
-			self.driver.set_text_editor('description', 'hello')
-
-			# save
-			self.driver.click_modal_primary_action()
-
-			time.sleep(2)
-
-			self.assertTrue(self.driver.get_visible_element('.result-list')
-				.find_element_by_css_selector('.list-item')
-				.find_element_by_css_selector('.list-id').text=='hello')
-
-		def tearDown(self):
-			self.driver.close()
-
+<img src="/docs/assets/img/running-cypress-tests.gif" class="screenshot">
