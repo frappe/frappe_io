@@ -52,6 +52,9 @@
   * `add-domain `  add custom domain for site
   * `firewall `    setup firewall and block all ports except 22, 80 and 443
   * `ssh-port `    change the default ssh connection port
+  * `requirements `Update Python and Node packages
+    * `--node ` Update only Node packages
+    * `--python ` Update only Python packages
 
 
 ###Development
