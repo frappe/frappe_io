@@ -27,6 +27,9 @@ frappe.ready(function() {
 				if (member.github) {
 					obj.label = '@' + member.github;
 					obj.link = 'https://github.com/' + member.github;
+				} else if (member.medium) {
+					obj.label = 'M@' + member.medium;
+					obj.link = member.medium;
 				} else if (member.linkedin) {
 					obj.label = 'LinkedIn Profile';
 					obj.link = member.linkedin;
