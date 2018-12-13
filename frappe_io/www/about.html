@@ -17,36 +17,7 @@
 	</div>
 </section>
 
-<section class="section-padding text-center section-bg">
-	<div class='container'>
-	<h3 class='mb-5'>Meet the Team</h3>
-	<div class='row'>
-	{% for m in team %}
-	<div class="col-sm-3 mb-4 person">
-		<img class="greyscale img-fluid" src="/assets/frappe_io/images/team/{{ m.name.split()[0].lower() }}.jpg">
-		<a href="https://frappe.io/blog?blogger={{ m.blogger }}">
-			<h5 class="mt-3 font-weight-normal">{{ m.name }}</h5>
-		</a>
-		<p class='text-muted'>{{ m.role }}
-		{% if m.github %}
-		<br><a  class='text-muted' href="https://github.com/{{ m.github }}" target="_blank">
-			@{{ m.github }}</a>
-		{% elif m.twitter %}
-		<br><a  class='text-muted' href="https://twitter.com/{{ m.twitter }}" target="_blank">
-				@{{ m.twitter }}</a>
-		{% elif m.linkedin %}
-		<br><a  class='text-muted'href="{{ m.linkedin }}" target="_blank">
-				LinkedIn Profile</a>
-		{% elif m.medium %}
-		<br><a  class='text-muted' href="https://medium.com/@{{ m.medium }}" target="_blank">
-				M@{{ m.medium }}</a>
-		{% endif %}
-		</p>
-	</div>
-	{% endfor %}
-	</div>
-	</div>
-</section>
+<div class="team-section"></div>
 
 <section class="section-padding">
 	<div class='container'>
@@ -97,6 +68,8 @@
 		text-decoration: none;
 	}
 </style>
+
+<script type="text/javascript" src="./team.js"></script>
 
 <script>
 	{% include "templates/includes/contact.js" %}
