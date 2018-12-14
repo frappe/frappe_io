@@ -21,7 +21,7 @@ To create models, you must set `developer_mode` as 1 in the `site_config.json` f
 	{
 	 "db_name": "bcad64afbf",
 	 "db_password": "v3qHDeVKvWVi7s97",
-	 **"developer_mode": 1**
+	 "developer_mode": 1
 	}
 
 {next}
