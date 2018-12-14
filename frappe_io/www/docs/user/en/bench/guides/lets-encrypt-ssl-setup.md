@@ -1,9 +1,9 @@
 <!-- add-breadcrumbs -->
 # Using Let's Encrypt to setup HTTPS
 
-##Prequisites
+## Prequisites
 
-1. You need to have a DNS Multitenant Setup
+1. You need to have a [DNS Multitenant Setup](https://frappe.io/docs/user/en/bench/guides/setup-multitenancy)
 2. Your site should be accessible via a valid domain
 3. You need root permissions on your server
 
@@ -100,3 +100,5 @@ Login as root or a user with superuser privileges, run `crontab -e` and enter:
     # renew letsencrypt certificates on 1st monday of every month and get an email if it gets executed
     MAILTO="mail@example.com"
     0 0 1-7 * * [ "$(date '+\%a')" = "Mon" ] && sudo service nginx stop && /opt/certbot-auto renew && sudo service nginx start
+
+{next}
