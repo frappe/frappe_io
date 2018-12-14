@@ -81,6 +81,7 @@
 * `bench execute`   Execute a method inside any app.
   * Eg : `bench execute frappe.utils.scheduler.enqueue_scheduler_events`
 * `bench --site [sitename] mariadb`  Opens SQL Console 
+* `bench --site [sitename] export-fixtures`  Exports fixtures
 * `bench run-tests`  Run tests
   * `--app` App Name
   * `--doctype` DocType to run tests for
