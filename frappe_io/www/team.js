@@ -3,16 +3,7 @@
 
 frappe.ready(function() {
 
-	const team_members_section = $(".team-section").append(`
-		<section class="section-padding text-center section-bg">
-			<div class='container'>
-			<h3 class='mb-5'>Meet the Team</h3>
-			<div class='row team-members'>
-				<!--team-members -->
-			</div>
-			</div>
-		</section>`
-	).find('.team-members');
+	const team_members_section = $('.team-members');
 
 	frappe.call({
 		'method': 'frappe_io.frappe_team.doctype.team_member.team_member.get_team_data'
