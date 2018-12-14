@@ -55,6 +55,7 @@
   * `requirements `Update Python and Node packages
     * `--node ` Update only Node packages
     * `--python ` Update only Python packages
+* `bench set-nginx-port [sitename] [port]` - Set site's port in Production
 
 
 ###Development
