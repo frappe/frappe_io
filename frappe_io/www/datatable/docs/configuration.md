@@ -168,7 +168,44 @@ const options = {
  - Type: `Function`
  - Default: `null`
 
-Customize the editor behaviour.
+By default, all cells in DataTable are editable. If you want to customize the editor behaviour you can use this option.
+
+Here is an example to hook a custom date input while editing:
+```js
+
+const d = new DataTable({
+    ...
+    getEditor(colIndex, rowIndex, value, parent, column, row, data) {
+        // colIndex, rowIndex of the cell being edited
+        // value: value of cell before edit
+        // parent: edit container (use this to append your own custom control)
+        // column: the column object of editing cell
+        // row: the row of editing cell
+        // data: array of all rows
+
+        const $input = document.createElement('input');
+        $input.type = 'date';
+        parent.appendChild($input);
+        
+        return {
+            // called when cell is being edited
+            initValue(value) {
+                $input.focus();
+                $input.value = parse(value);
+            },
+            // called when cell value is set
+            setValue(value) {
+                $input.value = parse(value);
+            },
+            // value to show in cell
+            getValue() {
+                return format($input.value);
+            }
+        }
+    }
+    ...
+})
+```
 
 ---
 
