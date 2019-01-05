@@ -55,4 +55,4 @@ Note: When you restart nginx after the configuration change, it might fail if
 you have another configuration with server block as default for port 80 (in most
 cases for the nginx welcome page). You will have to disable this config.  Most
 probable places for it to exist are `/etc/nginx/conf.d/default.conf` and
-`/etc/nginx/conf.d/default`.
+`/etc/nginx/conf.d/default`. In the latest nginx installs, the file is in `/etc/nginx/sites-available/default'
