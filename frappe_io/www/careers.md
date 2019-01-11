@@ -1,5 +1,5 @@
 <section class='section-padding text-center'>
-	<h1>Jobs at Frappe</h1>
+	<h1>Careers at Frappe</h1>
 	<p class="lead mb-5">Help us Build Amazing Open Source Software.</p>
 </section>
 

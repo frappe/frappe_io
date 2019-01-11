@@ -34,7 +34,7 @@ website_context = {
 		]},
 		{"label": "About", "right": 1, "child_items": [
 			{"label": "Team", "url":"/about"},
-			{"label": "Jobs", "url":"/jobs"},
+			{"label": "Careers", "url":"/careers"},
 			{"label": "Inspiration", "url":"/inspiration"},
 			{"label": "Story", "url":"/story"},
 			{"label": "Contact", "url":"/about#contact"},
