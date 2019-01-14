@@ -1,4 +1,4 @@
-<!-- add-breadcrumbs -->
+<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
 # Social Login Key
 
 Add social login providers like Facebook, Frappe, Github, Google, Microsoft, etc and enable social login.

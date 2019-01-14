@@ -19,7 +19,8 @@ fixtures = ["Contact Us Settings", "Web Form"]
 
 website_context = {
 	"repo": "frappe/frappe_io",
-	"brand_html": "<img class='mr-2 d-inline-block align-top' src='/assets/frappe_theme/img/frappe-logo.png' width='30px' height='30px' />Frappe",
+	'logo_image_url': '/assets/frappe_io/images/frappe-logo.png',
+	'brand_name': 'Frappe',
 	"top_bar_items": [
 		{"label": "Products", "right": 1, "child_items": [
 			{"label": "Frappe Framework", "url":"/frappe"},

@@ -1,4 +1,4 @@
-<!-- add-breadcrumbs -->
+<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
 # Créer des utilisateurs et des enregistrements
 
 Maintenant que nous avons définis des modèles, nous pouvons créér des enregistrements directement depuis l'interface. Vous

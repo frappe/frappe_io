@@ -1,3 +1,4 @@
+<!-- base_template: frappe_io/www/frappejs/frappejs_base.html -->
 ### Documents:
 - [Managing Documents](/frappejs/docs/models/document.md)
 - [Single Documents](/frappejs/docs/models/singles.md)

@@ -1,0 +1,19 @@
+{% macro make_subnav(title, path, logo, items) %}
+<nav class="navbar navbar-expand-lg navbar-light subnav">
+	<div class="container">
+		<a class="navbar-brand" href="{{ path }}">
+			<img class='mr-2 d-inline-block align-top'
+				src='{{ logo }}' />
+			<span class='subnav-title'>{{ title }}</span>
+		</a>
+		<ul class="navbar-nav ml-auto justify-content-end">
+			{% for item in items %}
+			<li class='navbar-item'>
+				<a class='nav-link' href='{{ item.path }}'
+					{% if item.new %}target="_blank"{% endif %}>{{ item.label }}</a>
+			</li>
+			{% endfor %}
+		</ul>
+	</div>
+</nav>
+{% endmacro %}

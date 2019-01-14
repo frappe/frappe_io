@@ -1,4 +1,4 @@
-<!-- add-breadcrumbs -->
+<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
 # Estructura de directorios de un DocType
 
 Despues de guardar los DocTypes, revisa que los archivos `.json` y `.py` fuueron creados en módulo `apps/library_management/library_management`. La estructura de directorios despues de crear los modelos debería ser similar a la siguiente:

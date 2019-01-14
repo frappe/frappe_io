@@ -1,4 +1,4 @@
-<!-- add-breadcrumbs -->
+<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
 # Reportes
 
 Puedes dar click en el texto que dice Reportes en el panel lateral izquierdo para ver los registros de manera tabulada.

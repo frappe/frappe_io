@@ -1,3 +1,4 @@
+<!-- base_template: frappe_io/www/datatable/datatable_base.html -->
 <!-- add-next-prev-links -->
 
 # Getting Started

@@ -1,4 +1,4 @@
-<!-- add-breadcrumbs -->
+<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
 # Conclusión
 
 Esperamos que esto te haya dado una idea de como son desarrolladas las aplicaicones en Frappe. El objetivo era de que de manera breve se tocaran varios de los aspectos del desarrollo de aplicaciones. Para obtener ayuda en inconvenientes o temas específicos, favor revisar el API.

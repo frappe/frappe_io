@@ -1,4 +1,4 @@
-<!-- add-breadcrumbs -->
+<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
 # Tutoriel Frappe
 
 Dans ce guide nous allons vous montrer comment créer une application de A à Z en utilisant **Frappe**. Avec un 

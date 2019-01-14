@@ -1,4 +1,4 @@
-<!-- add-breadcrumbs -->
+<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
 # Définir des modèles
 
 La prochaine étape est de définir les modèles que nous avons présenté en introduction. Dans **Frappe**, les modèles sont appelés

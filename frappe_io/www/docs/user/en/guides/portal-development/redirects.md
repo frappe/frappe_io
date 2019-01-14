@@ -1,4 +1,4 @@
-# Redirects
+<!-- base_template: frappe_io/www/frappe/frappe_base.html --># Redirects
 
 You can add redirects by adding the `website_redirects` hook.
 

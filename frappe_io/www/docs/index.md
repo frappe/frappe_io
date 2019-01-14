@@ -1,3 +1,5 @@
+<!-- base_template: frappe_io/www/frappe/frappe_base.html -->
+
 # Frappe Framework
 
 ### Tutorials, API documentation and Model Reference

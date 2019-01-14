@@ -1,3 +1,4 @@
+<!-- base_template: frappe_io/www/frappejs/frappejs_base.html -->
 # Errors
 
 Frappe.js comes with standard error classes that have an HTTP status code attached.

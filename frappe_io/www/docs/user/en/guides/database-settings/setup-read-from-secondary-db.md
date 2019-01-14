@@ -1,4 +1,4 @@
-# Setup read operations from slave/secondary mysql system
+<!-- base_template: frappe_io/www/frappe/frappe_base.html --># Setup read operations from slave/secondary mysql system
 
 In normal, the system does read and write operations on the same database. As data size increases or the number of concurrent activities increases, you may start facing a lag in operations.
 

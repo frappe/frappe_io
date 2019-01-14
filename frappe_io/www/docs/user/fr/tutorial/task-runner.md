@@ -1,4 +1,4 @@
-<!-- add-breadcrumbs -->
+<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
 # Les tâches planifiées
 
 Finalement, une application a aussi à envoyer des emails de notifications ou d'autres taches planifiées. Dans Frappe, si 

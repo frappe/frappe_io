@@ -1,0 +1,15 @@
+{% extends "frappe_theme/templates/web.html" %}
+{% from "frappe_io/templates/includes/macros.html" import make_subnav %}
+
+{% block subnav %}
+
+{{ make_subnav('Frappe Datatable',
+	'/datatable',
+	'/assets/frappe_io/images/frappe-datatable-logo.png',
+	items = [
+		{ 'label': 'Docs', 'path': '/datatable/docs' },
+		{ 'label': 'GitHub', 'path': 'https://github.com/frappe/datatable', 'new': True },
+	])
+}}
+
+{% endblock %}

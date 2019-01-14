@@ -1,3 +1,4 @@
+<!-- base_template: frappe_io/www/charts/charts_base.html -->
 #### Mixed Bar/Line Chart
 
 As we have seen, chart can have [multiple datasets](/basic/basic_chart?id=adding-more-datasets). Each dataset can also have a different `chartType`, which if specified, should accompany the `type` property set to `axis-mixed`.

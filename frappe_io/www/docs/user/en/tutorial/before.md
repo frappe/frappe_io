@@ -1,4 +1,4 @@
-<!-- add-breadcrumbs -->
+<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
 # Before You Start
 
 <p class="lead">A list of resources to help you get started with building apps using Frappe</p>

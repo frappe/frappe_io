@@ -1,0 +1,16 @@
+{% extends "frappe_theme/templates/web.html" %}
+{% from "frappe_io/templates/includes/macros.html" import make_subnav %}
+
+{% block subnav %}
+
+{{ make_subnav('Frappe Framework',
+	'/frappe',
+	'/assets/frappe_io/images/frappe-framework-logo.png',
+	items = [
+		{ 'label': 'Docs', 'path': '/docs' },
+		{ 'label': 'Tutorial', 'path': '/docs/user/en/tutorial' },
+		{ 'label': 'GitHub', 'path': 'https://github.com/frappe/frappe', 'new': True },
+	])
+}}
+
+{% endblock %}

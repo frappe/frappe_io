@@ -1,4 +1,4 @@
-<!-- add-breadcrumbs -->
+<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
 # Frappe Apps
 
 Frappe Apps are Python packages which use the Frappe platform. They can live

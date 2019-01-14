@@ -1,3 +1,4 @@
+<!-- base_template: frappe_io/www/datatable/datatable_base.html -->
 ## DataManager
 
 All the methods listed here are available on the `datatable.datamanager` property.

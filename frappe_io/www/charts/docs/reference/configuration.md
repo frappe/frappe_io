@@ -1,3 +1,4 @@
+<!-- base_template: frappe_io/www/charts/charts_base.html -->
 # Configuration
 
 With all the customizable features of Frappe Charts, this section is dedicated to enabling / disabling existing functionality.

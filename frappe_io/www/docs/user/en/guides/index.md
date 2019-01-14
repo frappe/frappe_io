@@ -1,4 +1,4 @@
-<!-- add-breadcrumbs -->
+<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
 # Guides
 
 The Frappe Framework is a server side and client side framework and is built with the philosophy make it a "battries included" framework. It has libraries and API for everything from authentication to reports.

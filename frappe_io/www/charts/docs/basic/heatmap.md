@@ -1,3 +1,4 @@
+<!-- base_template: frappe_io/www/charts/charts_base.html -->
 ## Day-based Month-wise data
 
 The heatmap is a representation of day-wise data (similar to [the GitHub Contribution Graph]()). It spaces out data values linearly, across 5 levels (zero data kept exclusive).

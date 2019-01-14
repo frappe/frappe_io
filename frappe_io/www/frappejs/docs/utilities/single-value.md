@@ -1,3 +1,4 @@
+<!-- base_template: frappe_io/www/frappejs/frappejs_base.html -->
 # Single Value
 
 The SingleValue table is where all [Single documents](/frappejs/docs/models/singles.md) are stored.

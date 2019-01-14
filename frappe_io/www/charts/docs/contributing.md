@@ -1,3 +1,4 @@
+<!-- base_template: frappe_io/www/charts/charts_base.html -->
 # Contributing
 If you wish to contribute to Frappe Charts:
 

@@ -1,4 +1,4 @@
-<!-- add-breadcrumbs -->
+<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
 # Crie um novo aplicativo
 
 Uma vez que o banco ja estiver instalado, você verá duas pastas principais, `apps` e` sites`. Todos os aplicativos serão instalados em apps.
