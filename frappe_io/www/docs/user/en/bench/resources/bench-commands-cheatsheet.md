@@ -17,8 +17,8 @@
   * `--requirements`        Update requirements
   * `--restart-supervisor`  restart supervisor processes after update
   * `--no-backup`			  Don't take a backup before update
-* `bench restart` Restart all bench services 
-* `bench backup` Backup 
+* `bench restart` Restart all bench services
+* `bench backup` Backup
 * `bench backup-all-sites` Backup all sites
   * `--with-files` Backup site with files
 * `bench restore` Restore
@@ -27,6 +27,7 @@
 * `bench migrate` Will read JSON files and make changes to the database accordingly
 * `bench --site [sitename] set-admin-password [password]` Will reset the administrator password
 * `bench destroy-all-sessions` Destroys all sessions
+* `bench --site [sitename] setup-help` Sets up in-app help documentation
 
 
 ###Config
@@ -55,14 +56,14 @@
 
 
 ###Development
-* `bench new-app [app-name]` Creates a new app 
+* `bench new-app [app-name]` Creates a new app
 * `bench get-app [repo-link]` - Downloads an app from a git repository and installs it
   * `--branch [branch-name]`    Fetches specific branch of app
 * `bench install-app [app-name]` Installs existing app
 * `bench remove-from-installed-apps [app-name]` Remove app from the list of apps
 * `bench uninstall-app [app-name]` Delete app and everything linked to the app (Bench needs to be running)
 * `bench remove-app [app-name]` Remove app from the bench entirely
-* `bench --site [sitename] --force reinstall ` Reinstall with fresh database (Caution: Will wipe out old database) 
+* `bench --site [sitename] --force reinstall ` Reinstall with fresh database (Caution: Will wipe out old database)
 * `bench new-site [sitename]` - Creates a new site
   * `--db-name`                Database name
   * `--mariadb-root-username`  Root username for MariaDB
@@ -74,25 +75,25 @@
   * `--install-app`            Install app after installation`
 * `bench use [site]` Sets a default site
 * `bench drop-site` Removes site from disk and database completely
-  * `--root-login` 
+  * `--root-login`
   * `--root-password`
-* `bench set-config [key] [value]`   Adds a key-value pair to site's config file 
+* `bench set-config [key] [value]`   Adds a key-value pair to site's config file
 * `bench console`   Opens a IPython console in the bench venv
 * `bench execute`   Execute a method inside any app.
   * Eg : `bench execute frappe.utils.scheduler.enqueue_scheduler_events`
-* `bench --site [sitename] mariadb`  Opens SQL Console 
+* `bench --site [sitename] mariadb`  Opens SQL Console
 * `bench --site [sitename] export-fixtures`  Exports fixtures
 * `bench run-tests`  Run tests
   * `--app` App Name
   * `--doctype` DocType to run tests for
   * `--test` Specific Test
-  * `--module` Run a particular module that has tests 
+  * `--module` Run a particular module that has tests
   * `--profile` Runs a Python profiler on the test
 * `bench disable-production`  Disables production environment
 
 
-###Scheduler 
+###Scheduler
 * `bench enable-scheduler` - Enables Scheduler that will run scheduled tasks
-* `bench doctor` - Get diagnostic info about background workers 
+* `bench doctor` - Get diagnostic info about background workers
 * `bench show-pending-jobs`- Get pending jobs
 * `bench purge-jobs` - Destroy all pending jobs
