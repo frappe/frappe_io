@@ -25,6 +25,7 @@ Example:
 - `mute_emails`: Stops email sending if true.
 - `deny_multiple_logins`: Stop users from having more than one active session.
 - `root_password`: MariaDB root password.
+- `max_reports_per_user`: Maximum number of Auto Email Reports which can be created by a user, default is 3
 
 ### Remote Database Host Settings
 - `db_host`: Database host if not `localhost`.
