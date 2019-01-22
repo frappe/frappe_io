@@ -120,7 +120,7 @@ axisOptions: {
 </project-demo>
 
 
-Just like bar width, we can set the <b>dot size</b> on a line graph, with the [`dotSize`]() property in [`lineOptions`]().
+Just like bar width, we can set the <b>dot size</b> on a line graph, with the `dotSize` property in `lineOptions`.
 
 ```js
 lineOptions: {
