@@ -10,14 +10,14 @@
 <pre><code class="json hljs">{
   "<span class="hljs-attribute">celery_error_emails</span>": <span class="hljs-value">{
     "<span class="hljs-attribute">ADMINS</span>": <span class="hljs-value">[
-      [
+      {
         <span class="hljs-string">"Person 1"</span>,
         <span class="hljs-string">"person1@example.com"</span>
-      ],
-      [
+      },
+      {
         <span class="hljs-string">"Person2 "</span>,
         <span class="hljs-string">"person2@example.com"</span>
-      ]
+      }
     ]</span>,
     "<span class="hljs-attribute">SERVER_EMAIL</span>": <span class="hljs-value"><span class="hljs-string">"exceptions@example.com"</span>
   </span>}
