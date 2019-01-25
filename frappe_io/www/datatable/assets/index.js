@@ -7,7 +7,9 @@ const {
 let datatable1 = new DataTable('.example-1', {
 	columns,
 	data,
-	checkboxColumn: true
+	checkboxColumn: true,
+	inlineFilters: true,
+	layout: 'fluid'
 });
 
 function makeDemo(targetSelector, code) {

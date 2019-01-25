@@ -34,6 +34,14 @@
     width: 100%;
 }
 
+.datatable {
+	width: 100%;
+}
+
+.dt-row.dt-row-header:last-child {
+	border-bottom: none;
+}
+
 .code {
     width: 100%;
 }
