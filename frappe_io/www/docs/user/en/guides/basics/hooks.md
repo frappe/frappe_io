@@ -218,7 +218,6 @@ The hook function will be passed the doc in concern as the only argument.
 * `validate`
 * `before_save`
 * `autoname`
-* `after_save`
 * `before_insert`
 * `after_insert`
 * `before_submit`
