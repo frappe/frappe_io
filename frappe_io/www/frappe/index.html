@@ -11,48 +11,6 @@
 	</div>
 </section>
 
-<section class='section-padding section-bg'>
-	<div class='container'>
-	<h2 class='text-center'>Technology Stack</h2>
-	<p class='lead text-center'>Frappe comes bundled with an opinionated set of libraries. Here is a non exhaustive set.</p>
-	<div class='card w-400 mt-5'>
-		<div class='card-body'>
-			<ul>
-				<li>Programming Languages: Python + Javascript</li>
-				<li>Databases Supported:
-					<a href='https://mariadb.org/' target='_blank'>MariaDB (MySQL)</a></li>
-				<li>Webserver:
-					<a href='http://werkzeug.pocoo.org/' target='_blank'>Werkzeug</a></li>
-				<li>Templating:
-					<a href='http://jinja.pocoo.org/' target='_blank'>Jinja</a></li>
-				<li>Job Queues:
-					<a href='http://python-rq.org/' target='_blank'>Python RQ</a></li>
-				<li>CSS Framework:
-					<a href='https://getbootstrap.com/docs/3.3' target='_blank'>
-						Bootstrap 3</a>
-				</li>
-				<li>Caching:
-					<a href='https://redis.io/' target='_blank'>Redis</a></li>
-				<li>Realtime:
-					<a href='https://socket.io/' target='_blank'>
-						NodeJS + Socketio.js</a></li>
-				<li>Javascript Packaging:
-					<a href='https://rollupjs.org/' target='_blank'>Rollup</a></li>
-				<li>Webserver (Production):
-					<a href='http://gunicorn.org/' target='_blank'>gunicorn</a> +
-					<a href='https://www.nginx.com/' target='_blank'>NGINX</a></li>
-				<li>Process Manager (Production):
-					<a href='http://supervisord.org/' target='_blank'>supervisord</a></li>
-				<li>Process Manager (Develop):
-					<a href='https://github.com/nickstenning/honcho/' target='_blank'>Honcho</a></li>
-				<li>Command Line:
-					<a href='/bench'>Bench</a></li>
-			</ul>
-		</div>
-	</div>
-	</div>
-</section>
-
 {% macro card(title, body, footer, link) %}
 <div class="col-sm mb-4">
 	<div class="card h-100">
@@ -67,7 +25,7 @@
 </div>
 {% endmacro %}
 
-<section class='section-padding'>
+<section class='section-padding section-bg'>
 	<div class='container'>
 	<h2 class=text-center>Batteries Included</h2>
 	<div class='row mt-5'>
@@ -115,18 +73,48 @@
 	</div>
 </section>
 
-<section class='section-padding text-center section-bg'>
+<section class='section-padding'>
 	<div class='container'>
-		<div class='row'>
-			<div class='col-md-3 col-sm-3 mt-3'></div>
-			<div class='col-md-3 col-sm-3 mt-3'>
-				<a href='/docs/user/en' class='btn btn-block btn-light'>Documentation</a>
-			</div>
-			<div class='col-md-3 col-sm-3 mt-3'>
-				<a href='/security' class='btn btn-block btn-secondary'>Security Bulletin</a>
-			</div>
-			<div class='col-md-3 col-sm-3 mt-3'></div>
+	<h2 class='text-center'>Dependencies</h2>
+	<p class='lead text-center'>Frappe comes bundled with an opinionated set of libraries. Here is a non exhaustive set.</p>
+	<div class='card mt-5'>
+		<div class='card-body'>
+			<ul>
+				<li>Programming Languages: Python + Javascript</li>
+				<li>Databases Supported:
+					<a href='https://mariadb.org/' target='_blank'>MariaDB (MySQL)</a></li>
+				<li>Webserver:
+					<a href='http://werkzeug.pocoo.org/' target='_blank'>Werkzeug</a></li>
+				<li>Templating:
+					<a href='http://jinja.pocoo.org/' target='_blank'>Jinja</a></li>
+				<li>Job Queues:
+					<a href='http://python-rq.org/' target='_blank'>Python RQ</a></li>
+				<li>CSS Framework:
+					<a href='https://getbootstrap.com/docs/3.3' target='_blank'>
+						Bootstrap 3</a>
+				</li>
+				<li>Caching:
+					<a href='https://redis.io/' target='_blank'>Redis</a></li>
+				<li>Realtime:
+					<a href='https://socket.io/' target='_blank'>
+						NodeJS + Socketio.js</a></li>
+				<li>Javascript Packaging:
+					<a href='https://rollupjs.org/' target='_blank'>Rollup</a></li>
+				<li>Webserver (Production):
+					<a href='http://gunicorn.org/' target='_blank'>gunicorn</a> +
+					<a href='https://www.nginx.com/' target='_blank'>NGINX</a></li>
+				<li>Process Manager (Production):
+					<a href='http://supervisord.org/' target='_blank'>supervisord</a></li>
+				<li>Process Manager (Develop):
+					<a href='https://github.com/nickstenning/honcho/' target='_blank'>Honcho</a></li>
+				<li>Command Line:
+					<a href='/bench'>Bench</a></li>
+			</ul>
 		</div>
+	</div>
+	<div class='text-center mt-5'>
+		<p><a href='/docs/user/en' class='btn btn-dark'>Documentation</a></p>
 		<p class='text-muted mt-3'>License: MIT</p>
+	</div>
 	</div>
 </section>

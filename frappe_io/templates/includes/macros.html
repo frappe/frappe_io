@@ -2,8 +2,10 @@
 <nav class="navbar navbar-expand-lg navbar-light subnav">
 	<div class="container">
 		<a class="navbar-brand" href="{{ path }}">
+			{% if logo %}
 			<img class='mr-2 d-inline-block align-top'
 				src='{{ logo }}' />
+			{% endif %}
 			<span class='subnav-title'>{{ title }}</span>
 		</a>
 		<ul class="navbar-nav ml-auto justify-content-end">

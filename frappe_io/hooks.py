@@ -23,15 +23,15 @@ website_context = {
 	'brand_name': 'Frappe',
 	"top_bar_items": [
 		{"label": "Products", "right": 1, "child_items": [
-			{"label": "Frappe Framework", "url":"/frappe"},
 			{"label": "ERPNext", "url":"/erpnext"},
-			{"label": "Bench", "url":"/bench"},
+			{"label": "Frappe Framework", "url":"/frappe"},
 			{"label": "Gantt", "url":"/gantt"},
 			{"label": "Charts", "url":"/charts"},
 			{"label": "DataTable", "url":"/datatable"},
 			{"label": "FrappeJS", "url":"/frappejs"},
 			{"label": "Accounting", "url":"/accounting"},
-			{"label": "Marketplace", "url":"/marketplace"}
+			{"label": "Marketplace", "url":"/marketplace"},
+			{"label": "Bench", "url":"/bench"},
 		]},
 		{"label": "About", "right": 1, "child_items": [
 			{"label": "Team", "url":"/about"},
@@ -42,7 +42,7 @@ website_context = {
 		]},
 		{"label": "Blog", "url":"/blog", "right": 1},
 	],
-	"favicon": "/assets/frappe_theme/img/frappe-logo.png",
+	"favicon": '/assets/frappe_io/images/frappe-logo.png',
 	"hide_login": 1
 }
 
