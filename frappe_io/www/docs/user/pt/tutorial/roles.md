@@ -1,4 +1,4 @@
-<!-- add-breadcrumbs -->
+<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
 # Criando Roles
 
 Antes de criar modelos, devemos criar roles para que possamos definir as permissões do modelo. Há dois roles que nós iremos criar:

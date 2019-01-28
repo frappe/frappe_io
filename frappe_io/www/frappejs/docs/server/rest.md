@@ -1,3 +1,4 @@
+<!-- base_template: frappe_io/www/frappejs/frappejs_base.html -->
 # REST API
 
 You can directly access documents at `/api/resource/:doctype`.

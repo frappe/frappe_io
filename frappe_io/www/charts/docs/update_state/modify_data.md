@@ -1,3 +1,4 @@
+<!-- base_template: frappe_io/www/charts/charts_base.html -->
 # Modifying Data
 
 There are two ways to update data in a chart: either in adding and removing individual points, or updating the existing data with an entirely new set of data points.

@@ -1,4 +1,4 @@
-<!-- add-breadcrumbs -->
+<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
 # Table of Contents
 
 You can add a table of contents by adding `{index}` string on a new line.

@@ -1,3 +1,4 @@
+<!-- base_template: frappe_io/www/charts/charts_base.html -->
 ## Exporting to images
 
 Frappe charts are exportable to an SVG format, in which they are natively rendered.

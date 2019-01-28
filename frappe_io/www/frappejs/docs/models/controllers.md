@@ -1,3 +1,4 @@
+<!-- base_template: frappe_io/www/frappejs/frappejs_base.html -->
 # Controllers
 
 In Frappe.js you can extend the document class for a particular DocType which we call controllers.

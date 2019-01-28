@@ -1,4 +1,4 @@
-<!-- add-breadcrumbs -->
+<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
 # Running Background Jobs
 
 Sometimes you may not want a user request to be executed immediately but added to a queue that will be executed by a background worker. The advantage of doing this is that your web workers remain free to execute other requests and longer jobs do not eat up all of your resources.

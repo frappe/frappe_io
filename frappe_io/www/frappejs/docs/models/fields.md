@@ -1,3 +1,4 @@
+<!-- base_template: frappe_io/www/frappejs/frappejs_base.html -->
 # Fields
 
 Fields are properties a the document instance that are defined in its DocType.

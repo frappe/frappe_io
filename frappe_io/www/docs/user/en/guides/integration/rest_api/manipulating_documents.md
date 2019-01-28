@@ -1,4 +1,4 @@
-Base URL: https://{your frappe instance}
+<!-- base_template: frappe_io/www/frappe/frappe_base.html -->Base URL: https://{your frappe instance}
 
 Example: https://demo.erpnext.com
 

@@ -1,4 +1,4 @@
-<!-- add-breadcrumbs -->
+<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
 # Setup Production
 
 You can setup the bench for production use by configuring two programs, Supervisor and nginx. If you want to revert your Production Setup to Development Setup refer to [these commands](https://github.com/frappe/bench/wiki/Stopping-Production-and-starting-Development)

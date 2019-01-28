@@ -1,4 +1,4 @@
-<!-- add-breadcrumbs -->
+<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
 # UI Integration Testing
 
 You can write integration tests using [Cypress](https://cypress.io). It is a NodeJS based full-stack testing framework which doesn't rely on Selenium.

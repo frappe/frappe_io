@@ -1,3 +1,4 @@
+<!-- base_template: frappe_io/www/frappejs/frappejs_base.html -->
 # Server
 
 The framework comes bundles with an `express.js` web server with pre-built backends, [REST API](rest.md) and ORM.

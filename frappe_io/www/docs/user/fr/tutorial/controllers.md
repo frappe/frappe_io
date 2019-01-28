@@ -1,4 +1,4 @@
-<!-- add-breadcrumbs -->
+<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
 # Les controleurs
 
 La prochaine étape est d'ajouter quelques méthodes et événements à nos modèles. Dans l'application, nous devons nous 

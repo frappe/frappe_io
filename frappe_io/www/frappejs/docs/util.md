@@ -1,3 +1,4 @@
+<!-- base_template: frappe_io/www/frappejs/frappejs_base.html -->
 # Utilities
 
 - [Observable](/frappejs/docs/utilities/observable.md)

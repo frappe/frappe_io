@@ -1,4 +1,4 @@
-<!-- add-breadcrumbs -->
+<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
 # Controllers
 
 Next step would be adding methods and event handlers to models. In the app, we should ensure that if a Library Transaction is made, the Article in question must be in stock and the member loaning the Article must have a valid membership.

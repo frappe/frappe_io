@@ -1,4 +1,4 @@
-<!-- add-breadcrumbs -->
+<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
 # Make a New App
 
 Once the bench is installed, you will see two main folders, `apps` and `sites`. All the applications will be installed in apps.

@@ -1,4 +1,4 @@
-<!-- add-breadcrumbs -->
+<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
 # Structure du repertoire d'un DocType
 
 Après avoir sauvegardé vos DocTypes, vérifiez que les modèles dans les fichiers `.json` et `.py` soient créés dans le module

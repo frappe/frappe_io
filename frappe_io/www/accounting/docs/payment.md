@@ -1,3 +1,4 @@
+<!-- base_template: frappe_io/www/accounting/accounting_base.html -->
 <!-- add-next-prev-links -->
 ## Payments
 

@@ -1,4 +1,4 @@
-<!-- add-breadcrumbs -->
+<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
 # How To Enable Social Logins
 
 Use Facebook, Google or GitHub authentication to login to Frappe, and your users will be spared from remembering another password.

@@ -1,3 +1,4 @@
+<!-- base_template: frappe_io/www/charts/charts_base.html -->
 ## Also called Sliced Diagrams
 Another family of charts, the aggregation charts accumulate the value at a data point across the multiple datasets.
 

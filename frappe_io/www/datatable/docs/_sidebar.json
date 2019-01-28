@@ -1,11 +1,7 @@
 [
     {
-        "title": "Homepage",
-        "route": "/datatable"
-    },
-    {
         "title": "Getting Started",
-        "route": "/datatable/docs/getting-started"
+        "route": "/datatable/docs/index"
     },
     {
         "title": "Download",

@@ -1,4 +1,4 @@
-<!-- add-breadcrumbs -->
+<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
 # Adding Module Icons On Desktop
 
 To create a module icon for a Page, List or Module, you will have to edit the `config/desktop.py` file in your app.

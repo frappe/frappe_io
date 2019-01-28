@@ -1,4 +1,4 @@
-<!-- add-breadcrumbs -->
+<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
 # Avant de commencer
 
 <p class="lead">Liste des outils et technologies utiles dans le développement d'applications avec Frappe.</p>

@@ -1,4 +1,4 @@
-<!-- add-breadcrumbs -->
+<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
 # Controladores (Controllers)
 
 El siguiente paso va a ser agregar métodos y eventos a los modelos. En la aplicación, debemos asegurar que si una Library Transaction es creada, el Article que se solicita debe estar en disponibilidad y el miembro que lo solicita debe tener una membresía (membership) válida.

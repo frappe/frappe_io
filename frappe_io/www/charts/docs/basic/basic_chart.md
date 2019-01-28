@@ -1,3 +1,4 @@
+<!-- base_template: frappe_io/www/charts/charts_base.html -->
 ## Axis chart: What Is It
 
 An axis chart is generally a 2D rendition of data, where a set of values corresponds to every point in a dataset. That's why, data is the most important component for a chart. For example, for some values across items, the data could look like:

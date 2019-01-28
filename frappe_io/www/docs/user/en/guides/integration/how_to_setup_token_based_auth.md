@@ -1,4 +1,4 @@
-# Token based authentication
+<!-- base_template: frappe_io/www/frappe/frappe_base.html --># Token based authentication
 
 Token-based authentication is a security technique that authenticates the users who attempt to gain access to a server. It is available starting with v11.0.3. The service validates the security token and processes the user request.
 

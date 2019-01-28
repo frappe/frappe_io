@@ -1,4 +1,4 @@
-<!-- add-breadcrumbs -->
+<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
 # Where Do I Find Standard Print Formats
 
 Standard Print formats are <b>auto generated</b> from the layout of the DocType. You can customize the standard format by

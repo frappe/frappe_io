@@ -1,4 +1,4 @@
-<!-- add-breadcrumbs -->
+<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
 # Single Type Doctype
 
 DocTypes have a table associated with them. For example DocType **Customer** will have a table `tabCustomer` associated with it.

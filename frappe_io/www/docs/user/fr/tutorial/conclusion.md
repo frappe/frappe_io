@@ -1,4 +1,4 @@
-<!-- add-breadcrumbs -->
+<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
 # Conclusion
 
 Nous espérons vous avoir donné un apercu de comment les applications sont développées avec Frappe. L'ojectif était de vous

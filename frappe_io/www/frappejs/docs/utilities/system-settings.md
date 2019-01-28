@@ -1,3 +1,4 @@
+<!-- base_template: frappe_io/www/frappejs/frappejs_base.html -->
 # System Settings
 
 SystemSettings is a [Single document](/frappejs/docs/models/singles.md) that has system defaults like:

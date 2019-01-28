@@ -1,3 +1,4 @@
+<!-- base_template: frappe_io/www/frappejs/frappejs_base.html -->
 # Managing Documents
 
 Frappe.js Object-Relational-Mapper (ORM) helps you manage (create, read, update, delete) documents based on the DocTypes declared.

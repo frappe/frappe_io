@@ -1,4 +1,4 @@
-<!-- add-breadcrumbs -->
+<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
 # How To Migrate Doctype Changes To Production
 
 #### 1. DocType / Schema Changes

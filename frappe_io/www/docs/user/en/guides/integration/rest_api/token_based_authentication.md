@@ -1,4 +1,4 @@
-# Token Based Authentication
+<!-- base_template: frappe_io/www/frappe/frappe_base.html --># Token Based Authentication
 
 > Available starting with v11.0.3
 

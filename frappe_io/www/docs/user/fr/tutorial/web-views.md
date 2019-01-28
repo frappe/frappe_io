@@ -1,4 +1,4 @@
-<!-- add-breadcrumbs -->
+<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
 # Les vues web
 
 Frappe a deux principaux environnements, le **bureau** et **le web**. Le **bureau** est un environnement riche AJAX alors

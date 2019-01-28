@@ -1,3 +1,4 @@
+<!-- base_template: frappe_io/www/frappejs/frappejs_base.html -->
 # Backends
 
 Frappe.js comes with built-in backends for data storage. These can be client-side or server-side :

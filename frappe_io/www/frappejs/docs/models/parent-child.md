@@ -1,3 +1,4 @@
+<!-- base_template: frappe_io/www/frappejs/frappejs_base.html -->
 # Parent Child Relationship
 
 All documents can have child documents, identified by the `Table` field.

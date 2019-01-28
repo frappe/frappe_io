@@ -1,4 +1,4 @@
-<!-- add-breadcrumbs -->
+<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
 # Fetch a Field Value from a Document into a Transaction
 
 Let's say, there is a custom field "VAT Number" in Supplier, which should be fetched in Purchase Order.

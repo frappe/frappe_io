@@ -1,3 +1,4 @@
+<!-- base_template: frappe_io/www/frappe/frappe_base.html -->
 <!-- title: Frappe Framework Installation -->
 
 # Installation
