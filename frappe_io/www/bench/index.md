@@ -1,5 +1,5 @@
 <section class='top-section'>
-	<h1>Frappe Bench</h1>
+	<h1>CLI to Manage Frappe Deployments</h1>
 	<p class='lead'>
 		Bench is a command line tool that helps you install, setup, manage multiple sites and apps based on Frappe Framework.
 	</p>

@@ -7,7 +7,7 @@
 <section class='section-padding'>
 	<div class='container text-center'>
 	<h1>Beyond Open Source</h1>
-	<p class='lead'>At Frappe we believe that good companies add value to both its customers and society. That happens when we take a holistic, and not just profit oriented view of our work. You will find our team embibes these values.</p>
+	<p class='lead pb-4'>At Frappe we believe that good companies add value to both its customers and society. That happens when we take a holistic, and not just profit oriented view of our work. You will find our team embibes these values.</p>
 	<p>
 	<div class="row team-members">
 		{% for member in team_members %}
@@ -72,6 +72,12 @@
 	.contact p {
 		font-size: 16px;
 	}
+	@media (max-width: 577px) {
+		.person img {
+			max-width: 240px;
+		}
+	}
+
 	.person a {
 		text-decoration: none;
 	}
