@@ -47,7 +47,7 @@ If you a fresh engineer applying for an engineering position, you must complete 
 
 [https://frappe.io/flask-test](https://frappe.io/flask-test)
 
-If you complete the test, email us at hello@frappe.io and someone will take it from there.
+If you complete the test, email us at jobs@frappe.io and someone will take it from there.
 
 ##### 3. Ace the Interview
 
