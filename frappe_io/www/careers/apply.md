@@ -57,7 +57,7 @@ To understand your capabilities, we will ask about your past experiences. We bel
 
 During this interview we will try and go deeper into your previous experience or projects and try and determine if you have the depth and ability to fulfil the requirements of this job.
 
-If you have any queries, please email to us at [hello@eprnext.com](mailto:hello@eprnext.com) and we will try our best to help you!
+If you have any queries, please email to us at [jobs@eprnext.com](mailto:jobs@eprnext.com) and we will try our best to help you!
 
 {{ media(
 	"Shivam Mishra",
