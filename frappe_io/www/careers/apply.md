@@ -21,7 +21,7 @@ Consultants help our customers reach their goals by providing support and guidan
 
 ##### 3. Designers
 
-As a designer you will help us improve our product and website to become more friendly and consistent. Our products and large and complex and there is always a lot of opportunity to add happiness to people's lives by simpler and better design.
+As a designer you will help us improve our product and website to become more friendly and consistent. Our products are large and complex and there is always a lot of opportunity to add happiness to people's lives by simpler and better design.
 
 ##### 4. Writers
 
