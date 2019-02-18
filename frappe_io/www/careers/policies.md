@@ -19,7 +19,7 @@ Frappe does not tolerate bad behaviours. The #MeToo movement has shown us that h
 Maintaining such culture is hard and we intend to do it right.
 
 {{ media(
-	"Ketan Parekh",
+	"Ketan Desai",
 	"Working at Frappe is a new experience everyday, and you can take control of execution and  what needs to be done to deliver. We are open source from every perspective and we take pride in sharing our knowledge and experience. We are very young and a talented team and are working together to help small and medium organizations take better decisions by using applications like Accounting, CRM, MRP, HRMS and much more, it is called ERPNext!",
 	"https://frappe.io/files/ketan%202018-12-15%2023:07:39.jpg",
 	"VP - Partners and Alliances",
