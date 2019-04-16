@@ -25,9 +25,9 @@ For every user you can generate an api-key and api-secret which together form a 
 Api-key and api-secret can be generated from the web interface, from the command line or by remote procedure call (RPC):
 
 - RPC: 
-  `/api/method/frappe.core.doctype.user.user?user="user_name"`
+  `/api/method/frappe.core.doctype.user.user.generate_keys?user="user_name"`
 - Command: 
-  `bench execute frappe.core.doctype.user.user --args ['user_name']`
+  `bench execute frappe.core.doctype.user.user.generate_keys --args ['user_name']`
 - Web: 
   `User -> Api Access -> Generate Keys`
 
