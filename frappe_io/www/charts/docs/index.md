@@ -8,7 +8,7 @@
 
   and include in your project:
   ```js
-  import { Chart } from "frappe-charts"
+  import { Chart } from "frappe-charts/dist/frappe-charts.min.esm"
   ```
 
 * ...or include within your HTML
@@ -37,7 +37,7 @@ const data = {
     ]
 }
 
-const chart = new frappe.Chart("#chart", {  // or a DOM element,
+const chart = new Chart("#chart", {  // or a DOM element,
                                             // new Chart() in case of ES6 module with above usage
     title: "My Awesome Chart",
     data: data,
