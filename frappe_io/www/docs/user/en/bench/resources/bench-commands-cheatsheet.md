@@ -2,6 +2,7 @@
 # Bench Commands Cheatsheet
 
 ### General Usage
+
 * `bench --version` - Show bench version
 * `bench version` - Show version of all apps
 * `bench src` - Show bench repo directory
@@ -18,7 +19,10 @@
   * `--restart-supervisor`  restart supervisor processes after update
   * `--no-backup`			  Don't take a backup before update
 * `bench restart` Restart all bench services
-* `bench backup` Backup
+* `bench backup` Create a backup of the default site.
+
+  Backup will be saved to `~/frappe-bench/sites/{your site}/private/backups/`.
+
 * `bench backup-all-sites` Backup all sites
   * `--with-files` Backup site with files
 * `bench restore` Restore
@@ -31,7 +35,8 @@
 * `bench --site [sitename] setup-help` Sets up in-app help documentation
 
 
-###Config
+### Config
+
 * `bench config` - Change bench configuration
   * `auto_update [on/off]`          Enable/Disable auto update for bench
   * `dns_multitenant [on/off]`      Enable/Disable DNS Multitenancy
@@ -60,7 +65,8 @@
 * `bench set-nginx-port [sitename] [port]` - Set site's port in Production
 
 
-###Development
+### Development
+
 * `bench new-app [app-name]` Creates a new app
 * `bench get-app [repo-link]` - Downloads an app from a git repository and installs it
   * `--branch [branch-name]`    Fetches specific branch of app
@@ -97,7 +103,8 @@
 * `bench disable-production`  Disables production environment
 
 
-###Scheduler
+### Scheduler
+
 * `bench enable-scheduler` - Enables Scheduler that will run scheduled tasks
 * `bench doctor` - Get diagnostic info about background workers
 * `bench show-pending-jobs`- Get pending jobs
