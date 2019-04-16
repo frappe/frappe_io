@@ -165,7 +165,7 @@ Can be used to set various properties on bar plots.
 #### spaceRatio
  - Type: `Number`
  - Min: `0`
- - Max: `2`
+ - Max: `1`
  - Default: `0.5`
 
 In order to set the bar width, instead of defining it and the space between the bars independently, we simply define the <b>ratio of the space</b> between bars to the bar width. The chart then adjusts the actual size proportional to the chart container.
