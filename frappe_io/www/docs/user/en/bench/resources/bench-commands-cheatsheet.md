@@ -9,6 +9,19 @@
 * `bench --help` - Show all commands and help
 * `bench [command] --help` - Show help for command
 * `bench init [bench-name]` - Create a new bench (Run from home dir)
+  * `--python TEXT`                   Path to Python Executable.
+  * `--ignore-exist`                  Ignore if Bench instance exists.
+  * `--apps_path TEXT`                path to json files with apps to install after init
+  * `--frappe-path TEXT`              path to frappe repo
+  * `--frappe-branch TEXT`            path to frappe repo
+  * `--clone-from TEXT`               copy repos from path
+  * `--clone-without-update`          copy repos from path without update
+  * `--no-procfile`                   Pull changes in all the apps in bench
+  * `--no-backups`                    Run migrations for all sites in the bench
+  * `--no-auto-update`                Build JS and CSS artifacts for the bench
+  * `--skip-redis-config-generation`  Skip redis config generation if already specifying the common-site-config file
+  * `--verbose`                       Verbose output during install
+
 * `bench --site [site-name] COMMAND` - Specify site for command
 * `bench update` - Pulls changes for bench-repo and all apps, applies patches, builds JS and CSS, and then migrates.
   * `--pull`                Pull changes in all the apps in bench
@@ -28,7 +41,8 @@
 * `bench restore` Restore
   * `--with-private-files` Restore site with private files (Path to tar file)
   * `--with-public-files` Restore site with public files (Path to tar file)
-* `bench migrate` Will read JSON files and make changes to the database accordingly
+* `bench migrate` Run patches, sync schema and rebuild files/translations
+  * `--rebuild-website TEXT` Rebuild webpages after migration
 * `bench migrate-env [python-version]` Will migrate the virtual environment to the desired python version
 * `bench --site [sitename] set-admin-password [password]` Will reset the administrator password
 * `bench destroy-all-sessions` Destroys all sessions
