@@ -32,7 +32,6 @@
 * `bench migrate-env [python-version]` Will migrate the virtual environment to the desired python version
 * `bench --site [sitename] set-admin-password [password]` Will reset the administrator password
 * `bench destroy-all-sessions` Destroys all sessions
-* `bench --site [sitename] setup-help` Sets up in-app help documentation
 
 
 ### Config
