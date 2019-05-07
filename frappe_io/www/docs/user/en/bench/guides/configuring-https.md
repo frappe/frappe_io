@@ -9,6 +9,16 @@ The files required are
 
 * Certificate (usually with extension .crt)
 * Decrypted private key
+	
+Note: To generate .crt from private authority, generally you would have to generate a CSR (Certificate Signing Request). Run following command on erpnext server and it would generate 2 files i.e .csr and .key files. You need to give .csr to private authority so that they would generate the corresponding .crt against it.
+	
+		openssl req -new -newkey rsa:2048 -nodes -keyout mydomain.com.key -out mydomain.com.csr
+
+### Prequisites
+
+1. You need to have a [DNS Multitenant Setup](https://frappe.io/docs/user/en/bench/guides/setup-multitenancy)
+2. Your site should be accessible via a valid domain
+3. You need root permissions on your server
 
 If you have multiple certificates (primary and intermediate), you will have to concatenate them. For example,
 
