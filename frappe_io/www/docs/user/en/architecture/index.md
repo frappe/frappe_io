@@ -95,6 +95,13 @@ Node server for bundling JS/CSS assets using [Rollup](https://rollupjs.org).
 It will also rebuild files as they change.
 
 #### `schedule:`
+Job Scheduler using Python RQ.
+
 #### `worker_short:`
+This worker has a short timeout (300).
+
 #### `worker_long:`
+This worker has a long timeout (1500).
+
 #### `worker_default:`
+This worker has a default timeout (300).

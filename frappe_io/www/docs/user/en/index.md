@@ -14,7 +14,7 @@ It is pretty generic and can be used to build database driven apps.
 1. [Installing Bench and Frappe](/docs/installation)
 1. [Bench / Architecture](/docs/user/en/architecture)
 1. [Creating a Frappe App](/docs/user/en/create-frappe-app)
-1. Making Doctypes
+1. [Understanding Doctypes](/docs/user/en/understanding-doctypes)
 1. Desk
 1. Users and Permission
 1. Reports and Printing
