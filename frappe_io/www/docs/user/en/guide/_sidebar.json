@@ -4,12 +4,8 @@
 		"title": "Docs Home"
 	},
 	{
-		"route": "/docs/user/en",
-		"title": "Table of Contents"
-	},
-	{
-		"route": "/docs/installation",
-		"title": "Installation"
+		"route": "/docs/user/en/guide",
+		"title": "Guide to Concepts"
 	},
 	{
 		"route": "/docs/user/en/tutorial",

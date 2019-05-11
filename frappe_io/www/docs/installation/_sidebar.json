@@ -1,0 +1,26 @@
+[
+	{
+		"route": "/docs",
+		"title": "Docs Home"
+	},
+	{
+		"route": "/docs/user/en",
+		"title": "Table of Contents"
+	},
+	{
+		"route": "/docs/user/en/introduction",
+		"title": "Introduction to Frappe Framework"
+	},
+	{
+		"route": "/docs/installation",
+		"title": "Installation"
+	},
+	{
+		"route": "/docs/user/en/architecture",
+		"title": "Bench Architecture"
+	},
+	{
+		"route": "/docs/user/en/create-frappe-app",
+		"title": "Creating a Frappe App"
+	}
+]
