@@ -31,7 +31,10 @@ Open source is also part of what we call "responsible capitalism". Instead of tr
 	"https://twitter.com/JaiChavan8"
 )}}
 
-<div class='text-center mb-5'>
+<div class='text-center mt-5 mb-3'>
 	<a href="/careers/policies" class="btn btn-dark">Understand Our Policies</a>
 </div>
 
+<div class='text-center mb-5'>
+	<a href="/join-us">Apply Now</a>
+</div>

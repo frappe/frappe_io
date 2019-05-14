@@ -40,7 +40,10 @@ Such small things constitutes and leads to happy and satisfied employees. Many e
 	"https://twitter.com/pratu16x7"
 )}}
 
-<div class='text-center mb-5'>
+<div class='text-center mt-5 mb-3'>
 	<a href="/careers/philosophy" class="btn btn-dark">Understand the Philosophy</a>
 </div>
 
+<div class='text-center mb-5'>
+	<a href="/join-us">Apply Now</a>
+</div>

@@ -27,6 +27,10 @@ Maintaining such culture is hard and we intend to do it right.
 )}}
 
 
-<div class='text-center my-5'>
-	<a href="/careers/apply" class="btn btn-dark">See Positions and Apply</a>
+<div class='text-center mt-5 mb-3'>
+	<a href="/careers/apply" class="btn btn-dark">See Open Positions</a>
+</div>
+
+<div class='text-center'>
+	<a href="/join-us">Apply Now</a>
 </div>
