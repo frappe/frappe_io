@@ -1,6 +1,6 @@
 <!-- base_template: frappe_io/www/frappe/frappe_base.html -->
 <!-- add-breadcrumbs -->
-<!-- title: Docs (English) -->
+<!-- title: Table of Contents -->
 
 # Frappe Framework Documentation
 Frappe is a full stack, batteries-included, web framework written in Python and Javascript.
@@ -15,7 +15,7 @@ It is pretty generic and can be used to build database driven apps.
 1. [Bench / Architecture](/docs/user/en/architecture)
 1. [Creating a Frappe App](/docs/user/en/create-frappe-app)
 1. [Understanding Doctypes](/docs/user/en/understanding-doctypes)
-1. Desk
+1. [Desk](/docs/user/en/desk)
 1. Users and Permission
 1. Reports and Printing
 1. Deployment and Migration
