@@ -10,8 +10,8 @@ It is pretty generic and can be used to build database driven apps.
 ### Meta-data driven
 
 Meta-data is a first class citizen in Frappe. It is used to generate database tables,
-design forms and configure a lot of features. Meta-data is stored in a Model which is known as DocType in Frappe.
-If you are familiar with the concept of **Models** in other frameworks, that is what we call DocType.
+design forms and configure a lot of features. Meta-data is stored in a **Model**
+which is known as DocType in Frappe.
 
 Let's take an example of a DocType called **ToDo**. It will contain fields like `status`, `date` and `description`.
 
@@ -155,7 +155,6 @@ It also comes with a drag-and-drop Print Format Builder.
 
 ### Batteries Included
 
-When we say Batteries Included, we do not take it lightly. Frappe has tons of features that are essential to building
-a modern complex app. We have only introduced the basic features here.
-The rest of this guide will cover them and other advanced features with much finer detail,
-so make sure to read it all!
+Frappe has tons of features that are essential to building a modern complex app.
+Only the basic features are introduced here. The rest of this guide will cover
+them and other advanced features with much finer detail, so make sure to read it all!
