@@ -1,4 +1,5 @@
 <!-- base_template: frappe_io/www/frappe/frappe_base.html -->
+<!-- add-breadcrumbs -->
 # Installation
 
 > These steps assume you want to install Bench in developer mode. If you want install in production mode, follow the [Easy Install](https://github.com/frappe/bench#easy-install) method.

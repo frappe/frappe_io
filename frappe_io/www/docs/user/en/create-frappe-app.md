@@ -1,4 +1,5 @@
 <!-- base_template: frappe_io/www/frappe/frappe_base.html -->
+<!-- add-breadcrumbs -->
 # Creating a Frappe App
 
 To create a new Frappe app, run the following command from the `frappe-bench` directory.

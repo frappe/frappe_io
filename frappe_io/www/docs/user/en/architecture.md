@@ -1,5 +1,5 @@
 <!-- base_template: frappe_io/www/frappe/frappe_base.html -->
-
+<!-- add-breadcrumbs -->
 # Bench / Architecture
 
 Bench is a command-line utility that helps you install apps,
