@@ -282,7 +282,7 @@ There are a lot of methods provided by default on the `doc` object. You can find
 
 To add custom behaviour during the lifecycle of a document, we have controller hooks.
 
-Method Name                  | Description
+<img width="500px" /> Method Name | Description
 -----------------------------|-------------
 `before_submit`              | Called before a document is submitted.
 `before_cancel`              | This is called before a submitted document is cancelled.
