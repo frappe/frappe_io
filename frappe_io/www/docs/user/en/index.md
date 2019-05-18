@@ -18,7 +18,7 @@ It is pretty generic and can be used to build database driven apps.
 1. [Desk](/docs/user/en/desk)
 1. [Users and Permission](/docs/user/en/users-and-permissions)
 1. [Reports](/docs/user/en/reports)
-1. Printing
+1. [Printing](/docs/user/en/printing)
 1. Deployment and Migration
 1. Portal and WebForms Development
 1. Advanced Topics
