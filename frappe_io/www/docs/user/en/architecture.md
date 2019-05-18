@@ -7,6 +7,9 @@ manage multiple sites and update Frappe based apps on *nix based systems
 (macOS, CentOS, Debian, Ubuntu, etc) for development and production.
 Bench will also create nginx and supervisor config files, setup backups and much more.
 
+<img src="/docs/assets/img/bench-architecture.png" alt="Bench Architecture" class="mb-3">
+*Bench Architecture*
+
 > For installation, check this [guide](/docs/installation)
 
 ### Directory structure
