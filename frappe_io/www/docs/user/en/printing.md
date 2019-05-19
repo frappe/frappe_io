@@ -33,7 +33,7 @@ HTML button in left sidebar into your Print Format Editor.
 In the Custom HTML field you can use any valid HTML with [Bootstrap 3
 classes](https://getbootstrap.com/docs/3.3/css/) for styling. You can also use
 [Jinja Templating](http://jinja.pocoo.org/docs/2.10/) to add dynamic content to
-your HTML. See list of methods available to use in Jinja templates.
+your HTML. See [list of methods](/docs/user/en/api/jinja) available to use in Jinja templates.
 
 ![Custom HTML](/docs/assets/img/print-format-custom-html.png)
 *Custom HTML*
