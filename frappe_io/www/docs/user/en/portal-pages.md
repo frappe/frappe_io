@@ -1,13 +1,13 @@
 <!-- base_template: frappe_io/www/frappe/frappe_base.html -->
 <!-- add-breadcrumbs -->
-# Portal and Webforms
+# Portal Pages
 
 Frappe Framework not only provides a rich admin interface via the
-[Desk](/docs/user/en/desk) which is an SPA but also static server rendered
-web pages and forms. These pages are generally built for your website visitors.
-They can be public or can require login.
+[Desk](/docs/user/en/desk) which is an SPA but also static server rendered web
+pages. These pages are generally built for your website visitors. They can be
+public or can require login.
 
-## Portal Pages
+## Adding pages
 
 Every frappe app including frappe comes with a `www` folder which directly maps
 to website urls. Here is what the directory structure looks like:
@@ -55,7 +55,13 @@ Will still be rendered on the route `/custom_page` and `/custom_page/subpage`
 will also be available.
 
 > You can write `.md` files instead of `.html` for simple static pages like
-> documentation. The documentation you are reading is written as a markdown file.
+> documentation. This documentation you are reading is written as a markdown file.
+
+### Overriding standard pages
+
+Frappe also allows you to override standard pages through your custom app. For
+example, to override the standard `/about` provided by frappe, just add a file
+named `about.html` in the `www` folder of your app and it will take precedence.
 
 ### Templating
 
@@ -149,3 +155,56 @@ Usage in template
 
 > Since Portal Pages are built using Jinja, frappe provides a standard
 > [API](/docs/user/en/api/jinja) to use in jinja templates.
+
+### Custom CSS and JS
+
+You can add custom CSS and JS for your pages by dropping a `.css` or `.js` file
+of the same name.
+
+```bash
+custom_app/www
+├── custom_page.html
+├── custom_page.css
+├── custom_page.js
+└── custom_page.py
+```
+
+### Magic Comments
+
+You can configure some functionalities by adding magic comments in your pages.
+
+For example by adding `<!-- add-breadcrumbs -->` to your `.html` or `.md` file,
+frappe will automatically generate breadcrumbs based on folder structure.
+
+{% raw %}
+```html
+<!-- add-breadcrumbs -->
+
+<h1>{{ _("About Us") }}</h1>
+<div class="row">
+    <div class="col-sm-6">
+		We believe that great companies are driven by excellence,
+		and add value to both its customers and society.
+		You will find our team embibes these values.
+	</div>
+
+	{% if about_us_settings.show_contact_us %}
+	<a href="/contact" class="btn btn-primary">Contact Us</a>
+	{% endif %}
+</div>
+```
+{% endraw %}
+
+Here is a list of all magic comments and their functionalities.
+
+Comment							| Functionality
+--------------------------------|----------------
+`<!-- add-breadcrumbs -->`		| Add breadcrumbs to page
+`<!-- no-breadcrumbs -->`		| Remove breadcrumbs from page
+`<!-- show-sidebar -->`			| Show web sidebar
+`<!-- no-cache -->`				| Disable caching for this page
+`<!-- no-sitemap -->`			| Don't include page in sitemap
+`<!-- sitemap -->`				| Include page in sitemap
+`<!-- add-next-prev-links -->`	| Add Next and Previous navigation buttons
+`<!-- title: Custom Title -->`	| Set the page title
+`<!-- base_template: custom_app/path/to/custom_base.html -->` | Override base_template for this page
