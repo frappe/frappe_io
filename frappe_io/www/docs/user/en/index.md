@@ -22,7 +22,7 @@ It is pretty generic and can be used to build database driven apps.
 1. [Portal Pages](/docs/user/en/portal-pages)
 1. [Web Forms](/docs/user/en/web-forms)
 1. [Database Migrations](/docs/user/en/database-migrations)
-1. Deployment
+1. [Deployment](/docs/user/en/deployment)
 1. Advanced Topics
 1. Scripting Doctype
 1. Testing and Debugging
