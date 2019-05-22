@@ -11,7 +11,7 @@ It is pretty generic and can be used to build database driven apps.
 
 1. [Introduction to Frappe Framework](/docs/user/en/introduction)
 1. [Installing Bench and Frappe](/docs/installation)
-1. [Bench / Architecture](/docs/user/en/architecture)
+1. [Bench Architecture](/docs/user/en/architecture)
 1. [Creating a Frappe App](/docs/user/en/create-frappe-app)
 1. [Understanding Doctypes](/docs/user/en/understanding-doctypes)
 1. [Desk](/docs/user/en/desk)
