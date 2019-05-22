@@ -23,5 +23,6 @@ It is pretty generic and can be used to build database driven apps.
 1. [Database Migrations](/docs/user/en/database-migrations)
 1. [Deployment](/docs/user/en/deployment)
 1. [Developer API](/docs/user/en/api)
-1. Testing and Debugging
+1. [Testing](/docs/user/en/testing)
+1. [Debugging](/docs/user/en/debugging)
 1. Contributing Section
