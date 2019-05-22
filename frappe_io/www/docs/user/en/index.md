@@ -25,4 +25,4 @@ It is pretty generic and can be used to build database driven apps.
 1. [Developer API](/docs/user/en/api)
 1. [Testing](/docs/user/en/testing)
 1. [Debugging](/docs/user/en/debugging)
-1. Contributing Section
+1. [Contribution Guidelines](https://github.com/frappe/erpnext/wiki/Contribution-Guidelines)
