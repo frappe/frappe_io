@@ -9,7 +9,6 @@ It is pretty generic and can be used to build database driven apps.
 
 ## Table of Contents
 
-1. Why Frappe Framework ?
 1. [Introduction to Frappe Framework](/docs/user/en/introduction)
 1. [Installing Bench and Frappe](/docs/installation)
 1. [Bench / Architecture](/docs/user/en/architecture)
@@ -23,8 +22,6 @@ It is pretty generic and can be used to build database driven apps.
 1. [Web Forms](/docs/user/en/web-forms)
 1. [Database Migrations](/docs/user/en/database-migrations)
 1. [Deployment](/docs/user/en/deployment)
-1. Advanced Topics
-1. Scripting Doctype
+1. [Developer API](/docs/user/en/api)
 1. Testing and Debugging
-1. Developer API
 1. Contributing Section
