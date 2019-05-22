@@ -4,5 +4,5 @@
 # Developer API
 
 1. [Server Side API (Python)](/docs/user/en/api/python)
-1. Client Side API (JavaScript)
+1. [Client Side API (JavaScript)](/docs/user/en/api/javascript)
 1. [Jinja API (Python like)](/docs/user/en/api/jinja)
