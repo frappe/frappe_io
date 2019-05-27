@@ -7,11 +7,11 @@ Now that we have created the models, we can directly start making records using 
 
 To make records, we will first create a User. To create a user, go to:
 
-> Setup > Users > User > New
+> Users and Permissions > User > New
 
-Create a new User and set the name and first name and new password.
+Create a new User and set the email and first name. Then, click on edit in full page, go to **CHANGE PASSWORD** section and set a new password.
 
-Also give the Librarian and Library Member Roles to this user
+After the user is created, click on the user in the list view and go to **ROLES** section. Here, give the Librarian and Library Member Roles to this user
 
 <img class="screenshot" alt="Add User Roles" src="/docs/assets/img/add_user_roles.png">
 
@@ -49,7 +49,9 @@ Here if you remember we had set the values of Member First Name and Member Last 
 
 As you can see that the date is formatted as year-month-day which is a system format. To set / change date, time and number formats, go to
 
-> Setup > Settings > System Settings
+> Settings > System Settings
+
+You will find system settings under 'Core'. If you don't find system settings, log in through the administrator account.
 
 <img class="screenshot" alt="System Settings" src="/docs/assets/img/system_settings.png">
 
