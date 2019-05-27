@@ -19,7 +19,47 @@ Now logout and login using the new user id and password.
 
 ### 4.2 Creating Records
 
-You will now see an icon for the Library Management module. Click on that icon and you will see the Module page:
+You will now see an icon for the Library Management module. If you do not see an icon you will have to configure the desk. So go to the config folder and create a new file library_management.py. Here, write the following code to configure the desk in order to see the doctypes.
+
+	from __future__ import unicode_literals
+	from frappe import _
+	
+	def get_data():
+		return [
+          {
+            "label":_("Library"),
+            "icon": "octicon octicon-briefcase",
+            "items": [
+                {
+                  "type": "doctype",
+                  "name": "Article",
+                  "label": _("Article"),
+                  "description": _("Articles which members issue and return."),
+                },
+                {
+                  "type": "doctype",
+                  "name": "Library Member",
+                  "label": _("Library Member"),
+                  "description": _("People whohave enrolled for membership in the library."),
+                },
+                {
+                  "type": "doctype",
+                  "name": "Library Membership",
+                  "label": _("Library Membership"),
+                  "description": _("People who have taken membership for the library"),
+                },
+                {
+                  "type": "doctype",
+                  "name": "Library Transaction",
+                  "label": _(""),
+                  "description": _("Issuing an article or returning an article are the transactions taking place."),
+                }
+              ]
+          }
+      ]
+
+Now save the script and reload the page. You should see the icon for the library management module.
+Click on that icon and you will see the Module page:
 
 <img class="screenshot" alt="Library Management Module" src="/docs/assets/img/lib_management_module.png">
 
