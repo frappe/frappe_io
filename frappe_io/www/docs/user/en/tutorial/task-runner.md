@@ -83,6 +83,7 @@ Here we can point to a Python function and that function will be executed every 
 				overdue_by_member[d.library_member].append(d)
 
 			articles_transacted.append(d.article)
+		return overdue_by_member
 
 We can place the above code in any accessible Python module. The route is defined in `hooks.py`, so for our purposes we would place this code in `library_management/tasks.py`.
 
