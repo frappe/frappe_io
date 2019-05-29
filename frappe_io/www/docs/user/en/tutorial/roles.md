@@ -8,7 +8,7 @@ Before creating Models, we must create Roles so that we can set permissions on t
 
 To create a new Role, go to:
 
-> Setup > Users > Role > New
+Users and Permissions > Role > New
 
 <img class="screenshot" alt="Adding Roles" src="/docs/assets/img/roles_creation.png">
 

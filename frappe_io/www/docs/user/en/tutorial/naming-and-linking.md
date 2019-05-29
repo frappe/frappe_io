@@ -63,6 +63,8 @@ In the same way, you can complete all the models so that the final fields look l
 
 <img class="screenshot" alt="Library Membership" src="/docs/assets/img/doctype_lib_membership.png">
 
+Set Fetch From field for Member First Name as `library_member.first_name` as it is a Read Only field as shown above in Linked Values. Similarly, do it for Member Last Name.
+
 #### Library Transaction
 
 <img class="screenshot" alt="Library Transaction" src="/docs/assets/img/doctype_lib_trans.png">
