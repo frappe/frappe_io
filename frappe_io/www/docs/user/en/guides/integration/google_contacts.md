@@ -25,6 +25,3 @@ You will be requested to authorize your Google application to access their Conta
 1. Creation of a Contacts in Frappe from Google Contacts
 	- All the Contacts present in Google Contacts will be synchronised in Frappe Framework.
 	- If any of the Google Contact have multiple Email Ids associated with them, new Contact will be created in Frappe for each Email Id.
-
-
-The synchronization module follows ERPNext's authorization rule: An event will be only synchronized if it is public or if the user is the owner.
