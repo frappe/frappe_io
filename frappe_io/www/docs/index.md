@@ -28,6 +28,12 @@ The official documentation covers everything you need to know about the Frappe F
 
 [Read the docs](docs/user/en) →
 
+### Tutorial
+
+Learn how to build a Library Management System using the Frappe Framework.
+
+[Tutorial](docs/user/en/tutorial) →
+
 ---
 
 ## Join the community
