@@ -289,3 +289,19 @@ Example,
 	}
 
 The asterisk (*) operator specifies all possible values for a field. For example, an asterisk in the hour time field would be equivalent to every hour or an asterisk in the month field would be equivalent to every month.
+
+#### Jinja Template
+You can add new extensions to jinja environment instance on post creation using `jenv` hook. Structure for this hook is,
+
+	jenv = {
+		"add_extension": "{dotted.path.to.function}",
+	}
+
+The function will be passed the Jinja Environment instance as an argument.
+
+For Example,
+
+	def add_extension(jenv):
+		jenv.add_extension("jinja2.ext.i18n")
+		jenv.add_extension("jinja2.ext.do")
+	
