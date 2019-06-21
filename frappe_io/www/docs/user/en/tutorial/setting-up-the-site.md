@@ -49,7 +49,7 @@ A new folder called `library` will be created in the `sites` folder. Here is the
 
 ### Setting Sites
 
-In case you have multiple sites on your bench , you can map these sites to your localhost by adding your site name to the `/etc/hosts` file in the following manner:
+In case you have multiple sites on your bench, you can map these sites to your localhost by adding your site name to the `/etc/hosts` file in the following manner:
 
 ```
 # Host Database
