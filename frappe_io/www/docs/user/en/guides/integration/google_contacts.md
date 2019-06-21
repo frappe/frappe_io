@@ -22,4 +22,4 @@ In order to allow a synchronization with Google Contacts you need to authorize F
 
 1. Creation of a Contacts from Google Contacts
 	- All the Contacts present in Google Contacts will be synchronized to Frappe Framework.
-	- If any of the Google Contact have multiple Email Ids associated with them, new Contact will be created for each Email Id.
+	- If any of the Google Contacts have multiple Email IDs associated with them, a new Contact will be created for each Email ID.
