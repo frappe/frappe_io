@@ -19,7 +19,34 @@ Now logout and login using the new user id and password.
 
 ### 4.2 Creating Records
 
-You will now see an icon for the Library Management module. If you do not see an icon you will have to configure the desk. So go to the config folder and create a new file library_management.py. Here, write the following code to configure the desk in order to see the doctypes.
+You will now see an icon for the Library Management module. *If you do not* see an icon you will have to configure the desk. So go to the `config` folder (of the newly made app) and create a new file `library_management.py`. 
+
+```
+Directory Structure
+apps/
+├── frappe
+└── library_management
+    ├── MANIFEST.in
+    ├── README.md
+    ├── library_management
+    │   ├── __init__.py
+    │   ├── config
+    │   │   ├── __init__.py
+    │   │   ├── desktop.py
+    │   │   ├── docs.py
+    │   │   └── library_management.py   <--Here 
+    │   ├── hooks.py
+    │   ├── library_management
+    │   │   ├── __init__.py
+    │   │   └── doctype
+    │   ├── modules.txt
+    │   ├── patches.txt
+    │   ├── public
+    │   ├── templates
+    │   └── www
+```
+
+Paste the following code to configure the desk in order to view the Module.
 
 	from __future__ import unicode_literals
 	from frappe import _
