@@ -1,7 +1,7 @@
 <!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
 # Google Contacts Integration
 
-Frappe provides an integration with Google Contacts in order for all users to synchronize their Contacts.
+Frappe provides an integration with Google Contacts so that all users can synchronize their Contacts with Frappe Framework.
 
 
 ## Setup
