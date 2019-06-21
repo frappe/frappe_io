@@ -16,10 +16,3 @@ In order to allow a synchronization with Google Contacts you need to authorize F
 4. Add your Client ID and Client Secret in the Google Settings in `Modules > Integrations > Google Settings`
 5. Create a new Google Contacts Integration, enter the Google Account Email you want to sync and then save it. Now click on `Authorize Contacts Access` to authorize Frappe to get Contacts data from Google.
 6. Once Authorized, you can manually sync Google Contacts or let Frappe sync Google Contacts daily.
-
-
-## Features
-
-1. Creation of a Contacts from Google Contacts
-	- All the Contacts present in Google Contacts will be synchronized to Frappe Framework.
-	- If any of the Google Contacts have multiple Email IDs associated with them, a new Contact will be created for each Email ID.
