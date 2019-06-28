@@ -11,9 +11,9 @@ Token authentication is a more modern approach and it is designed to solve probl
 ## Token CRUD
 
 As a developer, you can use tokens for full CRUD operations.
-Once an Token is generated, the token can be used to authorize individual requests made by your users as they are passed to your application. Your application will validate the token sent along with each request. 
+Once a Token is generated, the token can be used to authorize individual requests made by your users as they are passed to your application. Your application will validate the token sent along with each request. 
 
-An combination of API Key and API Secret forms a token which is then used to authenticate you with your application and can be used to authenticate both RPC and REST API.
+A combination of API Key and API Secret forms a token which is then used to authenticate you with your application and can be used to authenticate both RPC and REST API.
 
 # Generate a Token
 
