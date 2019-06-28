@@ -1,6 +1,6 @@
 <!-- base_template: frappe_io/www/charts/charts_base.html -->
 ## Installation
-* Install via [`npm`](https://www.npmjs.com/get-npm):
+* Install via [npm](https://www.npmjs.com/get-npm):
 
   ```console
   $ npm install frappe-charts
