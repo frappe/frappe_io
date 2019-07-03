@@ -13,10 +13,16 @@ You can also make Previous and Next buttons by adding `previous` or `next` in `{
 
     ### Contents:
 
-    {index}
+    \{index\}
+
+    \{next\}
+    
+\{next\} for this Page will render as:
 
 {next}
 
+\{index\} will render as a numbered list of pages, but works only in `index.md` or `index.html`.
+ 
 ### Ordering
 
 You can defining the ordering of pages in index by defining the index.txt file in your folder. The index.txt file must have the names (without extensions) of the pages in that folder indicating the order.
@@ -28,3 +34,5 @@ For example for this folder the `index.txt` looks like:
     contents
     context
     building
+    
+{next}
