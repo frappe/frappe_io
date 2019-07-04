@@ -197,7 +197,8 @@ So the final name may look like, `EXAMPLE-02-test-value1-value2-00001`
 
 ## Document
 
-An instance of a DocType is called a `doc` (shorthand for document). Usually a `doc` directly maps to a single row in the table.
+A Document is an instance of a DocType. It usually maps to a single row in the
+database table. We refer to it as `doc` in code.
 
 **Example**
 

@@ -1,6 +1,6 @@
 <!-- base_template: frappe_io/www/frappe/frappe_base.html -->
 <!-- add-breadcrumbs -->
-# Deployment
+# Production Setup
 
 [Bench](https://github.com/frappe/bench) is the CLI tool to manage deployments
 for sites based on Frappe Framework. Here are steps to deploy your frappe based

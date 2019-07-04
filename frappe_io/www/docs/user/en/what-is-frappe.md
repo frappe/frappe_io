@@ -1,8 +1,7 @@
 <!-- base_template: frappe_io/www/frappe/frappe_base.html -->
 <!-- add-breadcrumbs -->
-# Introduction
 
-## What is Frappe Framework?
+# What is Frappe Framework?
 
 Frappe is a full stack, batteries-included, web framework written in Python and Javascript.
 It is the framework which powers [ERPNext](https://erpnext.com).
