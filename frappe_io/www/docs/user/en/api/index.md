@@ -30,6 +30,5 @@ browser console.
 
 ## Other
 
-<!-- 1. [REST API](/docs/user/en/api/rest) -->
-
+1. [REST API](/docs/user/en/api/rest)
 1. [Jinja API](/docs/user/en/api/jinja)

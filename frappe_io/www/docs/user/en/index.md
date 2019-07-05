@@ -36,6 +36,7 @@ It is pretty generic and can be used to build database driven apps.
 	1. [Page](/docs/user/en/api/page)
 	1. [Server Calls (AJAX)](/docs/user/en/api/server-calls)
 	1. [Common Utilities](/docs/user/en/api/js-utils)
+1. [REST API](/docs/user/en/api/rest)
 1. [Jinja API](/docs/user/en/api/jinja)
 
 ### Deployment
