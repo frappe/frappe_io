@@ -31,6 +31,7 @@ It is pretty generic and can be used to build database driven apps.
 	1. [Document](/docs/user/en/api/document)
 	1. [Database](/docs/user/en/api/database)
 1. [Javascript](/docs/user/en/api#javascript)
+	1. [Form](/docs/user/en/api/form)
 	1. [Controls](/docs/user/en/api/controls)
 	1. [Dialog](/docs/user/en/api/dialog)
 	1. [Page](/docs/user/en/api/page)

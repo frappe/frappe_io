@@ -20,8 +20,7 @@ will find most of the Client API under the `frappe` object. All of these methods
 are only available inside the Desk. A good way to explore these APIs is from the
 browser console.
 
-<!-- 1. [Form](/docs/user/en/api/form) -->
-
+1. [Form](/docs/user/en/api/form)
 1. [Controls](/docs/user/en/api/controls)
 1. [Dialog](/docs/user/en/api/dialog)
 1. [Page](/docs/user/en/api/page)
