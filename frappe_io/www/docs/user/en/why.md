@@ -39,5 +39,5 @@ different versions of apps.
 
 ### Extensible architecture
 
-Built powerful extensions on top of Frappe by creating your own apps. Apps can
+Build powerful extensions on top of Frappe by creating your own apps. Apps can
 bring their own models or modify existing ones in Frappe.
