@@ -20,19 +20,19 @@ Frappe is MIT Licensed and is hosted on [GitHub](https://github.com/frappe/frapp
 
 Before you can use Frappe, you need to install it. We have a complete installation guide which covers all possibilities, this guide will also help you understand the backend stack.
 
-[Frappe Installation Guide](docs/installation) →
+[Frappe Installation Guide](/docs/installation) →
 
 ### Documentation
 
 The official documentation covers everything you need to know about the Frappe Framework.
 
-[Read the docs](docs/user/en) →
+[Read the docs](/docs/user/en) →
 
 ### Tutorial
 
 Learn how to build a Library Management System using the Frappe Framework.
 
-[Tutorial](docs/user/en/tutorial) →
+[Tutorial](/docs/user/en/tutorial) →
 
 ---
 
