@@ -1,6 +1,13 @@
-<!-- base_template: frappe_io/www/frappe/frappe_base.html -->
-<!-- add-breadcrumbs -->
-<!-- title: REST API -->
+---
+base_template: frappe_io/www/frappe/frappe_base.html
+add_breadcrumbs: 1
+title: REST - API
+image: /assets/frappe_io/images/frappe-framework-logo-with-padding.png
+metatags:
+ description: >
+  REST API endpoints available in Frappe Framework
+---
+
 # REST API
 
 Frappe framework generates REST API for all of your DocTypes out of the box. You

@@ -1,5 +1,13 @@
-<!-- base_template: frappe_io/www/frappe/frappe_base.html -->
-<!-- add-breadcrumbs -->
+---
+base_template: frappe_io/www/frappe/frappe_base.html
+add_breadcrumbs: 1
+title: Form Scripts - API
+image: /assets/frappe_io/images/frappe-framework-logo-with-padding.png
+metatags:
+ description: >
+  Everything you need to know about Form Scripts and available API methods.
+---
+
 # Form Scripts
 
 Form Scripts lets you add client side logic to your Forms. You can write Form

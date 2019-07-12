@@ -1,4 +1,13 @@
-<!-- base_template: frappe_io/www/frappe/frappe_base.html -->
+---
+base_template: frappe_io/www/frappe/frappe_base.html
+title: Introduction
+image: /assets/frappe_io/images/frappe-framework-logo-with-padding.png
+metatags:
+ description: >
+  Frappe is a full stack, batteries-included, web framework written in Python and
+  Javascript with MariaDB as the database.
+---
+
 # Introduction
 
 Frappe, pronounced _fra-pay_, is a full stack, batteries-included,

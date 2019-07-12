@@ -1,5 +1,13 @@
-<!-- base_template: frappe_io/www/frappe/frappe_base.html -->
-<!-- add-breadcrumbs -->
+---
+base_template: frappe_io/www/frappe/frappe_base.html
+add_breadcrumbs: 1
+title: Controls - API
+image: /assets/frappe_io/images/frappe-framework-logo-with-padding.png
+metatags:
+ description: >
+  API methods for creating and managing controls in Frappe
+---
+
 # Controls
 
 ## frappe.ui.form.make_control

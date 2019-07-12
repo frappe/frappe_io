@@ -1,6 +1,14 @@
-<!-- base_template: frappe_io/www/frappe/frappe_base.html -->
-<!-- add-breadcrumbs -->
-<!-- title: Common Utilities API -->
+---
+base_template: frappe_io/www/frappe/frappe_base.html
+add_breadcrumbs: 1
+title: Common Utilities - API
+image: /assets/frappe_io/images/frappe-framework-logo-with-padding.png
+metatags:
+ description: >
+  API methods for creating and managing controls in Frappe
+---
+
+
 # Common Utilities API
 
 ## frappe.get_route

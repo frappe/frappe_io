@@ -1,5 +1,14 @@
-<!-- base_template: frappe_io/www/frappe/frappe_base.html -->
-<!-- add-breadcrumbs -->
+---
+base_template: frappe_io/www/frappe/frappe_base.html
+add_breadcrumbs: 1
+title: Understanding DocTypes
+image: /assets/frappe_io/images/frappe-framework-logo-with-padding.png
+metatags:
+ description: >
+  Learn all about the core concept of DocType and how it is used to describe
+  almost any kind of logic and behaviour in Frappe.
+---
+
 # Understanding DocTypes
 
 1. [DocType](#doctype)

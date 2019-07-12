@@ -1,5 +1,14 @@
-<!-- base_template: frappe_io/www/frappe/frappe_base.html -->
-<!-- add-breadcrumbs -->
+---
+base_template: frappe_io/www/frappe/frappe_base.html
+add_breadcrumbs: 1
+title: Web Forms
+image: /assets/frappe_io/images/frappe-framework-logo-with-padding.png
+metatags:
+ description: >
+  Frappe provides an easy way to generate forms for your website with very little
+  configuration. These forms may be public or require login.
+---
+
 # Web Forms
 
 Frappe provides an easy way to generate forms for your website with very little

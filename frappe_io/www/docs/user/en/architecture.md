@@ -1,6 +1,14 @@
-<!-- base_template: frappe_io/www/frappe/frappe_base.html -->
-<!-- add-breadcrumbs -->
-<!-- title: Bench Architecture -->
+---
+base_template: frappe_io/www/frappe/frappe_base.html
+add_breadcrumbs: 1
+title: Bench Architecture
+image: /assets/frappe_io/images/frappe-framework-logo-with-padding.png
+metatags:
+ description: >
+  Bench is a command-line utility that helps you install apps, manage multiple
+  sites and update Frappe based apps on *nix based systems.
+---
+
 # Bench Architecture
 
 Bench is a command-line utility that helps you install apps,
