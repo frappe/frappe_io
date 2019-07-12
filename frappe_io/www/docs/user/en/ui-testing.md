@@ -10,7 +10,7 @@ directory.
 
 ### Example
 
-Here is an example of an integration test to check insertion of a To Do
+Here is an example of an integration test to check insertion of a ToDo
 
 ```js
 context('ToDo', () => {
@@ -34,15 +34,21 @@ context('ToDo', () => {
 ### Running Cypress Locally
 
 Cypress uses any chromium based browser installed on your system to run tests.
-Every app has it's own cypress test suite. For example, to run test for the
-`frappe` app, run the following commands
+Every app has it's own cypress test suite. To run test for an app, run the
+following command from the `frappe-bench` directory.
 
 ```sh
-cd ~/frappe-bench/apps/frappe
-yarn cypress:open
+bench --site [sitename] run-ui-tests [app]
 ```
 
 This will open the Cypress Electron shell where you can run any test manually or
 run all of the tests.
 
 <img src="/docs/assets/img/running-cypress-tests.gif" class="screenshot">
+
+You can also run tests in headless mode.
+
+```sh
+# run in headless mode
+bench --site [sitename] run-ui-tests [app] --headless
+```
