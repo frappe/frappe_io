@@ -1,5 +1,14 @@
-<!-- base_template: frappe_io/www/frappe/frappe_base.html -->
-<!-- add-breadcrumbs -->
+---
+base_template: frappe_io/www/frappe/frappe_base.html
+add_breadcrumbs: 1
+title: Printing
+image: /assets/frappe_io/images/frappe-framework-logo-with-padding.png
+metatags:
+ description: >
+  Frappe framework has first class support for generating print formats for
+  documents and also convert them into PDF.
+---
+
 # Printing
 
 Frappe framework has first class support for generating print formats for

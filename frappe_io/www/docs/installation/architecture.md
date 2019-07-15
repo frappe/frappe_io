@@ -1,3 +1,14 @@
+---
+base_template: frappe_io/www/frappe/frappe_base.html
+title: Architecture
+image: /assets/frappe_io/images/frappe-framework-logo-with-padding.png
+metatags:
+ description: >
+  Learn all about the Frappe Framework architecture including sites, apps,
+  multi-tenancy and the tool managing it all, the Bench.
+add_breadcrumbs: 1
+---
+
 # Architecture
 
 ## What is Bench?
