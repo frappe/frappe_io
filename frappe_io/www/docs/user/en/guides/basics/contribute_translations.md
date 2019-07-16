@@ -37,5 +37,5 @@ See all the **Contributed Translations** from the Frappe community at [translate
 
 ### 4. Become a Verifier for Contributed Translations
 
-- If you want to become a **part of the community** and **verify** the translations contributed by other members of the community, contact us by visiting [frappe.io](https://frappe.io/about#contact).
+- If you want to become a **part of the community** and **verify** the translations contributed by other members of the community, sign-up on [translate.erpnext.com](https://translate.erpnext.com).
 - The verifiers can then set the **status** of the contributed translations to **Verified** if the translations are correct. The translator app after a period of **every 15 days**, will take these verified contributed translations and send  **Pull Requests** to respective Frappe repositories.
