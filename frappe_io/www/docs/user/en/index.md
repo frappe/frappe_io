@@ -30,6 +30,7 @@ It is pretty generic and can be used to build database driven apps.
 1. [Printing](/docs/user/en/printing)
 1. [Portal Pages](/docs/user/en/portal-pages)
 1. [Web Forms](/docs/user/en/web-forms)
+1. [Translations](/docs/user/en/translations)
 
 ### API Reference
 
