@@ -18,12 +18,17 @@ It is pretty generic and can be used to build database driven apps.
 
 1. [What is Frappe?](/docs/user/en/what-is-frappe)
 1. [Why Frappe?](/docs/user/en/why)
-1. [Installation](/docs/installation)
-1. [Bench Architecture](/docs/user/en/architecture)
+1. [Installation](/docs/user/en/installation)
 
 ### Basics
-
+1. [Architecture](/docs/user/en/architecture)
+1. [Directory Structure](/docs/user/en/directory-structure)
+1. [Apps](/docs/user/en/apps)
+1. [Sites](/docs/user/en/sites)
 1. [Understanding Doctypes](/docs/user/en/understanding-doctypes)
+
+### Desk (Admin UI)
+
 1. [Desk](/docs/user/en/desk)
 1. [Users and Permission](/docs/user/en/users-and-permissions)
 1. [Reports](/docs/user/en/reports)
