@@ -271,3 +271,22 @@ Response
   stack trace and `exc_type` which contains the thrown Exception.
 - The return value of the method will be converted to a JSON and sent as the
   response.
+
+## File Uploads
+
+There is a dedicated method `/api/method/upload_file` that accepts binary file
+data and uploads it into the system.
+
+Here is the curl command for it:
+```sh
+curl -X POST \
+  http://<base-url>/api/method/upload_file \
+  -H 'Accept: application/json' \
+  -H 'Authorization: token xxxx:yyyy' \
+  -F file=@/path/to/file/file.png
+```
+
+If you are using client side Javascript to upload files, you can append the
+uploaded files as FormData and send an XHR request.
+Here is the [implementation code](https://github.com/frappe/frappe/blob/421f070e78ee1186e7f2f4b2575d8be1d3e2d646/frappe/public/js/frappe/file_uploader/FileUploader.vue#L381-L401)
+in Frappe Desk.
