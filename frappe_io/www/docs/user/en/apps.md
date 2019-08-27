@@ -37,8 +37,11 @@ INFO:bench.app:installing custom_app
 INFO:bench.utils:./env/bin/pip install -q  -e ./apps/custom_app
 ```
 The `custom_app` directory will now be created in the `apps` directory. It will
-also be added to `apps.txt`. The directory structure of the app will look
-something like this:
+also be added to `apps.txt`.
+
+## Directory structure
+
+The directory structure of the app will look something like this:
 
 ```sh
 apps/custom_app
@@ -74,8 +77,6 @@ apps/custom_app
 ├── package.json
 └── setup.py
 ```
-
-## Directory structure
 
 ### requirements.txt
 
