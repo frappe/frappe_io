@@ -17,7 +17,7 @@
  "is_standard": 1,
  "login_required": 0,
  "max_attachment_size": 0,
- "modified": "2019-05-14 11:44:36.010965",
+ "modified": "2019-09-02 08:15:52.405595",
  "modified_by": "Administrator",
  "module": "Frappe Team",
  "name": "join-us",
@@ -55,6 +55,18 @@
    "max_length": 0,
    "max_value": 0,
    "options": "Email",
+   "read_only": 0,
+   "reqd": 1,
+   "show_in_filter": 0
+  },
+  {
+   "allow_read_on_all_link_options": 0,
+   "fieldname": "mobile_no",
+   "fieldtype": "Data",
+   "hidden": 0,
+   "label": "Mobile No.",
+   "max_length": 0,
+   "max_value": 0,
    "read_only": 0,
    "reqd": 1,
    "show_in_filter": 0

@@ -5,9 +5,11 @@
  "description": "Title of the position you're applying for",
  "doctype": "DocType",
  "document_type": "Setup",
+ "engine": "InnoDB",
  "field_order": [
   "full_name",
   "email",
+  "mobile_no",
   "job_title",
   "resume_link",
   "passion",
@@ -59,9 +61,15 @@
    "fieldtype": "Data",
    "label": "Job Title",
    "reqd": 1
+  },
+  {
+   "fieldname": "mobile_no",
+   "fieldtype": "Data",
+   "label": "Mobile No",
+   "reqd": 1
   }
  ],
- "modified": "2019-05-14 11:44:08.092636",
+ "modified": "2019-09-02 08:16:10.785457",
  "modified_by": "Administrator",
  "module": "Frappe Team",
  "name": "Frappe Job Applicant",
