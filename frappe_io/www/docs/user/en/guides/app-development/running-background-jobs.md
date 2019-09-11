@@ -7,7 +7,7 @@ From version 7, Frappe uses Python RQ to run background jobs.
 
 To enqueue a job,
 
-	from frappe.jobs.background_jobs import enqueue
+	from frappe import enqueue
 
 	def long_job(arg1, arg2):
 		frappe.publish_realtime('msgprint', 'Starting long job...')
