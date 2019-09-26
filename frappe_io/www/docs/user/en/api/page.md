@@ -142,7 +142,7 @@ Add menu items in the Actions dropdown.
 
 ```js
 // add a normal menu item
-page.add_menu_item('Delete', () => delete_items())
+page.add_action_item('Delete', () => delete_items())
 ```
 
 ![Page Actions Dropdown](/docs/assets/img/page-actions-dropdown.png)
