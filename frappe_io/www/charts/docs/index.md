@@ -37,7 +37,7 @@ const data = {
     ]
 }
 
-const chart = new Chart("#chart", {  // or a DOM element,
+const chart = new frappe.Chart("#chart", {  // or a DOM element,
                                             // new Chart() in case of ES6 module with above usage
     title: "My Awesome Chart",
     data: data,
