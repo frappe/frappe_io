@@ -24,7 +24,25 @@ e.g. Social Login Key
 - **Client ID** : `ABCDEFG`
 - **Client Secret** : `123456`
 - **Enable Social Login** : `Check`
-- **Base URL** : `https://erpnext.org` (required for some providers)
+- **Base URL** : `https://erpnext.org` (required for self hosted providers)
+
+#### Setup Custom Social Logins
+
+There is a standard callback that can be set as redirect url for custom social logins 
+
+redirect url is to be set as `/api/method/frappe.integrations.oauth2_logins.custom/+<doc.name>`
+
+It is kept editable because it can use custom callback instead of standard.
+
+e.g. Custom Social Login Key
+
+- **Social Login Provider** : `Custom`
+- **Client ID** : `ABCDEFG`
+- **Client Secret** : `123456`
+- **Enable Social Login** : `Check`
+- **Base URL** : `https://keycloak.example.com`
+- **Redirect URL**: Set url as per doc name e.g. if doc name is `keycloak` set `/api/method/frappe.integrations.oauth2_logins.custom/keycloak` 
+- **Client URLs Section**: Set urls as per custom provider, set only path. e.g.: `/oauth2/token` 
 
 #### Generating Client ID and Client Secret for providers
 
