@@ -50,7 +50,7 @@ The standard way to create a DocType is by typing *new doctype* in the search ba
 A DocType not only stores fields, but also other information about how your data
 behaves in the system. We call this **Meta**. Since this meta-data is also stored
 in a database table, it makes it easy to change meta-data on the fly without writing
-much code. Learn more about [Meta](#meta).
+much code. Learn more about [Meta](https://frappe.erpnext.com/frappejs/docs/models/metadata.md).
 
 > A DocType is also a DocType. This means that we store meta-data as the part of the data.
 
@@ -147,7 +147,7 @@ The DocField stores meta-data about the field. Some of them are described below.
 ```
 
 Frappe comes with moret than 30 different fieldtypes out-of-the-box.
-These fieldtypes serve a variety of use-cases. Learn more about [Fieldtypes](#fieldtypes).
+These fieldtypes serve a variety of use-cases. Learn more about [Fieldtypes](https://erpnext.com/docs/user/manual/en/customize-erpnext/articles/field-types.html).
 
 ## Naming
 
