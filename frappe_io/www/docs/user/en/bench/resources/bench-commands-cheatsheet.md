@@ -9,6 +9,11 @@
 * `bench --help` - Show all commands and help
 * `bench [command] --help` - Show help for command
 * `bench init [bench-name]` - Create a new bench (Run from home dir)
+  * `--frappe-branch`       Frappe branch
+  * `--frappe-path`         Path to frappe repository
+  * `--python`              Path or name of Python executable
+  * `--no-backups`          Do not setup auto backup
+  * `--no-auto-update`      Do not setup auto update
 * `bench --site [site-name] COMMAND` - Specify site for command
 * `bench update` - Pulls changes for bench-repo and all apps, applies patches, builds JS and CSS, and then migrates.
   * `--pull`                Pull changes in all the apps in bench
