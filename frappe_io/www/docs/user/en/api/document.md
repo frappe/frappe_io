@@ -49,7 +49,7 @@ doc.insert()
 Returns a new Document object in memory which does not exist yet in the database.
 ```python
 # create new object with keyword arguments
-user = get_doc(doctype='User', email_id='test@example.com')
+user = frappe.get_doc(doctype='User', email_id='test@example.com')
 user.insert()
 ```
 
