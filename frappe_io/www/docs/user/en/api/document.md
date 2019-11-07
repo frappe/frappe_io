@@ -44,6 +44,15 @@ doc = frappe.get_doc({
 doc.insert()
 ```
 
+`frappe.get_doc(doctype={document_type}, key1 = value1, key2 = value2, ...)`
+
+Returns a new Document object in memory which does not exist yet in the database.
+```python
+# create new object with keyword arguments
+user = frappe.get_doc(doctype='User', email_id='test@example.com')
+user.insert()
+```
+
 ## frappe.get\_cached\_doc
 
 Similar to `frappe.get_doc` but will look up the document in cache first before
