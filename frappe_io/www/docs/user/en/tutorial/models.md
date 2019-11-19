@@ -4,6 +4,7 @@
 The next step is to create the models as we discussed in the introduction. In Frappe, models are called **DocTypes**. You can create new DocTypes from the Desk UI. **DocTypes** are made of fields called **DocField** and role based permissions are integrated into the models, these are called **DocPerms**.
 
 When a DocType is saved, a new table is created in the database. This table is named as `tab[DocType]`.
+For Example, a DocType Article will create a table named as `tabArticle`, similarly a DocType Library Transaction will create a table named as `tabLibrary Transaction` and not `tabLibraryTransaction` 
 
 When you create a **DocType** below mentioned files/folders are automatically created.
 

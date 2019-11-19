@@ -47,13 +47,21 @@ A new folder called `library` will be created in the `sites` folder. Here is the
 1. `private/backups` is where backups are dumped
 1. `site_config.json` is where site level configurations are maintained.
 
-### Setting Default Site
+### Setting Sites
 
-In case you have multiple sites on you bench use `bench use [site_name]` to set the default site.
+In case you have multiple sites on your bench, you can map these sites to your localhost by adding your site name to the `/etc/hosts` file in the following manner:
 
-Example:
-
-	$ bench use library
+```
+# Host Database
+# localhost is used to configure the loopback interface
+# when the system is booting.  Do not change this entry.
+##
+127.0.0.1       localhost library
+255.255.255.255 broadcasthost
+::1             localhost
+~                                                                     
+```
+On saving this file, your site can be accessed by mentioning it's URL in your browser.
 
 ### Install App
 

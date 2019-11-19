@@ -21,6 +21,10 @@ This can be set by entering the **Autoname** field. For controller, leave blank.
 
 > **Search Fields**: A DocType may be named on a series but it still needs to be searched by name. In our case, the Article will be searched by the title or the author name. So this can be entered in search field.
 
+> **Title Field**: You may need to specify a `Title Field` for any custom DocType. Failing to do so may raise [this]( https://discuss.erpnext.com/t/issue-with-all-custom-doctypes/32144) issue. It can be found under _DocType > [DoctType Name] > View Settings_
+
+<img class="screenshot" alt="Setting Title Field" src="/docs/assets/img/filling_title_field.png">
+
 <img class="screenshot" alt="Autonaming and Search Field" src="/docs/assets/img/autoname_and_search_field.png">
 
 #### Link and Select Fields
@@ -62,6 +66,8 @@ In the same way, you can complete all the models so that the final fields look l
 #### Library Membership
 
 <img class="screenshot" alt="Library Membership" src="/docs/assets/img/doctype_lib_membership.png">
+
+Set Fetch From field for Member First Name as `library_member.first_name` as it is a Read Only field as shown above in Linked Values. Similarly, do it for Member Last Name.
 
 #### Library Transaction
 

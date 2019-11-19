@@ -1,27 +1,53 @@
-<!-- base_template: frappe_io/www/frappe/frappe_base.html -->
+---
+base_template: frappe_io/www/frappe/frappe_base.html
+title: Introduction
+image: /assets/frappe_io/images/frappe-framework-logo-with-padding.png
+metatags:
+ description: >
+  Frappe is a full stack, batteries-included, web framework written in Python and
+  Javascript with MariaDB as the database.
+---
 
-# Frappe Framework
+# Introduction
 
-### Tutorials, API documentation and Model Reference
+Frappe, pronounced _fra-pay_, is a full stack, batteries-included,
+web framework written in Python and Javascript with MariaDB as the database.
+It is the framework which powers [ERPNext](https://erpnext.com).
+It is pretty generic and can be used to build database driven apps.
 
-Frappe is a full stack web application framework written in Python,
-Javascript, HTML/CSS with MySQL as the backend. It was built for ERPNext
-but is pretty generic and can be used to build database driven apps.
+The key difference in Frappe compared to other frameworks is that **meta-data**
+is also treated as data and is used to build front-ends very easily.
+We believe in a monolithic architecture, so Frappe comes with almost everything you
+need to build a modern web application. It has a full blown Admin UI called the Desk
+that handles forms, navigation, lists, menus, permissions, file attachment and much more out of the box.
 
-The key differece in Frappe compared to other frameworks is that Frappe
-is that meta-data is also treated as data and is used to build front-ends
-very easily. Frappe comes with a full blown admin UI called the **Desk**
-that handles forms, navigation, lists, menus, permissions, file attachment
-and much more out of the box.
+Frappe is MIT Licensed and is hosted on [GitHub](https://github.com/frappe/frappe).
 
-Frappe also has a plug-in architecture that can be used to build plugins
-to ERPNext.
+## Getting Started
 
-Frappe Framework was designed to build [ERPNext](https://erpnext.com), open source
-ERP for managing small and medium sized businesses.
+### Installation
 
-[Read the Documentation](/docs/user/)
+Before you can use Frappe, you need to install it. We have a complete installation guide which covers all possibilities, this guide will also help you understand the backend stack.
 
-### Feedback
+[Frappe Installation Guide](/docs/user/en/installation) →
 
-You're encouraged to help improve the quality of this documentation, by sending a pull request on the [GitHub Repository](https://github.com/frappe/erpnext). If you would like to have a discussion regarding the documentation, you can do so [at the forum](https://discuss.erpnext.com).
+### Documentation
+
+The official documentation covers everything you need to know about the Frappe Framework.
+
+[Read the docs](/docs/user/en) →
+
+### Tutorial
+
+Learn how to build a Library Management System using the Frappe Framework.
+
+[Tutorial](/docs/user/en/tutorial) →
+
+---
+
+## Join the community
+
+Hang out with our growing community on our forum, ask questions, help others and be a part of the community.
+
+[Join Us](https://discuss.erpnext.com) →
+

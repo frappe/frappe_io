@@ -7,14 +7,14 @@ Now we have created a basic system that works out of the box without us having t
 
 ### Client Side Scripting
 
-In the **Library Transaction** DocType, we have only field for Member Name. We have not made two fields. Now this could well be two fields (and probably should), but for the sake of example, let us consider we have to implement this. To do this we would have to write a event handler for the event when the user selects the `library_member` field and then access the member resource from the server using REST API and set the values in the form.
+In the **Library Transaction** DocType, we have only one field for Member Name. We have not made two fields. Now this could well be two fields (and probably should), but for the sake of example, let us consider that we have to implement this. To do this we would have to write an event handler for the event when the user selects the `library_member` field and then access the member resource from the server using REST API and set the values in the form.
 
 To start the script, in the `library_management/doctype/library_transaction` folder, create a new file `library_transaction.js`. This file will be automatically executed when the first Library Transaction is opened by the user. So in this file, we can bind events and write other functions.
 
 #### library_transaction.js
 
-	frappe.ui.form.on("Library Transaction", "library_member",
-		function(frm) {
+	frappe.ui.form.on("Library Transaction", {
+		"library_member" : function(frm) {
 			frappe.call({
 				"method": "frappe.client.get",
 				args: {
@@ -29,7 +29,8 @@ To start the script, in the `library_management/doctype/library_transaction` fol
 							(" " + data.message.last_name) : ""))
 				}
 			})
-		});
+		}
+	});
 
 1. **frappe.ui.form.on(*doctype*, *fieldname*, *handler*)** is used to bind a handler to the event when the property library_member is set.
 1. In the handler, we trigger an AJAX call to `frappe.client.get`. In response we get the requested object as JSON. [Learn more about the API](/docs/user/en/guides/integration/rest_api).
