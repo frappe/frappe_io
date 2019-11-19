@@ -24,8 +24,8 @@ A more complex query:
 		cur_frm.set_query("bank_account", function(){
 			return {
 				"filters": [
-					["Bank Account": "account_type", "=", "Bank"],
-                                ["Bank Account": "group_or_ledger", "!=", "Group"]
+					["Bank Account", "account_type", "=", "Bank"],
+                                ["Bank Account", "group_or_ledger", "!=", "Group"]
 				]
 			}
 		});
