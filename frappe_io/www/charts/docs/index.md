@@ -20,6 +20,15 @@
   ```
 
 ## Usage
+
+Inside HTML File:
+
+```html
+<div id="chart"></div>
+```
+
+Inside `<script>` tags:
+
 ```js
 const data = {
     labels: ["12am-3am", "3am-6pm", "6am-9am", "9am-12am",
