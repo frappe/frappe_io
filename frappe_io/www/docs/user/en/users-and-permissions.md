@@ -1,5 +1,14 @@
-<!-- base_template: frappe_io/www/frappe/frappe_base.html -->
-<!-- add-breadcrumbs -->
+---
+base_template: frappe_io/www/frappe/frappe_base.html
+add_breadcrumbs: 1
+title: Users and Permissions
+image: /assets/frappe_io/images/frappe-framework-logo-with-padding.png
+metatags:
+ description: >
+  Frappe comes with a user authentication system. It handles user accounts, role
+  based permissions and cookie based user sessions.
+---
+
 # Users and Permissions
 
 Frappe comes with a user authentication system. It handles user accounts, role

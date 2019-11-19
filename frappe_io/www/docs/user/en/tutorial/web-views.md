@@ -19,6 +19,8 @@ If you are logged in as the test user, go to `/article` and you should see the l
 
 <img class="screenshot" alt="web list" src="/docs/assets/img/web-list.png">
 
+If not, update the `.html` template files under ```library_management/doctype/article/templates/``` with respective fields as per requirement
+
 Click on one article and you will see the default web view
 
 <img class="screenshot" alt="web view" src="/docs/assets/img/web-view.png">

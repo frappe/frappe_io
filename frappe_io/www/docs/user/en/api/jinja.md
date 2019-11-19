@@ -1,6 +1,14 @@
-<!-- base_template: frappe_io/www/frappe/frappe_base.html -->
-<!-- add-breadcrumbs -->
-# Jinja Methods Reference
+---
+base_template: frappe_io/www/frappe/frappe_base.html
+add_breadcrumbs: 1
+title: Jinja - API
+image: /assets/frappe_io/images/frappe-framework-logo-with-padding.png
+metatags:
+ description: >
+  API methods available in Jinja templates
+---
+
+# Jinja API
 
 These are the whitelisted methods that frappe provides to use them in Jinja
 Templates.

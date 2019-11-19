@@ -1,6 +1,6 @@
 <!-- base_template: frappe_io/www/charts/charts_base.html -->
 ## Installation
-* Install via [`npm`](https://www.npmjs.com/get-npm):
+* Install via [npm](https://www.npmjs.com/get-npm):
 
   ```console
   $ npm install frappe-charts
@@ -14,9 +14,9 @@
 * ...or include within your HTML
 
   ```html
-    <script src="https://cdn.jsdelivr.net/npm/frappe-charts@1.1.0/dist/frappe-charts.min.iife.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/frappe-charts@1.2.4/dist/frappe-charts.min.iife.js"></script>
     <!-- or -->
-    <script src="https://unpkg.com/frappe-charts@1.1.0/dist/frappe-charts.min.iife.js"></script>
+    <script src="https://unpkg.com/frappe-charts@1.2.4/dist/frappe-charts.min.iife.js"></script>
   ```
 
 ## Usage
@@ -37,7 +37,7 @@ const data = {
     ]
 }
 
-const chart = new Chart("#chart", {  // or a DOM element,
+const chart = new frappe.Chart("#chart", {  // or a DOM element,
                                             // new Chart() in case of ES6 module with above usage
     title: "My Awesome Chart",
     data: data,

@@ -1,5 +1,15 @@
-<!-- base_template: frappe_io/www/frappe/frappe_base.html -->
-<!-- add-breadcrumbs -->
+---
+base_template: frappe_io/www/frappe/frappe_base.html
+add_breadcrumbs: 1
+title: Desk
+image: /assets/frappe_io/images/frappe-framework-logo-with-padding.png
+metatags:
+ description: >
+  Frappe Framework comes with a rich admin interface called the Desk. It reads
+  meta-data from DocTypes and automatically builds list views, form views and
+  report views
+---
+
 # Desk
 
 Frappe Framework comes with a rich admin interface called the Desk. It reads meta-data

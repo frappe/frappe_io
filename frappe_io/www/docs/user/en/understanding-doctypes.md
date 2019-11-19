@@ -1,5 +1,14 @@
-<!-- base_template: frappe_io/www/frappe/frappe_base.html -->
-<!-- add-breadcrumbs -->
+---
+base_template: frappe_io/www/frappe/frappe_base.html
+add_breadcrumbs: 1
+title: Understanding DocTypes
+image: /assets/frappe_io/images/frappe-framework-logo-with-padding.png
+metatags:
+ description: >
+  Learn all about the core concept of DocType and how it is used to describe
+  almost any kind of logic and behaviour in Frappe.
+---
+
 # Understanding DocTypes
 
 1. [DocType](#doctype)
@@ -197,7 +206,8 @@ So the final name may look like, `EXAMPLE-02-test-value1-value2-00001`
 
 ## Document
 
-An instance of a DocType is called a `doc` (shorthand for document). Usually a `doc` directly maps to a single row in the table.
+A Document is an instance of a DocType. It usually maps to a single row in the
+database table. We refer to it as `doc` in code.
 
 **Example**
 

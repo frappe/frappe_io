@@ -8,11 +8,7 @@
 		"title": "Table of Contents"
 	},
 	{
-		"route": "/docs/user/en/introduction",
-		"title": "Introduction to Frappe Framework"
-	},
-	{
-		"route": "/docs/installation",
+		"route": "/docs/user/en/installation",
 		"title": "Installing Bench and Frappe"
 	},
 	{

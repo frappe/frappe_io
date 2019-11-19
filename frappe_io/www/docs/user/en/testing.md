@@ -1,5 +1,14 @@
-<!-- base_template: frappe_io/www/frappe/frappe_base.html -->
-<!-- add-breadcrumbs -->
+---
+base_template: frappe_io/www/frappe/frappe_base.html
+add_breadcrumbs: 1
+title: Testing
+image: /assets/frappe_io/images/frappe-framework-logo-with-padding.png
+metatags:
+ description: >
+  Frappe provides some basic tooling to write automated tests. We use the standard
+  library unittest provided by Python.
+---
+
 # Testing
 
 Frappe provides some basic tooling to write automated tests. There are some

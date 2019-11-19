@@ -1,91 +1,14 @@
-<!-- base_template: frappe_io/www/frappe/frappe_base.html -->
-<!-- add-breadcrumbs -->
-# Python API
+---
+base_template: frappe_io/www/frappe/frappe_base.html
+add_breadcrumbs: 1
+title: Database - API
+image: /assets/frappe_io/images/frappe-framework-logo-with-padding.png
+metatags:
+ description: >
+  API methods for querying, updating or creating records in Frappe
+---
 
-Frappe aims to achieve minimum cognitive load for its users. Hence, you can find
-the most used methods and utilities in the `frappe` namespace itself. It's the
-only import you need (most of the time) in a Python file.
-
-## frappe.get_doc
-`frappe.get_doc(doctype, name)`
-
-Returns a [Document](/docs/user/en/understanding-doctypes#document) object of
-the record identified by `doctype` and `name`. If `doctype` is a Single DocType
-`name` is optional.
-
-```python
-# get an existing document
-doc = frappe.get_doc('Task', 'TASK00002')
-doc.title = 'Test'
-doc.save()
-
-# get a single doctype
-doc = frappe.get_doc('System Settings')
-doc.timezone # Asia/Kolkata
-```
-
-`frappe.get_doc(dict)`
-
-- `dict`: A dict with `doctype` and other fields as key
-
-Returns a new Document object in memory which does not exist yet in the database.
-```python
-# create a new document
-doc = frappe.get_doc({
-	'doctype': 'Task',
-	'title': 'New Task'
-})
-doc.insert()
-```
-
-<!-- ## frappe.get\_cached\_doc
-
-Similar to `frappe.get_doc` but will look up the document in cache first before
-hitting the database. -->
-
-## frappe.new_doc
-`frappe.new_doc(doctype)`
-
-Alternative way to create a new Document.
-```python
-# create a new document
-doc = frappe.new_doc('Task')
-doc.title = 'New Task 2'
-doc.insert()
-```
-
-## frappe.delete_doc
-`frappe.delete_doc(doctype, name)`
-
-Deletes the record and its children from the database. Also deletes other
-documents like Communication, Comments, etc linked to it.
-
-```python
-frappe.delete_doc('Task', 'TASK00002')
-```
-
-## frappe.rename_doc
-`frappe.rename_doc(doctype, old_name, new_name, merge=False)`
-
-Rename a document's `name` (primary key) from `old_name` to `new_name`. If
-`merge` is `True` and a record with `new_name` exists, will merge the record
-with it.
-
-```python
-frappe.rename_doc('Task', 'TASK00002', 'TASK00003')
-```
-
-> Rename will only work if **Allow Rename** is set in the DocType Form.
-
-## frappe.get_meta
-`frappe.get_meta(doctype)`
-
-Returns meta information of `doctype`.
-```python
-meta = frappe.get_meta('Task')
-meta.has_field('status') # True
-meta.get_custom_fields() # [field1, field2, ..]
-```
+# Database API
 
 ## frappe.db.get_list
 `frappe.db.get_list(doctype, filters, or_filters, fields, order_by, group_by, start, page_length)`
@@ -93,7 +16,7 @@ meta.get_custom_fields() # [field1, field2, ..]
 - Also aliased to `frappe.get_list`
 
 Returns a list of records from a `doctype` table. ORM Wrapper for a `SELECT`
-query.
+query. Will also apply user permissions for the records for the session user.
 
 ```python
 frappe.db.get_list('Task',
@@ -140,8 +63,7 @@ frappe.db.get_list('Task',
 
 - Also aliased to `frappe.get_all`
 
-Same as `frappe.db.get_list` but will apply permissions and will filter records
-that have `read` permission for the current user.
+Same as `frappe.db.get_list` but will fetch all records without applying permissions.
 
 ## frappe.db.get_value
 `frappe.db.get_value(doctype, name, fieldname)` or `frappe.db.get_value(doctype, filters, fieldname)`
@@ -247,7 +169,10 @@ frappe.db.delete('Task', {
 Commits current transaction. Calls SQL `COMMIT`.
 
 > Frappe will automatically run `frappe.db.commit()` at the end of a successful
-> Web Request. Use this if you have to commit early in a transaction.
+> Web Request of type `POST` or `PUT`. It does not run on `GET` requests.
+>
+> You dont need to call this explicitly in most cases. Use this if you have to
+> commit early in a transaction.
 
 ## frappe.db.rollback
 `frappe.db.rollback()`
@@ -255,4 +180,5 @@ Commits current transaction. Calls SQL `COMMIT`.
 Rollbacks current transaction. Calls SQL `ROLLBACK`.
 
 > Frappe will automatically run `frappe.db.rollback()` if an exception is thrown
-> during a Web Request. Use this if you have to rollback early in a transaction.
+> during a Web Request of type `POST` or `PUT`. Use this if you have to rollback
+> early in a transaction.

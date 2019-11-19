@@ -1,5 +1,14 @@
-<!-- base_template: frappe_io/www/frappe/frappe_base.html -->
-<!-- add-breadcrumbs -->
+---
+base_template: frappe_io/www/frappe/frappe_base.html
+add_breadcrumbs: 1
+title: Portal Pages
+image: /assets/frappe_io/images/frappe-framework-logo-with-padding.png
+metatags:
+ description: >
+  Frappe Framework allows you to host server rendered web pages which are great
+  for SEO. You can also create public portals for external users.
+---
+
 # Portal Pages
 
 Frappe Framework not only provides a rich admin interface via the

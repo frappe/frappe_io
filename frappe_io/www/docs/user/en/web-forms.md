@@ -1,5 +1,14 @@
-<!-- base_template: frappe_io/www/frappe/frappe_base.html -->
-<!-- add-breadcrumbs -->
+---
+base_template: frappe_io/www/frappe/frappe_base.html
+add_breadcrumbs: 1
+title: Web Forms
+image: /assets/frappe_io/images/frappe-framework-logo-with-padding.png
+metatags:
+ description: >
+  Frappe provides an easy way to generate forms for your website with very little
+  configuration. These forms may be public or require login.
+---
+
 # Web Forms
 
 Frappe provides an easy way to generate forms for your website with very little
@@ -73,7 +82,7 @@ frappe.web_form.validate = () => {
 ##### Set Field Property
 
 ```js
-frappe.web_form.set_field_property([fieldname], [property], [value]);
+frappe.web_form.set_df_property([fieldname], [property], [value]);
 ```
 
 ##### Trigger script when form is loaded
@@ -116,7 +125,7 @@ frappe.web_form.validate = () => {
 ```js
 frappe.web_form.on('amount', (field, value) => {
     if (value < 1000) {
-        frappe.web_form.set_field_property('rate', 'hidden', 1);
+        frappe.web_form.set_df_property('rate', 'hidden', 1);
     }
 });
 ```
