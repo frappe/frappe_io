@@ -4,7 +4,7 @@ title: Installation
 image: /assets/frappe_io/images/frappe-framework-logo-with-padding.png
 metatags:
  description: >
-  Guide for installing Frappe Framework using the Bench CLI
+  Guide for installing Frappe Framework pre-requisites and the Bench CLI
 add_breadcrumbs: 1
 ---
 

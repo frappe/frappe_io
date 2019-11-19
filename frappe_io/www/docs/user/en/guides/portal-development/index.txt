@@ -5,3 +5,4 @@ contents
 web-forms
 ordering
 portal-roles
+redirects

@@ -377,7 +377,7 @@ frm.set_query('customer', () => {
 
 // set filters for Link field item_code in
 // items field which is a Child Table
-frm.set_query('items', 'item_code', () => {
+frm.set_query('item_code', 'items', () => {
 	return {
 		filters: {
 			item_group: 'Products'
