@@ -7,7 +7,7 @@ Now we have created a basic system that works out of the box without us having t
 
 ### Client Side Scripting
 
-In the **Library Transaction** DocType, we have only field for Member Name. We have not made two fields. Now this could well be two fields (and probably should), but for the sake of example, let us consider we have to implement this. To do this we would have to write a event handler for the event when the user selects the `library_member` field and then access the member resource from the server using REST API and set the values in the form.
+In the **Library Transaction** DocType, we have only one field for Member Name. We have not made two fields. Now this could well be two fields (and probably should), but for the sake of example, let us consider that we have to implement this. To do this we would have to write an event handler for the event when the user selects the `library_member` field and then access the member resource from the server using REST API and set the values in the form.
 
 To start the script, in the `library_management/doctype/library_transaction` folder, create a new file `library_transaction.js`. This file will be automatically executed when the first Library Transaction is opened by the user. So in this file, we can bind events and write other functions.
 
