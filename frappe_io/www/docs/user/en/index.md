@@ -52,6 +52,10 @@ It is pretty generic and can be used to build database driven apps.
 1. [REST API](/docs/user/en/api/rest)
 1. [Jinja API](/docs/user/en/api/jinja)
 
+### Integrations
+
+1. [RazorPay](/docs/user/en/integration/razorpay)
+
 ### Deployment
 
 1. [Database Migrations](/docs/user/en/database-migrations)
