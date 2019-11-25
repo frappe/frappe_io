@@ -17,6 +17,11 @@ hide_in_installer = True
 
 fixtures = ["Contact Us Settings", "Web Form"]
 
+website_redirects = [
+        {"source": "/docs/bench", "target": "/docs/user/en/bench/resources/"},
+        {"source": "/docs/bench/cheatsheet", "target": "/docs/user/en/bench/resources/bench-commands-cheatsheet.html"}
+]
+
 website_context = {
 	"repo": "frappe/frappe_io",
 	'logo_image_url': '/assets/frappe_io/images/frappe-logo.png',
