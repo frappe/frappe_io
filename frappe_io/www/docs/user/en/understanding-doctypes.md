@@ -20,6 +20,7 @@ metatags:
     - [Controller Hooks](#controller-hooks)
 1. [Child DocType](#child-doctype)
 1. [Single DocType](#single-doctype)
+1. [Actions and Links](#actions-and-link)
 
 ## DocType
 
@@ -392,3 +393,23 @@ records.
 >>> settings.notification_frequency
 'Daily'
 ```
+
+## Actions and Links
+
+> Added in Version 12.1
+
+**Actions**
+
+A DocType may also have `Daily Action` that will result in a button creation on the DocType View. Supported actions are:
+
+1. **Server Action**: This will trigger a whitelisted server action.
+
+**Links**
+
+A standard navigation aid to the DocType view is the `Links` section on the dashboard. This helps the viewer identify at a glance which document types are connected to this DocType and can quickly create new related documents.
+
+### Configuration of Actions and Links
+
+![Action and Link Configuration](/docs/assets/img/doctypes/action-link-config.png)
+
+![Action and Link View](/docs/assets/img/doctypes/action-link.png)
