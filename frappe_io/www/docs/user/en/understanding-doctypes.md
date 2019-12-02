@@ -406,7 +406,7 @@ A DocType may also have `Daily Action` that will result in a button creation on 
 
 **Links**
 
-A standard navigation aid to the DocType view is the `Links` section in the dashboard. This helps the viewer identify at a glance the what are the document types connected to this DocType and helps can quickly create new related documents.
+A standard navigation aid to the DocType view is the `Links` section on the dashboard. This helps the viewer identify at a glance which document types are connected to this DocType and can quickly create new related documents.
 
 ### Configuration of Actions and Links
 
