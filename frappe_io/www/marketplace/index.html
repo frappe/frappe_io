@@ -1,51 +1,38 @@
+{% from "frappe_theme/templates/includes/card_grid.html" import card_grid %}
 <section class='top-section'>
-    <div class='container'>
-        <h1>Marketplace</h1>
-        <p class='lead'>Free platform to publish items and get discovered by users on the marketplace</p>
-        <img src='/assets/frappe_io/images/landing-pages/marketplace.gif' class='border greyscale mt-5'>
-    </div>
+	<div class='container'>
+		<h1>Marketplace</h1>
+		<p class='lead'>Free platform to publish items and get discovered by users on the marketplace</p>
+		<img src='/assets/frappe_io/images/landing-pages/marketplace.gif' class='border greyscale mt-5'>
+	</div>
 </section>
-
-{% macro card(title, body, link) %}
-<div class="col-sm mb-4">
-    <div class="card h-100" target="_blank">
-        <div class="card-body">
-            <h5>{{ title }}</h5>
-            <div class="card-text">{{ body }}</div>
-        </div>
-    </div>
-</div>
-{% endmacro %}
 
 <section class='section-padding section-bg'>
-    <div class='container'>
+	<div class='container'>
 
-        <div class="row">
-            {{
-                card(
-                    "Publish Items",
-                    "Publish your items for free and get it discovered by other users."
-                )
-            }}
-            {{
-                card(
-                    "Discover Items",
-                    "Search among thousands of items published by sellers, maintain a favorite list and much more."
-                )
-            }}
-            {{
-                card(
-                    "Messaging",
-                    "Communicate directly with sellers or manage your customer inquiries."
-                )
-            }}
-        </div>
-    </div>
+		<div class="row">
+			{{ card_grid(None, None, [{
+				"title": "Publish Items",
+				"content": "Publish your items for free and get it discovered by other users.",
+				"url": None
+			},
+			{
+				"title": "Discover Items",
+				"content": "Search among thousands of items published by sellers, maintain a favorite list and much more.",
+				"url": None
+			},
+			{
+				"title": "Messaging",
+				"content": "Communicate directly with sellers or manage your customer inquiries.",
+				"url": None
+			}] )}}
+		</div>
+	</div>
 </section>
 <section class='text-center section-padding'>
-    <div class='container'>
-        <a class="btn btn-dark mr-3" href="https://hubmarket.org">
-            Visit Marketplace
-        </a>
-    </div>
+	<div class='container'>
+		<a class="btn btn-dark mr-3" href="https://hubmarket.org">
+			Visit Marketplace
+		</a>
+	</div>
 </section>
