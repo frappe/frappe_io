@@ -1,4 +1,5 @@
 <!-- base_template: frappe_io/www/frappejs/frappejs_base.html -->
+{% from "frappe_theme/templates/includes/card_grid.html" import card_grid %}
 <section class='top-section'>
 	<div class='container'>
 	<h1>Metadata Driven JS Framework</h1>
@@ -8,67 +9,44 @@
 	</div>
 </section>
 
-{% macro card(title, body, link) %}
-<div class="col-sm mb-4">
-	<div class="card h-100" target="_blank">
-	  <div class="card-body">
-		<h5>{{ title }}</h5>
-	    <div class="card-text">{{ body }}</div>
-	  </div>
-	</div>
-</div>
-{% endmacro %}
-
 <section class='section-padding section-bg'>
 	<div class='container'>
-
-		<div class="row">
-			{{
-				card(
-					"Models",
-					"Models are first class citizens in FrappeJS. Use them to build powerful REST APIs, UIs or CLI tools.",
-					"/frappejs/docs/models"
-				)
-			}}
-			{{
-				card(
-					"Admin Interface",
-					"FrappeJS comes with built-in lists and forms to interact with your data. It is built on VueJS.",
-					"/frappejs/docs/ui-components"
-				)
-			}}
-			{{
-				card(
-					"Backend Agnostic",
-					"Use any backend to store your models. FrappeJS uses SQLite as the default data store.",
-					"/frappejs/docs/backend"
-				)
-			}}
-		</div>
-
-		<div class="row">
-			{{
-				card(
-					"Isomorphic",
-					"FrappeJS can be used to build web applications using Node, Single Page Applications using Vue or desktop apps with Electron.",
-					"/frappejs/docs/isomorphic"
-				)
-			}}
-			{{
-				card(
-					"REST API",
-					"FrappeJS server comes baked in with standard REST API routes to GET and POST data in your models.",
-					"/frappejs/docs/rest-api"
-				)
-			}}
-			{{
-				card(
-					"File Handling",
-					"FrappeJS handles your file uploads and its operations via the REST API or the core API.",
-					"/frappejs/docs/file-handling"
-				)
-			}}
-		</div>
+	{{ card_grid(
+		None,
+		None,
+		[
+			{
+				"title": "Models",
+				"content": "Models are first class citizens in FrappeJS. Use them to build powerful REST APIs, UIs or CLI tools.",
+				"url": "/frappejs/docs/models"
+			},
+			{
+				"title": "Admin Interface",
+				"content": "FrappeJS comes with built-in lists and forms to interact with your data. It is built on VueJS.",
+				"url": "/frappejs/docs/ui-components"
+			},
+			{
+				"title": "Backend Agnostic",
+				"content": "Use any backend to store your models. FrappeJS uses SQLite as the default data store.",
+				"url": "/frappejs/docs/backend"
+			},
+			{
+				"title": "Isomorphic",
+				"content": "FrappeJS can be used to build web applications using Node, Single Page Applications using Vue or desktop apps with Electron.",
+				"url": "/frappejs/docs/isomorphic"
+			},
+			{
+				"title": "REST API",
+				"content": "FrappeJS server comes baked in with standard REST API routes to GET and POST data in your models.",
+				"url": "/frappejs/docs/rest-api"
+			},
+			{
+				"title": "File Handling",
+				"content": "FrappeJS handles your file uploads and its operations via the REST API or the core API.",
+				"url": "/frappejs/docs/file-handling"
+			}
+		])
+	}}
 	</div>
 </section>
 <section class='text-center section-padding'>

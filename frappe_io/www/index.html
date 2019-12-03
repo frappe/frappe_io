@@ -1,5 +1,7 @@
 {% extends "templates/base.html" %}
 {% block title %}Frappe: Frameworks + Apps{% endblock %}
+{% from "frappe_theme/templates/includes/card_grid.html" import card_grid %}
+
 {% block head_include%}
 <meta name="google-site-verification" content="wHHwkj0nxAumDTGsfHZyKrqFbjNvj4Fd4j5ohKCB6SQ" />
 {% endblock %}
@@ -13,103 +15,63 @@
 	<h1>Building Awesome Open Source</h1>
 	<p class='lead pb-4'>Excellence Driven Software Products + Services</p>
 
-{% macro card(title, body, btnlabel, btnlink, badges) %}
-<div class="col-sm mb-4 text-left">
-	<a href="{{ btnlink }}" class="card h-100">
-	  <div class="card-body">
-		<h5>{{ title }}</h5>
-	    <div class="card-text">{{ body }}</div>
-	    <!-- <a href="{{ btnlink }}" class="btn btn-dark btn-sm">{{ btnlabel }}</a> -->
-	  </div>
-	</a>
+	{{ card_grid(
+		None,
+		None,
+		[
+			{
+				"title": "ERPNext",
+				"content": "Fully featured, modern, easy-to-use 100% Open Source ERP.",
+				"url": "/erpnext"
+			},
+			{
+				"title": "Frappe",
+				"content": "Python + JS based metadata driven, full-stack web-application framework.",
+				"url": "/frappe"
+			},
+			{
+				"title": "Accounting",
+				"content": "Offline Accounting software for everyone, with Invoicing, Payments and Reports.",
+				"url": "/accounting"
+			},
+			{
+				"title": "Gantt",
+				"content": "Open source, fully featured, SVG based Javascript Gantt library.",
+				"url": "/gantt"
+			},
+			{
+				"title": "Charts",
+				"content": "Open source, extensible, GitHub inspired SVG based Charting library.",
+				"url": "/charts"
+			},
+			{
+				"title": "DataTable",
+				"content": "Missing open source Javascript based Datatable built for the web.",
+				"url": "/datatable"
+			},
+			{
+				"title": "FrappeJS",
+				"content": "Node + Electron + Vue based metadata web framework with admin interface. ",
+				"url": "/frappejs"
+			},
+			{
+				"title": "Bench",
+				"content": "CLI to setup, deploy, manage multiple Frappe / ERPNext instances.",
+				"url": "/bench"
+			},
+			{
+				"title": "Marketplace",
+				"content": "Free platform to publish items and get discovered by users on the marketplace",
+				"url": "/marketplace"
+			}
+		]
+
+		)
+	}}
 </div>
-{% endmacro %}
-	<div class="row mt-5">
-		{{ card(
-			"ERPNext",
-			"Fully featured, modern, easy-to-use 100% Open Source ERP.",
-			"ERPNext.com",
-			"/erpnext",
-			["App", "Python", "JS"]
-		) }}
-
-		{{ card(
-			"Frappe",
-			"Python + JS based metadata driven, full-stack web-application framework.",
-			"Documentation",
-			"/frappe",
-			["Framework", "Python", "JS"]
-		) }}
-
-		{{
-			card(
-				"Accounting",
-				"Offline Accounting software for everyone, with Invoicing, Payments and Reports.",
-				"ERPNext.com",
-				"/accounting",
-				["App", "JS"]
-			)
-		}}
-
-	</div>
-
-	<div class="row">
-		{{ card(
-			"Gantt",
-			"Open source, fully featured, SVG based Javascript Gantt library.",
-			"ERPNext.com",
-			"/gantt",
-			["Lib", "JS"]
-		) }}
-
-		{{ card(
-			"Charts",
-			"Open source, extensible, GitHub inspired SVG based Charting library.",
-			"ERPNext.com",
-			"/charts",
-			["Lib", "JS"]
-		) }}
-
-		{{ card(
-			"DataTable",
-			"Missing open source Javascript based Datatable built for the web.",
-			"ERPNext.com",
-			"/datatable",
-			["Lib", "JS"]
-		) }}
-	</div>
-	<div class="row">
-		{{
-			card(
-				"FrappeJS",
-				"Node + Electron + Vue based metadata web framework with admin interface. ",
-				"ERPNext.com",
-				"/frappejs",
-				["Framework", "JS"]
-			)
-		}}
-		{{ card(
-			"Bench",
-			"CLI to setup, deploy, manage multiple Frappe / ERPNext instances.",
-			"ERPNext.com",
-			"/bench",
-			["CLI", "Python"]
-		) }}
-		{{
-			card(
-				"Marketplace",
-				"Free platform to publish items and get discovered by users on the marketplace",
-				"ERPNext.com",
-				"/marketplace",
-				["App", "Python"]
-			)
-		}}
-	</div>
-	</div>
 
 </section>
-<hr>
-<section class='section-padding text-center'>
+<section class='section-padding section-light text-center'>
 	<div class='container'>
 		<h3>A Community, Not Just a Company</h3>
 		<p class='lead'>At Frappe, we are true believers of Open Source and actively work with communities to share our knowledge.</p>
