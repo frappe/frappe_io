@@ -130,6 +130,7 @@ Here is a list of all configuration options that can be specified:
 `disable_website_cache` | Disable cache in website pages
 `logging`             | Set `0` to disable, set `1` to print logs, set `2` to log queries
 `disable_async`       | Disables socket.io client, client stops polling the socket.io server
+`max_file_size`       | Set this to limit the size of files uploaded by user (Default: 10MB)
 
 ## Site Resolution
 
