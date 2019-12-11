@@ -102,7 +102,7 @@ the app. This is the directory which corresponds to that module.
 This file is used to hook into frappe events and extend or override standard
 behaviour by frappe.
 
-Learn more about [hooks](/docs/user/en/hooks).
+Learn more about [hooks](/docs/user/en/guides/basics/hooks).
 
 ### custom_app/modules.txt
 
