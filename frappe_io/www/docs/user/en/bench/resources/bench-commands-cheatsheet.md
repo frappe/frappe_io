@@ -90,6 +90,8 @@
 * `bench --site [sitename] --force reinstall ` Reinstall with fresh database (Caution: Will wipe out old database)
 * `bench new-site [sitename]` - Creates a new site
   * `--db-name`                Database name
+  * `--db-host`                Custom database host URL for remote connection
+  * `--db-port`                Custom database listening port (eg. port other than the default 3306)
   * `--mariadb-root-username`  Root username for MariaDB
   * `--mariadb-root-password`  Root password for MariaDB
   * `--admin-password`         Administrator password for new site
