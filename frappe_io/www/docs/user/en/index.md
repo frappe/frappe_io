@@ -55,6 +55,7 @@ It is pretty generic and can be used to build database driven apps.
 ### Integrations
 
 1. [RazorPay](/docs/user/en/integration/razorpay)
+1. [Bio-metric](/docs/user/en/integration/bio_metric)
 
 ### Deployment
 
