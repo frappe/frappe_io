@@ -11,11 +11,11 @@ Token authentication is a more modern approach and it is designed to solve probl
 ## Token CRUD
 
 As a developer, you can use tokens for full CRUD operations.
-Once an Token is generated, the token can be used to authorize individual requests made by your users as they are passed to your application. Your application will validate the token sent along with each request. 
+Once an Token is generated, the token can be used to authorize individual requests made by your users as they are passed to your application. Your application will validate the token sent along with each request.
 
 An combination of API Key and API Secret forms a token which is then used to authenticate you with your application and can be used to authenticate both RPC and REST API.
 
-# Generate a Token
+## Generate a Token
 
 For every user you can generate an api-key and api-secret which together form a token.
 
@@ -24,16 +24,16 @@ For every user you can generate an api-key and api-secret which together form a 
 
 Api-key and api-secret can be generated from the web interface, from the command line or by remote procedure call (RPC):
 
-- RPC: 
+- RPC:
   `/api/method/frappe.core.doctype.user.user.generate_keys?user="user_name"`
-- Command: 
+- Command:
   `bench execute frappe.core.doctype.user.user.generate_keys --args ['user_name']`
-- Web: 
+- Web:
   `User -> Api Access -> Generate Keys`
 
 Check `Guides / Integrations / Rest Api / Token Based Authentication` to see how to use the token in an API request.
 
-**Note:** 
+**Note:**
 
 1. Api key cannot be re-generated.
 2. Only users with system manager role can generate keys.
