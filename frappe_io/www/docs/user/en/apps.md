@@ -109,7 +109,7 @@ Learn more about [hooks](/docs/user/en/guides/basics/hooks).
 Every frappe app is organized into different modules. Every DocType is part of a
 module. These modules are listed in this file.
 
-Learn more about [modules](/docs/user/en/modules).
+Learn more about [modules](/docs/user/en/understanding-doctypes#module).
 
 ### custom_app/patches.txt
 
