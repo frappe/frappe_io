@@ -124,3 +124,15 @@ unfreeze(): void
 datatable.unfreeze();
 ```
 
+---
+
+#### style.setStyle
+
+Add style to cells, rows, columns.
+
+```javascript
+style.setStyle(selector: String, cssRule: Object): void
+
+// Usage
+datatable.style.setStyle(`.dt-cell--col-1`, {backgroundColor: '#00ff00'});
+```

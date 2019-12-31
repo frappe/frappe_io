@@ -14,5 +14,13 @@
     {
         "title": "Events",
         "route": "/datatable/docs/events"
+    },
+    {
+        "title": "Datatable API",
+        "route": "/datatable/docs/api/datatable"
+    },
+    {
+        "title": "Datamanager API",
+        "route": "/datatable/docs/api/datamanager"
     }
 ]

@@ -3,7 +3,7 @@
 
 Finally, an application also has to send email notifications and do other kind of scheduled tasks. In Frappe, if you have setup the bench, the task / scheduler is setup via RQ using Redis Queue.
 
-To add a new task handler, go to `hooks.py` and add a new handler. Default handlers are `all`, `daily`, `weekly`, `monthly`, `cron`. The `all` handler is called every 4 minutes by default.
+To add a new task handler, go to `hooks.py` and add a new handler. Default handlers are `all`, `hourly`, `daily`, `weekly`, `monthly`, `cron`. The `all` handler is called every 4 minutes by default.
 
 	# Scheduled Tasks
 	# ---------------
@@ -20,8 +20,18 @@ To add a new task handler, go to `hooks.py` and add a new handler. Default handl
 				"library_management.task.every_day_at_18_15"
 			]
 		}
-			
+
 	}
+
+### How it Works
+
+> Added in 12.1
+
+Scheduled tasks are synced into a DocType `Scheduled Job Type`. From here you can track its last execution and log. By default, jobs added to of type `All`, are not logged, but you can configure the system to log it.
+
+The log of each exeuction is maintained in `Scheduled Job Log`
+
+### Example
 
 Here we can point to a Python function and that function will be executed every day. Let us look what this function looks like:
 
@@ -31,11 +41,11 @@ Here we can point to a Python function and that function will be executed every 
 	from __future__ import unicode_literals
 	import frappe
 	from frappe.utils import date_diff, nowdate, format_date, add_days
-	
+
 	def every_ten_minutes():
 		# stuff to do every 10 minutes
 		pass
-		
+
 	def every_day_at_18_15():
 		# stuff to do every day at 6:15pm
 		pass
@@ -83,6 +93,7 @@ Here we can point to a Python function and that function will be executed every 
 				overdue_by_member[d.library_member].append(d)
 
 			articles_transacted.append(d.article)
+		return overdue_by_member
 
 We can place the above code in any accessible Python module. The route is defined in `hooks.py`, so for our purposes we would place this code in `library_management/tasks.py`.
 
@@ -91,5 +102,9 @@ Note:
 1. We get the loan period from **Library Management Settings** by using `frappe.db.get_value`.
 1. We run a query in the database with `frappe.db.sql`
 1. Email is sent via `frappe.sendmail`
+
+### Dormancy
+
+If the system is dormant for a specified number of days in `System Settings`, it only executes tasks once a day to conserve computation.
 
 {next}

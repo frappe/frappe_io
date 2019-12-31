@@ -5,7 +5,7 @@ Frappe has a couple of elegant and useful widgets, but some times we need to edi
 
 Let me explain first our goal:
 
-&gt; Add `many` alternative translations in `numerous records` and in a `lot of doctypes`
+> Add `many` alternative translations in `numerous records` and in a `lot of doctypes`
 
 Look the highlighted sections in the __goal__, we have _many translations_ to add in _many records_ and in _many doctypes_, so, we heave a **many of work**, so we have a lot to do right?
 
@@ -15,7 +15,7 @@ So, what we need do, is improve your goal based on the `Control`, to reduce our 
 
 But, where will we find this magic element, the control? _-For now, we can look it in the JavaScript sources - let's look now at [Github](https://github.com/frappe/frappe/blob/develop/frappe/public/js/frappe/form/control.js#L13)_
 
-&gt; Don't worry if you don't understand the code for now, our goal there is simplify our work.
+> Don't worry if you don't understand the code for now, our goal there is simplify our work.
 
 Let's go ahead with the thought!
 
@@ -23,16 +23,17 @@ We know where we need to make the changes, but how will we dismember which are t
 
 We need to keep in mind, that `Control` are instance of `DocFields` and the `DocFields` have a field that is very important for us in this case, the field that will help us to dismember which are affected by our feature and which aren't is the field `options` in the `DocField`.
 
-_-Wait!, we understood that the field `options` can help us, but, how will it help us?_ 
+_-Wait!, we understood that the field `options` can help us, but, how will it help us?_
 
 Good question, we will define a word to put in the `options` of the `DocFields` that we need to include the feature, this world will be **`Translatable`.**
 
-&gt; If you forget how to customize the options of a field look [this article](https://kb.erpnext.com/kb/customize/creating-custom-link-field), it can refresh your knowledge.
+> If you forget how to customize the options of a field look [this article](https://kb.erpnext.com/kb/customize/creating-custom-link-field), it can refresh your knowledge.
 
 Well, with the defined word in `options` of our selected `DocFields`, now is time to code:
 
 _-At last, we think we would never stop talking!_
 
+```js
 	frappe.ui.form.ControlData = frappe.ui.form.ControlData.$extend({
 		make_input: function(){
 			var options = this.df.options;
@@ -78,8 +79,7 @@ _-At last, we think we would never stop talking!_
 			});
 		},
 		open_dialog: function(){
-			var doc = this.doc;
-			if (!doc.__unsaved){
+			if (this.frm && !this.frm.is_dirty()) {
 				new frappe.ui.form.TranslationSelector({
 					doc: doc,
 					df: this.doc,
@@ -88,6 +88,7 @@ _-At last, we think we would never stop talking!_
 			}
 		}
 	});
+```
 
 _-Other letter soup, for my gosh!_
 

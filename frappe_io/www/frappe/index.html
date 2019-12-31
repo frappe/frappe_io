@@ -1,75 +1,69 @@
 <!-- base_template: frappe_io/www/frappe/frappe_base.html -->
+{% from "frappe_theme/templates/includes/card_grid.html" import card_grid %}
 <section class='top-section'>
 	<div class='container'>
-	<h1>Low code framework built on Python and JS</h1>
+	<h1 class='h2'>The Most Powerful Web Framework on the Planet</h1>
 	<p class='lead'>Full stack, metadata driven web framework with a rich admin UI</p>
 	<div class='mt-3'>
 		<a href='/docs' target='_blank' class='btn btn-dark'>Get Started</a>
 	</div>
-	<img src='/assets/frappe_io/images/landing-pages/new-item.gif'
-	class='greyscale border mt-5'>
+	<!-- <img src='/assets/frappe_io/images/landing-pages/new-item.gif' class='greyscale border mt-5'> -->
 	</div>
 </section>
 
-{% macro card(title, body, footer, link) %}
-<div class="col-sm mb-4">
-	<div class="card h-100">
-	  <div class="card-body">
-		<h5>{{ title }}</h5>
-	    <div class="card-text">{{ body }}</div>
-	  </div>
-		<!-- <div class='card-footer text-muted small'>
-			{{ footer }}
-		</div> -->
-	</div>
-</div>
-{% endmacro %}
-
 <section class='section-padding section-bg'>
 	<div class='container'>
-	<h2 class=text-center>Batteries Included</h2>
-	<div class='row mt-5'>
-		{{ card(
-			"Metadata First",
-			"Everything in Frappe is a DocType. DocTypes can be defined easily without code used everywhere.",
-		) }}
-		{{ card(
-			"Admin User Interface",
-			"Frappe comes with a rich single page application (SPA) with built in forms, list, search and navigation."
-		) }}
-		{{ card(
-			"Roles and Permissions",
-			"You define user roles and permissions that are applied out of the box on all interactions."
-		) }}
-	</div>
-	<div class='row'>
-		{{ card(
-			"Extensible",
-			"With a modular architecture, you can create your own apps that can be extended by other apps."
-		) }}
-		{{ card(
-			"REST API + Webhooks",
-			"Frappe is integration friendly and comes with REST API and Webhooks on all models based on authentication."
-		) }}
-		{{ card(
-			"Job Scheduler",
-			"You can configure background workers and run periodic tasks powered by Python RQ."
-		) }}
-	</div>
-	<div class='row'>
-		{{ card(
-			"Socket.io",
-			"Frappe comes with first class socket.io support based on NodeJS and using Redis pub-sub."
-		) }}
-		{{ card(
-			"Email Setup",
-			"Send, recieve, view and manage emails easily using SMTP and IMAP based email accounts."
-		) }}
-		{{ card(
-			"Multi-tenant",
-			"Database driven multi-tenant architecture easily lets you host multiple sites on a single server."
-		) }}
-	</div>
+	{{ card_grid(
+		"Batteries Included",
+		None,
+		[
+			{
+				"title": "Metadata First",
+				"content": "Everything in Frappe is a DocType. DocTypes can be defined easily without code used everywhere.",
+				"url": None
+			},
+			{
+				"title": "Admin User Interface",
+				"content": "Frappe comes with a rich single page application (SPA) with built in forms, list, search and navigation.",
+				"url": None
+			},
+			{
+				"title": "Roles and Permissions",
+				"content": "You define user roles and permissions that are applied out of the box on all interactions.",
+				"url": None
+			},
+			{
+				"title": "Extensible",
+				"content": "With a modular architecture, you can create your own apps that can be extended by other apps.",
+				"url": None
+			},
+			{
+				"title": "REST API + Webhooks",
+				"content": "Frappe is integration friendly and comes with REST API and Webhooks on all models based on authentication.",
+				"url": None
+			},
+			{
+				"title": "Job Scheduler",
+				"content": "You can configure background workers and run periodic tasks powered by Python RQ.",
+				"url": None
+			},
+			{
+				"title": "Socket.io",
+				"content": "Frappe comes with first class socket.io support based on NodeJS and using Redis pub-sub.",
+				"url": None
+			},
+			{
+				"title": "Email Setup",
+				"content": "Send, recieve, view and manage emails easily using SMTP and IMAP based email accounts.",
+				"url": None
+			},
+			{
+				"title": "Multi-tenant",
+				"content": "Database driven multi-tenant architecture easily lets you host multiple sites on a single server.",
+				"url": None
+			}
+		]
+	)}}
 	</div>
 </section>
 

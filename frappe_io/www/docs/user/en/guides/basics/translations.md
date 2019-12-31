@@ -4,7 +4,7 @@
 <!-- jinja -->
 <!-- static -->
 
-This document shows how to translations are managed in ERPNext and how to add
+This document shows how translations are managed in ERPNext and how to add
 a new language or update translations of an existing language.
 
 ### 1. Source
@@ -86,4 +86,3 @@ Add your language in `apps/languages.txt` and also `frappe/data/languages.txt` (
 A new file will be added to the `translations` folder in each app. You need to add that file and push to your repo. Then send us a pull-request.
 
 ---
-
