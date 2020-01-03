@@ -7,4 +7,4 @@
 - A [Web Component Wrapper](https://www.webcomponents.org/element/xtal-frappe-chart).
 - A [Vue Component](https://github.com/JustSteveKing/vue2-frappe)
 - A [.Net Standard 2.0 C# Wrapper](https://github.com/tolbxela/FrappeCharts.NET)
-
+- [svelte-frappe-charts](https://github.com/himynameisdave/svelte-frappe-charts): [Svelte](https://svelte.dev/) wrapper for Frappe Charts.
