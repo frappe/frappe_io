@@ -23,9 +23,15 @@ Consultants help our customers reach their goals by providing support and guidan
 
 As a designer you will help us improve our product and website to become more friendly and consistent. Our products are large and complex and there is always a lot of opportunity to add happiness to people's lives by simpler and better design.
 
-##### 4. Writers
+##### 4. Video Producer / Editor
+
+We are looking for someone to take the ownership of the entire process of creating video content. An ideal candidate should be experienced with popular video editing tools as well as scripting and voiceover of the same. As the video content owner you have to understand the product and its users, and then build a catalog of videos for marketing, documentation, etc.
+
+##### 5. Writers
 
 As a resident writer, your job would be to understand who our users are and help codify the knowledge we have in the organization for them in the form of articles, documentation, stories, blog posts. You must have a flair for writing and an original voice and an ability to write on specific topics. We take our writing very seriously and we believe that every word we write as an organization is our most important marketing activity.
+
+P.S. There are no open vacancies for a writer at the moment, but do drop us an email anyway!
 
 ---
 
