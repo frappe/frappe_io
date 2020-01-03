@@ -51,7 +51,7 @@ After this, just drop in an email to the engineer who requested you for this tes
 
 ### Next Steps
 
-After this, we will get in touch with you and you will have to walk us through your code. The evaluation is based on code quality, and the ui. We will then ask for a few changes or additional features that will help us evaluate how well you know your code base.
+After this, we will get in touch with you and you will have to walk us through your code. We will then ask for a few changes or additional features that will help us evaluate how well you know your code base.
 
 ### Tips to Ace the Code Evaluation
 
