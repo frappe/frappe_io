@@ -316,6 +316,6 @@ Exempt documents of a specific DocType from being automatically cancelled on can
 
 Example,
 
-	cancel_exempt_doctypes = ["Payment Entry"]
+	auto_cancel_exempted_doctypes = ["Payment Entry"]
 
 In the above example, if any document that is linked with Payment Entry is cancelled, the system will skip the auto-cancellation of the linked Payment Entry document.
