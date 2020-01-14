@@ -27,6 +27,8 @@ To add a Webhook go to,
 
 ### Webhook Security
 
+> Introduced in Version 13
+
 To optionally add security to your webhook requests and ensure that the webhook is being sent from Frappe, you can set up a "Webhook Secret" along with the request. Do not share the secret publicly.
 
 If enabled, an additional header (`X-Frappe-Webhook-Signature`) will be added to the request before it's sent out, with its value being generated using the secret.
