@@ -45,10 +45,10 @@ It is pretty generic and can be used to build database driven apps.
 1. [Javascript](/docs/user/en/api#javascript)
 	1. [Form](/docs/user/en/api/form)
 	1. [Controls](/docs/user/en/api/controls)
-	1. [Dialog](/docs/user/en/api/dialog)
 	1. [Page](/docs/user/en/api/page)
 	1. [Server Calls (AJAX)](/docs/user/en/api/server-calls)
 	1. [Common Utilities](/docs/user/en/api/js-utils)
+1. [Dialog API](/docs/user/en/api/dialog)
 1. [REST API](/docs/user/en/api/rest)
 1. [Jinja API](/docs/user/en/api/jinja)
 
