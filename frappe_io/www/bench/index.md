@@ -30,7 +30,7 @@ bench --site new-site1.local backup
 
 ### Manage Updates
 
-You can update all your instances to the latest release versions by running the update command. This will download the latest version all the apps on bench, update dependencies, run patches and also migrate the database schema. If executed outside a bench directory, it just updates the bench tool!
+You can update all your instances to the latest release versions by running the `update` command. This will download the latest version all the apps on bench, update dependencies, run patches, and also migrate the database schema. If executed outside a bench directory, it just updates the bench tool!
 
 ```sh
 bench update
