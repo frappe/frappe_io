@@ -31,6 +31,7 @@
   * `--requirements`        Update requirements
   * `--restart-supervisor`  restart supervisor processes after update
   * `--no-backup`			  Don't take a backup before update
+  * `--reset`               Ignore local changes and update
 * `bench restart` Restart all bench services
 * `bench backup` Create a backup of the default site.
 
