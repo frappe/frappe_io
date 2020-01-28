@@ -47,7 +47,7 @@ If you a fresh engineer applying for an engineering position, you must complete 
 
 [https://frappe.io/flask-test](https://frappe.io/flask-test)
 
-If you complete the test, email us at hello@frappe.io and someone will take it from there.
+If you complete the test, email us at jobs@frappe.io and someone will take it from there.
 
 ##### 3. Ace the Interview
 
@@ -57,7 +57,7 @@ To understand your capabilities, we will ask about your past experiences. We bel
 
 During this interview we will try and go deeper into your previous experience or projects and try and determine if you have the depth and ability to fulfil the requirements of this job.
 
-If you have any queries, please email to us at [hello@erpnext.com](mailto:hello@erpnext.com) and we will try our best to help you!
+If you have any queries, please email to us at [jobs@erpnext.com](mailto:jobs@erpnext.com) and we will try our best to help you!
 
 {{ media(
 	"Shivam Mishra",
