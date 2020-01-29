@@ -253,7 +253,7 @@ new frappe.ui.form.MultiSelectDialog({
 	doctype: "Material Request",
 	target: this.cur_frm,
 	method: "dotted.path.to.method" ,
-	method_args: {
+	args: {
 		arg1: value,
 		arg2: value
 	},
