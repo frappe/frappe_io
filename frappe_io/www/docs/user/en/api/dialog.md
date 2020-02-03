@@ -203,7 +203,7 @@ frappe.show_progress('Loading..', 70, 100, 'Please wait');
 *frappe.show_progress*
 
 ### frappe.ui.form.MultiSelectDialog
-`new frappe.ui.form.MultiSelectDialog({ doctype, target, setters, date_field, get_query_filters, action })`
+`new frappe.ui.form.MultiSelectDialog({ doctype, target, setters, date_field, get_query, action })`
 
 A MultiSelectDialog consists of filter fields followed by a multiple selection list. The primary button will perform the passed `action` on the selected options.
 
@@ -211,27 +211,50 @@ By default the **Search Term** field and **Date Range** field will compose the f
 
 The argument list includes:
 
-- `doctype`: The source to fetch selection entries from and to display the same.
+- `doctype`: The source to fetch and display selection entries from.
 - `target`: The target where the modal is to be displayed.
 - `setters`: These will compose the filter fields and values to populate them with. These also translate to custom columns for the selection list.
 - `date_field`: It is necessary to pass the `date_field` of the DocType in consideration.
-- `get_query_filters`: These are filters to apply while querying entries from the DocType in consideration.
-- `action`: Contains the primary action to be performed on the selected options. It can take `selections` as a parameter, which comprises of the selected options.
+- `get_query`: A function that returns `query` and `filters` to query the selection list. A custom server side method can be passed via `query`, and `filters` will be passed to that method.
+- `action`: Contains the primary action to be performed on the selected options. It takes `selections` as a parameter, which comprises of the selected options.
 
-Let us assume we want to fetch  Material Requests that aren't in the cancelled state, into our dialog. We can then go on to invoke the MultiSelectdialog in the following manner:
+Let us assume we want to fetch  Material Requests into our dialog. We can then go on to invoke the MultiSelectDialog in the following manner:
 
 ```js
 new frappe.ui.form.MultiSelectDialog({
-	doctype: 'Material Request',
+	doctype: "Material Request",
 	target: this.cur_frm,
 	setters: {
-		company: 'Zoot'
+		company: "Zoot"
 	},
-	date_field: 'transaction_date',
-	get_query_filters: {
-		docstatus: ['!=', 2]
+	date_field: "transaction_date",
+	get_query() {
+		return {
+			filters: { docstatus: ['!=', 2] }
+		}
 	},
-	action(selections){
+	action(selections) {
+		console.log(selections);
+	}
+});
+
+// MultiSelectDialog with custom query method
+let query_args = {
+	query:"dotted.path.to.method",
+	filters: { docstatus: ["!=", 2], supplier: "John Doe" }
+}
+
+new frappe.ui.form.MultiSelectDialog({
+	doctype: "Material Request",
+	target: this.cur_frm,
+	setters: {
+		company: "Zoot"
+	},
+	date_field: "transaction_date",
+	get_query() {
+		return query_args;
+	},
+	action(selections) {
 		console.log(selections);
 	}
 });
@@ -240,29 +263,10 @@ new frappe.ui.form.MultiSelectDialog({
 ![MultiSelectDialog](/docs/assets/img/api/dialog-api-multiselectdialog.png)
 *frappe.ui.form.MultiSelectDialog*
 
-Here all the Material Requests that are not in the cancelled state will be fetched into the selection area. The setter `company` is added to the filter fields along with its passed value. The `date_field` will be used to fetch and query dates from the DocType mentioned.
+Here all the Material Requests that fulfill the filter criteria will be fetched into the selection area. The setter `company` is added to the filter fields along with its passed value. The `date_field` will be used to fetch and query dates from the DocType mentioned.
 
-The **Make Material Request** (or `Make {DocType}`) secondary action button will redirect you to a new form in order to make an entry to the DocType passed.
+The **Make Material Request** (or `Make {DocType}`) secondary action button will redirect you to a new form in order to make a new entry into the DocType passed.
 
-In addition to this, fetching entries from a DocType using a complex query can be done by passing `method` and `method_args`. These will comprise of a dotted path to the custom **server side method** and arguments for the same.
-The `method` must return the entries to populate the selection area.
-
-```js
-// MultiSelectDialog with custom method
-new frappe.ui.form.MultiSelectDialog({
-	doctype: "Material Request",
-	target: this.cur_frm,
-	method: "dotted.path.to.method" ,
-	args: {
-		arg1: value,
-		arg2: value
-	},
-	setters: {
-		company: this.frm.doc.company
-	},
-});
-
-```
 ----
 
 ## Python API
