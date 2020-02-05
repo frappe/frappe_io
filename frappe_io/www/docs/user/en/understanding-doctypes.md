@@ -168,7 +168,7 @@ in Version 12 we have introduced two new properties:
 - `read_only_depends_on`: If this condition is satisfied, the field will be read only.
 
 
-Frappe comes with moret than 30 different fieldtypes out-of-the-box.
+Frappe comes with more than 30 different fieldtypes out-of-the-box.
 These fieldtypes serve a variety of use-cases. Learn more about [Fieldtypes](#fieldtypes).
 
 ## Naming
