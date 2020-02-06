@@ -50,8 +50,6 @@ brew install python
 brew install git
 brew install redis
 brew install mariadb
-
-brew tap caskroom/cask
 brew cask install wkhtmltopdf
 ```
 
