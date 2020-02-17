@@ -1,19 +1,25 @@
-<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
-# Web Views
+<!-- base_template: frappe_io/www/frappe/frappe_base.html -->
+<!-- add-breadcrumbs -->
+# DocType Web View
 
-Frappe has two main user environments, the Desk and Web. Desk is a controlled UI environment with a rich AJAX application whereas the web is more traditional HTML templates served for public consumption. Web views can also be generated to create more controlled views for users who may login but still do not have access to the Desk.
+Web views are customizable, dynamically generated customer facing web pages which are based on content fetched from the DocType.
 
-In Frappe, Web Views are managed by templates and they are usually in the `templates` folder. There are 2 main types of templates.
+## Getting started
 
-1. Pages: These are Jinja templates where a single view exists for a single web route e.g. `/blog`.
-2. Generators: These are templates where each instance of a DocType has a separate web route `/blog/a-blog`, `blog/b-blog` etc.
-3. Lists and Views: These are standard lists and views with the route `[doctype]/[name]` and are rendered based on permission.
+- Open the DocType in editable mode
+- Add a route field and a condition field. Route field defines the document route
+- Enable web view for a DocType by setting `has web view` option in the web view section.
+- This generates a standard lists and views with the route `[doctype]/[name]` which are rendered based on permission.
+- You can enable guest access to the web view by selecting `Allow Guest to View`
+- You can also define your own list view route in the `Route` field
+- Access to the view for the individual route can be controlled by defining a condition field in the `Is Published Field`section.
 
-### Standard Web Views
+![DocType Web View](/docs/assets/img/doctype-web-views.png)
+*DocType Web View*
 
-> This features is still under development.
+### Customizing List View
 
-Let us look at the standard Web Views:
+You can define list context by defining get_list_context function in the .py file of the doctype. Anything returned from this function is available in the list view of the doctype. In this function pass a parameter as list_template which will allow you to define list structure for the document along.
 
 If you are logged in as the test user, go to `/article` and you should see the list of articles:
 
@@ -24,6 +30,8 @@ If not, update the `.html` template files under ```library_management/doctype/ar
 Click on one article and you will see the default web view
 
 <img class="screenshot" alt="web view" src="/docs/assets/img/web-view.png">
+
+### Customizing Grid Element
 
 Now if you want to make a better list view for the article, drop a file called `row_template.html` in the
 `library_management/templates/includes/list/` folder. Here is an example file:
@@ -50,6 +58,7 @@ Here, you will get all the properties of the article in the `doc` object.
 The updated list view looks like this!
 
 <img class="screenshot" alt="new web list" src="/docs/assets/img/web-list-new.png">
+
 
 #### Home Page
 
