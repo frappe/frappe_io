@@ -47,7 +47,7 @@ Similary complete making the other models.
 
 A standard pattern is when you select an ID, say **Library Member** in **Library Membership**, then the Member's first and last names should be copied into relevant fields in the Library Membership Transaction.
 
-To do this, we can use Read Only fields and in Options (or Fetch From in new revision), we can set the the name of the link and the fieldname of the property we want to fetch. For this example in **Member First Name** we can set `library_member.first_name`
+To do this, we can use Read Only fields and in Options (or Fetch From in new revision), we can set the name of the link and the fieldname of the property we want to fetch. For this example in **Member First Name** we can set `library_member.first_name`
 
 <img class="screenshot" alt="Fetch values" src="/docs/assets/img/fetch.png">
 
