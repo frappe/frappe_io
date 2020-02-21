@@ -17,9 +17,7 @@ Web views are customizable, dynamically generated customer facing web pages whic
 ![DocType Web View](/docs/assets/img/doctype-web-views.png)
 *DocType Web View*
 
-### Customizing List View
-
-You can define list context by defining get_list_context function in the .py file of the doctype. Anything returned from this function is available in the list view of the doctype. In this function pass a parameter as list_template which will allow you to define list structure for the document along.
+### Default Web View
 
 If you are logged in as the test user, go to `/article` and you should see the list of articles:
 
@@ -31,10 +29,21 @@ Click on one article and you will see the default web view
 
 <img class="screenshot" alt="web view" src="/docs/assets/img/web-view.png">
 
+### Customizing List View
+
+You can provide list context by defining get_list_context function in the .py file of the doctype.
+
+You can define following parameters in the list view context that can allow you to change the structure of the web page
+
+- **show_sidebar:** display sidebar
+- **show_search:** display search option
+- **no_breadcrumbs:** removes breadcrumbs
+- **title:** title of the web page
+- **list_template:** define path of a fully customized list template
+
 ### Customizing Grid Element
 
-Now if you want to make a better list view for the article, drop a file called `row_template.html` in the
-`library_management/templates/includes/list/` folder. Here is an example file:
+Now if you want to customize the grid element within the list template of default web view, a new file `<doctype>_row_template.html` is generated in the templates folder of the doctype. Here is an example file:
 
 	{% raw %}<div class="row">
 		<div class="col-sm-4">
@@ -59,19 +68,5 @@ The updated list view looks like this!
 
 <img class="screenshot" alt="new web list" src="/docs/assets/img/web-list-new.png">
 
-
-#### Home Page
-
-Frappe also has a built-in signup workflow which also includes 3rd party signups via Google, Facebook and GitHub. When a user signs up on the web, she does not have access to the desk interface by default.
-
-> To allow user access into the Desk, open set the user from Setup > User and set the User Type as "System User"
-
-Now for the non system users, we can set a home page when they login via `hooks.py` based on the role.
-
-To when library members sign in, they must be redirected to the `article` page, to set this open `library_management/hooks.py` and add this:
-
-	role_home_page = {
-		"Library Member": "article"
-	}
 
 {next}

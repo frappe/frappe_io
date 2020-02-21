@@ -33,9 +33,12 @@ It is pretty generic and can be used to build database driven apps.
 1. [Users and Permission](/docs/user/en/users-and-permissions)
 1. [Reports](/docs/user/en/reports)
 1. [Printing](/docs/user/en/printing)
+1. [Translations](/docs/user/en/translations)
+
+### Web Views
+1. [Doctype Web Views](/docs/user/en/web-views)
 1. [Portal Pages](/docs/user/en/portal-pages)
 1. [Web Forms](/docs/user/en/web-forms)
-1. [Translations](/docs/user/en/translations)
 
 ### API Reference
 
