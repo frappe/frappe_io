@@ -308,7 +308,8 @@ class Person(Document):
         do_something_else()
 ```
 
-There are a lot of methods provided by default on the `doc` object. You can find the complete [list here](#complete-document-reference).
+There are a lot of methods provided by default on the `doc` object. You can find the complete <a href="https://frappe.io/docs/user/en/api/document#document-methods" target="_blank">list here</a>
+.
 
 ### Controller Hooks
 
