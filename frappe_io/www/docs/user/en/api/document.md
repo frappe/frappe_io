@@ -241,7 +241,7 @@ doc.add_comment('Comment', text='Test Comment')
 doc.add_comment('Edit', 'Values changed')
 
 # add a comment of type Shared
-doc.add_comment("Shared", "{0} shared this document with everyone").format(user))
+doc.add_comment("Shared", "{0} shared this document with everyone".format(user))
 ```
 
 ## doc.add_seen
