@@ -111,7 +111,7 @@ bench --site [sitename] --profile execute erpnext.projects.doctype.task.task.set
 
 Monitor logs request and job metadata. To enable this feature set `monitor: 1` in `site_config.json` or `common_site_config.json`.
 
-Monitored transaction are stored in `monitor.json.log` file in `logs` directory.
+Collected data is buffered in redis cache and periodically moved to `monitor.json.log` file in `logs` directory with a scheduled job `frappe.monitor.flush`.
 
 ```JSON
 {
