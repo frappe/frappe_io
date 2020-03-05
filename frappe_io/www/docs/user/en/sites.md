@@ -136,6 +136,7 @@ Here is a list of all configuration options that can be specified:
 `logging`             | Set `0` to disable, set `1` to print logs, set `2` to log queries
 `disable_async`       | Disables socket.io client, client stops polling the socket.io server
 `max_file_size`       | Set this to limit the size of files uploaded by user (Default: 10MB)
+`monitor`             | Set this to enable request and job metadata [monitoring](/docs/user/en/debugging#monitoring)
 
 ## Site Resolution
 
