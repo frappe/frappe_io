@@ -32,6 +32,11 @@ command or `bench new-app` command is run.
 Configuration common to all sites can be put in this file. Learn more about
 [site configuration]().
 
+#### `scheduler_tick_interval:`
+Job Scheduler runs a loop that enqueues all scheduled jobs pending execution once every `scheduler_tick_interval` seconds (Default: 60 seconds).
+
+Which makes this setting the minimum possible frequency for scheduling jobs.
+
 ### assets
 
 Assets contain files that are required to be served for the client browser.
