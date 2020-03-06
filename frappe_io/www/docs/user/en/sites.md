@@ -32,6 +32,9 @@ command or `bench new-app` command is run.
 Configuration common to all sites can be put in this file. Learn more about
 [site configuration]().
 
+#### `scheduler_tick_interval:`
+Job Scheduler runs a loop that enqueues all scheduled jobs pending execution once every `scheduler_tick_interval` seconds (Default: 60 seconds), which makes this setting the minimum possible frequency for scheduling jobs.
+
 ### assets
 
 Assets contain files that are required to be served for the client browser.
@@ -131,6 +134,7 @@ Here is a list of all configuration options that can be specified:
 `logging`             | Set `0` to disable, set `1` to print logs, set `2` to log queries
 `disable_async`       | Disables socket.io client, client stops polling the socket.io server
 `max_file_size`       | Set this to limit the size of files uploaded by user (Default: 10MB)
+`monitor`             | Set this to enable request and job metadata [monitoring](/docs/user/en/debugging#monitoring)
 
 ## Site Resolution
 
