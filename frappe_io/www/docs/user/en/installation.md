@@ -21,7 +21,7 @@ This guide assumes you are using a personal computer, VPS or a bare-metal server
 1. [Arch Linux](#arch-linux)
 1. CentOS
 
-> Learn more about the architecture [here](/docs/installation/architecture).
+> Learn more about the architecture [here](/docs/user/en/architecture).
 
 ## Pre-requisites
 
