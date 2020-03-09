@@ -168,26 +168,29 @@ executes `if_no`.
 ```js
 frappe.confirm('Are you sure you want to proceed?',
 	() => {
-		// do something
+		// action to perform if Yes is selected
 	}, () => {
-		// do nothing
+		// action to perform if No is selected
 	})
 ```
 ![Prompt](/docs/assets/img/api/dialog-api-confirm.png)
 *frappe.confirm*
 
 ### frappe.show_alert
-`frappe.show_alert(message, seconds)`
+`frappe.show_alert(message, seconds)` or `frappe.show_alert({message, indicator}, seconds)`
 
 Alert Dialog is used for showing non-obstructive messages.
 
-Its parameters include the message to be shown and its display duration. The default is **3 seconds**.
+Its parameters include  `message`, which can contain the indicator color as well, and its display duration. The default is **3 seconds**.
 
 ```js
 frappe.show_alert('Hi, you have a new message', 5);
+
+//show_alert with indicator
+frappe.show_alert({message:__('Hi, you have a new message'), indicator:'green'}, 5);
 ```
 
-![Show Alert](/docs/assets/img/api/dialog-api-alert.png)
+![Show Alert](/docs/assets/img/api/dialog-api-show-alert.png)
 *frappe.show_alert*
 
 ### frappe.show_progress
@@ -207,7 +210,7 @@ frappe.show_progress('Loading..', 70, 100, 'Please wait');
 
 A MultiSelectDialog consists of filter fields followed by a multiple selection list. The primary button will perform the passed `action` on the selected options.
 
-By default the **Search Term** field and **Date Range** field will compose the filter fields.
+By default, the **Search Term** field and **Date Range** field will compose the filter fields.
 
 The argument list includes:
 
@@ -291,7 +294,7 @@ frappe.msgprint(msg='This file does not exist',
 ![MultiSelectDialog](/docs/assets/img/api/dialog-api-msgprint-py.png)
 *frappe.msgprint*
 
-`primary_action` can contain a `server_action` **or** `client_side` action which must contain dotted paths to the respective methods.
+`primary_action` can contain a `server_action` **or** `client_side` action which must contain dotted paths to the respective methods. The JavaScript function must be a globally available function.
 
 ```py
 # msgprint with server and client side action
