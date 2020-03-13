@@ -93,6 +93,7 @@
   * `--db-name`                Database name
   * `--db-host`                Custom database host URL for remote connection
   * `--db-port`                Custom database listening port (eg. port other than the default 3306)
+  * `--db-password`            Custom database password (NOTE: this is not the same as `--mariadb-root-password`)
   * `--mariadb-root-username`  Root username for MariaDB
   * `--mariadb-root-password`  Root password for MariaDB
   * `--admin-password`         Administrator password for new site
