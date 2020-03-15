@@ -129,16 +129,29 @@ To create a Script Report, type "new report" in the awesomebar and hit enter.
 The generated `.py` file comes with a boilerplate for your report. There is one
 method named `execute` which takes `filters` and returns `columns` and `data`.
 You can use any combination of python modules and SQL queries to generate your
-report.
+report. The `execute` function looks like this
 
-Here is what the shape of `columns` and `data` must look like:
-
-```py
-import frappe
-from frappe import _
+```python
+from __future__ import unicode_literals
+# import frappe
 
 def execute(filters=None):
-	columns = [
+	columns, data = [], []
+	return columns, data
+
+```
+
+The `execute` function is supposed to return the `columns` and the `data` to be shown in the report by default. A developer can optionally return a few paramters like `message`, `chart`, `report_summary`, `skip_total_rows`.
+
+The following are the parameters that can be returned by the execute function
+
+#### columns
+
+This is a list of dictionaries. This holds all the columns that are to be displayed in the datatable in an order.
+
+Example:
+```python
+columns = [
 		{
 			'fieldname': 'account',
 			'label': _('Account'),
@@ -158,8 +171,14 @@ def execute(filters=None):
 			'options': 'currency'
 		}
 	]
+```
 
-	data = [
+#### data
+This can be a list of lists or a list of dictionaries. This holds the data to be displayed in the report
+
+Example:
+```python
+data = [
 		{
 			'account': 'Application of Funds (Assets)',
 			'currency': 'INR',
@@ -172,9 +191,29 @@ def execute(filters=None):
 		},
 		...
 	]
-
-	return columns, data
 ```
+
+#### message
+*The usage of this argument is deprecated.*
+
+#### chart
+Contains the configuration for the default chart to be shown in the report.
+
+#### report_summary
+This is a list of dictionaries that stores the important values in the report and is shown separately in the top section on the UI.
+
+Example:
+```python
+[{
+		"value": profit,
+		"indicator": "Green" if profit > 0 else "Red",
+		"label": _("Total Profit This Year"),
+		"datatype": "Currency",
+		"currency": "INR"
+}]
+```
+
+> Note: These arguments are supposed to be returned in the specific order as follows
 
 Here is a script report from ERPNext: [Balance Sheet](https://github.com/frappe/erpnext/blob/develop/erpnext/accounts/report/balance_sheet/balance_sheet.py)
 
