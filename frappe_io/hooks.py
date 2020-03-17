@@ -18,8 +18,9 @@ hide_in_installer = True
 fixtures = ["Contact Us Settings", "Web Form"]
 
 website_redirects = [
-        {"source": "/docs/bench", "target": "/docs/user/en/bench/resources/"},
-        {"source": "/docs/bench/cheatsheet", "target": "/docs/user/en/bench/resources/bench-commands-cheatsheet.html"}
+		{"source": "/docs/bench", "target": "/docs/user/en/bench/resources/"},
+		{"source": "/docs/bench/cheatsheet", "target": "/docs/user/en/bench/resources/bench-commands-cheatsheet.html"},
+		{"source": "/docs/user/en/tutorial/web-views", "target": "/docs/user/en/web-views"}
 ]
 
 website_context = {
