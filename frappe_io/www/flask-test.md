@@ -53,6 +53,12 @@ After this, just drop in an email to the engineer who requested you for this tes
 
 After this, we will get in touch with you and you will have to walk us through your code. We will then ask for a few changes or additional features that will help us evaluate how well you know your code base.
 
+### Tips to Ace the Code Evaluation
+
+- Build a good UI, with clean forms and reports
+- Write concise SQL queries if not using an ORM
+- Avoid code duplication, abstract out functions that can be reused
+
 **A word of caution:** In the past, applicants have not done this test themselves and have completely failed to explain or make changes. We know it sounds dumb, but people do such things.
 
 Feel free to ask for help from anyone or just look on the web. Do this project by yourself if you want to sustain a career in programming and technology!

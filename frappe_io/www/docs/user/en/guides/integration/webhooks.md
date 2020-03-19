@@ -1,36 +1,51 @@
 <!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
 # Webhooks
 
-Webhooks are "user-defined HTTP callbacks". You can create webhook which triggers on Doc Event of the selected DocType. When the `doc_events` occurs, the source site makes an HTTP request to the URI configured for the webhook. Users can configure them to cause events on one site to invoke behaviour on another.
+Webhooks are "user-defined HTTP callbacks". For a select DocType, you can create a webhook that triggers on specific document events under certain conditions, if required.
 
-#### Configure Webhook
+When the `doc_event` occurs, the source site makes an HTTP request to the URI configured for the webhook. Users can configure these webhooks to use events on one site to invoke behaviour on another.
 
-To add Webhook go to
+## Configuring a Webhook
 
-> Integrations > External Documents > Webhook
+To add a Webhook go to,
 
-Webhook
+> Integrations > Webhook > Webhook
 
 <img class="screenshot" src="/docs/assets/img/webhook.png">
 
-1. Select the DocType for which hook needs to be triggered e.g. Note
-2. Select the DocEvent for which hook needs to be triggered e.g. on_trash
-3. Enter a valid request URL. On occurence of DocEvent, POST request with doc's json as data is made to the URL.
-4. Optionally you can add headers to the request to be made. Useful for sending api key if required.
-5. Optionally you can select fields and set its `key` to be sent as data json
+1. Select the DocType for which the Webhook needs to be triggered (e.g. `Quotation`).
+1. Select the Doc Event that will trigger the Webhook (e.g. `on_update`).
+1. Optionally, you can set additional document Conditions to trigger Webhooks for specific scenarios.
+1. Enter a valid request URL that will receive the Webhook data.
+1. Once the Doc Event is completed, a `POST` request is made to the Request URL with the body generated from the Webhook Data section.
+1. Optionally, you can add HTTP headers to the request. (e.g. useful for sending an API key, if required).
 
-e.g. Webhook
+### Data Structure
 
-- **DocType** : `Quotation`
-- **Doc Event** : `on_update`
-- **Request URL** : `https://httpbin.org/post`
-- **Webhook Data** :
-  1. **Fieldname** : `name` and **Key** : `id`
-  2. **Fieldname** : `items` and **Key** : `lineItems`
+- If your request structure is based on forms, you can select fields from the document in the table, which uses the fieldname as the `key`.
+- If your request structure is based on JSON, you can insert fields from the document using jinja templating (make sure to wrap your fields with double-quotes).
 
-Note: if no headers or data is present, request will be made without any header or body  
+### Webhook Security
 
-Example response of request sent by frappe server on `Quotation` - `on_update` to https://httpbin.org/post:
+> Introduced in Version 13
+
+To optionally add security to your webhook requests and ensure that the webhook is being sent from Frappe, you can set up a "Webhook Secret" along with the request. Do not share the secret publicly.
+
+If enabled, an additional header (`X-Frappe-Webhook-Signature`) will be added to the request before it's sent out, with its value being generated from the secret as a base64-encoded HMAC-SHA256 hash of the payload.
+
+### Example Webhook Request
+
+- **DocType**: `Quotation`
+- **Doc Event**: `on_update`
+- **Request URL**: `https://httpbin.org/post`
+- **Request Structure**: `Form URL-Encoded`
+- **Webhook Headers**:
+  1. **Key**: `Content-Type:`, **Value**: `application/x-www-form-urlencoded`
+- **Webhook Data**:
+  1. **Fieldname**: `name`,  **Key**: `id`
+  1. **Fieldname**: `items`,  **Key**: `lineItems`
+
+The above configuration creates the following JSON request (sent by a Frappe server on `Quotation` - `on_update` to https://httpbin.org/post):
 
 ```
 {

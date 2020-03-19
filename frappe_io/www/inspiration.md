@@ -5,7 +5,7 @@
 
 #### Basecamp
 
-We love [Basecamp](http://basecamp.com/) (formerly 37Singals) for their philosophy of working, not to mention their products which are just amazing. We think that they, and not SalesForce, are the true pioneers of web applications. What is even more surprising is that after all these years, they remain as fresh and thought provoking as usual. Our product and design owes a lot to them.
+We love [Basecamp](http://basecamp.com/) (formerly 37Signals) for their philosophy of working, not to mention their products which are just amazing. We think that they, and not SalesForce, are the true pioneers of web applications. What is even more surprising is that after all these years, they remain as fresh and thought provoking as usual. Our product and design owes a lot to them.
 <p></p>
 
 #### Khan Academy

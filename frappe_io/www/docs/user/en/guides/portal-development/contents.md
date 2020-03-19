@@ -1,7 +1,7 @@
 <!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
 # Table of Contents
 
-You can add a table of contents by adding `{index}` string on a new line.
+You can add a table of contents by adding `{index​}` string on a new line.
 
 You can also make Previous and Next buttons by adding `previous` or `next` in `{}`
 
@@ -13,18 +13,8 @@ You can also make Previous and Next buttons by adding `previous` or `next` in `{
 
     ### Contents:
 
-    {index}
+    {index​} will render as a numbered list of pages, but works only in `index.md` or `index.html`.
 
-{next}
+    {next​} for this Page will render as:
 
-### Ordering
-
-You can defining the ordering of pages in index by defining the index.txt file in your folder. The index.txt file must have the names (without extensions) of the pages in that folder indicating the order.
-
-For example for this folder the `index.txt` looks like:
-
-    adding-pages
-    ordering
-    contents
-    context
-    building
+    {next}

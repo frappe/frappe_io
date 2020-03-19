@@ -1,0 +1,70 @@
+[
+	{
+		"route": "/docs",
+		"title": "Docs Home"
+	},
+	{
+		"route": "/docs/user/en",
+		"title": "Table of Contents"
+	},
+	{
+		"route": "/docs/user/en/installation",
+		"title": "Installing Bench and Frappe"
+	},
+	{
+		"route": "/docs/user/en/architecture",
+		"title": "Bench Architecture"
+	},
+	{
+		"route": "/docs/user/en/understanding-doctypes",
+		"title": "Understanding Doctypes"
+	},
+	{
+		"route": "/docs/user/en/desk",
+		"title": "Desk"
+	},
+	{
+		"route": "/docs/user/en/users-and-permissions",
+		"title": "Users and Permission"
+	},
+	{
+		"route": "/docs/user/en/reports",
+		"title": "Reports"
+	},
+	{
+		"route": "/docs/user/en/printing",
+		"title": "Printing"
+	},
+	{
+		"route": "/docs/user/en/portal-pages",
+		"title": "Portal Pages"
+	},
+	{
+		"route": "/docs/user/en/web-forms",
+		"title": "Web Forms"
+	},
+	{
+		"route": "/docs/user/en/database-migrations",
+		"title": "Database Migrations"
+	},
+	{
+		"route": "/docs/user/en/deployment",
+		"title": "Deployment"
+	},
+	{
+		"route": "/docs/user/en/api",
+		"title": "Developer API"
+	},
+	{
+		"route": "/docs/user/en/testing",
+		"title": "Testing"
+	},
+	{
+		"route": "/docs/user/en/debugging",
+		"title": "Debugging"
+	},
+	{
+		"route": "https://github.com/frappe/erpnext/wiki/Contribution-Guidelines",
+		"title": "Contribution Guidelines"
+	}
+]

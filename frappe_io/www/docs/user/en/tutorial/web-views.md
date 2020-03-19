@@ -1,7 +1,7 @@
 <!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
 # Web Views
 
-Frappe has two main user environments, the Desk and Web. Desk is a controlled UI environment with a rich AJAX application and the web is more traditional HTML templates served for public consumption. Web views can also be generated to create more controlled views for users who may login but still do not have access to the Desk.
+Frappe has two main user environments, the Desk and Web. Desk is a controlled UI environment with a rich AJAX application whereas the web is more traditional HTML templates served for public consumption. Web views can also be generated to create more controlled views for users who may login but still do not have access to the Desk.
 
 In Frappe, Web Views are managed by templates and they are usually in the `templates` folder. There are 2 main types of templates.
 
@@ -18,6 +18,8 @@ Let us look at the standard Web Views:
 If you are logged in as the test user, go to `/article` and you should see the list of articles:
 
 <img class="screenshot" alt="web list" src="/docs/assets/img/web-list.png">
+
+If not, update the `.html` template files under ```library_management/doctype/article/templates/``` with respective fields as per requirement
 
 Click on one article and you will see the default web view
 
