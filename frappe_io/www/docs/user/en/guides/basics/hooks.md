@@ -211,7 +211,7 @@ To hook to events of all doctypes, you can use the follwing syntax also,
 		}
 	 }
 
-The hook function will be passed the doc in concern as the only argument.
+The hook function will be passed the doc in concern and the event name as the two arguments.
 
 ##### List of events
 
@@ -239,6 +239,10 @@ Eg,
 			"after_insert": "topcab.schedule_cab",
 		}
 	}
+	
+Will call:
+
+	topcab.schedule_cab(cab_request_doc, 'after_insert')
 
 ### Scheduler Hooks
 
