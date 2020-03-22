@@ -40,7 +40,7 @@ website_context = {
 			{"label": "Bench", "url":"/bench"},
 		]},
 		{"label": "About", "right": 1, "child_items": [
-			{"label": "Team", "url":"/about"},
+			{"label": "Team", "url":"/team"},
 			{"label": "Careers", "url":"/careers"},
 			{"label": "Inspiration", "url":"/inspiration"},
 			{"label": "Story", "url":"/story"},
