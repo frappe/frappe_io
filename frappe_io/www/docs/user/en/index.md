@@ -25,18 +25,17 @@ It is pretty generic and can be used to build database driven apps.
 1. [Directory Structure](/docs/user/en/directory-structure)
 1. [Apps](/docs/user/en/apps)
 1. [Sites](/docs/user/en/sites)
-1. [Understanding Doctypes](/docs/user/en/understanding-doctypes)
-
-### Desk (Admin UI)
-
-1. [Desk](/docs/user/en/desk)
+1. [Understanding DocTypes](/docs/user/en/understanding-doctypes)
 1. [Users and Permission](/docs/user/en/users-and-permissions)
 1. [Reports](/docs/user/en/reports)
 1. [Printing](/docs/user/en/printing)
 1. [Translations](/docs/user/en/translations)
 
-### Web Views
-1. [Doctype Web Views](/docs/user/en/web-views)
+### Desk (Admin UI - SPA)
+1. [Desk](/docs/user/en/desk)
+
+### Server Rendered Pages
+1. [Web Views for DocType](/docs/user/en/web-views)
 1. [Portal Pages](/docs/user/en/portal-pages)
 1. [Web Forms](/docs/user/en/web-forms)
 
