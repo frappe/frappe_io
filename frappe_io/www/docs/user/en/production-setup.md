@@ -85,6 +85,8 @@ Once this is done, you may access the instance at `$SITE_NAME`.
 For a list of substitute commands, check out the
 [Frappe/ERPNext Docker Site Operations](https://github.com/frappe/frappe_docker/#site-operations).
 
+For more information, check out: [Frappe Docker](https://github.com/frappe/frappe_docker)
+
 ## Install Bench using Easy Install Method
 
 Deploying frappe sites is not too different from setting it up on your local
