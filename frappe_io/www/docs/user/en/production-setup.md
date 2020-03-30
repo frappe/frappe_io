@@ -21,71 +21,7 @@ are reproducible and is the fastest way to get a production instance up and runn
 
 ## Setup Frappe using Docker
 
-Deploying Frappe using Docker is as easy as running a few commands. Firstly, you will
-need to clone the official docker repository:
-
-```sh
-$ git clone https://github.com/frappe/frappe_docker.git
-$ cd frappe_docker
-```
-
-Copy the `env-example` file to `.env` and make changes to it:
-
-```sh
-$ cp installation/env-example installation/.env
-```
-
-Make a directory to host your sites:
-
-```sh
-$ mkdir installation/sites
-```
-
-Now, you may also choose to setup an NGINX Proxy for handling SSL Certificates, which
-will take care of certificate auto-renewal for your production instance. We generally
-recommend this for instances being accessed over the internet. Just make sure that the
-DNS is correctly configured for this to work. To setup the proxy, run the following
-commands:
-
-```sh
-$ git clone https://github.com/evertramos/docker-compose-letsencrypt-nginx-proxy-companion.git
-$ cd docker-compose-letsencrypt-nginx-proxy-companion
-$ cp .env.sample .env
-$ ./start.sh
-```
-
-To get the Frappe instance running, run the following command:
-
-```sh
-$ docker-compose \
-    --project-name <project-name> \
-    -f installation/docker-compose-common.yml \
-    -f installation/docker-compose-frappe.yml \
-    -f installation/docker-compose-networks.yml \
-    --project-directory installation up -d
-```
-Make sure to replace `<project-name>` with whatever you wish to call it. This should get
-the instance running through docker. Now, to create a new site on the instance
-you may run:
-
-```sh
-# Create ERPNext site
-docker exec -it \
-    -e "SITE_NAME=$SITE_NAME" \
-    -e "DB_ROOT_USER=$DB_ROOT_USER" \
-    -e "MYSQL_ROOT_PASSWORD=$MYSQL_ROOT_PASSWORD" \
-    -e "ADMIN_PASSWORD=$ADMIN_PASSWORD" \
-    -e "INSTALL_APPS=yourapp" \ # optional, if you want to install any other apps
-    <project-name>_erpnext-python_1 docker-entrypoint.sh new
-```
-
-Once this is done, you may access the instance at `$SITE_NAME`.
-
-**Note:** The Docker Production setup does not contain, require, or use bench.
-For a list of substitute commands, check out the
-[Frappe/ERPNext Docker Site Operations](https://github.com/frappe/frappe_docker/#site-operations).
-
-For more information, check out: [Frappe Docker](https://github.com/frappe/frappe_docker)
+For instructions on how to setup Docker for Production, check out: [Frappe Docker](https://github.com/frappe/frappe_docker/#deployment)
 
 ## Install Bench using Easy Install Method
 
