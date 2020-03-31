@@ -100,6 +100,20 @@ Eg,
 Note: to create an asset bundle (eg, assets/js/erpnext.min.js) the target file
 should be in build.json of your app.
 
+### Customizing Web Forms
+
+In order to modify the client-side validations and stylesheets for existing web forms for a given DocType in the system, you can use the following hooks:
+
+1. `webform_include_js`
+1. `webform_include_css`
+
+Eg,
+
+	webform_include_js = {
+		"Issue": "public/js/issue.js",
+		"Address": "public/js/address.js"
+	}
+
 ### Configuring Reports
 
 In the report view, you can force filters as per doctype using `dump_report_map`
