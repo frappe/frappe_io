@@ -102,6 +102,8 @@ should be in build.json of your app.
 
 ### Customizing Web Forms
 
+> Introduced in Version 13
+
 In order to modify the client-side validations and stylesheets for existing web forms for a given DocType in the system, you can use the following hooks:
 
 1. `webform_include_js`
