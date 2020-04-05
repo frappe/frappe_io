@@ -7,7 +7,7 @@
 
 #### 1. Python
 
-Frappe uses Python (v2.7) for server-side programming. It is highly recommended to learn Python before you start building apps with Frappe.
+Frappe uses Python 3 for server-side programming. It is highly recommended to learn Python before you start building apps with Frappe.
 
 To write quality server-side code, you must also include automated tests.
 
