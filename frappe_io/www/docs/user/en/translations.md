@@ -199,16 +199,14 @@ else:
 
 Don't start or end the sentence with spaces. Trailing spaces gets trimmed for other languages when passed through translation engine.
 
-```py
-# Don't do this
-msg = _(" You have {0} pending invoice ")
-```
 If you have to add space around your text, you can do it outside the translation syntax.
 
 ```py
+# Don't do this
+msg = _(" You have {0} pending invoice ")
+
 # Do this
 msg = ' ' + _("You have {0} pending invoices") + ' '
-
 ```
 
 ## Adding a New Language
