@@ -243,11 +243,17 @@ frappe.query_reports['Balance Sheet'] = {
 				'Half-Yearly',
 				'Yearly'
 			],
-			default: 'Yearly'
+			default: 'Yearly',
+			depends_on: 'eval:filters.company=="Gadget Technologies Pvt. Ltd."'
 		}
 	]
 }
 ```
+
+Similar to the `depends_on` property that controls the display of fields, in
+Version 13 we have introduced `depends_on` for Script Report filters. This can
+be used to determine whether the filter will be visible based on the value of the
+condition in `depends_on`.
 
 ![Balance Sheet](/docs/assets/img/script-report-example-2.png)
 *Balance Sheet*
