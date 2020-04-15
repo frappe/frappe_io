@@ -14,7 +14,7 @@ add_breadcrumbs: 1
 
 ## System Requirements
 
-This guide assumes you are using a personal computer, VPS or a bare-metal server. You also need to be on a *nix system, so any Linux Distribution and MacOS is supported. However, we officially support only the following distributions.
+This guide assumes you are using a personal computer, VPS or a bare-metal server. You also need to be on a *nix system, so any Linux Distribution and MacOS is supported. However, we officially support only the following distributions:
 
 1. [MacOS](#macos)
 1. [Debian / Ubuntu](#debian-ubuntu)
@@ -25,7 +25,7 @@ This guide assumes you are using a personal computer, VPS or a bare-metal server
 
 ## Pre-requisites
 
-1. Python 2.7 (Python 3.5+ also supported)
+1. Python 3.5+
 1. MariaDB 10+
 1. Nginx (for production)
 1. Git
@@ -61,7 +61,7 @@ We recommend installing node using [nvm](https://github.com/creationix/nvm)
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
 ```
 
-After nvm is installed, you may have to close your terminal and open another one. Now run the following command to install node.
+After nvm is installed, you may have to close your terminal and open another one. Now run the following command to install node:
 
 ```bash
 nvm install 8
@@ -105,7 +105,7 @@ During this installation you'll be prompted to set the MySQL root password. If y
 mysql_secure_installation
 ```
 
-> Remember: only run it if you're not prompted the password during setup.
+> Remember: only run it if you're not prompted for the password during setup.
 
 It is really important that you remember this password, since it'll be useful later on. You'll also need the MySQL database development files.
 
@@ -237,7 +237,7 @@ Confirm the bench installation by checking version
 bench --version
 
 # output
-4.1.0
+5.0.0
 ```
 
 Create your first bench folder.
