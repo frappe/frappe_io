@@ -202,6 +202,13 @@ Displays a progress bar with `count` (as current progress) and `total` (as maxim
 frappe.show_progress('Loading..', 70, 100, 'Please wait');
 ```
 
+After your job is completed, you may want to hide the progress bar.
+
+```js
+//hides the progress bar
+frappe.hide_progress();
+```
+
 ![Show Progress](/docs/assets/img/api/dialog-api-progress.png)
 *frappe.show_progress*
 
