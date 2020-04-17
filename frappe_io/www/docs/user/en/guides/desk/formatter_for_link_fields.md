@@ -15,6 +15,6 @@ In case where a code and a name is maintained for an entity, (for example for Em
 
 Notes:
 
-1. Both the primary key (`name) and the descriptive name (e.g. `employee_name`) must be present in the document. The descriptive name field could be hidden
+1. Both the primary key (`name`) and the descriptive name (e.g. `employee_name`) must be present in the document. The descriptive name field could be hidden
 1. This needs to be loaded before the document is loaded and can be re-used for all forms. You can also add it in `build.json`
 
