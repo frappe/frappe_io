@@ -10,10 +10,20 @@ metatags:
 # Production Setup
 
 [Bench](https://github.com/frappe/bench) is the CLI tool to manage deployments
-for sites based on Frappe Framework. Here are steps to deploy your frappe based
-sites on production.
+for sites based on Frappe Framework. There are a couple of ways you can setup
+a production instance:
 
-## Install Bench
+ - Docker Setup
+ - Easy Install
+
+We recommend setting up a production instance using Docker Setup, as the docker builds
+are reproducible and is the fastest way to get a production instance up and running.
+
+## Setup Frappe using Docker
+
+For instructions on how to setup Docker for Production, check out: [Frappe Docker](https://github.com/frappe/frappe_docker/#deployment)
+
+## Install Bench using Easy Install Method
 
 Deploying frappe sites is not too different from setting it up on your local
 system. Install bench using the [Easy
