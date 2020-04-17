@@ -23,7 +23,7 @@ The server issuing access tokens to the client after successfully authenticating
 System Managers can setup behavior of confirmation message as `Force` or `Auto` in OAuth Provider Settings.
 If Force is selected the system will always ask for user's confirmation. If Auto is selected system asks for the confirmation only if there are no active tokens for the user.
 
-Go to 
+Go to
 
 > Setup > Integrations > OAuth Provider Settings
 
@@ -31,13 +31,13 @@ Go to
 
 ### Add Primary Server
 
-This is the main server hosting all the users. e.g. `https://frappe.io`. To setup this as the main server, go to *Setup* > *Integrations* > *Social Login Keys* and enter `https://frappe.io` in the field  `Frappe Server URL`. This URL repeats in all other Frappe servers who connect to this server to authenticate. Effectively, this is the main Identity Provider (IDP). 
+This is the main server hosting all the users. e.g. `https://frappe.io`. To setup this as the main server, go to *Setup* > *Integrations* > *Social Login Keys* and enter `https://frappe.io` in the field  `Frappe Server URL`. This URL repeats in all other Frappe servers who connect to this server to authenticate. Effectively, this is the main Identity Provider (IDP).
 
 Under this server add as many `OAuth Client`(s) as required.
 
 ## Add a Client App
 
-As a System Manager go to  
+As a System Manager go to
 
 > Setup > Integrations > OAuth Client
 
@@ -50,8 +50,9 @@ To add a client fill in the following details
 3. **Scopes** : List of scopes shown to user along with confirmation message. scopes are separated by semicolon ';'
 4. **Redirect URIs** : List of Redirect URIs separated by semicolon ';'
 5. **Default Redirect URIs** : Default Redirect URI from list of Redirect URIs
-6. **Grant Type**: select `Authorization Code`
-7. **Response Type**: select `Code`
+6. **Grant Type**: select `Authorization Code` or `Implicit`
+7. **Response Type**: select `Code` or `Token`
+8. **Client Authentication**: select `Request Body` to authenticate token request by passing client_secret as request body. Default is `Public Client` with no authentication
 
 ## Using oAuth
 
