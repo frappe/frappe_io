@@ -4,7 +4,7 @@
 
 Hooks are the duct tape of the Frappe system. Hooks allow you to "hook" in to
 functionality and events of other parts of the Frappe system. Following are the
-official hooks from Frappe. 
+official hooks from Frappe.
 
 ### Application Name and Details
 
@@ -55,7 +55,7 @@ Eg,
 
 The notification configuration hook is expected to return a Python dictionary.
 
-	{ 
+	{
 		"for_doctype": {
 			"Issue": {"status":"Open"},
 			"Customer Issue": {"status":"Open"},
@@ -99,6 +99,22 @@ Eg,
 
 Note: to create an asset bundle (eg, assets/js/erpnext.min.js) the target file
 should be in build.json of your app.
+
+### Customizing Web Forms
+
+> Introduced in Version 13
+
+In order to modify the client-side validations and stylesheets for existing web forms for a given DocType in the system, you can use the following hooks:
+
+1. `webform_include_js`
+1. `webform_include_css`
+
+Eg,
+
+	webform_include_js = {
+		"Issue": "public/js/issue.js",
+		"Address": "public/js/address.js"
+	}
 
 ### Configuring Reports
 
@@ -182,7 +198,7 @@ checking logic using the `has_permission` hook. Structure for this hook is,
 	}
 
 The function will be passed the concerned document as an argument. It should
-True or a falsy value after running the required logic. 
+True or a falsy value after running the required logic.
 
 For Example,
 
@@ -232,7 +248,7 @@ The hook function will be passed the doc in concern as the only argument.
 * `after_delete`
 
 
-Eg, 
+Eg,
 
 	doc_events = {
 		"Cab Request": {
@@ -289,3 +305,33 @@ Example,
 	}
 
 The asterisk (*) operator specifies all possible values for a field. For example, an asterisk in the hour time field would be equivalent to every hour or an asterisk in the month field would be equivalent to every month.
+
+### Jinja Customization
+
+Fetch custom methods and filters that are to be available globally in jinja environment.
+
+#### Options
+
+* `methods`
+* `filters`
+
+Example,
+
+	jenv = {
+		"methods": [
+			"method_name:dotted.path.to.method_definition"
+		],
+		"filters": [
+			"filter_name:dotted.path.to.filter_function"
+		]
+	}
+
+### Exempt Doctypes
+
+Exempt documents of a specific DocType from being automatically cancelled on cancellation of anylinked documents.
+
+Example,
+
+	auto_cancel_exempted_doctypes = ["Payment Entry"]
+
+In the above example, if any document that is linked with Payment Entry is cancelled, the system will skip the auto-cancellation of the linked Payment Entry document.

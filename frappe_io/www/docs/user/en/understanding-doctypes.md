@@ -143,12 +143,33 @@ The DocField stores meta-data about the field. Some of them are described below.
             "High"
         ],
         "default": "Low"            // the default value to be set
-    }
+    },
+    {
+        "label": "Completed By",
+        "fieldname": "completed_by",
+        "fieldtype": "Link",
+        "options": "User",
+        "depends_on": "eval: doc.status == 'Closed'", // the condition on which this field's display depends
+    },
+    {
+        "collapsible": 1,
+        "collapsible_depends_on": "eval:doc.status!='Closed'", // determines if a Section Break field is collapsible
+        "fieldname": "sb_details",
+        "fieldtype": "Section Break",
+        "label": "Details"
+    },
 ]
 ```
 
-Frappe comes with moret than 30 different fieldtypes out-of-the-box.
+Similar to the `depends_on` property which determines whether a field will be displayed or not,
+in Version 12 we have introduced two new properties:
+
+- `mandatory_depends_on`: If this condition is satisfied, the field will be mandatory.
+- `read_only_depends_on`: If this condition is satisfied, the field will be read only.
+
+Frappe comes with more than 30 different fieldtypes out-of-the-box.
 These fieldtypes serve a variety of use-cases. Learn more about [Field Types]((https://erpnext.com/docs/user/manual/en/customize-erpnext/articles/field-types).
+
 
 ## Naming
 
@@ -287,7 +308,8 @@ class Person(Document):
         do_something_else()
 ```
 
-There are a lot of methods provided by default on the `doc` object. You can find the complete [list here](#complete-document-reference).
+There are a lot of methods provided by default on the `doc` object. You can find the complete [list here](api/document#document-methods).
+.
 
 ### Controller Hooks
 

@@ -102,14 +102,14 @@ the app. This is the directory which corresponds to that module.
 This file is used to hook into frappe events and extend or override standard
 behaviour by frappe.
 
-Learn more about [hooks](/docs/user/en/hooks).
+Learn more about [hooks](/docs/user/en/guides/basics/hooks).
 
 ### custom_app/modules.txt
 
 Every frappe app is organized into different modules. Every DocType is part of a
 module. These modules are listed in this file.
 
-Learn more about [modules](/docs/user/en/modules).
+Learn more about [modules](/docs/user/en/understanding-doctypes#module).
 
 ### custom_app/patches.txt
 

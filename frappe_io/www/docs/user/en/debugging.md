@@ -107,6 +107,44 @@ profiling.
 bench --site [sitename] --profile execute erpnext.projects.doctype.task.task.set_tasks_as_overdue
 ```
 
+### Monitoring
+
+Monitor logs request and job metadata. To enable this feature set `monitor: 1` in `site_config.json` or `common_site_config.json`.
+
+Collected data is buffered in redis cache and periodically moved to `monitor.json.log` file in `logs` directory with a scheduled job `frappe.monitor.flush`.
+
+```JSON
+{
+    "duration": 807142,
+    "request": {
+        "ip": "127.0.0.1",
+        "method": "GET",
+        "path": "/api/method/frappe.realtime.get_user_info",
+        "response_length": 9687,
+        "status_code": 500
+    },
+    "site": "frappe.local",
+    "timestamp": "2020-03-05 09:37:17.397884",
+    "transaction_type": "request",
+    "uuid": "83be6a4c-27a1-497a-9ce6-c815bca4e420"
+} 
+```
+
+```JSON
+{
+    "duration": 1364,
+    "job": {
+        "method": "frappe.ping",
+        "scheduled": false,
+        "wait": 90204
+    },
+    "site": "frappe.local",
+    "timestamp": "2020-03-05 09:37:40.124682",
+    "transaction_type": "job",
+    "uuid": "8225ab76-8bee-462c-b9fc-a556406b1ee7"
+}
+```
+
 ## Client
 
 Client side debugging is as simple as adding a `debugger` statement in your JS
