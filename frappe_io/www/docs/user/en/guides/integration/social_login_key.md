@@ -33,3 +33,26 @@ e.g. Social Login Key
 - <a href="https://developer.github.com/apps/building-oauth-apps/creating-an-oauth-app/">Creating an OAuth App for GitHub</a>
 - <a href="https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-protocols-openid-connect-code">Authorize access to web applications using OpenID Connect and Azure Active Directory</a>
 - <a href="https://help.salesforce.com/articleView?id=connected_app_create.htm">Create a Connected App on Salesforce</a>
+
+#### Additional fields required for custom providers
+
+**Social Login Provider** : select `Custom`
+**Provider Name** : Input custom name here. e.g. Redhat Keycloak
+**Client ID** : Input client_id generated on custom provider e.g. ABCDEFG
+**Client Secret** : Input client_secret generated on custom provider e.g. 123456
+**Enable Social Login** : Check to enable provider
+**Base URL** : e.g. https://keycloak.example.com
+
+**Redirect URL** :
+
+If Social Login Key other than provided by default is added, set its Redirect URL field to `/api/method/frappe.integrations.custom/<provider>`, where `<provider>` is replaced by name of `Social Login Key` doctype instance. Name of doctype is slug of `Provider Name` field.
+
+e.g. If `Redhat Keycloak` is the Provider Name of custom Social Login Key, its redirect uri should be set to `/api/method/frappe.integrations.custom/redhat_keycloak`.
+
+If custom logic at the point of custom social login is needed, custom app can be added and Redirect URL field can be set to whitelisted function in custom app.
+
+For standard OAuth 2.0 Authorization Code Flow > Userinfo Endpoint based Social Login Key there is no need for custom app.
+
+**User ID Property** :
+
+Optionally set the `User ID Property` field used by Custom Provider. Refer https://openid.net/specs/openid-connect-core-1_0.html#UserInfoResponse for more. Defaults to `sub`.
