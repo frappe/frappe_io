@@ -34,10 +34,18 @@ e.g. Social Login Key
 - <a href="https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-protocols-openid-connect-code">Authorize access to web applications using OpenID Connect and Azure Active Directory</a>
 - <a href="https://help.salesforce.com/articleView?id=connected_app_create.htm">Create a Connected App on Salesforce</a>
 
-#### For custom providers ####
+#### Additional fields required for custom providers
 
-For user added social logins set the redirect uri to `/api/method/frappe.integrations.custom/<provider>`, where `<provider>` is replaced by name of `Social Login Key` doctype instance. e.g. if keycloak is added as provider, the uri can be set to `/api/method/frappe.integrations.custom/provider`.
+**Redirect URL** :
 
-User can also choose to set the user unique id property used by Custom Provider. Refer https://openid.net/specs/openid-connect-core-1_0.html#UserInfoResponse for more.
+If Social Login Key other than provided by default is added, set its Redirect URL field to `/api/method/frappe.integrations.custom/<provider>`, where `<provider>` is replaced by name of `Social Login Key` doctype instance. Name of doctype is slug of `Provider Name` field.
 
-If user still needs custom logic, custom app can be added. For normal Authorization Code Flow > Userinfo Endpoint based social logins there is no need for custom app.
+e.g. If `Redhat Keycloak` is the Provider Name of custom Social Login Key, its redirect uri should be set to `/api/method/frappe.integrations.custom/redhat_keycloak`.
+
+If custom logic at the point of custom social login is needed, custom app can be added and Redirect URL field can be set to whitelisted function in custom app.
+
+For standard OAuth 2.0 Authorization Code Flow > Userinfo Endpoint based Social Login Key there is no need for custom app.
+
+**User ID Property** :
+
+Optionally set the `User ID Property` field used by Custom Provider. Refer https://openid.net/specs/openid-connect-core-1_0.html#UserInfoResponse for more. Defaults to `sub`.
