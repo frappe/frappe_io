@@ -36,6 +36,13 @@ e.g. Social Login Key
 
 #### Additional fields required for custom providers
 
+**Social Login Provider** : select `Custom`
+**Provider Name** : Input custom name here. e.g. Redhat Keycloak
+**Client ID** : Input client_id generated on custom provider e.g. ABCDEFG
+**Client Secret** : Input client_secret generated on custom provider e.g. 123456
+**Enable Social Login** : Check to enable provider
+**Base URL** : e.g. https://keycloak.example.com
+
 **Redirect URL** :
 
 If Social Login Key other than provided by default is added, set its Redirect URL field to `/api/method/frappe.integrations.custom/<provider>`, where `<provider>` is replaced by name of `Social Login Key` doctype instance. Name of doctype is slug of `Provider Name` field.
