@@ -51,7 +51,7 @@ The standard way to create a DocType is by typing *new doctype* in the search ba
 A DocType not only stores fields, but also other information about how your data
 behaves in the system. We call this **Meta**. Since this meta-data is also stored
 in a database table, it makes it easy to change meta-data on the fly without writing
-much code. Learn more about [Meta](#meta).
+much code. Learn more about [Meta](https://en.wikipedia.org/wiki/Metadata).
 
 > A DocType is also a DocType. This means that we store meta-data as the part of the data.
 
@@ -167,9 +167,9 @@ in Version 12 we have introduced two new properties:
 - `mandatory_depends_on`: If this condition is satisfied, the field will be mandatory.
 - `read_only_depends_on`: If this condition is satisfied, the field will be read only.
 
-
 Frappe comes with more than 30 different fieldtypes out-of-the-box.
-These fieldtypes serve a variety of use-cases. Learn more about [Fieldtypes](#fieldtypes).
+These fieldtypes serve a variety of use-cases. Learn more about [Field Types]((https://erpnext.com/docs/user/manual/en/customize-erpnext/articles/field-types).
+
 
 ## Naming
 
