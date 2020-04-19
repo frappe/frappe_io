@@ -1,0 +1,23 @@
+sudo: required
+
+dist: bionic
+
+services:
+  - docker
+
+before_install:
+  - if [[ "$BUILD" != "development" ]]; then
+    sudo apt-get update && sudo apt-get -y install git;
+    fi
+  - if [[ $BUILD == "development" ]];then
+    sudo apt-get update && sudo apt-get -y install docker-compose;
+    fi
+
+  after_success:
+    - docker --version
+
+    jobs:
+        include:
+          - stage: "blablabla"
+            script:
+              - git clone https://github.com/frappe/frappe_docker.git
