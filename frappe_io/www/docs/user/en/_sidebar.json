@@ -48,7 +48,7 @@
 		"title": "Database Migrations"
 	},
 	{
-		"route": "/docs/user/en/deployment",
+		"route": "/docs/user/en/guides/deployment",
 		"title": "Deployment"
 	},
 	{
