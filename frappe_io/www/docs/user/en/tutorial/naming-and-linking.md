@@ -33,7 +33,7 @@ Foreign keys are specified in Frappe as **Link** type fields. The target DocType
 
 In our example, in the Library Transaction DocType (shown in the Complete the Models section) below, we have to link both the Library Member and the Article.
 
-**Note:** Remeber that Link fields are not automatically set as Foreign Keys in the MariaDB database, because that will implicitly index the column. This may not be optimum hence the Foreign Key validation is done by the Framework.
+**Note:** Remember that Link fields are not automatically set as Foreign Keys in the MariaDB database, because that will implicitly index the column. This may not be optimum hence the Foreign Key validation is done by the Framework.
 
 <img class="screenshot" alt="Link Field" src="/docs/assets/img/link_field.png">
 
