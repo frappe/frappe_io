@@ -20,7 +20,7 @@ metatags:
     - [Controller Hooks](#controller-hooks)
 1. [Child DocType](#child-doctype)
 1. [Single DocType](#single-doctype)
-1. [Actions and Links](#actions-and-link)
+1. [Actions and Links](#actions-and-links)
 
 ## DocType
 
