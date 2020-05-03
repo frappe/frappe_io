@@ -209,6 +209,34 @@ msg = _(" You have {0} pending invoice ")
 msg = ' ' + _("You have {0} pending invoices") + ' '
 ```
 
+### 5. Adding context for a string
+
+> Introduced in version 13
+
+A translatable string can have different meaning in different context.
+For example, string "Change" can mean "to make or become different" or "Coins".
+So to tackle this issue `context` variable can be used to set the context for
+a string so that it can be translated differently in different
+language using [Translation Tool](https://docs.erpnext.com/docs/user/manual/en/translations).
+
+In JavaScript
+
+```js
+
+_("Change", null, "Coins")
+
+// Here "Coins" sets the context for text "Change"
+```
+
+In Python
+
+```py
+
+_("Change", context="Switch")
+
+# Here "Switch" sets the context for text "Change"
+```
+
 ## Adding a New Language
 
 To add a new language, follow these steps:
