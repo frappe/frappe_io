@@ -25,7 +25,7 @@ This guide assumes you are using a personal computer, VPS or a bare-metal server
 
 ## Pre-requisites
 
-1. Python 2.7 (Python 3.5+ also supported)
+1. Python 3.5+
 1. MariaDB 10+
 1. Nginx (for production)
 1. Git
