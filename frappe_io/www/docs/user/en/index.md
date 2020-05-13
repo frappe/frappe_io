@@ -60,6 +60,7 @@ It is pretty generic and can be used to build database driven apps.
 
 1. [Database Migrations](/docs/user/en/database-migrations)
 1. [Production Setup](/docs/user/en/production-setup)
+1. [Rate Limting](/docs/user/en/rate-limiting)
 
 ### Writing Tests
 

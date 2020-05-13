@@ -135,6 +135,7 @@ Here is a list of all configuration options that can be specified:
 `disable_async`       | Disables socket.io client, client stops polling the socket.io server
 `max_file_size`       | Set this to limit the size of files uploaded by user (Default: 10MB)
 `monitor`             | Set this to enable request and job metadata [monitoring](/docs/user/en/debugging#monitoring)
+`rate_limit`          | Set this to enable [rate limiting](/docs/user/en/rate-limiting)
 
 ## Site Resolution
 
