@@ -244,7 +244,7 @@ frappe.query_reports['Balance Sheet'] = {
 				'Yearly'
 			],
 			default: 'Yearly',
-			depends_on: 'eval:filters.company=="Gadget Technologies Pvt. Ltd."'
+			depends_on: 'eval:doc.company=="Gadget Technologies Pvt. Ltd."'
 		}
 	]
 }
