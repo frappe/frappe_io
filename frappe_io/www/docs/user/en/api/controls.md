@@ -48,7 +48,7 @@ Here are the `df` properties for most of frappe control types.
 // Autocomplete
 {
 	label: 'Select User',
-	label: 'user',
+	name: 'user',
 	fieldtype: 'Autocomplete',
 	options: [
 		'faris@erpnext.com',
@@ -244,5 +244,14 @@ Here are the `df` properties for most of frappe control types.
 	label: 'In Time',
 	fieldname: 'in_time',
 	fieldtype: 'Time'
+}
+
+// Duration
+{
+	label: 'Duration',
+	fieldname: 'duration',
+	fieldtype: 'Duration',
+	show_seconds: 0,
+	show_days: 1
 }
 ```
