@@ -1,7 +1,7 @@
 
 ## Day-based Month-wise data
 
-The heatmap is a representation of day-wise data (similar to [the GitHub Contribution Graph]()). It spaces out data values linearly, across 5 levels (zero data kept exclusive).
+The heatmap is a representation of day-wise data (similar to the GitHub Contribution Graph). It spaces out data values linearly, across 5 levels (zero data kept exclusive).
 
 In this case, the data has three parts,
 
@@ -45,7 +45,7 @@ radius: 2, // default 0
         height: 200,
 		discreteDomains: 1,
 		countLabel: 'Level',
-		colors: ['#ebedf0', '#c0ddf9', '#73b3f3', '#3886e1', '#17459e'],
+		radius: 2,
 	}"
 	v-bind:options="[
         {
