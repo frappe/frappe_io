@@ -12,9 +12,6 @@ app_version = "0.0.1"
 
 hide_in_installer = True
 
-# not required for in-app help
-# required_apps = ["frappe_theme"]
-
 fixtures = ["Contact Us Settings", "Web Form"]
 
 website_redirects = [
@@ -25,31 +22,8 @@ website_redirects = [
 website_context = {
 	"repo": "frappe/frappe_io",
 	'logo_image_url': '/assets/frappe_io/images/frappe-logo.png',
-	'brand_html': 'Frappe',
 	'brand_name': 'Frappe',
-	"top_bar_items": [
-		{"label": "Products", "right": 1, "child_items": [
-			{"label": "ERPNext", "url":"/erpnext"},
-			{"label": "Frappe Framework", "url":"/frappe"},
-			{"label": "Gantt", "url":"/gantt"},
-			{"label": "Charts", "url":"/charts"},
-			{"label": "DataTable", "url":"/datatable"},
-			{"label": "FrappeJS", "url":"/frappejs"},
-			{"label": "Accounting", "url":"/accounting"},
-			{"label": "Marketplace", "url":"/marketplace"},
-			{"label": "Bench", "url":"/bench"},
-		]},
-		{"label": "About", "right": 1, "child_items": [
-			{"label": "Team", "url":"/team"},
-			{"label": "Careers", "url":"/careers"},
-			{"label": "Inspiration", "url":"/inspiration"},
-			{"label": "Story", "url":"/story"},
-			{"label": "Contact", "url":"/about#contact"},
-		]},
-		{"label": "Blog", "url":"/blog", "right": 1},
-	],
 	"favicon": '/assets/frappe_io/images/frappe-logo.png',
-	"hide_login": 1
 }
 
 # Includes in <head>
@@ -60,7 +34,7 @@ website_context = {
 # app_include_js = "/assets/frappe_io/js/frappe_io.js"
 
 # include js, css files in header of web template
-# web_include_css = "/assets/frappe_io/css/frappe_io.css"
+web_include_css = "/assets/frappe_io/css/highlight.css"
 web_include_js = "/assets/frappe_io/js/docs.js"
 look_for_sidebar_json = True
 
