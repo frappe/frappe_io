@@ -1,4 +1,4 @@
-<!-- base_template: frappe_io/www/charts/charts_base.html -->
+
 
 - [@tobiaslins](https://github.com/tobiaslins) contributed tweaks for his quest to make these easy to use with React. Check out his [repo]
 - [react-frappe-charts](https://github.com/sheshbabu/react-frappe-charts): React wrapper for Frappe Charts with TypeScript definitions and Storybook playground.
