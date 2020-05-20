@@ -1,4 +1,3 @@
-
 ## Area Chart
 An area chart is derived from a line chart, by marking the area between the X axis and the line plot. It is usually used to compare the areas under the curve for two or more different plots.
 
@@ -152,12 +151,13 @@ Here's a demo using different combinations of the line options.
 			name: 'lineOptions',
 			path: ['lineOptions'],
 			type: 'Map',
-			mapKeys: ['hideLine', 'hideDots', 'heatline', 'areaFill'],
+			mapKeys: ['hideLine', 'hideDots', 'heatline', 'areaFill', 'spline'],
 			states: {
-				'Line': [0, 1, 0, 0],
-				'Dots': [1, 0, 0, 0],
-				'HeatLine': [0, 1, 1, 0],
-				'Area': [0, 1, 0, 1]
+				'Line': [0, 1, 0, 0, 0],
+				'Dots': [1, 0, 0, 0, 0],
+				'HeatLine': [0, 1, 1, 0, 0],
+				'Area': [0, 1, 0, 1, 0],
+				'Spline': [0, 1, 0, 1, 1]
 			},
 			activeState: 'Area'
 		}
@@ -165,38 +165,3 @@ Here's a demo using different combinations of the line options.
 </project-demo>
 
 Next up, we'll start to annotate the data in charts.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
