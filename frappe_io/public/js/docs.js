@@ -10818,6 +10818,7 @@ docSection.prototype.getDemo = function getDemo (blockConf) {
 	var figure, row;
 	if(!bc.sideContent) {
 		figure = $$.create('figure', { inside: this.parent });
+    figure.classList.add("card");
 	} else {
 		row = $$.create('div', {
 			inside: this.parent,
