@@ -18,13 +18,19 @@ hue-6-2: #c18401
 
 */
 
+pre {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  overflow: auto;
+}
+
 .hljs {
   display: block;
   overflow-x: auto;
-  padding: 1.5em;
-  border-radius: 0.5em;
+  padding: 1rem;
+  border-radius: 0.2rem;
   color: #383a42;
-  background: #fafbfc !important;
+  background: #fafbfc;
   position: relative;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.75rem;
