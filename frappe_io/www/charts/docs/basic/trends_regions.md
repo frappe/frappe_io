@@ -112,6 +112,28 @@ lineOptions: {
 	}">
 </project-demo>
 
+When showing certain data where a linear slope between two data points is not suitable, you can use the `spline` property.
+```js
+lineOptions: {
+	spline: 1 // default: 0
+},
+```
+<project-demo data="trends-data"
+	v-bind:config="{
+		type: 'line',
+		height: 180,
+		colors: ['violet'],
+		axisOptions: {
+			xAxisMode: 'tick',
+			xIsSeries: 1
+		},
+		lineOptions: {
+			spline: 1,
+			hideDots: 1
+		},
+	}">
+</project-demo>
+
 ## Combinations
 Here's a demo using different combinations of the line options.
 

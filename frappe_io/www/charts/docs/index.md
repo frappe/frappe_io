@@ -11,7 +11,7 @@
   import { Chart } from "frappe-charts/dist/frappe-charts.min.esm"
   ```
 
-* ...or include within your HTML
+  or include within your HTML
 
   ```html
     <script src="https://cdn.jsdelivr.net/npm/frappe-charts@1.2.4/dist/frappe-charts.min.iife.js"></script>

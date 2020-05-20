@@ -33,6 +33,31 @@ let chart = new Chart("#heatmap", {
 	}">
 </project-demo>
 
+If you wish you can configure the radius of heat squares
+
+```js
+radius: 2, // default 0
+```
+
+<project-demo data="heatmap-data" v-bind:config="{
+		title: 'Monthly Distribution',
+        type: 'heatmap',
+        height: 200,
+		discreteDomains: 1,
+		countLabel: 'Level',
+		colors: ['#ebedf0', '#c0ddf9', '#73b3f3', '#3886e1', '#17459e'],
+	}"
+	v-bind:options="[
+        {
+            name: 'radius',
+            path: ['radius'],
+            type: 'number',
+            numberOptions: { min: 0, max: 5, step: 1 },
+            activeState: 2
+        }
+    ]">
+</project-demo>
+
 Setting `discreteDomains` to `0` allows for a continous distribution of heat squares (as on GitHub), rather than showing the month-wise separation. A different set of colors can also be specified.
 
 ```js
@@ -68,4 +93,3 @@ colors: ['#ebedf0', '#c0ddf9', '#73b3f3', '#3886e1', '#17459e'],
 		}
 	]">
 </project-demo>
-

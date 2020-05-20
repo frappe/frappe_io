@@ -16,6 +16,18 @@ type: 'pie'
     }">
 </project-demo>
 
+#### Donut chart
+Donut chart is a variant for Pie charts:
+
+```js
+type: 'donut'
+```
+<project-demo data="mixed-2" v-bind:config="{
+        type: 'donut',
+        height: 300
+    }">
+</project-demo>
+
 #### Percentage Charts FTW
 
 Pies have received some [criticism]() for data perception; we are much better at parsing sizes in a single dimension rather than an area. That's why, the much leaner `percentage` chart can come in handy:
