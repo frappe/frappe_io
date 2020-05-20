@@ -1,16 +1,24 @@
-{% extends "frappe_io/www/datatable/datatable_base.html" %}
+{% extends "templates/base.html" %}
 {% block title %}Frappe DataTable - A simple, modern datatable library for the web{% endblock %}
 {% block content %}
 <link href="//unpkg.com/frappe-datatable/dist/frappe-datatable.min.css" rel="stylesheet" />
 <link href="datatable/assets/index.css" rel="stylesheet">
-<section class='top-section'>
-	<div class="container">
-		<h1>Fast, Feature Rich Javascript Datatable</h1>
-		<p class="lead">A simple, modern and interactive datatable for the web</p>
-		<button class="btn btn-dark mt-3"><a class="text-light no-decoration" href="datatable/docs">Documentation</a></button>
-		<div class="example-1 mt-5"></div>
-	</div>
-</section>
+
+{{ web_blocks([
+		{
+			'template': "Hero",
+			'values': {
+				'title': "Fast, Feature Rich Javascript Datatable",
+				'subtitle': "A simple, modern and interactive datatable for the web",
+				'primary_action_label': "Documentation",
+				'primary_action': "/datatable/docs",
+				'secondary_action_label': 'GitHub',
+				'secondary_action': "https://github.com/frappe/datatable"
+			}
+		}
+	])
+}}
+
 <section class='section-padding section-bg'>
 	<div class="container">
 		<h3>Installation</h3>
