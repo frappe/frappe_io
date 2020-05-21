@@ -86,7 +86,6 @@ Try resizing the window to see the effect, with different ratio values.
         type: 'bar',
         height: 140,
         colors: ['orange'],
-        axisOptions: { xAxisMode: 'tick' },
         barOptions: { spaceRatio: 0.2 },
     }"
     v-bind:options="[
@@ -128,9 +127,9 @@ lineOptions: {
 	dotSize: 8 // default: 4
 },
 ```
-<project-demo data="2" v-bind:config="{
+<project-demo data="1" v-bind:config="{
         type: 'line',
-        height: 140,
+        height: 240,
         colors:['orange'],
         axisOptions: { xAxisMode: 'tick' },
         lineOptions: { dotSize: 8 }
