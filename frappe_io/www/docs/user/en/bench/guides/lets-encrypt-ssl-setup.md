@@ -1,4 +1,4 @@
-<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
+<!-- add-breadcrumbs -->
 # Using Let's Encrypt to setup HTTPS
 
 ## Prequisites
@@ -11,7 +11,7 @@
 
 ## Using Bench Command
 
-Just run: 
+Just run:
 
     sudo -H bench setup lets-encrypt [site-name]
 
@@ -21,18 +21,18 @@ You will be faced with several prompts, respond to them accordingly. This comman
 
 You can setup Let's Encrypt for [custom domains](adding-custom-domains.html) as well. Just use the `--custom-domain` option
 
-    sudo -H bench setup lets-encrypt [site-name] --custom-domain [custom-domain] 
+    sudo -H bench setup lets-encrypt [site-name] --custom-domain [custom-domain]
 
-### Renew Certificates 
+### Renew Certificates
 
-To renew certificates manually you can use: 
+To renew certificates manually you can use:
 
     sudo bench renew-lets-encrypt
 
 <hr>
 
 ## Manual Method
-### Download the appropriate Certbot-auto script into /opt 
+### Download the appropriate Certbot-auto script into /opt
 
     https://certbot.eff.org/
 

@@ -1,4 +1,4 @@
-<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
+<!-- add-breadcrumbs -->
 # Qué es una aplicación
 
 Una aplicación en Frappe es una aplicación estandar en Python. Puedes estructurar una aplicación hecha en Frappe de la misma forma que estructuras una aplicación en Python.

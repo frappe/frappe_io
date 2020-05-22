@@ -1,8 +1,8 @@
-<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
+<!-- add-breadcrumbs -->
 # Setting Limits for your Site
 
 Frappe v7 has added support for setting limits and restrictions for your site.
-These restrictions are set in the `site_config.json` file inside the site's folder. 
+These restrictions are set in the `site_config.json` file inside the site's folder.
 
 	{
 	 "db_name": "xxxxxxxxxx",
@@ -19,11 +19,11 @@ You can set a limit by running:
 
 	bench --site [sitename] set-limit [limit] [value]
 
-You can set multiple limits at the same time, by running 
-	
+You can set multiple limits at the same time, by running
+
 	bench --site [sitename] set-limits --limit [limit] [value] --limit [limit-2] [value-2]
 
-The valid limits you can set are: 
+The valid limits you can set are:
 
 - **users** - Limit on the number of maximum users for a site
 - **emails** - Limit on the number of emails sent per month from the site

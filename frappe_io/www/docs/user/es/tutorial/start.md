@@ -1,4 +1,4 @@
-<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
+<!-- add-breadcrumbs -->
 # Iniciando el Bench
 
 Ahora podemos acceder y verificar que todo esta funcionando de forma correcta.

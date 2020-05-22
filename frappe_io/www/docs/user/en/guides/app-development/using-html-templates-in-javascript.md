@@ -1,4 +1,4 @@
-<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
+<!-- add-breadcrumbs -->
 # Using Html Templates In Javascript
 
 Often while building javascript interfaces, there is a need to render DOM as an HTML template. Frappe Framework uses John Resig's Microtemplate script to render HTML templates in the Desk application.

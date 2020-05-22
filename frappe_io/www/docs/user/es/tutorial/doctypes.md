@@ -1,4 +1,4 @@
-<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
+<!-- add-breadcrumbs -->
 # DocType
 
 Despues de crear los Roles, vamos a crear los **DocTypes**

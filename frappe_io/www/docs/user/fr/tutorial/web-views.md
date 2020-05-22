@@ -1,4 +1,4 @@
-<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
+<!-- add-breadcrumbs -->
 # Les vues web
 
 Frappe a deux principaux environnements, le **bureau** et **le web**. Le **bureau** est un environnement riche AJAX alors
@@ -6,7 +6,7 @@ que **le web** est une collection plus traditionnelle de fichiers HTML pour la c
 aussi être générées pour créer des vues plus controllées pour les utilisateurs qui peuvent se connecter mais qui n'ont pas
 accès au desk.
 
-Dans Frappe, les vues sont gérées par des templates et sont tout naturellement placés dans le repertoire `templates`. Il 
+Dans Frappe, les vues sont gérées par des templates et sont tout naturellement placés dans le repertoire `templates`. Il
 y a 2 principaux types de templates.
 
 1. Pages: Ce sont des templates Jinja ou une vue unique existe pour une route (exemple:`/blog`).

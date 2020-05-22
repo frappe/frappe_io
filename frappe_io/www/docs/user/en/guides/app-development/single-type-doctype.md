@@ -1,4 +1,4 @@
-<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
+<!-- add-breadcrumbs -->
 # Single Type Doctype
 
 DocTypes have a table associated with them. For example DocType **Customer** will have a table `tabCustomer` associated with it.
@@ -7,6 +7,6 @@ DocTypes have a table associated with them. For example DocType **Customer** wil
 
 The data in Single DocType is stored in `tabSingles` (`doctype`, `field`, `value`)
 
-#### Examples 
+#### Examples
 
 In Frappe, Single types are **System Settings** and **Customize Form**

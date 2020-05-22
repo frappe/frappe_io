@@ -1,4 +1,4 @@
-<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
+<!-- add-breadcrumbs -->
 # Installer le bench de Frappe
 
 La façon la plus rapide d'installer Frappe sur un système Unix est d'utiliser frappe-bench. Lisez les instructions détaillées sur l'installation et l'utilisation de Frappe Bench : [https://github.com/frappe/bench](https://github.com/frappe/bench)

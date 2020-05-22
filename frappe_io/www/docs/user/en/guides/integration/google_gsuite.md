@@ -1,4 +1,4 @@
-<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
+<!-- add-breadcrumbs -->
 # Google GSuite
 
 Frappe allows you to use Google's Gsuite documents as templates, generate from them a new Gsuite document that will be placed in a chosen folder. Variables can populated in both the body and the name of the Gsuite document using the standard Jinja2 format. Once generated, the Gsuite document will remain associate to the DocType as an attachment.

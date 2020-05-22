@@ -1,7 +1,7 @@
-<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
+<!-- add-breadcrumbs -->
 # Tutoriel Frappe
 
-Dans ce guide nous allons vous montrer comment créer une application de A à Z en utilisant **Frappe**. Avec un 
+Dans ce guide nous allons vous montrer comment créer une application de A à Z en utilisant **Frappe**. Avec un
 exemple de gestion de bibliothèque, nous allons aborder les sujets suivants:
 
 1. Installation
@@ -15,7 +15,7 @@ exemple de gestion de bibliothèque, nous allons aborder les sujets suivants:
 ## A qui s'adresse ce tutoriel ?
 
 Ce guide est à destination des développeurs familiers avec la création d'applications web. Le framework Frappe est développé
-avec Python, utilise le système de base de données MariaDB et HTML/CSS/Javascript pour le rendu des pages. 
+avec Python, utilise le système de base de données MariaDB et HTML/CSS/Javascript pour le rendu des pages.
 Il est donc nécessaire d'être familier avec ces technologies. Si vous n'avez jamais utilisé Python auparavant, vous devriez
 suivre un tutoriel rapide avant de suivre ce guide.
 

@@ -1,8 +1,8 @@
-<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
+<!-- add-breadcrumbs -->
 # Qu'est ce qu'une application ?
 
-Dans Frappe, une application est juste une application Python standard. Vous pouvez structurer une application Frappe de 
-la même facon que vous structurez une application Python standard. Pour le déploiement, Frappe utilise Setuptools donc 
+Dans Frappe, une application est juste une application Python standard. Vous pouvez structurer une application Frappe de
+la même facon que vous structurez une application Python standard. Pour le déploiement, Frappe utilise Setuptools donc
 vous pouvez facilement déployer votre application sur n'importe quelle machine.
 
 Frappe fournit une interface WSGI et pendant vos développements vous pouvez utiliser le serveur Werkzeug embarqué. Pour le

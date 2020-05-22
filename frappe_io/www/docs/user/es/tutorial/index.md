@@ -1,4 +1,4 @@
-<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
+<!-- add-breadcrumbs -->
 # Tutorial sobre Frappe
 
 En esta guía, vamos a mostrarte como crear una aplicación desde cero usando **Frappe**. Usando el ejemplo de un Sistema de Gestión de Librería. Vamos a cubrir:

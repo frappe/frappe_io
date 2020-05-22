@@ -1,4 +1,4 @@
-<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
+<!-- add-breadcrumbs -->
 # Frappe Ajax Call
 
 In Frappe Framework, you can manage ajax calls via frappe.call. The frappe.call works in asynchronous manner ie. send requests and handle response via callback mechanism.
@@ -59,7 +59,7 @@ In Frappe Framework, you can manage ajax calls via frappe.call. The frappe.call 
 		}
 	});
 ```
-	
+
 - Param description:
 
 	- doctype: name of doctype for which you want to pull information

@@ -1,7 +1,7 @@
-<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
+<!-- add-breadcrumbs -->
 # Créer des rôles
 
-Avant de créer des modèles, nous devons auparavant créer des rôles qui auront des permissions sur le modèles. Nous allons 
+Avant de créer des modèles, nous devons auparavant créer des rôles qui auront des permissions sur le modèles. Nous allons
 créer deux rôles:
 
 1. Librarian pour définir le libraire

@@ -1,4 +1,4 @@
-<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
+<!-- add-breadcrumbs -->
 
 # Introduction
 
@@ -8,7 +8,7 @@ The base URL is `https://{your frappe instance}`. Every request shown here shoul
 
 ## RPC
 
-A request to an endpoint `/api/method/dotted.path.to.function` will call a whitelisted python function. 
+A request to an endpoint `/api/method/dotted.path.to.function` will call a whitelisted python function.
 
 For example, `GET /api/method/frappe.auth.get_logged_user` will call [this function](https://github.com/frappe/frappe/blob/28b909435320e3d6d1a3b2e7c02f286984dc39b3/frappe/auth.py#L347-L349) from frappe's auth module:
 

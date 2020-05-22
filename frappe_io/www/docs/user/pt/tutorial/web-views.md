@@ -1,4 +1,4 @@
-<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
+<!-- add-breadcrumbs -->
 # Web Views
 
 Frappe tem dois ambientes de usuário principais, o Desk e o Web. Desk é um ambiente UI controlado com uma rica aplicação AJAX e a web usa template HTML tradicional que serve para consumo público. Web Views também podem ser gerados para criar views mais controladas para os usuários que pode fazer o login mas ainda não têm acesso à Desk.

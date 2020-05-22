@@ -1,4 +1,4 @@
-<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
+<!-- add-breadcrumbs -->
 # Import Large Csv File
 
 To import very large CSV files, you can use the bench utility `import-csv`.
@@ -13,7 +13,7 @@ Here is an example:
 
 	$ bench import-csv --help
 	Usage: bench  import-csv [OPTIONS] PATH
-	
+
 	  Import CSV using data import tool
 
 	Options:

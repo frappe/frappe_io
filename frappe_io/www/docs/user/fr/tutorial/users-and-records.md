@@ -1,4 +1,4 @@
-<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
+<!-- add-breadcrumbs -->
 # Créer des utilisateurs et des enregistrements
 
 Maintenant que nous avons définis des modèles, nous pouvons créér des enregistrements directement depuis l'interface. Vous
@@ -50,7 +50,7 @@ avons selectionné l'ID du membre.
 
 <img class="screenshot" alt="New Library Membership" src="/docs/assets/img/new_lib_membership.png">
 
-Comme vous pouvez le voir, la date est formattée en années-mois-jour qui est le format du système. Pour configurer / changer 
+Comme vous pouvez le voir, la date est formattée en années-mois-jour qui est le format du système. Pour configurer / changer
 le format de la date et de l'heure, rendez-vous sur:
 
 > Setup > Settings > System Settings

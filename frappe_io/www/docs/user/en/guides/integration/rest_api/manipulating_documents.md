@@ -1,4 +1,4 @@
-<!-- base_template: frappe_io/www/frappe/frappe_base.html -->
+
 
 Base URL: https://{your frappe instance}
 
@@ -102,7 +102,7 @@ Params (in path):
 
 Example:
 
-*Get the Customer with Name (ID) CUST-00001.* 
+*Get the Customer with Name (ID) CUST-00001.*
 
 ```bash
 curl -X GET https://{your frappe instance}/api/resource/Customer/CUST-00001

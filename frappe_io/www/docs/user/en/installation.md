@@ -1,5 +1,4 @@
 ---
-base_template: frappe_io/www/frappe/frappe_base.html
 title: Installation
 image: /assets/frappe_io/images/frappe-framework-logo-with-padding.png
 metatags:

@@ -1,4 +1,4 @@
-<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
+<!-- add-breadcrumbs -->
 # Insert A Document Via Api
 
 You can insert documents via a script using the `frappe.get_doc` method
@@ -38,19 +38,19 @@ You can insert documents via a script using the `frappe.get_doc` method
 ----
 
 #### 5. Insert a document with child tables:
-    
+
     sales_order = frappe.get_doc({
-        "doctype": "Sales Order", 
-        "company": "_Test Company", 
-        "customer": "_Test Customer", 
-        "delivery_date": "2013-02-23", 
+        "doctype": "Sales Order",
+        "company": "_Test Company",
+        "customer": "_Test Customer",
+        "delivery_date": "2013-02-23",
         "sales_order_details": [
             {
-                "item_code": "_Test Item Home Desktop 100", 
-                "qty": 10.0, 
-                "rate": 100.0, 
+                "item_code": "_Test Item Home Desktop 100",
+                "qty": 10.0,
+                "rate": 100.0,
                 "warehouse": "_Test Warehouse - _TC"
             }
-        ] 
+        ]
     })
     sales_order.insert()

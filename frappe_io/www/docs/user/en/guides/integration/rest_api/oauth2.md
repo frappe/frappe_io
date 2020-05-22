@@ -1,4 +1,4 @@
-<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
+<!-- add-breadcrumbs -->
 
 Base URL: https://{your frappe instance}
 
@@ -10,7 +10,7 @@ Use the header `Authorizaton: Bearer <access_token>` to perform authenticated re
 
 ## POST /api/method/frappe.integrations.oauth2.authorize
 
-Get an authorization code from the user to access ERPNext on his behalf. 
+Get an authorization code from the user to access ERPNext on his behalf.
 
 Params (in body):
 
@@ -27,7 +27,7 @@ Params (in body):
 	"code"
 
 * scope (string)
-	
+
 	The scope of access that should be granted to your application.
 
 * redirect_uri (string)
@@ -55,7 +55,7 @@ Returns:
 
 * HTTP Code: 200
 * text/html
-	
+
 	This will open the authorize page which then redirects you to the `redirect_uri`.
 
 If the user clicks 'Allow', the redirect URI will be called with an authorization code in the query parameters:
@@ -103,7 +103,7 @@ For **testing purposes** you can also pass the parameters in the URL like this (
 `https://{your frappe instance}/api/method/frappe.integrations.oauth2.get_token?grant_type=authorization_code&code=A1KBRoYAN1uxrLAcdGLmvPKsRQLvzj&client_id=511cb2ac2d&redirect_uri=https%3A%2F%2Fapp.getpostman.com%2Foauth2%2Fcallback`
 
 Returns:
-	
+
 ```json
 	{
 	    "access_token": "pNO2DpTMHTcFHYUXwzs74k6idQBmnI",
@@ -126,7 +126,7 @@ Params:
 	Access token to be revoked.
 
 Returns:
-	
+
 ```json
 	{
 		"message": "success"

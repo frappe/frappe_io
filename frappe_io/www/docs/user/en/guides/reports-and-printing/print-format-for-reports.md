@@ -1,4 +1,4 @@
-<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
+<!-- add-breadcrumbs -->
 # Report Print Formats
 
 In version 4.1 we introduce Report Print Formats. These are HTML templates that you can use to format Query Report data for printing.

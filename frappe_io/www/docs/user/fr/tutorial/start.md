@@ -1,4 +1,4 @@
-<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
+<!-- add-breadcrumbs -->
 # Demarrer avec Bench
 
 Maintenant, nous pouvons nous connecter et vérifier que tout fonctionne normalement.
@@ -17,7 +17,7 @@ Vous pouvez maintenant ouvrir votre navigateur et vous rendre sur `http://localh
 
 <img class="screenshot" alt="Login Screen" src="/docs/assets/img/login.png">
 
-Maintenant, connectez vous avec les identifiants suivants: 
+Maintenant, connectez vous avec les identifiants suivants:
 
 Login ID: **Administrator**
 

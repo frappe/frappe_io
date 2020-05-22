@@ -1,4 +1,4 @@
-<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
+<!-- add-breadcrumbs -->
 # How to setup oauth?
 
 <a href="https://tools.ietf.org/html/rfc6749">OAuth 2.0</a> provider based on <a href="https://github.com/idan/oauthlib">oauthlib</a> is built into frappe. Third party apps can now access resources of users based on Frappe Role and User permission system. To setup an app to access
@@ -23,7 +23,7 @@ The server issuing access tokens to the client after successfully authenticating
 System Managers can setup behavior of confirmation message as `Force` or `Auto` in OAuth Provider Settings.
 If Force is selected the system will always ask for user's confirmation. If Auto is selected system asks for the confirmation only if there are no active tokens for the user.
 
-Go to 
+Go to
 
 > Setup > Integrations > OAuth Provider Settings
 
@@ -31,13 +31,13 @@ Go to
 
 ### Add Primary Server
 
-This is the main server hosting all the users. e.g. `https://frappe.io`. To setup this as the main server, go to *Setup* > *Integrations* > *Social Login Keys* and enter `https://frappe.io` in the field  `Frappe Server URL`. This URL repeats in all other Frappe servers who connect to this server to authenticate. Effectively, this is the main Identity Provider (IDP). 
+This is the main server hosting all the users. e.g. `https://frappe.io`. To setup this as the main server, go to *Setup* > *Integrations* > *Social Login Keys* and enter `https://frappe.io` in the field  `Frappe Server URL`. This URL repeats in all other Frappe servers who connect to this server to authenticate. Effectively, this is the main Identity Provider (IDP).
 
 Under this server add as many `OAuth Client`(s) as required.
 
 ## Add a Client App
 
-As a System Manager go to  
+As a System Manager go to
 
 > Setup > Integrations > OAuth Client
 

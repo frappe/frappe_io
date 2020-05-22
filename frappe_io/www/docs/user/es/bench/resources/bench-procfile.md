@@ -1,4 +1,4 @@
-<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
+<!-- add-breadcrumbs -->
 # Bench Procfile
 
 `bench start` usa [honcho](http://honcho.readthedocs.org) para manejar múltiples procesos en **developer mode**.

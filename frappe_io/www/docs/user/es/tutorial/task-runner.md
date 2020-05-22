@@ -1,4 +1,4 @@
-<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
+<!-- add-breadcrumbs -->
 # Tareas Programadas
 
 Finalmente, una aplicación también tiene que mandar notificaciones de email y hacer otros tipos de tareas programadas. En Frappe, si tienes el bench configurado, el programador de tareas es configurado vía Celery usando Redis Queue.

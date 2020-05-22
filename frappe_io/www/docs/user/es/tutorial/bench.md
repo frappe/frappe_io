@@ -1,4 +1,4 @@
-<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
+<!-- add-breadcrumbs -->
 # Instalando el Frappe Bench
 
 La forma más facíl de configurar frappe en un computador usando sitemas basados en Unix es usando frappe-bench. Lee las instrucciones detalladas acerca de como instalarlo usando Frappe Bench.

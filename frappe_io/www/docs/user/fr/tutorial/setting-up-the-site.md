@@ -1,4 +1,4 @@
-<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
+<!-- add-breadcrumbs -->
 # Configurer le site
 
 Créons un site et appelons le `library`.
@@ -20,7 +20,7 @@ Créons un site et appelons le `library`.
 
 Vous pouvez installer un nouveau site avec la commande `bench new-site library`
 
-Cette commande va créer une nouvelle base de données, un repertoire et installer `frappe` (qui est aussi une application!) 
+Cette commande va créer une nouvelle base de données, un repertoire et installer `frappe` (qui est aussi une application!)
 dans le nouveau site. L'application `frappe` a deux modules par défaut, **Core** et **Website**. Le module **Core**
 contient les modèles basiques pour l'application. En effet, Frappe contient des modèles par défaut qui sont appelés **DocTypes**
 mais nous en reparlerons plus tard.

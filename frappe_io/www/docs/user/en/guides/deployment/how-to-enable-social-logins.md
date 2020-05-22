@@ -1,4 +1,4 @@
-<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
+<!-- add-breadcrumbs -->
 # How To Enable Social Logins
 
 Use Facebook, Google or GitHub authentication to login to Frappe, and your users will be spared from remembering another password.
@@ -19,7 +19,7 @@ To enable these signups, you need to have **Client ID** and **Client Secret** fr
 1. Go to [https://developers.facebook.com](https://developers.facebook.com)
 1. Click on Apps (topbar) > New App, fill in the form.
 1. Go to Settings > Basic, set the **Contact Email** and save the changes.
-1. Go to Settings > Advanced, find the field **Valid OAuth redirect URIs**, and enter:    
+1. Go to Settings > Advanced, find the field **Valid OAuth redirect URIs**, and enter:
     **http://{{ yoursite }}/api/method/frappe.www.login.login\_via\_facebook**
 1. Save the changes in Advance tab.
 1. Go to Status & Review and switch on "Do you want to make this app and all its live features available to the general public?"
@@ -38,8 +38,8 @@ To enable these signups, you need to have **Client ID** and **Client Secret** fr
 1. Click on APIs & Auth > Credentials > Create new Client ID
 1. Fill the form with:
     - Web Application
-    - Authorized JavaScript origins as **http://{{ yoursite }}**  
-	- Authorized redirect URI as  
+    - Authorized JavaScript origins as **http://{{ yoursite }}**
+	- Authorized redirect URI as
 	    **http://{{ yoursite }}/api/method/frappe.www.login.login\_via\_google**
 1. Go to the section **Client ID for web application** and copy the Client ID and Client Secret into **Desktop > Website > Setup > Social Login Keys**
 
@@ -54,8 +54,8 @@ To enable these signups, you need to have **Client ID** and **Client Secret** fr
 1. Go to [https://github.com/settings/applications](https://github.com/settings/applications)
 1. Click on **Register new application**
 1. Fill the form with:
-    - Homepage URL as **http://{{ yoursite }}**  
-	- Authorization callback URL as  
+    - Homepage URL as **http://{{ yoursite }}**
+	- Authorization callback URL as
 	    **http://{{ yoursite }}/api/method/frappe.www.login.login\_via\_github**
 1. Click on Register application.
 1. Copy the generated Client ID and Client Secret into **Desktop > Website > Setup > Social Login Keys**

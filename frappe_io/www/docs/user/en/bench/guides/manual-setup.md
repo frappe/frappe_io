@@ -1,4 +1,4 @@
-<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
+<!-- add-breadcrumbs -->
 # Manual Setup
 
 Manual Setup
@@ -43,11 +43,11 @@ Basic Usage
 * Add apps
 
 	The get-app command gets and installs frappe apps. Examples:
-	
+
 	- [erpnext](https://github.com/frappe/erpnext)
 	- [erpnext_shopify](https://github.com/frappe/erpnext_shopify)
 	- [paypal_integration](https://github.com/frappe/paypal_integration)
-	
+
 	bench get-app erpnext https://github.com/frappe/erpnext
 
 * Add site

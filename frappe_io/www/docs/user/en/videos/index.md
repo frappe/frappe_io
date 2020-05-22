@@ -1,4 +1,4 @@
-<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
+<!-- add-breadcrumbs -->
 # Video Tutorials for Frappe Framework
 
 This 10-part video tutorial will teach you how to build complex apps in Frappe

@@ -1,4 +1,4 @@
-<!-- base_template: frappe_io/www/frappe/frappe_base.html --># Token Based Authentication
+# Token Based Authentication
 
 > Available starting with v11.0.3
 
@@ -8,10 +8,10 @@ The HTTP Authorization request header contains the credentials to authenticate a
 Authorization: <type> <token>
 ```
 
-The token consists of `api-key` and `api-secret`, joined by a colon. Check `Guides / Integration / How To Set Up Token Based Auth` to see how to generate `api-key` and `api-secret`. 
+The token consists of `api-key` and `api-secret`, joined by a colon. Check `Guides / Integration / How To Set Up Token Based Auth` to see how to generate `api-key` and `api-secret`.
 
 There are two types of authorization: `token` and `Basic`:
-  
+
 ## Token
 
 HTTP header:
@@ -40,7 +40,7 @@ If the "Basic" authentication scheme is used, the credentials are a combination 
   ```<api_key>:<api_secret>```
 2. The resulting string is base64 encoded.
   ```base64encode(<api_key>:<api_secret>)```
-  
+
 HTTP header:
 
 ```http

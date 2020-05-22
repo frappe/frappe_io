@@ -1,4 +1,4 @@
-<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
+<!-- add-breadcrumbs -->
 # Nomeando e vinculando DocType
 
 Em seguida, vamos criar outro DocType e salva-lo também:

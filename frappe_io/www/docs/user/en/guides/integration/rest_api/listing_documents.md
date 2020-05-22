@@ -1,4 +1,4 @@
-<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
+<!-- add-breadcrumbs -->
 
 Base URL: https://{your frappe instance}
 
@@ -12,7 +12,7 @@ GET **/api/resource/Person**
 
 > All listings are returned paginated by 20 items. To change the page size, you can pass the query parameter `limit_page_length`. To request succesive pages, pass `limit_start`.
 
-The response is returned as JSON Object and the listing is an array in with the key `data`. 
+The response is returned as JSON Object and the listing is an array in with the key `data`.
 
 Response:
 

@@ -1,4 +1,4 @@
-<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
+<!-- add-breadcrumbs -->
 Base URL: https://{your frappe instance}
 
 Example: https://demo.erpnext.com
@@ -12,7 +12,7 @@ Content-Type: application/x-www-form-urlencoded
 Params (in body):
 
 * usr (string)
-	
+
 	Username
 
 * pwd (string)
@@ -44,9 +44,9 @@ Returns:
 * Cookie: `sid` (send this to authenticate future requests). [Expires in three days](https://github.com/frappe/frappe/blob/e551153ea0a5fb905f2d9508143a9d25ec74aa43/frappe/auth.py#L320).
 
 ```
-	sid=05d8d46aaebff1c87a90f570a3ff1c0f570a3ff1c87a90f56bacd4; 
-	path=/; 
-	domain=.{your frappe instance}; 
+	sid=05d8d46aaebff1c87a90f570a3ff1c0f570a3ff1c87a90f56bacd4;
+	path=/;
+	domain=.{your frappe instance};
 	Expires=Sat, 29 Sep 2018 00:59:54 GMT;
 ```
 

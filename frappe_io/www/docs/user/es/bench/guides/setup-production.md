@@ -1,4 +1,4 @@
-<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
+<!-- add-breadcrumbs -->
 # Setup Production
 
 Puedes configurar el bench para producción configurando dos parametros, Supervisor y nginx. Si quieres volver a ponerlo en desarrollo debes ver [estos comandos](https://github.com/frappe/bench/wiki/Stopping-Production-and-starting-Development)
@@ -12,7 +12,7 @@ Supervisor
 ----------
 Supervisor se asegura de mantener el proceso que inició Frappe corriendo y lo reinicia en caso de cualquier inconveniente.
  Puedes generar la configuración necesaria para supervisor ejecutando el comando `bench setup supervisor`.
- La configuración va a estar disponible en la carpeta `config/supervisor.conf`. Luego puedes copiar/enlazar este archivo al directorio de configuración  
+ La configuración va a estar disponible en la carpeta `config/supervisor.conf`. Luego puedes copiar/enlazar este archivo al directorio de configuración
  de supervisor y reiniciar el servicio para que tome efecto de los cambios realizados.
 
 Ejemplo,

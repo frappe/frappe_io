@@ -1,4 +1,4 @@
-<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
+<!-- add-breadcrumbs -->
 # DocType
 
 Après avoir créé les roles, créons des **DocTypes**
@@ -28,7 +28,7 @@ Ajoutons des champs pour l'article.
 
 <img class="screenshot" alt="Adding Fields" src="/docs/assets/img/doctype_adding_field.png">
 
-Quand vous ajoutez des champs, vous devez entrer le **Type**. Le **Label** est optionnel pour les retours de sections et de colonnes. 
+Quand vous ajoutez des champs, vous devez entrer le **Type**. Le **Label** est optionnel pour les retours de sections et de colonnes.
 Le **Name** (`fieldname`) ets le nom de la colonne dans la base de données et aussi la propriété du controleur. Les définitions
 doivent être *code friendly*, (par exemple insérer des underscores (_) à la place de espaces. Si vous laissez le champs `fieldname`
 vide, il sera automatiquement complété à la sauvegarde.
@@ -41,7 +41,7 @@ Nous pouvons ajouter les champs suivants:
 2. Author (Data)
 3. Description
 4. ISBN
-5. Status (Select): Pour les champs de type select, vous devez compléter les options. entrer **Issued** et **Available** 
+5. Status (Select): Pour les champs de type select, vous devez compléter les options. entrer **Issued** et **Available**
 sur chacune des lignes comme ci-dessous
 6. Publisher (Data)
 7. Language (Data)
@@ -51,7 +51,7 @@ sur chacune des lignes comme ci-dessous
 #### Ajouter des permissins
 
 Après avoir ajouté les champs, validez et ajoutez un nouveau rôle dans la section des règles de permissions. Pour le moment
-ajoutons les droits le lecture, écriture, création et suppression au modèle **Librarian**. Frappe à une gestion fine des 
+ajoutons les droits le lecture, écriture, création et suppression au modèle **Librarian**. Frappe à une gestion fine des
 permissions sur les modèles. Vous pouvez aussi changer les permissions plus tard en utilisant le gestionnaire de permissions
 dans la configuration.
 
@@ -59,7 +59,7 @@ dans la configuration.
 
 #### Sauvegarde
 
-Cliquez sur le bouton **Save**. Quand le bouton est cliqué, une popup vous demandera le nom. Donnez le nom **Article** et 
+Cliquez sur le bouton **Save**. Quand le bouton est cliqué, une popup vous demandera le nom. Donnez le nom **Article** et
 sauvegardez le **DocType**.
 
 Maintenant, connectez vous à MySQL et vérifiez la base de données créée:
@@ -99,7 +99,7 @@ Maintenant, connectez vous à MySQL et vérifiez la base de données créée:
 	18 rows in set (0.00 sec)
 
 
-Comme vous pouvez le voir, en plus de nos **DocFields**, d'autres colonnes ont été ajoutées dans notre table. Notez les 
+Comme vous pouvez le voir, en plus de nos **DocFields**, d'autres colonnes ont été ajoutées dans notre table. Notez les
 changement, la clé primaire sur, `name`, `owner`(l'utilisateur quia créer l'enregistrement), `creation` et `modified` (des timestamps pour enregistrer les dates de creation et de modification).
 
 {next}

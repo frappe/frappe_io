@@ -1,4 +1,4 @@
-<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
+<!-- add-breadcrumbs -->
 # DocTypes Simples
 
 Una aplicación normalmente va a tener una página de configuración. En nuestra aplicación, podemos definir una página donde específiquemos el período de prestamos. Necesitaremos almacenar esta propiedad. En Frappe, esto puede lograrse usando los DocType de tipo **Simple**. Un DocType Simple es como el patrón Singleton en Java. Es un objeto con tan solo una instancia. Vamos a llamarlo **Library Managment Settings**.

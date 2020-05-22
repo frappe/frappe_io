@@ -1,4 +1,4 @@
-<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
+<!-- add-breadcrumbs -->
 # Contribute Translations
 
 This document shows how to **Contribute Translations** directly from your frappe app to translate.erpnext.com.

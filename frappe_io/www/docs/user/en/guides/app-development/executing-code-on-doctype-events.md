@@ -1,17 +1,17 @@
-<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
+<!-- add-breadcrumbs -->
 # Executing Code On Doctype Events
 
-To execute code when a DocType is inserted, validated (before saving), updated, submitted, cancelled, deleted, you must write in the DocType's controller module. 
+To execute code when a DocType is inserted, validated (before saving), updated, submitted, cancelled, deleted, you must write in the DocType's controller module.
 
 #### 1. Controller Module
 
 The controller module exists in the `doctype` folder in the Module of the `DocType`. For example, the controller for **ToDo** exists in `frappe/desk/doctype/todo/todo.py` (version 5). A controller template is created when the DocType is created. which looks like
 
     from __future__ import unicode_literals
-    
+
     import frappe
     from frappe.model.document import Document
-    
+
     class CustomType(Document):
         pass
 

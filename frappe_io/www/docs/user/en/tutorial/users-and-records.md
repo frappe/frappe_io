@@ -1,4 +1,4 @@
-<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
+<!-- add-breadcrumbs -->
 # Making Users and Records
 
 Now that we have created the models, we can directly start making records using Frappe Desk UI. You do not have to create views! Views in Frappe are automatically made based on the DocType properties.
@@ -19,7 +19,7 @@ Now logout and login using the new user id and password.
 
 ### 4.2 Creating Records
 
-You will now see an icon for the Library Management module. *If you do not* see an icon you will have to configure the desk. So go to the `config` folder (of the newly made app) and create a new file `library_management.py`. 
+You will now see an icon for the Library Management module. *If you do not* see an icon you will have to configure the desk. So go to the `config` folder (of the newly made app) and create a new file `library_management.py`.
 
 ```
 Directory Structure
@@ -34,7 +34,7 @@ apps/
     │   │   ├── __init__.py
     │   │   ├── desktop.py
     │   │   ├── docs.py
-    │   │   └── library_management.py   <--Here 
+    │   │   └── library_management.py   <--Here
     │   ├── hooks.py
     │   ├── library_management
     │   │   ├── __init__.py
@@ -50,7 +50,7 @@ Paste the following code to configure the desk in order to view the Module.
 
 	from __future__ import unicode_literals
 	from frappe import _
-	
+
 	def get_data():
 		return [
           {

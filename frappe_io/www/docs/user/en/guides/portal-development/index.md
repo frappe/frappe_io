@@ -1,4 +1,4 @@
-<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
+<!-- add-breadcrumbs -->
 # Making Portals
 
 Frappe has powerful tools to build portals where pages can be dynamically generated using templates (Jinja) and users can be shown records after login

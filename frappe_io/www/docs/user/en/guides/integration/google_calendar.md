@@ -1,4 +1,4 @@
-<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
+<!-- add-breadcrumbs -->
 # Google Calendar Integration
 
 Frappe provides an integration with Google Calendar in order for all users to synchronize their events.
@@ -19,16 +19,16 @@ They will be requested to authorize your Google application to access their cale
 
 ## Features
 
-1. Creation of a new calendar in Google Calendar  
+1. Creation of a new calendar in Google Calendar
 	- Each user can choose a dedicated name for its Google Calendar.
 
-2. Events synchronization from ERPNext to GCalendar  
+2. Events synchronization from ERPNext to GCalendar
 	- All events created in ERPNext are created in Google Calendar.
 	- Recurring events are created as recurring events too.
 	- Events modified in ERPNext are updated in Google Calendar.
 	- Events deleted in ERPNext are deleted in Google Calendar.
 
-3. Events synchronization from GCalendar to ERPNext  
+3. Events synchronization from GCalendar to ERPNext
 	- Events created in Google Calendar are created in ERPNext.
 	- Events updated in Google Calendar are updated in ERPNext.
 

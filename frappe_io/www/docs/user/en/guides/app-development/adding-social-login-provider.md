@@ -1,4 +1,4 @@
-<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
+<!-- add-breadcrumbs -->
 # Adding Social Login Provider
 
 This guide discusses how to add a social login provider to frappe via pull request.
@@ -25,7 +25,7 @@ providers["Frappe"] = {
 
 ### Add provider key in exact same type case in options of `social_login_provider` select field on `Social Login Key` DocType. e.g. `Frappe`
 
-Once the user adds a social login provider and enables it the `Authorization Code` is sent back by the provider api server on to the redirect_url mentioned on the same server. You will have to add a whitelisted method allowing guest access in `frappe.integrations.oauth2_logins`. e.g. `login_via_office365` 
+Once the user adds a social login provider and enables it the `Authorization Code` is sent back by the provider api server on to the redirect_url mentioned on the same server. You will have to add a whitelisted method allowing guest access in `frappe.integrations.oauth2_logins`. e.g. `login_via_office365`
 
 There many implementations of OAuth 2.0 + OpenID Connect. Here we'll discuss two ways of accessing openid information.
 

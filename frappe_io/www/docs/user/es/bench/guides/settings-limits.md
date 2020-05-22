@@ -1,4 +1,4 @@
-<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
+<!-- add-breadcrumbs -->
 # Estableciendo límites para su sitio
 
 La versión 7 de Frappe ha agregado soporte para la configuración de límites y restricciones para su site.

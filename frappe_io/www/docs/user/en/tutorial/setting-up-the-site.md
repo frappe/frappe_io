@@ -1,4 +1,4 @@
-<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
+<!-- add-breadcrumbs -->
 # Setting up the Site
 
 Let us create a new site and call it `library`.
@@ -59,7 +59,7 @@ In case you have multiple sites on your bench, you can map these sites to your l
 127.0.0.1       localhost library
 255.255.255.255 broadcasthost
 ::1             localhost
-~                                                                     
+~
 ```
 On saving this file, your site can be accessed by mentioning it's URL in your browser.
 

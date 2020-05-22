@@ -1,10 +1,10 @@
-<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
+<!-- add-breadcrumbs -->
 # Créer une nouvelle application
 
-Une fois que Bench est installé, vous apercevrez deux répertoires, `apps` and `sites`. Toutes les applications seront 
+Une fois que Bench est installé, vous apercevrez deux répertoires, `apps` and `sites`. Toutes les applications seront
 installées dans `apps`.
 
-Pour créer une nouvelle application, allez dans votre répertoire et lancer la commande, `bench new-app {app_name}` et 
+Pour créer une nouvelle application, allez dans votre répertoire et lancer la commande, `bench new-app {app_name}` et
 remplissez les informations à propos de votre application. Cela va créer un template d'application pour vous.
 
 	$ bench new-app library_management
@@ -44,7 +44,7 @@ L'application sera créée dans un répertoire appelé `library_management` et a
 	├── requirements.txt
 	└── setup.py
 
-1. `config` contient les configurations de l'application 
+1. `config` contient les configurations de l'application
 1. `desktop.py` est l'endroit ou les icones peuvent être ajoutées au bureau
 1. `hooks.py` contient les définitions de la facon dont l'intégration avec l'environnement et les autres applications est faite.
 1. `library_management` (interne) est un **module** bootstrappé. Dans Frappe, un **module** est l'endroit où sont les controlleurs et les modeles.

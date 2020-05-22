@@ -1,5 +1,4 @@
 ---
-base_template: frappe_io/www/frappe/frappe_base.html
 add_breadcrumbs: 1
 title: Document - API
 image: /assets/frappe_io/images/frappe-framework-logo-with-padding.png

@@ -1,4 +1,4 @@
-<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
+<!-- add-breadcrumbs -->
 # Dynamic Pages
 
 You can render pages dynamically using Jinja templating language. To query data, you can update that `context` object that you pass to the template.

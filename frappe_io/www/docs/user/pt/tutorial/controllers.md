@@ -1,4 +1,4 @@
-<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
+<!-- add-breadcrumbs -->
 # Controladores
 
 O passo seguinte seria a adição de métodos e handlers de eventos para os modelos. No aplicativo, devemos assegurar que se uma Library Transaction é feita, o artigo em questão deve estar em estoque e o membro que irá emprestar o artigo deve ter um filiação válida.

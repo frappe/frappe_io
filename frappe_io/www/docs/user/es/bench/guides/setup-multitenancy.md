@@ -1,4 +1,4 @@
-<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
+<!-- add-breadcrumbs -->
 # Setup Multitenancy
 
 Asumiento que tiene su primer site corriendo y ha realizado los

@@ -1,4 +1,4 @@
-<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
+<!-- add-breadcrumbs -->
 # Dialogs Types
 
 Frappe provides a group of standard dialogs that are very useful while coding.
@@ -36,7 +36,7 @@ It has 4 parameters:
 ### Example
 
 	frappe.prompt([
-		{'fieldname': 'birth', 'fieldtype': 'Date', 'label': 'Birth Date', 'reqd': 1}  
+		{'fieldname': 'birth', 'fieldtype': 'Date', 'label': 'Birth Date', 'reqd': 1}
 	],
 	function(values){
 		show_alert(values, 5);

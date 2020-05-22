@@ -1,4 +1,4 @@
-<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
+<!-- add-breadcrumbs -->
 # Script Report
 
 You can create tabulated reports using server side scripts by creating a new Report.
@@ -64,7 +64,7 @@ columns = [{
 3. You can use all server side modules to build your report.
 4. For example see existing reports. ([Balance Sheet](https://github.com/frappe/erpnext/blob/develop/erpnext/accounts/report/balance_sheet/balance_sheet.py))
 
-### 4. Add link for your report on the module page 
+### 4. Add link for your report on the module page
 
 <img class="screenshot" alt="Module Page" src="/docs/assets/img/script-report-1.png">
 

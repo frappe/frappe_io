@@ -1,7 +1,7 @@
-<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
+<!-- add-breadcrumbs -->
 # Les controleurs
 
-La prochaine étape est d'ajouter quelques méthodes et événements à nos modèles. Dans l'application, nous devons nous 
+La prochaine étape est d'ajouter quelques méthodes et événements à nos modèles. Dans l'application, nous devons nous
 assurer que si une opération est faite, l'article concerné doit être disponible en stock et que le membre qui souhaite
 faire le prêt à un abonnement valide.
 

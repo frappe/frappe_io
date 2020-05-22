@@ -1,4 +1,4 @@
-<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
+<!-- add-breadcrumbs -->
 # Webhooks
 
 Webhooks are "user-defined HTTP callbacks". For a select DocType, you can create a webhook that triggers on specific document events under certain conditions, if required.

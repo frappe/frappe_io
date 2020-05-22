@@ -1,5 +1,4 @@
 ---
-base_template: frappe_io/www/frappe/frappe_base.html
 add_breadcrumbs: 1
 title: Debugging
 image: /assets/frappe_io/images/frappe-framework-logo-with-padding.png
@@ -127,7 +126,7 @@ Collected data is buffered in redis cache and periodically moved to `monitor.jso
     "timestamp": "2020-03-05 09:37:17.397884",
     "transaction_type": "request",
     "uuid": "83be6a4c-27a1-497a-9ce6-c815bca4e420"
-} 
+}
 ```
 
 ```JSON

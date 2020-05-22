@@ -1,4 +1,4 @@
-<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
+<!-- add-breadcrumbs -->
 # OpenID Connect and Frappe social login
 
 ## OpenID Connect
@@ -25,7 +25,7 @@ Example Bearer Token with scope `openid`
 In this example there are 2 servers,
 
 ### Primary Server
-This is the main server hosting all the users. e.g. `https://frappe.io`. To setup this as the main server, go to *Setup* > *Integrations* > *Social Login Keys* and enter `https://frappe.io` in the field  `Frappe Server URL`. This URL repeats in all other Frappe servers who connect to this server to authenticate. Effectively, this is the main Identity Provider (IDP). 
+This is the main server hosting all the users. e.g. `https://frappe.io`. To setup this as the main server, go to *Setup* > *Integrations* > *Social Login Keys* and enter `https://frappe.io` in the field  `Frappe Server URL`. This URL repeats in all other Frappe servers who connect to this server to authenticate. Effectively, this is the main Identity Provider (IDP).
 
 Under this server add as many `OAuth Client`(s) as required. Because we are setting up one app server, add only one `OAuth Client`
 
@@ -59,7 +59,7 @@ Set `Frappe Client ID`  and `Frappe Client Secret` on App server (refer the clie
 Login Screen on App Server (login with frappe)
 <img class="screenshot" src="/docs/assets/img/04-login-screen-on-app-server.png">
 
-### Part 3 : Redirected on IDP 
+### Part 3 : Redirected on IDP
 
 login with user on IDP
 <img class="screenshot" src="/docs/assets/img/05-login-with-user-on-idp.png">

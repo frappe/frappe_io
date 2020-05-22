@@ -1,4 +1,4 @@
-<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
+<!-- add-breadcrumbs -->
 # Starting the Bench
 
 Now we can login and check if everything works.
@@ -17,7 +17,7 @@ You can now open your browser and go to `http://localhost:8000`. You should see 
 
 <img class="screenshot" alt="Login Screen" src="/docs/assets/img/login.png">
 
-Now login with : 
+Now login with :
 
 Login ID: **Administrator**
 

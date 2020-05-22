@@ -1,4 +1,4 @@
-<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
+<!-- add-breadcrumbs -->
 # Configuring HTTPS
 
 ### Get the required files
@@ -41,20 +41,20 @@ Also make sure that your private key is readable only by the root user:
 ### Setup nginx config
 
 Set the paths to the certificate and private key for your site
-	
+
 	bench set-ssl-certificate site1.local /etc/nginx/conf.d/ssl/certificate_bundle.crt
 	bench set-ssl-key site1.local /etc/nginx/conf.d/ssl/private.key
 
 ### Generate nginx config
-	
+
 	bench setup nginx
 
 ### Reload nginx
-	
+
 	sudo service nginx reload
 
 or
 
-	systemctl reload nginx # for CentOS 7 
+	systemctl reload nginx # for CentOS 7
 
 Now that you have configured SSL, all HTTP traffic will be redirected to HTTPS

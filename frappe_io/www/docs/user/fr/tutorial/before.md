@@ -1,4 +1,4 @@
-<!-- base_template: frappe_io/www/frappe/frappe_base.html --><!-- add-breadcrumbs -->
+<!-- add-breadcrumbs -->
 # Avant de commencer
 
 <p class="lead">Liste des outils et technologies utiles dans le développement d'applications avec Frappe.</p>
@@ -17,7 +17,7 @@ Pour produire une application de qualité, vous devez inclure des tests automati
 
 #### 2. MariaDB / MySQL
 
-Vous devez comprendre les notions essentielles des bases de données, comment installer, se connecter, créer de nouvelles bases, 
+Vous devez comprendre les notions essentielles des bases de données, comment installer, se connecter, créer de nouvelles bases,
 et comment faire des requêtes. Voici [une rapide introduction à MySQL](https://www.digitalocean.com/community/tutorials/a-basic-mysql-tutorial) ou dirigez vous vers [le site MariaDB pour des informations plus détaillées](https://mariadb.com/kb/en/mariadb/documentation/getting-started/)
 
 ---
