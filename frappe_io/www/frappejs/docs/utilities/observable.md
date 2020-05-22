@@ -1,4 +1,4 @@
-<!-- base_template: frappe_io/www/frappejs/frappejs_base.html -->
+
 # Observable Base Class
 
 The `Observable` base class makes and subclass trigger events and accept event listeners. It is similar to an EventEmitter.

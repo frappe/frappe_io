@@ -1,4 +1,4 @@
-<!-- base_template: frappe_io/www/frappejs/frappejs_base.html -->
+
 # Formula
 
 Formulas are dynamic document properties that can be set on the fields.

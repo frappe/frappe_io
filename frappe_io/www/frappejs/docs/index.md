@@ -1,4 +1,4 @@
-<!-- base_template: frappe_io/www/frappejs/frappejs_base.html -->
+
 # Frappe.js
 
 Frappe.js is a meta-data driven framework that enables rapid application development of Node.js and Electron based applications.
