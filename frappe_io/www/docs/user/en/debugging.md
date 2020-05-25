@@ -96,7 +96,7 @@ In [1]: frappe.get_doc('Task', 'TASK00004')
 Out[1]: <erpnext.projects.doctype.task.task.Task at 0x10825d710>
 ```
 
-> Learn more about the Python API [here](/docs/user/en/api/python).
+> Learn more about the Python and other Developer APIs [here](/docs/user/en/api/index.md).
 
 ### Profiling
 
@@ -167,4 +167,4 @@ properties.
 ![Browser Console](/docs/assets/img/client-side-debugging.png)
 *Browser Console*
 
-> Learn more about the Client API [here](/docs/user/en/api/javascript)
+> Learn more about the Javascript Client and other Developer APIs [here](/docs/user/en/api/index.md)
