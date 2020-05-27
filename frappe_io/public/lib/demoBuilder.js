@@ -143,7 +143,6 @@ class docSection {
 		let figure, row;
 		if(!bc.sideContent) {
 			figure = $$.create('figure', { inside: this.parent });
-			figure.classList.add('card');
 		} else {
 			row = $$.create('div', {
 				inside: this.parent,
