@@ -1,23 +1,23 @@
 
 ## Installation
-* Install via [npm](https://www.npmjs.com/get-npm):
+Install via [npm](https://www.npmjs.com/get-npm):
 
-  ```console
-  $ npm install frappe-charts
-  ```
+```console
+$ npm install frappe-charts
+```
 
-  and include in your project:
-  ```js
-  import { Chart } from "frappe-charts/dist/frappe-charts.min.esm"
-  ```
+and include in your project:
+```js
+import { Chart } from "frappe-charts/dist/frappe-charts.min.esm"
+```
 
-  or include within your HTML
+or include within your HTML
 
-  ```html
-    <script src="https://cdn.jsdelivr.net/npm/frappe-charts@1.2.4/dist/frappe-charts.min.iife.js"></script>
-    <!-- or -->
-    <script src="https://unpkg.com/frappe-charts@1.2.4/dist/frappe-charts.min.iife.js"></script>
-  ```
+```html
+  <script src="https://cdn.jsdelivr.net/npm/frappe-charts@1.2.4/dist/frappe-charts.min.iife.js"></script>
+  <!-- or -->
+  <script src="https://unpkg.com/frappe-charts@1.2.4/dist/frappe-charts.min.iife.js"></script>
+```
 
 ## Usage
 
@@ -65,4 +65,4 @@ Here's a demo to try out yourself:
     title="frappe-charts-demo"
     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
-  ></iframe>
+></iframe>
