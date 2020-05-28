@@ -156,7 +156,8 @@ The DocField stores meta-data about the field. Some of them are described below.
         "collapsible_depends_on": "eval:doc.status!='Closed'", // determines if a Section Break field is collapsible
         "fieldname": "sb_details",
         "fieldtype": "Section Break",
-        "label": "Details"
+        "label": "Details",
+        "hide_border": 0            // determines if the line break is visible
     },
 ]
 ```
