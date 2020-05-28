@@ -4,6 +4,8 @@ import { getDemoVue, COMPONENT_NAME } from "../lib/demoBuilder.js";
 import { Chart } from "../../www/charts/frappe-charts.min.esm";
 import { sampleData as chartsData, methods as chartsMethods } from "../../www/charts/data";
 
+frappe.Chart = Chart;
+
 frappe.projectDemos = {
 	charts: {
 		lib: Chart,
