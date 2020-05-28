@@ -224,11 +224,10 @@ systemctl enable cronie
 
 ## Install Bench
 
-Install bench as a non-root user
+Install bench using pip
 
 ```bash
-git clone https://github.com/frappe/bench bench-repo
-pip install --user -e bench-repo
+pip install frappe-bench
 ```
 
 Confirm the bench installation by checking version
@@ -237,7 +236,7 @@ Confirm the bench installation by checking version
 bench --version
 
 # output
-4.1.0
+5.1.0
 ```
 
 Create your first bench folder.
