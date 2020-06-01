@@ -306,6 +306,21 @@ Example,
 
 The asterisk (*) operator specifies all possible values for a field. For example, an asterisk in the hour time field would be equivalent to every hour or an asterisk in the month field would be equivalent to every month.
 
+### Override Whitelisted Methods
+
+Override whitelisted Python functions (server-side functions that are available to the client-side) using the `override_whitelisted_methods` hook.
+
+An overriden function will be triggered during the following events:
+
+* direct API call
+* document mapping
+
+Example,
+
+	override_whitelisted_methods = {{
+		"{dotted.path.to.whitelisted.frappe.function}": "{dotted.path.to.whitelisted.custom.function}"
+	}}
+
 ### Jinja Customization
 
 Fetch custom methods and filters that are to be available globally in jinja environment.
@@ -328,7 +343,7 @@ Example,
 
 ### Exempt Doctypes
 
-Exempt documents of a specific DocType from being automatically cancelled on cancellation of anylinked documents.
+Exempt documents of a specific DocType from being automatically cancelled on the cancellation of any linked documents.
 
 Example,
 
