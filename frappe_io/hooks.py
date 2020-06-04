@@ -34,9 +34,12 @@ website_context = {
 # app_include_js = "/assets/frappe_io/js/frappe_io.js"
 
 # include js, css files in header of web template
-web_include_css = "/assets/frappe_io/css/highlight.css"
 web_include_js = "assets/js/charts-demo.js"
 look_for_sidebar_json = True
+
+base_template_map = {
+	r"charts/docs.*": "templates/doc.html"
+}
 
 # Home Pages
 # ----------
