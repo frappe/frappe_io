@@ -4,8 +4,8 @@ If you wish to contribute to Frappe Charts:
 
 1. Clone the git repo.
 2. `cd` into project directory
-3. `npm install`
-4. `npm run dev`
+3. `yarn` or `npm install`
+4. `yarn run dev` or `npm run dev`
 
 All changes should be made in the code base contained in `src`.
 

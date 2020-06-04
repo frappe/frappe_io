@@ -1,3 +1,9 @@
+---
+title: Frappe Charts - Quick Start
+metatags:
+ description: >
+  Frappe Charts is a  GitHub-inspired simple and modern SVG charts for the web with zero dependencies.
+---
 
 ## Installation
 Install via [npm](https://www.npmjs.com/get-npm):
