@@ -1,6 +1,0 @@
-<!-- add-breadcrumbs -->
-# Guides
-
-
-
-{index}

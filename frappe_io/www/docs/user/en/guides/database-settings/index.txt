@@ -1,2 +1,0 @@
-setup-read-from-secondary-db.md
-postgres-database-setup.md

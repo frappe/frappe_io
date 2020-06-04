@@ -1,6 +1,0 @@
-- Translations
-- Extending Frappe with Apps
-- Static Assets / JS and CSS Build
-- Guides
-	- Build a custom SPA on top of Frappe
-	- Using Frappe for building API only applications
