@@ -11,7 +11,7 @@ Try and traverse this chart with arrow-keys.
 
 <project-demo data="2" v-bind:config="{
         type: 'bar',
-        height: 140,
+        height: 180,
 		isNavigable: 1,
         colors: ['light-blue'],
         axisOptions: { xAxisMode: 'tick' },

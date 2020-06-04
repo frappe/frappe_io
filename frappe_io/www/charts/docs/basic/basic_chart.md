@@ -17,13 +17,13 @@ Rendering it doesn't require much more that that. Plug the data in with a [type]
 new frappe.Chart( "#chart", {
     data: data,
     type: 'bar',
-    height: 140,
+    height: 180,
     colors: ['red']
 });
 ```
 <project-demo
     data="0"
-    v-bind:config="{ type: 'bar', height: 140, colors:['red'] }">
+    v-bind:config="{ type: 'bar', height: 180, colors:['red'] }">
 </project-demo>
 
 
@@ -34,7 +34,7 @@ type:'line'
 ```
 <project-demo
     data="0"
-    v-bind:config="{ type: 'line', height: 140, colors:['red'] }">
+    v-bind:config="{ type: 'line', height: 180, colors:['red'] }">
 </project-demo>
 
 
@@ -84,7 +84,7 @@ Try resizing the window to see the effect, with different ratio values.
 
 <project-demo data="2" v-bind:config="{
         type: 'bar',
-        height: 140,
+        height: 180,
         colors: ['orange'],
         barOptions: { spaceRatio: 0.2 },
     }"
@@ -113,7 +113,7 @@ axisOptions: {
     data="2"
     v-bind:config="{
         type: 'bar',
-        height: 140,
+        height: 180,
         colors:['blue'],
         axisOptions: { xAxisMode: 'tick' }
     }">
