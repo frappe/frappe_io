@@ -39,6 +39,11 @@ frappe.db.get_list('Task', filters={
 	'date': ['>', '2019-09-08']
 })
 
+# Tasks with date between 2019-09-08 and 2020-09-08
+frappe.db.get_list('Task', filters=[[
+	'date', 'between', ["2019-09-08", "2020-09-08"]
+]])
+
 # Tasks with subject that contains "test"
 frappe.db.get_list('Task', filters={
 	'subject': ['like', '%test%']
