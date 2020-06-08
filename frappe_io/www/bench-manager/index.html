@@ -1,0 +1,67 @@
+{% extends "templates/base.html" %}
+{% block title %}Bench Manager{% endblock %}
+{% block content %}
+
+
+{{ web_blocks([
+		{
+			'template': "Hero",
+			'values': {
+				'title': "Bench Manager",
+				'subtitle': "Bench Manager is a graphical user interface to emulate the functionalities of Frappe Bench. Like the command line utility it helps you install apps, manage multiple sites, update apps and much more.",
+				'primary_action_label': "Documentation",
+				'primary_action': "/bench-manager/docs/bench-settings",
+				'secondary_action_label': 'GitHub',
+				'secondary_action': "https://github.com/frappe/bench_manager"
+			}
+		}
+	])
+}}
+
+
+<section class="section section-padding-top section-padding-bottom bg-light">
+	<div class='container'>
+		<!-- Installation -->
+		<div class='mb-5'>
+			<h3>Installation</h3>
+			<p>Create a new site called bench-manager.local and install Bench Manager on the site.</p>
+			<pre><code class="hljs shell bash">$ bench new-site bench-manager.local
+$ bench get-app bench_manager https://github.com/frappe/bench_manager
+$ bench --site bench-manager.local install-app bench_manager</code></pre>
+		</div>
+
+		<!-- Update -->
+		<div class='mb-5'>
+			<h3>Update Bench Manager</h3>
+			<p>In frappe-bench directory execute:</p>
+			<pre><code class="hljs shell bash">$ bench update</code></pre>
+		</div>
+	</div>
+</section>
+
+<section class="section section-padding-top section-padding-bottom">
+	<div class='container'>
+		<div class="my-5">
+			<h3>What can you do using this app ?</h3>
+			<ul>
+				<li>Update bench</li>
+				<li>Backup your sites</li>
+				<li>Install/Uninstall apps on your site</li>
+				<li>Restore Backups on either existing sites or new sites</li>
+				<li>Create new apps and sites</li>
+			</ul>
+		</div>
+		<div class="my-5">
+			<h3>App Catalogue</h3>
+			<p>There are 5 main doctypes associated with this app.</p>
+			<ol>
+				<li><a href="/bench-manager/docs/bench-settings">Bench Settings</a></li>
+				<li><a href="/bench-manager/docs/site">Site</a></li>
+				<li><a href="/bench-manager/docs/site-backup">Site Backup</a></li>
+				<li><a href="/bench-manager/docs/bench-manager-command">Bench Manager Command</a></li>
+				<li><a href="/bench-manager/docs/app">App</a></li>
+			</ol>
+		</div>
+	</div>
+</section>
+{% endblock %}

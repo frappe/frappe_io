@@ -9,19 +9,19 @@
 - The Bench setting doctype also displays all the config parameters in the common-site-config.json which is applicable to all
   the sites in your bench instance.
 
-* Want to edit common site config? We have it covered!
+### Edit Common Site Config
 
 <img src="https://github.com/frappe/bench_manager/wiki/images/bench_settings-overview.gif" width="600">
 
-* Create a new site? With ERPNext on it? No problem!
+### Create a New Site
 
 <img src="https://github.com/frappe/bench_manager/wiki/images/bench_settings-new_site.gif" width="600">
 
-* Sync all your sites, apps and backups. Simple as that!
+### Sync all your Sites.
 
 <img src="https://github.com/frappe/bench_manager/wiki/images/bench_settings-sync.gif" width="600">
 
-* Bench Update? Click! Done.
+### Update Bench
 
 <img src="https://github.com/frappe/bench_manager/wiki/images/bench_settings-update.gif" width="600">
 
