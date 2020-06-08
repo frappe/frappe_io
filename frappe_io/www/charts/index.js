@@ -110,7 +110,7 @@ var barComposite = {
     }
 }
 
-if(document.querySelectorAll('#line-composite-1').length) {
+frappe.ready(() => {
 	let lineCompositeChart = new frappe.Chart("#line-composite-1", lineComposite.config);
 	let barCompositeChart = new frappe.Chart("#bar-composite-1", barComposite.config);
 
@@ -120,4 +120,4 @@ if(document.querySelectorAll('#line-composite-1').length) {
 			fireballOver25[i], fireball_5_25[i], fireball_2_5[i]
 		]);
 	});
-}
+})
