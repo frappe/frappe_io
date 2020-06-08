@@ -35,6 +35,7 @@ website_context = {
 
 # include js, css files in header of web template
 web_include_js = "assets/js/charts-demo.js"
+web_include_css = "assets/frappe/css/hljs-night-owl.css"
 look_for_sidebar_json = True
 
 base_template_map = {
