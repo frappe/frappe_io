@@ -1,4 +1,4 @@
-<!-- base_template: frappe_io/www/frappejs/frappejs_base.html -->
+
 # Client
 
 Frappe.js also comes with Vue Components like List, Form and FormControl. They can be used to provide UI interaction to your models.

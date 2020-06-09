@@ -1,4 +1,4 @@
-<!-- base_template: frappe_io/www/frappejs/frappejs_base.html -->
+
 # Declaring Models
 
 Models are declared by adding a `.js` model file in the `models/doctype` folder of the module/app.

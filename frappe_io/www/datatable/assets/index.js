@@ -4,7 +4,8 @@ const {
 } = getSampleData();
 
 // Hero
-let datatable1 = new DataTable('.example-1', {
+let el = document.querySelector('.example-1')
+let datatable = new frappe.DataTable(el, {
 	columns,
 	data,
 	checkboxColumn: true,
@@ -12,59 +13,133 @@ let datatable1 = new DataTable('.example-1', {
 	layout: 'fluid'
 });
 
-function makeDemo(targetSelector, code) {
-	const template = `
-		<div class="mount-target"></div>
-		<div class="code mt-2">
-			<pre><code class="hljs javascript"></code></pre>
-			<button class="btn btn-sm btn-secondary btn-edit">Edit</button>
-		</div>
-		<div class="edit-demo mt-2">
-			<textarea rows="10" class="form-control w-100" style="font-family: monospace; font-size: 14px;"></textarea>
-			<button class="btn btn-sm btn-secondary btn-run mt-1">Run Code</button>
-		</div>
-	`;
+let el1 = document.querySelector('.demo-target-1');
+let dt1 = new frappe.DataTable(el1, {
+	columns: ['Framework', 'Built By', 'GitHub Stars', 'License', 'Contributors', 'Age','Project Home', 'Project Link'],
+	data: [
+		['React', 'Facebook', 149017, 'MIT', 1385, '7 Years', 'https://reactjs.org', 'https://github.com/facebook/react'],
+		['Angular', 'Google', 61263, 'MIT', 1119, '5 Years', 'https://angular.io', 'https://github.com/angular/angular'],
+		['Vue', 'Evan You', 164408, 'MIT', 293, '4 Years', 'https://vuejs.org', 'https://github.com/vuejs/vue'],
+		['Svelte', 'Rich Harris', 33865, 'MIT', 298, '3 Years', 'https://svelte.dev', 'https://github.com/sveltejs/svelte/'],
+		['Stencil', 'Ionic Team', 7749, 'MIT', 132, '3 Years', 'https://stenciljs.com', 'https://github.com/ionic-team/stencil'],
+	]
+});
 
-	const element = document.querySelector(targetSelector);
-	element.innerHTML = template;
+let el2 = document.querySelector('.demo-target-2');
+let dt2 = new frappe.DataTable(el2, {
+	columns: [
+		{ name: 'Framework' },
+		{ name: 'Built By' },
+		{ name: 'GitHub Stars', format: value => `${value} ⭐️`},
+		{ name: 'License' },
+		{ name: 'Contributors' },
+		{ name: 'Age', format: value => `${value} Years` },
+		{ name: 'Project Home', format: value => `<a class="text-primary" href="${value}">${value}</a>` },
+		{ name: 'Project Link', format: value => `<a class="text-primary" href="${value}">${value}</a>` }
+	],
+	data: [
+		['React', 'Facebook', 149017, 'MIT', 1385, 7, 'https://reactjs.org', 'https://github.com/facebook/react'],
+		['Angular', 'Google', 61263, 'MIT', 1119, 5, 'https://angular.io', 'https://github.com/angular/angular'],
+		['Vue', 'Evan You', 164408, 'MIT', 293, 4, 'https://vuejs.org', 'https://github.com/vuejs/vue'],
+		['Svelte', 'Rich Harris', 33865, 'MIT', 298, 3, 'https://svelte.dev', 'https://github.com/sveltejs/svelte/'],
+		['Stencil', 'Ionic Team', 7749, 'MIT', 132, 3, 'https://stenciljs.com', 'https://github.com/ionic-team/stencil'],
+	]
+});
 
-	const $mountTarget = element.querySelector('.mount-target');
-	const $code = element.querySelector('.code');
-	const $editBtn = $code.querySelector('.btn-edit');
-	const $editDemo = element.querySelector('.edit-demo');
-	const $textarea = $editDemo.querySelector('textarea');
-	const $runBtn = $editDemo.querySelector('.btn-run');
+let el3 = document.querySelector('.demo-target-3');
+let dt3 = new frappe.DataTable(el3, {
+	columns: [
+		{ name: 'Files', width: 300, format: formatFileName },
+		{ name: 'Size', width: 150, align: 'right' },
+		{ name: 'Last Updated', width: 200, align: 'right', default: "A Month Ago"},
+	],
+	data: [
+		{
+			'Files': 'Documents',
+			'Size': '2M',
+			'Last Updated': '',
+			'indent': 0
+		},
+		{
+			'Files': 'project.pdf',
+			'Size': '1M',
+			'Last Updated': 'Yesterday',
+			'indent': 1
+		},
+		{
+			'Files': 'my-face.png',
+			'Size': '500k',
+			'Last Updated': '2018-04-09',
+			'indent': 1
+		},
+		{
+			'Files': 'Projects',
+			'Size': '77M',
+			'Last Updated': '',
+			'indent': 0
+		},
+		{
+			'Files': 'frappe-gantt',
+			'Size': '23M',
+			'Last Updated': '',
+			'indent': 1
+		},
+		{
+			'Files': 'dist',
+			'Size': '50k',
+			'Last Updated': '2018-06-01',
+			'indent': 2
+		},
+		{
+			'Files': 'package.json',
+			'Size': '5k',
+			'Last Updated': '2018-06-01',
+			'indent': 2
+		},
+		{
+			'Files': 'frappe-datatable',
+			'Size': '54M',
+			'Last Updated': '',
+			'indent': 1
+		},
+		{
+			'Files': 'src',
+			'Size': '53k',
+			'Last Updated': 'A few seconds ago',
+			'indent': 2
+		},
+	],
+	treeView: true
+});
 
-	// get classname from code
-	const [match, className] = code.match(/ = new [\w]+\('.([^']+)/);
-	$mountTarget.classList.add(className);
+let datatableThemedElement = document.querySelector('.demo-target-4');
+window.datatableThemed = new frappe.DataTable(datatableThemedElement, {
+	columns: [
+		{ name: 'Framework' },
+		{ name: 'Built By' },
+		{ name: 'GitHub Stars', format: value => `${value} ⭐️`},
+		{ name: 'License' },
+		{ name: 'Contributors' },
+		{ name: 'Age', format: value => `${value} Years` },
+		{ name: 'Project Home', format: value => `<a class="text-primary" href="${value}">${value}</a>` },
+		{ name: 'Project Link', format: value => `<a class="text-primary" href="${value}">${value}</a>` }
+	],
+	data: [
+		['React', 'Facebook', 149017, 'MIT', 1385, 7, 'https://reactjs.org', 'https://github.com/facebook/react'],
+		['Angular', 'Google', 61263, 'MIT', 1119, 5, 'https://angular.io', 'https://github.com/angular/angular'],
+		['Vue', 'Evan You', 164408, 'MIT', 293, 4, 'https://vuejs.org', 'https://github.com/vuejs/vue'],
+		['Svelte', 'Rich Harris', 33865, 'MIT', 298, 3, 'https://svelte.dev', 'https://github.com/sveltejs/svelte/'],
+		['Stencil', 'Ionic Team', 7749, 'MIT', 132, 3, 'https://stenciljs.com', 'https://github.com/ionic-team/stencil'],
+	]
+});
 
-	// tabs to spaces
-	code = code.replace(/\t/g, '  ');
-
-	// init
-	$editDemo.classList.add('hidden');
-	$code.querySelector('code').innerHTML = escapeHtml(code);
-	$textarea.value = code;
-	eval(code);
-
-	$editBtn.addEventListener('click', e => {
-		$editDemo.classList.remove('hidden');
-		$code.classList.add('hidden');
-	});
-
-	$runBtn.addEventListener('click', e => {
-		const newCode = $textarea.value;
-		eval(newCode);
-	});
-}
 
 function formatFileName(value, row, column, cell) {
-	if (row.meta.isLeaf) {
-		return value;
+	if (!row.meta.isLeaf) {
+		return `<b>${value}</b>`;
 	}
 
-	return `<i class="octicon octicon-file-directory text-muted"></i>  ${value}`;
+	return `<i class="fa fa-file mr-2 text-muted"></i>${value}`;
 }
 
 function getSampleData(multiplier) {

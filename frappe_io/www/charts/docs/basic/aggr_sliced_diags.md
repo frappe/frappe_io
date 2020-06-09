@@ -1,4 +1,4 @@
-<!-- base_template: frappe_io/www/charts/charts_base.html -->
+
 ## Also called Sliced Diagrams
 Another family of charts, the aggregation charts accumulate the value at a data point across the multiple datasets.
 
@@ -12,6 +12,18 @@ type: 'pie'
 ```
 <project-demo data="mixed-2" v-bind:config="{
         type: 'pie',
+        height: 300
+    }">
+</project-demo>
+
+#### Donut chart
+Donut chart is a variant for Pie charts:
+
+```js
+type: 'donut'
+```
+<project-demo data="mixed-2" v-bind:config="{
+        type: 'donut',
         height: 300
     }">
 </project-demo>

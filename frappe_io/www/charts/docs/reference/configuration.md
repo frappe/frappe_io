@@ -1,4 +1,4 @@
-<!-- base_template: frappe_io/www/charts/charts_base.html -->
+
 # Configuration
 
 With all the customizable features of Frappe Charts, this section is dedicated to enabling / disabling existing functionality.
@@ -125,6 +125,22 @@ Set the height of the chart in pixels.
 
 ---
 
+### animate
+ - Type: `Boolean`
+ - Default: 1
+
+Enable or disable animation
+
+---
+
+### truncateLegends
+ - Type: `Boolean`
+ - Default: `false`
+
+Sometimes long legends would overlap with neighboring legends, this option truncates it to a fixed length
+
+---
+
 ### axisOptions
  - Type: `Object`
  - Default: `{}`
@@ -182,7 +198,7 @@ Renders multiple bar datasets in a stacked configuration, rather than the defaul
  - Type: `Object`
  - Default: `{}`
 
-Can be used to set various properties on line plots, turn them into Area Charts and so on. Explore in details on the [Trends]() page.
+Can be used to set various properties on line plots, turn them into Area Charts and so on. Explore in details on the [Trends](/charts/docs/basic/trends_regions) page.
 
 ---
 

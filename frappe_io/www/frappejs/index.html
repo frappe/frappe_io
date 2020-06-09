@@ -1,65 +1,111 @@
-<!-- base_template: frappe_io/www/frappejs/frappejs_base.html -->
-{% from "frappe_theme/templates/includes/card_grid.html" import card_grid %}
-<section class='top-section'>
+{% extends "templates/base.html" %}
+{% block title %}Frappe JS - Metadata Driven JS Framework{% endblock %}
+{% block content %}
+
+{{ web_blocks([
+		{
+			'template': "Hero",
+			'values': {
+				'title': "Metadata Driven JS Framework",
+				'subtitle': "Node + Electron + Vue based next generation web framework <br>(inspired by Frappe)",
+				'primary_action_label': "Documentation",
+				'primary_action': "/datatable/docs",
+				'secondary_action_label': 'GitHub',
+				'secondary_action': "https://github.com/frappe/datatable"
+			}
+		}
+	])
+}}
+
+
+{{ web_blocks([
+		{
+			'template': "Section With Cards",
+			'add_shade': 1,
+			'values': {
+				'title': "Features",
+				'subtitle': "FrappeJS has everything you would need to build a modern application",
+
+				'card_1_title': "Models",
+				'card_1_content': "Models are first class citizens in FrappeJS. Use them to build powerful REST APIs, UIs or CLI tools.",
+				'card_1_url': "/frappejs/docs/models",
+
+				'card_2_title': "Admin Interface",
+				'card_2_content': "FrappeJS comes with built-in lists and forms to interact with your data. It is built on VueJS.",
+				'card_2_url': "/frappejs/docs/ui-components",
+
+				'card_3_title': "Backend Agnostic",
+				'card_3_content': "Use any backend to store your models. FrappeJS uses SQLite as the default data store.",
+				'card_3_url': "/frappejs/docs/backend",
+
+				'card_4_title': "Isomorphic",
+				'card_4_content': "FrappeJS can be used to build web applications using Node, Single Page Applications using Vue or desktop apps with Electron.",
+				'card_4_url': "/frappejs/docs/isomorphic",
+
+				'card_5_title': "REST API",
+				'card_5_content': "FrappeJS server comes baked in with standard REST API routes to GET and POST data in your models.",
+				'card_5_url': "/frappejs/docs/rest-api",
+
+				'card_6_title': "File Handling",
+				'card_6_content': "FrappeJS handles your file uploads and its operations via the REST API or the core API.",
+				'card_6_url': "/frappejs/docs/file-handling",
+			}
+		}
+	])
+}}
+
+<section class="section section-padding-top section-padding-bottom">
 	<div class='container'>
-	<h1>Metadata Driven JS Framework</h1>
-	<p class='lead'>Node + Electron + Vue based next generation web framework <br>(inspired by Frappe)</p>
-	<img src='/assets/frappe_io/images/landing-pages/frappejs.png'
-		class='border greyscale mt-5'>
+		<!-- Installation -->
+		<div class='mb-5'>
+			<h3>Quick Start</h3>
+			<p>FrappeJS comes with an Express Server on the backend, VueJS for the front-end and a CLI to run these things with built-in webpack configs.</p>
+			<pre><code class="hljs">yarn add frappejs</code></pre>
+		</div>
+
+		<!-- Usage -->
+		<h4 class="mb-3">Server</h4>
+
+		<p>With <code>server/index.js</code> file, you can start the frappejs server in just a few lines of code.</p>
+		<pre><code class="hljs javascript">const server = require('frappejs/server');
+
+server.start({
+    backend: 'sqlite',
+    connectionParams: {
+        dbPath: 'test.db'
+    }
+});
+</code></pre>
+
 	</div>
 </section>
 
-<section class='section-padding section-bg'>
-	<div class='container'>
-	{{ card_grid(
-		None,
-		None,
-		[
-			{
-				"title": "Models",
-				"content": "Models are first class citizens in FrappeJS. Use them to build powerful REST APIs, UIs or CLI tools.",
-				"url": "/frappejs/docs/models"
-			},
-			{
-				"title": "Admin Interface",
-				"content": "FrappeJS comes with built-in lists and forms to interact with your data. It is built on VueJS.",
-				"url": "/frappejs/docs/ui-components"
-			},
-			{
-				"title": "Backend Agnostic",
-				"content": "Use any backend to store your models. FrappeJS uses SQLite as the default data store.",
-				"url": "/frappejs/docs/backend"
-			},
-			{
-				"title": "Isomorphic",
-				"content": "FrappeJS can be used to build web applications using Node, Single Page Applications using Vue or desktop apps with Electron.",
-				"url": "/frappejs/docs/isomorphic"
-			},
-			{
-				"title": "REST API",
-				"content": "FrappeJS server comes baked in with standard REST API routes to GET and POST data in your models.",
-				"url": "/frappejs/docs/rest-api"
-			},
-			{
-				"title": "File Handling",
-				"content": "FrappeJS handles your file uploads and its operations via the REST API or the core API.",
-				"url": "/frappejs/docs/file-handling"
+{{ web_blocks([
+		{
+			'template': "Section With Image",
+			'add_shade': 1,
+			'values': {
+				'title': "Powers FrappeBooks",
+				'subtitle': "Simple, well designed, desktop accounting software for freelancers and small businesses.",
+				'image': "/assets/frappe_io/images/landing-pages/books.png"
 			}
-		])
-	}}
-	</div>
-</section>
-<section class='text-center section-padding'>
-	<div class='container'>
-	<a class ="btn btn-dark mr-3" href="https://github.com/frappe/frappejs">
-		Get Started
-	</a>
-	<a class ="btn btn-secondary" href="/frappejs/docs">
-		Documentation
-	</a>
-	<p class="mt-3">
-		<a href="https://github.com/frappe/frappejs" target="_blank">View on GitHub</a>
-	</p>
-	<p class='text-muted'>License: MIT</p>
-	</div>
-</section>
+		}
+	])
+}}
+
+{{ web_blocks([
+		{
+			'template': "Section With CTA",
+			'values': {
+				'title': "Metadata Driven JS Framework",
+				'subtitle': "Node + Electron + Vue based next generation web framework",
+				'cta_label': "Get Started",
+				'cta_url': "frappejs/docs/app.md",
+				'cta_description': "Make an App",
+				'show_confetti': 1
+			}
+		}
+	])
+}}
+
+{% endblock %}

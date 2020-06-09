@@ -1,4 +1,4 @@
-<!-- base_template: frappe_io/www/charts/charts_base.html -->
+
 ## Axis chart: What Is It
 
 An axis chart is generally a 2D rendition of data, where a set of values corresponds to every point in a dataset. That's why, data is the most important component for a chart. For example, for some values across items, the data could look like:
@@ -17,13 +17,13 @@ Rendering it doesn't require much more that that. Plug the data in with a [type]
 new frappe.Chart( "#chart", {
     data: data,
     type: 'bar',
-    height: 140,
+    height: 180,
     colors: ['red']
 });
 ```
 <project-demo
     data="0"
-    v-bind:config="{ type: 'bar', height: 140, colors:['red'] }">
+    v-bind:config="{ type: 'bar', height: 180, colors:['red'] }">
 </project-demo>
 
 
@@ -34,7 +34,7 @@ type:'line'
 ```
 <project-demo
     data="0"
-    v-bind:config="{ type: 'line', height: 140, colors:['red'] }">
+    v-bind:config="{ type: 'line', height: 180, colors:['red'] }">
 </project-demo>
 
 
@@ -84,9 +84,8 @@ Try resizing the window to see the effect, with different ratio values.
 
 <project-demo data="2" v-bind:config="{
         type: 'bar',
-        height: 140,
+        height: 180,
         colors: ['orange'],
-        axisOptions: { xAxisMode: 'tick' },
         barOptions: { spaceRatio: 0.2 },
     }"
     v-bind:options="[
@@ -114,7 +113,7 @@ axisOptions: {
     data="2"
     v-bind:config="{
         type: 'bar',
-        height: 140,
+        height: 180,
         colors:['blue'],
         axisOptions: { xAxisMode: 'tick' }
     }">
@@ -128,9 +127,9 @@ lineOptions: {
 	dotSize: 8 // default: 4
 },
 ```
-<project-demo data="2" v-bind:config="{
+<project-demo data="1" v-bind:config="{
         type: 'line',
-        height: 140,
+        height: 240,
         colors:['orange'],
         axisOptions: { xAxisMode: 'tick' },
         lineOptions: { dotSize: 8 }

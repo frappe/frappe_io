@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "frappe-charts": "^1.4.1",
+    "frappe-datatable": "^1.15.2",
+    "sortablejs": "^1.10.2"
+  }
+}

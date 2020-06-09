@@ -1,4 +1,4 @@
-<!-- base_template: frappe_io/www/frappejs/frappejs_base.html -->
+
 # UI
 
 Frappe.js UI library helps create elements from the Native DOM

@@ -21,7 +21,7 @@
     },
     {
         "route": "/charts/docs/basic/aggr_sliced_diags",
-        "title": "Pie Charts"
+        "title": "Aggregate Charts"
     },
     {
         "route": "/charts/docs/update_state/modify_data",

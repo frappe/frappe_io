@@ -1,4 +1,3 @@
-<!-- base_template: frappe_io/www/datatable/datatable_base.html -->
 <!-- add-next-prev-links -->
 
 # Download
@@ -10,8 +9,8 @@ Frappe DataTable can be consumed in several different forms.
 Load it directly from the unpkg CDN.
 
 ```html
-<link href="https://unpkg.com/frappe-datatable@0.0.5/dist/frappe-datatable.min.css" rel="stylesheet">
-<script src="https://unpkg.com/frappe-datatable@0.0.5/dist/frappe-datatable.min.js"></script>
+<link href="https://unpkg.com/frappe-datatable/dist/frappe-datatable.min.css" rel="stylesheet">
+<script src="https://unpkg.com/frappe-datatable/dist/frappe-datatable.min.js"></script>
 ```
 
 ## Package managers

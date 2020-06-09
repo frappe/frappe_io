@@ -1,23 +1,29 @@
-<!-- base_template: frappe_io/www/charts/charts_base.html -->
+---
+title: Frappe Charts - Quick Start
+metatags:
+ description: >
+  Frappe Charts is a  GitHub-inspired simple and modern SVG charts for the web with zero dependencies.
+---
+
 ## Installation
-* Install via [npm](https://www.npmjs.com/get-npm):
+Install via [npm](https://www.npmjs.com/get-npm):
 
-  ```console
-  $ npm install frappe-charts
-  ```
+```console
+$ npm install frappe-charts
+```
 
-  and include in your project:
-  ```js
-  import { Chart } from "frappe-charts/dist/frappe-charts.min.esm"
-  ```
+and include in your project:
+```js
+import { Chart } from "frappe-charts/dist/frappe-charts.min.esm"
+```
 
-* ...or include within your HTML
+or include within your HTML
 
-  ```html
-    <script src="https://cdn.jsdelivr.net/npm/frappe-charts@1.2.4/dist/frappe-charts.min.iife.js"></script>
-    <!-- or -->
-    <script src="https://unpkg.com/frappe-charts@1.2.4/dist/frappe-charts.min.iife.js"></script>
-  ```
+```html
+  <script src="https://cdn.jsdelivr.net/npm/frappe-charts@1.2.4/dist/frappe-charts.min.iife.js"></script>
+  <!-- or -->
+  <script src="https://unpkg.com/frappe-charts@1.2.4/dist/frappe-charts.min.iife.js"></script>
+```
 
 ## Usage
 
@@ -58,10 +64,11 @@ const chart = new frappe.Chart("#chart", {  // or a DOM element,
 
 ## Demo
 Here's a demo to try out yourself:
-<p data-height="299" data-theme-id="light" data-slug-hash="wjKBoq" data-default-tab="js,result"
-    data-user="pratu16x7" data-embed-version="2" data-pen-title="Frappe Charts Demo" class="codepen">
-    See the Pen <a href="https://codepen.io/pratu16x7/pen/wjKBoq/">Frappe Charts Demo</a>
-    by Prateeksha Singh (<a href="https://codepen.io/pratu16x7">@pratu16x7</a>) on
-    <a href="https://codepen.io">CodePen</a>.
-</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+<iframe
+    class="mt-3"
+    src="https://codesandbox.io/embed/frappe-charts-demo-viqud?autoresize=1&codemirror=1&fontsize=14"
+    style="width:100%; height:500px; border: 1px solid rgba(0, 0, 0, 0.125); border-radius: 4px; overflow:hidden;"
+    title="frappe-charts-demo"
+    allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>

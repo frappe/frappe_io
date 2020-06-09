@@ -1,4 +1,4 @@
-<!-- base_template: frappe_io/www/frappejs/frappejs_base.html -->
+
 # Print Format
 
 A PrintFormat represents an HTML template that is used to create a printer-friendly version of the DocType.

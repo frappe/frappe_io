@@ -1,11 +1,11 @@
-<!-- base_template: frappe_io/www/charts/charts_base.html -->
+
 # Contributing
 If you wish to contribute to Frappe Charts:
 
 1. Clone the git repo.
 2. `cd` into project directory
-3. `npm install`
-4. `npm run dev`
+3. `yarn` or `npm install`
+4. `yarn run dev` or `npm run dev`
 
 All changes should be made in the code base contained in `src`.
 
@@ -14,3 +14,7 @@ To contribute to one of the chart types, there are individual js files specific 
 Most of the ground-level logic code is segregated into the utils modules `src/js/utils/`.
 
 If you wish to use an arbitrary constant value for a specific measure, color, ratio etc., check `src/js/utils/constants.js` and register the value to be used.
+
+## Contributors
+
+Thanks goes to [these wonderful](https://github.com/frappe/charts/graphs/contributors) people for their contributions

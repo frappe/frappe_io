@@ -1,4 +1,3 @@
-<!-- base_template: frappe_io/www/datatable/datatable_base.html -->
 <!-- add-next-prev-links -->
 
 # Configuration
@@ -187,7 +186,7 @@ const d = new DataTable({
         const $input = document.createElement('input');
         $input.type = 'date';
         parent.appendChild($input);
-        
+
         return {
             // called when cell is being edited
             initValue(value) {

@@ -1,4 +1,4 @@
-<!-- base_template: frappe_io/www/charts/charts_base.html -->
+
 ## Annotations
 Special values (like range points) on a chart can be annotated for quick comparisions. As they are among the components of a graph that can be updated, they are defined within the `data` property itself. There are two kinds of annotations that can be used to mark the vertical axis values: **markers** and **regions**.
 

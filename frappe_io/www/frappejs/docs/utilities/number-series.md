@@ -1,4 +1,4 @@
-<!-- base_template: frappe_io/www/frappejs/frappejs_base.html -->
+
 # Number Series
 
 A number series is used to maintain a series for numbering documents (like invoices).

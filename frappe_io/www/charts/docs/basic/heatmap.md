@@ -1,7 +1,7 @@
-<!-- base_template: frappe_io/www/charts/charts_base.html -->
+
 ## Day-based Month-wise data
 
-The heatmap is a representation of day-wise data (similar to [the GitHub Contribution Graph]()). It spaces out data values linearly, across 5 levels (zero data kept exclusive).
+The heatmap is a representation of day-wise data (similar to the GitHub Contribution Graph). It spaces out data values linearly, across 5 levels (zero data kept exclusive).
 
 In this case, the data has three parts,
 
@@ -31,6 +31,31 @@ let chart = new Chart("#heatmap", {
 		title: 'Monthly Distribution',
         type: 'heatmap',
 	}">
+</project-demo>
+
+If you wish you can configure the radius of heat squares
+
+```js
+radius: 2, // default 0
+```
+
+<project-demo data="heatmap-data" v-bind:config="{
+		title: 'Monthly Distribution',
+        type: 'heatmap',
+        height: 200,
+		discreteDomains: 1,
+		countLabel: 'Level',
+		radius: 2,
+	}"
+	v-bind:options="[
+        {
+            name: 'radius',
+            path: ['radius'],
+            type: 'number',
+            numberOptions: { min: 0, max: 5, step: 1 },
+            activeState: 2
+        }
+    ]">
 </project-demo>
 
 Setting `discreteDomains` to `0` allows for a continous distribution of heat squares (as on GitHub), rather than showing the month-wise separation. A different set of colors can also be specified.
@@ -68,4 +93,3 @@ colors: ['#ebedf0', '#c0ddf9', '#73b3f3', '#3886e1', '#17459e'],
 		}
 	]">
 </project-demo>
-

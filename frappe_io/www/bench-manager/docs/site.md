@@ -14,27 +14,27 @@
   4. Uninstall App
       * Lets you uninstall an app from the site.
 
-* Want to delete a site? :(
+### Delete a site
 
 <img src="https://github.com/frappe/bench_manager/wiki/images/site-drop_site.gif" width="600">
 
-* Install app on site
+### Install app on site
 
 <img src="https://github.com/frappe/bench_manager/wiki/images/site-install_app.gif" width="600">
 
-* Uninstall app from site
+### Uninstall app from site
 
 <img src="https://github.com/frappe/bench_manager/wiki/images/site-uninstall_app.gif" width="600">
 
-* Backup a site
+### Backup a site
 
 <img src="https://github.com/frappe/bench_manager/wiki/images/site-backup.gif" width="600">
 
-* Migrate a site
+### Migrate a site
 
 <img src="https://github.com/frappe/bench_manager/wiki/images/site-migrate.gif" width="600">
 
-* Reinstall a site
+### Reinstall a site
 
 <img src="https://github.com/frappe/bench_manager/wiki/images/site-reinstall.gif" width="600">
 

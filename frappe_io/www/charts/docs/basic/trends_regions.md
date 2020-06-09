@@ -1,4 +1,3 @@
-<!-- base_template: frappe_io/www/charts/charts_base.html -->
 ## Area Chart
 An area chart is derived from a line chart, by marking the area between the X axis and the line plot. It is usually used to compare the areas under the curve for two or more different plots.
 
@@ -112,6 +111,28 @@ lineOptions: {
 	}">
 </project-demo>
 
+When showing certain data where a linear slope between two data points is not suitable, you can use the `spline` property.
+```js
+lineOptions: {
+	spline: 1 // default: 0
+},
+```
+<project-demo data="trends-data"
+	v-bind:config="{
+		type: 'line',
+		height: 180,
+		colors: ['violet'],
+		axisOptions: {
+			xAxisMode: 'tick',
+			xIsSeries: 1
+		},
+		lineOptions: {
+			spline: 1,
+			hideDots: 1
+		},
+	}">
+</project-demo>
+
 ## Combinations
 Here's a demo using different combinations of the line options.
 
@@ -130,12 +151,13 @@ Here's a demo using different combinations of the line options.
 			name: 'lineOptions',
 			path: ['lineOptions'],
 			type: 'Map',
-			mapKeys: ['hideLine', 'hideDots', 'heatline', 'areaFill'],
+			mapKeys: ['hideLine', 'hideDots', 'heatline', 'areaFill', 'spline'],
 			states: {
-				'Line': [0, 1, 0, 0],
-				'Dots': [1, 0, 0, 0],
-				'HeatLine': [0, 1, 1, 0],
-				'Area': [0, 1, 0, 1]
+				'Line': [0, 1, 0, 0, 0],
+				'Dots': [1, 0, 0, 0, 0],
+				'HeatLine': [0, 1, 1, 0, 0],
+				'Area': [0, 1, 0, 1, 0],
+				'Spline': [0, 1, 0, 1, 1]
 			},
 			activeState: 'Area'
 		}
@@ -143,38 +165,3 @@ Here's a demo using different combinations of the line options.
 </project-demo>
 
 Next up, we'll start to annotate the data in charts.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

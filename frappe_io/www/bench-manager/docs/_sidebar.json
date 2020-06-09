@@ -1,0 +1,22 @@
+[
+    {
+        "route": "/bench-manager/docs/bench-settings",
+        "title": "Bench Settings"
+    },
+    {
+        "route": "/bench-manager/docs/site",
+        "title": "Site"
+    },
+    {
+        "route": "/bench-manager/docs/site-backup",
+        "title": "Site Backup"
+    },
+    {
+        "route": "/bench-manager/docs/bench-manager-command",
+        "title": "Bench Manager Command"
+    },
+    {
+        "route": "/bench-manager/docs/app",
+        "title": "App"
+    }
+]

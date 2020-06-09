@@ -1,4 +1,4 @@
-<!-- base_template: frappe_io/www/frappejs/frappejs_base.html -->
+
 # Single Documents
 
 Single doctypes have only one instance. They are useful for storing DocType settings.

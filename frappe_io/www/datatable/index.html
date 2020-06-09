@@ -1,111 +1,165 @@
-{% extends "frappe_io/www/datatable/datatable_base.html" %}
+{% extends "templates/base.html" %}
 {% block title %}Frappe DataTable - A simple, modern datatable library for the web{% endblock %}
 {% block content %}
-<link href="//unpkg.com/frappe-datatable/dist/frappe-datatable.min.css" rel="stylesheet" />
-<link href="datatable/assets/index.css" rel="stylesheet">
-<section class='top-section'>
-	<div class="container">
-		<h1>Fast, Feature Rich Javascript Datatable</h1>
-		<p class="lead">A simple, modern and interactive datatable for the web</p>
-		<button class="btn btn-dark mt-3"><a class="text-light no-decoration" href="datatable/docs">Documentation</a></button>
-		<div class="example-1 mt-5"></div>
-	</div>
-</section>
-<section class='section-padding section-bg'>
-	<div class="container">
-		<h3>Installation</h3>
-		<div class="code">
-		<pre><code class="hljs bash"># Install using yarn
-yarn add frappe-datatable
+<link href="/assets/css/datatable.css" rel="stylesheet">
 
-# or npm
-npm install frappe-datatable</code></pre>
-	</div>
-</section>
+{{ web_blocks([
+		{
+			'template': "Hero",
+			'values': {
+				'title': "Fast, Feature Rich Javascript Datatable",
+				'subtitle': "A simple, modern and interactive datatable for the web",
+				'primary_action_label': "Documentation",
+				'primary_action': "/datatable/docs",
+				'secondary_action_label': 'GitHub',
+				'secondary_action': "https://github.com/frappe/datatable"
+			}
+		}
+	])
+}}
 
-<section class="section-padding">
+<section class="section section-padding-top section-padding-bottom bg-light">
 	<div class='container'>
-		<h3>Usage</h3>
-		<div class="code">
-		<pre><code class="hljs javascript">import DataTable from 'frappe-datatable';
+		<div class="example-1"></div>
+		<p class="text-center mt-2">Double click on any cell to edit values</p>
+	</div>
+</section>
 
-// or add
-// &lt;script src="frappe-datatable.js" &gt;&lt;/script&gt;
-// in your html
+<section class="section section-padding-top section-padding-bottom">
+	<div class='container'>
+		<!-- Installation -->
+		<div class='mb-5'>
+			<h3>Installation</h3>
+			<pre><code class="hljs">yarn add frappe-datatable</code></pre>
+			<p>or include it directly in your HTML </p>
+			<pre><code class="hljs html xml">  &lt;script src="https://unpkg.com/frappe-datatable@latest"&gt;&lt;/script&gt;</code></pre>
+		</div>
 
-let datatable = new DataTable({
+		<!-- Usage -->
+		<h3 class="mb-3">Usage</h3>
+
+		<p>And include it in your project</p>
+		<pre><code class="hljs javascript">  import { Chart } from "frappe-charts"</code></pre>
+
+		<p>Initialize a new DataTable Object</p>
+		<pre><code class="hljs javascript">let datatable = new DataTable({
 	columns: ['Name', 'Position', 'Department'],
 	data: [
 		['Tiger Nixon', 'System Architect', 'Tech'],
 		['Garrett Winters', 'Accountant', '']
 	]
 });</code></pre>
-    </div>
-    </div>
-</section>
-
-<section class='section-padding section-bg'>
-	<div class='container'>
-		<h3>Features</h3>
-		<div class="features">
-			<ul>
-				<li>Custom Formatters</li>
-				<li>Inline Editing</li>
-				<li>Mouse Selection</li>
-				<li>Copy Cells</li>
-				<li>Keyboard Navigation</li>
-				<li>Custom Cell Editor</li>
-			</ul>
-			<ul>
-				<li>Reorder Columns</li>
-				<li>Sort by Column</li>
-				<li>Remove / Hide Column</li>
-				<li>Custom Actions</li>
-				<li>Resize Column</li>
-				<li>Flexible Layout</li>
-			</ul>
-			<ul>
-				<li>Row Selection</li>
-				<li>Tree Structured Rows</li>
-				<li>Inline Filters</li>
-				<li>Large Number of Rows</li>
-				<li>Dynamic Row Height</li>
-				<li>Theme Support</li>
-			</ul>
-		</div>
-		<img class="mt-2" src="https://user-images.githubusercontent.com/9355208/40740030-5412aa40-6465-11e8-8542-b0247ab1daac.gif" alt="DataTable Features Demo">
 	</div>
 </section>
 
-<div class="section-padding">
+<section class="section section-padding-top section-padding-bottom bg-light">
 	<div class="container">
-		<h3>Simple Demo</h3>
-		<div class="demo-target-1"></div>
+		<h4>Simple Demo</h4>
+		<pre><code class="hljs javascript">let element = document.querySelector('.target');
+
+let datatabel = new DataTable(element, {
+	columns: ['Framework', 'Built By', 'GitHub Stars', 'License', 'Contributors', 'Age','Project Home', 'Project Link'],
+	data: [
+		['React', 'Facebook', 149017, 'MIT', 1385, '7 Years', 'https://reactjs.org', 'https://github.com/facebook/react'],
+		['Angular', 'Google', 61263, 'MIT', 1119, '5 Years', 'https://angular.io', 'https://github.com/angular/angular'],
+		['Vue', 'Evan You', 164408, 'MIT', 293, '4 Years', 'https://vuejs.org', 'https://github.com/vuejs/vue'],
+		['Svelte', 'Rich Harris', 33865, 'MIT', 298, '3 Years', 'https://svelte.dev', 'https://github.com/sveltejs/svelte/'],
+		['Stencil', 'Ionic Team', 7749, 'MIT', 132, '3 Years', 'https://stenciljs.com', 'https://github.com/ionic-team/stencil'],
+	]
+});</code></pre>
+	<div class="demo-target-1"></div>
 	</div>
 </div>
-<div class="section-padding">
+</section>
+
+<section class="section section-padding-top section-padding-bottom">
 	<div class="container">
-		<h3>Custom Column Formatter</h3>
-		<div class="demo-target-2"></div>
+		<h4>Formatting Column Values</h4>
+		<pre><code class="hljs javascript">let element = document.querySelector('.target');
+
+let datatabel = new DataTable(element, {
+	columns: [
+		{ name: 'Framework' },
+		{ name: 'Built By' },
+		{ name: 'GitHub Stars', format: value => `${value} ⭐️`},
+		{ name: 'License' },
+		{ name: 'Contributors' },
+		{ name: 'Age', format: value => `${value} Years` },
+		{ name: 'Project Home', format: value => `<a class="text-primary" href="${value}">${value}</a>` },
+		{ name: 'Project Link', format: value => `<a class="text-primary" href="${value}">${value}</a>` }
+	],
+	data: [
+		['React', 'Facebook', 149017, 'MIT', 1385, 7, 'https://reactjs.org', 'https://github.com/facebook/react'],
+		['Angular', 'Google', 61263, 'MIT', 1119, 5, 'https://angular.io', 'https://github.com/angular/angular'],
+		['Vue', 'Evan You', 164408, 'MIT', 293, 4, 'https://vuejs.org', 'https://github.com/vuejs/vue'],
+		['Svelte', 'Rich Harris', 33865, 'MIT', 298, 3, 'https://svelte.dev', 'https://github.com/sveltejs/svelte/'],
+		['Stencil', 'Ionic Team', 7749, 'MIT', 132, 3, 'https://stenciljs.com', 'https://github.com/ionic-team/stencil'],
+	]
+});</code></pre>
+	<div class="demo-target-2"></div>
 	</div>
 </div>
-<div class="section-padding">
+</section>
+
+<section class="section section-padding-top section-padding-bottom bg-light">
 	<div class="container">
-		<h3>Tree View</h3>
+		<h4>Tree View</h4>
+		<pre><code class="hljs javascript">let element = document.querySelector('.demo-target-3');
+let datatable = new DataTable(element, {
+	columns: [
+		{ name: 'Files', width: 300, format: formatFileName },
+		{ name: 'Size', width: 150, align: 'right' },
+		{ name: 'Last Updated', width: 200, align: 'right', default: "A Month Ago"},
+	],
+	data: [
+		{
+			'Files': 'Documents',
+			'Size': '2M',
+			'Last Updated': '',
+			'indent': 0
+		},
+		{
+			'Files': 'project.pdf',
+			'Size': '1M',
+			'Last Updated': 'Yesterday',
+			'indent': 1
+		},
+		{
+			'Files': 'my-face.png',
+			'Size': '500k',
+			'Last Updated': '2018-04-09',
+			'indent': 1
+		},
+		...
+	],
+	treeView: true
+});</code></pre>
 		<div class="demo-target-3"></div>
 	</div>
-</div>
+</section>
+
 <div class="section-padding">
 	<div class="container">
 		<h3>Themes</h3>
+		<pre><code class="css">.dark-mode .datatable {
+	--dt-border-color: #424242;
+	--dt-light-bg: #2e3538;
+	--dt-text-color: #dfe2e5;
+	--dt-text-light: #dfe2e5;
+	--dt-cell-bg: #1c1f20;
+	--dt-focus-border-width: 1px;
+	--dt-selection-highlight-color: var(--dt-light-bg);
+	--dt-toast-message-border: 1px solid var(--dt-border-color);
+	--dt-header-cell-bg: #262c2e;
+}</code></pre>
 		<div class="demo-target-4"></div>
 		<div class="btn-group theme-buttons mt-2" role="group" aria-label="Theme Buttons">
-			<button type="button" class="btn btn-secondary" data-theme="light">Light</button>
-			<button type="button" class="btn btn-secondary" data-theme="dark">Dark</button>
+			<button type="button" class="btn btn-default" data-theme="light">Light</button>
+			<button type="button" class="btn btn-default" data-theme="dark">Dark</button>
 		</div>
 		<template id="dark-theme-style-template">
 			<style id="dark-theme-style">
-				.example-5 .datatable {
+				.demo-target-4 .datatable {
 					--dt-border-color: #424242;
 					--dt-light-bg: #2e3538;
 					--dt-text-color: #dfe2e5;
@@ -167,117 +221,8 @@ let datatable = new DataTable({
 		</script>
 	</div>
 </div>
-<script>
-	frappe.ready(() => {
-		makeDemo('.demo-target-1', `
-let dt = new DataTable('.example-2', {
-	columns: ['Framework', 'Built By', 'GitHub Stars', 'Project Link'],
-	data: [
-		['React', 'Facebook', 105773, 'https://github.com/facebook/react'],
-		['Angular', 'Google', 38153, 'https://github.com/angular/angular'],
-		['Vue', 'Evan You', 106640, 'https://github.com/vuejs/vue'],
-		['Stencil', 'Ionic Team', 3238, 'https://github.com/ionic-team/stencil'],
-	]
-});`);
 
-		makeDemo('.demo-target-2', `
-let dt = new DataTable('.example-3', {
-	columns: [
-		{ name: 'Framework' },
-		{ name: 'Built By' },
-		{ name: 'GitHub Stars' },
-		{ name: 'Project Link', format: value => \`<a class="text-primary" href="\${value}">\${value}</a>\` }
-	],
-	data: [
-		['React', 'Facebook', 105773, 'https://github.com/facebook/react'],
-		['Angular', 'Google', 38153, 'https://github.com/angular/angular'],
-		['Vue', 'Evan You', 106640, 'https://github.com/vuejs/vue'],
-		['Stencil', 'Ionic Team', 3238, 'https://github.com/ionic-team/stencil'],
-	]
-});`);
-
-		makeDemo('.demo-target-3', `
-let dt = new DataTable('.example-4', {
-	columns: [
-		{ name: 'Files', width: 300, format: formatFileName },
-		{ name: 'Size', width: 150, align: 'right' },
-		{ name: 'Last Updated', width: 200, align: 'right' },
-	],
-	data: [
-		{
-			'Files': 'Documents',
-			'Size': '2M',
-			'Last Updated': '',
-			'indent': 0
-		},
-		{
-			'Files': 'project.pdf',
-			'Size': '1M',
-			'Last Updated': 'Yesterday',
-			'indent': 1
-		},
-		{
-			'Files': 'my-face.png',
-			'Size': '500k',
-			'Last Updated': '2018-04-09',
-			'indent': 1
-		},
-		{
-			'Files': 'Projects',
-			'Size': '77M',
-			'Last Updated': '',
-			'indent': 0
-		},
-		{
-			'Files': 'frappe-gantt',
-			'Size': '23M',
-			'Last Updated': '',
-			'indent': 1
-		},
-		{
-			'Files': 'dist',
-			'Size': '50k',
-			'Last Updated': '2018-06-01',
-			'indent': 2
-		},
-		{
-			'Files': 'package.json',
-			'Size': '5k',
-			'Last Updated': '2018-06-01',
-			'indent': 2
-		},
-		{
-			'Files': 'frappe-datatable',
-			'Size': '54M',
-			'Last Updated': '',
-			'indent': 1
-		},
-		{
-			'Files': 'src',
-			'Size': '53k',
-			'Last Updated': 'A few seconds ago',
-			'indent': 2
-		},
-	],
-	treeView: true
-});`);
-
-		makeDemo('.demo-target-4', `
-window.datatableThemed = new DataTable('.example-5', {
-	columns: ['Framework', 'Built By', 'GitHub Stars', 'Project Link'],
-	data: [
-		['React', 'Facebook', 105773, 'https://github.com/facebook/react'],
-		['Angular', 'Google', 38153, 'https://github.com/angular/angular'],
-		['Vue', 'Evan You', 106640, 'https://github.com/vuejs/vue'],
-		['Stencil', 'Ionic Team', 3238, 'https://github.com/ionic-team/stencil'],
-	]
-});`);
-
-
-	});
-</script>
-
-<section class="section-padding section-bg">
+<section class="section section-padding-top section-padding-bottom bg-light">
 	<div class='container'>
 	<h3>List of configurable options</h3>
 	<div class="code">
@@ -321,21 +266,58 @@ window.datatableThemed = new DataTable('.example-5', {
 </code></pre>
 	</div>
 	</div>
-</section>
-
-<section class='section-padding'>
-	<div class='container text-center'>
-	<a class ="btn btn-dark mr-3" href="/datatable/docs/getting-started">
-		Get Started</a>
-	<a class ="btn btn-secondary" href="https://github.com/frappe/datatable/archive/master.zip">
-		Download</a>
-	<p class="mt-3">
-		<a href="https://github.com/frappe/datatable" target="_blank">View on GitHub</a></p>
-	<p class='text-muted'>License: MIT</p>
+	<div class='container'>
+		<h3>All Features</h3>
+		<div class="row m-2">
+			<div class="col-12 col-md-4">
+				<li>Custom Formatters</li>
+				<li>Inline Editing</li>
+				<li>Mouse Selection</li>
+				<li>Copy Cells</li>
+				<li>Keyboard Navigation</li>
+				<li>Custom Cell Editor</li>
+			</div>
+			<div class="col-12 col-md-4">
+				<li>Reorder Columns</li>
+				<li>Sort by Column</li>
+				<li>Remove / Hide Column</li>
+				<li>Custom Actions</li>
+				<li>Resize Column</li>
+				<li>Flexible Layout</li>
+			</div>
+			<div class="col-12 col-md-4">
+				<li>Row Selection</li>
+				<li>Tree Structured Rows</li>
+				<li>Inline Filters</li>
+				<li>Large Number of Rows</li>
+				<li>Dynamic Row Height</li>
+				<li>Theme Support</li>
+			</div>
+		</div>
 	</div>
 </section>
 
-<script src="//unpkg.com/sortablejs@1.7.0/Sortable.min.js"></script>
-<script src="//unpkg.com/frappe-datatable/dist/frappe-datatable.min.js"></script>
-<script src="datatable/assets/index.js"></script>
+{{ web_blocks([
+		{
+			'template': "Section With CTA",
+			'values': {
+				'title': "Fast, Feature Rich Javascript Datatable",
+				'subtitle': "A simple, modern and interactive datatable for the web",
+				'cta_label': "Star on GitHub",
+				'cta_url': "https://github.com/frappe/datatable",
+				'cta_description': "MIT License",
+				'show_confetti': 1
+			}
+		}
+	])
+}}
+
+<style>
+	.dt-row-header {
+		border: none !important;
+	}
+</style>
+
+<script src="/assets/js/datatable.js"></script>
+<script src="/datatable/assets/index.js"></script>
 {% endblock %}

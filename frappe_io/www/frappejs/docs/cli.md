@@ -1,4 +1,4 @@
-<!-- base_template: frappe_io/www/frappejs/frappejs_base.html -->
+
 # Command Line Tools
 
 ### Adding a new Model / DocType:

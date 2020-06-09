@@ -1,4 +1,4 @@
-<!-- base_template: frappe_io/www/charts/charts_base.html -->
+
 # Navigation
 
 In order to analyse a data individually, it helps if the chart can activate a given point on the plot. This is where `isNavigable` comes in handy, which makes the chart interactive with arrow keys and highlights the current active data point.
@@ -11,7 +11,7 @@ Try and traverse this chart with arrow-keys.
 
 <project-demo data="2" v-bind:config="{
         type: 'bar',
-        height: 140,
+        height: 180,
 		isNavigable: 1,
         colors: ['light-blue'],
         axisOptions: { xAxisMode: 'tick' },

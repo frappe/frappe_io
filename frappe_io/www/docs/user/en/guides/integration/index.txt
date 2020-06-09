@@ -1,7 +1,0 @@
-how_to_set_up_oauth
-how_to_set_up_token_based_auth
-rest_api
-openid_connect_and_frappe_social_login
-social_login_key
-google_gsuite
-google_calendar
