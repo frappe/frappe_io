@@ -41,7 +41,8 @@ look_for_sidebar_json = True
 base_template_map = {
 	r"charts/docs.*": "templates/doc.html",
 	r"datatable/docs.*": "templates/doc.html",
-	r"bench-manager/docs.*": "templates/doc.html"
+	r"bench-manager/docs.*": "templates/doc.html",
+	r"frappejs/docs.*": "templates/doc.html"
 }
 
 # Home Pages
