@@ -45,6 +45,8 @@ base_template_map = {
 	r"frappejs/docs.*": "templates/doc.html"
 }
 
+update_website_context = ['frappe_io.website_context.get_context']
+
 # Home Pages
 # ----------
 
