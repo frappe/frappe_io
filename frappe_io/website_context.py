@@ -6,6 +6,9 @@ import frappe
 
 
 def get_context(context):
+	if not frappe.request:
+		return
+
 	path = frappe.request.path
 
 	if path.startswith("/"):
