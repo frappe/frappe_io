@@ -85,8 +85,8 @@ let datatabel = new DataTable(element, {
 		{ name: 'License' },
 		{ name: 'Contributors' },
 		{ name: 'Age', format: value => `${value} Years` },
-		{ name: 'Project Home', format: value => `<a class="text-primary" href="${value}">${value}</a>` },
-		{ name: 'Project Link', format: value => `<a class="text-primary" href="${value}">${value}</a>` }
+		{ name: 'Project Home', format: value => `&lt;a class="text-primary" href="${value}"&gt;${value}&lt;/a&gt;` },
+		{ name: 'Project Link', format: value => `&lt;a class="text-primary" href="${value}"&gt;${value}&lt;/a&gt;` }
 	],
 	data: [
 		['React', 'Facebook', 149017, 'MIT', 1385, 7, 'https://reactjs.org', 'https://github.com/facebook/react'],
