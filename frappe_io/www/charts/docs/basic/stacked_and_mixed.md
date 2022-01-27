@@ -1,7 +1,7 @@
 
 #### Mixed Bar/Line Chart
 
-As we have seen, chart can have [multiple datasets](/basic/basic_chart?id=adding-more-datasets). Each dataset can also have a different `chartType`, which if specified, should accompany the `type` property set to `axis-mixed`.
+As we have seen, chart can have [multiple datasets](/charts/docs/basic/basic_chart#adding-more-datasets). Each dataset can also have a different `chartType`, which if specified, should accompany the `type` property set to `axis-mixed`.
 
 ```js
 data: {
