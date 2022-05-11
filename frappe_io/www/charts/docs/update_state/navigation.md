@@ -1,3 +1,7 @@
+---
+title: 'Navigation'
+description: 'In order to analyse a data individually, it helps if the chart can activate a given point on the plot. This is where `isNavigable` comes in handy, which makes the chart interactive with arrow keys and highlights the current active data point.'
+---
 
 # Navigation
 

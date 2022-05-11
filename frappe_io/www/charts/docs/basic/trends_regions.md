@@ -1,3 +1,8 @@
+---
+title: 'Area Chart'
+description: 'An area chart is derived from a line chart, by marking the area between the X axis and the line plot. It is usually used to compare the areas under the curve for two or more different plots.'
+---
+
 # Area Chart
 An area chart is derived from a line chart, by marking the area between the X axis and the line plot. It is usually used to compare the areas under the curve for two or more different plots.
 

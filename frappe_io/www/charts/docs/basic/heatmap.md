@@ -1,3 +1,7 @@
+---
+title: 'Heatmap'
+description: 'The heatmap is a representation of day-wise data (similar to the GitHub Contribution Graph). It spaces out data values linearly, across 5 levels (zero data kept exclusive).'
+---
 
 # Day-based Month-wise data
 

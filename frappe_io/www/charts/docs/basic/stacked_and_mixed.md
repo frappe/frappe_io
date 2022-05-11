@@ -1,3 +1,7 @@
+---
+title: 'Mixed Bar/Line Chart'
+description: 'As we have seen, chart can have multiple datasets.Each dataset can also have a different ChartType, which if specified, should accompany the Type property set to Axis-mixed.'
+---
 
 # Mixed Bar/Line Chart
 

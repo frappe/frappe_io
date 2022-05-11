@@ -1,3 +1,7 @@
+---
+title: 'Exporting to images'
+description: 'Frappe charts are exportable to an SVG format, in which they are natively rendered.'
+---
 
 # Exporting to images
 

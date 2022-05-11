@@ -1,3 +1,7 @@
+---
+title: 'Axis chart'
+description: 'An axis chart is generally a 2D rendition of data, where a set of values corresponds to every point in a dataset. That's why, data is the most important component for a chart.'
+---
 
 # Axis chart: What Is It
 

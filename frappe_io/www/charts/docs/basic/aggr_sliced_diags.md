@@ -1,3 +1,7 @@
+---
+title: 'Sliced Diagrams'
+description: 'Another family of charts, the aggregation charts accumulate the value at a data point across the multiple datasets.'
+---
 
 # Also called Sliced Diagrams
 Another family of charts, the aggregation charts accumulate the value at a data point across the multiple datasets.
