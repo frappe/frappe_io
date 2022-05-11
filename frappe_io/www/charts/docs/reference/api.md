@@ -1,3 +1,7 @@
+---
+title: Charts API
+description: A list of methods to modify data and manipulate charts
+---
 
 # API
 
