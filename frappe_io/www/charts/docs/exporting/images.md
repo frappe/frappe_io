@@ -1,5 +1,5 @@
 
-## Exporting to images
+# Exporting to images
 
 Frappe charts are exportable to an SVG format, in which they are natively rendered.
 

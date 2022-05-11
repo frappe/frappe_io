@@ -1,5 +1,5 @@
 
-## Also called Sliced Diagrams
+# Also called Sliced Diagrams
 Another family of charts, the aggregation charts accumulate the value at a data point across the multiple datasets.
 
 **The data format stays the same, with single or multi datasets.**

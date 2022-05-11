@@ -1,4 +1,4 @@
-## DataManager
+## DataManager API
 
 All the methods listed here are available on the `datatable.datamanager` property.
 
