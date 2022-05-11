@@ -1,3 +1,7 @@
+---
+title: 'Charts Configuration'
+description: 'With all the customizable features of Frappe Charts, this section is dedicated to enabling / disabling existing functionality.'
+---
 
 # Configuration
 
