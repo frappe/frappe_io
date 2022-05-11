@@ -1,3 +1,8 @@
+---
+title: 'DataTable Events'
+description: 'Hook custom actions on certain events occurred during the lifecycle of DataTable.'
+---
+
 <!-- add-next-prev-links -->
 
 # Events
