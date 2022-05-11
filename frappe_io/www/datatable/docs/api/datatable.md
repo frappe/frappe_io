@@ -1,3 +1,8 @@
+---
+title: 'Datatable API'
+description: 'All the methods listed here are available on the `datatable` instance created using the `DataTable` constructor.'
+---
+
 # Datatable API
 
 All the methods listed here are available on the `datatable` instance created using the `DataTable` constructor.

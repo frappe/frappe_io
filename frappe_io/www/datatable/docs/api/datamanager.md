@@ -1,4 +1,9 @@
-## DataManager API
+---
+title: 'DataManager API'
+description: 'All the methods listed here are available on the `datatable.datamanager` property.'
+---
+
+# DataManager API
 
 All the methods listed here are available on the `datatable.datamanager` property.
 
