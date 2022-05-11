@@ -1,3 +1,8 @@
+---
+title: 'Getting Started with datatable'
+description: 'The easiest way to get try Frappe DataTable is using this codesandbox demo.'
+---
+
 <!-- add-next-prev-links -->
 
 # Getting Started

@@ -1,3 +1,8 @@
+---
+title: 'Download'
+description: 'Frappe DataTable can be consumed in several different forms.'
+---
+
 <!-- add-next-prev-links -->
 
 # Download
