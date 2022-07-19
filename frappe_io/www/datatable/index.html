@@ -1,7 +1,7 @@
 {% extends "templates/base.html" %}
 {% block title %}Frappe DataTable - A simple, modern datatable library for the web{% endblock %}
 {% block content %}
-<link href="/assets/css/datatable.css" rel="stylesheet">
+{{ include_style('datatable.bundle.css') }}
 
 {{ web_blocks([
 		{
@@ -318,6 +318,6 @@ let datatable = new DataTable(element, {
 	}
 </style>
 
-<script src="/assets/js/datatable.js"></script>
+{{ include_script('datatable.bundle.js') }}
 <script src="/datatable/assets/index.js"></script>
 {% endblock %}
