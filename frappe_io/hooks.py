@@ -2,7 +2,7 @@
 from __future__ import unicode_literals
 
 app_name = "frappe_io"
-app_title = "Frappe Framework"
+app_title = "Frappe IO Website"
 app_publisher = "Frappe"
 app_description = "frappe.io"
 app_icon = "octicon octicon-file-directory"
