@@ -22,6 +22,6 @@ let nextValue = naming.getSeriesNext("INV-");
 
 To setup a number series for a DocType:
 
-- It must have its own "Settings" [single document](/frappejs/docs/models/singles.md). For example (InvoiceSettings for Invoice).
+- It must have its own "Settings" [single document](/frappejs/docs/models/singles). For example (InvoiceSettings for Invoice).
 - The settings document must be set via the `settings` property in the DocType.
 - The settings document must have a `numberSeries` property with value of the number series.

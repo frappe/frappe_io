@@ -10,7 +10,7 @@ Models are declared by adding a `.js` model file in the `models/doctype` folder 
 Every model must have a set of fields (these become database columns). All fields must have:
 
 - `fieldname`: Column name in database / property name.
-- `fieldtype`: Data type ([see details](/frappejs/docs/models/fields.md)).
+- `fieldtype`: Data type ([see details](/frappejs/docs/models/fields)).
 - `label`: Display label.
 - `required`: Is mandatory.
 - `hidden`: Is hidden.

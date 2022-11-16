@@ -1,7 +1,7 @@
 
 # Single Value
 
-The SingleValue table is where all [Single documents](/frappejs/docs/models/singles.md) are stored.
+The SingleValue table is where all [Single documents](/frappejs/docs/models/singles) are stored.
 
 A `SingleValue` record is created for each property of the doctype
 

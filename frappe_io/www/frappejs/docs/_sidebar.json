@@ -4,39 +4,39 @@
         "title": "Home"
     },
     {
-        "route": "/frappejs/docs/app.md",
+        "route": "/frappejs/docs/app",
         "title": "Making New App"
     },
     {
-        "route": "/frappejs/docs/models.md",
+        "route": "/frappejs/docs/models",
         "title": "Models"
     },
     {
-        "route": "/frappejs/docs/document.md",
+        "route": "/frappejs/docs/document",
         "title": "Documents"
     },
     {
-        "route": "/frappejs/docs/server/index.md",
+        "route": "/frappejs/docs/server/index",
         "title": "Server"
     },
     {
-        "route": "/frappejs/docs/util.md",
+        "route": "/frappejs/docs/util",
         "title": "Utilities"
     },
     {
-        "route": "/frappejs/docs/server/backends.md",
+        "route": "/frappejs/docs/server/backends",
         "title": "Backends"
     },
     {
-        "route": "/frappejs/docs/errors.md",
+        "route": "/frappejs/docs/errors",
         "title": "Errors"
     },
     {
-        "route": "/frappejs/docs/client/index.md",
+        "route": "/frappejs/docs/client/index",
         "title": "UI"
     },
     {
-        "route": "/frappejs/docs/testing.md",
+        "route": "/frappejs/docs/testing",
         "title": "Testing"
     }
 ]
