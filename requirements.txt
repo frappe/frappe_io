@@ -1,1 +1,1 @@
-frappe
+# frappe - installed by bench
