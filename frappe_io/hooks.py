@@ -34,7 +34,7 @@ website_context = {
 # app_include_js = "/assets/frappe_io/js/frappe_io.js"
 
 # include js, css files in header of web template
-web_include_js = ["charts-demo.bundle.js"]
+#web_include_js = ["charts-demo.bundle.js"]
 web_include_css = "assets/frappe/css/hljs-night-owl.css"
 look_for_sidebar_json = True
 
