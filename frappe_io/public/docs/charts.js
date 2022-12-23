@@ -47,6 +47,6 @@ if(projectName in frappe.projectDemos
 	})
 
 	$(document).ready(function( ) {
-		frappe.Vue = new Vue().$mount('.page_content');
+		frappe.Vue = new Vue().$mount('.vue_dummy_mounting_div');
 	});
 }
