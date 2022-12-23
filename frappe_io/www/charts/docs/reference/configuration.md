@@ -114,8 +114,8 @@ const chart = new Chart('#chart', {
 
 ### colors
  - Type: `Array`
- - Default: `['light-blue', 'blue', 'violet', 'red', 'orange',
-	'yellow', 'green', 'light-green', 'purple', 'magenta', 'light-grey', 'dark-grey']`
+ - Default: `['#00bdff', '#1b3bff', '#8F00FF', '#ff0011', '#ff7300',
+	'#ffd600', '#00c30e', '#65ff00', '#d200ff', '#FF00FF', '#7d7d7d', '#5d5d5d']`
 
 Set the colors to be used for each individual unit type, depending on the chart type.
 

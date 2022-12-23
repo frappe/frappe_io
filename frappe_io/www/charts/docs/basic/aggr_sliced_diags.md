@@ -73,7 +73,6 @@ Some attributes of a percentage bar can be redefined; like its height and the de
 ```js
 barOptions: {
 	height: 15,          // default: 20
-	depth: 5             // default: 2
 }
 ```
 <project-demo data="mixed-2" v-bind:config="{
@@ -81,19 +80,11 @@ barOptions: {
         height: 200,
 		barOptions: {
 			height: 15,
-			depth: 5
 		}
     }"
     v-bind:options="[
         {
-            name: 'barOptions',
-            path: ['barOptions', 'depth'],
-            type: 'number',
-            numberOptions: { min: 1, max: 10, step: 1 },
-            activeState: 5
-        },
-        {
-            name: 'barOptions',
+            name: 'barOptions.height',
             path: ['barOptions', 'height'],
             type: 'number',
             numberOptions: { min: 11, max: 31, step: 2 },

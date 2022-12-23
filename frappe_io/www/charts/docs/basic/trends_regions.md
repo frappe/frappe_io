@@ -15,7 +15,7 @@ lineOptions: {
 	v-bind:config="{
 		type: 'line',
 		height: 240,
-		colors: ['violet'],
+		colors: ['#65ff00'],
 		lineOptions: {
 			regionFill: 1
 		},
@@ -43,7 +43,7 @@ This results only some of the X ticks having a label.
 	v-bind:config="{
 		type: 'line',
 		height: 180,
-		colors: ['violet'],
+		colors: ['#65ff00'],
 		axisOptions: {
 			xAxisMode: 'tick',
 			xIsSeries: 1
@@ -61,7 +61,7 @@ lineOptions: {
 	v-bind:config="{
 		type: 'line',
 		height: 180,
-		colors: ['violet'],
+		colors: ['#65ff00'],
 		axisOptions: {
 			xAxisMode: 'tick',
 			xIsSeries: 1
@@ -82,7 +82,7 @@ lineOptions: {
 	v-bind:config="{
 		type: 'line',
 		height: 180,
-		colors: ['violet'],
+		colors: ['#65ff00'],
 		axisOptions: {
 			xAxisMode: 'tick',
 			xIsSeries: 1
@@ -104,7 +104,7 @@ lineOptions: {
 	v-bind:config="{
 		type: 'line',
 		height: 180,
-		colors: ['violet'],
+		colors: ['#65ff00'],
 		axisOptions: {
 			xAxisMode: 'tick',
 			xIsSeries: 1
@@ -126,7 +126,7 @@ lineOptions: {
 	v-bind:config="{
 		type: 'line',
 		height: 180,
-		colors: ['violet'],
+		colors: ['#65ff00'],
 		axisOptions: {
 			xAxisMode: 'tick',
 			xIsSeries: 1
@@ -145,7 +145,7 @@ Here's a demo using different combinations of the line options.
 	v-bind:config="{
 		type: 'line',
 		height: 200,
-		colors: ['violet'],
+		colors: ['#65ff00'],
 		axisOptions: {
 			xAxisMode: 'tick',
 			xIsSeries: 1
@@ -164,7 +164,6 @@ Here's a demo using different combinations of the line options.
 				'Area': [0, 1, 0, 1, 0],
 				'Spline': [0, 1, 0, 1, 1]
 			},
-			activeState: 'Area'
 		}
     ]">
 </project-demo>

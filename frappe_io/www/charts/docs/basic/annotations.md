@@ -27,7 +27,7 @@ data = {
 	v-bind:config="{
 		type: 'line',
 		height: 180,
-		colors: ['violet'],
+		colors: ['#8F00FF'],
 		axisOptions: {
 			yAxisMode: 'tick'
 		},
@@ -53,7 +53,7 @@ Shown as a greyed-out area between the extremes.
 	v-bind:config="{
 		type: 'line',
 		height: 180,
-		colors: ['violet'],
+		colors: ['#8F00FF'],
 		axisOptions: {
 			yAxisMode: 'tick'
 		},
@@ -96,7 +96,7 @@ For a non-web or static interface, where tooltips are absent, `valuesOverPoints`
 <project-demo data="1" v-bind:config="{
         type: 'line',
         height: 200,
-        colors:['violet', 'magenta'],
+        colors:['#8F00FF', '#FF00FF'],
 		valuesOverPoints: 1
     }"
     v-bind:options="[

@@ -59,7 +59,7 @@ Notice that this case demonstrates why the `colors` option is an array. We'll se
 <project-demo data="1" v-bind:config="{
         type: 'line',
         height: 200,
-        colors:['green', 'light-green']
+        colors:['#30cd00', '#288808']
     }"
     v-bind:options="[
         {
@@ -81,7 +81,7 @@ In order to set the bar width, instead of defining it and the space between the 
 
 ```js
 barOptions: {
-	spaceRatio: 0.2 // default: 1
+	spaceRatio: 0.5 // default: 1
 },
 ```
 Try resizing the window to see the effect, with different ratio values.
@@ -90,15 +90,15 @@ Try resizing the window to see the effect, with different ratio values.
         type: 'bar',
         height: 180,
         colors: ['orange'],
-        barOptions: { spaceRatio: 0.2 },
+        barOptions: { spaceRatio: 0.5 },
     }"
     v-bind:options="[
         {
             name: 'spaceRatio',
             path: ['barOptions', 'spaceRatio'],
             type: 'number',
-            numberOptions: { min: 0.1, max: 1.9, step: 0.1 },
-            activeState: 0.2
+            numberOptions: { min: 0.1, max: 1, step: 0.1 },
+            activeState: 0.5
         }
     ]">
 </project-demo>

@@ -1,11 +1,11 @@
 ---
-title: 'Mixed Bar/Line Chart'
-description: 'As we have seen, chart can have multiple datasets.Each dataset can also have a different ChartType, which if specified, should accompany the Type property set to Axis-mixed.'
+title: "Mixed Bar/Line Chart"
+description: "As we have seen, chart can have multiple datasets.Each dataset can also have a different ChartType, which if specified, should accompany the Type property set to Axis-mixed."
 ---
 
 # Mixed Bar/Line Chart
 
-As we have seen, chart can have [multiple datasets](/charts/docs/basic/basic_chart#adding-more-datasets). Each dataset can also have a different `chartType`, which if specified, should accompany the `type` property set to `axis-mixed`.
+As we have seen, chart can have [multiple datasets](/charts/docs/basic/basic_chart#adding-more-datasets). Each dataset can also have a different `chartType`.
 
 ```js
 data: {
@@ -23,14 +23,13 @@ data: {
       }
     ]
 },
-
-type: 'axis-mixed'
 ```
+
 This allows for creation of mixed axis chart. It is recommended to list the bar datasets before the line ones to avoid overlapping.
 <project-demo data="mixed-1" v-bind:config="{
         type: 'axis-mixed',
         height: 200,
-        colors:['light-green', 'green']
+        colors:['#30cd00', '#288808'],
     }">
 </project-demo>
 
@@ -39,28 +38,28 @@ All the `lineOptions` and `barOptions` apply to mix and match datasets as well.
 <project-demo data="mixed-2" v-bind:config="{
         type: 'axis-mixed',
         height: 240,
-        colors:['light-green', 'green', 'blue'],
+        colors:['#30cd00', '#288808', '#2db4ff'],
         lineOptions: {
-          dotSize: 4
+          dotSize: 4,
         },
         barOptions: {
-          spaceRatio: 0.4
+          spaceRatio: 0.5,
         },
     }"
     v-bind:options="[
         {
-            name: 'barOptions',
+            name: 'barOptions.spaceRatio',
             path: ['barOptions', 'spaceRatio'],
             type: 'number',
-            numberOptions: { min: 0.1, max: 1.9, step: 0.1 },
-            activeState: 0.4
+            numberOptions: { min: 0.1, max: 1, step: 0.1 },
+            activeState: 0.5,
         },
         {
-            name: 'lineOptions',
+            name: 'lineOptions.dotSize',
             path: ['lineOptions', 'dotSize'],
             type: 'number',
             numberOptions: { min: 3, max: 10, step: 1 },
-            activeState: 4
+            activeState: 4,
         }
     ]">
 </project-demo>
@@ -73,9 +72,10 @@ Unlike lines, bars have two ways to show multiple data point values: adjacent or
 
 ```js
 barOptions: {
-  stacked: 1    // default 0, i.e. adjacent
+	stacked: 1; // default 0, i.e. adjacent
 }
 ```
+
 <project-demo data="bar-composite-data" v-bind:config="{
       type: 'bar',
       height: 240,
@@ -95,6 +95,5 @@ barOptions: {
       }
     ]">
 </project-demo>
-
 
 In [Aggregation Charts]() however, instead of being rendered individually, each data point in aggregated accross every dataset. We'll cover those next.
