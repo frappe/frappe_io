@@ -46,7 +46,7 @@ if(projectName in frappe.projectDemos
 		methods: project.methods
 	})
 
-	$(document).ready(function( ) {
+	frappe.ready(function( ) {
 		frappe.Vue = new Vue().$mount('.page_content');
 	});
 }
