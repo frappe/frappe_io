@@ -394,4 +394,4 @@ options = {
 ### events
  - Type: `Object`
 
- The events options is described in detailed in the [next section](events.md).
+ The events options is described in detailed in the [next section](events).
